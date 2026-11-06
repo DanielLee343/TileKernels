@@ -20,3 +20,6 @@ post-fwd-09 admitted
 post-fwd-10 skipped host memory guard: more than 50M residual elements
 post-fwd-11 skipped host memory guard: more than 50M residual elements
 post-fwd-12 skipped host memory guard: more than 50M residual elements
+post-fwd-13 admitted 
+post-fwd-14 admitted 
+post-fwd-15 admitted 
