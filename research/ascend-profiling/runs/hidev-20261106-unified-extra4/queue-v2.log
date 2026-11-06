@@ -117,3 +117,8 @@ rotary_embedding-03-k needs_review in-place profiler replay restoration has not 
 rotary_embedding-04-q needs_review in-place profiler replay restoration has not been independently verified
 rotary_embedding-04-k needs_review in-place profiler replay restoration has not been independently verified
 rotary_embedding-05-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-05-k needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-06-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-06-k needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-07-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-07-k needs_review in-place profiler replay restoration has not been independently verified
