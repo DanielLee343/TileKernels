@@ -1,0 +1,177 @@
+{
+  "group": "moe_topk_gate_backward",
+  "params": {
+    "num_tokens": 512,
+    "num_padded_tokens": 0,
+    "num_seqs": 1,
+    "num_topk": 6,
+    "num_routed_experts": 72,
+    "num_shared_experts": 1,
+    "bias_exists": true,
+    "image_bias_exists": true,
+    "aux_exists": false,
+    "fix_routing": true
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 5,
+  "target_range": "quant_target",
+  "requested_fix_routing": true,
+  "current_fixture_fix_routing": true,
+  "seed": 42,
+  "correctness": "passed_upstream_full_moe_backward_test",
+  "output_semantics": "grad_logits is overwritten; no input is intentionally mutated",
+  "profiler_replay_state": "unverified",
+  "profiler_replay_note": "The actual replay count and output-buffer behavior require on-device verification.",
+  "routing_fixture_inputs": [
+    {
+      "name": "mask",
+      "tensor": null
+    },
+    {
+      "name": "bias",
+      "tensor": {
+        "shape": [
+          72
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "2b68c3bdbad2a2371240d2245441a99293a6da9921a64f18ef16b1820d3eef98"
+      }
+    },
+    {
+      "name": "image_bias",
+      "tensor": {
+        "shape": [
+          72
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "9094b7ea8b8d7e850f99382bd237631c70f2ef1614b7204f561b9cb071b2ec43"
+      }
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": {
+        "shape": [
+          512
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "538fc165b4d3e367e96d30701d8290d1f85fe0822b058781a89c900e54565587"
+      }
+    },
+    {
+      "name": "fix_routing_mask",
+      "tensor": {
+        "shape": [
+          512
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "6caf38d537984e261527b8caef5f990fb91415a1db917198821a79ed28997973"
+      }
+    },
+    {
+      "name": "unmapped_topk_idx",
+      "tensor": {
+        "shape": [
+          512,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "0549c94380ff35e04d136948ecf2508d28cd01180021ff42f2de4b9d4dbec569"
+      }
+    }
+  ],
+  "symbol": "moe_topk_gate_backward_kernel_asc",
+  "native_symbol": "moe_topk_gate_backward_kernel_asc",
+  "runtime_kernel": "moe_topk_gate_backward_kernel_asc_kernel",
+  "source_sha256": "a1143067dcb49f11db0008d94dc10cadd45f6561b2474500ea6b5217dc8ca440",
+  "inputs": [
+    {
+      "name": "scores",
+      "tensor": {
+        "shape": [
+          512,
+          72
+        ],
+        "stride": [
+          72,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "b2dd80193e6ba088b53c982a0c56bfe13fd616bc6b1d90e8a0c8a017f755bdf2"
+      }
+    },
+    {
+      "name": "topk_idx",
+      "tensor": {
+        "shape": [
+          512,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "0549c94380ff35e04d136948ecf2508d28cd01180021ff42f2de4b9d4dbec569"
+      }
+    },
+    {
+      "name": "topk_weights",
+      "tensor": {
+        "shape": [
+          512,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "9839b0dfcf948f91fedea06d69529cf8ec48dff3dc209b801a9e358528705fcf"
+      }
+    },
+    {
+      "name": "grad_topk_weights",
+      "tensor": {
+        "shape": [
+          512,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "01b19be543ffd3f889aba23b970943fc3aa2b5660a7e0441758078b5d2e882f6"
+      }
+    },
+    {
+      "name": "mask",
+      "tensor": null
+    },
+    {
+      "name": "grad_scores_sum",
+      "tensor": null
+    }
+  ],
+  "routed_scaling_factor": 1.5,
+  "captured_fix_routing": true,
+  "status": "passed"
+}
