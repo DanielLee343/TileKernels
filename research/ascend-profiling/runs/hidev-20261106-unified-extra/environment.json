@@ -1,0 +1,11 @@
+{
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 207.3       57                0     / 0             |\n|        |                  | 0000:57:00.0  | 0           0    / 0          5283  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| No running processes found in NPU 0                                                             |\n+===========================+===============+=====================================================+\n",
+  "manifest_sha256": "c8805e097ce26952f5cfa60d90956bc3897c7a04ce411a7d02bdf25e2179092d",
+  "hooks_sha256": {
+    "extra_engram_grad.py": "49c890e252e28fcb3d4a0cd4237d84554d031df2ba8bb3cb38c486d0a4339ac6",
+    "extra_mhc_head_bwd.py": "1e0f8d586c4ce0c1a274f7e6e75158ee8f4d06310e20a68ed7d4fc7790f89b18",
+    "extra_quant_cast.py": "1ab2e4bd38b8ea1483b3ab286ffde678b1109cdee664327f51334770c80f2187"
+  }
+}

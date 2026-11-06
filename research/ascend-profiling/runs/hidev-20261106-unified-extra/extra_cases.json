@@ -1,0 +1,828 @@
+{
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "device_bus": "0000:57:00.0",
+  "cases": [
+    {
+      "id": "engram_grad_w_reduce-01",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 1,
+      "params": {
+        "hidden": 1024
+      },
+      "pilot": true,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-02",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 2,
+      "params": {
+        "hidden": 1280
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-03",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 3,
+      "params": {
+        "hidden": 128
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-04",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 4,
+      "params": {
+        "hidden": 1536
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-05",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 5,
+      "params": {
+        "hidden": 1792
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-06",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 6,
+      "params": {
+        "hidden": 192
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-07",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 7,
+      "params": {
+        "hidden": 2048
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-08",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 8,
+      "params": {
+        "hidden": 2560
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-09",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 9,
+      "params": {
+        "hidden": 256
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-10",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 10,
+      "params": {
+        "hidden": 3072
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-11",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 11,
+      "params": {
+        "hidden": 320
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-12",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 12,
+      "params": {
+        "hidden": 3584
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-13",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 13,
+      "params": {
+        "hidden": 384
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-14",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 14,
+      "params": {
+        "hidden": 4096
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-15",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 15,
+      "params": {
+        "hidden": 5120
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-16",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 16,
+      "params": {
+        "hidden": 512
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-17",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 17,
+      "params": {
+        "hidden": 6144
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-18",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 18,
+      "params": {
+        "hidden": 64
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-19",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 19,
+      "params": {
+        "hidden": 7168
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_grad_w_reduce-20",
+      "group": "engram_grad_w_reduce",
+      "plan_case_number": 20,
+      "params": {
+        "hidden": 768
+      },
+      "pilot": false,
+      "adapter": "extra_engram_grad.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-01",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 1,
+      "params": {
+        "n0": 1,
+        "n1": 1,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": true,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-02",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 2,
+      "params": {
+        "n0": 2,
+        "n1": 24576,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-03",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 3,
+      "params": {
+        "n0": 1,
+        "n1": 1001,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-04",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-05",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 5,
+      "params": {
+        "n0": 1,
+        "n1": 1024,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-06",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 6,
+      "params": {
+        "n0": 1,
+        "n1": 127,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-07",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 7,
+      "params": {
+        "n0": 1,
+        "n1": 128,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-08",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 8,
+      "params": {
+        "n0": 1,
+        "n1": 16384,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-09",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 9,
+      "params": {
+        "n0": 1,
+        "n1": 16385,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-10",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 10,
+      "params": {
+        "n0": 1,
+        "n1": 17,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-11",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 11,
+      "params": {
+        "n0": 1,
+        "n1": 2049,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-12",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 12,
+      "params": {
+        "n0": 1,
+        "n1": 257,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-13",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 13,
+      "params": {
+        "n0": 1,
+        "n1": 4097,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-14",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 14,
+      "params": {
+        "n0": 1,
+        "n1": 511,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-15",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 15,
+      "params": {
+        "n0": 1,
+        "n1": 512,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-16",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 16,
+      "params": {
+        "n0": 1,
+        "n1": 513,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-17",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 17,
+      "params": {
+        "n0": 1,
+        "n1": 64,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-18",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 18,
+      "params": {
+        "n0": 1,
+        "n1": 8001,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-19",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 19,
+      "params": {
+        "n0": 1,
+        "n1": 24576,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "mhc_head_compute_mix_bwd-20",
+      "group": "mhc_head_compute_mix_bwd",
+      "plan_case_number": 20,
+      "params": {
+        "n0": 1,
+        "n1": 4096,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_head_bwd.py",
+      "range": "mhc_head_bwd_target"
+    },
+    {
+      "id": "quant_cast-01",
+      "group": "quant_cast",
+      "plan_case_number": 1,
+      "params": {
+        "shape": [
+          65536
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": true,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-02",
+      "group": "quant_cast",
+      "plan_case_number": 2,
+      "params": {
+        "shape": [
+          134217856
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-03",
+      "group": "quant_cast",
+      "plan_case_number": 3,
+      "params": {
+        "shape": [
+          1024128
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-04",
+      "group": "quant_cast",
+      "plan_case_number": 4,
+      "params": {
+        "shape": [
+          1024132
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-05",
+      "group": "quant_cast",
+      "plan_case_number": 5,
+      "params": {
+        "shape": [
+          1024160
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-06",
+      "group": "quant_cast",
+      "plan_case_number": 6,
+      "params": {
+        "shape": [
+          1024256
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-07",
+      "group": "quant_cast",
+      "plan_case_number": 7,
+      "params": {
+        "shape": [
+          1024384
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-08",
+      "group": "quant_cast",
+      "plan_case_number": 8,
+      "params": {
+        "shape": [
+          1048576
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-09",
+      "group": "quant_cast",
+      "plan_case_number": 9,
+      "params": {
+        "shape": [
+          1048580
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-10",
+      "group": "quant_cast",
+      "plan_case_number": 10,
+      "params": {
+        "shape": [
+          1048608
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-11",
+      "group": "quant_cast",
+      "plan_case_number": 11,
+      "params": {
+        "shape": [
+          1048704
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-12",
+      "group": "quant_cast",
+      "plan_case_number": 12,
+      "params": {
+        "shape": [
+          1048832
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-13",
+      "group": "quant_cast",
+      "plan_case_number": 13,
+      "params": {
+        "shape": [
+          1310720
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-14",
+      "group": "quant_cast",
+      "plan_case_number": 14,
+      "params": {
+        "shape": [
+          1310724
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-15",
+      "group": "quant_cast",
+      "plan_case_number": 15,
+      "params": {
+        "shape": [
+          1310752
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-16",
+      "group": "quant_cast",
+      "plan_case_number": 16,
+      "params": {
+        "shape": [
+          1310848
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-17",
+      "group": "quant_cast",
+      "plan_case_number": 17,
+      "params": {
+        "shape": [
+          1310976
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-18",
+      "group": "quant_cast",
+      "plan_case_number": 18,
+      "params": {
+        "shape": [
+          134217728
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-19",
+      "group": "quant_cast",
+      "plan_case_number": 19,
+      "params": {
+        "shape": [
+          1572864
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_cast-20",
+      "group": "quant_cast",
+      "plan_case_number": 20,
+      "params": {
+        "shape": [
+          1572868
+        ],
+        "in_dtype": "fp32",
+        "out_dtype": "bf16",
+        "stochastic_rounding": true
+      },
+      "pilot": false,
+      "adapter": "extra_quant_cast.py",
+      "range": "quant_target"
+    }
+  ]
+}

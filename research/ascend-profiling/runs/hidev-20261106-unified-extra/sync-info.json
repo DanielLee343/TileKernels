@@ -1,0 +1,16 @@
+{
+  "path": "/workspace/tk-starter-sync-1793975206384560192.tar.gz",
+  "size": 257608,
+  "sha256": "bab84d40ff034ecaecc69b87cd5e3dc9ba2023b6b496b79333bb00831a17c5bc",
+  "ids": [
+    "engram_grad_w_reduce-01",
+    "mhc_head_compute_mix_bwd-01",
+    "quant_cast-01",
+    "engram_grad_w_reduce-02",
+    "engram_grad_w_reduce-03",
+    "engram_grad_w_reduce-04",
+    "engram_grad_w_reduce-05",
+    "engram_grad_w_reduce-06"
+  ],
+  "status": "running"
+}
