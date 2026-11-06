@@ -38,3 +38,14 @@ hash-14 admitted
 hash-15 admitted 
 hash-16 admitted 
 hash-17 admitted 
+hash-18 admitted 
+hash-19 admitted 
+hash-20 admitted 
+normalize-02 admitted 
+normalize-03 failed AssertionError: prepare failed
+normalize-04 admitted 
+normalize-05 admitted 
+normalize-06 admitted 
+normalize-07 admitted 
+normalize-08 admitted 
+normalize-09 admitted 

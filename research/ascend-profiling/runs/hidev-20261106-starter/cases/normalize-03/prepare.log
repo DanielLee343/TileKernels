@@ -1,0 +1,2 @@
+2026-11-06 10:11:30  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `normalize_weight_kernel` with `out_idx=None`
+2026-11-06 10:11:33  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `normalize_weight_kernel`
