@@ -34,3 +34,4 @@ mhc_pre_apply_mix_bwd-17 needs_review in-place profiler replay restoration has n
 mhc_pre_apply_mix_bwd-18 failed AssertionError: upstream prepare/correctness failed
 mhc_pre_apply_mix_bwd-19 needs_review in-place profiler replay restoration has not been independently verified
 mhc_pre_apply_mix_bwd-20 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_backward-02 needs_review in-place profiler replay restoration has not been independently verified
