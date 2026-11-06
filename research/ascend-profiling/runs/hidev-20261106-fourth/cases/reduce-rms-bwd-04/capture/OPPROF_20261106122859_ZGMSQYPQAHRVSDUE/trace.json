@@ -1,0 +1,1 @@
+{"displayTimeUnit":"ns","profilingType":"op","schemaVersion":1,"traceEvents":[{"args":{"block_id":78,"core_id":26,"core_type":0,"warp_id":0},"cname":"thread_state_running","dur":3.767878787878788,"name":"Warp_0","ph":"X","pid":"warp.core26.veccore0","tid":"Warp 0","ts":0.0},{"args":{"sort_index":0},"name":"thread_sort_index","ph":"M","pid":"warp.core26.veccore0","tid":"Warp 0"}]}
