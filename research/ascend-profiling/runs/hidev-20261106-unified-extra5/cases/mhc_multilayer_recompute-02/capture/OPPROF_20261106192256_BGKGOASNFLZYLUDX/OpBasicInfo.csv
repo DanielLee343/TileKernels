@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+mhc_multilayer_recompute_asc_kernel,vector,1020.713989,56,NA,0,981773,1650,1650,

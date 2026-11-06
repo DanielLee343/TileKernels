@@ -128,3 +128,8 @@ mhc_fn_normw_merge_bwd-16 needs_review in-place profiler replay restoration has 
 mhc_fn_normw_merge_bwd-17 needs_review in-place profiler replay restoration has not been independently verified
 mhc_fn_normw_merge_bwd-18 needs_review in-place profiler replay restoration has not been independently verified
 mhc_fn_normw_merge_bwd-19 needs_review in-place profiler replay restoration has not been independently verified
+mhc_fn_normw_merge_bwd-20 needs_review in-place profiler replay restoration has not been independently verified
+mhc_multilayer_recompute-02 admitted 
+mhc_multilayer_recompute-03 admitted 
+mhc_multilayer_recompute-04 admitted 
+mhc_multilayer_recompute-05 admitted 
