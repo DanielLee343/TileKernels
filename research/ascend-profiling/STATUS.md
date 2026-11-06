@@ -15,3 +15,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - The fourth manifest maps 40 additional original plan entries: Engram Sinkhorn finalize and mHC reduce/RMSNorm backward. Pilot runs are in progress on hidev; see the remote `progress.json` for authoritative state. The 50-million-element host memory guard records 4 large finalize entries as skipped pending a bounded-memory comparison. Skipped is not a completed profile.
 - Across all four manifests, 303 plan rows have adapters; 697 plan rows still have no adapter. This is a plan mapping, not a count of accepted profiles.
 - The first three batch results were verified and pushed to GitHub in commit `c1e86f7`. The fourth batch must be synced separately.
+
+- The fifth manifest maps 20 additional mHC post forward entries, queued on hidev after the fourth batch. Seven over 50M residual elements are skipped pending a bounded-memory comparator. Five manifests now cover 323 original plan rows; 677 rows still lack adapters.
