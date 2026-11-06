@@ -28,3 +28,5 @@ A subsequent `run_extra.py` manifest queues 60 original plan rows: stochastic ca
 Both sync watchers retry temporary transfer failures. They only auto-push a previously failed local commit when every unpushed commit is a sync commit and every changed file belongs to that watcher’s run directory.
 
 A third shared manifest queues 117 additional rows: per-channel cast, lossless block cast, remaining cast-back cases, randn, and mHC post backward. These modes are pending device pilots; full shapes and original parameters are retained. randn explicitly records that profiler replay is not proof of fresh random samples. mHC post backward uses bounded host-memory generation and validation but still requires the full NPU allocation.
+
+A fourth shared manifest queues 100 more original rows: norm forward/backward, mHC big fuse forward, MoE topk forward and SwiGLU forward. These modes have not yet passed hidev pilots. Each case is attempted separately even if its mode pilot fails; failures are recorded. Stateful replay cases require review. All four shared manifests cover 397 of the 657 previously unmapped rows; 260 still need adapters.

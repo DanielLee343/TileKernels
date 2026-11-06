@@ -28,3 +28,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - A further 60 previously unmapped rows have been queued after the 120 quant rows: stochastic cast, head backward and Engram gradient reduction. These three modes have not yet passed device pilots; the gradient-reduction capture is classified `needs_review` until in-place replay semantics are verified. Of the original 657, 180 rows are now covered by queued adapters; 477 remain without adapters.
 
 - A third shared queue maps 117 additional original rows, for a total of 297 of the 657 previously unmapped rows covered by these queues. The other 360 still need adapters. All six new modes are pending on-device pilots.
+
+- A fourth shared queue maps 100 additional rows. Of the original 657 unmapped plan entries, 397 are now in the four shared queues and 260 still lack adapters; queued is not equivalent to successful. Each new extra runner attempts later rows even if a pilot fails.

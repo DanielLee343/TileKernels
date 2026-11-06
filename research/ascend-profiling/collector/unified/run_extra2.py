@@ -122,11 +122,7 @@ def main():
     admitted={c['family'] for c in result['cases'] if c['status']=='admitted' or (c['status']=='needs_review' and c.get('reason')=='in-place profiler replay restoration has not been independently verified')}
     for c in cases:
         if bool(c['pilot']) != (args.phase=='pilot'):continue
-        if args.phase=='remaining' and c['group'] not in admitted:
-            folder=ROOT/'cases'/c['id'];folder.mkdir(parents=True,exist_ok=False)
-            outcome={'id':c['id'],'family':c['group'],'role':'discovery','status':'skipped','reason':'mode pilot failed'}
-            save(folder/'result.json',outcome)
-        else:outcome=run_case(c)
+        outcome=run_case(c)  # One failed case must not suppress other plan rows.
         result['cases'].append(outcome);save(progress_path,result)
         print(c['id'],outcome['status'],outcome.get('reason',''),flush=True)
     result['status']='pilot_finished' if args.phase=='pilot' else 'finished';save(progress_path,result)
