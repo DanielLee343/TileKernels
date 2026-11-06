@@ -24,6 +24,8 @@ python -B research/ascend-profiling/sync_hidev.py --push
 
 Add `--watch` to synchronize again as completed cases appear until that batch finishes. This transport currently requires the existing `D:/puma_v2` helper, WSL `archlinux`, and tmux pane `0:0.0`. `--push` checks that `main` matches the remote and the Git index is clean before committing only the starter run directory; it stops on a conflict. This is a workstation-specific transfer helper, while the committed files are portable.
 
+For the queued second batch, add `--batch second`; use `verify_run.py --batch second` to verify its downloaded snapshot. Do not run simultaneous pushes from multiple sync processes; let the first batch's sync finish before starting the second.
+
 ## Working across machines
 
 Clone this private repository and `git pull` the branch containing the work. The A5 host uses an existing GitHub SSH key and port 443. The hidev execution environment is currently separate from this checkout; bind the exact code commit and record where full results were written. Historical paths inside captured logs describe their original machines and are not portable commands.

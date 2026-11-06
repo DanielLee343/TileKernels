@@ -50,7 +50,7 @@ ids=[c['id'] for c in v['cases']]
 assert all('/' not in x and x not in ('.','..') for x in ids)
 target=Path('/workspace')/('tk-starter-sync-'+str(time.time_ns())+'.tar.gz')
 with tarfile.open(target,'w:gz') as out:
- for name in ('progress.json','cases.json','environment.json','pilot.log','remaining.log'):
+ for name in ('progress.json','cases.json','environment.json','pilot.log','remaining.log','queue-v2.log'):
   f=p/name
   if f.exists(): out.add(f,arcname=name)
  for cid in ids:
@@ -155,10 +155,16 @@ def sync(push):
 
 
 def main():
+    global REMOTE, DEST, DEST_REL
     parser=argparse.ArgumentParser()
     parser.add_argument('--watch',action='store_true')
     parser.add_argument('--push',action='store_true')
+    parser.add_argument('--batch',choices=('starter','second'),default='starter')
     args=parser.parse_args()
+    if args.batch=='second':
+        REMOTE='/workspace/tilekernels-expert-profiles-second-20261106'
+        DEST=HERE/'runs/hidev-20261106-second'
+        DEST_REL='research/ascend-profiling/runs/hidev-20261106-second'
     if not args.watch:
         sync(args.push)
         return

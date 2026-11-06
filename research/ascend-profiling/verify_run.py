@@ -1,9 +1,13 @@
 """Check completed starter snapshots, including original profile table hashes."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
 
-root = Path(__file__).resolve().parent / 'runs/hidev-20261106-starter'
+parser = argparse.ArgumentParser()
+parser.add_argument('--batch', choices=('starter', 'second'), default='starter')
+args = parser.parse_args()
+root = Path(__file__).resolve().parent / ('runs/hidev-20261106-' + args.batch)
 progress = json.loads((root / 'progress.json').read_text(encoding='utf8'))
 passed = failed = 0
 for case in progress['cases']:
