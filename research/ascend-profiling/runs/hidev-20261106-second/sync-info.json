@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793960769126422780.tar.gz",
-  "size": 559142,
-  "sha256": "05771f80cd1457f5b9f591229f49ecef2a6c25b81e16fc697d0fbc1627f18c96",
+  "path": "/workspace/tk-starter-sync-1793960847576895128.tar.gz",
+  "size": 685109,
+  "sha256": "1c483247be649a7cdc79de513dda9103344a515ce2c488d1f9d34229bc3545a0",
   "ids": [
     "topk-01",
     "reduce-01",
@@ -17,7 +17,10 @@
     "topk-06",
     "topk-07",
     "topk-08",
-    "topk-09"
+    "topk-09",
+    "topk-10",
+    "topk-11",
+    "topk-12"
   ],
   "status": "running"
 }
