@@ -1,0 +1,3 @@
+/workspace/tilekernels-env-20261101/src/TileKernels/tile_kernels/quant/common.py:333: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  hi = ((x >> 4) & 0x0F).to(torch.int16)
+[W1106 15:08:17.539185862 ToKernelNpu.cpp:40] Warning: Device do not support double dtype now, dtype cast replace with float. (function operator())
