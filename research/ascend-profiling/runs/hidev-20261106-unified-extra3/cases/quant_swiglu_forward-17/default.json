@@ -1,0 +1,63 @@
+{
+  "group": "quant_swiglu_forward",
+  "stage": "default",
+  "seed": 42,
+  "matched": 1,
+  "params": {
+    "num_tokens": 128,
+    "hidden": 128,
+    "fmt": "fp32",
+    "with_weights": true,
+    "num_experts": 0,
+    "alignment": 1,
+    "clamp_value": null,
+    "routed_scaling_factor": 2.5,
+    "num_per_channels": null,
+    "round_sf": false,
+    "use_tma_aligned_col_major_sf": false,
+    "use_packed_ue8m0": false
+  },
+  "expert_prefix": null,
+  "clamped_count_enabled": false,
+  "source_files_sha256": {
+    "tile_kernels/quant/swiglu_forward_asc.py": "c3ce8417ab9636eab2df2345bdc8b0cc5aaf7da74f56c5ad5d390fa20e66aa2f",
+    "tile_kernels/quant/swiglu_forward_kernel.py": "f0e6666d96328ee1e18488b3969f9158c80e61a0c96d2c9d93bc1571ea5c7338",
+    "tile_kernels/quant/common.py": "8fad63ecdfcc0c3e84aef1bb1edf8c63071da641f56e8744e88b3d5a9037998e",
+    "tile_kernels/torch/swiglu.py": "9f0e10d8a3d24d40f1b47530ba402a50b59ebe35c513347d479dde601e95db60",
+    "tile_kernels/torch/cast.py": "41a49e4bc6d70eb328a05bea7d2c43178d3ec10f13c4f0b5e5c258567caddedf",
+    "tile_kernels/testing/numeric.py": "621c719d35acbd556a59a55f303ef615b032a587520d7fbc49d9462e9f04e4c2",
+    "tile_kernels/rand/seed.py": "40778f97938a2566f7467d0b1250cc31ee5ca5ae7b306888df79a395ba877f42",
+    "tile_kernels/rand/randn_kernel.py": "64d6ecc12d519410aa0db7bf6d029fb8851eeb804e9f87c6888c65359264382b"
+  },
+  "symbol": "swiglu_forward_kernel",
+  "runtime_kernel": "swiglu_forward_kernel_kernel",
+  "source_sha256": "db810ced297da0135869f6dc8c99a83d4f8909fc2054ca2fc8dac798f702b14f",
+  "inputs": [
+    {
+      "shape": [
+        128,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a38bcac8a2bdc4b39285b2c0e380882c2a6f431bbd9b3a9162b38ba27205fb02"
+    },
+    null,
+    {
+      "shape": [
+        128
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "d54d76bc5950bf7abc4b546a9c8b45aea4f1de728f686c7605985fb3d9f971ae"
+    }
+  ],
+  "routed_scaling_factor": 2.5,
+  "num_vec_cores": 56,
+  "status": "passed"
+}
