@@ -1,0 +1,8 @@
+{
+  "id": "normalize-20",
+  "family": "moe_normalize_weight",
+  "role": "discovery",
+  "prepare_rc": 2,
+  "status": "failed",
+  "reason": "AssertionError: prepare failed"
+}

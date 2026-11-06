@@ -58,3 +58,5 @@ normalize-15 admitted
 normalize-16 failed AssertionError: prepare failed
 normalize-17 admitted 
 normalize-18 admitted 
+normalize-19 admitted 
+normalize-20 failed AssertionError: prepare failed
