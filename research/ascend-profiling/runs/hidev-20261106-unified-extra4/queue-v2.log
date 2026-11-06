@@ -64,3 +64,5 @@ quant_per_token_cast_and_cast_back-09 needs_review in-place profiler replay rest
 quant_per_token_cast_and_cast_back-10 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-11 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-12 needs_review in-place profiler replay restoration has not been independently verified
+quant_per_token_cast_and_cast_back-13 needs_review in-place profiler replay restoration has not been independently verified
+quant_per_token_cast_and_cast_back-14 needs_review in-place profiler replay restoration has not been independently verified
