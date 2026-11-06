@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793981152341194115.tar.gz",
-  "size": 642751,
-  "sha256": "add6e87330c752990116ff324650adee63dc6493f650cf48609a62000fe12082",
+  "path": "/workspace/tk-starter-sync-1793981225602235329.tar.gz",
+  "size": 725125,
+  "sha256": "cc883119313600b16f0acef321d1ef91635f6ea4b8db00e83e85630daccdbff0",
   "ids": [
     "quant_norm_forward-01",
     "quant_norm_backward-01",
@@ -17,7 +17,9 @@
     "quant_norm_forward-08",
     "quant_norm_forward-09",
     "quant_norm_forward-10",
-    "quant_norm_forward-11"
+    "quant_norm_forward-11",
+    "quant_norm_forward-12",
+    "quant_norm_forward-13"
   ],
   "status": "running"
 }
