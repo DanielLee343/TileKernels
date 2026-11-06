@@ -1,0 +1,929 @@
+{
+  "tilekernels_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msopprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "capture_budget": 60,
+  "device_bus": "0000:57:00.0",
+  "case_plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "cases": [
+    {
+      "id": "fused-01",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": true,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 256
+      },
+      "hidden": 256
+    },
+    {
+      "id": "fused-02",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 8192
+      },
+      "hidden": 8192
+    },
+    {
+      "id": "fused-03",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 1024
+      },
+      "hidden": 1024
+    },
+    {
+      "id": "fused-04",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 1280
+      },
+      "hidden": 1280
+    },
+    {
+      "id": "fused-05",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 1536
+      },
+      "hidden": 1536
+    },
+    {
+      "id": "fused-06",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 1792
+      },
+      "hidden": 1792
+    },
+    {
+      "id": "fused-07",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 2048
+      },
+      "hidden": 2048
+    },
+    {
+      "id": "fused-08",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 2304
+      },
+      "hidden": 2304
+    },
+    {
+      "id": "fused-09",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 2560
+      },
+      "hidden": 2560
+    },
+    {
+      "id": "fused-10",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 2816
+      },
+      "hidden": 2816
+    },
+    {
+      "id": "fused-11",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 3072
+      },
+      "hidden": 3072
+    },
+    {
+      "id": "fused-12",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 3328
+      },
+      "hidden": 3328
+    },
+    {
+      "id": "fused-13",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 3584
+      },
+      "hidden": 3584
+    },
+    {
+      "id": "fused-14",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 3840
+      },
+      "hidden": 3840
+    },
+    {
+      "id": "fused-15",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 4096
+      },
+      "hidden": 4096
+    },
+    {
+      "id": "fused-16",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 4352
+      },
+      "hidden": 4352
+    },
+    {
+      "id": "fused-17",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 4608
+      },
+      "hidden": 4608
+    },
+    {
+      "id": "fused-18",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 4864
+      },
+      "hidden": 4864
+    },
+    {
+      "id": "fused-19",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 5120
+      },
+      "hidden": 5120
+    },
+    {
+      "id": "fused-20",
+      "family": "engram_fused_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_fused_weight",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "hc": 4,
+        "hidden": 512
+      },
+      "hidden": 512
+    },
+    {
+      "id": "hash-01",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": true,
+      "plan_group": "engram_hash",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "ngram": 3,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-02",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "num_tokens": 8192,
+        "ngram": 4,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 8192,
+      "ngram": 4,
+      "mask": true
+    },
+    {
+      "id": "hash-03",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "num_tokens": 1024,
+        "ngram": 3,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1024,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-04",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "ngram": 4,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 128,
+      "ngram": 4,
+      "mask": false
+    },
+    {
+      "id": "hash-05",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "num_tokens": 512,
+        "ngram": 3,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": false
+      },
+      "tokens": 512,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-06",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "num_tokens": 8001,
+        "ngram": 3,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": false
+      },
+      "tokens": 8001,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-07",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "ngram": 3,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 128,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-08",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "num_tokens": 8192,
+        "ngram": 3,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 8192,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-09",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "ngram": 4,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1,
+      "ngram": 4,
+      "mask": true
+    },
+    {
+      "id": "hash-10",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "num_tokens": 1024,
+        "ngram": 4,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1024,
+      "ngram": 4,
+      "mask": false
+    },
+    {
+      "id": "hash-11",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "num_tokens": 512,
+        "ngram": 4,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": true
+      },
+      "tokens": 512,
+      "ngram": 4,
+      "mask": true
+    },
+    {
+      "id": "hash-12",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "num_tokens": 8001,
+        "ngram": 4,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": true
+      },
+      "tokens": 8001,
+      "ngram": 4,
+      "mask": true
+    },
+    {
+      "id": "hash-13",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "ngram": 3,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-14",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "num_tokens": 1024,
+        "ngram": 3,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1024,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-15",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "ngram": 3,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 128,
+      "ngram": 3,
+      "mask": false
+    },
+    {
+      "id": "hash-16",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "num_tokens": 512,
+        "ngram": 3,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": true
+      },
+      "tokens": 512,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-17",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "num_tokens": 8001,
+        "ngram": 3,
+        "layers": 2,
+        "tables": 8,
+        "with_mask": true
+      },
+      "tokens": 8001,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-18",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "num_tokens": 8192,
+        "ngram": 3,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 8192,
+      "ngram": 3,
+      "mask": true
+    },
+    {
+      "id": "hash-19",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "ngram": 4,
+        "with_mask": false,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1,
+      "ngram": 4,
+      "mask": false
+    },
+    {
+      "id": "hash-20",
+      "family": "engram_hash",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "engram_hash",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "num_tokens": 1024,
+        "ngram": 4,
+        "with_mask": true,
+        "layers": 2,
+        "tables": 8
+      },
+      "tokens": 1024,
+      "ngram": 4,
+      "mask": true
+    },
+    {
+      "id": "normalize-01",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": true,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "num_topk": 1,
+        "dtype": "fp32"
+      },
+      "tokens": 1,
+      "topk": 1
+    },
+    {
+      "id": "normalize-02",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "num_tokens": 8001,
+        "num_topk": 9,
+        "dtype": "fp32"
+      },
+      "tokens": 8001,
+      "topk": 9
+    },
+    {
+      "id": "normalize-03",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "num_tokens": 127,
+        "num_topk": 32,
+        "dtype": "fp32"
+      },
+      "tokens": 127,
+      "topk": 32
+    },
+    {
+      "id": "normalize-04",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "num_topk": 6,
+        "dtype": "fp32"
+      },
+      "tokens": 128,
+      "topk": 6
+    },
+    {
+      "id": "normalize-05",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "num_tokens": 4001,
+        "num_topk": 8,
+        "dtype": "fp32"
+      },
+      "tokens": 4001,
+      "topk": 8
+    },
+    {
+      "id": "normalize-06",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "num_tokens": 512,
+        "num_topk": 1,
+        "dtype": "fp32"
+      },
+      "tokens": 512,
+      "topk": 1
+    },
+    {
+      "id": "normalize-07",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "num_topk": 32,
+        "dtype": "fp32"
+      },
+      "tokens": 1,
+      "topk": 32
+    },
+    {
+      "id": "normalize-08",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "num_topk": 6,
+        "dtype": "fp32"
+      },
+      "tokens": 1,
+      "topk": 6
+    },
+    {
+      "id": "normalize-09",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "num_topk": 8,
+        "dtype": "fp32"
+      },
+      "tokens": 1,
+      "topk": 8
+    },
+    {
+      "id": "normalize-10",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "num_tokens": 1,
+        "num_topk": 9,
+        "dtype": "fp32"
+      },
+      "tokens": 1,
+      "topk": 9
+    },
+    {
+      "id": "normalize-11",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "num_tokens": 127,
+        "num_topk": 1,
+        "dtype": "fp32"
+      },
+      "tokens": 127,
+      "topk": 1
+    },
+    {
+      "id": "normalize-12",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "num_tokens": 127,
+        "num_topk": 6,
+        "dtype": "fp32"
+      },
+      "tokens": 127,
+      "topk": 6
+    },
+    {
+      "id": "normalize-13",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "num_tokens": 127,
+        "num_topk": 8,
+        "dtype": "fp32"
+      },
+      "tokens": 127,
+      "topk": 8
+    },
+    {
+      "id": "normalize-14",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "num_tokens": 127,
+        "num_topk": 9,
+        "dtype": "fp32"
+      },
+      "tokens": 127,
+      "topk": 9
+    },
+    {
+      "id": "normalize-15",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "num_topk": 1,
+        "dtype": "fp32"
+      },
+      "tokens": 128,
+      "topk": 1
+    },
+    {
+      "id": "normalize-16",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "num_topk": 32,
+        "dtype": "fp32"
+      },
+      "tokens": 128,
+      "topk": 32
+    },
+    {
+      "id": "normalize-17",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "num_topk": 8,
+        "dtype": "fp32"
+      },
+      "tokens": 128,
+      "topk": 8
+    },
+    {
+      "id": "normalize-18",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "num_tokens": 128,
+        "num_topk": 9,
+        "dtype": "fp32"
+      },
+      "tokens": 128,
+      "topk": 9
+    },
+    {
+      "id": "normalize-19",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "num_tokens": 4001,
+        "num_topk": 1,
+        "dtype": "fp32"
+      },
+      "tokens": 4001,
+      "topk": 1
+    },
+    {
+      "id": "normalize-20",
+      "family": "moe_normalize_weight",
+      "role": "discovery",
+      "pilot": false,
+      "plan_group": "moe_normalize_weight",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "num_tokens": 4001,
+        "num_topk": 32,
+        "dtype": "fp32"
+      },
+      "tokens": 4001,
+      "topk": 32
+    }
+  ]
+}
