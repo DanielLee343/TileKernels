@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793984020650413106.tar.gz",
-  "size": 4921740,
-  "sha256": "bf99438611cc9da2820bd6c752ef9a729197b3a0a86ab73b67fc2c5c05084a44",
+  "path": "/workspace/tk-starter-sync-1793984188588085108.tar.gz",
+  "size": 5121023,
+  "sha256": "213784e641ea63a09c9c5ecada0f6019cdc6e7274d34aeeb8506fcac48aa8d24",
   "ids": [
     "quant_norm_forward-01",
     "quant_norm_backward-01",
@@ -90,7 +90,12 @@
     "quant_swiglu_forward-05",
     "quant_swiglu_forward-06",
     "quant_swiglu_forward-07",
-    "quant_swiglu_forward-08"
+    "quant_swiglu_forward-08",
+    "quant_swiglu_forward-09",
+    "quant_swiglu_forward-10",
+    "quant_swiglu_forward-11",
+    "quant_swiglu_forward-12",
+    "quant_swiglu_forward-13"
   ],
   "status": "running"
 }
