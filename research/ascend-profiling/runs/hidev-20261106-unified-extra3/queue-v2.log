@@ -75,3 +75,5 @@ moe_topk_gate_forward-03 needs_review in-place profiler replay restoration has n
 moe_topk_gate_forward-04 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_forward-05 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_forward-06 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_forward-07 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_forward-08 needs_review in-place profiler replay restoration has not been independently verified

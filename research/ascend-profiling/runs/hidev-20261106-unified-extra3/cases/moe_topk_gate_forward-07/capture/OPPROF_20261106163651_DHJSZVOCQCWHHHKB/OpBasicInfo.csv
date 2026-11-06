@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+moe_topk_gate_forward_kernel_asc_kernel,vector,5.266000,56,NA,0,735002,1650,1650,
