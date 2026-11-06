@@ -1,0 +1,41 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1106 18:54:13.312815951 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-06 18:54:20] [941529] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: engram_sinkhorn_momentum_kernel_asc_kernel
+[2026-11-06 18:54:20] [941529] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-06 18:54:20] [941529] [ProfConfig.cpp:83] [WARN] Some sub block may lose dynamic instrumentation data because sub blocks exceeding 108.
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: engram_sinkhorn_momentum_kernel_asc_kernel, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE2 bandwidth utilization lower than 80% when active.
+	2) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: engram_sinkhorn_momentum_kernel_asc_kernel
+	Op Type: vector
+	Task Duration(us): 4.138000
+	Block Dim: 56
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 941529
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/tilekernels-expert-unified-extra5-20261106/cases/engram_sinkhorn_momentum_update-18/capture/OPPROF_20261106185412_FLMDIDHGAYWIQIDS
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

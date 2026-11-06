@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793991258145890621.tar.gz",
-  "size": 2596393,
-  "sha256": "0718bdc33236a47ae776269655da7e23cd0261d3f8a44b910ce067553989d1fc",
+  "path": "/workspace/tk-starter-sync-1793991374316694924.tar.gz",
+  "size": 2752029,
+  "sha256": "a547a1dc4ea0450c5b83dc27097681fec59d80aed39cba5cde929c8d5ac10555",
   "ids": [
     "engram_gate_fwd-01",
     "engram_gate_bwd-01",
@@ -63,7 +63,11 @@
     "engram_sinkhorn_momentum_update-14",
     "engram_sinkhorn_momentum_update-15",
     "engram_sinkhorn_momentum_update-16",
-    "engram_sinkhorn_momentum_update-17"
+    "engram_sinkhorn_momentum_update-17",
+    "engram_sinkhorn_momentum_update-18",
+    "engram_sinkhorn_momentum_update-19",
+    "engram_sinkhorn_momentum_update-20",
+    "engram_sinkhorn_step-02"
   ],
   "status": "running"
 }
