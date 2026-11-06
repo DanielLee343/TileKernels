@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+mhc_pre_big_fuse_fwd_asc_kernel,vector,12.392000,56,NA,0,717011,1650,1650,
