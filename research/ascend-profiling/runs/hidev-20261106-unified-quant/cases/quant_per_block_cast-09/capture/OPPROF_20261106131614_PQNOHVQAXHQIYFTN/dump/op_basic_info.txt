@@ -1,0 +1,10 @@
+Op Name=per_block_cast_kernel_kernel
+Block Dim=56
+Run Soc Version=Ascend950PR_9579
+Device Id=0
+Pid=407251
+Current Freq=1650
+Rated Freq=1650
+Is MC2=0
+Is Lccl=0
+Has Simt=0
