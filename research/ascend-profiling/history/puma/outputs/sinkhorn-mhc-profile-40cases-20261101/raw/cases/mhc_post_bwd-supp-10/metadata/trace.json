@@ -1,0 +1,165 @@
+{
+  "case_id": "mhc_post_bwd-supp-10",
+  "case": {
+    "task": "mhc_post_bwd",
+    "id": "mhc_post_bwd-supp-10",
+    "input_shapes": [
+      [
+        1,
+        65,
+        4,
+        512
+      ],
+      [
+        1,
+        65,
+        4,
+        512
+      ],
+      [
+        1,
+        65,
+        4,
+        4
+      ],
+      [
+        1,
+        65,
+        512
+      ],
+      [
+        1,
+        65,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "attrs": {},
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        1,
+        65,
+        4,
+        512
+      ],
+      [
+        1,
+        65,
+        4,
+        4
+      ],
+      [
+        1,
+        65,
+        512
+      ],
+      [
+        1,
+        65,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "logical_input_bytes": 604240,
+    "logical_output_bytes": 338000,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:58:59.225966+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 3,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "d_residual",
+    "d_comb",
+    "d_x",
+    "d_post"
+  ],
+  "input_sha256": [
+    "990004d8cec50606960d7f1dbc9e2e5325709ca0dda772a85339d0f6b01111b6",
+    "db7f8348304be78f46909d400a0d48d2c7830bf13d4af435abbc7d6112df8da1",
+    "a0503b2ca83a8d34dc0f50b89f2d43d3205d081799aa2f8c6fbada17467a8661",
+    "78579553d34e32ef0096f6e8ef60a2bbcaac5e8d529ab8c8ee3af6eaeb4d1465",
+    "c5241ce5a8352f0e5582b80e53c68df04c413b3d76bb9c1b5b0697503fa7d3f2"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.post_asc.mhc_post_bwd_asc",
+    "kwargs": {
+      "h_blk": 512,
+      "num_stages": 3,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "d_o",
+      "comb_res_mix",
+      "residual",
+      "post_layer_mix",
+      "x"
+    ],
+    "global_symbols": [
+      "mhc_post_bwd_asc"
+    ],
+    "source_sha256": "c8af940e16b1e6235f348f9cefd29d36730c2acc9ec9c706a8ce3156d7874b4f",
+    "source_file": "cases/mhc_post_bwd-supp-10/metadata/launch-kernel.cpp",
+    "out_idx": "[5, 6, 7, 8]",
+    "native_output_order": [
+      "d_comb",
+      "d_residual",
+      "d_post",
+      "d_x"
+    ],
+    "cann_output_permutation": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "target_launches": [
+    {
+      "index": 0,
+      "mstx_range": "mhc_post_bwd-supp-10/target/0",
+      "global_symbols": [
+        "mhc_post_bwd_asc"
+      ]
+    },
+    {
+      "index": 1,
+      "mstx_range": "mhc_post_bwd-supp-10/target/1",
+      "global_symbols": [
+        "mhc_post_bwd_asc"
+      ]
+    },
+    {
+      "index": 2,
+      "mstx_range": "mhc_post_bwd-supp-10/target/2",
+      "global_symbols": [
+        "mhc_post_bwd_asc"
+      ]
+    }
+  ],
+  "correctness": {
+    "status": "checked_in_separate_prepare_process",
+    "scope": "no CPU reference work in target launch range"
+  },
+  "finished_utc": "2026-11-01T09:59:05.463597+00:00"
+}

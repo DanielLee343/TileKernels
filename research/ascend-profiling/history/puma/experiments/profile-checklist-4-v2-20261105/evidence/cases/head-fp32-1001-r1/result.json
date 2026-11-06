@@ -1,0 +1,325 @@
+{
+  "id": "head-fp32-1001-r1",
+  "family": "mhc_head",
+  "role": "expert",
+  "shape": [
+    1001,
+    4
+  ],
+  "dtype": "float32",
+  "trace_command": [
+    "msprof",
+    "--output=/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1001-r1/trace",
+    "--task-time=on",
+    "--runtime-api=on",
+    "--ascendcl=on",
+    "--msproftx=on",
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/profile-checklist-4-v2-20261105/write.py",
+    "app",
+    "head-fp32-1001-r1",
+    "trace"
+  ],
+  "trace_rc": 0,
+  "target_tasks": [
+    {
+      "Op Name": "mhc_head_compute_mix_fwd_asc_kernel",
+      "Task Type": "AI_VECTOR_CORE",
+      "Task ID": "6",
+      "Stream ID": "61",
+      "Block Num": "56",
+      "Mix Block Num": "0"
+    }
+  ],
+  "trace_files": [
+    "cases/head-fp32-1001-r1/trace/PROF_000001_20261105043936062_00377197BDRGIELA/mindstudio_profiler_output/op_summary_20261105043945.csv"
+  ],
+  "default_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1001-r1/capture",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=cold_call",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/profile-checklist-4-v2-20261105/write.py",
+    "app",
+    "head-fp32-1001-r1",
+    "default"
+  ],
+  "default_rc": 0,
+  "capture": {
+    "identity": {
+      "Op Name": "mhc_head_compute_mix_fwd_asc_kernel",
+      "Op Type": "vector",
+      "Block Dim": "56",
+      "Mix Block Dim": "NA",
+      "Device Id": "0",
+      "Pid": "377483",
+      "Current Freq": "1650",
+      "Rated Freq": "1650"
+    },
+    "files": {
+      "ArithmeticUtilization": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/ArithmeticUtilization.csv",
+        "sha256": "3ba953e31b6465a7f627a7463ca23d315eff9c2e76f4e8c5d39aa481882b1f56",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_cube_ratio",
+          "aic_cube_fp_ratio",
+          "aic_cube_int_ratio",
+          "aic_cube_total_instr_number",
+          "aic_cube_fp_instr_number",
+          "aic_cube_int_instr_number",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_vec_ratio",
+          "aiv_vec_vf_ratio",
+          "aiv_vec_sfu_ratio",
+          "aiv_vec_simt_vf_ratio",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "L2Cache": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/L2Cache.csv",
+        "sha256": "c1cdb5db667cb8259d200fb02cf1cccc0bec9f297aa4e11b7dd352569e03283d",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_read_close_hit",
+          "aic_read_close_miss",
+          "aic_read_close_victim",
+          "aic_read_far_hit",
+          "aic_read_far_miss",
+          "aic_read_far_victim",
+          "aic_read_hit_rate(%)",
+          "aic_write_close_hit",
+          "aic_write_close_miss",
+          "aic_write_close_victim",
+          "aic_write_far_hit",
+          "aic_write_far_miss",
+          "aic_write_far_victim",
+          "aic_write_hit_rate(%)",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_read_close_hit",
+          "aiv_read_close_miss",
+          "aiv_read_close_victim",
+          "aiv_read_far_hit",
+          "aiv_read_far_miss",
+          "aiv_read_far_victim",
+          "aiv_read_hit_rate(%)",
+          "aiv_write_close_hit",
+          "aiv_write_close_miss",
+          "aiv_write_close_victim",
+          "aiv_write_far_hit",
+          "aiv_write_far_miss",
+          "aiv_write_far_victim",
+          "aiv_write_hit_rate(%)",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "Memory": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/Memory.csv",
+        "sha256": "5ccf054a0fb10c0e67d6d06f0b50425b91e2e59564bae29c464e4dd25450ae93",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_l1_read_bw(GB/s)",
+          "aic_l1_write_bw(GB/s)",
+          "aic_main_mem_read_bw(GB/s)",
+          "aic_main_mem_write_bw(GB/s)",
+          "aic_mte1_instructions",
+          "aic_mte1_ratio",
+          "aic_mte2_instructions",
+          "aic_mte2_ratio",
+          "aic_mte3_instructions",
+          "aic_mte3_ratio",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_ub_to_gm_bw(GB/s)",
+          "aiv_gm_to_ub_bw(GB/s)",
+          "aiv_main_mem_read_bw(GB/s)",
+          "aiv_main_mem_write_bw(GB/s)",
+          "aiv_mte2_instructions",
+          "aiv_mte2_ratio",
+          "aiv_mte3_instructions",
+          "aiv_mte3_ratio",
+          "read_main_memory_datas(KB)",
+          "write_main_memory_datas(KB)",
+          "GM_to_L1_datas(KB)",
+          "GM_to_L1_bw_usage_rate(%)",
+          "L0C_to_L1_datas(KB)",
+          "L0C_to_L1_bw_usage_rate(%)",
+          "L0C_to_GM_datas(KB)",
+          "L0C_to_GM_bw_usage_rate(%)",
+          "GM_to_UB_datas(KB)",
+          "GM_to_UB_bw_usage_rate(%)",
+          "UB_to_GM_datas(KB)",
+          "UB_to_GM_bw_usage_rate(%)",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "MemoryL0": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/MemoryL0.csv",
+        "sha256": "24a58426c4d2abdedeb0875e0323704959504ef7d88ecb42f461b847384fc52b",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_l0a_read_bw(GB/s)",
+          "aic_l0a_write_bw(GB/s)",
+          "aic_l0b_read_bw(GB/s)",
+          "aic_l0b_write_bw(GB/s)",
+          "aic_l0c_read_bw_cube(GB/s)",
+          "aic_l0c_write_bw_cube(GB/s)",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "MemoryUB": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/MemoryUB.csv",
+        "sha256": "c99567376710797f6446315396ef65bc712c5235b5010da6fed7f282b118f771",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_ub_read_bw_vector(GB/s)",
+          "aiv_ub_write_bw_vector(GB/s)",
+          "aiv_ub_read_bw_gm(GB/s)",
+          "aiv_ub_write_bw_gm(GB/s)",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "OpBasicInfo": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/OpBasicInfo.csv",
+        "sha256": "95ca4959512c7f08cc10fa274147e75249f11a924498940f503c6ff1db304b90",
+        "fields": [
+          "Op Name",
+          "Op Type",
+          "Task Duration(us)",
+          "Block Dim",
+          "Mix Block Dim",
+          "Device Id",
+          "Pid",
+          "Current Freq",
+          "Rated Freq",
+          ""
+        ],
+        "rows": 1
+      },
+      "PipeUtilization": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/PipeUtilization.csv",
+        "sha256": "2e2d7dc081a8606ea8c7240ced9f6fe1d2d667d7717861bd51d94d6ab829de63",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_cube_time(us)",
+          "aic_cube_ratio",
+          "aic_scalar_time(us)",
+          "aic_scalar_ratio",
+          "aic_mte1_time(us)",
+          "aic_mte1_ratio",
+          "aic_mte1_active_bw(GB/s)",
+          "aic_mte2_time(us)",
+          "aic_mte2_ratio",
+          "aic_mte2_active_bw(GB/s)",
+          "aic_mte3_time(us)",
+          "aic_mte3_ratio",
+          "aic_mte3_active_bw(GB/s)",
+          "aic_fixpipe_time(us)",
+          "aic_fixpipe_ratio",
+          "aic_fixpipe_active_bw(GB/s)",
+          "aic_icache_miss_rate",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_vec_time(us)",
+          "aiv_vec_ratio",
+          "aiv_scalar_time(us)",
+          "aiv_scalar_ratio",
+          "aiv_mte2_time(us)",
+          "aiv_mte2_ratio",
+          "aiv_mte2_active_bw(GB/s)",
+          "aiv_mte3_time(us)",
+          "aiv_mte3_ratio",
+          "aiv_mte3_active_bw(GB/s)",
+          "aiv_icache_miss_rate",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      },
+      "ResourceConflictRatio": {
+        "path": "cases/head-fp32-1001-r1/capture/OPPROF_20261105043947_NWUVYRMDHRYPHERQ/ResourceConflictRatio.csv",
+        "sha256": "bc10881493fcee5b3d453949fa02d0ef67f98bec30979dd56bbffb3b017d9f3a",
+        "fields": [
+          "block_id",
+          "sub_block_id",
+          "aic_time(us)",
+          "aic_total_cycles",
+          "aic_cube_wait_ratio",
+          "aic_mte1_wait_ratio",
+          "aic_mte2_wait_ratio",
+          "aic_mte3_wait_ratio",
+          "aiv_time(us)",
+          "aiv_total_cycles",
+          "aiv_vec_stu_cflt_ratio",
+          "aiv_vec_ldu_cflt_ratio",
+          "aiv_vec_sfu_cflt_ratio",
+          "aiv_vec_wait_ratio",
+          "aiv_mte2_wait_ratio",
+          "aiv_mte3_wait_ratio",
+          ""
+        ],
+        "rows": 56,
+        "sub_block_counts": {
+          "vector0": 56
+        }
+      }
+    },
+    "match": "one ordinary compute task and one cold MSTX capture; block dimensions match",
+    "application_operator_name": "mhc_head_compute_mix_fwd_asc_kernel"
+  },
+  "status": "admitted"
+}

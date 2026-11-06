@@ -1,0 +1,142 @@
+{
+  "runtime_kernel": "engram_hash_kernel_asc_kernel",
+  "native_symbol": "engram_hash_kernel_asc",
+  "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11",
+  "inputs": [
+    {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "int32",
+      "stride": [
+        3,
+        1
+      ],
+      "bytes": 12,
+      "sha256": "55dbbaa6a0da8bcbb4ecb63cbc875019670679dc64286983b76ec9f61392d851"
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "int64",
+      "stride": [
+        3,
+        1
+      ],
+      "bytes": 48,
+      "sha256": "e29e960b378f20bf772784011cd37cb91b26177163c23f80140d6456e5bfdfba"
+    },
+    {
+      "shape": [
+        2,
+        2,
+        8
+      ],
+      "dtype": "int32",
+      "stride": [
+        16,
+        8,
+        1
+      ],
+      "bytes": 128,
+      "sha256": "2603395e1b6d57c572c5793e0c985ae86dc0211e4e45c431fb9f7ffa2f879e49"
+    },
+    {
+      "shape": [
+        2,
+        16
+      ],
+      "dtype": "int32",
+      "stride": [
+        16,
+        1
+      ],
+      "bytes": 128,
+      "sha256": "3744d679cff80f833c76d057f25b56ee67e28da40c90f4f6c73b937e9a173626"
+    },
+    null
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        1,
+        3
+      ],
+      "dtype": "int32",
+      "stride": [
+        3,
+        1
+      ],
+      "bytes": 12
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "int64",
+      "stride": [
+        3,
+        1
+      ],
+      "bytes": 48
+    },
+    {
+      "shape": [
+        2,
+        2,
+        8
+      ],
+      "dtype": "int32",
+      "stride": [
+        16,
+        8,
+        1
+      ],
+      "bytes": 128
+    },
+    {
+      "shape": [
+        2,
+        16
+      ],
+      "dtype": "int32",
+      "stride": [
+        16,
+        1
+      ],
+      "bytes": 128
+    },
+    null
+  ],
+  "outputs": [
+    {
+      "shape": [
+        2,
+        1,
+        16
+      ],
+      "dtype": "int32",
+      "stride": [
+        16,
+        16,
+        1
+      ],
+      "bytes": 128
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999999,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

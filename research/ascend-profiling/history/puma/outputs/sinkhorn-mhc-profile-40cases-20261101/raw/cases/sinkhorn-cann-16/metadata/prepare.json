@@ -1,0 +1,112 @@
+{
+  "case_id": "sinkhorn-cann-16",
+  "case": {
+    "task": "sinkhorn",
+    "id": "sinkhorn-cann-16",
+    "input_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "iter_step": 20,
+      "eps": 1e-08
+    },
+    "case_source": "cann_public",
+    "source_case_id": "16",
+    "source_value_range": "[-1, 1]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level3/mhc_sinkhorn/cases.csv",
+    "source_csv_sha256": "89a16017e09a78f6f58da15d427417cef3680b6f923c96bd9af93bae4853e322",
+    "output_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 65536,
+    "logical_output_bytes": 65536,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:42:30.503973+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 0,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "comb_out"
+  ],
+  "input_sha256": [
+    "f79c1d5251bc822c37d2e7492ae2256f0faac4480b212dc5ab7711561a549e56"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.sinkhorn_asc.mhc_sinkhorn_fwd_asc",
+    "kwargs": {
+      "repeat": 20,
+      "eps": 1e-08,
+      "token_block_size": 4,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "comb_res_mix",
+      "comb_res_mix_out"
+    ],
+    "global_symbols": [
+      "mhc_sinkhorn_fwd_asc"
+    ],
+    "source_sha256": "ba62e60057a76f30bd16ca7a7510b1e959f5827873c8f3f5b839ce0cbf9dafdf",
+    "source_file": "cases/sinkhorn-cann-16/metadata/prepare-kernel.cpp",
+    "out_idx": "[]",
+    "native_output_order": [
+      "preallocated_comb_out"
+    ],
+    "cann_output_permutation": [
+      0
+    ]
+  },
+  "outputs": [
+    {
+      "shape": [
+        1024,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "elements": 16384
+    }
+  ],
+  "native_matches_frozen_adapter": [
+    true
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; CPU CANN reference in token chunks of 64; mHC uses original FP64 equations; finite generated inputs, not full CANN benchmark contract",
+    "reference_chunk_tokens": 64,
+    "total_tokens": 1024,
+    "metrics": [
+      {
+        "output": 0,
+        "name": "comb_out",
+        "checked_elements": 16384,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.4901161193847656e-07,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T09:42:39.233208+00:00"
+}

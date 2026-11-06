@@ -1,0 +1,170 @@
+{
+  "case_id": "rope-supp-13",
+  "case": {
+    "task": "rope",
+    "id": "rope-supp-13",
+    "input_shapes": [
+      [
+        1,
+        1024,
+        1,
+        64
+      ],
+      [
+        1,
+        1024,
+        1,
+        64
+      ],
+      [
+        1024,
+        32
+      ],
+      [
+        1024,
+        32
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "layout": 0,
+      "rotaryMode": "half"
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        1,
+        1024,
+        1,
+        64
+      ],
+      [
+        1,
+        1024,
+        1,
+        64
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "bfloat16"
+    ],
+    "logical_input_bytes": 524288,
+    "logical_output_bytes": 262144,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:17:54.109507+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 0,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [],
+  "target_calls": [],
+  "input_sha256": [
+    "3fe53d30f6aa38e870f17b3b11cb165ea29486336fd105b8466824efd15c21c2",
+    "e0edbe9d967f0884fe6958d697bc80d41a7da9717a6fc56b38fab0a9a990cd01",
+    "fa187f6955a159aad00e215c59088d747bcf42ff5f7adb95c9c680f4ed63c59a",
+    "0ef43e6de292cfb433686d61de00b063ad72daf0fffcce0dd5d6e65b2f736145"
+  ],
+  "native": [
+    {
+      "role": "Q",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "bfloat16",
+        "positions_dtype": "int32",
+        "nheads": "1",
+        "rotary_dim": "64",
+        "has_position_tensor": "False",
+        "interleaved": "False",
+        "conjugate": "False",
+        "cos_sin_stride": "64",
+        "x_stride_0": "64",
+        "x_stride_1": "64"
+      },
+      "source_sha256": "bd8136089476eae1876ca3654932ccbfa5744b6b7b869c3387878e33fd2785f0",
+      "source_file": "cases/rope-supp-13/metadata/prepare-Q-kernel.cpp"
+    },
+    {
+      "role": "K",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "bfloat16",
+        "positions_dtype": "int32",
+        "nheads": "1",
+        "rotary_dim": "64",
+        "has_position_tensor": "False",
+        "interleaved": "False",
+        "conjugate": "False",
+        "cos_sin_stride": "64",
+        "x_stride_0": "64",
+        "x_stride_1": "64"
+      },
+      "source_sha256": "bd8136089476eae1876ca3654932ccbfa5744b6b7b869c3387878e33fd2785f0",
+      "source_file": "cases/rope-supp-13/metadata/prepare-K-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "Q",
+    "K"
+  ],
+  "outputs": [
+    {
+      "shape": [
+        1,
+        1024,
+        1,
+        64
+      ],
+      "dtype": "bfloat16",
+      "elements": 65536
+    },
+    {
+      "shape": [
+        1,
+        1024,
+        1,
+        64
+      ],
+      "dtype": "bfloat16",
+      "elements": 65536
+    }
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; original frozen CANN CPU reference in row/token chunks; finite inputs, not full CANN benchmark contract",
+    "metrics": [
+      {
+        "output": 0,
+        "checked_elements": 65536,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.0,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      },
+      {
+        "output": 1,
+        "checked_elements": 65536,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.00048828125,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T15:18:00.754774+00:00"
+}

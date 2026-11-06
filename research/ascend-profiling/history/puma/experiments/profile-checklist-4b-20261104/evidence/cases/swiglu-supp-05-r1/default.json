@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 1.0000000000000018,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true,
+      "historical_full_isclose": true
+    }
+  ],
+  "inputs": [
+    {
+      "shape": [
+        511,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 2093056,
+      "sha256": "5ace45d86785761577b5bae8601b11450c9fd398e08fd15f908647a6cebcaa3b"
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        511,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        1024,
+        1
+      ],
+      "bytes": 1046528
+    }
+  ],
+  "source_sha256": "fc3c34cb22f9400444e18d70babe6353b5f2f127b75e4b39acc6bec3d4b477af",
+  "runtime_kernel": "swiglu_forward_kernel_kernel"
+}

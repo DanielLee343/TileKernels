@@ -1,0 +1,33 @@
+[INFO] Start profiling....
+[INFO] Start export data in PROF_000001_20261105043908215_00376457PFHKGBMR.
+Thu 05 Nov 2026 04:39:15 [WARNING] [MSVP] [376583] msprof_entrance.py: Msprof analysis is parsing data as root, which may cause potential system security risks.
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376583] msprof_cpp_pipeline.py: Full C pipeline is unavailable (CHIP_UNSUPPORTED,UNKNOWN_RAW_DATA,CHIP_UNSUPPORTED); fall back to the existing flow.
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: Start analyzing data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/host" ...
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: It may take few minutes, please be patient ...
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: Analysis data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/host" finished.
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: Start analyzing data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0" ...
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: It may take few minutes, please be patient ...
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_common.py: Analysis data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0" finished.
+Thu 05 Nov 2026 04:39:15 [INFO] [MSVP] [376585] msprof_export.py: All collected data will be exported, path is: /workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0.
+Thu 05 Nov 2026 04:39:16 [WARNING] [MSVP] [376701] msprof_entrance.py: Msprof analysis is parsing data as root, which may cause potential system security risks.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376701] msprof_cpp_pipeline.py: Full C pipeline is unavailable (CHIP_UNSUPPORTED,UNKNOWN_RAW_DATA,CHIP_UNSUPPORTED); fall back to the existing flow.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: The data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/host" has been analyzed. Parsing phase will be skipped.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: The data in "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0" has been analyzed. Parsing phase will be skipped.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: All collected data will be exported, path is: /workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: There is no summary data to export for "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/host"
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: All collected data will be exported, path is: /workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_export.py: There is no summary data to export for "/workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/device_0"
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_common.py: Start exporting summary output_file.
+Thu 05 Nov 2026 04:39:16 [INFO] [MSVP] [376703] msprof_common.py: End exporting summary output_file.The file is stored in the /workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR/mindstudio_profiler_output path.
+[INFO] Export all data in PROF_000001_20261105043908215_00376457PFHKGBMR done.
+[INFO] Start query data in PROF_000001_20261105043908215_00376457PFHKGBMR.
+Thu 05 Nov 2026 04:39:17 [WARNING] [MSVP] [376736] msprof_entrance.py: Msprof analysis is parsing data as root, which may cause potential system security risks.
+Job Info	Device ID	Dir Name	Collection Time           	Model ID	Iteration Number	Top Time Iteration	Rank ID	
+
+NA      	         	host    	2026-11-05 04:39:09.175872	N/A     	N/A             	N/A               	-1     	
+
+NA      	0        	device_0	2026-11-05 04:39:09.176926	N/A     	N/A             	N/A               	-1     	
+
+[INFO] Query all data in PROF_000001_20261105043908215_00376457PFHKGBMR done.
+[INFO] Profiling finished.
+[INFO] Process profiling data complete. Data is saved in /workspace/profile-checklist-4-v2-20261105/cases/head-fp32-1024-r1/trace/PROF_000001_20261105043908215_00376457PFHKGBMR

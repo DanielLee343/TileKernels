@@ -1,0 +1,2 @@
+2026-11-04 15:34:26  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `engram_hash_kernel_asc` with `out_idx=None`
+2026-11-04 15:34:29  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `engram_hash_kernel_asc`

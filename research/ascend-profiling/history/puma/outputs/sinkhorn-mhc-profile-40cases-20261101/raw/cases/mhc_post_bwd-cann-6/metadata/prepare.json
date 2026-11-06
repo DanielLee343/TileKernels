@@ -1,0 +1,230 @@
+{
+  "case_id": "mhc_post_bwd-cann-6",
+  "case": {
+    "task": "mhc_post_bwd",
+    "id": "mhc_post_bwd-cann-6",
+    "input_shapes": [
+      [
+        1,
+        64,
+        4,
+        384
+      ],
+      [
+        1,
+        64,
+        4,
+        384
+      ],
+      [
+        1,
+        64,
+        4,
+        4
+      ],
+      [
+        1,
+        64,
+        384
+      ],
+      [
+        1,
+        64,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "attrs": {},
+    "case_source": "cann_public",
+    "source_case_id": "6",
+    "source_value_range": "[[-0.001, 0.001], [-0.001, 0.001], [-0.001, 0.001], [-0.001, 0.001], [-0.001, 0.001]]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level3/mhc_post_grad/cases.csv",
+    "source_csv_sha256": "f68473596ba4a9fe76d23c1a80107f67f8452a1f09418c43b562273081df490e",
+    "output_shapes": [
+      [
+        1,
+        64,
+        4,
+        384
+      ],
+      [
+        1,
+        64,
+        4,
+        4
+      ],
+      [
+        1,
+        64,
+        384
+      ],
+      [
+        1,
+        64,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "logical_input_bytes": 447488,
+    "logical_output_bytes": 250880,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:51:14.954880+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 0,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "d_residual",
+    "d_comb",
+    "d_x",
+    "d_post"
+  ],
+  "input_sha256": [
+    "96a7878fda5fcebc00653d808cf91590b3d097251413cc41dbb74237aacc1d00",
+    "688091abdb2c83727845ba2c453e0b4b9ae9e53065d4712115d8c376ca390b71",
+    "06a04554a863ef180c0c5fd2313bcc138c6c907db97e3b5426650a287946a3c6",
+    "aef18cefe5fef2038bcd99db6aeaac0519d118372cd337e5f5e0abd6a6fa78ee",
+    "857729be35deae742d02f130e0f5c9c38d718fcbba80427209ae7bacef5858e8"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.post_asc.mhc_post_bwd_asc",
+    "kwargs": {
+      "h_blk": 384,
+      "num_stages": 3,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "d_o",
+      "comb_res_mix",
+      "residual",
+      "post_layer_mix",
+      "x"
+    ],
+    "global_symbols": [
+      "mhc_post_bwd_asc"
+    ],
+    "source_sha256": "46788724bf5338b49303de54825dfe5116d66a62312a6e195f4087af1792a7d3",
+    "source_file": "cases/mhc_post_bwd-cann-6/metadata/prepare-kernel.cpp",
+    "out_idx": "[5, 6, 7, 8]",
+    "native_output_order": [
+      "d_comb",
+      "d_residual",
+      "d_post",
+      "d_x"
+    ],
+    "cann_output_permutation": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "outputs": [
+    {
+      "shape": [
+        1,
+        64,
+        4,
+        384
+      ],
+      "dtype": "bfloat16",
+      "elements": 98304
+    },
+    {
+      "shape": [
+        1,
+        64,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "elements": 1024
+    },
+    {
+      "shape": [
+        1,
+        64,
+        384
+      ],
+      "dtype": "bfloat16",
+      "elements": 24576
+    },
+    {
+      "shape": [
+        1,
+        64,
+        4
+      ],
+      "dtype": "float32",
+      "elements": 256
+    }
+  ],
+  "native_matches_frozen_adapter": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; CPU CANN reference in token chunks of 64; mHC uses original FP64 equations; finite generated inputs, not full CANN benchmark contract",
+    "reference_chunk_tokens": 64,
+    "total_tokens": 64,
+    "metrics": [
+      {
+        "output": 0,
+        "name": "d_residual",
+        "checked_elements": 98304,
+        "mismatch_elements": 0,
+        "max_abs_error": 6.103515625e-05,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      },
+      {
+        "output": 1,
+        "name": "d_comb",
+        "checked_elements": 1024,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      },
+      {
+        "output": 2,
+        "name": "d_x",
+        "checked_elements": 24576,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      },
+      {
+        "output": 3,
+        "name": "d_post",
+        "checked_elements": 256,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T09:51:24.744194+00:00"
+}

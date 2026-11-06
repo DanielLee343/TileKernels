@@ -1,0 +1,195 @@
+{
+  "case_id": "rope-cann-20",
+  "case": {
+    "task": "rope",
+    "id": "rope-cann-20",
+    "input_shapes": [
+      [
+        7,
+        2047,
+        7,
+        128
+      ],
+      [
+        7,
+        2047,
+        7,
+        128
+      ],
+      [
+        2047,
+        64
+      ],
+      [
+        2047,
+        64
+      ]
+    ],
+    "input_dtypes": [
+      "float32",
+      "float32",
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "layout": 0,
+      "rotaryMode": "interleaved"
+    },
+    "case_source": "cann_public",
+    "source_case_id": "20",
+    "source_value_range": "[[-3, 6], [-3, 6], [-1, 1], [-1, 1]]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level2/apply_rotary_pos_emb/cases.csv",
+    "source_csv_sha256": "a6f0aa5fdc7861224311440195a822564b42bad48c3f5245b773c8c59aed668d",
+    "output_shapes": [
+      [
+        7,
+        2047,
+        7,
+        128
+      ],
+      [
+        7,
+        2047,
+        7,
+        128
+      ]
+    ],
+    "output_dtypes": [
+      "float32",
+      "float32"
+    ],
+    "logical_input_bytes": 103758336,
+    "logical_output_bytes": 102710272,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:08:26.825005+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 1,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 2,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call_0",
+      "mstx_range_id": 1,
+      "roles": [
+        "Q",
+        "K"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 1,
+      "mstx_range": "cold_call_1",
+      "mstx_range_id": 2,
+      "roles": [
+        "Q",
+        "K"
+      ],
+      "flush_index": 1,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 2,
+      "mstx_range": "cold_call_2",
+      "mstx_range_id": 3,
+      "roles": [
+        "Q",
+        "K"
+      ],
+      "flush_index": 2,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "d8ff36554be0874b2242f8f641aca3b6ecf43fdeed005f1b04fceb6a2b32d2ee",
+    "739662b1bfe3bcfef626e07e7cab505396fcf9c110084187de59047909008e6b",
+    "e4bf2eee51c1de94df2fdb7458fbc08ed88dc2c89a8877d16c1ae1bfd9b0cf67",
+    "fe06af6e3869631613ea36e2a586bbf08acc793984a380a3508a524b52095f1f"
+  ],
+  "native": [
+    {
+      "role": "Q",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "float32",
+        "positions_dtype": "int32",
+        "nheads": "7",
+        "rotary_dim": "128",
+        "has_position_tensor": "False",
+        "interleaved": "True",
+        "conjugate": "False",
+        "cos_sin_stride": "128",
+        "x_stride_0": "896",
+        "x_stride_1": "128"
+      },
+      "source_sha256": "e483e80239f9bfdfe292700766b64cfe2fced171f7cf41b15ddabde25b8163ef",
+      "source_file": "cases/rope-cann-20/metadata/launch-Q-kernel.cpp"
+    },
+    {
+      "role": "K",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "float32",
+        "positions_dtype": "int32",
+        "nheads": "7",
+        "rotary_dim": "128",
+        "has_position_tensor": "False",
+        "interleaved": "True",
+        "conjugate": "False",
+        "cos_sin_stride": "128",
+        "x_stride_0": "896",
+        "x_stride_1": "128"
+      },
+      "source_sha256": "e483e80239f9bfdfe292700766b64cfe2fced171f7cf41b15ddabde25b8163ef",
+      "source_file": "cases/rope-cann-20/metadata/launch-K-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "Q",
+    "K"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 1526437112,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T15:08:33.399005+00:00"
+}

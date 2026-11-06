@@ -1,0 +1,113 @@
+{
+  "case_id": "rmsnorm-cann-18",
+  "case": {
+    "task": "rmsnorm",
+    "id": "rmsnorm-cann-18",
+    "input_shapes": [
+      [
+        2,
+        511,
+        8192
+      ],
+      [
+        8192
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16"
+    ],
+    "attrs": {
+      "epsilon": 1e-06
+    },
+    "case_source": "cann_public",
+    "source_case_id": "18",
+    "source_value_range": "[-0.2, 0.2]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level2/rms_norm/cases.csv",
+    "source_csv_sha256": "996608ff9322e020b1330dd96c842d40320106cda19e8f1bfe7441fb39b1e9b8",
+    "output_shapes": [
+      [
+        2,
+        511,
+        8192
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16"
+    ],
+    "logical_input_bytes": 16760832,
+    "logical_output_bytes": 16744448,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T14:56:47.039301+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call",
+      "mstx_range_id": 0,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "644df724c36d5a01b87e5705d026ee39b87e4d231a1978ef1cea733287d4a57b",
+    "eb0a65c4405c343229e4433bdd7f1224c8a7849920f9ab2744b8f192a9385654"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "norm_forward_kernel",
+      "factory": "tile_kernels.quant.norm_forward_asc.get_norm_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "8192",
+        "with_weight": "True",
+        "with_residual": "False",
+        "eps": "1e-06",
+        "out_scale": "1.0",
+        "x_dtype": "bfloat16",
+        "out_config": "CastOutputConfig(torch_dtype=torch.bfloat16, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "with_out_bf16": "False",
+        "with_rstd": "False",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "d074891d5f6358984a1116563120fc2398eafcfb377f4389aaa21e3c40e6fb3c",
+      "source_file": "cases/rmsnorm-cann-18/metadata/launch-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 676642072,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T14:56:54.650637+00:00"
+}

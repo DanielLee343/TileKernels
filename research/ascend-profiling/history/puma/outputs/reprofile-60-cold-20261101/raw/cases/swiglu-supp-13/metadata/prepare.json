@@ -1,0 +1,98 @@
+{
+  "case_id": "swiglu-supp-13",
+  "case": {
+    "task": "swiglu",
+    "id": "swiglu-supp-13",
+    "input_shapes": [
+      [
+        11,
+        1536
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16"
+    ],
+    "attrs": {
+      "dim": -1
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        11,
+        768
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16"
+    ],
+    "logical_input_bytes": 33792,
+    "logical_output_bytes": 16896,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T14:44:04.309857+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 0,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [],
+  "target_calls": [],
+  "input_sha256": [
+    "81b985ac6a146f8b35464e5c54ee61b2c945cb71afc9833038da9a875c863ff8"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "swiglu_forward_kernel",
+      "factory": "tile_kernels.quant.swiglu_forward_asc.get_swiglu_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "768",
+        "num_experts": "0",
+        "alignment": "128",
+        "with_weight": "False",
+        "with_routed_scaling": "False",
+        "clamp_value": "None",
+        "count_clamp": "False",
+        "in_dtype": "bfloat16",
+        "out_config": "CastOutputConfig(torch_dtype=torch.bfloat16, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "efe2a38e7d294f5aa902dac8f29057df3e81ddaac7bc18ec10e2e5fbbba630c8",
+      "source_file": "cases/swiglu-supp-13/metadata/prepare-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "outputs": [
+    {
+      "shape": [
+        11,
+        768
+      ],
+      "dtype": "bfloat16",
+      "elements": 8448
+    }
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; original frozen CANN CPU reference in row/token chunks; finite inputs, not full CANN benchmark contract",
+    "metrics": [
+      {
+        "output": 0,
+        "checked_elements": 8448,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.0,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T14:44:13.511268+00:00"
+}

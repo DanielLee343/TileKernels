@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+swiglu_forward_kernel_kernel,vector,5.660000,56,NA,0,24404,1650,1650,

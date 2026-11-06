@@ -1,0 +1,2 @@
+2026-11-04 15:29:41  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `engram_fused_weight_kernel_asc` with `out_idx=None`
+2026-11-04 15:29:43  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `engram_fused_weight_kernel_asc`

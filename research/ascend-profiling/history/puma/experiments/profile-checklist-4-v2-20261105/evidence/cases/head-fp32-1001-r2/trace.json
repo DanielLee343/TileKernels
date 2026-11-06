@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "inputs": [
+    {
+      "shape": [
+        1001,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        4,
+        1
+      ],
+      "bytes": 16016,
+      "sha256": "b6396ae4791dac85b32a2103179f76bf49242e64a46fb6e6fb0789bdcef516cc",
+      "device_stride": [
+        4,
+        1
+      ],
+      "address_mod_128": 0,
+      "npu_format": 2
+    },
+    {
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 4,
+      "sha256": "14cce4f99fbd7f07d1e1a81ad1ef51b26cd95c0df76c3fd050e516df49891ff4",
+      "device_stride": [
+        1
+      ],
+      "address_mod_128": 0,
+      "npu_format": 2
+    },
+    {
+      "shape": [
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 16,
+      "sha256": "6d9667a5c946c7076056a2649a18a93a2ab164a82a7f349553c3ed287b74e8df",
+      "device_stride": [
+        1
+      ],
+      "address_mod_128": 0,
+      "npu_format": 2
+    }
+  ],
+  "output": {
+    "shape": [
+      1001,
+      4
+    ],
+    "dtype": "float32",
+    "stride": [
+      4,
+      1
+    ],
+    "bytes": 16016,
+    "sha256": "d9a4b8bab3203a5352c94a8471990d77555af59105c554b42951bb5f57cef827",
+    "address_mod_128": 0
+  },
+  "auxiliary_outputs": [],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999983,
+      "max_abs_error": 1.1920928955078125e-07,
+      "exact_equal": false,
+      "reference_diagnostic_passed": false,
+      "passed": true
+    }
+  ],
+  "guard_passed": null,
+  "scratch_passed": null,
+  "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+}

@@ -1,0 +1,172 @@
+{
+  "case_id": "rope-cann-5",
+  "case": {
+    "task": "rope",
+    "id": "rope-cann-5",
+    "input_shapes": [
+      [
+        8,
+        2048,
+        16,
+        128
+      ],
+      [
+        8,
+        2048,
+        16,
+        128
+      ],
+      [
+        2048,
+        64
+      ],
+      [
+        2048,
+        64
+      ]
+    ],
+    "input_dtypes": [
+      "float32",
+      "float32",
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "layout": 0,
+      "rotaryMode": "interleaved"
+    },
+    "case_source": "cann_public",
+    "source_case_id": "5",
+    "source_value_range": "[[-100, 100], [-100, 100], [-1, 1], [-1, 1]]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level2/apply_rotary_pos_emb/cases.csv",
+    "source_csv_sha256": "a6f0aa5fdc7861224311440195a822564b42bad48c3f5245b773c8c59aed668d",
+    "output_shapes": [
+      [
+        8,
+        2048,
+        16,
+        128
+      ],
+      [
+        8,
+        2048,
+        16,
+        128
+      ]
+    ],
+    "output_dtypes": [
+      "float32",
+      "float32"
+    ],
+    "logical_input_bytes": 269484032,
+    "logical_output_bytes": 268435456,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:05:02.818323+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 0,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [],
+  "target_calls": [],
+  "input_sha256": [
+    "1ba304930922ae1f8d13473ba42f6ef542893ad3be9f01ecb603977d41adeb7c",
+    "8b43fd3b9b30fd0645d0d87ea9f9df4bcf3f2b857ba985174fc55223bbff2a20",
+    "e515a33150dfda4d34a9986e186ddd904380c7548c3aad4ce602d9c0d4f9685b",
+    "18aa7185ebfc22cb10056daf0002cd303858fb5893956cae53f3a506b978b907"
+  ],
+  "native": [
+    {
+      "role": "Q",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "float32",
+        "positions_dtype": "int32",
+        "nheads": "16",
+        "rotary_dim": "128",
+        "has_position_tensor": "False",
+        "interleaved": "True",
+        "conjugate": "False",
+        "cos_sin_stride": "128",
+        "x_stride_0": "2048",
+        "x_stride_1": "128"
+      },
+      "source_sha256": "38e7cb43b1301e96bdabd93047e6365882560a8065c211130b676de3c9c32a97",
+      "source_file": "cases/rope-cann-5/metadata/prepare-Q-kernel.cpp"
+    },
+    {
+      "role": "K",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "float32",
+        "positions_dtype": "int32",
+        "nheads": "16",
+        "rotary_dim": "128",
+        "has_position_tensor": "False",
+        "interleaved": "True",
+        "conjugate": "False",
+        "cos_sin_stride": "128",
+        "x_stride_0": "2048",
+        "x_stride_1": "128"
+      },
+      "source_sha256": "38e7cb43b1301e96bdabd93047e6365882560a8065c211130b676de3c9c32a97",
+      "source_file": "cases/rope-cann-5/metadata/prepare-K-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "Q",
+    "K"
+  ],
+  "outputs": [
+    {
+      "shape": [
+        8,
+        2048,
+        16,
+        128
+      ],
+      "dtype": "float32",
+      "elements": 33554432
+    },
+    {
+      "shape": [
+        8,
+        2048,
+        16,
+        128
+      ],
+      "dtype": "float32",
+      "elements": 33554432
+    }
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; original frozen CANN CPU reference in row/token chunks; finite inputs, not full CANN benchmark contract",
+    "metrics": [
+      {
+        "output": 0,
+        "checked_elements": 33554432,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.1920928955078125e-07,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      },
+      {
+        "output": 1,
+        "checked_elements": 33554432,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.1920928955078125e-07,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T15:05:12.703199+00:00"
+}

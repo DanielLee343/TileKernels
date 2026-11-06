@@ -1,0 +1,173 @@
+[
+  {
+    "label": "mix-b1",
+    "path": "experiments\\profile-checklist-4-mix-20261105\\evidence\\cases\\scope-b1\\trace\\PROF_000001_20261105062150685_00421268FAFNNMDG\\mindstudio_profiler_output\\msprof_20261105062218.json",
+    "sha256": "e9d6ee06e7c7cd2b59024e8cdf21d2339a1935a8f03a6a2915040d05929da735",
+    "event_count": 282,
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "task-level interval is not pipe or wait activity; no supported synchronized activity schema found",
+      "task_event": {
+        "name": "_Z25quant_group_matmul_customIaaiiLj1024ELj8192ELj1024ELj128ELj256ELj128ELj128ELj1024ELj8ELj8ELj4EEvPhS0_S0_S0_S0_S0_S0_S0_",
+        "task_id": 11,
+        "stream_id": 61,
+        "task_type": "MIX_AIC",
+        "ts": "1793859732156144.874",
+        "dur": "109.346"
+      },
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  },
+  {
+    "label": "mix-b2",
+    "path": "experiments\\profile-checklist-4-mix-20261105\\evidence\\cases\\scope-b2\\trace\\PROF_000001_20261105062221783_00421465BEJPANRR\\mindstudio_profiler_output\\msprof_20261105062230.json",
+    "sha256": "4fcfa9919230f2ce46ce7cfbf6c63d520edc194fac65f55b28f11ea8e6924456",
+    "event_count": 282,
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "task-level interval is not pipe or wait activity; no supported synchronized activity schema found",
+      "task_event": {
+        "name": "_Z25quant_group_matmul_customIaaiiLj1024ELj8192ELj1024ELj128ELj256ELj128ELj128ELj1024ELj8ELj8ELj4EEvPhS0_S0_S0_S0_S0_S0_S0_",
+        "task_id": 11,
+        "stream_id": 61,
+        "task_type": "MIX_AIC",
+        "ts": "1793859743526257.098",
+        "dur": "109.964"
+      },
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  },
+  {
+    "label": "cann-mm",
+    "path": "experiments\\profile-checklist-library-20261105\\evidence\\cases\\mm-fp16-square\\trace\\PROF_000001_20261104163723903_00070048FRORPLKP\\mindstudio_profiler_output\\msprof_20261104163730.json",
+    "sha256": "32c8fe704207cea86b7f228f13244b2a4eff0a63951c05f80888a4409900979d",
+    "event_count": 345,
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "task-level interval is not pipe or wait activity; no supported synchronized activity schema found",
+      "task_event": {
+        "name": "aclnnMm_MatMulV3Common_MatMulV3",
+        "task_id": 6,
+        "stream_id": 61,
+        "task_type": "AI_CORE",
+        "ts": "1793810246328100.112",
+        "dur": "6.728"
+      },
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  },
+  {
+    "label": "cann-bmm",
+    "path": "experiments\\profile-checklist-library-20261105\\evidence\\cases\\bmm-fp16-regular\\trace\\PROF_000001_20261104163749710_00071000JABHAFCJ\\mindstudio_profiler_output\\msprof_20261104163755.json",
+    "sha256": "7d303b7fe08393a8a4cf96e7fddac27c892c0334b9f25942730d7717d0a43f20",
+    "event_count": 317,
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "task-level interval is not pipe or wait activity; no supported synchronized activity schema found",
+      "task_event": {
+        "name": "aclnnBatchMatMul_BatchMatMulV3Nd_BatchMatMulV3",
+        "task_id": 6,
+        "stream_id": 61,
+        "task_type": "AI_CORE",
+        "ts": "1793810271920066.158",
+        "dur": "7.273"
+      },
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  },
+  {
+    "label": "cube-control",
+    "path": "experiments\\profile-checklist-4-cube-control-20261105\\evidence\\cases\\base-r1\\trace\\PROF_000001_20261105061746753_00417122BJMEMMMI\\mindstudio_profiler_output\\msprof_20261105061755.json",
+    "sha256": "55de8efb391d7a92ab0a7c49f5a5c34aad2b93e2b139234cc0a8b0841a17bf34",
+    "event_count": 100,
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "task-level interval is not pipe or wait activity; no supported synchronized activity schema found",
+      "task_event": {
+        "name": "_Z15fixpipe_controlPhPu6__bf16S0_",
+        "task_id": 5,
+        "stream_id": 61,
+        "task_type": "AI_CORE",
+        "ts": "1793859468512832.885",
+        "dur": "5.522"
+      },
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  },
+  {
+    "label": "swiglu-aiv-pipe-example",
+    "path": "outputs\\swiglu-profile-smoke-20261101\\raw\\pipe-timeline\\OPPROF_20261101085950_KQMHHYIGXLNABAQK\\trace.json",
+    "sha256": "4cc3b5dcd7bcd1e1045b209126a5d9da9042f2c0c2d972dffa0e00b98b8484c1",
+    "result": {
+      "status": "reference_insufficient",
+      "reason": "op pipe trace has no verified cross-role call, clock, coverage or event semantics",
+      "schema": "msopprof-op-v1",
+      "displayTimeUnit": "ns",
+      "event_count": 218,
+      "interval_event_count": 218,
+      "event_names": [
+        "MTE2",
+        "MTE3",
+        "SCALAR",
+        "VECTOR"
+      ],
+      "pids": [
+        "core0.veccore0",
+        "core0.veccore1",
+        "core1.veccore0",
+        "core1.veccore1",
+        "core2.veccore0",
+        "core2.veccore1",
+        "core3.veccore0",
+        "core3.veccore1",
+        "core4.veccore0",
+        "core4.veccore1",
+        "core5.veccore0",
+        "core5.veccore1"
+      ],
+      "missing": [
+        "AIC activity intervals",
+        "AIV activity intervals",
+        "AIC/AIV wait intervals",
+        "common clock and synchronization evidence",
+        "interval-to-physical-target-call and role mapping",
+        "coverage and loss evidence"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1555 @@
+{
+  "input_sha256": "8ee893000de594b9394a7297516a96ee1ff0bf2ac8fdd2c80a51b6db31d54bb4",
+  "families": {
+    "rmsnorm": {
+      "cases": 13,
+      "groups": 13,
+      "unknown_hash_cases": [],
+      "group_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ranges": {
+        "G": [
+          14464.0,
+          471374848.0
+        ],
+        "N": [
+          169.0,
+          16552.0
+        ]
+      },
+      "log_G_N_correlation": 0.8795701751757762,
+      "outside_either": 2,
+      "outside_cases": [
+        "rmsnorm-supp-01",
+        "rmsnorm-supp-08"
+      ],
+      "models": {
+        "N": {
+          "median_abs": 1.2514217140744122,
+          "p90_abs": 20.066879102272296,
+          "median_signed": 1.2514217140744122,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "rmsnorm-cann-2",
+              "hashes": [
+                "872208637cd98902cdc065aabcc680e3828631d6d42218f397c47bba8a730eb1"
+              ],
+              "actual": 881.727882,
+              "predicted": 1266.3594823654735,
+              "relative_error": 0.4362248355955624,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-3",
+              "hashes": [
+                "16c38f31f250eb3aedf3e9586f18d4bd89257a665c9975f8a10f36dd995db5db"
+              ],
+              "actual": 890.832123,
+              "predicted": 1266.3452051291424,
+              "relative_error": 0.4215306929711406,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-5",
+              "hashes": [
+                "c6de7b669c8402ee4ab14d4cecce015b6fdcf234d71cb1ae1d0d7ec7d649eb79"
+              ],
+              "actual": 9056.083618,
+              "predicted": 7863.628587334357,
+              "relative_error": -0.1316744722073351,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-18",
+              "hashes": [
+                "d074891d5f6358984a1116563120fc2398eafcfb377f4389aaa21e3c40e6fb3c"
+              ],
+              "actual": 833.4848509999999,
+              "predicted": 1266.4351369043754,
+              "relative_error": 0.5194458968089578,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-01",
+              "hashes": [
+                "e4be902d82ba5cd04bb81cc002dbde38f8ed7ab170a27b3d22e02693fe4d114f"
+              ],
+              "actual": 20.898177,
+              "predicted": 314.60630930199346,
+              "relative_error": 14.054246564281348,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-02",
+              "hashes": [
+                "c44acafa4e2902db6afe4ab2dfa921cbf09a9de4e949c6f8587216ad0b79cecc"
+              ],
+              "actual": 14.051512,
+              "predicted": 314.60697151322614,
+              "relative_error": 21.38954580213333,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-03",
+              "hashes": [
+                "8608739a20d07024998c708da3f30d6bd48dc0194b9a22d740cb2b41f68f16ea"
+              ],
+              "actual": 19.941821,
+              "predicted": 314.60640180099637,
+              "relative_error": 14.77621230282813,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-04",
+              "hashes": [
+                "c07f2e287376cb63a69c0feab3d87f330be8cea6e188030afda7b91c8c363682"
+              ],
+              "actual": 35.099395,
+              "predicted": 327.63844250272655,
+              "relative_error": 8.334589456676575,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-05",
+              "hashes": [
+                "fbdcd241bfeaa08df338fc0389426dc064b2690f69788f35f7b99a4c5451f01d"
+              ],
+              "actual": 42.718787999999996,
+              "predicted": 372.326187390966,
+              "relative_error": 7.715747913797696,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-06",
+              "hashes": [
+                "583aae5f6f2c1f20318cff52888e347fd27a517c423f377befd6625cb00a3a2d"
+              ],
+              "actual": 350.669093,
+              "predicted": 789.5040104349794,
+              "relative_error": 1.2514217140744122,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-07",
+              "hashes": [
+                "49f59118eb7c7718c297c38f88f7d5dc441916500ca537464a0d86afbfdd2e60"
+              ],
+              "actual": 1921.115153,
+              "predicted": 2220.2371406488946,
+              "relative_error": 0.15570226864422357,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-08",
+              "hashes": [
+                "683b4e0343504401a2e7e0643e29d15890089606c940e41ca834cfffd8f89ac1"
+              ],
+              "actual": 30622.60602,
+              "predicted": 33214.43671865511,
+              "relative_error": 0.08463782269093474,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "rmsnorm-supp-09",
+              "hashes": [
+                "eba1c718040b80a89d770f417dc1d46146a29073257bece701f7a57545f6760d"
+              ],
+              "actual": 12.374546,
+              "predicted": 314.60713370981705,
+              "relative_error": 24.423731400717006,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "G": {
+          "median_abs": 0.37808072731965137,
+          "p90_abs": 0.8732680366903683,
+          "median_signed": 0.0034814459739170877,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "rmsnorm-cann-2",
+              "hashes": [
+                "872208637cd98902cdc065aabcc680e3828631d6d42218f397c47bba8a730eb1"
+              ],
+              "actual": 881.727882,
+              "predicted": 1105.883777201081,
+              "relative_error": 0.25422343988105967,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-3",
+              "hashes": [
+                "16c38f31f250eb3aedf3e9586f18d4bd89257a665c9975f8a10f36dd995db5db"
+              ],
+              "actual": 890.832123,
+              "predicted": 1105.8729116664235,
+              "relative_error": 0.2413931683808662,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-5",
+              "hashes": [
+                "c6de7b669c8402ee4ab14d4cecce015b6fdcf234d71cb1ae1d0d7ec7d649eb79"
+              ],
+              "actual": 9056.083618,
+              "predicted": 8823.977596760786,
+              "relative_error": -0.02562984519907454,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-18",
+              "hashes": [
+                "d074891d5f6358984a1116563120fc2398eafcfb377f4389aaa21e3c40e6fb3c"
+              ],
+              "actual": 833.4848509999999,
+              "predicted": 1148.6094096759912,
+              "relative_error": 0.37808072731965137,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-01",
+              "hashes": [
+                "e4be902d82ba5cd04bb81cc002dbde38f8ed7ab170a27b3d22e02693fe4d114f"
+              ],
+              "actual": 20.898177,
+              "predicted": 0.939923794201273,
+              "relative_error": -0.9550236465983959,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-02",
+              "hashes": [
+                "c44acafa4e2902db6afe4ab2dfa921cbf09a9de4e949c6f8587216ad0b79cecc"
+              ],
+              "actual": 14.051512,
+              "predicted": 2.561916155752458,
+              "relative_error": -0.8176768339412543,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-03",
+              "hashes": [
+                "8608739a20d07024998c708da3f30d6bd48dc0194b9a22d740cb2b41f68f16ea"
+              ],
+              "actual": 19.941821,
+              "predicted": 3.360435390889154,
+              "relative_error": -0.8314880375824678,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-04",
+              "hashes": [
+                "c07f2e287376cb63a69c0feab3d87f330be8cea6e188030afda7b91c8c363682"
+              ],
+              "actual": 35.099395,
+              "predicted": 24.953723345353445,
+              "relative_error": -0.28905545678626526,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-05",
+              "hashes": [
+                "fbdcd241bfeaa08df338fc0389426dc064b2690f69788f35f7b99a4c5451f01d"
+              ],
+              "actual": 42.718787999999996,
+              "predicted": 75.92606765521636,
+              "relative_error": 0.7773460158845416,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-06",
+              "hashes": [
+                "583aae5f6f2c1f20318cff52888e347fd27a517c423f377befd6625cb00a3a2d"
+              ],
+              "actual": 350.669093,
+              "predicted": 575.4723116299439,
+              "relative_error": 0.6410693816975308,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-07",
+              "hashes": [
+                "49f59118eb7c7718c297c38f88f7d5dc441916500ca537464a0d86afbfdd2e60"
+              ],
+              "actual": 1921.115153,
+              "predicted": 2212.154480451438,
+              "relative_error": 0.15149499341408706,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-08",
+              "hashes": [
+                "683b4e0343504401a2e7e0643e29d15890089606c940e41ca834cfffd8f89ac1"
+              ],
+              "actual": 30622.60602,
+              "predicted": 30729.216968439177,
+              "relative_error": 0.0034814459739170877,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "rmsnorm-supp-09",
+              "hashes": [
+                "eba1c718040b80a89d770f417dc1d46146a29073257bece701f7a57545f6760d"
+              ],
+              "actual": 12.374546,
+              "predicted": 1.438998379435181,
+              "relative_error": -0.8837130364673434,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "intercept_N_G": {
+          "median_abs": 0.9377164316879241,
+          "p90_abs": 9.413517989866504,
+          "median_signed": -0.19107237905473384,
+          "negative_predictions": 6,
+          "predictions": [
+            {
+              "case": "rmsnorm-cann-2",
+              "hashes": [
+                "872208637cd98902cdc065aabcc680e3828631d6d42218f397c47bba8a730eb1"
+              ],
+              "actual": 881.727882,
+              "predicted": 1028.84349509329,
+              "relative_error": 0.16684922422957912,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-3",
+              "hashes": [
+                "16c38f31f250eb3aedf3e9586f18d4bd89257a665c9975f8a10f36dd995db5db"
+              ],
+              "actual": 890.832123,
+              "predicted": 1028.0123881931813,
+              "relative_error": 0.15399115237471211,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-5",
+              "hashes": [
+                "c6de7b669c8402ee4ab14d4cecce015b6fdcf234d71cb1ae1d0d7ec7d649eb79"
+              ],
+              "actual": 9056.083618,
+              "predicted": 7325.716176190139,
+              "relative_error": -0.19107237905473384,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-18",
+              "hashes": [
+                "d074891d5f6358984a1116563120fc2398eafcfb377f4389aaa21e3c40e6fb3c"
+              ],
+              "actual": 833.4848509999999,
+              "predicted": 1086.5980804228598,
+              "relative_error": 0.30368065972546376,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-01",
+              "hashes": [
+                "e4be902d82ba5cd04bb81cc002dbde38f8ed7ab170a27b3d22e02693fe4d114f"
+              ],
+              "actual": 20.898177,
+              "predicted": -128.66315231804188,
+              "relative_error": -7.156668704549774,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-02",
+              "hashes": [
+                "c44acafa4e2902db6afe4ab2dfa921cbf09a9de4e949c6f8587216ad0b79cecc"
+              ],
+              "actual": 14.051512,
+              "predicted": -125.69608319509918,
+              "relative_error": -9.945377778213416,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-03",
+              "hashes": [
+                "8608739a20d07024998c708da3f30d6bd48dc0194b9a22d740cb2b41f68f16ea"
+              ],
+              "actual": 19.941821,
+              "predicted": -125.35585894894938,
+              "relative_error": -7.286078836478843,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-04",
+              "hashes": [
+                "c07f2e287376cb63a69c0feab3d87f330be8cea6e188030afda7b91c8c363682"
+              ],
+              "actual": 35.099395,
+              "predicted": -101.2781520431984,
+              "relative_error": -3.8854671723885383,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-05",
+              "hashes": [
+                "fbdcd241bfeaa08df338fc0389426dc064b2690f69788f35f7b99a4c5451f01d"
+              ],
+              "actual": 42.718787999999996,
+              "predicted": -43.893799556888254,
+              "relative_error": -2.0275057325336165,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-06",
+              "hashes": [
+                "583aae5f6f2c1f20318cff52888e347fd27a517c423f377befd6625cb00a3a2d"
+              ],
+              "actual": 350.669093,
+              "predicted": 489.7606612584393,
+              "relative_error": 0.3966462144368091,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-07",
+              "hashes": [
+                "49f59118eb7c7718c297c38f88f7d5dc441916500ca537464a0d86afbfdd2e60"
+              ],
+              "actual": 1921.115153,
+              "predicted": 2169.539963034724,
+              "relative_error": 0.12931281586467414,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-08",
+              "hashes": [
+                "683b4e0343504401a2e7e0643e29d15890089606c940e41ca834cfffd8f89ac1"
+              ],
+              "actual": 30622.60602,
+              "predicted": 59337.92686605954,
+              "relative_error": 0.9377164316879241,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "rmsnorm-supp-09",
+              "hashes": [
+                "eba1c718040b80a89d770f417dc1d46146a29073257bece701f7a57545f6760d"
+              ],
+              "actual": 12.374546,
+              "predicted": -126.97145683068878,
+              "relative_error": -11.260696176707313,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "median_A": {
+          "median_abs": 0.9935768386148606,
+          "p90_abs": 38.646983381660085,
+          "median_signed": 0.2493311450747101,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "rmsnorm-cann-2",
+              "hashes": [
+                "872208637cd98902cdc065aabcc680e3828631d6d42218f397c47bba8a730eb1"
+              ],
+              "actual": 881.727882,
+              "predicted": 196.6939405,
+              "relative_error": -0.7769221723443244,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-3",
+              "hashes": [
+                "16c38f31f250eb3aedf3e9586f18d4bd89257a665c9975f8a10f36dd995db5db"
+              ],
+              "actual": 890.832123,
+              "predicted": 196.6939405,
+              "relative_error": -0.7792020118924249,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-5",
+              "hashes": [
+                "c6de7b669c8402ee4ab14d4cecce015b6fdcf234d71cb1ae1d0d7ec7d649eb79"
+              ],
+              "actual": 9056.083618,
+              "predicted": 196.6939405,
+              "relative_error": -0.978280463299936,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-cann-18",
+              "hashes": [
+                "d074891d5f6358984a1116563120fc2398eafcfb377f4389aaa21e3c40e6fb3c"
+              ],
+              "actual": 833.4848509999999,
+              "predicted": 196.6939405,
+              "relative_error": -0.7640101793523778,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-01",
+              "hashes": [
+                "e4be902d82ba5cd04bb81cc002dbde38f8ed7ab170a27b3d22e02693fe4d114f"
+              ],
+              "actual": 20.898177,
+              "predicted": 592.076972,
+              "relative_error": 27.33151293531488,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-02",
+              "hashes": [
+                "c44acafa4e2902db6afe4ab2dfa921cbf09a9de4e949c6f8587216ad0b79cecc"
+              ],
+              "actual": 14.051512,
+              "predicted": 592.076972,
+              "relative_error": 41.136175238650466,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-03",
+              "hashes": [
+                "8608739a20d07024998c708da3f30d6bd48dc0194b9a22d740cb2b41f68f16ea"
+              ],
+              "actual": 19.941821,
+              "predicted": 592.076972,
+              "relative_error": 28.69021595369851,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-04",
+              "hashes": [
+                "c07f2e287376cb63a69c0feab3d87f330be8cea6e188030afda7b91c8c363682"
+              ],
+              "actual": 35.099395,
+              "predicted": 592.076972,
+              "relative_error": 15.868580555305867,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-05",
+              "hashes": [
+                "fbdcd241bfeaa08df338fc0389426dc064b2690f69788f35f7b99a4c5451f01d"
+              ],
+              "actual": 42.718787999999996,
+              "predicted": 592.076972,
+              "relative_error": 12.859872897143056,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-06",
+              "hashes": [
+                "583aae5f6f2c1f20318cff52888e347fd27a517c423f377befd6625cb00a3a2d"
+              ],
+              "actual": 350.669093,
+              "predicted": 438.1018195,
+              "relative_error": 0.2493311450747101,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-07",
+              "hashes": [
+                "49f59118eb7c7718c297c38f88f7d5dc441916500ca537464a0d86afbfdd2e60"
+              ],
+              "actual": 1921.115153,
+              "predicted": 196.6939405,
+              "relative_error": -0.8976147056084357,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "rmsnorm-supp-08",
+              "hashes": [
+                "683b4e0343504401a2e7e0643e29d15890089606c940e41ca834cfffd8f89ac1"
+              ],
+              "actual": 30622.60602,
+              "predicted": 196.6939405,
+              "relative_error": -0.9935768386148606,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "rmsnorm-supp-09",
+              "hashes": [
+                "eba1c718040b80a89d770f417dc1d46146a29073257bece701f7a57545f6760d"
+              ],
+              "actual": 12.374546,
+              "predicted": 592.076972,
+              "relative_error": 46.84635913107438,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        }
+      }
+    },
+    "swiglu": {
+      "cases": 19,
+      "groups": 14,
+      "unknown_hash_cases": [],
+      "group_sizes": [
+        3,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ranges": {
+        "G": [
+          7936.0,
+          268442624.0
+        ],
+        "N": [
+          114.0,
+          16496.0
+        ]
+      },
+      "log_G_N_correlation": 0.9709609925625856,
+      "outside_either": 3,
+      "outside_cases": [
+        "swiglu-supp-09",
+        "swiglu-supp-01",
+        "swiglu-supp-15"
+      ],
+      "models": {
+        "N": {
+          "median_abs": 6.662086294289008,
+          "p90_abs": 71.6592429284768,
+          "median_signed": 6.662086294289008,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "swiglu-cann-3",
+              "hashes": [
+                "dd86907d5c29c70e2e4b73077949ce21b1b69597fe1eefc8d3e7430427d9b9c8"
+              ],
+              "actual": 3721.133324,
+              "predicted": 6878.606952053247,
+              "relative_error": 0.8485247243598218,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-03",
+              "hashes": [
+                "cdd022cd7819fe2f52573ac56bde03ba2bb6e551f83316a644473fab1629de6f"
+              ],
+              "actual": 11.610896,
+              "predicted": 132.45563377692324,
+              "relative_error": 10.407873585029375,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-04",
+              "hashes": [
+                "457ff9312efd673997861b77bcb5047392c736f7b05979b789d303e7506c310f"
+              ],
+              "actual": 25.880607,
+              "predicted": 280.2044559504774,
+              "relative_error": 9.826811594893325,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-05",
+              "hashes": [
+                "fc3c34cb22f9400444e18d70babe6353b5f2f127b75e4b39acc6bec3d4b477af"
+              ],
+              "actual": 137.881212,
+              "predicted": 865.5813402079287,
+              "relative_error": 5.2777323150301925,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-06",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 812.22606,
+              "predicted": 1694.7277269404933,
+              "relative_error": 1.0865222262635768,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-15",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 392.57091,
+              "predicted": 891.3012489835187,
+              "relative_error": 1.2704210278431447,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-2",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 1717.336368,
+              "predicted": 3301.580682854443,
+              "relative_error": 0.9225008823981551,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-09",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 1.2939129999999999,
+              "predicted": 89.82600857171187,
+              "relative_error": 68.42198476382251,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-01",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 0.526034,
+              "predicted": 86.78105912860298,
+              "relative_error": 163.97233853439698,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-10",
+              "hashes": [
+                "76e5c4873a7d110f374de9493033e19346b6c99352bf859ee68a9a4569a7fe6a"
+              ],
+              "actual": 23.390911,
+              "predicted": 184.2309983264175,
+              "relative_error": 6.876178842560579,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-11",
+              "hashes": [
+                "3be0dbb5ccfd8e1c32a8cec0648690487386341ef6561699784e2a350b8a84ed"
+              ],
+              "actual": 62.084846999999996,
+              "predicted": 476.9184839651536,
+              "relative_error": 6.681721176910585,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-13",
+              "hashes": [
+                "efe2a38e7d294f5aa902dac8f29057df3e81ddaac7bc18ec10e2e5fbbba630c8"
+              ],
+              "actual": 4.766038,
+              "predicted": 102.00331776738506,
+              "relative_error": 20.402120118930036,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-14",
+              "hashes": [
+                "88ecc9b6c6ef73baef7f9e927625f4d3b8a39cf04179f0625281c9343571e27d"
+              ],
+              "actual": 301.403634,
+              "predicted": 868.1089491328571,
+              "relative_error": 1.8802205786704518,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-15",
+              "hashes": [
+                "5693f63fb7aef4b4b553fd7813774064f54216a882a90330ed4fe3b4932a9e0b"
+              ],
+              "actual": 14391.758208,
+              "predicted": 8333.921768548833,
+              "relative_error": -0.4209240005216162,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-16",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 1.031489,
+              "predicted": 88.30399457705606,
+              "relative_error": 84.60827558709406,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-02",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 3.00543,
+              "predicted": 95.91640790266435,
+              "relative_error": 30.914370956124195,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-17",
+              "hashes": [
+                "82222cd27de8d91604adaad8dfd0c18d8cb1c5230cbbdce34edd66abf099f766"
+              ],
+              "actual": 36.370904,
+              "predicted": 278.6770050493013,
+              "relative_error": 6.662086294289008,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-18",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 1702.950903,
+              "predicted": 1610.2080265543027,
+              "relative_error": -0.05446009998427842,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-12",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 3618.360577,
+              "predicted": 3181.10581020681,
+              "relative_error": -0.12084333705507037,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "G": {
+          "median_abs": 0.1856233922743074,
+          "p90_abs": 0.681626822410065,
+          "median_signed": -0.03769647570253354,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "swiglu-cann-3",
+              "hashes": [
+                "dd86907d5c29c70e2e4b73077949ce21b1b69597fe1eefc8d3e7430427d9b9c8"
+              ],
+              "actual": 3721.133324,
+              "predicted": 3580.859712065946,
+              "relative_error": -0.03769647570253354,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-03",
+              "hashes": [
+                "cdd022cd7819fe2f52573ac56bde03ba2bb6e551f83316a644473fab1629de6f"
+              ],
+              "actual": 11.610896,
+              "predicted": 2.080431722473794,
+              "relative_error": -0.8208207426477859,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-04",
+              "hashes": [
+                "457ff9312efd673997861b77bcb5047392c736f7b05979b789d303e7506c310f"
+              ],
+              "actual": 25.880607,
+              "predicted": 28.41432830935656,
+              "relative_error": 0.09790038190976579,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-05",
+              "hashes": [
+                "fc3c34cb22f9400444e18d70babe6353b5f2f127b75e4b39acc6bec3d4b477af"
+              ],
+              "actual": 137.881212,
+              "predicted": 112.28723369766706,
+              "relative_error": -0.1856233922743074,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-06",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 812.22606,
+              "predicted": 898.288096785362,
+              "relative_error": 0.10595823136401461,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-15",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 392.57091,
+              "predicted": 449.33586148149493,
+              "relative_error": 0.1445979567907742,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-2",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 1717.336368,
+              "predicted": 1796.1925673930962,
+              "relative_error": 0.04591773682923378,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-09",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 1.2939129999999999,
+              "predicted": 0.5064209205884042,
+              "relative_error": -0.608612850641114,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-01",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 0.526034,
+              "predicted": 0.42429860914163586,
+              "relative_error": -0.19340078941354388,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-10",
+              "hashes": [
+                "76e5c4873a7d110f374de9493033e19346b6c99352bf859ee68a9a4569a7fe6a"
+              ],
+              "actual": 23.390911,
+              "predicted": 12.83844748884358,
+              "relative_error": -0.45113520850711714,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-11",
+              "hashes": [
+                "3be0dbb5ccfd8e1c32a8cec0648690487386341ef6561699784e2a350b8a84ed"
+              ],
+              "actual": 62.084846999999996,
+              "predicted": 39.076387342670756,
+              "relative_error": -0.3705970259913702,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-13",
+              "hashes": [
+                "efe2a38e7d294f5aa902dac8f29057df3e81ddaac7bc18ec10e2e5fbbba630c8"
+              ],
+              "actual": 4.766038,
+              "predicted": 2.189928257953129,
+              "relative_error": -0.5405138905830945,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-14",
+              "hashes": [
+                "88ecc9b6c6ef73baef7f9e927625f4d3b8a39cf04179f0625281c9343571e27d"
+              ],
+              "actual": 301.403634,
+              "predicted": 337.43023995212116,
+              "relative_error": 0.11952943457915025,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-15",
+              "hashes": [
+                "5693f63fb7aef4b4b553fd7813774064f54216a882a90330ed4fe3b4932a9e0b"
+              ],
+              "actual": 14391.758208,
+              "predicted": 14118.541333074165,
+              "relative_error": -0.018984259669812986,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-16",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 1.031489,
+              "predicted": 0.5474820722537822,
+              "relative_error": -0.46923130323853945,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-02",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 3.00543,
+              "predicted": 0.9580936264441188,
+              "relative_error": -0.6812124632933994,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-17",
+              "hashes": [
+                "82222cd27de8d91604adaad8dfd0c18d8cb1c5230cbbdce34edd66abf099f766"
+              ],
+              "actual": 36.370904,
+              "predicted": 61.222570184316616,
+              "relative_error": 0.6832842588767277,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-18",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 1702.950903,
+              "predicted": 1857.530744096402,
+              "relative_error": 0.09077175438474876,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-12",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 3618.360577,
+              "predicted": 3769.894316700671,
+              "relative_error": 0.04187911527222873,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "intercept_N_G": {
+          "median_abs": 0.275113427943847,
+          "p90_abs": 32.11758749069083,
+          "median_signed": -0.275113427943847,
+          "negative_predictions": 8,
+          "predictions": [
+            {
+              "case": "swiglu-cann-3",
+              "hashes": [
+                "dd86907d5c29c70e2e4b73077949ce21b1b69597fe1eefc8d3e7430427d9b9c8"
+              ],
+              "actual": 3721.133324,
+              "predicted": 3508.8124733622635,
+              "relative_error": -0.05705811432993858,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-03",
+              "hashes": [
+                "cdd022cd7819fe2f52573ac56bde03ba2bb6e551f83316a644473fab1629de6f"
+              ],
+              "actual": 11.610896,
+              "predicted": -32.57408626721826,
+              "relative_error": -3.8054756727834147,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-04",
+              "hashes": [
+                "457ff9312efd673997861b77bcb5047392c736f7b05979b789d303e7506c310f"
+              ],
+              "actual": 25.880607,
+              "predicted": -0.48383500905006116,
+              "relative_error": -1.0186948864472174,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-05",
+              "hashes": [
+                "fc3c34cb22f9400444e18d70babe6353b5f2f127b75e4b39acc6bec3d4b477af"
+              ],
+              "actual": 137.881212,
+              "predicted": 99.94823911762771,
+              "relative_error": -0.275113427943847,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-06",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 812.22606,
+              "predicted": 915.0554333245822,
+              "relative_error": 0.12660191341876204,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-15",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 392.57091,
+              "predicted": 445.66147191771427,
+              "relative_error": 0.1352381456835766,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-2",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 1717.336368,
+              "predicted": 1853.8433561383179,
+              "relative_error": 0.07948762437104451,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-09",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 1.2939129999999999,
+              "predicted": -38.28351805437951,
+              "relative_error": -30.587397339990805,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-01",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 0.526034,
+              "predicted": -38.47488434713671,
+              "relative_error": -74.14144018663568,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-10",
+              "hashes": [
+                "76e5c4873a7d110f374de9493033e19346b6c99352bf859ee68a9a4569a7fe6a"
+              ],
+              "actual": 23.390911,
+              "predicted": -20.201936132210662,
+              "relative_error": -1.8636660680813444,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-11",
+              "hashes": [
+                "3be0dbb5ccfd8e1c32a8cec0648690487386341ef6561699784e2a350b8a84ed"
+              ],
+              "actual": 62.084846999999996,
+              "predicted": 15.386675867896319,
+              "relative_error": -0.7521669680864911,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-13",
+              "hashes": [
+                "efe2a38e7d294f5aa902dac8f29057df3e81ddaac7bc18ec10e2e5fbbba630c8"
+              ],
+              "actual": 4.766038,
+              "predicted": -33.11494008657066,
+              "relative_error": -7.94810660061264,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-14",
+              "hashes": [
+                "88ecc9b6c6ef73baef7f9e927625f4d3b8a39cf04179f0625281c9343571e27d"
+              ],
+              "actual": 301.403634,
+              "predicted": 322.8498587005705,
+              "relative_error": 0.07115449941977307,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-15",
+              "hashes": [
+                "5693f63fb7aef4b4b553fd7813774064f54216a882a90330ed4fe3b4932a9e0b"
+              ],
+              "actual": 14391.758208,
+              "predicted": 13814.82734882256,
+              "relative_error": -0.04008758699522468,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-16",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 1.031489,
+              "predicted": -38.410946436606885,
+              "relative_error": -38.23834809349095,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-02",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 3.00543,
+              "predicted": -37.73309900421072,
+              "relative_error": -13.554975163025164,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-17",
+              "hashes": [
+                "82222cd27de8d91604adaad8dfd0c18d8cb1c5230cbbdce34edd66abf099f766"
+              ],
+              "actual": 36.370904,
+              "predicted": 32.87809450631737,
+              "relative_error": -0.09603306790732051,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-18",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 1702.950903,
+              "predicted": 1840.1339003228022,
+              "relative_error": 0.0805560495497164,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-12",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 3618.360577,
+              "predicted": 3751.3524284125465,
+              "relative_error": 0.03675472595459537,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        },
+        "median_A": {
+          "median_abs": 0.996579439788487,
+          "p90_abs": 110.98354210669633,
+          "median_signed": 0.4033385312200255,
+          "negative_predictions": 0,
+          "predictions": [
+            {
+              "case": "swiglu-cann-3",
+              "hashes": [
+                "dd86907d5c29c70e2e4b73077949ce21b1b69597fe1eefc8d3e7430427d9b9c8"
+              ],
+              "actual": 3721.133324,
+              "predicted": 49.227875499999996,
+              "relative_error": -0.9867707305238171,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-03",
+              "hashes": [
+                "cdd022cd7819fe2f52573ac56bde03ba2bb6e551f83316a644473fab1629de6f"
+              ],
+              "actual": 11.610896,
+              "predicted": 99.9830295,
+              "relative_error": 7.611138149889552,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-04",
+              "hashes": [
+                "457ff9312efd673997861b77bcb5047392c736f7b05979b789d303e7506c310f"
+              ],
+              "actual": 25.880607,
+              "predicted": 99.9830295,
+              "relative_error": 2.863241287192375,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-05",
+              "hashes": [
+                "fc3c34cb22f9400444e18d70babe6353b5f2f127b75e4b39acc6bec3d4b477af"
+              ],
+              "actual": 137.881212,
+              "predicted": 49.227875499999996,
+              "relative_error": -0.6429689383641334,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-06",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 812.22606,
+              "predicted": 31.125755500000004,
+              "relative_error": -0.9616784574727878,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-15",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 392.57091,
+              "predicted": 31.125755500000004,
+              "relative_error": -0.9207130362766818,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-cann-2",
+              "hashes": [
+                "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc"
+              ],
+              "actual": 1717.336368,
+              "predicted": 31.125755500000004,
+              "relative_error": -0.9818755625979966,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-09",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 1.2939129999999999,
+              "predicted": 137.881212,
+              "relative_error": 105.56142414520916,
+              "G_outside": true,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-01",
+              "hashes": [
+                "15dad5a9f3dea1cf16d692e76eae275abaf60c0683242fe39f7fe7a8e5f946d6"
+              ],
+              "actual": 0.526034,
+              "predicted": 137.881212,
+              "relative_error": 261.11463897770864,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-10",
+              "hashes": [
+                "76e5c4873a7d110f374de9493033e19346b6c99352bf859ee68a9a4569a7fe6a"
+              ],
+              "actual": 23.390911,
+              "predicted": 99.9830295,
+              "relative_error": 3.2744393110640284,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-11",
+              "hashes": [
+                "3be0dbb5ccfd8e1c32a8cec0648690487386341ef6561699784e2a350b8a84ed"
+              ],
+              "actual": 62.084846999999996,
+              "predicted": 87.126058,
+              "relative_error": 0.4033385312200255,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-13",
+              "hashes": [
+                "efe2a38e7d294f5aa902dac8f29057df3e81ddaac7bc18ec10e2e5fbbba630c8"
+              ],
+              "actual": 4.766038,
+              "predicted": 99.9830295,
+              "relative_error": 19.978227513083194,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-14",
+              "hashes": [
+                "88ecc9b6c6ef73baef7f9e927625f4d3b8a39cf04179f0625281c9343571e27d"
+              ],
+              "actual": 301.403634,
+              "predicted": 49.227875499999996,
+              "relative_error": -0.8366712609045717,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-15",
+              "hashes": [
+                "5693f63fb7aef4b4b553fd7813774064f54216a882a90330ed4fe3b4932a9e0b"
+              ],
+              "actual": 14391.758208,
+              "predicted": 49.227875499999996,
+              "relative_error": -0.996579439788487,
+              "G_outside": true,
+              "N_outside": true
+            },
+            {
+              "case": "swiglu-supp-16",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 1.031489,
+              "predicted": 137.881212,
+              "relative_error": 132.67201395264516,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-02",
+              "hashes": [
+                "6bb71d7c1bcf30fd8e82cdd7a7c61a12b799300a7410052a57b674e4ccdd1425"
+              ],
+              "actual": 3.00543,
+              "predicted": 137.881212,
+              "relative_error": 44.87736596759865,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-17",
+              "hashes": [
+                "82222cd27de8d91604adaad8dfd0c18d8cb1c5230cbbdce34edd66abf099f766"
+              ],
+              "actual": 36.370904,
+              "predicted": 99.9830295,
+              "relative_error": 1.7489838993278801,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-18",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 1702.950903,
+              "predicted": 36.370904,
+              "relative_error": -0.9786424236095548,
+              "G_outside": false,
+              "N_outside": false
+            },
+            {
+              "case": "swiglu-supp-12",
+              "hashes": [
+                "b43edc0afa4002c3e633faf437d41b282d60f004de5c3fd5f1035cb96e07e448"
+              ],
+              "actual": 3618.360577,
+              "predicted": 36.370904,
+              "relative_error": -0.9899482367149393,
+              "G_outside": false,
+              "N_outside": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

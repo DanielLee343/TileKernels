@@ -1,0 +1,143 @@
+{
+  "case_id": "rmsnorm-supp-06",
+  "case": {
+    "task": "rmsnorm",
+    "id": "rmsnorm-supp-06",
+    "input_shapes": [
+      [
+        1024,
+        2048
+      ],
+      [
+        2048
+      ]
+    ],
+    "input_dtypes": [
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "epsilon": 0.0001
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        1024,
+        2048
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 8396800,
+    "logical_output_bytes": 8388608,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:01:17.958117+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 1,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 2,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call_0",
+      "mstx_range_id": 1,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 1,
+      "mstx_range": "cold_call_1",
+      "mstx_range_id": 2,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 1,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 2,
+      "mstx_range": "cold_call_2",
+      "mstx_range_id": 3,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 2,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "ae899b8b2c250c78a3a35daf18c1bb5368dab8ce84b95036e5711101ef728de8",
+    "686937f571e6002c89fdc9d30568383c5d494a603ac7e82b79fd516dfce3e8ca"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "norm_forward_kernel",
+      "factory": "tile_kernels.quant.norm_forward_asc.get_norm_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "2048",
+        "with_weight": "True",
+        "with_residual": "False",
+        "eps": "0.0001",
+        "out_scale": "1.0",
+        "x_dtype": "float32",
+        "out_config": "CastOutputConfig(torch_dtype=torch.float32, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "with_out_bf16": "False",
+        "with_rstd": "False",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "583aae5f6f2c1f20318cff52888e347fd27a517c423f377befd6625cb00a3a2d",
+      "source_file": "cases/rmsnorm-supp-06/metadata/launch-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 1118680952,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T15:01:24.183851+00:00"
+}

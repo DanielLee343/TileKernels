@@ -1,0 +1,140 @@
+{
+  "case_id": "swiglu-cann-2",
+  "case": {
+    "task": "swiglu",
+    "id": "swiglu-cann-2",
+    "input_shapes": [
+      [
+        2048,
+        4096
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "dim": -1
+    },
+    "case_source": "cann_public",
+    "source_case_id": "2",
+    "source_value_range": "[-2, 2]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level1/swi_glu/cases.csv",
+    "source_csv_sha256": "189964f4a2a050f86c016a5a326ae859d678dec42d9f592c374ecc1128a0f04f",
+    "output_shapes": [
+      [
+        2048,
+        2048
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 33554432,
+    "logical_output_bytes": 16777216,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T14:35:07.197629+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 1,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 2,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call_0",
+      "mstx_range_id": 1,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 1,
+      "mstx_range": "cold_call_1",
+      "mstx_range_id": 2,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 1,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 2,
+      "mstx_range": "cold_call_2",
+      "mstx_range_id": 3,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 2,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "da517b15ddcb1830df23c29db7dec6a93c1a0382a8b0646c76bdb141d262e4a3"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "swiglu_forward_kernel",
+      "factory": "tile_kernels.quant.swiglu_forward_asc.get_swiglu_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "2048",
+        "num_experts": "0",
+        "alignment": "128",
+        "with_weight": "False",
+        "with_routed_scaling": "False",
+        "clamp_value": "None",
+        "count_clamp": "False",
+        "in_dtype": "float32",
+        "out_config": "CastOutputConfig(torch_dtype=torch.float32, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "23d4bc14291f1915a1c8c2427e2c852e7ed72f788aeda40c66b426c67d44c0fc",
+      "source_file": "cases/swiglu-cann-2/metadata/launch-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 930078760,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T14:35:13.957992+00:00"
+}

@@ -1,0 +1,175 @@
+{
+  "case_id": "rope-supp-05",
+  "case": {
+    "task": "rope",
+    "id": "rope-supp-05",
+    "input_shapes": [
+      [
+        2,
+        511,
+        4,
+        64
+      ],
+      [
+        2,
+        511,
+        4,
+        64
+      ],
+      [
+        511,
+        32
+      ],
+      [
+        511,
+        32
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "layout": 0,
+      "rotaryMode": "half"
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        2,
+        511,
+        4,
+        64
+      ],
+      [
+        2,
+        511,
+        4,
+        64
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "bfloat16"
+    ],
+    "logical_input_bytes": 1177344,
+    "logical_output_bytes": 1046528,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:11:52.475825+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call",
+      "mstx_range_id": 0,
+      "roles": [
+        "Q",
+        "K"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "1933c2c504dd131395d13b00e3d8350e2a5dc7677bedaef8d36370c82082911e",
+    "d0cc19af9853ab1f4a28f8dab7bd391bf537403272ff4d5d6420470d508f19ac",
+    "50faf8dffea24f05930e810f917ce8043843edc0f47d6969663bda645219dbf4",
+    "23acbd78c4891b97d608637e0f0b4309616c62b4cc9649181ddd22d5379d9935"
+  ],
+  "native": [
+    {
+      "role": "Q",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "bfloat16",
+        "positions_dtype": "int32",
+        "nheads": "4",
+        "rotary_dim": "64",
+        "has_position_tensor": "False",
+        "interleaved": "False",
+        "conjugate": "False",
+        "cos_sin_stride": "64",
+        "x_stride_0": "256",
+        "x_stride_1": "64"
+      },
+      "source_sha256": "9f405f96f49c207409557b1a92e5f3cb009289bab2580f411a7e5f7ba3adc9d0",
+      "source_file": "cases/rope-supp-05/metadata/launch-Q-kernel.cpp"
+    },
+    {
+      "role": "K",
+      "global_symbol": "_rope_kernel",
+      "factory": "tile_kernels.transform.rope_asc.get_rope_kernel_asc",
+      "kwargs": {
+        "dtype": "bfloat16",
+        "positions_dtype": "int32",
+        "nheads": "4",
+        "rotary_dim": "64",
+        "has_position_tensor": "False",
+        "interleaved": "False",
+        "conjugate": "False",
+        "cos_sin_stride": "64",
+        "x_stride_0": "256",
+        "x_stride_1": "64"
+      },
+      "source_sha256": "9f405f96f49c207409557b1a92e5f3cb009289bab2580f411a7e5f7ba3adc9d0",
+      "source_file": "cases/rope-supp-05/metadata/launch-K-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "Q",
+    "K"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 854595464,
+    "domain_api": false
+  },
+  "post_replay_output_check": {
+    "status": "passed",
+    "scope": "all original Q and K elements compared against one-call CANN reference after range replay; detects repeated in-place rotation",
+    "metrics": [
+      {
+        "role": "Q",
+        "checked_elements": 261632,
+        "mismatch_elements": 0,
+        "max_abs_error": 3.0517578125e-05
+      },
+      {
+        "role": "K",
+        "checked_elements": 261632,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.00390625
+      }
+    ]
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T15:11:59.507133+00:00"
+}

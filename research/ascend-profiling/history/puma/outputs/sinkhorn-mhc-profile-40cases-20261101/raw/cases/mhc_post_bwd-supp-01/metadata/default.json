@@ -1,0 +1,151 @@
+{
+  "case_id": "mhc_post_bwd-supp-01",
+  "case": {
+    "task": "mhc_post_bwd",
+    "id": "mhc_post_bwd-supp-01",
+    "input_shapes": [
+      [
+        1,
+        1,
+        4,
+        64
+      ],
+      [
+        1,
+        1,
+        4,
+        64
+      ],
+      [
+        1,
+        1,
+        4,
+        4
+      ],
+      [
+        1,
+        1,
+        64
+      ],
+      [
+        1,
+        1,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "attrs": {},
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        1,
+        1,
+        4,
+        64
+      ],
+      [
+        1,
+        1,
+        4,
+        4
+      ],
+      [
+        1,
+        1,
+        64
+      ],
+      [
+        1,
+        1,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "logical_input_bytes": 1232,
+    "logical_output_bytes": 720,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:55:21.251635+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 1,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "d_residual",
+    "d_comb",
+    "d_x",
+    "d_post"
+  ],
+  "input_sha256": [
+    "823f90bbb1aba7da1621baf91d203101a2db35f54a897c980a616e98d53e2464",
+    "d3838fd1204b74f9d626e86d0e9896a99f577f285fa7ecefc7869bf7a1933499",
+    "bca17e69261f8fa6ef0d7315d60d8a361ed4c2d835b549ce748bac38b0c719ed",
+    "0f5774dfa0d0fd5152dd87028632234e2a889b226e92a950d74d38425a7ba78c",
+    "4a1fd76984ec193cabab094b0c5823a4bd7db2542137bf78d82d94868f4b11f0"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.post_asc.mhc_post_bwd_asc",
+    "kwargs": {
+      "h_blk": 64,
+      "num_stages": 3,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "d_o",
+      "comb_res_mix",
+      "residual",
+      "post_layer_mix",
+      "x"
+    ],
+    "global_symbols": [
+      "mhc_post_bwd_asc"
+    ],
+    "source_sha256": "3b6c0d0e4675ae7469281bc31a34f37a5ad37c5b8204c8ee68f5d4b896a91c8e",
+    "source_file": "cases/mhc_post_bwd-supp-01/metadata/launch-kernel.cpp",
+    "out_idx": "[5, 6, 7, 8]",
+    "native_output_order": [
+      "d_comb",
+      "d_residual",
+      "d_post",
+      "d_x"
+    ],
+    "cann_output_permutation": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "target_launches": [
+    {
+      "index": 0,
+      "mstx_range": "mhc_post_bwd-supp-01/target/0",
+      "global_symbols": [
+        "mhc_post_bwd_asc"
+      ]
+    }
+  ],
+  "correctness": {
+    "status": "checked_in_separate_prepare_process",
+    "scope": "no CPU reference work in target launch range"
+  },
+  "finished_utc": "2026-11-01T09:55:28.870277+00:00"
+}

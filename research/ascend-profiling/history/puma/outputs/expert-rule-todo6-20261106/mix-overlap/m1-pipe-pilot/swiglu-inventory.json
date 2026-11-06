@@ -1,0 +1,168 @@
+{
+  "status": "measurement_only",
+  "missing": [],
+  "target_identity_independently_verified": false,
+  "clock_synchronization_verified": false,
+  "coverage_complete_verified": false,
+  "loss_absent_verified": false,
+  "cross_channel_overlap": null,
+  "basic": {
+    "sha256": "678a1886a5167fca823ba56557653474ca4d2a763e7127c4fbd0a26b4e49a1b8",
+    "rows": [
+      {
+        "Op Name": "swiglu_forward_kernel_kernel",
+        "Op Type": "vector",
+        "Task Duration(us)": "5.318000",
+        "Block Dim": "56",
+        "Mix Block Dim": "NA",
+        "Device Id": "0",
+        "Pid": "179665",
+        "Current Freq": "1650",
+        "Rated Freq": "1650",
+        "": ""
+      }
+    ]
+  },
+  "trace": {
+    "sha256": "4cc3b5dcd7bcd1e1045b209126a5d9da9042f2c0c2d972dffa0e00b98b8484c1",
+    "schema_version": 1,
+    "display_time_unit": "ns",
+    "events_total": 218,
+    "events_by_channel": {
+      "core0.veccore0": 19,
+      "core0.veccore1": 19,
+      "core1.veccore0": 16,
+      "core1.veccore1": 16,
+      "core2.veccore0": 16,
+      "core2.veccore1": 16,
+      "core3.veccore0": 20,
+      "core3.veccore1": 20,
+      "core4.veccore0": 20,
+      "core4.veccore1": 20,
+      "core5.veccore0": 20,
+      "core5.veccore1": 16
+    },
+    "pipes_by_channel": {
+      "core0.veccore0": {
+        "MTE2": 6,
+        "MTE3": 8,
+        "SCALAR": 4,
+        "VECTOR": 1
+      },
+      "core0.veccore1": {
+        "MTE2": 6,
+        "MTE3": 8,
+        "SCALAR": 4,
+        "VECTOR": 1
+      },
+      "core1.veccore0": {
+        "MTE2": 5,
+        "MTE3": 7,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core1.veccore1": {
+        "MTE2": 5,
+        "MTE3": 7,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core2.veccore0": {
+        "MTE2": 5,
+        "MTE3": 7,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core2.veccore1": {
+        "MTE2": 5,
+        "MTE3": 7,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core3.veccore0": {
+        "MTE2": 7,
+        "MTE3": 9,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core3.veccore1": {
+        "MTE2": 7,
+        "MTE3": 9,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core4.veccore0": {
+        "MTE2": 7,
+        "MTE3": 9,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core4.veccore1": {
+        "MTE2": 7,
+        "MTE3": 9,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core5.veccore0": {
+        "MTE2": 7,
+        "MTE3": 9,
+        "SCALAR": 3,
+        "VECTOR": 1
+      },
+      "core5.veccore1": {
+        "MTE2": 5,
+        "MTE3": 7,
+        "SCALAR": 3,
+        "VECTOR": 1
+      }
+    },
+    "unrecognized_complete_event_indices": [],
+    "invalid_event_indices": []
+  },
+  "raw": {
+    "timeline.bin.0": {
+      "sha256": "e4098d25377d33aad24fff21a3efc9c92eeea862312dac170e748c2f6b4efb7f",
+      "bytes": 25165920,
+      "valid_bytes_by_channel": {
+        "core0.veccore0": [
+          192
+        ],
+        "core0.veccore1": [
+          192
+        ],
+        "core1.veccore0": [
+          160
+        ],
+        "core1.veccore1": [
+          160
+        ],
+        "core2.veccore0": [
+          160
+        ],
+        "core2.veccore1": [
+          160
+        ],
+        "core3.veccore0": [
+          192
+        ],
+        "core3.veccore1": [
+          192
+        ],
+        "core4.veccore0": [
+          192
+        ],
+        "core4.veccore1": [
+          192
+        ],
+        "core5.veccore0": [
+          192
+        ],
+        "core5.veccore1": [
+          160
+        ]
+      }
+    }
+  },
+  "raw_channels_without_trace_events": [],
+  "trace_channels_without_raw_header": []
+}

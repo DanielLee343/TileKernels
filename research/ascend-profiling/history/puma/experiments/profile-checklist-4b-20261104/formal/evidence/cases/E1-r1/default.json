@@ -1,0 +1,92 @@
+{
+  "runtime_kernel": "mhc_sinkhorn_fwd_asc_kernel",
+  "source_sha256": "c07412105af506e43f7b967e991022d3bae18b112749cccfed12ae967feeb540",
+  "inputs": [
+    {
+      "shape": [
+        1024,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 65536,
+      "sha256": "74c09f77cf55ba627a55181ec410cbf1c3d4c75e2652f045f12686ff661a02ea"
+    }
+  ],
+  "output_addresses_mod_128": [
+    0
+  ],
+  "case": {
+    "task": "sinkhorn",
+    "id": "sinkhorn-cann-4",
+    "input_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "iter_step": 20,
+      "eps": 1e-06
+    },
+    "case_source": "cann_public",
+    "source_case_id": "4",
+    "source_value_range": "[-1, 1]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level3/mhc_sinkhorn/cases.csv",
+    "source_csv_sha256": "89a16017e09a78f6f58da15d427417cef3680b6f923c96bd9af93bae4853e322",
+    "output_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 65536,
+    "logical_output_bytes": 65536,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "compiled": {
+    "host_sha256": "07a1d2e1231bdaa3236e676cd5224ea4c5bd4656934dc2e53499cc0341d6e390",
+    "device_sha256": "de86d9496be97b63c258323bdc094e58853320e8ba42fb45e9d17ab979d3310b"
+  },
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999891,
+      "max_abs_error": 1.1920928955078125e-07,
+      "exact_equal": false,
+      "reference_diagnostic_passed": false,
+      "passed": true,
+      "historical_full_isclose": true
+    }
+  ],
+  "output": {
+    "shape": [
+      1024,
+      4,
+      4
+    ],
+    "dtype": "float32",
+    "stride": [
+      16,
+      4,
+      1
+    ],
+    "bytes": 65536,
+    "sha256": "56d75f57c45ec341b00e691733a59114bb09a0fef6ffc8ea34ccb7daf1e75d43"
+  },
+  "status": "passed"
+}

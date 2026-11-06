@@ -1,0 +1,228 @@
+{
+  "case_id": "mhc_post_bwd-supp-04",
+  "case": {
+    "task": "mhc_post_bwd",
+    "id": "mhc_post_bwd-supp-04",
+    "input_shapes": [
+      [
+        1,
+        128,
+        4,
+        512
+      ],
+      [
+        1,
+        128,
+        4,
+        512
+      ],
+      [
+        1,
+        128,
+        4,
+        4
+      ],
+      [
+        1,
+        128,
+        512
+      ],
+      [
+        1,
+        128,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "attrs": {},
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        1,
+        128,
+        4,
+        512
+      ],
+      [
+        1,
+        128,
+        4,
+        4
+      ],
+      [
+        1,
+        128,
+        512
+      ],
+      [
+        1,
+        128,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16",
+      "float32",
+      "bfloat16",
+      "float32"
+    ],
+    "logical_input_bytes": 1189888,
+    "logical_output_bytes": 665600,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:56:15.035513+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 0,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "d_residual",
+    "d_comb",
+    "d_x",
+    "d_post"
+  ],
+  "input_sha256": [
+    "3cf356e02a55fd4330926fdc240b5b2f4a3d32808df813a9b753a4f3e3edbaa3",
+    "0637bfc37a3bf47f96d70fd94adab190e11862679c0cc806f40b32b594bea104",
+    "e5c2d2448e10908c44931acc49a8c9860a558a313caf81429296c93e6e8dee86",
+    "fbabf2ae76a71c125c8f377e1e897efc98a0678971680e0a661e09888b0e68bb",
+    "dc156b25766c40500556131473339ae362527f679e72b44ac63614c5d03903a1"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.post_asc.mhc_post_bwd_asc",
+    "kwargs": {
+      "h_blk": 512,
+      "num_stages": 3,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "d_o",
+      "comb_res_mix",
+      "residual",
+      "post_layer_mix",
+      "x"
+    ],
+    "global_symbols": [
+      "mhc_post_bwd_asc"
+    ],
+    "source_sha256": "c8af940e16b1e6235f348f9cefd29d36730c2acc9ec9c706a8ce3156d7874b4f",
+    "source_file": "cases/mhc_post_bwd-supp-04/metadata/prepare-kernel.cpp",
+    "out_idx": "[5, 6, 7, 8]",
+    "native_output_order": [
+      "d_comb",
+      "d_residual",
+      "d_post",
+      "d_x"
+    ],
+    "cann_output_permutation": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "outputs": [
+    {
+      "shape": [
+        1,
+        128,
+        4,
+        512
+      ],
+      "dtype": "bfloat16",
+      "elements": 262144
+    },
+    {
+      "shape": [
+        1,
+        128,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "elements": 2048
+    },
+    {
+      "shape": [
+        1,
+        128,
+        512
+      ],
+      "dtype": "bfloat16",
+      "elements": 65536
+    },
+    {
+      "shape": [
+        1,
+        128,
+        4
+      ],
+      "dtype": "float32",
+      "elements": 512
+    }
+  ],
+  "native_matches_frozen_adapter": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; CPU CANN reference in token chunks of 64; mHC uses original FP64 equations; finite generated inputs, not full CANN benchmark contract",
+    "reference_chunk_tokens": 64,
+    "total_tokens": 128,
+    "metrics": [
+      {
+        "output": 0,
+        "name": "d_residual",
+        "checked_elements": 262144,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.00390625,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      },
+      {
+        "output": 1,
+        "name": "d_comb",
+        "checked_elements": 2048,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      },
+      {
+        "output": 2,
+        "name": "d_x",
+        "checked_elements": 65536,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.0009765625,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      },
+      {
+        "output": 3,
+        "name": "d_post",
+        "checked_elements": 512,
+        "mismatch_elements": 0,
+        "max_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0001220703125,
+        "atol": 2e-05
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T09:56:25.073575+00:00"
+}

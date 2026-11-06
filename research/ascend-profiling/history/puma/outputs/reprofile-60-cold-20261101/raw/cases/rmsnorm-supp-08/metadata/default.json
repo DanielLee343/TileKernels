@@ -1,0 +1,109 @@
+{
+  "case_id": "rmsnorm-supp-08",
+  "case": {
+    "task": "rmsnorm",
+    "id": "rmsnorm-supp-08",
+    "input_shapes": [
+      [
+        16384,
+        7168
+      ],
+      [
+        7168
+      ]
+    ],
+    "input_dtypes": [
+      "float32",
+      "float32"
+    ],
+    "attrs": {
+      "epsilon": 1e-05
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        16384,
+        7168
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 469790720,
+    "logical_output_bytes": 469762048,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:03:09.015517+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call",
+      "mstx_range_id": 0,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "fb5791c5b3003841f14484d7f34711ae22ff05d9b596f34b9fbe58fa017287b8",
+    "88440193ec06dc6305decf9de896a93e616a9f4eb067af3ed320d135df7dce0b"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "norm_forward_kernel",
+      "factory": "tile_kernels.quant.norm_forward_asc.get_norm_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "7168",
+        "with_weight": "True",
+        "with_residual": "False",
+        "eps": "1e-05",
+        "out_scale": "1.0",
+        "x_dtype": "float32",
+        "out_config": "CastOutputConfig(torch_dtype=torch.float32, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "with_out_bf16": "False",
+        "with_rstd": "False",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "683b4e0343504401a2e7e0643e29d15890089606c940e41ca834cfffd8f89ac1",
+      "source_file": "cases/rmsnorm-supp-08/metadata/launch-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 1437893416,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T15:03:17.813239+00:00"
+}

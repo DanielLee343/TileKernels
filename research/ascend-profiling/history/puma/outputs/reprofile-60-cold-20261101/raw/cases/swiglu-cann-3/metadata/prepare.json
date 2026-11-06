@@ -1,0 +1,100 @@
+{
+  "case_id": "swiglu-cann-3",
+  "case": {
+    "task": "swiglu",
+    "id": "swiglu-cann-3",
+    "input_shapes": [
+      [
+        4096,
+        8192
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16"
+    ],
+    "attrs": {
+      "dim": -1
+    },
+    "case_source": "cann_public",
+    "source_case_id": "3",
+    "source_value_range": "[-3, 3]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level1/swi_glu/cases.csv",
+    "source_csv_sha256": "189964f4a2a050f86c016a5a326ae859d678dec42d9f592c374ecc1128a0f04f",
+    "output_shapes": [
+      [
+        4096,
+        4096
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16"
+    ],
+    "logical_input_bytes": 67108864,
+    "logical_output_bytes": 33554432,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T14:35:40.151926+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 0,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [],
+  "target_calls": [],
+  "input_sha256": [
+    "86566c824f09806b053c4485cef22b3810fd3d3f3460eb72acdff601da20f928"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "swiglu_forward_kernel",
+      "factory": "tile_kernels.quant.swiglu_forward_asc.get_swiglu_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "4096",
+        "num_experts": "0",
+        "alignment": "128",
+        "with_weight": "False",
+        "with_routed_scaling": "False",
+        "clamp_value": "None",
+        "count_clamp": "False",
+        "in_dtype": "bfloat16",
+        "out_config": "CastOutputConfig(torch_dtype=torch.bfloat16, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "dd86907d5c29c70e2e4b73077949ce21b1b69597fe1eefc8d3e7430427d9b9c8",
+      "source_file": "cases/swiglu-cann-3/metadata/prepare-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "outputs": [
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "dtype": "bfloat16",
+      "elements": 16777216
+    }
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; original frozen CANN CPU reference in row/token chunks; finite inputs, not full CANN benchmark contract",
+    "metrics": [
+      {
+        "output": 0,
+        "checked_elements": 16777216,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.0,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T14:35:49.566438+00:00"
+}

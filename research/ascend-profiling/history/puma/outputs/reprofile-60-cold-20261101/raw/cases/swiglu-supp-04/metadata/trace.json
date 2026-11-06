@@ -1,0 +1,138 @@
+{
+  "case_id": "swiglu-supp-04",
+  "case": {
+    "task": "swiglu",
+    "id": "swiglu-supp-04",
+    "input_shapes": [
+      [
+        128,
+        1024
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "dim": -1
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        128,
+        512
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 524288,
+    "logical_output_bytes": 262144,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T14:39:32.289591+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 5,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [
+    {
+      "call_index": 0,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 1,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    },
+    {
+      "call_index": 2,
+      "api": "profiler-managed replay clear",
+      "returncode": null,
+      "outside_mstx_range": true,
+      "application_trace_cold": false
+    }
+  ],
+  "target_calls": [
+    {
+      "index": 0,
+      "mstx_range": "cold_call_0",
+      "mstx_range_id": 1,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 0,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 1,
+      "mstx_range": "cold_call_1",
+      "mstx_range_id": 2,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 1,
+      "no_flush_between_roles": true
+    },
+    {
+      "index": 2,
+      "mstx_range": "cold_call_2",
+      "mstx_range_id": 3,
+      "roles": [
+        "single"
+      ],
+      "flush_index": 2,
+      "no_flush_between_roles": true
+    }
+  ],
+  "input_sha256": [
+    "893a5027b8594ff601d6081d951fc4718d5782eb4c0d87f3dda4e3f9b554590b"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "swiglu_forward_kernel",
+      "factory": "tile_kernels.quant.swiglu_forward_asc.get_swiglu_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "512",
+        "num_experts": "0",
+        "alignment": "128",
+        "with_weight": "False",
+        "with_routed_scaling": "False",
+        "clamp_value": "None",
+        "count_clamp": "False",
+        "in_dtype": "float32",
+        "out_config": "CastOutputConfig(torch_dtype=torch.float32, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "457ff9312efd673997861b77bcb5047392c736f7b05979b789d303e7506c310f",
+      "source_file": "cases/swiglu-supp-04/metadata/launch-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "mstx_api": {
+    "library": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/tools/mstx/lib64/libms_tools_ext.so",
+    "start": "mstxRangeStartA",
+    "end": "mstxRangeEnd",
+    "stream_pointer": 920514056,
+    "domain_api": false
+  },
+  "correctness": {
+    "status": "separate_prepare_process",
+    "scope": "no reference work in target range"
+  },
+  "finished_utc": "2026-11-01T14:39:39.434388+00:00"
+}

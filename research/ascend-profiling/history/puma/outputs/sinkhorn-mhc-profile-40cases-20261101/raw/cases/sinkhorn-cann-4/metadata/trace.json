@@ -1,0 +1,108 @@
+{
+  "case_id": "sinkhorn-cann-4",
+  "case": {
+    "task": "sinkhorn",
+    "id": "sinkhorn-cann-4",
+    "input_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "iter_step": 20,
+      "eps": 1e-06
+    },
+    "case_source": "cann_public",
+    "source_case_id": "4",
+    "source_value_range": "[-1, 1]",
+    "source_adaptation": "none",
+    "source_csv": "/home/lyuze/cann-bench/tasks/level3/mhc_sinkhorn/cases.csv",
+    "source_csv_sha256": "89a16017e09a78f6f58da15d427417cef3680b6f923c96bd9af93bae4853e322",
+    "output_shapes": [
+      [
+        1024,
+        4,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 65536,
+    "logical_output_bytes": 65536,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:38:23.876506+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 3,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "comb_out"
+  ],
+  "input_sha256": [
+    "74c09f77cf55ba627a55181ec410cbf1c3d4c75e2652f045f12686ff661a02ea"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.sinkhorn_asc.mhc_sinkhorn_fwd_asc",
+    "kwargs": {
+      "repeat": 20,
+      "eps": 1e-06,
+      "token_block_size": 4,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "comb_res_mix",
+      "comb_res_mix_out"
+    ],
+    "global_symbols": [
+      "mhc_sinkhorn_fwd_asc"
+    ],
+    "source_sha256": "c07412105af506e43f7b967e991022d3bae18b112749cccfed12ae967feeb540",
+    "source_file": "cases/sinkhorn-cann-4/metadata/launch-kernel.cpp",
+    "out_idx": "[]",
+    "native_output_order": [
+      "preallocated_comb_out"
+    ],
+    "cann_output_permutation": [
+      0
+    ]
+  },
+  "target_launches": [
+    {
+      "index": 0,
+      "mstx_range": "sinkhorn-cann-4/target/0",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    },
+    {
+      "index": 1,
+      "mstx_range": "sinkhorn-cann-4/target/1",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    },
+    {
+      "index": 2,
+      "mstx_range": "sinkhorn-cann-4/target/2",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    }
+  ],
+  "correctness": {
+    "status": "checked_in_separate_prepare_process",
+    "scope": "no CPU reference work in target launch range"
+  },
+  "finished_utc": "2026-11-01T09:38:30.044419+00:00"
+}

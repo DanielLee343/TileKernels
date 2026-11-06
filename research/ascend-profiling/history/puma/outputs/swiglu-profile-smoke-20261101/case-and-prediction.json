@@ -1,0 +1,109 @@
+{
+  "case": {
+    "task": "swiglu",
+    "id": "swiglu-supp-05",
+    "input_shapes": [
+      [
+        511,
+        2048
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16"
+    ],
+    "attrs": {
+      "dim": -1
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        511,
+        1024
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16"
+    ],
+    "logical_input_bytes": 2093056,
+    "logical_output_bytes": 1046528,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "prediction": {
+    "task": "swiglu",
+    "case_id": "swiglu-supp-05",
+    "case_source": "supplemental",
+    "source_case_id": "",
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "input_shapes": "[[511,2048]]",
+    "input_dtypes": "[\"bfloat16\"]",
+    "output_shapes": "[[511,1024]]",
+    "output_dtypes": "[\"bfloat16\"]",
+    "attrs": "{\"dim\":-1}",
+    "logical_input_bytes": "2093056",
+    "logical_output_bytes": "1046528",
+    "source_value_range": "",
+    "reference_validation_status": "ok",
+    "validation_input_shapes": "[[4,2048]]",
+    "validation_scope": "finite CPU representative shape; original inner axes/dtypes/attrs retained; no TileLang/NPU validation",
+    "validation_full_shape": "False",
+    "cann_status": "ok",
+    "cann_source_kind": "original_hap",
+    "cann_search_mode": "none",
+    "cann_raw_us": "1.4003034458737353",
+    "cann_clipped_us": "1.4003",
+    "cann_bottlenecks": "hbm_read",
+    "cann_cube_us": "0.0",
+    "cann_vector_us": "0.7963636363636364",
+    "cann_hbm_read_us": "1.4003034458737353",
+    "cann_write_us": "0.22491082842824134",
+    "cann_vector_basic_us": "0.35393939393939394",
+    "cann_vector_sfu_us": "0.17696969696969697",
+    "cann_vector_div_us": "0.0",
+    "cann_vector_cast_us": "0.26545454545454544",
+    "cann_write_l2_us": "0.22491082842824134",
+    "cann_write_hbm_us": "0.0",
+    "cann_cube_flops": "0",
+    "cann_vector_terms": "[{\"name\":\"sigmoid_folded_sfu\",\"count\":523264,\"dtype\":\"float32\",\"kind\":\"sfu\",\"rate_elements_per_second\":2956800000000.0,\"time_us\":0.17696969696969697},{\"name\":\"x0_times_sigmoid\",\"count\":523264,\"dtype\":\"float32\",\"kind\":\"basic\",\"rate_elements_per_second\":2956800000000.0,\"time_us\":0.17696969696969697},{\"name\":\"silu_times_x1\",\"count\":523264,\"dtype\":\"float32\",\"kind\":\"basic\",\"rate_elements_per_second\":2956800000000.0,\"time_us\":0.17696969696969697},{\"name\":\"input_to_fp32\",\"count\":1046528,\"dtype\":\"float32\",\"kind\":\"cast\",\"src_dtype\":\"bfloat16\",\"dst_dtype\":\"float32\",\"rate_elements_per_second\":5913600000000.0,\"time_us\":0.17696969696969697},{\"name\":\"output_to_bf16\",\"count\":523264,\"dtype\":\"float32\",\"kind\":\"cast\",\"src_dtype\":\"float32\",\"dst_dtype\":\"bfloat16\",\"rate_elements_per_second\":5913600000000.0,\"time_us\":0.08848484848484849}]",
+    "cann_error_type": "",
+    "cann_error": "",
+    "tilesim_status": "ok",
+    "tilesim_total_us": "4.425821360728391",
+    "tilesim_body_us": "4.425821360728391",
+    "tilesim_launch_us": "0.0",
+    "tilesim_aic_us": "0.0",
+    "tilesim_aiv_us": "4.425821360728391",
+    "tilesim_cube_us": "0.0",
+    "tilesim_aic_read_us": "0.0",
+    "tilesim_fixpipe_us": "0.0",
+    "tilesim_vector_us": "1.1503030303030302",
+    "tilesim_aiv_read_us": "4.200910337621206",
+    "tilesim_aiv_write_us": "0.22491102310718508",
+    "tilesim_mte1_us": "",
+    "tilesim_mte1_coverage": "not_separately_modeled_by_theoretical_aggregator",
+    "tilesim_bottleneck_group": "aiv_read_plus_write",
+    "tilesim_aiv_aggregation": "max(vector,read+write)",
+    "tilesim_data_transfer_bytes": "{\"GM_2_UB\":6279168.0,\"UB_2_L2\":1046528.0}",
+    "tilesim_gm_to_ub_bytes": "6279168.0",
+    "tilesim_extra_gm_read_bytes": "4186112.0",
+    "tilesim_error_type": "",
+    "tilesim_error": "",
+    "issue_ids": "TS-VIEW-001",
+    "comparison_scope": "model_outputs_with_unresolved_issue",
+    "raw_result_path": "cases/swiglu-supp-05.json",
+    "cann_vector_basic_elements": "1046528",
+    "cann_vector_sfu_elements": "523264",
+    "cann_vector_div_elements": "0",
+    "cann_vector_cast_elements": "1569792",
+    "cann_commit": "115ce93e0f98a67cf97c6457b78011cd36e673be",
+    "tilesim_commit": "0b4e5de41237c8c25fb95c48b687f33a445d7da3",
+    "tilekernels_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+    "parameter_sha256": "693582631cc4a2e8b08bfb91852497f886fc2e672eb6995a25a9c9f4bebdb8a4",
+    "reference_sha256": "3417cc27927f4e64f07b800ea06e857e03eedd08e442f3840598296658a8d8a3",
+    "manifest_sha256": "99286b53b120258d0b630ba5f7274cb0d9622075b8aaf204da43defdc8d54d48",
+    "cann_original_source_crosscheck": "ok"
+  },
+  "manifest_sha256": "99286b53b120258d0b630ba5f7274cb0d9622075b8aaf204da43defdc8d54d48"
+}

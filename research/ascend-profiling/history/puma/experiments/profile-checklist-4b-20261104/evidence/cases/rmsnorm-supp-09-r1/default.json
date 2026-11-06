@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 1.0000000000000002,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true,
+      "historical_full_isclose": true
+    }
+  ],
+  "inputs": [
+    {
+      "shape": [
+        3,
+        96
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        96,
+        1
+      ],
+      "bytes": 576,
+      "sha256": "83ded57c18f8cdec8189dc2b9faa1efb8d444efa60ae2975c34c0ad176f776de"
+    },
+    {
+      "shape": [
+        96
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        1
+      ],
+      "bytes": 192,
+      "sha256": "588901993faf2bb914aa48aed4cf67832b44013b3a9d33933ad176b16624ca7a"
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        3,
+        96
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        96,
+        1
+      ],
+      "bytes": 576
+    }
+  ],
+  "source_sha256": "eba1c718040b80a89d770f417dc1d46146a29073257bece701f7a57545f6760d",
+  "runtime_kernel": "norm_forward_kernel_kernel"
+}

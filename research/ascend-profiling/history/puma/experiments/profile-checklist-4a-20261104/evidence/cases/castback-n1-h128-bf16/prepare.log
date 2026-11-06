@@ -1,0 +1,2 @@
+2026-11-04 15:32:02  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `cast_back_kernel_ascend` with `out_idx=None`
+2026-11-04 15:32:04  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `cast_back_kernel_ascend`

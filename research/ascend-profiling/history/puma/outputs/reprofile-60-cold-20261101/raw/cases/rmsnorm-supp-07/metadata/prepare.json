@@ -1,0 +1,103 @@
+{
+  "case_id": "rmsnorm-supp-07",
+  "case": {
+    "task": "rmsnorm",
+    "id": "rmsnorm-supp-07",
+    "input_shapes": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096
+      ]
+    ],
+    "input_dtypes": [
+      "bfloat16",
+      "bfloat16"
+    ],
+    "attrs": {
+      "epsilon": 1e-06
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        4096,
+        4096
+      ]
+    ],
+    "output_dtypes": [
+      "bfloat16"
+    ],
+    "logical_input_bytes": 33562624,
+    "logical_output_bytes": 33554432,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "prepare",
+  "status": "passed",
+  "started_utc": "2026-11-01T15:01:51.163208+00:00",
+  "wrapper_sha256": "accef4473f9dccdfed24c93fb2520fc801550c32df332532c6a9f7454b1668db",
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "application_warmup_calls": 0,
+  "profiling_in_wrapper": false,
+  "flush_policy": "profiler_replay",
+  "cold_boundary": "profiler kernel/range replay clears L2 before counted replay; ordinary trace is identity-only; Q,K remain in one range",
+  "flush_events": [],
+  "target_calls": [],
+  "input_sha256": [
+    "faad581af9399c32a7331142ac2a3bb991d30b01d2e5beeec21a68f3e4695c97",
+    "8ca0602a06a950bec5a7098147a93bb05b8f43442b42ab90c6f8f6ecc8b68bab"
+  ],
+  "native": [
+    {
+      "role": "single",
+      "global_symbol": "norm_forward_kernel",
+      "factory": "tile_kernels.quant.norm_forward_asc.get_norm_forward_kernel_asc",
+      "kwargs": {
+        "hidden": "4096",
+        "with_weight": "True",
+        "with_residual": "False",
+        "eps": "1e-06",
+        "out_scale": "1.0",
+        "x_dtype": "bfloat16",
+        "out_config": "CastOutputConfig(torch_dtype=torch.bfloat16, sf_block=(1, 1), use_tma_aligned_col_major_sf=False, use_packed_ue8m0=False, use_e4m3_sf=False, round_sf=False, clamp_min_value=None)",
+        "with_out_bf16": "False",
+        "with_rstd": "False",
+        "num_vec_cores": "56"
+      },
+      "source_sha256": "49f59118eb7c7718c297c38f88f7d5dc441916500ca537464a0d86afbfdd2e60",
+      "source_file": "cases/rmsnorm-supp-07/metadata/prepare-single-kernel.cpp"
+    }
+  ],
+  "native_roles": [
+    "single"
+  ],
+  "outputs": [
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "dtype": "bfloat16",
+      "elements": 16777216
+    }
+  ],
+  "correctness": {
+    "status": "passed",
+    "scope": "all elements of all full-shape outputs; original frozen CANN CPU reference in row/token chunks; finite inputs, not full CANN benchmark contract",
+    "metrics": [
+      {
+        "output": 0,
+        "checked_elements": 16777216,
+        "mismatch_elements": 0,
+        "max_abs_error": 0.0078125,
+        "rtol": 0.0078125,
+        "atol": 0.002
+      }
+    ]
+  },
+  "finished_utc": "2026-11-01T15:02:00.632056+00:00"
+}

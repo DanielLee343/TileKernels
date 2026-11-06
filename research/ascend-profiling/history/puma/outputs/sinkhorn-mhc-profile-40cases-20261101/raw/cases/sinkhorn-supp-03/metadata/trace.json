@@ -1,0 +1,106 @@
+{
+  "case_id": "sinkhorn-supp-03",
+  "case": {
+    "task": "sinkhorn",
+    "id": "sinkhorn-supp-03",
+    "input_shapes": [
+      [
+        31,
+        4,
+        4
+      ]
+    ],
+    "input_dtypes": [
+      "float32"
+    ],
+    "attrs": {
+      "iter_step": 5,
+      "eps": 1e-06
+    },
+    "case_source": "supplemental",
+    "source_case_id": null,
+    "source_value_range": null,
+    "source_adaptation": "deterministic legal shape/dtype/attribute coverage",
+    "output_shapes": [
+      [
+        31,
+        4,
+        4
+      ]
+    ],
+    "output_dtypes": [
+      "float32"
+    ],
+    "logical_input_bytes": 1984,
+    "logical_output_bytes": 1984,
+    "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+  },
+  "mode": "launch",
+  "status": "passed",
+  "started_utc": "2026-11-01T09:47:02.756948+00:00",
+  "profiling_in_wrapper": false,
+  "application_warmup_launches": 0,
+  "requested_target_launches": 3,
+  "input_generator_sha256": "7d05aaa197bb72336d07631c99fe82ee79981409386174319027b8db6b082095",
+  "wrapper_sha256": "9a67f5880f92b698ba5d7e017c37ff2e5795ba59fcf9c554d5dbc263bc808b61",
+  "output_order": [
+    "comb_out"
+  ],
+  "input_sha256": [
+    "07f7e7d991f14b8ae1db0bf20eeea1f2fe09e4a4d4b586311deac90a461a6b48"
+  ],
+  "native": {
+    "factory": "tile_kernels.mhc.sinkhorn_asc.mhc_sinkhorn_fwd_asc",
+    "kwargs": {
+      "repeat": 5,
+      "eps": 1e-06,
+      "token_block_size": 4,
+      "num_vec_cores": 56
+    },
+    "jit_mode": "eager",
+    "kernel_argument_names": [
+      "comb_res_mix",
+      "comb_res_mix_out"
+    ],
+    "global_symbols": [
+      "mhc_sinkhorn_fwd_asc"
+    ],
+    "source_sha256": "7f827b9169c6d465a9836f2d15b1afc289ceff0927574a4ec67b2157be45d26f",
+    "source_file": "cases/sinkhorn-supp-03/metadata/launch-kernel.cpp",
+    "out_idx": "[]",
+    "native_output_order": [
+      "preallocated_comb_out"
+    ],
+    "cann_output_permutation": [
+      0
+    ]
+  },
+  "target_launches": [
+    {
+      "index": 0,
+      "mstx_range": "sinkhorn-supp-03/target/0",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    },
+    {
+      "index": 1,
+      "mstx_range": "sinkhorn-supp-03/target/1",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    },
+    {
+      "index": 2,
+      "mstx_range": "sinkhorn-supp-03/target/2",
+      "global_symbols": [
+        "mhc_sinkhorn_fwd_asc"
+      ]
+    }
+  ],
+  "correctness": {
+    "status": "checked_in_separate_prepare_process",
+    "scope": "no CPU reference work in target launch range"
+  },
+  "finished_utc": "2026-11-01T09:47:08.826623+00:00"
+}
