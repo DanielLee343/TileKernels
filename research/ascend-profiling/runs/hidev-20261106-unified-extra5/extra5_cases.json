@@ -1,0 +1,1968 @@
+{
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "device_bus": "0000:57:00.0",
+  "cases": [
+    {
+      "id": "engram_gate_fwd-01",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 128,
+        "with_mask": false
+      },
+      "pilot": true,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-02",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 768,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-03",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 128,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-04",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 7168,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-05",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-06",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-07",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-08",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 384,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-09",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 4096,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-10",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 6144,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-11",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-12",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-13",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-14",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 384,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-15",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 4096,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-16",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 6144,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-17",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 7168,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-18",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 768,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-19",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 128,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_fwd-20",
+      "group": "engram_gate_fwd",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 128,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_fwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-01",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": false
+      },
+      "pilot": true,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-02",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 768,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-03",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 768,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-04",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 7168,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-05",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-06",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-07",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 4096,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-08",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 6144,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-09",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-10",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-11",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-12",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 4096,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-13",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 6144,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-14",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 7168,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-15",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-16",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2048,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-17",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-18",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 2560,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-19",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 512,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": false
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_gate_bwd-20",
+      "group": "engram_gate_bwd",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 8001,
+        "hc": 4,
+        "hidden": 3072,
+        "with_mask": true
+      },
+      "pilot": false,
+      "adapter": "extra_engram_gate_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-01",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 1,
+      "params": {
+        "numel": 256256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": true,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-02",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 2,
+      "params": {
+        "numel": 512000512,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-03",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 3,
+      "params": {
+        "numel": 2560256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-04",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 4,
+      "params": {
+        "numel": 51200512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-05",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 5,
+      "params": {
+        "numel": 2560256,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-06",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 6,
+      "params": {
+        "numel": 512000512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-07",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 7,
+      "params": {
+        "numel": 51200512,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-08",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 8,
+      "params": {
+        "numel": 256256,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-09",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 9,
+      "params": {
+        "numel": 2560256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-10",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 10,
+      "params": {
+        "numel": 2560256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-11",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 11,
+      "params": {
+        "numel": 51200512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-12",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 12,
+      "params": {
+        "numel": 256256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-13",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 13,
+      "params": {
+        "numel": 512000512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-14",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 14,
+      "params": {
+        "numel": 51200512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-15",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 15,
+      "params": {
+        "numel": 256256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-16",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 16,
+      "params": {
+        "numel": 512000512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-17",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 17,
+      "params": {
+        "numel": 2560256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-18",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 18,
+      "params": {
+        "numel": 256256,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-19",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 19,
+      "params": {
+        "numel": 512000512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_momentum_update-20",
+      "group": "engram_sinkhorn_momentum_update",
+      "plan_case_number": 20,
+      "params": {
+        "numel": 51200512,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "beta1": 0.95
+      },
+      "pilot": false,
+      "adapter": "extra_engram_momentum.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-01",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 1,
+      "params": {
+        "num_rows": 1,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": true,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-02",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 2,
+      "params": {
+        "num_rows": 100001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-03",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 3,
+      "params": {
+        "num_rows": 10001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-04",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 4,
+      "params": {
+        "num_rows": 1001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-05",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 5,
+      "params": {
+        "num_rows": 1024,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-06",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 6,
+      "params": {
+        "num_rows": 128,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-07",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 7,
+      "params": {
+        "num_rows": 16384,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-08",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 8,
+      "params": {
+        "num_rows": 32768,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-09",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 9,
+      "params": {
+        "num_rows": 4096,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-10",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 10,
+      "params": {
+        "num_rows": 512,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-11",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 11,
+      "params": {
+        "num_rows": 8192,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-12",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 12,
+      "params": {
+        "num_rows": 100001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-13",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 13,
+      "params": {
+        "num_rows": 10001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-14",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 14,
+      "params": {
+        "num_rows": 1001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-15",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 15,
+      "params": {
+        "num_rows": 1024,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-16",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 16,
+      "params": {
+        "num_rows": 128,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-17",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 17,
+      "params": {
+        "num_rows": 16384,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-18",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 18,
+      "params": {
+        "num_rows": 1,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-19",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 19,
+      "params": {
+        "num_rows": 32768,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "engram_sinkhorn_step-20",
+      "group": "engram_sinkhorn_step",
+      "plan_case_number": 20,
+      "params": {
+        "num_rows": 4096,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_engram_step.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-01",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 1,
+      "params": {
+        "n0": 1,
+        "n1": 1001,
+        "mhc_mult": 4
+      },
+      "pilot": true,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-02",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 2,
+      "params": {
+        "n0": 1,
+        "n1": 1024,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-03",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 3,
+      "params": {
+        "n0": 1,
+        "n1": 127,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-04",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "n0": 1,
+        "n1": 128,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-05",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 5,
+      "params": {
+        "n0": 1,
+        "n1": 16384,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-06",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 6,
+      "params": {
+        "n0": 1,
+        "n1": 16385,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-07",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 7,
+      "params": {
+        "n0": 1,
+        "n1": 17,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-08",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 8,
+      "params": {
+        "n0": 1,
+        "n1": 1,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-09",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 9,
+      "params": {
+        "n0": 1,
+        "n1": 2049,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-10",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 10,
+      "params": {
+        "n0": 1,
+        "n1": 257,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-11",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 11,
+      "params": {
+        "n0": 1,
+        "n1": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-12",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 12,
+      "params": {
+        "n0": 1,
+        "n1": 4097,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-13",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 13,
+      "params": {
+        "n0": 1,
+        "n1": 511,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-14",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 14,
+      "params": {
+        "n0": 1,
+        "n1": 512,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-15",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 15,
+      "params": {
+        "n0": 1,
+        "n1": 513,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-16",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 16,
+      "params": {
+        "n0": 1,
+        "n1": 64,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-17",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 17,
+      "params": {
+        "n0": 1,
+        "n1": 8001,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-18",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 18,
+      "params": {
+        "n0": 2,
+        "n1": 1001,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-19",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 19,
+      "params": {
+        "n0": 2,
+        "n1": 1024,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_pre_split_mixes_bwd-20",
+      "group": "mhc_pre_split_mixes_bwd",
+      "plan_case_number": 20,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_presplit_bwd.py",
+      "range": "mhc_presplit_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-01",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 1,
+      "params": {
+        "hidden_size": 64,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": true,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-02",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 2,
+      "params": {
+        "hidden_size": 8192,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-03",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 3,
+      "params": {
+        "hidden_size": 1024,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-04",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "hidden_size": 128,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-05",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 5,
+      "params": {
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-06",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 6,
+      "params": {
+        "hidden_size": 1536,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-07",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 7,
+      "params": {
+        "hidden_size": 1792,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-08",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 8,
+      "params": {
+        "hidden_size": 192,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-09",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 9,
+      "params": {
+        "hidden_size": 2048,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-10",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 10,
+      "params": {
+        "hidden_size": 256,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-11",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 11,
+      "params": {
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-12",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 12,
+      "params": {
+        "hidden_size": 3072,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-13",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 13,
+      "params": {
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-14",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 14,
+      "params": {
+        "hidden_size": 3584,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-15",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 15,
+      "params": {
+        "hidden_size": 384,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-16",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 16,
+      "params": {
+        "hidden_size": 4096,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-17",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 17,
+      "params": {
+        "hidden_size": 4608,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-18",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 18,
+      "params": {
+        "hidden_size": 512,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-19",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 19,
+      "params": {
+        "hidden_size": 5120,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_fn_normw_merge_bwd-20",
+      "group": "mhc_fn_normw_merge_bwd",
+      "plan_case_number": 20,
+      "params": {
+        "hidden_size": 6144,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_normw_bwd.py",
+      "range": "mhc_normw_bwd_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-01",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 1,
+      "params": {
+        "num_layers": 1,
+        "num_post": 1,
+        "hidden": 1280,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": true,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-02",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 2,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 1280,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-03",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 3,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 1280,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-04",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 4,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 2304,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-05",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 5,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 2304,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-06",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 6,
+      "params": {
+        "num_layers": 1,
+        "num_post": 1,
+        "hidden": 2560,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-07",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 7,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 2560,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-08",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 8,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 2560,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-09",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 9,
+      "params": {
+        "num_layers": 3,
+        "num_post": 2,
+        "hidden": 2560,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-10",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 10,
+      "params": {
+        "num_layers": 3,
+        "num_post": 3,
+        "hidden": 2560,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-11",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 11,
+      "params": {
+        "num_layers": 1,
+        "num_post": 1,
+        "hidden": 4096,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-12",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 12,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 4096,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-13",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 13,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 4096,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-14",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 14,
+      "params": {
+        "num_layers": 1,
+        "num_post": 1,
+        "hidden": 5120,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-15",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 15,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 5120,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-16",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 16,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 5120,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-17",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 17,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 7168,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-18",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 18,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 7168,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-19",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 19,
+      "params": {
+        "num_layers": 10,
+        "num_post": 10,
+        "hidden": 8192,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "mhc_multilayer_recompute-20",
+      "group": "mhc_multilayer_recompute",
+      "plan_case_number": 20,
+      "params": {
+        "num_layers": 10,
+        "num_post": 9,
+        "hidden": 8192,
+        "bs": 1,
+        "seq": 8192,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_multilayer.py",
+      "range": "quant_target"
+    }
+  ]
+}

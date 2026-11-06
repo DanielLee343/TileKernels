@@ -1,0 +1,9 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+engram_gate_fwd-01 needs_review in-place profiler replay restoration has not been independently verified
+engram_gate_bwd-01 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_momentum_update-01 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_step-01 needs_review in-place profiler replay restoration has not been independently verified
