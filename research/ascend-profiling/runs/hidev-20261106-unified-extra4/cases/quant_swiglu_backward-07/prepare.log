@@ -1,0 +1,6 @@
+2026-11-06 17:42:00  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `per_token_cast_kernel` with `out_idx=None`
+2026-11-06 17:42:02  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `per_token_cast_kernel`
+2026-11-06 17:42:03  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `swiglu_backward_kernel_asc` with `out_idx=None`
+2026-11-06 17:42:09  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `swiglu_backward_kernel_asc`
+2026-11-06 17:42:09  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `cast_back_kernel_ascend` with `out_idx=None`
+2026-11-06 17:42:12  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `cast_back_kernel_ascend`
