@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793988727877808248.tar.gz",
-  "size": 4331975,
-  "sha256": "2cd5b72931915d518cd7c42125183b14cd038980cbc59d85af4f7c35da19acd0",
+  "path": "/workspace/tk-starter-sync-1793988893051161517.tar.gz",
+  "size": 4519568,
+  "sha256": "e2049ee4855597364c675275f89dca5a4fd8f8f082fef8825b40d563406ed9b3",
   "ids": [
     "mhc_pre_apply_mix_bwd-01",
     "moe_topk_gate_backward-01",
@@ -126,7 +126,12 @@
     "rotary_embedding-11-q",
     "rotary_embedding-11-k",
     "rotary_embedding-12-q",
-    "rotary_embedding-12-k"
+    "rotary_embedding-12-k",
+    "rotary_embedding-13-q",
+    "rotary_embedding-13-k",
+    "rotary_embedding-14-q",
+    "rotary_embedding-14-k",
+    "rotary_embedding-15-q"
   ],
   "status": "running"
 }
