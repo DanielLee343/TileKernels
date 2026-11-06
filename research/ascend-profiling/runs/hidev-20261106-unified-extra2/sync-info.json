@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793979966701207156.tar.gz",
-  "size": 3694220,
-  "sha256": "c13c09b8b9dffc85cfb74191a98c009ad49471961733001b77c71eb6d0159761",
+  "path": "/workspace/tk-starter-sync-1793980115497880463.tar.gz",
+  "size": 3890547,
+  "sha256": "3d89c7d81067339342e012b32ee606832f5c4abb2317ba9e0c5e8e6294ecf783",
   "ids": [
     "mhc_post_bwd-01",
     "quant_cast_back_per_token-01",
@@ -97,7 +97,12 @@
     "quant_per_channel_cast-14",
     "quant_per_channel_cast-15",
     "quant_per_channel_cast-16",
-    "quant_per_channel_cast-17"
+    "quant_per_channel_cast-17",
+    "quant_per_channel_cast-18",
+    "quant_per_channel_cast-19",
+    "quant_per_channel_cast-20",
+    "randn-02",
+    "randn-03"
   ],
   "status": "running"
 }
