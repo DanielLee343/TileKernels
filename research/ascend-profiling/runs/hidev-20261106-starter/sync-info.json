@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793960075292944148.tar.gz",
-  "size": 1712966,
-  "sha256": "2b7d1b1acd721d7e440c203b4705e44c5df867777efd3e1900f18c07ecb4279c",
+  "path": "/workspace/tk-starter-sync-1793960178197579727.tar.gz",
+  "size": 1819108,
+  "sha256": "457c3b1952cb6e9b748f7e6c1669f33f0c602c7666c3319ff1b7fea7cb2e9ca3",
   "ids": [
     "fused-01",
     "hash-01",
@@ -51,7 +51,11 @@
     "normalize-06",
     "normalize-07",
     "normalize-08",
-    "normalize-09"
+    "normalize-09",
+    "normalize-10",
+    "normalize-11",
+    "normalize-12",
+    "normalize-13"
   ],
   "status": "running"
 }
