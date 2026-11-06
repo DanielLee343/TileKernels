@@ -100,3 +100,7 @@ quant_batched_transpose_weight_sf-07 admitted
 quant_batched_transpose_weight_sf-08 admitted 
 quant_batched_transpose_weight_sf-09 admitted 
 quant_batched_transpose_weight_sf-10 admitted 
+quant_batched_transpose_weight_sf-11 admitted 
+quant_batched_transpose_weight_sf-12 admitted 
+quant_batched_transpose_weight_sf-13 admitted 
+quant_batched_transpose_weight_sf-14 admitted 

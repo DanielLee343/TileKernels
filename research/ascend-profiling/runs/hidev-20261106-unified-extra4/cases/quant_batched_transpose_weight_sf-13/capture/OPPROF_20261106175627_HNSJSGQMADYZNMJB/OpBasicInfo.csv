@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+batched_transpose_weight_sf_kernel_kernel,vector,4.061000,56,NA,0,851916,1650,1650,
