@@ -6,3 +6,5 @@
 mhc_post_bwd-01 admitted 
 quant_cast_back_per_token-01 admitted 
 quant_cast_back_block-01 admitted 
+quant_per_block_cast_lossless-01 admitted 
+quant_per_channel_cast-01 admitted 
