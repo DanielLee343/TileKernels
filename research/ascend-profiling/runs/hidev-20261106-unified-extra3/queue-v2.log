@@ -68,3 +68,6 @@ mhc_pre_big_fuse_fwd-15 admitted
 mhc_pre_big_fuse_fwd-16 admitted 
 mhc_pre_big_fuse_fwd-17 admitted 
 mhc_pre_big_fuse_fwd-18 admitted 
+mhc_pre_big_fuse_fwd-19 admitted 
+mhc_pre_big_fuse_fwd-20 admitted 
+moe_topk_gate_forward-02 needs_review in-place profiler replay restoration has not been independently verified
