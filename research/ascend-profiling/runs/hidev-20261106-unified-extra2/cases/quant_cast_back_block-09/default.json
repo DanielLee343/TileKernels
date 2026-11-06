@@ -1,0 +1,59 @@
+{
+  "group": "quant_cast_back_block",
+  "stage": "default",
+  "seed": 42,
+  "matched": 1,
+  "params": {
+    "num_tokens": 512,
+    "hidden": 384,
+    "use_tma_aligned_col_major_sf": false,
+    "round_sf": false,
+    "use_packed_ue8m0": false,
+    "fmt": "e2m1",
+    "out_dtype": "bf16",
+    "num_per_tokens": 32,
+    "num_per_channels": 1
+  },
+  "source_files_sha256": {
+    "tests/quant/test_cast_back.py": "8882b8703a52b137fe04e0d215daf6c6cfeadd885635c333c9be2427f70e6de3",
+    "tile_kernels/quant/cast_back_asc.py": "83f383dac575ba9ce027624c7a79a3d3ba9a9852f50172c4249b7e9d11ca96c3",
+    "tile_kernels/quant/cast_back_kernel.py": "b0733230818e5f4175453c88a02abfca5ab62432a5057d2014c114f14d474e00",
+    "tile_kernels/quant/common.py": "8fad63ecdfcc0c3e84aef1bb1edf8c63071da641f56e8744e88b3d5a9037998e",
+    "tile_kernels/quant/per_token_cast_asc.py": "af80e7a43413265b546eab70f093f49bf409b79dfc7165d8cdbb94bdc56adb43",
+    "tile_kernels/quant/per_token_cast_kernel.py": "7335b8371726fc089f4e335b756ab4d7bf81e36c6f2b1b6b454841ef4e8d966b",
+    "tile_kernels/torch/cast.py": "41a49e4bc6d70eb328a05bea7d2c43178d3ec10f13c4f0b5e5c258567caddedf",
+    "tile_kernels/rand/seed.py": "40778f97938a2566f7467d0b1250cc31ee5ca5ae7b306888df79a395ba877f42",
+    "tile_kernels/rand/randn_kernel.py": "64d6ecc12d519410aa0db7bf6d029fb8851eeb804e9f87c6888c65359264382b",
+    "tile_kernels/testing/numeric.py": "621c719d35acbd556a59a55f303ef615b032a587520d7fbc49d9462e9f04e4c2"
+  },
+  "symbol": "cast_back_kernel_ascend",
+  "runtime_kernel": "cast_back_kernel_ascend_kernel",
+  "source_sha256": "2e33d4428c600a5d2015ca1103efd6a51c6a172d35e80ded0825eb78407fed2f",
+  "inputs": [
+    {
+      "shape": [
+        512,
+        192
+      ],
+      "stride": [
+        192,
+        1
+      ],
+      "dtype": "torch.int8",
+      "sha256": "2c9143a61a40578d93547d8c51e1eac385f5c6d93e31e1ae4fe0cc0fcb19008a"
+    },
+    {
+      "shape": [
+        16,
+        384
+      ],
+      "stride": [
+        384,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "f49826a2f00edfebc3b3505988d011606ee2288576fe3c69a98b0a369ed99824"
+    }
+  ],
+  "status": "passed"
+}
