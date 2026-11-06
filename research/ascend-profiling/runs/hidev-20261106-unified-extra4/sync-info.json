@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793985237863125195.tar.gz",
-  "size": 793424,
-  "sha256": "f2a9bd1ec43a9a9d4c255471f210fa32cbb801f8f8e367529ee3c3590ec820d1",
+  "path": "/workspace/tk-starter-sync-1793985312192465010.tar.gz",
+  "size": 877404,
+  "sha256": "05d53e163b130948b771538d887b7e194dcc0e5a588b03e4a44dbf075120087a",
   "ids": [
     "mhc_pre_apply_mix_bwd-01",
     "moe_topk_gate_backward-01",
@@ -31,7 +31,9 @@
     "mhc_pre_apply_mix_bwd-20",
     "moe_topk_gate_backward-02",
     "moe_topk_gate_backward-03",
-    "moe_topk_gate_backward-04"
+    "moe_topk_gate_backward-04",
+    "moe_topk_gate_backward-05",
+    "moe_topk_gate_backward-06"
   ],
   "status": "running"
 }
