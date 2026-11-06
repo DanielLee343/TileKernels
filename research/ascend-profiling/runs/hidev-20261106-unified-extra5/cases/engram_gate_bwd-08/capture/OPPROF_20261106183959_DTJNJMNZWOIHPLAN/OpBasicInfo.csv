@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+engram_gate_bwd_kernel_asc_kernel,vector,92.971001,56,NA,0,918929,1650,1650,
