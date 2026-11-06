@@ -1,0 +1,3 @@
+2026-11-06 19:21:20  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_fn_normw_merge_bwd_asc` with `out_idx=None`
+2026-11-06 19:21:23  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_fn_normw_merge_bwd_asc`
+2026-11-06 19:21:23  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_fn_normw_merge_bwd_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.
