@@ -124,8 +124,17 @@ def publish():
     # The SSH key stays in WSL; this command transmits Git objects only.
     remote = subprocess.run(['wsl','-d','archlinux','--','git','ls-remote',
                              'git@github.com:DanielLee343/TileKernels.git','refs/heads/main'],
-                            text=True,encoding='utf8',errors='replace',capture_output=True,check=True).stdout.split()[0]
-    assert local_head == remote, 'remote has moved; pull/review before syncing'
+                            text=True,encoding='utf8',errors='replace',capture_output=True,check=True,timeout=30).stdout.split()[0]
+    if local_head != remote:
+        # Recover only our own unpushed sync commits after a transient push error.
+        assert git('merge-base','--is-ancestor',remote,local_head,check=False).returncode == 0, 'remote has moved; review required'
+        subjects=git('log','--format=%s',remote+'..'+local_head).stdout.splitlines()
+        paths=git('diff','--name-only',remote,local_head).stdout.splitlines()
+        assert subjects and all(x == 'Sync hidev Default profiling results' for x in subjects), 'unrelated local commits; review required'
+        assert paths and all(x.startswith(DEST_REL+'/') for x in paths), 'unrelated local files; review required'
+        wsl_path = subprocess.run(['wsl','-d','archlinux','--','wslpath','-a',REPO.as_posix()],
+                                  text=True,encoding='utf8',errors='replace',capture_output=True,check=True,timeout=30).stdout.strip()
+        subprocess.run(['wsl','-d','archlinux','--','git','-C',wsl_path,'push','origin','main'],check=True,timeout=120)
     # wsl.exe passes arguments through a Unix shell; forward slashes avoid
     # backslashes being consumed before wslpath sees the Windows path.
     wsl_path = subprocess.run(['wsl','-d','archlinux','--','wslpath','-a',REPO.as_posix()],
@@ -137,7 +146,7 @@ def publish():
     staged = git('diff','--cached','--name-only').stdout.splitlines()
     assert staged and all(p.startswith(DEST_REL+'/') for p in staged), staged
     git('-c','user.name=lyuze','-c','user.email=670525945@qq.com','commit','-q','-m','Sync hidev Default profiling results')
-    subprocess.run(['wsl','-d','archlinux','--','git','-C',wsl_path,'push','origin','main'],check=True)
+    subprocess.run(['wsl','-d','archlinux','--','git','-C',wsl_path,'push','origin','main'],check=True,timeout=120)
     print('SYNC_PUSHED',git('rev-parse','HEAD').stdout.strip(),flush=True)
 
 
@@ -165,13 +174,16 @@ def main():
         return
     last=None
     while True:
-        p=remote_progress()
-        marker=(p['status'],tuple(p['ids']))
-        if p['ids'] and marker!=last:
-            result=sync(args.push)
-            last=(result['status'],tuple(c['id'] for c in result['cases']))
-            if result['status']=='finished':
-                return
+        try:
+            p=remote_progress()
+            marker=(p['status'],tuple(p['ids']))
+            if p['ids'] and marker!=last:
+                result=sync(args.push)
+                last=(result['status'],tuple(c['id'] for c in result['cases']))
+                if result['status']=='finished':
+                    return
+        except (OSError, subprocess.SubprocessError, AssertionError, TimeoutError) as error:
+            print('SYNC_RETRY',type(error).__name__,str(error),file=sys.stderr,flush=True)
         time.sleep(45)
 
 

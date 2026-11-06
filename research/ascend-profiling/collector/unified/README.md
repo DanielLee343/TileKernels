@@ -22,3 +22,7 @@ The common work is reading the immutable plan, generating inputs, validating out
 Other 537 plan rows do not have an implemented shared runner. Previous 3 failed correctness cases and 11 memory-guard skips remain separate from the 657 unmapped rows.
 
 The initial 120-case queue was stopped after its per-block pilot exposed nondeterministic Python `random` state. Its failed and in-flight data remain on hidev at `/workspace/tilekernels-expert-unified-quant-20261106`. The hook now fixes both the upstream Torch/TileKernels RNG and Python RNG. A separate per-block pilot then passed reference validation and matched prepare/profile input and source hashes. The original run is never overwritten.
+
+A subsequent `run_extra.py` manifest queues 60 original plan rows: stochastic cast, mHC head backward, and Engram gradient reduction (20 each). These adapters are static-checked only until their hidev pilots finish. Head backward captures its native kernel; its partial reductions and reference comparison happen outside capture. Engram gradient accumulation uses separate warmup buffers and is marked `needs_review` even if correctness passes, until profiler replay restoration is independently checked.
+
+Both sync watchers retry temporary transfer failures. They only auto-push a previously failed local commit when every unpushed commit is a sync commit and every changed file belongs to that watcher’s run directory.

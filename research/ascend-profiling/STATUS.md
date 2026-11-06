@@ -24,3 +24,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 
 - A shared upstream-test interception approach was verified end-to-end for one per-token E2M1 case on hidev. A serial runner for 120 previously unmapped rows in six per-token/per-block modes was started on hidev; per-mode pilots gate the remaining entries. Results, rather than the manifest, determine successful coverage.
 - The other 537 previously unmapped plan entries still require adapters. Previous 11 memory skips and 3 correctness failures are not in the 657 unmapped entries. See `collector/unified/README.md`.
+
+- A further 60 previously unmapped rows have been queued after the 120 quant rows: stochastic cast, head backward and Engram gradient reduction. These three modes have not yet passed device pilots; the gradient-reduction capture is classified `needs_review` until in-place replay semantics are verified. Of the original 657, 180 rows are now covered by queued adapters; 477 remain without adapters.
