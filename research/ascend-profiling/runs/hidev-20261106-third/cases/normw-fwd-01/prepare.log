@@ -1,0 +1,2 @@
+2026-11-06 11:17:14  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_fn_normw_merge_fwd_asc` with `out_idx=None`
+2026-11-06 11:17:16  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_fn_normw_merge_fwd_asc`

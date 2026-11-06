@@ -1,0 +1,138 @@
+{
+  "runtime_kernel": "mhc_reduce_partials_and_rmsnorm_fwd_asc_kernel",
+  "native_symbol": "mhc_reduce_partials_and_rmsnorm_fwd_asc",
+  "source_sha256": "46a5d494496264a4c536beda5136011915a671b0411ff72e62012ec3a954282f",
+  "inputs": [
+    {
+      "shape": [
+        1,
+        8192,
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "stride": [
+        196608,
+        24,
+        24,
+        1
+      ],
+      "bytes": 786432,
+      "sha256": "35d8d3a457613e790103d2d2b8338b3afb08bb5bbda646fb9318f613f0d91fb9"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        8192,
+        1,
+        1
+      ],
+      "bytes": 32768,
+      "sha256": "5dc36ad3453050733f2a4e1e784eafc6ab60eda1877656189cae0338fd57bf4a"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        1,
+        8192,
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "stride": [
+        196608,
+        24,
+        24,
+        1
+      ],
+      "bytes": 786432
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        8192,
+        1,
+        1
+      ],
+      "bytes": 32768
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        8192,
+        1,
+        24
+      ],
+      "dtype": "float32",
+      "stride": [
+        24,
+        24,
+        1
+      ],
+      "bytes": 786432
+    },
+    {
+      "shape": [
+        8192,
+        1
+      ],
+      "dtype": "float32",
+      "stride": [
+        1,
+        1
+      ],
+      "bytes": 32768
+    },
+    {
+      "shape": [
+        8192,
+        24
+      ],
+      "dtype": "float32",
+      "stride": [
+        24,
+        1
+      ],
+      "bytes": 786432
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999661,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    },
+    {
+      "output_id": 1,
+      "cosine_fp64": 1.0000000000000002,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    },
+    {
+      "output_id": 2,
+      "cosine_fp64": 0.9999999999999555,
+      "max_abs_error": 0.0001220703125,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

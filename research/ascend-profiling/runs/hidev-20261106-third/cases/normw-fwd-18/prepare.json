@@ -1,0 +1,80 @@
+{
+  "runtime_kernel": "mhc_fn_normw_merge_fwd_asc_kernel",
+  "native_symbol": "mhc_fn_normw_merge_fwd_asc",
+  "source_sha256": "d31d2a3b4a8f25afec725e6cee4665c1e2038449e2d1a71bfcfdf24b67b13fb5",
+  "inputs": [
+    {
+      "shape": [
+        24,
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 196608,
+      "sha256": "28a320edbf840b2eb45a3a9b239d00a7d7004803cce09d7e7a816a8d0578225b"
+    },
+    {
+      "shape": [
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 8192,
+      "sha256": "13cc425b35612e467f6bb63d5ac4591e5f8a2d3ab7e3f21c7a89a2d2dd89d817"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        24,
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 196608
+    },
+    {
+      "shape": [
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 8192
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        24,
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 196608
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999902,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

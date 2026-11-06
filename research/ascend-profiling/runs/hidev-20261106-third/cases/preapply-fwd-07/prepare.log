@@ -1,0 +1,2 @@
+2026-11-06 11:29:32  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_pre_apply_mix_fwd_asc` with `out_idx=None`
+2026-11-06 11:29:35  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_pre_apply_mix_fwd_asc`

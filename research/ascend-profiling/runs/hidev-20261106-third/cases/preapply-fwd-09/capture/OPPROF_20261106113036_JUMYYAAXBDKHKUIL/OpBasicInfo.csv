@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+mhc_pre_apply_mix_fwd_asc_kernel,vector,36.756001,56,NA,0,315143,1650,1650,

@@ -1,0 +1,2 @@
+2026-11-06 11:47:28  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_reduce_partials_and_rmsnorm_fwd_asc` with `out_idx=None`
+2026-11-06 11:47:32  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_reduce_partials_and_rmsnorm_fwd_asc`

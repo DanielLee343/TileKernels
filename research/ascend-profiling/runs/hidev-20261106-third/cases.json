@@ -1,0 +1,1349 @@
+{
+  "tilekernels_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msopprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "capture_budget": 80,
+  "device_bus": "0000:57:00.0",
+  "case_plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "cases": [
+    {
+      "id": "head-fwd-01",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": true,
+      "tokens": 1,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-02",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 24576,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 49152,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-03",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1001,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1001,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-04",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 4096,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-05",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1024,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-06",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 127,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 127,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-07",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 128,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 128,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-08",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 16384,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 16384,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-09",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 16385,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 16385,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-10",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 17,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 17,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-11",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 2049,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 2049,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-12",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 257,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 257,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-13",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4097,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4097,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-14",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 511,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 511,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-15",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 512,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-16",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 513,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 513,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-17",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 64,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 64,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-18",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 8001,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-19",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 24576,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 24576,
+      "eps": 0.01
+    },
+    {
+      "id": "head-fwd-20",
+      "family": "mhc_head_compute_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_head_compute_mix_fwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4096,
+        "mhc_mult": 4,
+        "eps": 0.01
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "eps": 0.01
+    },
+    {
+      "id": "preapply-fwd-01",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": true,
+      "tokens": 128,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-02",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden": 7168
+    },
+    {
+      "id": "preapply-fwd-03",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-04",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden": 7168
+    },
+    {
+      "id": "preapply-fwd-05",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4096,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-06",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 2048,
+      "hidden": 7168
+    },
+    {
+      "id": "preapply-fwd-07",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden": 2560
+    },
+    {
+      "id": "preapply-fwd-08",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden": 4096
+    },
+    {
+      "id": "preapply-fwd-09",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden": 5120
+    },
+    {
+      "id": "preapply-fwd-10",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 2048,
+      "hidden": 2560
+    },
+    {
+      "id": "preapply-fwd-11",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden": 4096
+    },
+    {
+      "id": "preapply-fwd-12",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden": 5120
+    },
+    {
+      "id": "preapply-fwd-13",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-14",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-15",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 2048,
+      "hidden": 1280
+    },
+    {
+      "id": "preapply-fwd-16",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 128,
+      "hidden": 2560
+    },
+    {
+      "id": "preapply-fwd-17",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4096,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "hidden": 2560
+    },
+    {
+      "id": "preapply-fwd-18",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden": 2560
+    },
+    {
+      "id": "preapply-fwd-19",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 128,
+      "hidden": 4096
+    },
+    {
+      "id": "preapply-fwd-20",
+      "family": "mhc_pre_apply_mix_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_apply_mix_fwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden": 4096
+    },
+    {
+      "id": "normw-fwd-01",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "hidden_size": 64,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": true,
+      "hidden_size": 64
+    },
+    {
+      "id": "normw-fwd-02",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "hidden_size": 8192,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 8192
+    },
+    {
+      "id": "normw-fwd-03",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "hidden_size": 1024,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 1024
+    },
+    {
+      "id": "normw-fwd-04",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "hidden_size": 128,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 128
+    },
+    {
+      "id": "normw-fwd-05",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 1280
+    },
+    {
+      "id": "normw-fwd-06",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "hidden_size": 1536,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 1536
+    },
+    {
+      "id": "normw-fwd-07",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "hidden_size": 1792,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 1792
+    },
+    {
+      "id": "normw-fwd-08",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "hidden_size": 192,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 192
+    },
+    {
+      "id": "normw-fwd-09",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "hidden_size": 2048,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 2048
+    },
+    {
+      "id": "normw-fwd-10",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "hidden_size": 256,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 256
+    },
+    {
+      "id": "normw-fwd-11",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 2560
+    },
+    {
+      "id": "normw-fwd-12",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "hidden_size": 3072,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 3072
+    },
+    {
+      "id": "normw-fwd-13",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 320
+    },
+    {
+      "id": "normw-fwd-14",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "hidden_size": 3584,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 3584
+    },
+    {
+      "id": "normw-fwd-15",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "hidden_size": 384,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 384
+    },
+    {
+      "id": "normw-fwd-16",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "hidden_size": 4096,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 4096
+    },
+    {
+      "id": "normw-fwd-17",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "hidden_size": 4608,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 4608
+    },
+    {
+      "id": "normw-fwd-18",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "hidden_size": 512,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 512
+    },
+    {
+      "id": "normw-fwd-19",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "hidden_size": 5120,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 5120
+    },
+    {
+      "id": "normw-fwd-20",
+      "family": "mhc_fn_normw_merge_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_fn_normw_merge_fwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "hidden_size": 6144,
+        "mhc_mult": 4,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "hidden_size": 6144
+    },
+    {
+      "id": "reduce-rms-fwd-01",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": true,
+      "tokens": 128,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-02",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 7168,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 7168
+    },
+    {
+      "id": "reduce-rms-fwd-03",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 320
+    },
+    {
+      "id": "reduce-rms-fwd-04",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 7168,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 7168
+    },
+    {
+      "id": "reduce-rms-fwd-05",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-06",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 4096,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 4096
+    },
+    {
+      "id": "reduce-rms-fwd-07",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 5120,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 5120
+    },
+    {
+      "id": "reduce-rms-fwd-08",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-09",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-10",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-11",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-12",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 1280
+    },
+    {
+      "id": "reduce-rms-fwd-13",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-14",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 128,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-15",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-16",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-17",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 2560
+    },
+    {
+      "id": "reduce-rms-fwd-18",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 128,
+      "hidden_size": 320
+    },
+    {
+      "id": "reduce-rms-fwd-19",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 320
+    },
+    {
+      "id": "reduce-rms-fwd-20",
+      "family": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_fwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "mhc_mult": 4,
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 320
+    }
+  ]
+}

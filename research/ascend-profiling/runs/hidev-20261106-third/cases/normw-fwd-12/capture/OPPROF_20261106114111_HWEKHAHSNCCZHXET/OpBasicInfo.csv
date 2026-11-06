@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+mhc_fn_normw_merge_fwd_asc_kernel,vector,2.728000,56,NA,0,327985,1650,1650,
