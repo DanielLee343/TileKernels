@@ -15,3 +15,5 @@ mhc_multilayer_recompute-01 admitted
     THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
 =================================================================
 
+engram_gate_fwd-02 needs_review in-place profiler replay restoration has not been independently verified
+engram_gate_fwd-03 needs_review in-place profiler replay restoration has not been independently verified

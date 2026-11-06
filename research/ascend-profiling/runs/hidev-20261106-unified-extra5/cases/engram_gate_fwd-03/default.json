@@ -1,0 +1,143 @@
+{
+  "group": "engram_gate_fwd",
+  "params": {
+    "num_tokens": 512,
+    "hc": 4,
+    "hidden": 128,
+    "with_mask": true
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 5,
+  "target_range": "quant_target",
+  "seed": 42,
+  "correctness": "passed_upstream_full_engram_gate_fwd_test",
+  "capture_mode": {
+    "save_for_backward": true,
+    "inplace": false
+  },
+  "mode_scope": "only save_for_backward=True and inplace=False are profiled",
+  "correctness_scope": "saved statistics are checked only on unmasked tokens, as in the upstream test",
+  "output_semantics": "separate output buffers; inputs are not intentionally mutated",
+  "profiler_replay_state": "unverified",
+  "profiler_replay_note": "Actual profiler replay and buffer behavior require on-device verification.",
+  "symbol": "engram_gate_fwd_kernel_asc",
+  "native_symbol": "engram_gate_fwd_kernel_asc",
+  "runtime_kernel": "engram_gate_fwd_kernel_asc_kernel",
+  "source_sha256": "42bf8772ce8c6e2d7710839c8ec8d38eff1ef4f5181cb9e462bc8032b79737d4",
+  "inputs": [
+    {
+      "name": "hidden_states",
+      "tensor": {
+        "shape": [
+          512,
+          4,
+          128
+        ],
+        "stride": [
+          512,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "242885f09e739f5ed8c97274d9be1c501afdc12bd163a3242f6244762de5405e"
+      }
+    },
+    {
+      "name": "kv",
+      "tensor": {
+        "shape": [
+          512,
+          5,
+          128
+        ],
+        "stride": [
+          640,
+          128,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "5c948f72fb26c739a1ad7efcb734692028bcd92e03a45395573f099795f288bd"
+      }
+    },
+    {
+      "name": "weight_fused",
+      "tensor": {
+        "shape": [
+          4,
+          128
+        ],
+        "stride": [
+          128,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "6146d0b70e6bbf0d70a67e8d0841a095c107ce68268894aa277f5687746d1222"
+      }
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": {
+        "shape": [
+          512
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "a56e1ad2ac0e20a1efa62bc8fe9984fb7e57aaee3df5b3339a0c09dd38e62c6c"
+      }
+    }
+  ],
+  "native_config": {
+    "hidden": 128,
+    "eps": 1e-20,
+    "scalar": 0.08838834764831845,
+    "clamp_value": 1e-06,
+    "hc": 4,
+    "save_for_backward": true,
+    "inplace": false,
+    "has_image_token_mask": true,
+    "num_vec_cores": 56
+  },
+  "outputs": [
+    {
+      "shape": [
+        512,
+        4,
+        128
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "shape": [
+        512,
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "shape": [
+        512,
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "shape": [
+        512,
+        4
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "shape": [
+        512,
+        4
+      ],
+      "dtype": "torch.float32"
+    }
+  ],
+  "status": "passed"
+}
