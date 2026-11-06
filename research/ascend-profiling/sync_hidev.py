@@ -159,7 +159,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--watch',action='store_true')
     parser.add_argument('--push',action='store_true')
-    parser.add_argument('--batch',choices=('starter','second','third','fourth','fifth'),default='starter')
+    parser.add_argument('--batch',choices=('starter','second','third','fourth','fifth','sixth'),default='starter')
     args=parser.parse_args()
     if args.batch=='second':
         REMOTE='/workspace/tilekernels-expert-profiles-second-20261106'
@@ -177,6 +177,10 @@ def main():
         REMOTE='/workspace/tilekernels-expert-profiles-fifth-20261106'
         DEST=HERE/'runs/hidev-20261106-fifth'
         DEST_REL='research/ascend-profiling/runs/hidev-20261106-fifth'
+    elif args.batch=='sixth':
+        REMOTE='/workspace/tilekernels-expert-profiles-sixth-20261106'
+        DEST=HERE/'runs/hidev-20261106-sixth'
+        DEST_REL='research/ascend-profiling/runs/hidev-20261106-sixth'
     if not args.watch:
         sync(args.push)
         return

@@ -17,3 +17,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - The first three batch results were verified and pushed to GitHub in commit `c1e86f7`. The fourth batch must be synced separately.
 
 - The fifth manifest maps 20 additional mHC post forward entries, queued on hidev after the fourth batch. Seven over 50M residual elements are skipped pending a bounded-memory comparator. Five manifests now cover 323 original plan rows; 677 rows still lack adapters.
+
+- The sixth manifest maps 20 additional mHC pre-split forward entries, queued after the fifth batch. Six manifests now map 343 original plan rows; 657 rows still lack adapters.

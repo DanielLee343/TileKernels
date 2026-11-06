@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--batch', choices=('starter', 'second', 'third', 'fourth', 'fifth'), default='starter')
+parser.add_argument('--batch', choices=('starter', 'second', 'third', 'fourth', 'fifth', 'sixth'), default='starter')
 args = parser.parse_args()
 root = Path(__file__).resolve().parent / ('runs/hidev-20261106-' + args.batch)
 progress = json.loads((root / 'progress.json').read_text(encoding='utf8'))
