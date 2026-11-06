@@ -4,3 +4,15 @@
 =================================================================
 
 quant_per_block_cast-01 admitted 
+quant_per_token_cast-01 admitted 
+quant_per_token_cast_with_sf_only-01 admitted 
+quant_per_token_cast_with_precomputed_sf-01 admitted 
+quant_per_block_cast_with_sf_only-01 admitted 
+quant_per_block_cast_with_precomputed_sf-01 admitted 
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+quant_per_block_cast-02 admitted 
+quant_per_block_cast-03 admitted 
