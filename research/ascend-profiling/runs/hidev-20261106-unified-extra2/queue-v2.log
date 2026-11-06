@@ -20,3 +20,5 @@ mhc_post_bwd-04 failed AssertionError: upstream prepare/correctness failed
 mhc_post_bwd-05 admitted 
 mhc_post_bwd-06 admitted 
 mhc_post_bwd-07 admitted 
+mhc_post_bwd-08 admitted 
+mhc_post_bwd-09 admitted 
