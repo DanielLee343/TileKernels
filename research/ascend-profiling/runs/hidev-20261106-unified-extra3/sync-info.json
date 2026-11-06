@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793982533064392582.tar.gz",
-  "size": 2188424,
-  "sha256": "d59fee9e9476f048810a5b0952a0f1018e732d0114ad91f765d52b486123a9ae",
+  "path": "/workspace/tk-starter-sync-1793982642786627075.tar.gz",
+  "size": 2377097,
+  "sha256": "f31e28224deef3fd29b654ec1a30b272a4c5f24368b24cd48417b5e50d4067d5",
   "ids": [
     "quant_norm_forward-01",
     "quant_norm_backward-01",
@@ -58,7 +58,11 @@
     "mhc_pre_big_fuse_fwd-11",
     "mhc_pre_big_fuse_fwd-12",
     "mhc_pre_big_fuse_fwd-13",
-    "mhc_pre_big_fuse_fwd-14"
+    "mhc_pre_big_fuse_fwd-14",
+    "mhc_pre_big_fuse_fwd-15",
+    "mhc_pre_big_fuse_fwd-16",
+    "mhc_pre_big_fuse_fwd-17",
+    "mhc_pre_big_fuse_fwd-18"
   ],
   "status": "running"
 }
