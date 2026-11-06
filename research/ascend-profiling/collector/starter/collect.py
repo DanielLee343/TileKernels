@@ -1,0 +1,302 @@
+"""Run the registered expert cases as one cold Default capture per case."""
+import argparse
+import csv
+import ctypes
+import hashlib
+import json
+import os
+from pathlib import Path
+import signal
+import subprocess
+import sys
+import traceback
+
+ROOT = Path(__file__).resolve().parent
+MANIFEST = ROOT / "cases.json"
+GROUPS = {"ArithmeticUtilization", "L2Cache", "Memory", "MemoryL0", "MemoryUB",
+          "PipeUtilization", "ResourceConflictRatio"}
+
+
+def save(path, value):
+    temporary = path.with_suffix(".tmp")
+    temporary.write_text(json.dumps(value, indent=2) + "\n")
+    temporary.replace(path)
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def build(case, torch):
+    from tile_kernels.config import get_num_vec_cores
+
+    seed = int.from_bytes(hashlib.sha256(case["id"].encode()).digest()[:8], "little")
+    rng = torch.Generator(device="cpu").manual_seed(seed)
+    cores = get_num_vec_cores()
+    family = case["family"]
+    if family == "engram_fused_weight":
+        from tile_kernels.engram.engram_fused_weight_asc import get_engram_fused_weight_kernel_asc
+
+        h = case["hidden"]
+        host = tuple(torch.randn((4, h), generator=rng).to(torch.bfloat16) for _ in range(2))
+        expected = (host[0].float() * host[1].float(),)
+        kernel = get_engram_fused_weight_kernel_asc(h, 4, num_vec_cores=cores)
+    elif family == "moe_normalize_weight":
+        from tile_kernels.moe.normalize_weight_asc import get_normalize_weight_kernel_asc
+        from tile_kernels.torch.moe import normalize_weight
+
+        n, k = case["tokens"], case["topk"]
+        host = (torch.rand((n, k), generator=rng),)
+        expected = normalize_weight(host[0])
+        kernel = get_normalize_weight_kernel_asc(num_topk=k, num_vec_cores=cores)
+    elif family == "quant_cast_back":
+        from tilelang import language as T
+        from tile_kernels.quant.cast_back_asc import get_cast_back_kernel_asc
+        from tile_kernels.quant.common import get_cast_input_and_config
+
+        n, h = case["tokens"], case["hidden"]
+        quant = torch.randint(-5, 6, (n, h), generator=rng).to(torch.float8_e4m3fn)
+        scale = torch.rand((n, h // 32), generator=rng) + 0.25
+        host = (quant, scale)
+        output_dtype = getattr(torch, case["output_dtype"])
+        expected = ((quant.float() * scale.repeat_interleave(32, dim=1)).to(output_dtype),)
+        device_quant = quant.view(torch.uint8).to("npu:0").view(torch.float8_e4m3fn)
+        device_scale = scale.to("npu:0")
+        x, sf, config = get_cast_input_and_config((device_quant, device_scale), (1, 32))
+        kernel = get_cast_back_kernel_asc(h, config, T.dtype(output_dtype), num_vec_cores=cores)
+        return kernel, host, (x, sf), expected
+    elif family == "engram_hash":
+        from tile_kernels.engram.engram_hash_asc import get_engram_hash_kernel_asc
+        from tile_kernels.torch.engram import engram_hash_ref, make_offsets
+
+        n, g = case["tokens"], case["ngram"]
+        ids = torch.randint(0, 100000, (n, g), dtype=torch.int32, generator=rng)
+        mult = torch.randint(0, 100000, (2, g), dtype=torch.int64, generator=rng)
+        sizes = torch.randint(100000, 1000000, (2, g - 1, 8), dtype=torch.int32, generator=rng)
+        mask = torch.rand(n, generator=rng) < 0.5 if case["mask"] else None
+        host = (ids, mult, sizes, make_offsets(sizes), mask)
+        expected = (engram_hash_ref(*host),)
+        kernel = get_engram_hash_kernel_asc(g, 2, 8, has_image_token_mask=mask is not None, num_vec_cores=cores)
+    else:
+        raise ValueError(f"Unregistered family: {family}")
+    return kernel, host, tuple(x.to("npu:0") if x is not None else None for x in host), expected
+
+
+def describe(x, with_hash=False):
+    if x is None:
+        return None
+    data = {"shape": list(x.shape), "dtype": str(x.dtype).removeprefix("torch."),
+            "stride": list(x.stride()), "bytes": x.numel() * x.element_size()}
+    if with_hash:
+        data["sha256"] = hashlib.sha256(x.contiguous().view(-1).view(__import__("torch").uint8).numpy().tobytes()).hexdigest()
+    return data
+
+
+def compare(torch, actual, expected, family):
+    result = []
+    assert len(actual) == len(expected)
+    for output_id, (gpu, ref) in enumerate(zip(actual, expected, strict=True)):
+        out = gpu.cpu()
+        assert out.shape == ref.shape and out.dtype == ref.dtype, (out.shape, ref.shape, out.dtype, ref.dtype)
+        a, b = out.flatten().double(), ref.flatten().double()
+        assert torch.isfinite(a).all() and torch.isfinite(b).all(), output_id
+        norm_a, norm_b = torch.linalg.vector_norm(a).item(), torch.linalg.vector_norm(b).item()
+        exact = torch.equal(out, ref)
+        cosine = float(torch.dot(a, b)) / (norm_a * norm_b) if norm_a and norm_b else None
+        maximum = (a - b).abs().max().item()
+        diagnostic = maximum <= 2e-6 if family == "moe_normalize_weight" else exact
+        passed = diagnostic  # Require the stronger full-output diagnostic, not cosine alone.
+        if not ref.is_floating_point():
+            passed = exact and passed
+        result.append({"output_id": output_id, "cosine_fp64": cosine, "max_abs_error": maximum,
+                       "exact_equal": exact, "reference_diagnostic_passed": diagnostic, "passed": passed})
+    return result
+
+
+def target_range(torch, launch):
+    for _ in range(5):
+        launch()
+    torch.npu.synchronize()
+    library = Path(os.environ["ASCEND_HOME_PATH"]) / "tools/mstx/lib64/libms_tools_ext.so"
+    api = ctypes.CDLL(str(library))
+    start, end = api.mstxRangeStartA, api.mstxRangeEnd
+    start.argtypes, start.restype = [ctypes.c_char_p, ctypes.c_void_p], ctypes.c_uint64
+    end.argtypes, end.restype = [ctypes.c_uint64], None
+    stream = ctypes.c_void_p(int(torch.npu.current_stream().npu_stream))
+    handle = start(b"cold_call", stream)
+    try:
+        launch()
+    finally:
+        end(handle)
+    torch.npu.synchronize()
+
+
+def application(case, stage, directory):
+    import torch
+    import torch_npu  # registers the NPU backend
+
+    torch.set_num_threads(min(8, os.cpu_count() or 1))
+    torch.npu.set_device(0)
+    kernel, host, device, expected = build(case, torch)
+    output = tuple(torch.empty_like(x, device="npu:0") for x in expected)
+    symbol = str(kernel.prim_func.attrs["global_symbol"])
+    generated = directory / f"{stage}-kernel.cpp"
+    generated.write_text(kernel.get_kernel_source())
+    record = {"runtime_kernel": symbol + "_kernel", "native_symbol": symbol,
+              "source_sha256": digest(generated), "inputs": [describe(x, True) for x in host],
+              "device_inputs": [describe(x) for x in device], "outputs": [describe(x) for x in output]}
+    def launch():
+        kernel(*device, *output)
+
+    if stage == "default":
+        target_range(torch, launch)
+    else:
+        launch()
+        torch.npu.synchronize()
+    record["precision"] = compare(torch, output, expected, case["family"])
+    record["status"] = "passed" if all(x["passed"] for x in record["precision"]) else "failed"
+    save(directory / f"{stage}.json", record)
+    return record["status"] == "passed"
+
+
+def run(command, log, timeout):
+    with log.open("w") as out:
+        process = subprocess.Popen(command, stdout=out, stderr=subprocess.STDOUT, start_new_session=True)
+        try:
+            return process.wait(timeout=timeout)
+        except subprocess.TimeoutExpired:
+            os.killpg(process.pid, signal.SIGTERM)
+            try:
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                process.wait(timeout=10)
+            return 124
+
+
+def inspect_capture(directory, name):
+    basic_path, = (directory / "capture").rglob("OpBasicInfo.csv")
+    with basic_path.open(encoding="utf-8-sig", newline="") as source:
+        info, = csv.DictReader(source)
+    assert info["Op Name"] == name and info["Device Id"] == "0", info["Op Name"]
+    assert info["Op Type"] == "vector" and info["Block Dim"] == "56", (info["Op Type"], info["Block Dim"])
+    file_map = {}
+    for group in sorted(GROUPS):
+        path = basic_path.with_name(group + ".csv")
+        with path.open(encoding="utf-8-sig", newline="") as source:
+            reader = csv.DictReader(source)
+            keys = [(row["block_id"], row["sub_block_id"]) for row in reader]
+        assert len(keys) == 56 and set(keys) == {(str(i), "vector0") for i in range(56)}, group
+        file_map[group] = {"path": str(path.relative_to(ROOT)), "sha256": digest(path),
+                           "rows": len(keys), "fields": reader.fieldnames}
+    file_map["OpBasicInfo"] = {"path": str(basic_path.relative_to(ROOT)), "sha256": digest(basic_path), "rows": 1}
+    return {"device_id": info["Device Id"], "frequency": info["Current Freq"],
+            "rated_frequency": info["Rated Freq"], "type": info["Op Type"], "blocks": int(info["Block Dim"]),
+            "files": file_map}
+
+
+def run_case(case):
+    directory = ROOT / "cases" / case["id"]
+    directory.mkdir(parents=True)
+    # Serial execution: check for other visible work before each case.
+    idle = subprocess.run(["npu-smi", "info", "-t", "proc-mem", "-i", "0"], text=True, capture_output=True, timeout=20)
+    (directory / "device-before.txt").write_text(idle.stdout + idle.stderr)
+    if idle.returncode != 0 or "No process in device." not in idle.stdout:
+        outcome = {"id": case["id"], "family": case["family"], "role": case["role"],
+                   "status": "skipped", "reason": "NPU not confirmed idle at start"}
+        save(directory / "result.json", outcome)
+        return outcome
+    invoke = [sys.executable, "-B", __file__, "application", case["id"]]
+    outcome = {"id": case["id"], "family": case["family"], "role": case["role"]}
+    try:
+        prepare = invoke + ["prepare"]
+        outcome["prepare_rc"] = run(prepare, directory / "prepare.log", 300)
+        assert outcome["prepare_rc"] == 0, "prepare failed"
+        prep = json.loads((directory / "prepare.json").read_text())
+        command = ["msprof", "op", f"--output={directory / 'capture'}", "--aic-metrics=Default",
+                   "--replay-mode=kernel", "--mstx=true", "--mstx-include=cold_call",
+                   f"--kernel-name={prep['runtime_kernel']}", "--launch-count=1", "--warm-up=5"]
+        command += invoke + ["default"]
+        outcome["default_command"] = command
+        outcome["default_rc"] = run(command, directory / "default.log", 300)
+        assert outcome["default_rc"] == 0, "Default command failed"
+        launch = json.loads((directory / "default.json").read_text())
+        assert launch["status"] == "passed", "post-replay full-output precision failed"
+        assert launch["source_sha256"] == prep["source_sha256"] and launch["inputs"] == prep["inputs"], "prepare/replay mismatch"
+        outcome["capture"] = inspect_capture(directory, prep["runtime_kernel"])
+        after = subprocess.run(["npu-smi", "info", "-t", "proc-mem", "-i", "0"], text=True, capture_output=True, timeout=20)
+        (directory / "device-after.txt").write_text(after.stdout + after.stderr)
+        if after.returncode != 0 or "No process in device." not in after.stdout:
+            outcome["status"] = "needs_review"
+            outcome["reason"] = "NPU not confirmed idle after capture; possible interference"
+        else:
+            outcome["status"] = "admitted"
+    except Exception as error:
+        outcome.update(status="failed", reason=f"{type(error).__name__}: {error}")
+    save(directory / "result.json", outcome)
+    return outcome
+
+
+def batch(manifest, phase):
+    toolkit = Path("/workspace/tilekernels-env-20261101/src/TileKernels")
+    rev = subprocess.check_output(["git", "-C", toolkit, "rev-parse", "HEAD"], text=True).strip()
+    changes = subprocess.check_output(["git", "-C", toolkit, "status", "--porcelain"], text=True)
+    op = subprocess.check_output(["msprof", "op", "--version"], text=True)
+    device = subprocess.check_output(["npu-smi", "info"], text=True)
+    assert rev == manifest["tilekernels_commit"] and not changes
+    assert manifest["msopprof_commit"] in op and manifest["device_bus"] in device
+    assert os.environ["ASCEND_HOME_PATH"].endswith("/cann-9.2.1"), os.environ["ASCEND_HOME_PATH"]
+    save(ROOT / "environment.json", {"tilekernels_commit": rev, "profiler": op, "npu_smi": device,
+                                     "cann": os.environ["ASCEND_HOME_PATH"], "manifest_sha256": digest(MANIFEST)})
+    cases = manifest["cases"]
+    assert len(cases) == manifest["capture_budget"] == len({c["id"] for c in cases})
+    result_path = ROOT / "progress.json"
+    if phase == "pilot":
+        assert not result_path.exists()
+        result = {"status": "running", "cases": []}
+    else:
+        result = json.loads(result_path.read_text())
+        assert result["status"] == "pilot_finished"
+        result["status"] = "running"
+    passed_families = {c["family"] for c in result["cases"] if c["status"] == "admitted"}
+    for case in cases:
+        if bool(case.get("pilot")) != (phase == "pilot"):
+            continue
+        if phase == "remaining" and case["family"] not in passed_families:
+            outcome = {k: case[k] for k in ("id", "family", "role")}
+            outcome.update(status="skipped", reason="family pilot failed")
+        else:
+            outcome = run_case(case)
+        result["cases"].append(outcome)
+        save(result_path, result)
+        print(case["id"], outcome["status"], outcome.get("reason", ""), flush=True)
+    result["status"] = "pilot_finished" if phase == "pilot" else "finished"
+    save(result_path, result)
+
+
+def main():
+    manifest = json.loads(MANIFEST.read_text())
+    parser = argparse.ArgumentParser()
+    sub = parser.add_subparsers(dest="command", required=True)
+    run_batch = sub.add_parser("batch")
+    run_batch.add_argument("phase", choices=("pilot", "remaining"))
+    app = sub.add_parser("application")
+    app.add_argument("case")
+    app.add_argument("stage", choices=("prepare", "default"))
+    args = parser.parse_args()
+    if args.command == "batch":
+        batch(manifest, args.phase)
+        return
+    case = next(c for c in manifest["cases"] if c["id"] == args.case)
+    directory = ROOT / "cases" / case["id"]
+    try:
+        ok = application(case, args.stage, directory)
+    except Exception:
+        save(directory / f"{args.stage}.json", {"status": "failed", "error": traceback.format_exc()})
+        raise
+    raise SystemExit(0 if ok else 2)
+
+
+if __name__ == "__main__":
+    main()
+
