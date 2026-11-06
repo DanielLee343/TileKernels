@@ -1,0 +1,39 @@
+{
+  "group": "quant_cast",
+  "stage": "prepare",
+  "seed": 42,
+  "matched": 1,
+  "params": {
+    "shape": [
+      1310976
+    ],
+    "in_dtype": "fp32",
+    "out_dtype": "bf16",
+    "stochastic_rounding": true
+  },
+  "source_files_sha256": {
+    "tests/quant/test_cast.py": "65412f29c6a156cc6163545813fb790faae71ab0d2f308171e33167a1cab4b37",
+    "tile_kernels/quant/cast_asc.py": "675e5ede54752bb06cb4e593d2949e094152b9ff641b44b3c1509698729b5023",
+    "tile_kernels/quant/cast_kernel.py": "d3c557ce4b3eab52c5eaa1f7d3873ddb77c80f9921dfdf5610fe0bdd3a8dc834",
+    "tile_kernels/rand/seed.py": "40778f97938a2566f7467d0b1250cc31ee5ca5ae7b306888df79a395ba877f42",
+    "tile_kernels/rand/randn_kernel.py": "64d6ecc12d519410aa0db7bf6d029fb8851eeb804e9f87c6888c65359264382b",
+    "tile_kernels/testing/numeric.py": "621c719d35acbd556a59a55f303ef615b032a587520d7fbc49d9462e9f04e4c2",
+    "tile_kernels/testing/quant.py": "130a9b4a125f60a3f7f10c2f5554d71bbb86446ad153cf2cadd25b336fcf9595"
+  },
+  "symbol": "cast_kernel_asc",
+  "runtime_kernel": "cast_kernel_asc_kernel",
+  "source_sha256": "be83dd2a45745039a92c68ff30cb873d1da46dd7a9290643eddb2e905b5920a7",
+  "inputs": [
+    {
+      "shape": [
+        1310976
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "7dc150a9e00470ef1c17f00aed5071d8490605312544c8f16aaed02bb5ef2712"
+    }
+  ],
+  "status": "passed"
+}
