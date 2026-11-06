@@ -54,3 +54,7 @@ engram_gate_bwd-18 needs_review in-place profiler replay restoration has not bee
 engram_gate_bwd-19 needs_review in-place profiler replay restoration has not been independently verified
 engram_gate_bwd-20 needs_review in-place profiler replay restoration has not been independently verified
 engram_sinkhorn_momentum_update-02 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_momentum_update-03 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_momentum_update-04 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_momentum_update-05 needs_review in-place profiler replay restoration has not been independently verified
+engram_sinkhorn_momentum_update-06 needs_review in-place profiler replay restoration has not been independently verified
