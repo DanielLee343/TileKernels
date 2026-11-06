@@ -17,3 +17,8 @@ finalize-12 admitted
 finalize-13 skipped host memory guard: more than 50M float32 input elements
 finalize-14 admitted 
 finalize-15 admitted 
+finalize-16 admitted 
+finalize-17 skipped host memory guard: more than 50M float32 input elements
+finalize-18 admitted 
+finalize-19 skipped host memory guard: more than 50M float32 input elements
+finalize-20 admitted 

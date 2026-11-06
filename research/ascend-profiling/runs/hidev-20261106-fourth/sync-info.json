@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793968000368701736.tar.gz",
-  "size": 540387,
-  "sha256": "b4ae004f0707353b7f319fa74dea025a120ff53a8b5d4e84cfcd7bb58df61fba",
+  "path": "/workspace/tk-starter-sync-1793968071840801326.tar.gz",
+  "size": 646687,
+  "sha256": "08270b0ff16cc0093558b12a45bf13942b97db532605becf0c13bd2ad08ee5d2",
   "ids": [
     "finalize-01",
     "reduce-rms-bwd-01",
@@ -18,7 +18,12 @@
     "finalize-12",
     "finalize-13",
     "finalize-14",
-    "finalize-15"
+    "finalize-15",
+    "finalize-16",
+    "finalize-17",
+    "finalize-18",
+    "finalize-19",
+    "finalize-20"
   ],
   "status": "running"
 }

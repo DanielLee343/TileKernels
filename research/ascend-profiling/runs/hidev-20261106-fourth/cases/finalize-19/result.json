@@ -1,0 +1,7 @@
+{
+  "id": "finalize-19",
+  "family": "engram_sinkhorn_finalize",
+  "role": "discovery",
+  "status": "skipped",
+  "reason": "host memory guard: more than 50M float32 input elements"
+}
