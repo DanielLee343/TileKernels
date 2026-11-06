@@ -1,0 +1,2258 @@
+{
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "device_bus": "0000:57:00.0",
+  "cases": [
+    {
+      "id": "quant_per_block_cast-01",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_block_cast-02",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 768,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-03",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-04",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 7168,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-05",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2048,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-06",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-07",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-08",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-09",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-10",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-11",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-12",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 4096,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-13",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-14",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-15",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2560,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-16",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-17",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 384,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-18",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 6144,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-19",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 128,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast-20",
+      "group": "quant_per_block_cast",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-01",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_token_cast-02",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-03",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-04",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-05",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-06",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e4m3",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-07",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-08",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e4m3",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-09",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-10",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-11",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-12",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-13",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-14",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-15",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-16",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-17",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "e4m3",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-18",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-19",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast-20",
+      "group": "quant_per_token_cast",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "e2m1",
+        "num_per_channels": 32,
+        "x_block_size": [
+          32,
+          32
+        ],
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-01",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-02",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-03",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-04",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-05",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-06",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-07",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-08",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-09",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-10",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-11",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-12",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-13",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-14",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-15",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-16",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-17",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-18",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-19",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_sf_only-20",
+      "group": "quant_per_token_cast_with_sf_only",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-01",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-02",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-03",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-04",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-05",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-06",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-07",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-08",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-09",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-10",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-11",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2560,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-12",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-13",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-14",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2048,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-15",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 3072,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-16",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 384,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-17",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 4096,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-18",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 6144,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-19",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e4m3"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_token_cast_with_precomputed_sf-20",
+      "group": "quant_per_token_cast_with_precomputed_sf",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "use_e4m3_sf": false,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "x_block_size": null,
+        "fmt": "e2m1"
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-01",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-02",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 768,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-03",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-04",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 7168,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-05",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2048,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-06",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-07",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-08",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-09",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-10",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-11",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-12",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 4096,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-13",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-14",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-15",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2560,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-16",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-17",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 384,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-18",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 6144,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-19",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 128,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_sf_only-20",
+      "group": "quant_per_block_cast_with_sf_only",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": true,
+        "round_sf": true,
+        "use_packed_ue8m0": true,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-01",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": true
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-02",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 768,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-03",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-04",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 7168,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-05",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2048,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-06",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-07",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-08",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-09",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-10",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-11",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 2560,
+        "in_dtype": "fp32",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-12",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-13",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-14",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-15",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-16",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 384,
+        "in_dtype": "bf16",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-17",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 4096,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-18",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 6144,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": true,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-19",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 128,
+        "in_dtype": "fp32",
+        "fmt": "e4m3",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    },
+    {
+      "id": "quant_per_block_cast_with_precomputed_sf-20",
+      "group": "quant_per_block_cast_with_precomputed_sf",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 8064,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "fmt": "e2m1",
+        "use_tma_aligned_col_major_sf": false,
+        "round_sf": false,
+        "use_packed_ue8m0": false,
+        "block_size": [
+          32,
+          32
+        ]
+      },
+      "pilot": false
+    }
+  ]
+}

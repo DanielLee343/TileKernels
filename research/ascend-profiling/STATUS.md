@@ -19,3 +19,8 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - The fifth manifest maps 20 additional mHC post forward entries, queued on hidev after the fourth batch. Seven over 50M residual elements are skipped pending a bounded-memory comparator. Five manifests now cover 323 original plan rows; 677 rows still lack adapters.
 
 - The sixth manifest maps 20 additional mHC pre-split forward entries, queued after the fifth batch. Six manifests now map 343 original plan rows; 657 rows still lack adapters.
+
+## Shared quant runner (2026-11-06)
+
+- A shared upstream-test interception approach was verified end-to-end for one per-token E2M1 case on hidev. A serial runner for 120 previously unmapped rows in six per-token/per-block modes was started on hidev; per-mode pilots gate the remaining entries. Results, rather than the manifest, determine successful coverage.
+- The other 537 previously unmapped plan entries still require adapters. Previous 11 memory skips and 3 correctness failures are not in the 657 unmapped entries. See `collector/unified/README.md`.
