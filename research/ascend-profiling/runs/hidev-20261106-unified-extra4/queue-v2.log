@@ -113,3 +113,7 @@ quant_batched_transpose_weight_sf-20 admitted
 rotary_embedding-02-q needs_review in-place profiler replay restoration has not been independently verified
 rotary_embedding-02-k needs_review in-place profiler replay restoration has not been independently verified
 rotary_embedding-03-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-03-k needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-04-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-04-k needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-05-q needs_review in-place profiler replay restoration has not been independently verified

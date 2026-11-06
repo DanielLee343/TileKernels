@@ -1,0 +1,68 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "group": "rotary_embedding_k",
+  "params": {
+    "nheads": 5,
+    "dim": 64,
+    "dtype": "fp32",
+    "interleaved": false,
+    "conjugate": false,
+    "head_split": false,
+    "seqlen": 2001,
+    "seqlen_total": 8192
+  },
+  "target_role": "key",
+  "profiler_replay_state": "not_applicable",
+  "output_semantics": "target input tensor is updated in place",
+  "native_launch_seen": 2,
+  "symbol": "_rope_kernel",
+  "runtime_kernel": "_rope_kernel_kernel",
+  "source_sha256": "b1025df1396b2d5e0151560cc4a36c598f2d8422dc80b367e7b1d71ccd1c7df3",
+  "inputs": [
+    {
+      "shape": [
+        1,
+        2001,
+        5,
+        64
+      ],
+      "stride": [
+        1920960,
+        960,
+        192,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "59719f7479367840988978e60aa04dfed65e78ca848639e0407fb41686635947"
+    },
+    {
+      "shape": [
+        8192,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0e6029676fd99e0a8c02eb58d03133be38c8b63ec4eabce609264fe4012762cf"
+    },
+    {
+      "shape": [
+        1,
+        2001
+      ],
+      "stride": [
+        2001,
+        1
+      ],
+      "dtype": "torch.int32",
+      "sha256": "e6fc3b275e957949bec9fbcd03459e3b5b80588783120c779f8c343ab273679d"
+    }
+  ],
+  "scalar_inputs": {
+    "seqlen_offset": 0
+  },
+  "status": "passed"
+}
