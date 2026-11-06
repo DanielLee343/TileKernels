@@ -1,0 +1,34 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "symbol": "per_block_cast_kernel",
+  "runtime_kernel": "per_block_cast_kernel_kernel",
+  "source_sha256": "9f4f13eb981959a89c64f6a44efece97f5a0d34c2c7270da5914ea5b953bb6f6",
+  "inputs": [
+    {
+      "shape": [
+        512,
+        2048
+      ],
+      "stride": [
+        2048,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0f068489cec9dc6e5df01515f1a21e242c6694809110472738251e86bc5f6b65"
+    },
+    {
+      "shape": [
+        16,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "309ff9fe7fd1a2bce1ada0d00002fcc57e8db623b4e10df234aea937d5d96244"
+    }
+  ],
+  "status": "passed"
+}
