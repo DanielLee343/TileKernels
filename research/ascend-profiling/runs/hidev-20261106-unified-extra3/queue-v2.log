@@ -87,3 +87,7 @@ moe_topk_gate_forward-15 needs_review in-place profiler replay restoration has n
 moe_topk_gate_forward-16 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_forward-17 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_forward-18 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_forward-19 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_forward-20 needs_review in-place profiler replay restoration has not been independently verified
+quant_swiglu_forward-02 admitted 
+quant_swiglu_forward-03 admitted 
