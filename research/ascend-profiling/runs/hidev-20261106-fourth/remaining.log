@@ -1,0 +1,6 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+finalize-02 skipped host memory guard: more than 50M float32 input elements

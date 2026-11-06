@@ -1,0 +1,11 @@
+{
+  "path": "/workspace/tk-starter-sync-1793967664362924991.tar.gz",
+  "size": 70411,
+  "sha256": "9807754115ccc5da29e5f7b56bfc60d7d55d7a102a7f28c17603c16c19accd17",
+  "ids": [
+    "finalize-01",
+    "reduce-rms-bwd-01",
+    "finalize-02"
+  ],
+  "status": "running"
+}

@@ -1,0 +1,689 @@
+{
+  "tilekernels_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msopprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "capture_budget": 40,
+  "device_bus": "0000:57:00.0",
+  "case_plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "cases": [
+    {
+      "id": "finalize-01",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "num_rows": 1,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": true,
+      "num_rows": 1,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-02",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "num_rows": 100001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 100001,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-03",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "num_rows": 10001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 10001,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-04",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "num_rows": 1001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 1001,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-05",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "num_rows": 1024,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 1024,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-06",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "num_rows": 128,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 128,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-07",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "num_rows": 16384,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 16384,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-08",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "num_rows": 32768,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 32768,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-09",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "num_rows": 4096,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 4096,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-10",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "num_rows": 512,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 512,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-11",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "num_rows": 8192,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 8192,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-12",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "num_rows": 100001,
+        "head_dim": 256,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 100001,
+      "head_dim": 256,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-13",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "num_rows": 10001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 10001,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-14",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "num_rows": 1001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 1001,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-15",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "num_rows": 1024,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 1024,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-16",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "num_rows": 128,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 128,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-17",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "num_rows": 16384,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 16384,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-18",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "num_rows": 1,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 1,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-19",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "num_rows": 32768,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 32768,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "finalize-20",
+      "family": "engram_sinkhorn_finalize",
+      "role": "discovery",
+      "plan_group": "engram_sinkhorn_finalize",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "num_rows": 4096,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "num_rows": 4096,
+      "head_dim": 5120,
+      "eps": 1e-20
+    },
+    {
+      "id": "reduce-rms-bwd-01",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": true,
+      "tokens": 128,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-02",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 7168,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 7168,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-03",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 320,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-04",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 7168,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 7168,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-05",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-06",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 4096,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 4096,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-07",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 5120,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 5120,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-08",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-09",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-10",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-11",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-12",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 1280,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 1280,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-13",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "n1": 1024,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 1024,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-14",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 128,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-15",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-16",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "n1": 8001,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8001,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-17",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "n1": 8192,
+        "hidden_size": 2560,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 8192,
+      "hidden_size": 2560,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-18",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "n1": 128,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 128,
+      "hidden_size": 320,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-19",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "n1": 4096,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 4096,
+      "hidden_size": 320,
+      "mhc_mult": 4
+    },
+    {
+      "id": "reduce-rms-bwd-20",
+      "family": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "role": "discovery",
+      "plan_group": "mhc_reduce_partials_and_rmsnorm_bwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "n1": 512,
+        "hidden_size": 320,
+        "mhc_mult": 4,
+        "n_splits": 1,
+        "dtype": "fp32"
+      },
+      "pilot": false,
+      "tokens": 512,
+      "hidden_size": 320,
+      "mhc_mult": 4
+    }
+  ]
+}
