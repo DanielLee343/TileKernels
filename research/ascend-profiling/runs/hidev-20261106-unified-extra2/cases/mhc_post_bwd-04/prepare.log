@@ -1,0 +1,17 @@
+2026-11-06 14:57:13  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_post_bwd_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.
+Traceback (most recent call last):
+  File "/workspace/tilekernels-expert-unified-extra2-20261106/extra_mhc_post_bwd.py", line 183, in <module>
+    run(args.group, json.loads(base64.urlsafe_b64decode(args.params_b64.encode())),
+  File "/workspace/tilekernels-expert-unified-extra2-20261106/extra_mhc_post_bwd.py", line 165, in run
+    state['precision'] = verify_outputs((x, residual, post, comb, d_out), outputs, mhc_post_ref, torch)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tilekernels-expert-unified-extra2-20261106/extra_mhc_post_bwd.py", line 93, in verify_outputs
+    torch.testing.assert_close(got, want, atol=1e-4, rtol=1e-4)
+  File "/workspace/tilekernels-env-20261101/venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1631, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 1 / 1024 (0.1%)
+Greatest absolute difference: 0.00011730194091796875 at index (0, 51, 1, 1) (up to 0.0001 allowed)
+Greatest relative difference: 0.004194516222923994 at index (0, 51, 1, 1) (up to 0.0001 allowed)
+[ERROR] 2026-11-06-14:57:14 (PID:578294, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception

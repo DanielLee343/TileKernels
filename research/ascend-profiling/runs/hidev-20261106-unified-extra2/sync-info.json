@@ -1,14 +1,17 @@
 {
-  "path": "/workspace/tk-starter-sync-1793976993691174745.tar.gz",
-  "size": 194171,
-  "sha256": "ca042fba2cbcab99d9800f6ceab7b1fd6ef1bdba66b2d61788510fbbdec3c9ee",
+  "path": "/workspace/tk-starter-sync-1793977056733901956.tar.gz",
+  "size": 286363,
+  "sha256": "a7ee3701ddb2fa5ff8ec1fc8c6d2689c8c5a22d7ab61f13fd2d211d7b4a373c9",
   "ids": [
     "mhc_post_bwd-01",
     "quant_cast_back_per_token-01",
     "quant_cast_back_block-01",
     "quant_per_block_cast_lossless-01",
     "quant_per_channel_cast-01",
-    "randn-01"
+    "randn-01",
+    "mhc_post_bwd-02",
+    "mhc_post_bwd-03",
+    "mhc_post_bwd-04"
   ],
-  "status": "pilot_finished"
+  "status": "running"
 }

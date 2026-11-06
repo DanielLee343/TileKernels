@@ -14,3 +14,6 @@ randn-01 admitted
     THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
 =================================================================
 
+mhc_post_bwd-02 admitted 
+mhc_post_bwd-03 admitted 
+mhc_post_bwd-04 failed AssertionError: upstream prepare/correctness failed
