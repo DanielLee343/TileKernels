@@ -1,0 +1,144 @@
+{
+  "runtime_kernel": "mhc_post_fwd_asc_kernel",
+  "native_symbol": "mhc_post_fwd_asc",
+  "source_sha256": "9f96f3d41279817a3e3872e79dcc67fadabc01fb3a19231f02e1d4053ebde926",
+  "inputs": [
+    {
+      "shape": [
+        2048,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 131072,
+      "sha256": "3822bcbfc7c845a2fd5420ac1206ef9e97cad41e3120d971cd4b5c1af0732ff0"
+    },
+    {
+      "shape": [
+        2048,
+        4,
+        5120
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        20480,
+        5120,
+        1
+      ],
+      "bytes": 83886080,
+      "sha256": "5076045faf7eac25ac52c5d8e53512185282dbf21b82326b3e2d46c104ad2594"
+    },
+    {
+      "shape": [
+        2048,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        4,
+        1
+      ],
+      "bytes": 32768,
+      "sha256": "1f3f8e35d39ee84a67062884282eb39d11b6ab63608da4c85f1ee87562062c43"
+    },
+    {
+      "shape": [
+        2048,
+        5120
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        5120,
+        1
+      ],
+      "bytes": 20971520,
+      "sha256": "3ae367abee87cf213af9043680227bb88f68d1d6ba8d655799366ab5d5e8a491"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        2048,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 131072
+    },
+    {
+      "shape": [
+        2048,
+        4,
+        5120
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        20480,
+        5120,
+        1
+      ],
+      "bytes": 83886080
+    },
+    {
+      "shape": [
+        2048,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        4,
+        1
+      ],
+      "bytes": 32768
+    },
+    {
+      "shape": [
+        2048,
+        5120
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        5120,
+        1
+      ],
+      "bytes": 20971520
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        2048,
+        4,
+        5120
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        20480,
+        5120,
+        1
+      ],
+      "bytes": 83886080
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999339346,
+      "max_abs_error": 0.03125,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}
