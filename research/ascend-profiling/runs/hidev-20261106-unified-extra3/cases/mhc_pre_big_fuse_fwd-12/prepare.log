@@ -1,0 +1,1 @@
+2026-11-06 16:27:03  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_pre_big_fuse_fwd_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.

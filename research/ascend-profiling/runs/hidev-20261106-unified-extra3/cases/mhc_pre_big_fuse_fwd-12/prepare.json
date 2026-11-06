@@ -1,0 +1,120 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "group": "mhc_pre_big_fuse_fwd",
+  "params": {
+    "n1": 1021,
+    "hidden_size": 2560,
+    "mhc_mult": 4,
+    "repeat": 10,
+    "n_splits": 1
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "target_range": "mhc_big_fuse_target",
+  "capture_scope": "one pre-big-fuse native kernel",
+  "outside_capture": "upstream input generation, GEMM partials and unfused reference",
+  "correctness_scope": "all three outputs, upstream torch.equal",
+  "padding": false,
+  "device_validation": "pending",
+  "plan_case_number": 12,
+  "source_files_sha256": {
+    "test_pre_big_fuse.py": "6928d7c01a0325468c988857bc9d357d2d9d17663d7a43b67dc834340a1c2b43",
+    "pre_big_fuse_kernel.py": "d3d8f5ec18d426215b1dc2aabb9079e54e951216e971d602c93c5fa98d9afee8",
+    "pre_big_fuse_asc.py": "6b2a575cdce922bddabe35bf7f981073d302d889a7d578f81e2e9d01f4693929"
+  },
+  "symbol": "mhc_pre_big_fuse_fwd_asc",
+  "runtime_kernel": "mhc_pre_big_fuse_fwd_asc_kernel",
+  "source_sha256": "f23d2ed740ba36c3c04377509f01bb1319d96a754f2e6c98f05ba7438ab61359",
+  "inputs": [
+    {
+      "shape": [
+        1,
+        1021,
+        24
+      ],
+      "stride": [
+        24504,
+        24,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9a1d25b370d89c3ee69d6afa777e6b1aa71553186b4dd90f12658a94af6fd734"
+    },
+    {
+      "shape": [
+        1,
+        1021
+      ],
+      "stride": [
+        1021,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "96e5f6a7fcb1e1723f976acb14fef824360d15b1259a5deb0f96e065df594ce0"
+    },
+    {
+      "shape": [
+        3
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9f2dd0310832d616504d4d9e7aa36fd8ef6b0c3ce52b94ead7286f7dbe05c695"
+    },
+    {
+      "shape": [
+        24
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "48e2550d7abe4c10b066f9b24746d7941be4f1c935d65b23fe94a3187c7fa61f"
+    },
+    {
+      "shape": [
+        1021,
+        4,
+        2560
+      ],
+      "stride": [
+        10240,
+        2560,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "4d26601a73e0d1f73ff9e67adc1aebf9b1c7a3656e232bb387d88f1596c01120"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 256,
+    "n_splits": 1,
+    "token_block": 16,
+    "num_stages": 4,
+    "num_vec_cores": 56,
+    "rms_eps": 1e-06,
+    "mhc_pre_eps": 1e-06,
+    "mhc_sinkhorn_eps": 1e-06,
+    "mhc_post_mult_value": 1.0,
+    "sinkhorn_repeat": 10
+  },
+  "precision": [
+    {
+      "output": "post_mix",
+      "passed": true,
+      "comparison": "torch.equal"
+    },
+    {
+      "output": "comb_mix",
+      "passed": true,
+      "comparison": "torch.equal"
+    },
+    {
+      "output": "layer_input",
+      "passed": true,
+      "comparison": "torch.equal"
+    }
+  ],
+  "status": "passed"
+}
