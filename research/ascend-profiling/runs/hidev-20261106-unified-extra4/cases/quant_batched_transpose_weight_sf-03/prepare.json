@@ -1,0 +1,288 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "group": "quant_batched_transpose_weight_sf",
+  "params": {
+    "block_size": 32,
+    "weight_configs": [
+      [
+        128,
+        128,
+        null,
+        false
+      ],
+      [
+        384,
+        512,
+        2,
+        true
+      ],
+      [
+        768,
+        1152,
+        3,
+        false
+      ],
+      [
+        640,
+        1280,
+        1,
+        true
+      ],
+      [
+        2048,
+        2560,
+        2,
+        false
+      ],
+      [
+        384,
+        384,
+        null,
+        true
+      ],
+      [
+        6144,
+        4096,
+        null,
+        false
+      ]
+    ]
+  },
+  "range": "quant_target",
+  "source_sf": [
+    {
+      "shape": [
+        4,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "71505c99fb1315068b5c400d6b665983e78047ff6161e095bcab8a496c6e2a30"
+    },
+    {
+      "shape": [
+        2,
+        12,
+        16
+      ],
+      "stride": [
+        192,
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0a2807aa03edc2685350b8578d8d06c7e82a9ed38f257a58c99f7a53e67eedf9"
+    },
+    {
+      "shape": [
+        3,
+        24,
+        36
+      ],
+      "stride": [
+        864,
+        36,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "c857a23f23a16aae0067677490ae478cf63f16d8c8edfbdd3bb1170d4c90ecf3"
+    },
+    {
+      "shape": [
+        1,
+        20,
+        40
+      ],
+      "stride": [
+        800,
+        40,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a4de4a9228e2529bd01a3dfaf1b77225c21c1508566548ee62801c08fbdf210f"
+    },
+    {
+      "shape": [
+        2,
+        64,
+        80
+      ],
+      "stride": [
+        5120,
+        80,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "4a0428b658f545306038b3ef2dead977db6d06ae4d4833a0b738ae25b5002a9a"
+    },
+    {
+      "shape": [
+        12,
+        12
+      ],
+      "stride": [
+        12,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0c057a0afd77fd0346591a0d3eb1a7ee2eaed92bdeb94f36e562dbef1d8eb7dd"
+    },
+    {
+      "shape": [
+        192,
+        128
+      ],
+      "stride": [
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8c3c002e1c3cbe70c9507aff9f1dc520abb8e5806af7cb5d101c2f5099c0e1b6"
+    }
+  ],
+  "transpose_sf1s": [
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ],
+  "symbol": "batched_transpose_weight_sf_kernel",
+  "runtime_kernel": "batched_transpose_weight_sf_kernel_kernel",
+  "source_sha256": "a78be7375fb01810e5303e09ec8365fda1c39b60e98491f2bc768f2b42bb396a",
+  "inputs": [
+    {
+      "shape": [
+        4,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "71505c99fb1315068b5c400d6b665983e78047ff6161e095bcab8a496c6e2a30"
+    },
+    {
+      "shape": [
+        2,
+        12,
+        16
+      ],
+      "stride": [
+        192,
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0a2807aa03edc2685350b8578d8d06c7e82a9ed38f257a58c99f7a53e67eedf9"
+    },
+    {
+      "shape": [
+        3,
+        24,
+        36
+      ],
+      "stride": [
+        864,
+        36,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "c857a23f23a16aae0067677490ae478cf63f16d8c8edfbdd3bb1170d4c90ecf3"
+    },
+    {
+      "shape": [
+        1,
+        20,
+        40
+      ],
+      "stride": [
+        800,
+        40,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a4de4a9228e2529bd01a3dfaf1b77225c21c1508566548ee62801c08fbdf210f"
+    },
+    {
+      "shape": [
+        2,
+        64,
+        80
+      ],
+      "stride": [
+        5120,
+        80,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "4a0428b658f545306038b3ef2dead977db6d06ae4d4833a0b738ae25b5002a9a"
+    },
+    {
+      "shape": [
+        12,
+        12
+      ],
+      "stride": [
+        12,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0c057a0afd77fd0346591a0d3eb1a7ee2eaed92bdeb94f36e562dbef1d8eb7dd"
+    },
+    {
+      "shape": [
+        192,
+        128
+      ],
+      "stride": [
+        128,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8c3c002e1c3cbe70c9507aff9f1dc520abb8e5806af7cb5d101c2f5099c0e1b6"
+    },
+    {
+      "shape": [
+        7
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.int32",
+      "sha256": "59cce50d628c8d604083b350f0d770c9712874b28760989801f3e5b96de5601a"
+    },
+    {
+      "shape": [
+        7,
+        3
+      ],
+      "stride": [
+        3,
+        1
+      ],
+      "dtype": "torch.int32",
+      "sha256": "c50e14bd6ec6f0e72da849d44949c3b8e9f19ab2e292e0bedc02ff051e49a526"
+    }
+  ],
+  "scalar_inputs": {
+    "num_tasks": 48,
+    "transpose_sf1s": [
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false
+    ]
+  },
+  "status": "passed"
+}
