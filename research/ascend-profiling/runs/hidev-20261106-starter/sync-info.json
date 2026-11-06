@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793959038158786163.tar.gz",
-  "size": 361085,
-  "sha256": "022843d0a452e3926e379b5a613dc6f4c6f12ab5970dabd1cee561cac76e5b32",
+  "path": "/workspace/tk-starter-sync-1793959109585109312.tar.gz",
+  "size": 426300,
+  "sha256": "2edeebda4b3ae6933e533815da96703cf8895473c6b5c1947467fe8cecd1a388",
   "ids": [
     "fused-01",
     "hash-01",
@@ -14,7 +14,9 @@
     "fused-07",
     "fused-08",
     "fused-09",
-    "fused-10"
+    "fused-10",
+    "fused-11",
+    "fused-12"
   ],
   "status": "running"
 }
