@@ -56,3 +56,5 @@ moe_topk_gate_backward-20 needs_review in-place profiler replay restoration has 
 quant_per_token_cast_and_cast_back-02 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-03 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-04 needs_review in-place profiler replay restoration has not been independently verified
+quant_per_token_cast_and_cast_back-05 needs_review in-place profiler replay restoration has not been independently verified
+quant_per_token_cast_and_cast_back-06 needs_review in-place profiler replay restoration has not been independently verified

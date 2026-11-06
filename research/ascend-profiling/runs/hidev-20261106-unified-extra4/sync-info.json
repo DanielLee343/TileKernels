@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793986165833179728.tar.gz",
-  "size": 1558880,
-  "sha256": "07a27c37822d92c99d96a95a8c85a12a429bfa062bd3f174fcce95457a0d78d9",
+  "path": "/workspace/tk-starter-sync-1793986275113054806.tar.gz",
+  "size": 1631975,
+  "sha256": "f2f0c07d15a01b67c9cdd5e11f45e22dd2debbc2b4ea9a1e1e6e054a1a9c3a82",
   "ids": [
     "mhc_pre_apply_mix_bwd-01",
     "moe_topk_gate_backward-01",
@@ -50,7 +50,9 @@
     "moe_topk_gate_backward-20",
     "quant_per_token_cast_and_cast_back-02",
     "quant_per_token_cast_and_cast_back-03",
-    "quant_per_token_cast_and_cast_back-04"
+    "quant_per_token_cast_and_cast_back-04",
+    "quant_per_token_cast_and_cast_back-05",
+    "quant_per_token_cast_and_cast_back-06"
   ],
   "status": "running"
 }
