@@ -18,3 +18,5 @@ rotary_embedding-01-k needs_review in-place profiler replay restoration has not 
 mhc_pre_apply_mix_bwd-02 failed AssertionError: upstream prepare/correctness failed
 mhc_pre_apply_mix_bwd-03 needs_review in-place profiler replay restoration has not been independently verified
 mhc_pre_apply_mix_bwd-04 failed AssertionError: upstream prepare/correctness failed
+mhc_pre_apply_mix_bwd-05 needs_review in-place profiler replay restoration has not been independently verified
+mhc_pre_apply_mix_bwd-06 failed AssertionError: upstream prepare/correctness failed
