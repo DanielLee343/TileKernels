@@ -1,0 +1,198 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "group": "mhc_multilayer_recompute",
+  "params": {
+    "num_layers": 1,
+    "num_post": 1,
+    "hidden": 5120,
+    "bs": 1,
+    "seq": 8192,
+    "mhc_mult": 4
+  },
+  "capture_scope": "one native multilayer kernel; pointer-table construction and reference kernels excluded",
+  "semantic_inputs": [
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        5120
+      ],
+      "stride": [
+        167772160,
+        20480,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2cea360644c3808776164b80be81f413ddc4735a79e07afcf07bcfa8b7b46c07"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        1
+      ],
+      "stride": [
+        32768,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "6562d252c2f60e23588bbb4be18c26ef0a53cfec8d48809becf82b41b10ba23c"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        5120
+      ],
+      "stride": [
+        41943040,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2e64d7790b28af548986b9d3b84b995792d63ed578fd50dccc2175cb90257bb8"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        1
+      ],
+      "stride": [
+        32768,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "87ff7473b6fcee285e468dda4731e2010979eaf6cda4a6ad6f1b75c9d610de3f"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        4
+      ],
+      "stride": [
+        131072,
+        16,
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a0cd6c3a9955290b5ffef9506eeca2f2bc8d19f85ebcd16c827fb030ab75cacc"
+    }
+  ],
+  "list_lengths": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "symbol": "mhc_multilayer_recompute_asc",
+  "runtime_kernel": "mhc_multilayer_recompute_asc_kernel",
+  "source_sha256": "1477209e1cdb6b35761c2d90f193e88d9ff403b00f8a2d13c282f37d41aef3bd",
+  "inputs": [
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        5120
+      ],
+      "stride": [
+        167772160,
+        20480,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2cea360644c3808776164b80be81f413ddc4735a79e07afcf07bcfa8b7b46c07"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        1
+      ],
+      "stride": [
+        32768,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "6562d252c2f60e23588bbb4be18c26ef0a53cfec8d48809becf82b41b10ba23c"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        5120
+      ],
+      "stride": [
+        41943040,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2e64d7790b28af548986b9d3b84b995792d63ed578fd50dccc2175cb90257bb8"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        1
+      ],
+      "stride": [
+        32768,
+        4,
+        1,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "87ff7473b6fcee285e468dda4731e2010979eaf6cda4a6ad6f1b75c9d610de3f"
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        4,
+        4
+      ],
+      "stride": [
+        131072,
+        16,
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a0cd6c3a9955290b5ffef9506eeca2f2bc8d19f85ebcd16c827fb030ab75cacc"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 5120,
+    "num_vec_cores": 56
+  },
+  "pointer_table_lengths": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "status": "passed"
+}
