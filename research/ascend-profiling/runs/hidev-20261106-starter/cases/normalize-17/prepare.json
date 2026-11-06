@@ -1,0 +1,77 @@
+{
+  "runtime_kernel": "normalize_weight_kernel_kernel",
+  "native_symbol": "normalize_weight_kernel",
+  "source_sha256": "c16c4bae060506144aceacedae11d6dd5b0899040e024665b1c15786e6da72b2",
+  "inputs": [
+    {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "float32",
+      "stride": [
+        8,
+        1
+      ],
+      "bytes": 4096,
+      "sha256": "092e4fb212b119d46286746f6131b6353768548b8af4cb27ff162a33fc6afa04"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "float32",
+      "stride": [
+        8,
+        1
+      ],
+      "bytes": 4096
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 512
+    },
+    {
+      "shape": [
+        128,
+        8
+      ],
+      "dtype": "float32",
+      "stride": [
+        8,
+        1
+      ],
+      "bytes": 4096
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 1.0,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    },
+    {
+      "output_id": 1,
+      "cosine_fp64": 1.0000000000000004,
+      "max_abs_error": 2.9802322387695312e-08,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}
