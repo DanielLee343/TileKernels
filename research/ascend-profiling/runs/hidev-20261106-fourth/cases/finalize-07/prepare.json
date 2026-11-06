@@ -1,0 +1,101 @@
+{
+  "runtime_kernel": "engram_sinkhorn_finalize_kernel_asc_kernel",
+  "native_symbol": "engram_sinkhorn_finalize_kernel_asc",
+  "source_sha256": "e2c34408f100bd281c90d52fed9b9f26068a178394fe21e4683639da4b8735d4",
+  "inputs": [
+    {
+      "shape": [
+        16384,
+        256
+      ],
+      "dtype": "float32",
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 16777216,
+      "sha256": "9a52b80a4f7534fd71ba2d6b79cf89ec2386a3a60e890956170a3cc48b1166c4"
+    },
+    {
+      "shape": [
+        16384
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 65536,
+      "sha256": "b552f72378c3adf17180771dc612547055b82c89e4bdbdf99071886efe0bc19b"
+    },
+    {
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 1024,
+      "sha256": "66001355cea6d93215994ea88140c55e2332e7db1e9495a200fdfa5ef08f89e3"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        16384,
+        256
+      ],
+      "dtype": "float32",
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 16777216
+    },
+    {
+      "shape": [
+        16384
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 65536
+    },
+    {
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 1024
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        16384,
+        256
+      ],
+      "dtype": "float32",
+      "stride": [
+        256,
+        1
+      ],
+      "bytes": 16777216
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.999999999999821,
+      "max_abs_error": 1.430511474609375e-06,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}
