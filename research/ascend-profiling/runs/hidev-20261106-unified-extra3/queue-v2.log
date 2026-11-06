@@ -16,3 +16,5 @@ quant_swiglu_forward-01 admitted
 quant_norm_forward-02 admitted 
 quant_norm_forward-03 admitted 
 quant_norm_forward-04 admitted 
+quant_norm_forward-05 admitted 
+quant_norm_forward-06 admitted 

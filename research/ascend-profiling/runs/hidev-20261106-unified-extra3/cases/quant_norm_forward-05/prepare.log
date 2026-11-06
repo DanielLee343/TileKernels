@@ -1,0 +1,3 @@
+[16:01:09] : Warning: Ascend AutoSchedule did not enable multi-buffering for buffer "residual_ub" although T.annotate_buffer_versions requested 4 versions. The buffer must be eligible in a scheduled serial loop and written before it is read.
+/workspace/tilekernels-env-20261101/src/TileKernels/tile_kernels/torch/cast.py:34: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  sf = (sf << 23).view(torch.float32)
