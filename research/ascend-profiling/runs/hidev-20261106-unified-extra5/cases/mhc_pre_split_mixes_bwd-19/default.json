@@ -1,0 +1,130 @@
+{
+  "group": "mhc_pre_split_mixes_bwd",
+  "params": {
+    "n0": 2,
+    "n1": 1024,
+    "mhc_mult": 4
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_range": "mhc_presplit_bwd_target",
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "capture_scope": "one pre-split backward native kernel producing input grad and per-core partials",
+  "outside_capture": "forward preparation, scale/base partial reductions and full-output comparison",
+  "device_validation": "pending",
+  "plan_case_number": 19,
+  "source_files_sha256": {
+    "pre_split_mixes_asc.py": "a72d46198dcc6a5d32a9bf742ba1d670dbcacb8f6daebaa59ba2f6d75949b75e",
+    "pre_split_mixes_kernel.py": "62bb69af40da3cf0323da4d0e582d66851b85823d33e3a1f3c087aac6a4f18ca",
+    "torch_mhc.py": "9f37ef9a1a7d99f14c2e878056b5f53a56932275e3ec0fc94de125e79953fd52"
+  },
+  "symbol": "mhc_pre_split_mixes_bwd_mhc4_asc",
+  "runtime_kernel": "mhc_pre_split_mixes_bwd_mhc4_asc_kernel",
+  "source_sha256": "71ed32fc69c4719d8b93a9b316fcf2462f6b66258c69ea7d1589d43d4da21c07",
+  "inputs": [
+    {
+      "shape": [
+        2048,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "d893076f2518be4d69be0804309f071f3f5c2675a1446208b170a3e2204106ad"
+    },
+    {
+      "shape": [
+        2048,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "2d2a3846bf27991d7b23888fce8fbb2fe776400ab8a1c7e9484bcf0fe10338f8"
+    },
+    {
+      "shape": [
+        2048,
+        16
+      ],
+      "stride": [
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9349081ad811f5813823b24aa6e3b54c5371b36e743c81836c78bca933b4e62f"
+    },
+    {
+      "shape": [
+        2048,
+        24
+      ],
+      "stride": [
+        24,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1c13c2b01f5d89cb9d63376f3c457210250b5b700d6fc43f2f54454ae32cb744"
+    },
+    {
+      "shape": [
+        2048,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a2d1dba64b932761dbbf1921f4ac5e530ea8f834e933b5d42bd18304ba1fd0c2"
+    },
+    {
+      "shape": [
+        3
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "0e8b27658046b0bcebc96df43064534c14522234160d92294b820785d8c158cf"
+    },
+    {
+      "shape": [
+        24
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "16962fb1eb0e0f8d4467a02484b3345f97750bd4298468ece129688e6690537e"
+    }
+  ],
+  "native_kwargs": {
+    "token_block_size": 64,
+    "num_stages": 2,
+    "num_vec_cores": 56,
+    "mhc_post_mult_value": 2.0
+  },
+  "precision": [
+    {
+      "output": "input_mixes_grad",
+      "passed": true,
+      "max_abs_error": 2.4586915969848633e-07
+    },
+    {
+      "output": "scale_grad",
+      "passed": true,
+      "max_abs_error": 1.52587890625e-05
+    },
+    {
+      "output": "base_grad",
+      "passed": true,
+      "max_abs_error": 1.52587890625e-05
+    }
+  ],
+  "status": "passed"
+}
