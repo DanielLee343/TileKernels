@@ -1,0 +1,47 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "symbol": "norm_backward_kernel",
+  "runtime_kernel": "norm_backward_kernel_kernel",
+  "source_sha256": "510c337e68ede74c0511c967e61ef449abd719fe835f132fa8b72139ca4c4208",
+  "inputs": [
+    {
+      "shape": [
+        512,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "98213c5d51a3024055f5b3bea0a8bab02fb1d05247a35769bb0a0caca5850298"
+    },
+    null,
+    {
+      "shape": [
+        512,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "dac638aa2e84792c579b4473e5ca093cf38fbe27a621daab6794fc331f5e4ec7"
+    },
+    {
+      "shape": [
+        512
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "da56c66cc1adaace2579cdcdc8effc8004ceeba53af85ff83d3edcffe1fa379b"
+    },
+    null
+  ],
+  "profiler_replay_state": "not_mutating_input",
+  "status": "passed"
+}
