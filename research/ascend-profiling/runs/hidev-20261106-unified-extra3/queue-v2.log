@@ -54,3 +54,6 @@ quant_norm_backward-20 needs_review in-place profiler replay restoration has not
 mhc_pre_big_fuse_fwd-02 admitted 
 mhc_pre_big_fuse_fwd-03 admitted 
 mhc_pre_big_fuse_fwd-04 admitted 
+mhc_pre_big_fuse_fwd-05 admitted 
+mhc_pre_big_fuse_fwd-06 admitted 
+mhc_pre_big_fuse_fwd-07 admitted 
