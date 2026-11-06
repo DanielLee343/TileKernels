@@ -124,8 +124,12 @@ def publish():
     # The SSH key stays in WSL; this command transmits Git objects only.
     remote = subprocess.run(['wsl','-d','archlinux','--','git','ls-remote',
                              'git@github.com:DanielLee343/TileKernels.git','refs/heads/main'],
-                            text=True,capture_output=True,check=True).stdout.split()[0]
+                            text=True,encoding='utf8',errors='replace',capture_output=True,check=True).stdout.split()[0]
     assert local_head == remote, 'remote has moved; pull/review before syncing'
+    # wsl.exe passes arguments through a Unix shell; forward slashes avoid
+    # backslashes being consumed before wslpath sees the Windows path.
+    wsl_path = subprocess.run(['wsl','-d','archlinux','--','wslpath','-a',REPO.as_posix()],
+                              text=True,encoding='utf8',errors='replace',capture_output=True,check=True).stdout.strip()
     git('add', '--', DEST_REL)
     if git('diff','--cached','--quiet',check=False).returncode == 0:
         print('No new run data to commit', flush=True)
@@ -133,8 +137,6 @@ def publish():
     staged = git('diff','--cached','--name-only').stdout.splitlines()
     assert staged and all(p.startswith(DEST_REL+'/') for p in staged), staged
     git('-c','user.name=lyuze','-c','user.email=670525945@qq.com','commit','-q','-m','Sync hidev Default profiling results')
-    wsl_path = subprocess.run(['wsl','-d','archlinux','--','wslpath','-a',str(REPO)],
-                              text=True,capture_output=True,check=True).stdout.strip()
     subprocess.run(['wsl','-d','archlinux','--','git','-C',wsl_path,'push','origin','main'],check=True)
     print('SYNC_PUSHED',git('rev-parse','HEAD').stdout.strip(),flush=True)
 
