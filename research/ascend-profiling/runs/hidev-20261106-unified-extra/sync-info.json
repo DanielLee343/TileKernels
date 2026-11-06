@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793975493729593984.tar.gz",
-  "size": 550993,
-  "sha256": "9ab12fcab38b9c8275f3f36abe0ddf30040e96b132715ad6ed7e5e81ca8b9f01",
+  "path": "/workspace/tk-starter-sync-1793975578434946222.tar.gz",
+  "size": 642238,
+  "sha256": "e90d98bc659f651d3630eb37c1b53e157c563cc168038f96cfc458d9976644ca",
   "ids": [
     "engram_grad_w_reduce-01",
     "mhc_head_compute_mix_bwd-01",
@@ -19,7 +19,10 @@
     "engram_grad_w_reduce-12",
     "engram_grad_w_reduce-13",
     "engram_grad_w_reduce-14",
-    "engram_grad_w_reduce-15"
+    "engram_grad_w_reduce-15",
+    "engram_grad_w_reduce-16",
+    "engram_grad_w_reduce-17",
+    "engram_grad_w_reduce-18"
   ],
   "status": "running"
 }

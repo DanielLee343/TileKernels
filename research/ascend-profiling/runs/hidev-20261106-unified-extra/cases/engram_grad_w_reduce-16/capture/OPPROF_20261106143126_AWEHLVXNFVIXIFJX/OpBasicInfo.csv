@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+engram_grad_w_reduce_kernel_asc_kernel,vector,3.539000,56,NA,0,538724,1650,1650,
