@@ -1,14 +1,16 @@
 {
-  "path": "/workspace/tk-starter-sync-1793980801521452719.tar.gz",
-  "size": 288431,
-  "sha256": "c09b6feee80bb07e5e99a7b7c80a13945cf8fd9f8f3d139ef7821814592dbd38",
+  "path": "/workspace/tk-starter-sync-1793980873958066389.tar.gz",
+  "size": 360432,
+  "sha256": "13395f3dc19808f6ab70880a0d0e1b7175a998d1ccc8e05a22c6c45448af6cd3",
   "ids": [
     "quant_norm_forward-01",
     "quant_norm_backward-01",
     "mhc_pre_big_fuse_fwd-01",
     "moe_topk_gate_forward-01",
     "quant_swiglu_forward-01",
-    "quant_norm_forward-02"
+    "quant_norm_forward-02",
+    "quant_norm_forward-03",
+    "quant_norm_forward-04"
   ],
   "status": "running"
 }

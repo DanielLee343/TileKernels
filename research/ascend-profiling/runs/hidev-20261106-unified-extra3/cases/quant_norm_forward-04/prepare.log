@@ -1,0 +1,4 @@
+[16:00:35] : Warning: Ascend AutoSchedule did not enable multi-buffering for buffer "out_bf16_ub" although T.annotate_buffer_versions requested 3 versions. The buffer must be eligible in a scheduled serial loop and written before it is read.
+[16:00:35] : Warning: Ascend AutoSchedule did not enable multi-buffering for buffer "residual_ub" although T.annotate_buffer_versions requested 3 versions. The buffer must be eligible in a scheduled serial loop and written before it is read.
+[16:00:35] : Warning: Ascend AutoSchedule did not enable multi-buffering for buffer "quantized_ub" although T.annotate_buffer_versions requested 3 versions. The buffer must be eligible in a scheduled serial loop and written before it is read.
+[16:00:35] : Warning: Ascend AutoSchedule did not enable multi-buffering for buffer "scales_ub" although T.annotate_buffer_versions requested 3 versions. The buffer must be eligible in a scheduled serial loop and written before it is read.
