@@ -1,0 +1,134 @@
+{
+  "group": "moe_topk_gate_forward",
+  "params": {
+    "num_tokens": 8001,
+    "num_padded_tokens": 10,
+    "num_topk": 8,
+    "num_routed_experts": 256,
+    "num_shared_experts": 2,
+    "bias_exists": false,
+    "image_bias_exists": false,
+    "force_random_exists": false,
+    "use_shared_as_routed": true,
+    "scores_exists": true,
+    "fix_routing": false
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 5,
+  "target_range": "quant_target",
+  "requested_fix_routing": false,
+  "seed": 42,
+  "correctness": "passed_upstream_full_moe_forward_test",
+  "profiler_replay_state": "unverified",
+  "profiler_replay_note": "unmapped_topk_idx is an input/output; buffer restoration must be checked on-device",
+  "symbol": "moe_topk_gate_forward_kernel_asc",
+  "native_symbol": "moe_topk_gate_forward_kernel_asc",
+  "runtime_kernel": "moe_topk_gate_forward_kernel_asc_kernel",
+  "source_sha256": "6752f1d39d0bfcbfab32d248ed83f08ab88ecd07894b8a9a1952f99fa45dcad6",
+  "inputs": [
+    {
+      "name": "logits",
+      "tensor": {
+        "shape": [
+          8011,
+          256
+        ],
+        "stride": [
+          256,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "3c5015e775501efe7bf9d5745760c04e436b507eeae7cdd501e797642bd6ee5f"
+      }
+    },
+    {
+      "name": "bias",
+      "tensor": null
+    },
+    {
+      "name": "image_bias",
+      "tensor": null
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": null
+    },
+    {
+      "name": "mask",
+      "tensor": {
+        "shape": [
+          8011
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "c26e3b1c7a9c66255c03041aabee515a524f350ca4f0dd652c6157cdb8eb619d"
+      }
+    },
+    {
+      "name": "fix_routing_mask",
+      "tensor": null
+    },
+    {
+      "name": "to_physical_map",
+      "tensor": {
+        "shape": [
+          258,
+          3
+        ],
+        "stride": [
+          3,
+          1
+        ],
+        "dtype": "torch.int32",
+        "sha256": "c617f4fd145dab768f97e36a0f9be91c4158e3bf32de5f11651c103ed1847983"
+      }
+    },
+    {
+      "name": "logical_count",
+      "tensor": {
+        "shape": [
+          258
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.int32",
+        "sha256": "8be08434f2f46af58ea0fde9e126f81e5bf8bb1c0e57cada9c62779e56b23e55"
+      }
+    },
+    {
+      "name": "unmapped_topk_idx",
+      "tensor": {
+        "shape": [
+          8011,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "54cee855fbd1476fb55e8559f4b0f03b8dba5e8b58af1ef5a9f0f83fb5dc6992"
+      }
+    },
+    {
+      "name": "force_random",
+      "tensor": null
+    }
+  ],
+  "route_counts": {
+    "valid_tokens": 8001,
+    "force_random_tokens": 0,
+    "fixed_routing_tokens": 0
+  },
+  "scalar_inputs": {
+    "num_shared_experts": 2,
+    "routed_scaling_factor": 1.5,
+    "ep_rank": 0
+  },
+  "status": "passed"
+}
