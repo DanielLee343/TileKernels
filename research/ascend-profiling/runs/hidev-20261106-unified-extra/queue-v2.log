@@ -33,3 +33,6 @@ engram_grad_w_reduce-20 needs_review in-place profiler replay restoration has no
 mhc_head_compute_mix_bwd-02 admitted 
 mhc_head_compute_mix_bwd-03 admitted 
 mhc_head_compute_mix_bwd-04 admitted 
+mhc_head_compute_mix_bwd-05 admitted 
+mhc_head_compute_mix_bwd-06 admitted 
+mhc_head_compute_mix_bwd-07 admitted 
