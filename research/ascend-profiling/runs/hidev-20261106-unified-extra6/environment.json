@@ -1,0 +1,10 @@
+{
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 207.6       58                0     / 0             |\n|        |                  | 0000:57:00.0  | 0           0    / 0          5388  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| No running processes found in NPU 0                                                             |\n+===========================+===============+=====================================================+\n",
+  "manifest_sha256": "4abd037df3c70d366678650d55dc99c6bb58e809333f052c41336cb2967da305",
+  "hooks_sha256": {
+    "extra_finalize_retry.py": "90bb3e23e80081c4374e60c64ec398c13bf9f0c9f7960f8c1c490cd843220a3b",
+    "extra_post_fwd_retry.py": "f1d63dc2d6ecd841b2f2589928c6ef895cf8d71c8059b07cb2386436f216ee61"
+  }
+}

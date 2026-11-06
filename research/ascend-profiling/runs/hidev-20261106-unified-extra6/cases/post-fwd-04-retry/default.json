@@ -1,0 +1,74 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "group": "mhc_post_fwd",
+  "params": {
+    "n0": 2,
+    "n1": 4096,
+    "hidden": 7168,
+    "mhc_mult": 4
+  },
+  "capture_scope": "post forward native kernel only",
+  "symbol": "mhc_post_fwd_asc",
+  "runtime_kernel": "mhc_post_fwd_asc_kernel",
+  "source_sha256": "ea9f89f176a4c5f67057c289e28a5b611422db7047ac0790ae1640783d3e8458",
+  "inputs": [
+    {
+      "shape": [
+        8192,
+        4,
+        4
+      ],
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "621bff2e2accd3907d429220c2145835905420cb8ca97982d9ee02392e9c5315"
+    },
+    {
+      "shape": [
+        8192,
+        4,
+        7168
+      ],
+      "stride": [
+        28672,
+        7168,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7bc6c5d3173ef12ed630e55864cf6520786ec92b3f3a7282264bf48d669a07fe"
+    },
+    {
+      "shape": [
+        8192,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "16a1a96b52e5dc79648ca5f6ec64835f79d7452e6aa2f5c803a404ffc0654704"
+    },
+    {
+      "shape": [
+        8192,
+        7168
+      ],
+      "stride": [
+        7168,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "e81809481b554a24fa2fb4af9a5456c09ab1379bb92bd1d8149a43668d4cbfd0"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 3584,
+    "num_vec_cores": 56
+  },
+  "status": "passed"
+}

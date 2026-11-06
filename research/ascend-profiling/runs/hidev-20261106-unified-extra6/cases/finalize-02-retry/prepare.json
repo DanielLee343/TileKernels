@@ -1,0 +1,42 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "symbol": "engram_sinkhorn_finalize_kernel_asc",
+  "runtime_kernel": "engram_sinkhorn_finalize_kernel_asc_kernel",
+  "source_sha256": "06f5c94d6574e7d227b3a6cf4015d6ab954296b3efe18e1f68394a4a96fa35b1",
+  "inputs": [
+    {
+      "shape": [
+        100001,
+        5120
+      ],
+      "stride": [
+        5120,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8811909a5518628c8247437f951c9be34b17019ad6d3cb22aca60989f413cc90"
+    },
+    {
+      "shape": [
+        100001
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "c8e2fb96f79dc9db2799c1075c2beb9f870dfea105d04c8822b4a90778a31bf0"
+    },
+    {
+      "shape": [
+        5120
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "dd1824653a380802ec800965d704281a5625256c7e76b4395f9be967195cff50"
+    }
+  ],
+  "status": "passed"
+}
