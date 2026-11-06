@@ -88,3 +88,7 @@ quant_swiglu_backward-14 admitted
 quant_swiglu_backward-15 admitted 
 quant_swiglu_backward-16 admitted 
 quant_swiglu_backward-17 admitted 
+quant_swiglu_backward-18 admitted 
+quant_swiglu_backward-19 admitted 
+quant_swiglu_backward-20 admitted 
+quant_batched_transpose_weight_sf-02 admitted 
