@@ -42,3 +42,6 @@ quant_norm_backward-08 needs_review in-place profiler replay restoration has not
 quant_norm_backward-09 needs_review in-place profiler replay restoration has not been independently verified
 quant_norm_backward-10 needs_review in-place profiler replay restoration has not been independently verified
 quant_norm_backward-11 admitted 
+quant_norm_backward-12 admitted 
+quant_norm_backward-13 admitted 
+quant_norm_backward-14 admitted 
