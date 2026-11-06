@@ -1,0 +1,3 @@
+2026-11-06 19:24:57  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_multilayer_recompute_asc` with `out_idx=None`
+2026-11-06 19:24:59  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_multilayer_recompute_asc`
+2026-11-06 19:24:59  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_multilayer_recompute_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.
