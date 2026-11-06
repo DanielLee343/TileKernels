@@ -1,0 +1,91 @@
+{
+  "group": "engram_grad_w_reduce",
+  "params": {
+    "hidden": 320
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 5,
+  "target_range": "quant_target",
+  "output_semantics": "gradient buffers are inputs and are accumulated in place",
+  "warmup_policy": "five launches on separate gradient clones",
+  "profiler_replay_state": "unverified",
+  "profiler_replay_note": "A passing upstream check does not establish profiler buffer restoration.",
+  "correctness": "passed_upstream_full_output_rtol_1e-4_atol_1e-4",
+  "symbol": "engram_grad_w_reduce_kernel_asc",
+  "native_symbol": "engram_grad_w_reduce_kernel_asc",
+  "runtime_kernel": "engram_grad_w_reduce_kernel_asc_kernel",
+  "source_sha256": "16607240651d32d5a281ff7266fb6c1a53655d5a905f910905a3cf5b76f0966a",
+  "inputs": [
+    {
+      "shape": [
+        14,
+        4,
+        320
+      ],
+      "stride": [
+        1280,
+        320,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a81578b20bd713e8f3db3676694266b202bc6ca5a5d572a781d84cac14023153"
+    },
+    {
+      "shape": [
+        4,
+        320
+      ],
+      "stride": [
+        320,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8829bbbb808d37fe1cab53155d23a5bc99737b5a70aee6b6ae75869aa7237da4"
+    },
+    {
+      "shape": [
+        4,
+        320
+      ],
+      "stride": [
+        320,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "271f28624dcd332a1bee2b2e5a0a086d551acedafac4ba80ece830453fd21709"
+    },
+    {
+      "shape": [
+        4,
+        320
+      ],
+      "stride": [
+        320,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "045dd9134c2e79c9713ccccf5aed329c4e8f35d59ec2e8ab300a4accceeb3d86"
+    },
+    {
+      "shape": [
+        4,
+        320
+      ],
+      "stride": [
+        320,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "349da4013f0319152577081410f99a146960899c3399abf73ac1d1e101ed33ff"
+    }
+  ],
+  "vector_cores": 56,
+  "partials": 14,
+  "mutable_input_indices": [
+    3,
+    4
+  ],
+  "status": "passed"
+}
