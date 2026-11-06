@@ -1,0 +1,203 @@
+{
+  "group": "engram_gate_bwd",
+  "params": {
+    "num_tokens": 8001,
+    "hc": 4,
+    "hidden": 4096,
+    "with_mask": true
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 5,
+  "target_range": "quant_target",
+  "seed": 42,
+  "correctness": "passed_upstream_full_engram_gate_bwd_test",
+  "capture_mode": {
+    "operation": "backward"
+  },
+  "mode_scope": "the backward native kernel only",
+  "output_semantics": "separate output buffers; inputs are not intentionally mutated",
+  "profiler_replay_state": "unverified",
+  "profiler_replay_note": "Actual profiler replay and buffer behavior require on-device verification.",
+  "symbol": "engram_gate_bwd_kernel_asc",
+  "native_symbol": "engram_gate_bwd_kernel_asc",
+  "runtime_kernel": "engram_gate_bwd_kernel_asc_kernel",
+  "source_sha256": "8b9e30bf8b5b919d1b9c35236c033c3fb49ea47147b590faac04534187f0bb6f",
+  "inputs": [
+    {
+      "name": "grad_out",
+      "tensor": {
+        "shape": [
+          8001,
+          4,
+          4096
+        ],
+        "stride": [
+          16384,
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "8854dc31d986c81e860376c3b1c3201d4d67344e677588e17367ae93058a7420"
+      }
+    },
+    {
+      "name": "hidden_states",
+      "tensor": {
+        "shape": [
+          8001,
+          4,
+          4096
+        ],
+        "stride": [
+          16384,
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "363ae9fff64d4b5cd1fb6e27ba5a1ba5c16a8f4cd736485f8a78b31d8d9abe20"
+      }
+    },
+    {
+      "name": "kv",
+      "tensor": {
+        "shape": [
+          8001,
+          5,
+          4096
+        ],
+        "stride": [
+          20480,
+          4096,
+          1
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "4516dea7fe2a2c182e8e51f433018e601aeba4ce7e49eb335653b75464072e2d"
+      }
+    },
+    {
+      "name": "weight_fused",
+      "tensor": {
+        "shape": [
+          4,
+          4096
+        ],
+        "stride": [
+          4096,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "90e783d987b7318d87fa97747a3f452b993f567e54453c1f2285b1bdd142ffa6"
+      }
+    },
+    {
+      "name": "dot",
+      "tensor": {
+        "shape": [
+          8001,
+          4
+        ],
+        "stride": [
+          4,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "ea20fdc63d7e5ac74b0514204ccbbdceb38dcb56898222558ba3f8ce2b528b06"
+      }
+    },
+    {
+      "name": "gate_score",
+      "tensor": {
+        "shape": [
+          8001,
+          4
+        ],
+        "stride": [
+          4,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "cea2d4aa5351a2eac0dc2f349acb11962c38d594ee763999a6acd835955d0a8d"
+      }
+    },
+    {
+      "name": "rstd_x",
+      "tensor": {
+        "shape": [
+          8001,
+          4
+        ],
+        "stride": [
+          4,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "20d4103a71e390f2ab9828b2b23b3016de07fa84b6fe4afb42de387c37b26d35"
+      }
+    },
+    {
+      "name": "rstd_k",
+      "tensor": {
+        "shape": [
+          8001,
+          4
+        ],
+        "stride": [
+          4,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "f3f2d483ebb35d4f7ff4b8a743b958b90aa9a0e65e7574f80c61218b3f8590b4"
+      }
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": {
+        "shape": [
+          8001
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "27bcc26365cf184184c8ceea78436b8384aee8ac196af409afefe201467ac6fe"
+      }
+    }
+  ],
+  "native_config": {
+    "hidden": 4096,
+    "scalar": 0.015625,
+    "clamp_value": 1e-06,
+    "hc": 4,
+    "has_image_token_mask": true,
+    "num_vec_cores": 56
+  },
+  "outputs": [
+    {
+      "shape": [
+        8001,
+        4,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "shape": [
+        8001,
+        5,
+        4096
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    {
+      "shape": [
+        14,
+        4,
+        4096
+      ],
+      "dtype": "torch.float32"
+    }
+  ],
+  "status": "passed"
+}
