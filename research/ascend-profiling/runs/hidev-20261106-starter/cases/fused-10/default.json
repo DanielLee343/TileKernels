@@ -1,0 +1,84 @@
+{
+  "runtime_kernel": "engram_fused_weight_kernel_asc_kernel",
+  "native_symbol": "engram_fused_weight_kernel_asc",
+  "source_sha256": "5950b09fdc1b858688afde93f7e3a9f0ef8ef7231aab2c433ada0bc474f5c30d",
+  "inputs": [
+    {
+      "shape": [
+        4,
+        2816
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        2816,
+        1
+      ],
+      "bytes": 22528,
+      "sha256": "1bd4d8573bc62200b694fb8478fdbbe159d576910014888b36b4dc3c130c8992"
+    },
+    {
+      "shape": [
+        4,
+        2816
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        2816,
+        1
+      ],
+      "bytes": 22528,
+      "sha256": "ae081f36884e1edce8a898597ecefab29dd51cfefeb77f59ba3125d461b9a9e2"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        4,
+        2816
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        2816,
+        1
+      ],
+      "bytes": 22528
+    },
+    {
+      "shape": [
+        4,
+        2816
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        2816,
+        1
+      ],
+      "bytes": 22528
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        4,
+        2816
+      ],
+      "dtype": "float32",
+      "stride": [
+        2816,
+        1
+      ],
+      "bytes": 45056
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999999,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

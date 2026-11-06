@@ -16,6 +16,14 @@ The snapshot is curated, not a copy of every past experiment. Larger non-selecte
 
 Future runs should store their source commit, device/CANN/profiler, complete case parameters, command, correctness result, raw profile directory, status and hashes together. Do not commit credentials, private SSH keys, customer data, transient build caches or large opaque archives by default. Before omitting any large raw file, record its size, SHA-256 and recoverable storage location.
 
+The starter batch can be synchronized from this workstation's existing authenticated hidev tmux pane:
+
+```powershell
+python -B research/ascend-profiling/sync_hidev.py --push
+```
+
+Add `--watch` to synchronize again as completed cases appear until that batch finishes. This transport currently requires the existing `D:/puma_v2` helper, WSL `archlinux`, and tmux pane `0:0.0`. `--push` checks that `main` matches the remote and the Git index is clean before committing only the starter run directory; it stops on a conflict. This is a workstation-specific transfer helper, while the committed files are portable.
+
 ## Working across machines
 
 Clone this private repository and `git pull` the branch containing the work. The A5 host uses an existing GitHub SSH key and port 443. The hidev execution environment is currently separate from this checkout; bind the exact code commit and record where full results were written. Historical paths inside captured logs describe their original machines and are not portable commands.
