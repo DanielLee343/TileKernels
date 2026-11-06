@@ -72,3 +72,7 @@ quant_per_token_cast_and_cast_back-17 needs_review in-place profiler replay rest
 quant_per_token_cast_and_cast_back-18 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-19 needs_review in-place profiler replay restoration has not been independently verified
 quant_per_token_cast_and_cast_back-20 needs_review in-place profiler replay restoration has not been independently verified
+quant_swiglu_backward-02 admitted 
+quant_swiglu_backward-03 admitted 
+quant_swiglu_backward-04 admitted 
+quant_swiglu_backward-05 admitted 
