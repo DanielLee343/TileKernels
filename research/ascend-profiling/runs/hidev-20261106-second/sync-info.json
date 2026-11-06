@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793960551821443816.tar.gz",
-  "size": 218516,
-  "sha256": "782e84f4b839baa8a94eceeb44d189efda5f54a7a4b65724bd16bb1e659adca8",
+  "path": "/workspace/tk-starter-sync-1793960626211032434.tar.gz",
+  "size": 351160,
+  "sha256": "ff4ecc260eee581d0a906afccc612b315424b078453ea3e0a22547a2fc0996e0",
   "ids": [
     "topk-01",
     "reduce-01",
@@ -9,7 +9,10 @@
     "sinkhorn-bwd-01",
     "castback-05",
     "expand-fwd-01",
-    "expand-bwd-01"
+    "expand-bwd-01",
+    "topk-02",
+    "topk-03",
+    "topk-04"
   ],
-  "status": "pilot_finished"
+  "status": "running"
 }

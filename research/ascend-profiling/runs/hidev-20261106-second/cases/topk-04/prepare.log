@@ -1,0 +1,2 @@
+2026-11-06 10:23:10  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `topk_gate_kernel_asc` with `out_idx=None`
+2026-11-06 10:23:12  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `topk_gate_kernel_asc`
