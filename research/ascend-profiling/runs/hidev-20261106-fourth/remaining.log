@@ -4,3 +4,5 @@
 =================================================================
 
 finalize-02 skipped host memory guard: more than 50M float32 input elements
+finalize-03 admitted 
+finalize-04 admitted 
