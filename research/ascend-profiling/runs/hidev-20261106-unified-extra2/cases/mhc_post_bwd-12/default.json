@@ -1,0 +1,116 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "group": "mhc_post_bwd",
+  "params": {
+    "n0": 2,
+    "n1": 8192,
+    "hidden": 1280,
+    "mhc_mult": 4
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "target_range": "mhc_post_bwd_target",
+  "capture_scope": "post backward native kernel only",
+  "correctness_scope": "all four outputs, CPU autograd per token chunk",
+  "jit_output_protocol": "native JIT callable returns four tensors; device validation pending",
+  "plan_case_number": 12,
+  "symbol": "mhc_post_bwd_asc",
+  "runtime_kernel": "mhc_post_bwd_asc_kernel",
+  "source_sha256": "011332a6eb737c83969458208be488ae44c36de3f4430b0bc6bf1057f5ef3ffd",
+  "inputs": [
+    {
+      "shape": [
+        16384,
+        4,
+        1280
+      ],
+      "stride": [
+        5120,
+        1280,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "84347a00c2cfe88ae445c6cc5409fd44858f2bb9da9d28c6d38aa3ba54d91aa6"
+    },
+    {
+      "shape": [
+        16384,
+        4,
+        4
+      ],
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "19b4fcaef03dc1e26e481e462f5d79b77673312cebdb9b418a0516f0cc0caff4"
+    },
+    {
+      "shape": [
+        16384,
+        4,
+        1280
+      ],
+      "stride": [
+        5120,
+        1280,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3294edb0fa4528c50e8f4df2b213d2ddefd1e7fe41196b9f87a684060e8f4a91"
+    },
+    {
+      "shape": [
+        16384,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8e3ed8a1144b8fa0f478ecf3f1a014c00ffae32e20145292a77fe791aac522ce"
+    },
+    {
+      "shape": [
+        16384,
+        1280
+      ],
+      "stride": [
+        1280,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "d173cf9b51ac77281e442e95789cde79f48aaa9e27239810e7432dcba0760e6a"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 1280,
+    "num_stages": 3,
+    "num_vec_cores": 56
+  },
+  "precision": [
+    {
+      "output": "grad_x",
+      "passed": true,
+      "max_abs_error": 0.03125
+    },
+    {
+      "output": "grad_residual",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "output": "grad_post_layer_mix",
+      "passed": true,
+      "max_abs_error": 3.0517578125e-05
+    },
+    {
+      "output": "grad_comb_res_mix",
+      "passed": true,
+      "max_abs_error": 4.1961669921875e-05
+    }
+  ],
+  "status": "passed"
+}
