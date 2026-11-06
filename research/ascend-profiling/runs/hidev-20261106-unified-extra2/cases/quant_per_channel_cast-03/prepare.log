@@ -1,0 +1,2 @@
+/workspace/tilekernels-env-20261101/src/TileKernels/tile_kernels/torch/cast.py:293: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  ue8 = (ds_int_rounded_padded >> 23).to(torch.uint8)
