@@ -1,13 +1,15 @@
 {
-  "path": "/workspace/tk-starter-sync-1793968711253867403.tar.gz",
-  "size": 127779,
-  "sha256": "7a13f2681794b3043e09a33e65df2d76076a48554c028deb8d9739204c110f6f",
+  "path": "/workspace/tk-starter-sync-1793968771618997782.tar.gz",
+  "size": 210715,
+  "sha256": "d83e9edd636ec81943988a3160a099366e5cd4f5502ed18f7ba848739e9f54ee",
   "ids": [
     "post-fwd-01",
     "post-fwd-02",
     "post-fwd-03",
     "post-fwd-04",
-    "post-fwd-05"
+    "post-fwd-05",
+    "post-fwd-06",
+    "post-fwd-07"
   ],
   "status": "running"
 }
