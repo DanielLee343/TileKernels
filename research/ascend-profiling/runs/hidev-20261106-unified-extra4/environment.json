@@ -1,0 +1,14 @@
+{
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 207.2       56                0     / 0             |\n|        |                  | 0000:57:00.0  | 0           0    / 0          5284  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| No running processes found in NPU 0                                                             |\n+===========================+===============+=====================================================+\n",
+  "manifest_sha256": "b1c9552f6fb89ee1ccce3159390f374292706fdb532d42f6462bab2f2d0cabed",
+  "hooks_sha256": {
+    "extra_mhc_pre_apply_bwd.py": "6da6a1f530d068c60e54a0c3a0623d658974d3d4e4dde1c805b63ada105c7824",
+    "extra_moe_backward.py": "1e44a76a34ecec4f663400a1fc26f9db7fec02642a67d3d1de08b10bd653ee9d",
+    "extra_cast_and_back.py": "e8cb9db4a687e9bccce5c14b3a1f0f3901816e82564de3a80fe8c80fe24c83b3",
+    "extra_swiglu_bwd.py": "ea9c720051c2642f6a87d9c836477f44e3f84a47f02d05369e907902d70bf45b",
+    "extra_transpose.py": "edc20140e1252ba63b2f837964b1bdad6c20a505df0ccd8ee07f072a5f0c7547",
+    "extra_rope.py": "fd8ef909b180e7d608d00240634ded3c2aed87a2781653d037f549d96afd34b8"
+  }
+}

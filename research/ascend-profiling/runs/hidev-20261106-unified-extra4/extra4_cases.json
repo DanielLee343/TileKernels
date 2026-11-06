@@ -1,0 +1,2704 @@
+{
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "device_bus": "0000:57:00.0",
+  "cases": [
+    {
+      "id": "mhc_pre_apply_mix_bwd-01",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 1,
+      "params": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": true,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-02",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 2,
+      "params": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-03",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 3,
+      "params": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-04",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-05",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 5,
+      "params": {
+        "n0": 1,
+        "n1": 4096,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-06",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 6,
+      "params": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-07",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 7,
+      "params": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-08",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 8,
+      "params": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-09",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 9,
+      "params": {
+        "n0": 1,
+        "n1": 1024,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-10",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 10,
+      "params": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-11",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 11,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-12",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 12,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-13",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 13,
+      "params": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-14",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 14,
+      "params": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-15",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 15,
+      "params": {
+        "n0": 2,
+        "n1": 1024,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-16",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 16,
+      "params": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-17",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 17,
+      "params": {
+        "n0": 1,
+        "n1": 4096,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-18",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 18,
+      "params": {
+        "n0": 1,
+        "n1": 8001,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-19",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 19,
+      "params": {
+        "n0": 1,
+        "n1": 128,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "mhc_pre_apply_mix_bwd-20",
+      "group": "mhc_pre_apply_mix_bwd",
+      "plan_case_number": 20,
+      "params": {
+        "n0": 1,
+        "n1": 512,
+        "hidden": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_pre_apply_bwd.py",
+      "range": "mhc_pre_apply_bwd_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-01",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 108,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": true,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-02",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 96,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-03",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 8,
+        "num_routed_experts": 256,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-04",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 72,
+        "num_shared_experts": 1,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": false,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-05",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 0,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 72,
+        "num_shared_experts": 1,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": true,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-06",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 10,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 128,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-07",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 8,
+        "num_routed_experts": 256,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": false,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-08",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 144,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-09",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 16,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-10",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 32,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-11",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 36,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-12",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 64,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-13",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 0,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 96,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-14",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 0,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 128,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": false,
+        "aux_exists": false,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-15",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 1,
+        "num_topk": 6,
+        "num_routed_experts": 16,
+        "num_shared_experts": 2,
+        "bias_exists": false,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-16",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 512,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 144,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": false
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-17",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 108,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-18",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 32,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-19",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 36,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "moe_topk_gate_backward-20",
+      "group": "moe_topk_gate_backward",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 8001,
+        "num_padded_tokens": 10,
+        "num_seqs": 2,
+        "num_topk": 6,
+        "num_routed_experts": 64,
+        "num_shared_experts": 2,
+        "bias_exists": true,
+        "image_bias_exists": true,
+        "aux_exists": true,
+        "fix_routing": true
+      },
+      "pilot": false,
+      "adapter": "extra_moe_backward.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-01",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": true,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-02",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 768,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e4m3",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-03",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-04",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 7168,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e4m3",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-05",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "fmt": "e2m1",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-06",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2560,
+        "in_dtype": "fp32",
+        "num_per_channels": 16,
+        "fmt": "e4m3",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-07",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-08",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 384,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e4m3",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-09",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 4096,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-10",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 6144,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-11",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2560,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "fmt": "e2m1",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-12",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 384,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e2m1",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-13",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 7168,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-14",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e2m1",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-15",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 2048,
+        "in_dtype": "fp32",
+        "num_per_channels": 16,
+        "fmt": "e4m3",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-16",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 4096,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e4m3",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-17",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 6144,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e4m3",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-18",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "fmt": "e4m3",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-19",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 8001,
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "fmt": "e4m3",
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_per_token_cast_and_cast_back-20",
+      "group": "quant_per_token_cast_and_cast_back",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "fmt": "e2m1",
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "pilot": false,
+      "adapter": "extra_cast_and_back.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-01",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 1,
+      "params": {
+        "num_tokens": 128,
+        "hidden": 128,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": true,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-02",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 2,
+      "params": {
+        "num_tokens": 8192,
+        "hidden": 768,
+        "fmt": "fp32",
+        "with_weights": true,
+        "num_experts": 4,
+        "alignment": 256,
+        "clamp_value": null,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-03",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 3,
+      "params": {
+        "num_tokens": 1024,
+        "hidden": 128,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-04",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 4,
+      "params": {
+        "num_tokens": 8192,
+        "hidden": 3584,
+        "fmt": "fp32",
+        "with_weights": true,
+        "num_experts": 4,
+        "alignment": 256,
+        "clamp_value": null,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-05",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 5,
+      "params": {
+        "num_tokens": 4096,
+        "hidden": 128,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-06",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 6,
+      "params": {
+        "num_tokens": 4096,
+        "hidden": 768,
+        "fmt": "fp32",
+        "with_weights": true,
+        "num_experts": 4,
+        "alignment": 256,
+        "clamp_value": null,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-07",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 7,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "fmt": "e4m3",
+        "with_weights": true,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": 32,
+        "round_sf": true,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-08",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 8,
+      "params": {
+        "num_tokens": 8192,
+        "hidden": 128,
+        "fmt": "e4m3",
+        "with_weights": false,
+        "num_experts": 4,
+        "alignment": 256,
+        "clamp_value": null,
+        "routed_scaling_factor": null,
+        "num_per_channels": 32,
+        "round_sf": true,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-09",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 9,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 2048,
+        "fmt": "fp32",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": null,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-10",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 10,
+      "params": {
+        "num_tokens": 1024,
+        "hidden": 2048,
+        "fmt": "bf16",
+        "with_weights": true,
+        "num_experts": 4,
+        "alignment": 256,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-11",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 11,
+      "params": {
+        "num_tokens": 1024,
+        "hidden": 3584,
+        "fmt": "e4m3",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": 32,
+        "round_sf": true,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-12",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 12,
+      "params": {
+        "num_tokens": 128,
+        "hidden": 768,
+        "fmt": "e4m3",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": 32,
+        "round_sf": true,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-13",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 13,
+      "params": {
+        "num_tokens": 128,
+        "hidden": 128,
+        "fmt": "fp32",
+        "with_weights": true,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": 2.5,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": true
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-14",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 14,
+      "params": {
+        "num_tokens": 8192,
+        "hidden": 2048,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-15",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 15,
+      "params": {
+        "num_tokens": 4096,
+        "hidden": 2048,
+        "fmt": "e4m3",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": 32,
+        "round_sf": true,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-16",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 16,
+      "params": {
+        "num_tokens": 128,
+        "hidden": 3584,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": null,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-17",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 17,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 768,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-18",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 18,
+      "params": {
+        "num_tokens": 1024,
+        "hidden": 768,
+        "fmt": "fp32",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": null,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-19",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 19,
+      "params": {
+        "num_tokens": 512,
+        "hidden": 128,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_swiglu_backward-20",
+      "group": "quant_swiglu_backward",
+      "plan_case_number": 20,
+      "params": {
+        "num_tokens": 128,
+        "hidden": 2048,
+        "fmt": "bf16",
+        "with_weights": false,
+        "num_experts": 0,
+        "alignment": 1,
+        "clamp_value": 0.5,
+        "routed_scaling_factor": null,
+        "num_per_channels": null,
+        "round_sf": false,
+        "use_tma_aligned_col_major_sf": false,
+        "use_packed_ue8m0": false,
+        "do_recompute": false
+      },
+      "pilot": false,
+      "adapter": "extra_swiglu_bwd.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-01",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 1,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            128,
+            128,
+            2,
+            false
+          ]
+        ]
+      },
+      "pilot": true,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-02",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 2,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            128,
+            128,
+            2,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-03",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 3,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            128,
+            128,
+            null,
+            false
+          ],
+          [
+            384,
+            512,
+            2,
+            true
+          ],
+          [
+            768,
+            1152,
+            3,
+            false
+          ],
+          [
+            640,
+            1280,
+            1,
+            true
+          ],
+          [
+            2048,
+            2560,
+            2,
+            false
+          ],
+          [
+            384,
+            384,
+            null,
+            true
+          ],
+          [
+            6144,
+            4096,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-04",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 4,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            128,
+            128,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-05",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 5,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            128,
+            128,
+            null,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-06",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 6,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            2048,
+            2560,
+            2,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-07",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 7,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            2048,
+            2560,
+            2,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-08",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 8,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            2048,
+            2560,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-09",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 9,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            2048,
+            2560,
+            null,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-10",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 10,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            384,
+            1152,
+            2,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-11",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 11,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            384,
+            1152,
+            2,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-12",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 12,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            384,
+            1152,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-13",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 13,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            384,
+            1152,
+            null,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-14",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 14,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            512,
+            768,
+            2,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-15",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 15,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            512,
+            768,
+            2,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-16",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 16,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            512,
+            768,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-17",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 17,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            512,
+            768,
+            null,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-18",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 18,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            6144,
+            4096,
+            2,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-19",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 19,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            6144,
+            4096,
+            2,
+            true
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "quant_batched_transpose_weight_sf-20",
+      "group": "quant_batched_transpose_weight_sf",
+      "plan_case_number": 20,
+      "params": {
+        "block_size": 32,
+        "weight_configs": [
+          [
+            6144,
+            4096,
+            null,
+            false
+          ]
+        ]
+      },
+      "pilot": false,
+      "adapter": "extra_transpose.py",
+      "range": "quant_target"
+    },
+    {
+      "id": "rotary_embedding-01-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 1,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": true,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-01-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 1,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": true,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-02-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 2,
+      "params": {
+        "nheads": 128,
+        "dim": 64,
+        "dtype": "fp32",
+        "interleaved": true,
+        "conjugate": true,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-02-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 2,
+      "params": {
+        "nheads": 128,
+        "dim": 64,
+        "dtype": "fp32",
+        "interleaved": true,
+        "conjugate": true,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-03-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 3,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-03-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 3,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-04-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 4,
+      "params": {
+        "nheads": 5,
+        "dim": 64,
+        "dtype": "fp32",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-04-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 4,
+      "params": {
+        "nheads": 5,
+        "dim": 64,
+        "dtype": "fp32",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-05-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 5,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-05-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 5,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-06-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 6,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-06-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 6,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-07-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 7,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "fp32",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-07-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 7,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "fp32",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-08-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 8,
+      "params": {
+        "nheads": 1,
+        "dim": 64,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-08-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 8,
+      "params": {
+        "nheads": 1,
+        "dim": 64,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": true,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-09-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 9,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "fp32",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-09-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 9,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "fp32",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-10-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 10,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-10-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 10,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-11-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 11,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-11-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 11,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-12-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 12,
+      "params": {
+        "nheads": 32,
+        "dim": 64,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-12-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 12,
+      "params": {
+        "nheads": 32,
+        "dim": 64,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-13-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 13,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-13-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 13,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-14-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 14,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-14-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 14,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-15-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 15,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-15-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 15,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-16-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 16,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-16-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 16,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-17-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 17,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-17-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 17,
+      "params": {
+        "nheads": 32,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-18-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 18,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-18-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 18,
+      "params": {
+        "nheads": 5,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": true,
+        "conjugate": false,
+        "head_split": false,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-19-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 19,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-19-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 19,
+      "params": {
+        "nheads": 1,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    },
+    {
+      "id": "rotary_embedding-20-q",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_q",
+      "plan_case_number": 20,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "q"
+    },
+    {
+      "id": "rotary_embedding-20-k",
+      "group": "rotary_embedding",
+      "adapter_group": "rotary_embedding_k",
+      "plan_case_number": 20,
+      "params": {
+        "nheads": 128,
+        "dim": 128,
+        "dtype": "bf16",
+        "interleaved": false,
+        "conjugate": false,
+        "head_split": true,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "pilot": false,
+      "adapter": "extra_rope.py",
+      "range": "quant_target",
+      "role": "k"
+    }
+  ]
+}

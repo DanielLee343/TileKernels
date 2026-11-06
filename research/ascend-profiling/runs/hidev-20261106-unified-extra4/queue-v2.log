@@ -1,0 +1,20 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+mhc_pre_apply_mix_bwd-01 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_backward-01 needs_review in-place profiler replay restoration has not been independently verified
+quant_per_token_cast_and_cast_back-01 needs_review in-place profiler replay restoration has not been independently verified
+quant_swiglu_backward-01 admitted 
+quant_batched_transpose_weight_sf-01 admitted 
+rotary_embedding-01-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-01-k needs_review in-place profiler replay restoration has not been independently verified
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+mhc_pre_apply_mix_bwd-02 failed AssertionError: upstream prepare/correctness failed
+mhc_pre_apply_mix_bwd-03 needs_review in-place profiler replay restoration has not been independently verified
+mhc_pre_apply_mix_bwd-04 failed AssertionError: upstream prepare/correctness failed
