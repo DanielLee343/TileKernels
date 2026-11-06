@@ -30,3 +30,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - A third shared queue maps 117 additional original rows, for a total of 297 of the 657 previously unmapped rows covered by these queues. The other 360 still need adapters. All six new modes are pending on-device pilots.
 
 - A fourth shared queue maps 100 additional rows. Of the original 657 unmapped plan entries, 397 are now in the four shared queues and 260 still lack adapters; queued is not equivalent to successful. Each new extra runner attempts later rows even if a pilot fails.
+
+- A fifth shared queue adds 120 distinct plan rows (140 captures including separate RoPE Q and K). Of the original 657 previously unmapped rows, 517 are now queued and 140 still lack adapters. These five new modes plus RoPE are pending device pilots.
