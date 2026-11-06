@@ -1,0 +1,2 @@
+2026-11-06 11:09:38  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `expand_to_mhc_bwd_asc` with `out_idx=None`
+2026-11-06 11:09:40  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `expand_to_mhc_bwd_asc`

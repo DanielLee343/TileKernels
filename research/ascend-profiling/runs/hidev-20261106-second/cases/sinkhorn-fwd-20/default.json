@@ -1,0 +1,65 @@
+{
+  "runtime_kernel": "mhc_sinkhorn_fwd_asc_kernel",
+  "native_symbol": "mhc_sinkhorn_fwd_asc",
+  "source_sha256": "86be5399e49d75b4079cbddfd69094d5e4fe4e79787f3b58517fcc251026a908",
+  "inputs": [
+    {
+      "shape": [
+        8192,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 524288,
+      "sha256": "4b68744565d73eafbf6320cffa750b40b7fd3e664a77d72d6f3979630361c835"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        8192,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 524288
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        8192,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 524288
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999604,
+      "max_abs_error": 1.7881393432617188e-07,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

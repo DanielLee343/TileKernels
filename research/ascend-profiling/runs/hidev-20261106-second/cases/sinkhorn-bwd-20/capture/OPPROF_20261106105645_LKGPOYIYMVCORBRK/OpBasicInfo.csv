@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+mhc_sinkhorn_bwd_asc_kernel,vector,57.172001,56,NA,0,272362,1650,1650,

@@ -1,0 +1,63 @@
+{
+  "runtime_kernel": "expand_to_mhc_bwd_asc_kernel",
+  "native_symbol": "expand_to_mhc_bwd_asc",
+  "source_sha256": "e5a93da0f310fb04a9917fc9607506b390b66864c26f84b1788e7d46b5bfad2f",
+  "inputs": [
+    {
+      "shape": [
+        8001,
+        4,
+        1920
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        7680,
+        1920,
+        1
+      ],
+      "bytes": 122895360,
+      "sha256": "9f2c4e5b60cc194061e5fd75e8a8d86176248691eeff43a024e320dba18100b8"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        8001,
+        4,
+        1920
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        7680,
+        1920,
+        1
+      ],
+      "bytes": 122895360
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        8001,
+        1920
+      ],
+      "dtype": "bfloat16",
+      "stride": [
+        1920,
+        1
+      ],
+      "bytes": 30723840
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 1.000000000000003,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

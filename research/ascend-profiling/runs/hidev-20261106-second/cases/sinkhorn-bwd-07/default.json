@@ -1,0 +1,94 @@
+{
+  "runtime_kernel": "mhc_sinkhorn_bwd_asc_kernel",
+  "native_symbol": "mhc_sinkhorn_bwd_asc",
+  "source_sha256": "dc1cf79ab648d580b73d465d5f282539c2d21dac3fe62f6e066db8fb73fff022",
+  "inputs": [
+    {
+      "shape": [
+        17,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 1088,
+      "sha256": "82199224c116ccb7d643aa0ba62985fe3dd11beb8612ee8c7c8a77fb88e6eed3"
+    },
+    {
+      "shape": [
+        17,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 1088,
+      "sha256": "68286a855f01184ea8b1c2a0fa9adedcbb8b18c129f61a11c9d6de6ab59a3d54"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        17,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 1088
+    },
+    {
+      "shape": [
+        17,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 1088
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        17,
+        4,
+        4
+      ],
+      "dtype": "float32",
+      "stride": [
+        16,
+        4,
+        1
+      ],
+      "bytes": 1088
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999855,
+      "max_abs_error": 1.1920928955078125e-07,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,59 @@
+{
+  "runtime_kernel": "topk_gate_kernel_asc_kernel",
+  "native_symbol": "topk_gate_kernel_asc",
+  "source_sha256": "19a356a0101bcb68c373fd84e0d89e623e0020537047837ff924d74086c822a3",
+  "inputs": [
+    {
+      "shape": [
+        128,
+        1025
+      ],
+      "dtype": "float32",
+      "stride": [
+        1025,
+        1
+      ],
+      "bytes": 524800,
+      "sha256": "00a0628f4e15f6f75195f6b8d82165a7270d6cb951b8066f724450c74e0506ef"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        128,
+        1025
+      ],
+      "dtype": "float32",
+      "stride": [
+        1025,
+        1
+      ],
+      "bytes": 524800
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        128,
+        9
+      ],
+      "dtype": "int64",
+      "stride": [
+        9,
+        1
+      ],
+      "bytes": 9216
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999999,
+      "max_abs_error": 0.0,
+      "exact_equal": true,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

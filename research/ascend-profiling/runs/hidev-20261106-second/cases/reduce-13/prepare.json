@@ -1,0 +1,57 @@
+{
+  "runtime_kernel": "engram_sinkhorn_step_reduce_kernel_asc_kernel",
+  "native_symbol": "engram_sinkhorn_step_reduce_kernel_asc",
+  "source_sha256": "92475cc498f63bb50ce16ffee58514346c4ff6955203e09eb70dba27c8ee658c",
+  "inputs": [
+    {
+      "shape": [
+        56,
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 458752,
+      "sha256": "0b41e874e027cfd95cf772750ee22952e8191132820f995ba77d25a3b6ed8ded"
+    }
+  ],
+  "device_inputs": [
+    {
+      "shape": [
+        56,
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        2048,
+        1
+      ],
+      "bytes": 458752
+    }
+  ],
+  "outputs": [
+    {
+      "shape": [
+        2048
+      ],
+      "dtype": "float32",
+      "stride": [
+        1
+      ],
+      "bytes": 8192
+    }
+  ],
+  "precision": [
+    {
+      "output_id": 0,
+      "cosine_fp64": 0.9999999999999946,
+      "max_abs_error": 1.33514404296875e-05,
+      "exact_equal": false,
+      "reference_diagnostic_passed": true,
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}
