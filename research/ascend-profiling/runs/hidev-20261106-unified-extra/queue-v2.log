@@ -48,3 +48,6 @@ mhc_head_compute_mix_bwd-16 admitted
 mhc_head_compute_mix_bwd-17 admitted 
 mhc_head_compute_mix_bwd-18 admitted 
 mhc_head_compute_mix_bwd-19 admitted 
+mhc_head_compute_mix_bwd-20 admitted 
+quant_cast-02 admitted 
+quant_cast-03 admitted 
