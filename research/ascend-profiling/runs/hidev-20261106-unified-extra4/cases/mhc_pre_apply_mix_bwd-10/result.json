@@ -1,0 +1,9 @@
+{
+  "id": "mhc_pre_apply_mix_bwd-10",
+  "family": "mhc_pre_apply_mix_bwd",
+  "role": "discovery",
+  "plan_case_number": 10,
+  "prepare_rc": 1,
+  "status": "failed",
+  "reason": "AssertionError: upstream prepare/correctness failed"
+}

@@ -1,0 +1,19 @@
+2026-11-06 17:06:18  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_pre_apply_mix_bwd_asc` with `out_idx=[-1]`
+2026-11-06 17:06:21  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_pre_apply_mix_bwd_asc`
+2026-11-06 17:06:21  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_pre_apply_mix_bwd_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.
+Traceback (most recent call last):
+  File "/workspace/tilekernels-expert-unified-extra4-20261106/extra_mhc_pre_apply_bwd.py", line 180, in <module>
+    run(args.group, json.loads(base64.urlsafe_b64decode(args.params_b64.encode())),
+  File "/workspace/tilekernels-expert-unified-extra4-20261106/extra_mhc_pre_apply_bwd.py", line 159, in run
+    state['precision'] = verify_outputs(x, mix, dy, initial, dx, dmix,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/tilekernels-expert-unified-extra4-20261106/extra_mhc_pre_apply_bwd.py", line 85, in verify_outputs
+    torch.testing.assert_close(got, want, atol=1e-2, rtol=1e-3)
+  File "/workspace/tilekernels-env-20261101/venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1631, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 1 / 1310720 (0.0%)
+Greatest absolute difference: 0.015625 at index (0, 34, 3, 2289) (up to 0.01 allowed)
+Greatest relative difference: 0.0076904296875 at index (0, 34, 3, 2289) (up to 0.001 allowed)
+[ERROR] 2026-11-06-17:06:23 (PID:779092, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
