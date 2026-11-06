@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+engram_sinkhorn_step_kernel_asc_kernel,vector,450.192993,56,NA,0,955025,1650,1650,
