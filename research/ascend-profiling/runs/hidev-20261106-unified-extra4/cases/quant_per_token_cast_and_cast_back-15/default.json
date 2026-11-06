@@ -1,0 +1,23 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "symbol": "per_token_cast_and_cast_back_kernel",
+  "runtime_kernel": "per_token_cast_and_cast_back_kernel_kernel",
+  "source_sha256": "06be13bb0d2c29a957d40b9eec000ea1c91063864d74b0bcdf1b9b2f830c96e3",
+  "inputs": [
+    {
+      "shape": [
+        8001,
+        2048
+      ],
+      "stride": [
+        2048,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "e37a20007f1c02b531742b7cbc713904c494938272a2f6639f5e89c52baf9784"
+    }
+  ],
+  "profiler_replay_state": "unverified",
+  "status": "passed"
+}
