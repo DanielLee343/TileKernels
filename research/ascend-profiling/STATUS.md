@@ -37,3 +37,5 @@ No claim of 1,000 successful profiles should be made until individual case statu
 
 - The final shared queue maps the remaining 140 previously unmapped rows. Deduplication over all manifests covers all 1,000 original plan rows; the 657 previously unmapped rows are queued as 677 native-capture tasks because each RoPE row has Q and K. Most modes still await device pilots and individual runs, and a queued attempt is not a successful profile.
 - Earlier 11 memory-guard skips and 3 correctness failures remain unresolved and are not part of the 657-row queue. Stateful replay remains marked for review. The queues are serial; completed snapshots sync through a Windows watcher with bounded retries and require the local connection to stay active.
+
+- The 11 earlier memory-guard skips are additionally queued for retry using streamed host hashing and NPU-side full-reference tests, without changing their shapes. They remain unverified until run. The earlier 3 normalize precision failures remain unresolved.

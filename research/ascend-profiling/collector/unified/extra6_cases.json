@@ -1,0 +1,169 @@
+{
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "device_bus": "0000:57:00.0",
+  "cases": [
+    {
+      "id": "finalize-02-retry",
+      "group": "engram_sinkhorn_finalize",
+      "plan_case_number": 2,
+      "params": {
+        "num_rows": 100001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": true,
+      "adapter": "extra_finalize_retry.py",
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-02"
+    },
+    {
+      "id": "finalize-13-retry",
+      "group": "engram_sinkhorn_finalize",
+      "plan_case_number": 13,
+      "params": {
+        "num_rows": 10001,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_finalize_retry.py",
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-13"
+    },
+    {
+      "id": "finalize-17-retry",
+      "group": "engram_sinkhorn_finalize",
+      "plan_case_number": 17,
+      "params": {
+        "num_rows": 16384,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_finalize_retry.py",
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-17"
+    },
+    {
+      "id": "finalize-19-retry",
+      "group": "engram_sinkhorn_finalize",
+      "plan_case_number": 19,
+      "params": {
+        "num_rows": 32768,
+        "head_dim": 5120,
+        "eps": 1e-20
+      },
+      "pilot": false,
+      "adapter": "extra_finalize_retry.py",
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-19"
+    },
+    {
+      "id": "post-fwd-02-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 2,
+      "params": {
+        "n0": 2,
+        "n1": 8192,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": true,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-02"
+    },
+    {
+      "id": "post-fwd-04-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 4,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-04"
+    },
+    {
+      "id": "post-fwd-10-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 10,
+      "params": {
+        "n0": 2,
+        "n1": 8192,
+        "hidden": 2560,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-10"
+    },
+    {
+      "id": "post-fwd-11-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 11,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-11"
+    },
+    {
+      "id": "post-fwd-12-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 12,
+      "params": {
+        "n0": 2,
+        "n1": 8192,
+        "hidden": 1280,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-12"
+    },
+    {
+      "id": "post-fwd-18-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 18,
+      "params": {
+        "n0": 2,
+        "n1": 8192,
+        "hidden": 5120,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-18"
+    },
+    {
+      "id": "post-fwd-20-retry",
+      "group": "mhc_post_fwd",
+      "plan_case_number": 20,
+      "params": {
+        "n0": 1,
+        "n1": 2048,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_post_fwd_retry.py",
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-20"
+    }
+  ]
+}
