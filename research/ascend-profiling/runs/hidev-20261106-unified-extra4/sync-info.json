@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793986997135029954.tar.gz",
-  "size": 2385718,
-  "sha256": "a135edb312a3a822106058e59e2b23426788c09b00d65c2192e2a6e9d4b8123e",
+  "path": "/workspace/tk-starter-sync-1793987108362835002.tar.gz",
+  "size": 2506108,
+  "sha256": "1b8a02e4b6eb00f50cbd5d3337249f0ab152140963859b68780c47f9a1de28f1",
   "ids": [
     "mhc_pre_apply_mix_bwd-01",
     "moe_topk_gate_backward-01",
@@ -72,7 +72,10 @@
     "quant_swiglu_backward-04",
     "quant_swiglu_backward-05",
     "quant_swiglu_backward-06",
-    "quant_swiglu_backward-07"
+    "quant_swiglu_backward-07",
+    "quant_swiglu_backward-08",
+    "quant_swiglu_backward-09",
+    "quant_swiglu_backward-10"
   ],
   "status": "running"
 }

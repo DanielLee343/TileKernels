@@ -1,0 +1,96 @@
+{
+  "group": "quant_swiglu_backward",
+  "stage": "prepare",
+  "seed": 42,
+  "matched": 1,
+  "params": {
+    "num_tokens": 1024,
+    "hidden": 2048,
+    "fmt": "bf16",
+    "with_weights": true,
+    "num_experts": 4,
+    "alignment": 256,
+    "clamp_value": 0.5,
+    "routed_scaling_factor": 2.5,
+    "num_per_channels": null,
+    "round_sf": false,
+    "use_tma_aligned_col_major_sf": false,
+    "use_packed_ue8m0": false,
+    "do_recompute": true
+  },
+  "expert_prefix": [
+    256,
+    512,
+    768,
+    1024
+  ],
+  "source_files_sha256": {
+    "tests/quant/test_swiglu_backward.py": "66751c26ca5a051e84bec1243eda03db0484f061cce38d365dece6d8ebb636d2",
+    "tile_kernels/quant/swiglu_backward_asc.py": "5d2cde596ec960c2997447a80cf8a83c65104d23097450d76ecd534a8649c4e0",
+    "tile_kernels/quant/swiglu_backward_kernel.py": "5d9dd680f8747e5dc6cf2fbc7c7f24e4e91f674b09cc32a8ef6c242831851f32",
+    "tile_kernels/quant/common.py": "8fad63ecdfcc0c3e84aef1bb1edf8c63071da641f56e8744e88b3d5a9037998e",
+    "tile_kernels/quant/per_token_cast_asc.py": "af80e7a43413265b546eab70f093f49bf409b79dfc7165d8cdbb94bdc56adb43",
+    "tile_kernels/quant/per_token_cast_kernel.py": "7335b8371726fc089f4e335b756ab4d7bf81e36c6f2b1b6b454841ef4e8d966b",
+    "tile_kernels/quant/cast_back_asc.py": "83f383dac575ba9ce027624c7a79a3d3ba9a9852f50172c4249b7e9d11ca96c3",
+    "tile_kernels/quant/cast_back_kernel.py": "b0733230818e5f4175453c88a02abfca5ab62432a5057d2014c114f14d474e00",
+    "tile_kernels/torch/swiglu.py": "9f0e10d8a3d24d40f1b47530ba402a50b59ebe35c513347d479dde601e95db60",
+    "tile_kernels/torch/cast.py": "41a49e4bc6d70eb328a05bea7d2c43178d3ec10f13c4f0b5e5c258567caddedf",
+    "tile_kernels/testing/numeric.py": "621c719d35acbd556a59a55f303ef615b032a587520d7fbc49d9462e9f04e4c2",
+    "tile_kernels/rand/seed.py": "40778f97938a2566f7467d0b1250cc31ee5ca5ae7b306888df79a395ba877f42",
+    "tile_kernels/rand/randn_kernel.py": "64d6ecc12d519410aa0db7bf6d029fb8851eeb804e9f87c6888c65359264382b"
+  },
+  "symbol": "swiglu_backward_kernel_asc",
+  "runtime_kernel": "swiglu_backward_kernel_asc_kernel",
+  "source_sha256": "8479d2a14031b00ac7963e3cd26a3d05ee6a2e847dbeaaa1ea739eb3998e5688",
+  "inputs": [
+    {
+      "shape": [
+        1024,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "4e270f46296d145930c3af3f137b80325d4db531cf4ae3a0051a3c78bb11d436"
+    },
+    null,
+    {
+      "shape": [
+        1024,
+        2048
+      ],
+      "stride": [
+        2048,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "ee338179f5cf869f29b2a66ce8ac4ddd47ed8dc97591960c5aaa0897bd6488a6"
+    },
+    {
+      "shape": [
+        1024
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "bc03346037aed9cb0f68cce23014f25215fe27e770fd5bf0c0e7677767804d25"
+    },
+    {
+      "shape": [
+        4
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.int32",
+      "sha256": "7c1410fb1ea13e695e5e044804b056da408358d544c3600c94658b9e8be66458"
+    }
+  ],
+  "routed_scaling_factor": 2.5,
+  "clamp_value": 0.5,
+  "num_vec_cores": 56,
+  "status": "passed"
+}
