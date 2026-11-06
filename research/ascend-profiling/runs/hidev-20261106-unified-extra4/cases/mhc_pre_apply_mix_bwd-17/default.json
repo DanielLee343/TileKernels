@@ -1,0 +1,102 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "group": "mhc_pre_apply_mix_bwd",
+  "params": {
+    "n0": 1,
+    "n1": 4096,
+    "hidden": 2560,
+    "mhc_mult": 4
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "target_range": "mhc_pre_apply_bwd_target",
+  "capture_scope": "one pre-apply backward native kernel",
+  "output_semantics": "x_grad is nonzero input and accumulated in place; mix_grad is returned",
+  "warmup_policy": "separate x_grad clone",
+  "profiler_replay_state": "unverified",
+  "device_validation": "pending",
+  "plan_case_number": 17,
+  "source_files_sha256": {
+    "pre_apply_mix_asc.py": "e750f43ed9defd2faf39df92a04486c807fa32de73186ea90bbd02b403966509",
+    "pre_apply_mix_kernel.py": "61b43bd91af8790f5d372b4fbfcf06fea4d7094ceac2184da1c94c4445e8200a",
+    "torch_mhc.py": "9f37ef9a1a7d99f14c2e878056b5f53a56932275e3ec0fc94de125e79953fd52"
+  },
+  "symbol": "mhc_pre_apply_mix_bwd_asc",
+  "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel",
+  "source_sha256": "ff1b99df39ae1fc6e7ff4a89a4beadac9f548a6064ce13f38f4e78f8a47552be",
+  "inputs": [
+    {
+      "shape": [
+        4096,
+        2560
+      ],
+      "stride": [
+        2560,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "8ba3f8c220e1b928742b943f340ad0f2debb1a9f495bc1e5164568744613effe"
+    },
+    {
+      "shape": [
+        4096,
+        4,
+        2560
+      ],
+      "stride": [
+        10240,
+        2560,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "98efadcb7577b8274b60784f046c0e7c86289e2def05cdadb78c8ab343a7e3db"
+    },
+    {
+      "shape": [
+        4096,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "fcbb82eb081808644a3da3536749d8265c9917c84c28384f8c01f3ecbf463792"
+    },
+    {
+      "shape": [
+        4096,
+        4,
+        2560
+      ],
+      "stride": [
+        10240,
+        2560,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "fa7919eed3f307fe44c2019cc62782c074da38501e009d5c0a3e716fe0fc0a7e"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 2560,
+    "num_stages": 3,
+    "num_vec_cores": 56
+  },
+  "mutable_input_indices": [
+    3
+  ],
+  "precision": [
+    {
+      "output": "x_grad_accumulated",
+      "passed": true,
+      "max_abs_error": 0.0078125
+    },
+    {
+      "output": "mix_grad",
+      "passed": true,
+      "max_abs_error": 1.52587890625e-05
+    }
+  ],
+  "status": "passed"
+}

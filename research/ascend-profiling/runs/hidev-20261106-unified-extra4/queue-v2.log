@@ -28,3 +28,6 @@ mhc_pre_apply_mix_bwd-11 failed AssertionError: upstream prepare/correctness fai
 mhc_pre_apply_mix_bwd-12 failed AssertionError: upstream prepare/correctness failed
 mhc_pre_apply_mix_bwd-13 needs_review in-place profiler replay restoration has not been independently verified
 mhc_pre_apply_mix_bwd-14 failed AssertionError: upstream prepare/correctness failed
+mhc_pre_apply_mix_bwd-15 needs_review in-place profiler replay restoration has not been independently verified
+mhc_pre_apply_mix_bwd-16 needs_review in-place profiler replay restoration has not been independently verified
+mhc_pre_apply_mix_bwd-17 needs_review in-place profiler replay restoration has not been independently verified
