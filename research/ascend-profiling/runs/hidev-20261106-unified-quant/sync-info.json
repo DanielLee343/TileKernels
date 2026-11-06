@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793970902051950310.tar.gz",
-  "size": 354099,
-  "sha256": "e4257e0f28f4998fa93f9d4e87049794a06f755431c37059ef88e4ba3470c2bf",
+  "path": "/workspace/tk-starter-sync-1793970970785087819.tar.gz",
+  "size": 428998,
+  "sha256": "e7a5b5276837a2aafd8e25e6910fe35dc3ea2db56cd030480cbe7b26c446b0a7",
   "ids": [
     "quant_per_block_cast-01",
     "quant_per_token_cast-01",
@@ -13,7 +13,9 @@
     "quant_per_block_cast-03",
     "quant_per_block_cast-04",
     "quant_per_block_cast-05",
-    "quant_per_block_cast-06"
+    "quant_per_block_cast-06",
+    "quant_per_block_cast-07",
+    "quant_per_block_cast-08"
   ],
   "status": "running"
 }
