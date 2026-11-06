@@ -1,0 +1,13 @@
+{
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 207.0       58                0     / 0             |\n|        |                  | 0000:57:00.0  | 0           0    / 0          5283  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| No running processes found in NPU 0                                                             |\n+===========================+===============+=====================================================+\n",
+  "manifest_sha256": "a20d1d4dd18502eff6cc3ed3183d9122614d457b6ae5722ecdc6e7efc8437fd4",
+  "hooks_sha256": {
+    "extra_mhc_post_bwd.py": "1611a134b8283e17152c35b164b0f6038e3fcd270123e9d5d7ea24d0df07e970",
+    "extra_cast_back.py": "a42dfc3c483ddf5e9566a690826313e9b9a1403cda9cb5b836ba850944863701",
+    "extra_lossless.py": "629a78efa09780ce2920b3eea54b573092dc62f35e4244c518fefd819bfc3ad5",
+    "extra_channel.py": "3687bd3815f7dfc86c1e4664662a7cc6a0e5b38edcafd8f9f932b3a89202862f",
+    "extra_randn.py": "048827c35efa0ff452913b0fe43fcc9d9f652287c77b770bf59f86fee1118a56"
+  }
+}
