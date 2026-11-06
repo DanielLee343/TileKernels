@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793989815819845792.tar.gz",
-  "size": 659858,
-  "sha256": "14f3eaebf6ae59da986d5410eb4e8d46a553e68e56288637cf1076514f8524ad",
+  "path": "/workspace/tk-starter-sync-1793989886339934630.tar.gz",
+  "size": 704486,
+  "sha256": "bb8bd087afd8a7aebbeae87784f62dba4cefd7aeaba2ff4a12a38f0042cfed3d",
   "ids": [
     "engram_gate_fwd-01",
     "engram_gate_bwd-01",
@@ -18,7 +18,8 @@
     "engram_gate_fwd-07",
     "engram_gate_fwd-08",
     "engram_gate_fwd-09",
-    "engram_gate_fwd-10"
+    "engram_gate_fwd-10",
+    "engram_gate_fwd-11"
   ],
   "status": "running"
 }
