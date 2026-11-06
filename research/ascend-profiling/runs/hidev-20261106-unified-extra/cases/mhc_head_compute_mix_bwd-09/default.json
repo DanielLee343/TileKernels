@@ -1,0 +1,86 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "group": "mhc_head_compute_mix_bwd",
+  "params": {
+    "n0": 1,
+    "n1": 16385,
+    "mhc_mult": 4,
+    "eps": 0.01
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "capture_scope": "head backward native kernel only",
+  "outside_capture": "scale/base partial reductions and full-output reference check",
+  "plan_case_number": 9,
+  "symbol": "mhc_head_compute_mix_bwd_asc",
+  "runtime_kernel": "mhc_head_compute_mix_bwd_asc_kernel",
+  "source_sha256": "874fd3d06d1b32717e598d121656495aee5bb15cbed78138d53ac3bfb1a52edc",
+  "inputs": [
+    {
+      "shape": [
+        16385,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "ffae24bebf55c5e28d38594483443b73e5903bc6464951a4c424d4e0cfdf5750"
+    },
+    {
+      "shape": [
+        16385,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1178db8b6edbc1b3e87ea22beb51cbf7f8f66936d3dbe413203c944b44907162"
+    },
+    {
+      "shape": [
+        1
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "f6c03c7eb9647d1e8b8d2ec8c037a0458d97a78ba71d11b2d0945e9ee3249919"
+    },
+    {
+      "shape": [
+        4
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "888ace3561d67e83e858650de402030ca3da0939e38886325a6dbeab5a167acd"
+    }
+  ],
+  "native_kwargs": {
+    "token_block_size": 64,
+    "num_vec_cores": 56
+  },
+  "precision": [
+    {
+      "output": "input_mix_grad",
+      "passed": true,
+      "max_abs_error": 2.2351741790771484e-08
+    },
+    {
+      "output": "scale_grad",
+      "passed": true,
+      "max_abs_error": 1.52587890625e-05
+    },
+    {
+      "output": "base_grad",
+      "passed": true,
+      "max_abs_error": 7.62939453125e-06
+    }
+  ],
+  "status": "passed"
+}
