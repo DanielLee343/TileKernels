@@ -1,0 +1,65 @@
+{
+  "group": "randn",
+  "params": {
+    "shape": [
+      1024,
+      1024
+    ],
+    "dtype": "fp32"
+  },
+  "stage": "prepare",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 0,
+  "verification_native_calls": 1,
+  "target_range": "quant_target",
+  "user_seed": 42,
+  "shape": [
+    1024,
+    1024
+  ],
+  "dtype": "torch.float32",
+  "graph_capture": "prohibited_by_public_ascend_api",
+  "profiler_replay_randomness": "not_applicable",
+  "profiler_replay_note": "Kernel replay must not be treated as NPU graph capture or as fresh random sampling.",
+  "finite": "passed",
+  "seed_repeatability": "passed",
+  "distribution": {
+    "status": "passed",
+    "minimum_elements": 1048576,
+    "mean": -0.0012480192817747593,
+    "std": 1.0006057024002075,
+    "positive_fraction": 0.4993782043457031,
+    "thresholds": {
+      "absolute_mean_lt": 0.02,
+      "absolute_std_minus_one_lt": 0.02,
+      "absolute_positive_fraction_minus_half_lt": 0.02
+    }
+  },
+  "symbol": "randn_kernel_asc",
+  "native_symbol": "randn_kernel_asc",
+  "runtime_kernel": "randn_kernel_asc_kernel",
+  "source_sha256": "7810bee7081372b86f026d3886674c84e4aa205d05fd1790cb721269a307bbff",
+  "launch_seed": 551831576,
+  "inputs": [
+    {
+      "shape": [
+        1024,
+        1024
+      ],
+      "dtype": "torch.float32",
+      "user_seed": 42,
+      "launch_seed": 551831576
+    }
+  ],
+  "native_config": {
+    "dtype": "torch.float32",
+    "num_vec_cores": 56,
+    "block_size": 24576,
+    "num_stages": 1,
+    "tile_size": 1024,
+    "unroll_factor": 4
+  },
+  "verification_launch_seed": 551831576,
+  "status": "passed"
+}
