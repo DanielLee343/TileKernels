@@ -108,3 +108,8 @@ quant_batched_transpose_weight_sf-15 admitted
 quant_batched_transpose_weight_sf-16 admitted 
 quant_batched_transpose_weight_sf-17 admitted 
 quant_batched_transpose_weight_sf-18 admitted 
+quant_batched_transpose_weight_sf-19 admitted 
+quant_batched_transpose_weight_sf-20 admitted 
+rotary_embedding-02-q needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-02-k needs_review in-place profiler replay restoration has not been independently verified
+rotary_embedding-03-q needs_review in-place profiler replay restoration has not been independently verified

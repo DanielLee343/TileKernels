@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793987985288289287.tar.gz",
-  "size": 3432382,
-  "sha256": "0d6c542939350fbdec6ab584545270324b2d17423c71f14a3fbfb3d7411e38ea",
+  "path": "/workspace/tk-starter-sync-1793988124537212478.tar.gz",
+  "size": 3627063,
+  "sha256": "103750c5b61589096b4be4fbe9cf453303337b6fbcddd353ad8fcc307aad51cb",
   "ids": [
     "mhc_pre_apply_mix_bwd-01",
     "moe_topk_gate_backward-01",
@@ -102,7 +102,12 @@
     "quant_batched_transpose_weight_sf-15",
     "quant_batched_transpose_weight_sf-16",
     "quant_batched_transpose_weight_sf-17",
-    "quant_batched_transpose_weight_sf-18"
+    "quant_batched_transpose_weight_sf-18",
+    "quant_batched_transpose_weight_sf-19",
+    "quant_batched_transpose_weight_sf-20",
+    "rotary_embedding-02-q",
+    "rotary_embedding-02-k",
+    "rotary_embedding-03-q"
   ],
   "status": "running"
 }
