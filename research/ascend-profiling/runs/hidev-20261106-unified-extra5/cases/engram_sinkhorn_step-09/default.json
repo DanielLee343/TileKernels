@@ -1,0 +1,66 @@
+{
+  "group": "engram_sinkhorn_step",
+  "stage": "default",
+  "seed": 42,
+  "matched": 1,
+  "profiler_replay_state": "unverified",
+  "params": {
+    "num_rows": 4096,
+    "head_dim": 256,
+    "eps": 1e-20
+  },
+  "source_files_sha256": {
+    "tests/engram/test_engram_sinkhorn.py": "34818065736ba9d7e934aee01f99e3c114f7bfa6e67e845587bf4e1c84870d45",
+    "tile_kernels/engram/engram_sinkhorn_kernel.py": "f2241fb866f0b9c91558c0f49f51d4dc9372412dba9d7acce3b6e4ac3bf72227",
+    "tile_kernels/engram/engram_sinkhorn_asc.py": "af62c4ec03822513fc7a8be0c97d455656933eefbed6b6a794c36899b8082f6f",
+    "tile_kernels/torch/engram.py": "db7b779e95885f7bd965ff3cb34d20818d013bd5a50be69994ef598da4fcb48c",
+    "tile_kernels/testing/numeric.py": "621c719d35acbd556a59a55f303ef615b032a587520d7fbc49d9462e9f04e4c2",
+    "tile_kernels/rand/seed.py": "40778f97938a2566f7467d0b1250cc31ee5ca5ae7b306888df79a395ba877f42",
+    "tile_kernels/rand/randn_kernel.py": "64d6ecc12d519410aa0db7bf6d029fb8851eeb804e9f87c6888c65359264382b"
+  },
+  "symbol": "engram_sinkhorn_step_kernel_asc",
+  "runtime_kernel": "engram_sinkhorn_step_kernel_asc_kernel",
+  "source_sha256": "f9d4e30134d3a5e4aac7918f52021747a384d85256cb749c3b2507284a8bc59b",
+  "inputs": [
+    {
+      "shape": [
+        4096,
+        256
+      ],
+      "stride": [
+        256,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "7d7de9a283bcb5585fa166cd96d67d60afa44bdc9eb7215acb861ff800371ae5"
+    },
+    {
+      "shape": [
+        4096
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "e94bc93e2537afffdaf8ffa04c296698951342dc74ef2aacf521065c993cea4b"
+    },
+    {
+      "shape": [
+        256
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "4aa6bbeb98b8812b93c10759b7c4e122165736c90e777151fb29224275dd2623"
+    }
+  ],
+  "input_roles": [
+    "matrix",
+    "row_scale_before",
+    "col_scale"
+  ],
+  "num_vec_cores": 56,
+  "warmup_state": "separate_copy_reset_before_each_launch",
+  "status": "passed"
+}
