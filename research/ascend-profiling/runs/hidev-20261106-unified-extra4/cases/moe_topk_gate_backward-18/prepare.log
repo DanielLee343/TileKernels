@@ -1,0 +1,1 @@
+[W1106 17:24:58.755563523 ToKernelNpu.cpp:40] Warning: Device do not support double dtype now, dtype cast replace with float. (function operator())
