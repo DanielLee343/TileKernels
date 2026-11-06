@@ -1,0 +1,179 @@
+{
+  "group": "moe_topk_gate_backward",
+  "params": {
+    "num_tokens": 512,
+    "num_padded_tokens": 0,
+    "num_seqs": 1,
+    "num_topk": 8,
+    "num_routed_experts": 256,
+    "num_shared_experts": 2,
+    "bias_exists": true,
+    "image_bias_exists": false,
+    "aux_exists": true,
+    "fix_routing": true
+  },
+  "stage": "prepare",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 0,
+  "target_range": "quant_target",
+  "requested_fix_routing": true,
+  "current_fixture_fix_routing": true,
+  "seed": 42,
+  "correctness": "passed_upstream_full_moe_backward_test",
+  "output_semantics": "grad_logits is overwritten; no input is intentionally mutated",
+  "profiler_replay_state": "not_applicable",
+  "profiler_replay_note": "The actual replay count and output-buffer behavior require on-device verification.",
+  "routing_fixture_inputs": [
+    {
+      "name": "mask",
+      "tensor": null
+    },
+    {
+      "name": "bias",
+      "tensor": {
+        "shape": [
+          256
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "f53b5c99ba732a5936f6a222417280157c2f46039b4ce73c22492a10bea22d28"
+      }
+    },
+    {
+      "name": "image_bias",
+      "tensor": null
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": null
+    },
+    {
+      "name": "fix_routing_mask",
+      "tensor": {
+        "shape": [
+          512
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "6caf38d537984e261527b8caef5f990fb91415a1db917198821a79ed28997973"
+      }
+    },
+    {
+      "name": "unmapped_topk_idx",
+      "tensor": {
+        "shape": [
+          512,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "5b89e06f6346a694967bc18ccecddb96c3305716926ee230e5dae17c7f4ac4da"
+      }
+    }
+  ],
+  "symbol": "moe_topk_gate_backward_kernel_asc",
+  "native_symbol": "moe_topk_gate_backward_kernel_asc",
+  "runtime_kernel": "moe_topk_gate_backward_kernel_asc_kernel",
+  "source_sha256": "1e713ad78eb3b1c11dcf5ea6ec9736e175311685e39a97675d551f22cb2f35bc",
+  "inputs": [
+    {
+      "name": "scores",
+      "tensor": {
+        "shape": [
+          512,
+          256
+        ],
+        "stride": [
+          256,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "ced0508abcdf848ae6cb39527f2e3ea326fd4d7cd7b85cd8be786aef85da16d2"
+      }
+    },
+    {
+      "name": "topk_idx",
+      "tensor": {
+        "shape": [
+          512,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "5b89e06f6346a694967bc18ccecddb96c3305716926ee230e5dae17c7f4ac4da"
+      }
+    },
+    {
+      "name": "topk_weights",
+      "tensor": {
+        "shape": [
+          512,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "1413801861babdcfd9ceebbb49eec855ddb4ea253181ef19b21a024d7a089ef5"
+      }
+    },
+    {
+      "name": "grad_topk_weights",
+      "tensor": {
+        "shape": [
+          512,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "8eea9fb891c75f8ed4f6695ce8418c3eda09e83cb7a208c3743c5b87207ea0f2"
+      }
+    },
+    {
+      "name": "mask",
+      "tensor": {
+        "shape": [
+          512
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "6caf38d537984e261527b8caef5f990fb91415a1db917198821a79ed28997973"
+      }
+    },
+    {
+      "name": "grad_scores_sum",
+      "tensor": {
+        "shape": [
+          1,
+          256
+        ],
+        "stride": [
+          256,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "a3bc8cb293a2081d239a040eaeb137da221e47298d9ba2cde9950757ee3413d8"
+      }
+    }
+  ],
+  "routed_scaling_factor": 1.5,
+  "captured_fix_routing": true,
+  "status": "passed"
+}
