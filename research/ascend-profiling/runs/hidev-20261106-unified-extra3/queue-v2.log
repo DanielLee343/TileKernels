@@ -31,3 +31,6 @@ quant_norm_forward-16 admitted
 quant_norm_forward-17 admitted 
 quant_norm_forward-18 admitted 
 quant_norm_forward-19 admitted 
+quant_norm_forward-20 admitted 
+quant_norm_backward-02 needs_review in-place profiler replay restoration has not been independently verified
+quant_norm_backward-03 admitted 
