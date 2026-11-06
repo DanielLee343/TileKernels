@@ -51,3 +51,5 @@ moe_topk_gate_backward-15 needs_review in-place profiler replay restoration has 
 moe_topk_gate_backward-16 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_backward-17 needs_review in-place profiler replay restoration has not been independently verified
 moe_topk_gate_backward-18 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_backward-19 needs_review in-place profiler replay restoration has not been independently verified
+moe_topk_gate_backward-20 needs_review in-place profiler replay restoration has not been independently verified
