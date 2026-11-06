@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793992453356480963.tar.gz",
-  "size": 4254217,
-  "sha256": "ab9f1bb586dd6425c25d3b7a5920c1fbc0a87b55a30815476b161fa95e6c846e",
+  "path": "/workspace/tk-starter-sync-1793992612367403045.tar.gz",
+  "size": 4441109,
+  "sha256": "6022cc64768acfc41afeb6486a491230f1f08b1b0d92dfb28d71036d1a40a442",
   "ids": [
     "engram_gate_fwd-01",
     "engram_gate_bwd-01",
@@ -105,7 +105,13 @@
     "mhc_pre_split_mixes_bwd-18",
     "mhc_pre_split_mixes_bwd-19",
     "mhc_pre_split_mixes_bwd-20",
-    "mhc_fn_normw_merge_bwd-02"
+    "mhc_fn_normw_merge_bwd-02",
+    "mhc_fn_normw_merge_bwd-03",
+    "mhc_fn_normw_merge_bwd-04",
+    "mhc_fn_normw_merge_bwd-05",
+    "mhc_fn_normw_merge_bwd-06",
+    "mhc_fn_normw_merge_bwd-07",
+    "mhc_fn_normw_merge_bwd-08"
   ],
   "status": "running"
 }

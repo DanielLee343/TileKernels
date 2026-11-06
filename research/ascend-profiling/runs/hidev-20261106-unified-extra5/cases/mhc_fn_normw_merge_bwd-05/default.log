@@ -1,0 +1,42 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1106 19:15:01.353908977 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-06 19:15:07] [971141] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: mhc_fn_normw_merge_bwd_asc_kernel
+[2026-11-06 19:15:07] [971141] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-06 19:15:07] [971141] [ProfConfig.cpp:83] [WARN] Some sub block may lose dynamic instrumentation data because sub blocks exceeding 108.
+2026-11-06 19:15:07  [TileLang:tilelang.cache.kernel_cache:WARNING] (kernel_cache.py:379): Found kernel 'mhc_fn_normw_merge_bwd_asc' in memory cache. For better performance, consider using `@tilelang.jit` instead of direct kernel caching.
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: mhc_fn_normw_merge_bwd_asc_kernel, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE2 bandwidth utilization lower than 80% when active.
+	2) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: mhc_fn_normw_merge_bwd_asc_kernel
+	Op Type: vector
+	Task Duration(us): 2.987000
+	Block Dim: 56
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 971141
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/tilekernels-expert-unified-extra5-20261106/cases/mhc_fn_normw_merge_bwd-05/capture/OPPROF_20261106191500_XOHRSWOYGMFYIJAY
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.
