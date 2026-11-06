@@ -7,3 +7,5 @@ engram_gate_fwd-01 needs_review in-place profiler replay restoration has not bee
 engram_gate_bwd-01 needs_review in-place profiler replay restoration has not been independently verified
 engram_sinkhorn_momentum_update-01 needs_review in-place profiler replay restoration has not been independently verified
 engram_sinkhorn_step-01 needs_review in-place profiler replay restoration has not been independently verified
+mhc_pre_split_mixes_bwd-01 admitted 
+mhc_fn_normw_merge_bwd-01 needs_review in-place profiler replay restoration has not been independently verified
