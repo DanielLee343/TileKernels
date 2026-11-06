@@ -1,0 +1,105 @@
+{
+  "group": "moe_topk_gate_forward",
+  "params": {
+    "num_tokens": 512,
+    "num_padded_tokens": 0,
+    "num_topk": 6,
+    "num_routed_experts": 108,
+    "num_shared_experts": 2,
+    "bias_exists": false,
+    "image_bias_exists": false,
+    "force_random_exists": false,
+    "use_shared_as_routed": false,
+    "scores_exists": true,
+    "fix_routing": false
+  },
+  "stage": "prepare",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 0,
+  "target_range": "quant_target",
+  "requested_fix_routing": false,
+  "seed": 42,
+  "correctness": "passed_upstream_full_moe_forward_test",
+  "profiler_replay_state": "not_applicable",
+  "profiler_replay_note": "unmapped_topk_idx is an input/output; buffer restoration must be checked on-device",
+  "symbol": "moe_topk_gate_forward_kernel_asc",
+  "native_symbol": "moe_topk_gate_forward_kernel_asc",
+  "runtime_kernel": "moe_topk_gate_forward_kernel_asc_kernel",
+  "source_sha256": "f58eb86e0bdc55667f9d7cadda46823da0ebd398fd14d7ac1b65333ac23d5ba7",
+  "inputs": [
+    {
+      "name": "logits",
+      "tensor": {
+        "shape": [
+          512,
+          108
+        ],
+        "stride": [
+          108,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "3a1546413254f5016caa3c72015f9a1ccfda85c6bf75ad1f6945d3e21708fbfb"
+      }
+    },
+    {
+      "name": "bias",
+      "tensor": null
+    },
+    {
+      "name": "image_bias",
+      "tensor": null
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": null
+    },
+    {
+      "name": "mask",
+      "tensor": null
+    },
+    {
+      "name": "fix_routing_mask",
+      "tensor": null
+    },
+    {
+      "name": "to_physical_map",
+      "tensor": null
+    },
+    {
+      "name": "logical_count",
+      "tensor": null
+    },
+    {
+      "name": "unmapped_topk_idx",
+      "tensor": {
+        "shape": [
+          512,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "de676bae28a480011d3d012db14bef539324e62a841a9627863c689bea168af3"
+      }
+    },
+    {
+      "name": "force_random",
+      "tensor": null
+    }
+  ],
+  "route_counts": {
+    "valid_tokens": 512,
+    "force_random_tokens": 0,
+    "fixed_routing_tokens": 0
+  },
+  "scalar_inputs": {
+    "num_shared_experts": 0,
+    "routed_scaling_factor": 1.5,
+    "ep_rank": 0
+  },
+  "status": "passed"
+}

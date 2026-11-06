@@ -1,0 +1,2 @@
+2026-11-06 15:58:56  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `swiglu_forward_kernel` with `out_idx=None`
+2026-11-06 15:58:59  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `swiglu_forward_kernel`

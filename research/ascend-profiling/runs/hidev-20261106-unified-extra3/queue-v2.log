@@ -1,0 +1,16 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+quant_norm_forward-01 admitted 
+quant_norm_backward-01 admitted 
+mhc_pre_big_fuse_fwd-01 admitted 
+moe_topk_gate_forward-01 needs_review in-place profiler replay restoration has not been independently verified
+quant_swiglu_forward-01 admitted 
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+quant_norm_forward-02 admitted 

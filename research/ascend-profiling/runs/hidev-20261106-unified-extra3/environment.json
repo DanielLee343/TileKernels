@@ -1,0 +1,13 @@
+{
+  "source_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msprof": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 207.4       58                0     / 0             |\n|        |                  | 0000:57:00.0  | 0           0    / 0          5284  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| No running processes found in NPU 0                                                             |\n+===========================+===============+=====================================================+\n",
+  "manifest_sha256": "309b292ddfbf229b5f26e18b938f0cd9ae5d2a915f680fa6030ef2731585a028",
+  "hooks_sha256": {
+    "extra_norm_fwd.py": "6fcbdb4ad2781761656f7058dcb1f72ffad6b06f6cafdd9740fa01d87ddad1c6",
+    "extra_norm_bwd.py": "49fe9d45303683d652b6c7d3bebdfaa8dc58a9465b955a0f5ab7d038d31d89fa",
+    "extra_mhc_big_fuse.py": "7987dd3da8028c60f0fe3fac36574651776b021b50cfeaefd04cd20bd4fa1bba",
+    "extra_moe_forward.py": "ac144ba0654f95bc724d14edd6a7558e798a7fe9514a2192127b6b2bbd91e840",
+    "extra_swiglu_fwd.py": "a43456ad8f0b52a35b5e195bbe75d8828d3ecf7d65a555b3effdad82b8dd4c88"
+  }
+}
