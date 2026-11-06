@@ -22,3 +22,5 @@ finalize-17 skipped host memory guard: more than 50M float32 input elements
 finalize-18 admitted 
 finalize-19 skipped host memory guard: more than 50M float32 input elements
 finalize-20 admitted 
+reduce-rms-bwd-02 admitted 
+reduce-rms-bwd-03 admitted 
