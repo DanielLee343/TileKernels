@@ -9,3 +9,9 @@ engram_sinkhorn_momentum_update-01 needs_review in-place profiler replay restora
 engram_sinkhorn_step-01 needs_review in-place profiler replay restoration has not been independently verified
 mhc_pre_split_mixes_bwd-01 admitted 
 mhc_fn_normw_merge_bwd-01 needs_review in-place profiler replay restoration has not been independently verified
+mhc_multilayer_recompute-01 admitted 
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
