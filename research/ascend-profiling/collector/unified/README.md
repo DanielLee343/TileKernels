@@ -20,3 +20,5 @@ The common work is reading the immutable plan, generating inputs, validating out
 - Cgroup host limit is 32 GiB; large inputs require bounded-memory validation, not shrinking the planned shape. A failed/unsupported case remains visible and must not be counted as successful.
 
 Other 537 plan rows do not have an implemented shared runner. Previous 3 failed correctness cases and 11 memory-guard skips remain separate from the 657 unmapped rows.
+
+The initial 120-case queue was stopped after its per-block pilot exposed nondeterministic Python `random` state. Its failed and in-flight data remain on hidev at `/workspace/tilekernels-expert-unified-quant-20261106`. The hook now fixes both the upstream Torch/TileKernels RNG and Python RNG. A separate per-block pilot then passed reference validation and matched prepare/profile input and source hashes. The original run is never overwritten.

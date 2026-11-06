@@ -26,7 +26,7 @@ PUMA = Path(os.environ.get('PUMA_WORKSPACE', 'D:/puma_v2'))
 sys.path.insert(0, str(PUMA / 'outputs/reprofile-60-cold-20261101/scripts'))
 import transport  # existing authenticated tmux transport with an interprocess lock
 
-REMOTE = '/workspace/tilekernels-expert-unified-quant-20261106'
+REMOTE = '/workspace/tilekernels-expert-unified-quant-v2-20261106'
 DEST = HERE / 'runs/hidev-20261106-unified-quant'
 DEST_REL = 'research/ascend-profiling/runs/hidev-20261106-unified-quant'
 

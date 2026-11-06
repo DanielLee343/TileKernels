@@ -11,6 +11,7 @@ import importlib
 import importlib.util
 import json
 import os
+import random
 from pathlib import Path
 import traceback
 
@@ -43,6 +44,7 @@ def run(group, params, stage, record_path):
     from tile_kernels.rand import set_seed
     torch.set_num_threads(min(8, os.cpu_count() or 1))
     torch.npu.set_device(0)
+    random.seed(42)
     set_seed(42)
     family, sf_only, cast_only = GROUPS[group]
     module = importlib.import_module('tile_kernels.quant.per_' + family + '_cast_asc')
