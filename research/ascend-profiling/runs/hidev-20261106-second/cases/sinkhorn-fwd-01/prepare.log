@@ -1,0 +1,2 @@
+2026-11-06 10:19:50  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `mhc_sinkhorn_fwd_asc` with `out_idx=None`
+2026-11-06 10:19:52  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `mhc_sinkhorn_fwd_asc`

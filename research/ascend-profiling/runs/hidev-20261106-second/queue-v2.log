@@ -1,0 +1,10 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+topk-01 admitted 
+reduce-01 admitted 
+sinkhorn-fwd-01 admitted 
+sinkhorn-bwd-01 admitted 
+castback-05 admitted 

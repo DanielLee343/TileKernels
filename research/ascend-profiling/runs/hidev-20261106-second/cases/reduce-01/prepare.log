@@ -1,0 +1,2 @@
+2026-11-06 10:19:22  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:137): TileLang begins to compile kernel `engram_sinkhorn_step_reduce_kernel_asc` with `out_idx=None`
+2026-11-06 10:19:23  [TileLang:tilelang.jit.kernel:INFO] (kernel.py:145): TileLang completes to compile kernel `engram_sinkhorn_step_reduce_kernel_asc`
