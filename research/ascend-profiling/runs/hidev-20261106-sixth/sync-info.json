@@ -1,13 +1,15 @@
 {
-  "path": "/workspace/tk-starter-sync-1793969121139592027.tar.gz",
-  "size": 200180,
-  "sha256": "4666bcd2f3831fd7f598a8044a58b990ee463f0138f3469861e1aaef59a864fd",
+  "path": "/workspace/tk-starter-sync-1793969185157020361.tar.gz",
+  "size": 282018,
+  "sha256": "4b4e127c78ea056df2ab372e8a9132628f93e4b43a508f718eca94f30ff47566",
   "ids": [
     "presplit-fwd-01",
     "presplit-fwd-02",
     "presplit-fwd-03",
     "presplit-fwd-04",
-    "presplit-fwd-05"
+    "presplit-fwd-05",
+    "presplit-fwd-06",
+    "presplit-fwd-07"
   ],
   "status": "running"
 }
