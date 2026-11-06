@@ -32,3 +32,8 @@ No claim of 1,000 successful profiles should be made until individual case statu
 - A fourth shared queue maps 100 additional rows. Of the original 657 unmapped plan entries, 397 are now in the four shared queues and 260 still lack adapters; queued is not equivalent to successful. Each new extra runner attempts later rows even if a pilot fails.
 
 - A fifth shared queue adds 120 distinct plan rows (140 captures including separate RoPE Q and K). Of the original 657 previously unmapped rows, 517 are now queued and 140 still lack adapters. These five new modes plus RoPE are pending device pilots.
+
+## Complete candidate queue
+
+- The final shared queue maps the remaining 140 previously unmapped rows. Deduplication over all manifests covers all 1,000 original plan rows; the 657 previously unmapped rows are queued as 677 native-capture tasks because each RoPE row has Q and K. Most modes still await device pilots and individual runs, and a queued attempt is not a successful profile.
+- Earlier 11 memory-guard skips and 3 correctness failures remain unresolved and are not part of the 657-row queue. Stateful replay remains marked for review. The queues are serial; completed snapshots sync through a Windows watcher with bounded retries and require the local connection to stay active.
