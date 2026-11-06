@@ -1,0 +1,309 @@
+{
+  "tilekernels_commit": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "msopprof_commit": "884ac969494a186a9c63ac45c4c39ad7289b3215",
+  "capture_budget": 20,
+  "device_bus": "0000:57:00.0",
+  "case_plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "cases": [
+    {
+      "id": "presplit-fwd-01",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 1,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1001,
+        "mhc_mult": 4
+      },
+      "pilot": true,
+      "tokens": 1001,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-02",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 2,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1024,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 1024,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-03",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 3,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 127,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 127,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-04",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 4,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 128,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 128,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-05",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 5,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 16384,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 16384,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-06",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 6,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 16385,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 16385,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-07",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 7,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 17,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 17,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-08",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 8,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 1,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 1,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-09",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 9,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 2049,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 2049,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-10",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 10,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 257,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 257,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-11",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 11,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 4096,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-12",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 12,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 4097,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 4097,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-13",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 13,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 511,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 511,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-14",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 14,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 512,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 512,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-15",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 15,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 513,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 513,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-16",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 16,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 64,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 64,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-17",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 17,
+      "plan_parameters": {
+        "n0": 1,
+        "n1": 8001,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 8001,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-18",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 18,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 1001,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 2002,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-19",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 19,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 1024,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 2048,
+      "mhc_mult": 4
+    },
+    {
+      "id": "presplit-fwd-20",
+      "family": "mhc_pre_split_mixes_fwd",
+      "role": "discovery",
+      "plan_group": "mhc_pre_split_mixes_fwd",
+      "plan_case_number": 20,
+      "plan_parameters": {
+        "n0": 2,
+        "n1": 4096,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "tokens": 8192,
+      "mhc_mult": 4
+    }
+  ]
+}
