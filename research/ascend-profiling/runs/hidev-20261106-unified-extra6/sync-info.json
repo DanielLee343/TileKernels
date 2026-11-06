@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793993870739187878.tar.gz",
-  "size": 412534,
-  "sha256": "13779e0406e19feed59d255bbcf9e49ecefea5b10587ab373c087a531771bc96",
+  "path": "/workspace/tk-starter-sync-1793993936475037032.tar.gz",
+  "size": 451922,
+  "sha256": "8f13ff620d50eadd269019818b69b8c31577062e27df3b1728b80743ab976d40",
   "ids": [
     "finalize-02-retry",
     "post-fwd-02-retry",
@@ -12,7 +12,8 @@
     "post-fwd-10-retry",
     "post-fwd-11-retry",
     "post-fwd-12-retry",
-    "post-fwd-18-retry"
+    "post-fwd-18-retry",
+    "post-fwd-20-retry"
   ],
-  "status": "running"
+  "status": "finished"
 }
