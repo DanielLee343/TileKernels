@@ -1,0 +1,130 @@
+{
+  "group": "mhc_pre_split_mixes_bwd",
+  "params": {
+    "n0": 1,
+    "n1": 511,
+    "mhc_mult": 4
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_range": "mhc_presplit_bwd_target",
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "capture_scope": "one pre-split backward native kernel producing input grad and per-core partials",
+  "outside_capture": "forward preparation, scale/base partial reductions and full-output comparison",
+  "device_validation": "pending",
+  "plan_case_number": 13,
+  "source_files_sha256": {
+    "pre_split_mixes_asc.py": "a72d46198dcc6a5d32a9bf742ba1d670dbcacb8f6daebaa59ba2f6d75949b75e",
+    "pre_split_mixes_kernel.py": "62bb69af40da3cf0323da4d0e582d66851b85823d33e3a1f3c087aac6a4f18ca",
+    "torch_mhc.py": "9f37ef9a1a7d99f14c2e878056b5f53a56932275e3ec0fc94de125e79953fd52"
+  },
+  "symbol": "mhc_pre_split_mixes_bwd_mhc4_asc",
+  "runtime_kernel": "mhc_pre_split_mixes_bwd_mhc4_asc_kernel",
+  "source_sha256": "71ed32fc69c4719d8b93a9b316fcf2462f6b66258c69ea7d1589d43d4da21c07",
+  "inputs": [
+    {
+      "shape": [
+        511,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "b9bb90b1148fe62b6cede2d4a12b09e5cd19d948f22d1366337bcf1f264d5695"
+    },
+    {
+      "shape": [
+        511,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1ffd6bd5f5268e89a726cebbbebba81a87f1aa10514bf05fa3f83607ff745fc3"
+    },
+    {
+      "shape": [
+        511,
+        16
+      ],
+      "stride": [
+        16,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "fec173f87f21dc1a5dd9c980c8ca6c85235a8ba569a28a6e197146542abc5923"
+    },
+    {
+      "shape": [
+        511,
+        24
+      ],
+      "stride": [
+        24,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "78259092bc8e24886217472967870867bdaae9aebb0dde2e43f5928061dba265"
+    },
+    {
+      "shape": [
+        511,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "5206849b168dd5dc3523099b76bf98880e452a0b7c0dec35cbc0e6897287c7f8"
+    },
+    {
+      "shape": [
+        3
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "d15cc72b31225ffe4a42a4c5e05be3853764d91b6c23d1e54078201baeb1235b"
+    },
+    {
+      "shape": [
+        24
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9691a3433fa0f7c4bcc3e7d4e7125427f49d9954c3f4ae8f97751dfa14c7ed6e"
+    }
+  ],
+  "native_kwargs": {
+    "token_block_size": 64,
+    "num_stages": 2,
+    "num_vec_cores": 56,
+    "mhc_post_mult_value": 2.0
+  },
+  "precision": [
+    {
+      "output": "input_mixes_grad",
+      "passed": true,
+      "max_abs_error": 3.8743019104003906e-07
+    },
+    {
+      "output": "scale_grad",
+      "passed": true,
+      "max_abs_error": 3.814697265625e-06
+    },
+    {
+      "output": "base_grad",
+      "passed": true,
+      "max_abs_error": 3.814697265625e-06
+    }
+  ],
+  "status": "passed"
+}
