@@ -1,7 +1,7 @@
 {
-  "path": "/workspace/tk-starter-sync-1793983544548584697.tar.gz",
-  "size": 4174192,
-  "sha256": "26d9784eaf721928982078778664ae7586c8177a74e553f5c567f02435d3b0a2",
+  "path": "/workspace/tk-starter-sync-1793983701265179097.tar.gz",
+  "size": 4413646,
+  "sha256": "6597bc77a00af64842e202c209f193b67a84487d240f50d3c8035fb099b5f966",
   "ids": [
     "quant_norm_forward-01",
     "quant_norm_backward-01",
@@ -79,7 +79,9 @@
     "moe_topk_gate_forward-13",
     "moe_topk_gate_forward-14",
     "moe_topk_gate_forward-15",
-    "moe_topk_gate_forward-16"
+    "moe_topk_gate_forward-16",
+    "moe_topk_gate_forward-17",
+    "moe_topk_gate_forward-18"
   ],
   "status": "running"
 }

@@ -1,0 +1,179 @@
+{
+  "group": "moe_topk_gate_forward",
+  "params": {
+    "num_tokens": 8001,
+    "num_padded_tokens": 10,
+    "num_topk": 6,
+    "num_routed_experts": 108,
+    "num_shared_experts": 2,
+    "bias_exists": true,
+    "image_bias_exists": true,
+    "force_random_exists": true,
+    "use_shared_as_routed": true,
+    "scores_exists": true,
+    "fix_routing": true
+  },
+  "stage": "prepare",
+  "matched": 1,
+  "target_native_calls": 1,
+  "application_warmup_native_calls": 0,
+  "target_range": "quant_target",
+  "requested_fix_routing": true,
+  "seed": 42,
+  "correctness": "passed_upstream_full_moe_forward_test",
+  "profiler_replay_state": "not_applicable",
+  "profiler_replay_note": "unmapped_topk_idx is an input/output; buffer restoration must be checked on-device",
+  "symbol": "moe_topk_gate_forward_kernel_asc",
+  "native_symbol": "moe_topk_gate_forward_kernel_asc",
+  "runtime_kernel": "moe_topk_gate_forward_kernel_asc_kernel",
+  "source_sha256": "d6b99663972a9ec767c96e0b5c897dfd35cd1ef8008343e4c207340bb242723b",
+  "inputs": [
+    {
+      "name": "logits",
+      "tensor": {
+        "shape": [
+          8011,
+          108
+        ],
+        "stride": [
+          108,
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "4a2e0c84a173b439e96c75db25e01dff9484a6f266345c758d93a7cef1059d41"
+      }
+    },
+    {
+      "name": "bias",
+      "tensor": {
+        "shape": [
+          108
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "b66daf94b211a50feb8a7f35ae294dfafc51a73548a928293517aaeab31257e0"
+      }
+    },
+    {
+      "name": "image_bias",
+      "tensor": {
+        "shape": [
+          108
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.float32",
+        "sha256": "361fe24794fdb65bd3b29f7050cf4d1b031ba3f0bdab1182bd254c420a9e93a8"
+      }
+    },
+    {
+      "name": "image_token_mask",
+      "tensor": {
+        "shape": [
+          8011
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "c6c1bcb62993008a70eb2949c81713fb623d860e9b017ab14890ca26358da49f"
+      }
+    },
+    {
+      "name": "mask",
+      "tensor": {
+        "shape": [
+          8011
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "c26e3b1c7a9c66255c03041aabee515a524f350ca4f0dd652c6157cdb8eb619d"
+      }
+    },
+    {
+      "name": "fix_routing_mask",
+      "tensor": {
+        "shape": [
+          8011
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "69ef1d9fb17b2f72e4b436c1f343eb14fee2d150b686d44cfb46c5cf8aa540b2"
+      }
+    },
+    {
+      "name": "to_physical_map",
+      "tensor": {
+        "shape": [
+          110,
+          3
+        ],
+        "stride": [
+          3,
+          1
+        ],
+        "dtype": "torch.int32",
+        "sha256": "838f6bd27d36094c95065d40560b289c916db2cfe1d3123452a53f5c36740232"
+      }
+    },
+    {
+      "name": "logical_count",
+      "tensor": {
+        "shape": [
+          110
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.int32",
+        "sha256": "2e04fa0069c2d45d626b43493b172501ca8a66ddbddb11102e247c2f8bdba3b1"
+      }
+    },
+    {
+      "name": "unmapped_topk_idx",
+      "tensor": {
+        "shape": [
+          8011,
+          6
+        ],
+        "stride": [
+          6,
+          1
+        ],
+        "dtype": "torch.int64",
+        "sha256": "779cc1f34bfb3c1b238012d2a06ea53e418660becfd1d6d86f1c53744beb6417"
+      }
+    },
+    {
+      "name": "force_random",
+      "tensor": {
+        "shape": [
+          8011
+        ],
+        "stride": [
+          1
+        ],
+        "dtype": "torch.bool",
+        "sha256": "9d04dc164987d22b6bd5e6e8106238160bdc6d666fd1ba897ee0e8f9da011a50"
+      }
+    }
+  ],
+  "route_counts": {
+    "valid_tokens": 8001,
+    "force_random_tokens": 0,
+    "fixed_routing_tokens": 8001
+  },
+  "scalar_inputs": {
+    "num_shared_experts": 2,
+    "routed_scaling_factor": 1.5,
+    "ep_rank": 0
+  },
+  "status": "passed"
+}
