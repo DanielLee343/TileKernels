@@ -1,0 +1,62 @@
+{
+  "case_id": "paged_sparse_mqa_prepare_impl-1-q8-k512-h32-b8-max32-p64",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          8
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "4214b6248c50d20e229a488c276107e4e2498f3afbf6fef0035ffa9d7fcf9507"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          8,
+          11
+        ],
+        "stride": [
+          11,
+          1
+        ],
+        "sha256": "ffee17347af84ac2dfaece2092f5205356bb96050e9f997466d47c6eee93550c"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          8
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "90554e31f4637c74fc7db19594315f5c13ab1f3ae70680036be554a410c80048"
+      },
+      64,
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          8,
+          32
+        ],
+        "stride": [
+          32,
+          1
+        ],
+        "sha256": "0a4e747f531e21012b817ec469e99bf8421cd23dc1ce03ad3020b8ee96d2f620"
+      },
+      {
+        "type": "<class 'torch.dtype'>"
+      },
+      8
+    ],
+    "kwargs": {}
+  }
+}

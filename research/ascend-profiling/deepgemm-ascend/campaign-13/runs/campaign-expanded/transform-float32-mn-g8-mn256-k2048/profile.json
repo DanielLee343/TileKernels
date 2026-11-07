@@ -1,0 +1,34 @@
+{
+  "case_id": "transform-float32-mn-g8-mn256-k2048",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream test_layout.check_layout exact output and strides",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.float32",
+        "shape": [
+          32,
+          64
+        ],
+        "stride": [
+          1,
+          32
+        ],
+        "sha256": "d1bc601813d9d9b86e306cf5af7ba889564c3d3f129705e07929f370bb9d6b40"
+      },
+      256,
+      2048,
+      [
+        8,
+        8,
+        32
+      ]
+    ],
+    "kwargs": {
+      "is_sfa": true
+    }
+  }
+}

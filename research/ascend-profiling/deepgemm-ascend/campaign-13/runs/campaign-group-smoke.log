@@ -1,0 +1,2 @@
+mgroup-bf16bf16-nt-g4-m128-n256-k512 passed
+kgroup-bf16bf16-tn-g4-m64-n256-k512 passed

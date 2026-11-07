@@ -1,0 +1,13 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "45a34b594e5bdcd05ca54904244f7ded3496ae9cac4500e2831a5affffbbffc0",
+  "collector_sha256": "57e00bafff5cdd79ac53609f3250579741e7279d19dbd515fa8eb462519571f1",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "cases": [
+    {
+      "id": "paged-sparse-first-0-q4-k256-h8-b8-p64",
+      "status": "passed"
+    }
+  ]
+}

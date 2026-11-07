@@ -1,0 +1,46 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:02:26.201477691 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:02:29] [143708] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sleep-cycles5000000-marker4/cache/sleep_marker_4.0887dbe6e2ba12734edcd502fd28eca7/kernel.json
+[2026-11-07 13:02:29] [143708] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:02:30] [143708] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _Z10sleep_implILj4EEvl
+[2026-11-07 13:02:30] [143708] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _Z10sleep_implILj4EEvl, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: sleep_impl
+	Op Type: mix
+	Task Duration(us): 5002.195801
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 143708
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/sleep-cycles5000000-marker4/profile/OPPROF_20261107130225_BEOOFLIQNRJEAEYI
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,10 @@
+Op Name=_ZN9deep_gemm12transform_sfILb0ELNS_5MajorE1ELj512ELj4ELNS_8GemmTypeE0ELj56ELj256ELj8EL22asc_load_l2_cache_mode0EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj
+Block Dim=56
+Run Soc Version=Ascend950PR_9579
+Device Id=0
+Pid=141198
+Current Freq=1650
+Rated Freq=1650
+Is MC2=0
+Is Lccl=0
+Has Simt=0

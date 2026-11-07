@@ -1,5 +1,3 @@
 runs/** -text
-collect.py -text
-collect-initial.py -text
-collect-expanded.py -text
+collect*.py -text
 cases*.json -text

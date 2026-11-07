@@ -20,6 +20,18 @@ spec = importlib.util.spec_from_file_location('pilot_base', BASE)
 base = importlib.util.module_from_spec(spec); spec.loader.exec_module(base)
 
 
+def validate_sparse_phase(state, phase):
+    if phase not in ('first','reuse') or state is None or bool(state[1])!=(phase=='first'):
+        raise ValueError('paged sparse metadata is in wrong FIRST/REUSE state')
+
+
+def validate_sparse_specialization(source, phase):
+    match=re.search(r'paged_sparse_mqa_logits_impl\s*<\s*(true|false)',source)
+    expected='true' if phase=='first' else 'false'
+    if phase not in ('first','reuse') or not match or match.group(1)!=expected:
+        raise ValueError('captured FIRST/REUSE specialization mismatch')
+
+
 def worker(case, source, stage, output):
     import torch
     import torch_npu  # noqa: F401
@@ -68,8 +80,7 @@ def worker(case, source, stage, output):
         recorded_kwargs=kwargs
         if is_paged_sparse:
             metadata=kwargs['metadata'];state=getattr(metadata,'_paged_sparse_mqa_state',None)
-            if state is None or bool(state[1])!=(phase=='first'):
-                raise ValueError('paged sparse metadata is in wrong FIRST/REUSE state')
+            validate_sparse_phase(state,phase)
             recorded_kwargs=kwargs|{'metadata':{'shape':list(metadata.shape),'dtype':str(metadata.dtype),
                 'phase':phase,'factory_args':describe(metadata_factory['args']),
                 'factory_kwargs':describe(metadata_factory['kwargs'])}}
@@ -108,9 +119,13 @@ def worker(case, source, stage, output):
         import common
         from utils import calc_diff
         dtypes={'bf16':torch.bfloat16,'fp8':torch.float8_e4m3fn,'fp4':torch.float4_e2m1fn_x2}
-        desc=GemmTestDesc(GemmType.Normal,dtypes[case['a_dtype']],dtypes[case['b_dtype']],
-            torch.bfloat16,(case['m'],case['n'],case['k']),getattr(Major,case['a_major']),
-            getattr(Major,case['b_major']),accumulate=False,recipe=(1,1,32))
+        output_dtypes={'bf16':torch.bfloat16,'fp32':torch.float32}
+        gemm_types={'normal':GemmType.Normal,'m_grouped':GemmType.MGroupedContiguousWithPsumLayout,
+                    'k_grouped':GemmType.KGroupedContiguousWithPsumLayout}
+        desc=GemmTestDesc(gemm_types[case.get('gemm_type','normal')],dtypes[case['a_dtype']],dtypes[case['b_dtype']],
+            output_dtypes[case.get('out_dtype','bf16')],(case['m'],case['n'],case['k']),getattr(Major,case['a_major']),
+            getattr(Major,case['b_major']),accumulate=False,recipe=(1,1,32),num_groups=case.get('groups'),
+            ks_cpu=case.get('ks_cpu'),host_ks_cpu=case.get('host_ks_cpu'))
         _,a,b,c,reference,(group,spans)=desc.generate();out=torch.zeros_like(reference)
         common.gemm_dg(desc,a,b,c,out,g_layout=group,trans_ab=case['trans'])
         torch.npu.synchronize();diff=calc_diff(out,reference)
@@ -171,9 +186,7 @@ def inspect_profile(case, root, cache):
     if len(matches)!=1:raise ValueError('captured binary not uniquely identified in JIT cache')
     if case['target']=='paged_sparse_mqa_logits_impl':
         source=(matches[0].parent/'kernel.asc').read_text()
-        phase=re.search(r'paged_sparse_mqa_logits_impl\s*<\s*(true|false)',source)
-        expected='true' if case.get('sparse_phase','reuse')=='first' else 'false'
-        if not phase or phase.group(1)!=expected:raise ValueError('captured FIRST/REUSE specialization mismatch')
+        validate_sparse_specialization(source,case.get('sparse_phase','reuse'))
     metrics={}
     for metric in base.METRICS:
         p=directory/(metric+'.csv'); rows=base.read_csv(p)

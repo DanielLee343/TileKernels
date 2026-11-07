@@ -1,0 +1,34 @@
+{
+  "case_id": "transform-int16-mn-g8-mn128-k7168",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream test_layout.check_layout exact output and strides",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.int16",
+        "shape": [
+          16,
+          112
+        ],
+        "stride": [
+          1,
+          16
+        ],
+        "sha256": "8b49015a0f599fa62ddf14f488134a05f2a9cd3dc6d902dd45bc55f8625925f3"
+      },
+      128,
+      7168,
+      [
+        8,
+        8,
+        32
+      ]
+    ],
+    "kwargs": {
+      "is_sfa": true
+    }
+  }
+}

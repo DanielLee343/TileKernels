@@ -1,0 +1,16 @@
+{
+  "case_id": "sleep-cycles1000000-marker3",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "auxiliary sleep completed and synchronized; no numerical output",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      1000000
+    ],
+    "kwargs": {
+      "marker": 3
+    }
+  }
+}

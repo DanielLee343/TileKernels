@@ -31,6 +31,7 @@ def worker(case,source,stage,output):
     build=json.loads((Path(source).parent/'build-result.json').read_text())
     if build.get('status')!='built' or base.file_hash(deep_gemm._C.__file__)!=build.get('extension_sha256'):
         raise ValueError('running extension is not the isolated 28-core port')
+    torch.npu.set_device(0)
     if deep_gemm.get_num_sms()!=28:raise ValueError('expected physical 28-Cube board')
     os.environ.setdefault('MASTER_PORT','18361');torch.set_num_threads(4)
     _,world,group=init_dist(0,1)

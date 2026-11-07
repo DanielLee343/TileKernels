@@ -1,0 +1,57 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:51:32.835384663 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:51:38] [121300] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/paged_sparse_mqa_prepare.2c0b673ce211710f6134a70a4dc660a0/kernel.json
+[2026-11-07 12:51:38] [121300] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:51:38] [121300] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/paged_mqa_logits_metadata.16c8d92d7deac5e64528289a9ed77b5b/kernel.json
+[2026-11-07 12:51:38] [121300] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:51:39] [121300] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/paged_sparse_mqa_logits.592a45f278591625e79739f739074ca1/kernel.json
+[2026-11-07 12:51:39] [121300] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:51:39] [121300] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/paged_sparse_mqa_logits.b8cb7746afb5d68aebc56e532b297b78/kernel.json
+[2026-11-07 12:51:39] [121300] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:51:39] [121300] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb0ELb1ELj32ELj8ELm4352ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_
+[2026-11-07 12:51:39] [121300] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:51:39] [121300] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/paged_mqa_logits.df70b160a18d6c3c8362008208e68023/kernel.json
+[2026-11-07 12:51:39] [121300] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+ > Fmt=mxfp4, H=32, Paged BSZ=  2, SQ=   8, KV=    512, SPARSE_BLOCK_KV= 8, MAX_BLOCKS=  32: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb0ELb1ELj32ELj8ELm4352ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb0ELb1ELj32ELj8ELm4352ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_
+	Op Type: mix
+	Task Duration(us): 6.845000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 121300
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/paged_sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/profile/OPPROF_20261107125131_LZNUCOZMTCKIWUXK
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

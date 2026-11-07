@@ -1,0 +1,3 @@
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+ > Fmt=mxfp4, H=20, Paged BSZ=  2, SQ=   4, KV=   1024, SPARSE_BLOCK_KV=16, MAX_BLOCKS=  32: OK

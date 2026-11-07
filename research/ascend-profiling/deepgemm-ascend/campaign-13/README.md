@@ -1,10 +1,10 @@
 # 13 个 DeepGEMM-Ascend C++ kernel 采集
 
-入口清单和状态在 `STATUS.md`。`cases-initial.json`／`collect-initial.py` 对应首轮，`cases-expanded.json`／`collect-expanded.py` 对应 97-case 扩展轮；`cases-next.json`／`collect.py` 是下一批大 M 和首次调用的配置与脚本。每项 case 记录目标 kernel、调用入口、dtype、形状、布局与参数。不同目标可能使用同一算子输入，不能作为不同专家来源。
+入口清单和状态在 `STATUS.md`。`cases-initial.json`／`collect-initial.py` 对应首轮，`cases-expanded.json`／`collect-expanded.py` 对应 97-case 扩展轮；`cases-next-first.json`／`collect-next-first.py` 对应首次调用试点，`cases-next.json`／`collect.py` 包含下一批大 M、FP32 输出、首次调用和分组布局。每项 case 记录目标 kernel、调用入口、dtype、形状、布局与参数。不同目标可能使用同一算子输入，不能作为不同专家来源。
 
-下一批的 FIRST 处理和 28 核适配脚本目前是待实机验证的准备工作，不能据此宣称相关 case 已通过。
+FIRST 试点已在 hidev 通过；下一批分组布局和 28 核适配脚本仍需实机验证，不能据此宣称相关 case 已通过。
 
-各版脚本均读取同目录的 `cases.json`。重跑旧批次时，应在与 `pilot-bf16` 并列的隔离工作目录中，把对应历史清单复制为 `cases.json`，并执行同一批的脚本；不要在另一批正在运行时替换其清单或脚本。运行记录中的 SHA-256 可用于检查版本。
+各版脚本均读取同目录的 `cases.json`。重跑或运行某批时，应在与 `pilot-bf16` 并列的隔离工作目录中，把该批清单复制为 `cases.json`，并执行同一批的脚本；不要在另一批正在运行时替换其清单或脚本。运行记录中的 SHA-256 可用于检查版本。
 
 脚本调用上游的 GEMM、MQA、稀疏 MQA、layout 测试及其参考，先运行精度或语义检查，再调用 `msprof op --aic-metrics=Default --replay-mode=kernel`；目标 API 前预热 5 次，MSTX 范围与目标 kernel 名称过滤锁定采集对象。GEMM 采用上游 `GemmTestDesc` 参考和 cosine-like 差异 `<1e-5`；MQA 和稀疏 MQA 使用上游自己的判据；scale 转换使用上游的逐元素与步长检查。`sleep_impl` 没有数学输出，只检查可执行和同步，不应当成数值精度测试。
 
