@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "case_id": "mega-h512-i512-e8-top2-t32",
+  "stage": "prepare",
+  "experimental_port": true,
+  "input_hashes": {
+    "x": "e3e6ebdfcfe1968738cd1918185740be7793a30425e6240ebc1ec938b7aa00de",
+    "sf": "cbc1b4c023f101b01d122b2ef2b452ebca3e861e39f180519d72ea3f69ec4e56",
+    "routes": "6bf8312d03c5213b706d820dd265193861c76e15326d01f756919a93f6bda081",
+    "route_weights": "f5e72bec2b2bf96fe74c78e95b62167280cb1c821ae8cdef836895ee1dc76141",
+    "l1_weights": "9269f1114b2b7d9ba34444a1baab6f8395ea2b8663aa3655b1afbee288020e19",
+    "l1_sf": "fec6bbc8ad95d12b3966be019caf16ef21a6e9d8154932abacefa694e144d26a",
+    "l2_weights": "1564b6ad3df66181af6925dab705e75bac3044c087c74c99ac8fa8ae859a7f4f",
+    "l2_sf": "bb5d01e0f80473eecea5c1e89f6dd1de4f73650eb49922b6a8ef3ae963cffccd"
+  },
+  "zero_and_counts_passed": true,
+  "reference": "single-rank expert-wise upstream fp8xfp4 GEMM + upstream TileLang SwiGLU quant + fp32 combine",
+  "reference_sha256": "7753c635956693e0518419fa73e6750d16a99b3977c631c245f485482c4d8fe1",
+  "output_sha256": "7753c635956693e0518419fa73e6750d16a99b3977c631c245f485482c4d8fe1",
+  "diff": 0.0,
+  "max_token_diff": 0.0,
+  "threshold": 5e-06,
+  "max_abs_error": 0.0
+}

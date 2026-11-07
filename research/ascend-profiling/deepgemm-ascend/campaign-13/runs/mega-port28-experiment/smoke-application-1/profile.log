@@ -1,0 +1,177 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:46:03.242540669 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:46:07] [194688] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:46:07] [194688] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:10] [194688] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:46:10] [194688] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:12] [194688] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:46:12] [194688] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:12] [194688] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:46:12] [194688] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:13] [194688] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:46:13] [194688] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:13] [194688] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:46:13] [194688] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:46:20.621916795 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:46:24] [195332] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:46:24] [195332] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:27] [195332] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:46:27] [195332] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:29] [195332] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:46:29] [195332] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:29] [195332] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:46:29] [195332] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:29] [195332] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:46:29] [195332] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:30] [195332] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:46:30] [195332] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:46:36.000857388 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:46:40] [196043] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:46:40] [196043] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:43] [196043] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:46:43] [196043] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:45] [196043] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:46:45] [196043] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:45] [196043] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:46:45] [196043] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:46] [196043] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:46:46] [196043] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:46:46] [196043] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:46:46] [196043] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:46:54.778487819 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:46:58] [196706] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:46:58] [196706] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:01] [196706] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:47:01] [196706] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:03] [196706] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:47:03] [196706] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:03] [196706] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:47:03] [196706] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:04] [196706] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:47:04] [196706] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:04] [196706] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:47:04] [196706] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:47:10.160351698 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:47:15] [197352] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:47:15] [197352] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:17] [197352] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:47:17] [197352] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:19] [197352] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:47:19] [197352] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:19] [197352] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:47:19] [197352] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:20] [197352] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:47:20] [197352] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:20] [197352] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:47:20] [197352] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:47:26.620388361 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:47:30] [197994] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:47:30] [197994] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:33] [197994] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:47:33] [197994] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:34] [197994] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:47:34] [197994] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:34] [197994] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:47:34] [197994] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:35] [197994] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:47:35] [197994] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:35] [197994] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:47:35] [197994] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[W1107 13:47:41.032499289 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[2026-11-07 13:47:46] [198644] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:47:46] [198644] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:48] [198644] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:47:48] [198644] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:50] [198644] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:47:50] [198644] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:50] [198644] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:47:50] [198644] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:51] [198644] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:47:51] [198644] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:47:51] [198644] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:47:52] [198644] [BinaryInstrumentation.cpp:249] [WARN] Generate kernel from tune failed.
+[2026-11-07 13:47:52] [198644] [HijackedFuncOfAclrtLaunchKernelWithHostArgsImpl.cpp:186] [WARN] New function context get failed, dbi mode is 1
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 146, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 93, in main
+[rank0]:     if args.worker:worker(case,args.source,args.stage,args.output);return
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 69, in worker
+[rank0]:     if not bool(torch.isfinite(actual).all()):raise ValueError('nonfinite output')
+[rank0]:                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: ValueError: nonfinite output
+[ERROR] 2026-11-07-13:47:53 (PID:198644, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[W1107 13:47:58.598980475 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Child process exited with return value 1
+[ERROR] Get profiling data failed.
+[2026-11-07 13:48:03] [199479] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:48:03] [199479] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:48:05] [199479] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:48:05] [199479] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:48:07] [199479] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:48:07] [199479] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:48:07] [199479] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:48:07] [199479] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:48:08] [199479] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:48:08] [199479] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:48:08] [199479] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:48:08] [199479] [BinaryInstrumentation.cpp:155] [WARN] dump probe symbols failed.
+[2026-11-07 13:48:08] [199479] [BinaryInstrumentation.cpp:222] [WARN] generate link ordering file failed
+[2026-11-07 13:48:08] [199479] [HijackedFuncOfAclrtLaunchKernelWithHostArgsImpl.cpp:186] [WARN] New function context get failed, dbi mode is 7
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 146, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 93, in main
+[rank0]:     if args.worker:worker(case,args.source,args.stage,args.output);return
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 69, in worker
+[rank0]:     if not bool(torch.isfinite(actual).all()):raise ValueError('nonfinite output')
+[rank0]:                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: ValueError: nonfinite output
+[ERROR] 2026-11-07-13:48:09 (PID:199479, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[WARN]  Child process exited with return value 1
+[ERROR] Get profiling data failed.
+[WARN]  Profiling running finished. May cause generating performance files to fail.
+[WARN]  Running task failed, data parsing start
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+	Op Type: mix
+	Task Duration(us): 21.318001
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-application-1/profile/OPPROF_20261107134602_DJYBDHJWXGUVKOWR
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,21 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "status": "built",
+  "experimental": true,
+  "original_header_sha256": "665037e4dbe5801d70847a3da77eec78e7b25874d899f478ab8310cae4b9d590",
+  "patched_header_sha256": "e765ea8e9ff6a17c71c16f71f487de2cef945d219e45d631251be27416315896",
+  "change": "kNumAICores 32 -> 28 in isolated source copy",
+  "command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "--no-cache-dir",
+    "--target",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/packages",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/source"
+  ],
+  "extension_sha256": "2af2716b832905c8d4ad8840af2eb5ae9d9265c092c8ddac4e3aaee04a7539ee"
+}

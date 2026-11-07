@@ -1,0 +1,168 @@
+{
+  "case": {
+    "id": "mega-h512-i1024-e8-top4-t64",
+    "family": "mega",
+    "target": "mega_moe_impl",
+    "api": "fp8_fp4_mega_moe",
+    "hidden": 512,
+    "intermediate": 1024,
+    "experts": 8,
+    "topk": 4,
+    "tokens": 64
+  },
+  "status": "passed",
+  "experimental_port": true,
+  "replay_mode": "range",
+  "profiler_warmup": 0,
+  "profiler_timeout": 90,
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "build": {
+    "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+    "status": "built",
+    "experimental": true,
+    "original_header_sha256": "665037e4dbe5801d70847a3da77eec78e7b25874d899f478ab8310cae4b9d590",
+    "patched_header_sha256": "e765ea8e9ff6a17c71c16f71f487de2cef945d219e45d631251be27416315896",
+    "change": "kNumAICores 32 -> 28 in isolated source copy",
+    "command": [
+      "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-build-isolation",
+      "--no-deps",
+      "--no-cache-dir",
+      "--target",
+      "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/packages",
+      "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/source"
+    ],
+    "extension_sha256": "2af2716b832905c8d4ad8840af2eb5ae9d9265c092c8ddac4e3aaee04a7539ee"
+  },
+  "runner_sha256": "d31489e80f0d335a9422bcc7bf3ca50daacf8b3efb7a282dbe72a41b834d2eb4",
+  "reference_sha256": "c9e90acd3e7731b62259a8b39ee784d6e1d72965efc7e96ce320ad5b87385d55",
+  "source_test_sha256": "a06775c7afd80344dd1986a44d8f5e7a4e8799fa3e01aa2c6e31677722528f16",
+  "upstream_swiglu_sha256": "a2ad925045462dd036096f1f675270dae4256ba440413bbd7aaed28509e1ab75",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py",
+    "--worker",
+    "--case",
+    "mega-h512-i1024-e8-top4-t64",
+    "--source",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/source",
+    "--stage",
+    "prepare",
+    "--output",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/prepare.json"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=range",
+    "--mstx=true",
+    "--mstx-include=dg_mega_port",
+    "--kernel-name=*mega_moe_impl*",
+    "--launch-count=1",
+    "--warm-up=0",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py",
+    "--worker",
+    "--case",
+    "mega-h512-i1024-e8-top4-t64",
+    "--source",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/source",
+    "--stage",
+    "profile",
+    "--output",
+    "/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/profile.json"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj8ELj0ELj64ELj4ELj512ELj1024EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE",
+    "op_type": "mix",
+    "jit_binary_sha256": "07c79cdc152d1a7931b42caf1106018b528bc6617748c114a1b27ee889df7ffd"
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/OpBasicInfo.csv": {
+      "sha256": "d1fcda88a76962627ec11dd3298f5e3986116bb226d901d384830f33a517a741",
+      "bytes": 279
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/PipeUtilization.csv": {
+      "sha256": "7b5d46e2b66fba9e694bf66ba09108d9b26b81e155f5f21d1bec212f9eb9eea4",
+      "bytes": 17011
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/ArithmeticUtilization.csv": {
+      "sha256": "8ba63828250cf560f335cf3682db0f3ed8b84b8d331772ab77ec50a2ee582676",
+      "bytes": 7355
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/L2Cache.csv": {
+      "sha256": "1f6ceb086ee66336044e7b919375d24ba362a82b3b75bba7d480f31e8d1d60b1",
+      "bytes": 11215
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/Memory.csv": {
+      "sha256": "325dc32d40d75a93747141bffb9b3628727d6c01837efe25439620246e437c77",
+      "bytes": 16891
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/ResourceConflictRatio.csv": {
+      "sha256": "9ec3d1581ab8331cad30b5337394cc486e3c82abd2d40cbc21c195c8d3729f00",
+      "bytes": 8269
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/MemoryL0.csv": {
+      "sha256": "a4324d0b08a5c163b6c575fc5b014acaace8c0a417ffee92b80c52cfc8abed95",
+      "bytes": 5546
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/MemoryUB.csv": {
+      "sha256": "413143e8c83d005ef57adccce34dfbfe22a4473c5926b56295f9dd5bb45fe0f1",
+      "bytes": 5007
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/visualize_data.bin": {
+      "sha256": "d1ed9f87284ab2b3d9f501037a8577ad059d315f2da29db579a2a12aa73d2265",
+      "bytes": 290416
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/aicore_binary.o": {
+      "sha256": "07c79cdc152d1a7931b42caf1106018b528bc6617748c114a1b27ee889df7ffd",
+      "bytes": 53096
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/pc_start_addr.txt": {
+      "sha256": "ea6a97b76163d17fcdaa588da2801042308c2795f4a63194a5f75573de37242e",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/op_basic_info.txt": {
+      "sha256": "ec2d4a6f2839e31890990d7196662f304fcc244e24209352575c384272cd6db6",
+      "bytes": 283
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf1.bin": {
+      "sha256": "9625c9032f7fe0f5b78d48725f72bbc305031cc65692dbc169266f06fcf47079",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/duration.bin": {
+      "sha256": "133ba2c26cb75cf60f1cdd3a7d433518642998098feff61a7b20d71869f893ff",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf2.bin": {
+      "sha256": "59bfb8a7aec06c8baa6391d734ac703680fa2b9c0e3dd59413cfb38a30ac8c05",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf3.bin": {
+      "sha256": "6935ed544c3ca0add0ae6754c5123a6fbd9cb902ee58f7731468e1db3f2c3453",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf4.bin": {
+      "sha256": "6b7862efc3f45d62e4fd9727092f164c2c2026c8d1d312aeed3d0eca5b7bd3aa",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf5.bin": {
+      "sha256": "34c13cf4ccc15de6ac2bda1568f13346a63fbde9f1cf22c780ad14992dc41151",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC/dump/DeviceProf6.bin": {
+      "sha256": "21919a5ebb080ea957d34734035c2ca8ecd0f94ffbe4ee0fa95612ddd43f28a7",
+      "bytes": 11008
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

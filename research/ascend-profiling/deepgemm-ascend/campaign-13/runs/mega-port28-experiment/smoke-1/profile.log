@@ -1,0 +1,74 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:39:01.874764446 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:39:07] [191830] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:39:07] [191830] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:39:10] [191830] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:39:10] [191830] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:39:12] [191830] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:39:12] [191830] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:39:12] [191830] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:39:12] [191830] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:39:13] [191830] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:39:13] [191830] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:39:13] [191830] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:39:13] [191830] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 13:39:15] [191830] [BinaryInstrumentation.cpp:249] [WARN] Generate kernel from tune failed.
+[2026-11-07 13:39:15] [191830] [HijackedFuncOfAclrtLaunchKernelWithHostArgsImpl.cpp:186] [WARN] New function context get failed, dbi mode is 1
+[2026-11-07 13:39:15] [191830] [BinaryInstrumentation.cpp:155] [WARN] dump probe symbols failed.
+[2026-11-07 13:39:15] [191830] [BinaryInstrumentation.cpp:222] [WARN] generate link ordering file failed
+[2026-11-07 13:39:15] [191830] [HijackedFuncOfAclrtLaunchKernelWithHostArgsImpl.cpp:186] [WARN] New function context get failed, dbi mode is 7
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 141, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 91, in main
+[rank0]:     if args.worker:worker(case,args.source,args.stage,args.output);return
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 68, in worker
+[rank0]:     if not bool(torch.isfinite(actual).all()):raise ValueError('nonfinite output')
+[rank0]:                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: ValueError: nonfinite output
+[ERROR] 2026-11-07-13:39:16 (PID:191830, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[WARN]  Child process exited with return value 1
+[ERROR] Get profiling data failed.
+[WARN]  Profiling running finished. May cause generating performance files to fail.
+[WARN]  Running task failed, data parsing start
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+	Op Type: mix
+	Task Duration(us): 23.028000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 191830
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-1/profile/OPPROF_20261107133900_TCDRMVOWWRUNVINO
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,10 @@
+Op Name=_ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj8ELj0ELj64ELj4ELj512ELj1024EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+Block Dim=28
+Run Soc Version=Ascend950PR_9579
+Device Id=0
+Pid=205566
+Is MC2=0
+Is Lccl=0
+Has Simt=1
+Current Freq=1650
+Rated Freq=1650

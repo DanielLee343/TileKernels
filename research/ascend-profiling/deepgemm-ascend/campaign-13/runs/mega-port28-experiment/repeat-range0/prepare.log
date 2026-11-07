@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 152, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 95, in main
+    if args.worker:worker(case,args.source,args.stage,args.output);return
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/mega_port_run.py", line 34, in worker
+    raise ValueError('running extension is not the isolated 28-core port')
+ValueError: running extension is not the isolated 28-core port
+[ERROR] 2026-11-07-13:56:23 (PID:206576, Device:-1, RankID:-1) ERR99999 UNKNOWN applicaiton exception

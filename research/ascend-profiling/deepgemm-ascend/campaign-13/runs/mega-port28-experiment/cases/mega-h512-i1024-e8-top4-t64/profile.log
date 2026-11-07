@@ -1,0 +1,56 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:53:46.594623909 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:53:50] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:53:50] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:53] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/mega_moe.80549de62c306925ccec88a5aaeeaa86/kernel.json
+[2026-11-07 13:53:53] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:56] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:53:56] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:56] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/fp8_dequant_gemm.497310af319896df6bd178f5f24b9b70/kernel.json
+[2026-11-07 13:53:56] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:56] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/fp8_dequant_gemm.7804fe9bf29422045e3010b529e4384f/kernel.json
+[2026-11-07 13:53:56] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:57] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/fp8_dequant_gemm.b21b0b01d0bc06ac45e620a5ff237caa/kernel.json
+[2026-11-07 13:53:57] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:57] [205566] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/cache/cache/fp8_dequant_gemm.81ca5556f86c9f5ca89c41d6a2539013/kernel.json
+[2026-11-07 13:53:57] [205566] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:53:57] [205566] [ProfDataCollect.cpp:1261] [INFO] Kernel will profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj8ELj0ELj64ELj4ELj512ELj1024EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj8ELj0ELj64ELj4ELj512ELj1024EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore compute usage lower than 20%.
+	4) aivector MTE2 bandwidth utilization lower than 80% when active.
+	5) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj8ELj0ELj64ELj4ELj512ELj1024EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+	Op Type: mix
+	Task Duration(us): 36.722000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 205566
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/mega-port28-experiment/cases/mega-h512-i1024-e8-top4-t64/profile/OPPROF_20261107135344_GMNELEFDZJRPIHXC
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

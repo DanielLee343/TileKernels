@@ -4,7 +4,7 @@
 
 `cases-last.json`／`collect-last.py` 对应 head_dim=64 的连续 MQA 和 8 组 M-group GEMM；它们已采集。当前 `collect.py` 增加了可选择的 replay 模式和 profiler 子进程错误检查，`cases-last.json`／`collect.py` 对应 3 次 range replay 复采。
 
-FIRST 试点已在 hidev 通过；下一批分组布局和 28 核适配脚本仍需实机验证，不能据此宣称相关 case 已通过。
+FIRST 和分组试点已在 hidev 通过；28 核适配是与原版分开的实验，不自动视为原版专家实现。
 
 各版脚本均读取同目录的 `cases.json`。重跑或运行某批时，应在与 `pilot-bf16` 并列的隔离工作目录中，把该批清单复制为 `cases.json`，并执行同一批的脚本；不要在另一批正在运行时替换其清单或脚本。运行记录中的 SHA-256 可用于检查版本。
 
@@ -25,3 +25,5 @@ python -B campaign-13/collect.py batch --source source --output NEW_OUTPUT --cac
 默认是 kernel replay；需要复现单独的 range replay case 时，追加 `--replay-mode range`。两种结果需按 replay 模式分别使用。
 
 MegaMoE 所要求的 32 Cube 核与本机 28 核不符；不要伪造核数或将修改后的结果误当成原版专家数据。
+
+隔离 28 核适配实验的 4 个 case、采集口径、失败尝试和复现命令见 `MEGAMOE_28_EXPERIMENT.md`。数据独立存放在 `runs/mega-port28-experiment`，以 `python -B campaign-13/verify_mega_port.py` 验证，不并入原版专家数据。

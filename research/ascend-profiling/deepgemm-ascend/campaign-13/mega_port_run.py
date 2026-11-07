@@ -7,6 +7,7 @@ import json
 import math
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -85,11 +86,17 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--worker',action='store_true')
     parser.add_argument('--case',required=True);parser.add_argument('--stage');parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--source',type=Path,required=True);parser.add_argument('--device',type=int,default=0)
+    parser.add_argument('--replay-mode',choices=('kernel','range','application'),default='kernel')
+    parser.add_argument('--profiler-warmup',type=int,default=5)
+    parser.add_argument('--profiler-timeout',type=int,default=180)
     args=parser.parse_args();cases=json.loads((ROOT/'cases.json').read_text())['cases'];matches=[c for c in cases if c['id']==args.case]
     if len(matches)!=1 or matches[0]['family']!='mega':raise ValueError('unknown MegaMoE case')
     case=matches[0]
     if args.worker:worker(case,args.source,args.stage,args.output);return
-    out=args.output.resolve();out.mkdir(parents=True,exist_ok=False);state={'case':case,'status':'running','experimental_port':True}
+    if not 0<=args.profiler_warmup<=500 or not 30<=args.profiler_timeout<=600:
+        raise ValueError('profiler warmup or timeout out of range')
+    out=args.output.resolve();out.mkdir(parents=True,exist_ok=False);state={'case':case,'status':'running','experimental_port':True,
+        'replay_mode':args.replay_mode,'profiler_warmup':args.profiler_warmup,'profiler_timeout':args.profiler_timeout}
     try:
         idle,state['device_before']=base.device_idle(args.device)
         if not idle:raise RuntimeError('device busy')
@@ -105,11 +112,15 @@ def main():
         pre=common+['--stage','prepare','--output',str(out/'prepare.json')]
         state['prepare_command']=pre;state['prepare_exit']=base.run_logged(pre,env,out/'prepare.log',timeout=180)
         if state['prepare_exit']:raise RuntimeError('prepare failed')
-        command=['msprof','op','--output='+str(out/'profile'),'--aic-metrics=Default','--replay-mode=kernel',
-            '--mstx=true','--mstx-include=dg_mega_port','--kernel-name=*mega_moe_impl*','--launch-count=1','--warm-up=5']
+        command=['msprof','op','--output='+str(out/'profile'),'--aic-metrics=Default','--replay-mode='+args.replay_mode,
+            '--mstx=true','--mstx-include=dg_mega_port','--kernel-name=*mega_moe_impl*','--launch-count=1',
+            '--warm-up='+str(args.profiler_warmup)]
         command+=common+['--stage','profile','--output',str(out/'profile.json')]
-        state['profile_command']=command;state['profile_exit']=base.run_logged(command,env,out/'profile.log',timeout=180)
+        state['profile_command']=command;state['profile_exit']=base.run_logged(command,env,out/'profile.log',timeout=args.profiler_timeout)
         if state['profile_exit']:raise RuntimeError('profile failed')
+        log=(out/'profile.log').read_text(errors='replace')
+        if re.search(r'Child process exited with return value -?[1-9]\d*|\[ERROR\]',log):
+            raise RuntimeError('profiler reported a child or collection error')
         a=json.loads((out/'prepare.json').read_text());b=json.loads((out/'profile.json').read_text())
         for k in ('input_hashes','reference_sha256','output_sha256'):
             if a[k]!=b[k]:raise ValueError('prepare/profile mismatch: '+k)

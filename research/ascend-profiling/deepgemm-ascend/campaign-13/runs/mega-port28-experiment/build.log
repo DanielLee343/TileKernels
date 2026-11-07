@@ -1,0 +1,11 @@
+Processing ./mega-port28-experiment/source
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: deep_gemm
+  Building wheel for deep_gemm (pyproject.toml): started
+  Building wheel for deep_gemm (pyproject.toml): finished with status 'done'
+  Created wheel for deep_gemm: filename=deep_gemm-0.1.1-cp312-cp312-linux_x86_64.whl size=2239045 sha256=a1043ad01c9d89054f9993e6fe8c1d27ce5fd8ad2f787558817fe15b95c19479
+  Stored in directory: /tmp/pip-ephem-wheel-cache-zq4j1njw/wheels/5b/94/48/bb4b288e9ad7d1d3efa7bd531caff3bcd27941155eb994b2fc
+Successfully built deep_gemm
+Installing collected packages: deep_gemm
+Successfully installed deep_gemm-0.1.1

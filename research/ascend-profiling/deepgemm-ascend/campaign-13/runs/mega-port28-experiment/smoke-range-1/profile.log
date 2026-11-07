@@ -1,0 +1,21 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:40:36.962013276 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:40:41] [193201] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/lib64/hccl_aiv_op_910_95.json
+[2026-11-07 13:40:41] [193201] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:40:44] [193201] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-range-1/cache/cache/mega_moe.c0c3c14700b43c9f2ed7ea86a81ba9d0/kernel.json
+[2026-11-07 13:40:44] [193201] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:40:46] [193201] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-range-1/cache/cache/transform_sf.0b11a45fc4fe2f2611ef1a3e723f3d46/kernel.json
+[2026-11-07 13:40:46] [193201] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:40:46] [193201] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-range-1/cache/cache/fp8_dequant_gemm.d14b06a446cabc4f5c83a38d26ff4548/kernel.json
+[2026-11-07 13:40:46] [193201] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:40:47] [193201] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/mega-port28-experiment/smoke-range-1/cache/cache/fp8_dequant_gemm.da63ba3283ffe9ae5c4c0b8beda599e3/kernel.json
+[2026-11-07 13:40:47] [193201] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:40:48] [193201] [ProfDataCollect.cpp:1261] [INFO] Kernel will profiling on device 0, kernel: _ZN9deep_gemm8mega_moe13mega_moe_implILj1ELj4ELj0ELj16ELj2ELj256ELj512EEEvPu6__bf16PiPKhPKsS5_S7_S5_S7_S5_S7_jfNS_6layout9SymBufferILj256EEE
+[2026-11-07 13:40:48] [193201] [ProfDataCollect.cpp:1352] [INFO] Warm Up enabled. times:5
