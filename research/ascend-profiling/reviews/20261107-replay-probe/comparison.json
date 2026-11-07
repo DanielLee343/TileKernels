@@ -1,0 +1,16 @@
+[
+  {
+    "actual_sha256": "021252983e89dd0f904534a50cb3033aa60cf7565abe90805c278891f89de3f9",
+    "once_sha256": "021252983e89dd0f904534a50cb3033aa60cf7565abe90805c278891f89de3f9",
+    "twice_sha256": "309d0dac18855866c1dd64e68da1924233b1493698a5ae8eab746768449a791b",
+    "actual_differs_once": 0,
+    "once_differs_twice": 4096
+  },
+  {
+    "actual_sha256": "4bfb083eb80bf1a000d8f205148be1ebb2ecea05dc4b94b4cb1494dbde4adef8",
+    "once_sha256": "4bfb083eb80bf1a000d8f205148be1ebb2ecea05dc4b94b4cb1494dbde4adef8",
+    "twice_sha256": "ee178849b42fcd5047f3573af3893b95183f61c4edd2d5116a287e36dc408759",
+    "actual_differs_once": 0,
+    "once_differs_twice": 4096
+  }
+]
