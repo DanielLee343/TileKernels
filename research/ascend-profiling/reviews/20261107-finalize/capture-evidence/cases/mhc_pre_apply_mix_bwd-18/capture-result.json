@@ -1,0 +1,79 @@
+{
+  "id": "mhc_pre_apply_mix_bwd-18",
+  "family": "mhc_pre_apply_mix_bwd",
+  "phase": "capture",
+  "started": 1794036427.526711,
+  "command": [
+    "msprof",
+    "op",
+    "--output=/workspace/tilekernels-finalize-20261107/cases/mhc_pre_apply_mix_bwd-18/capture",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=mhc_pre_apply_bwd_target",
+    "--kernel-name=mhc_pre_apply_mix_bwd_asc_kernel",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/tilekernels-finalize-20261107/accuracy_worker.py",
+    "capture",
+    "mhc_pre_apply_mix_bwd-18"
+  ],
+  "returncode": 0,
+  "same_source": true,
+  "same_inputs": true,
+  "same_kernel": true,
+  "original_cpu_reference": "failed",
+  "metrics": {
+    "OpBasicInfo": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/OpBasicInfo.csv",
+      "bytes": 175,
+      "sha256": "b2f2bf70cc2924ba9242b9da6900b84d0843aa3b81f41ab4f9d2db94d99136fc",
+      "rows": 1
+    },
+    "ArithmeticUtilization": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/ArithmeticUtilization.csv",
+      "bytes": 5315,
+      "sha256": "b83bdeba91a76450c24dadbb2cf6a475197c4f204d2c46945b1c6bc94ee99ec2",
+      "rows": 56
+    },
+    "L2Cache": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/L2Cache.csv",
+      "bytes": 8435,
+      "sha256": "5dec51fa5db46d24241f43af6b2cc81949f858c6bd1edf343e11445cdd2bc378",
+      "rows": 56
+    },
+    "Memory": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/Memory.csv",
+      "bytes": 11603,
+      "sha256": "dedec26f3efe1a8c17bdeef6f99c2230a305e541c1a47877c0bc10b6e188e417",
+      "rows": 56
+    },
+    "MemoryL0": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/MemoryL0.csv",
+      "bytes": 3242,
+      "sha256": "a53897f8bb627738dcaff6b35b23f8fd676760a5df7a910df7641a4ba84b2ccd",
+      "rows": 56
+    },
+    "MemoryUB": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/MemoryUB.csv",
+      "bytes": 4043,
+      "sha256": "e51c453dc7ed4caa4ddab3cc05d98998e2cddf1ef5a67e0f52f2772209c18cfc",
+      "rows": 56
+    },
+    "PipeUtilization": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/PipeUtilization.csv",
+      "bytes": 11082,
+      "sha256": "4c6cf4bb772851662c796b5908486dae5d92ca8e4239a111026727685996be9a",
+      "rows": 56
+    },
+    "ResourceConflictRatio": {
+      "path": "cases/mhc_pre_apply_mix_bwd-18/capture/OPPROF_20261107072707_LGNDJXHNTIGXJDRM/ResourceConflictRatio.csv",
+      "bytes": 5993,
+      "sha256": "925d88667b3fd4d56672d4fed6a7819ece8226a2e43203fc5ac700e5f3040ee1",
+      "rows": 56
+    }
+  },
+  "status": "completed"
+}

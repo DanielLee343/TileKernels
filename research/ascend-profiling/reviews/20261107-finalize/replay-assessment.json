@@ -1,0 +1,4972 @@
+{
+  "cases": [
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-01",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-01/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-01",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-02",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-02/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-02",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 768,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-03",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-03/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-03",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 768,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-04",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-04/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-04",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 7168,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-05",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-05/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-05",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 512,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-06",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-06/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-06",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 8001,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-07",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-07/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-07",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 4096,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-08",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-08/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-08",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 6144,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-09",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-09/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-09",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-10",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-10/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-10",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 8001,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-11",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-11/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-11",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 512,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-12",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-12/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-12",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 4096,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-13",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-13/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-13",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 6144,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-14",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-14/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-14",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 7168,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-15",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-15/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-15",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 512,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-16",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-16/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-16",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 8001,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-17",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-17/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-17",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-18",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-18/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-18",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-19",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-19/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-19",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_bwd-20",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_bwd-20/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_bwd-20",
+      "family": "engram_gate_bwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-01",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-01/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-01",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 128,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-02",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-02/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-02",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 768,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-03",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-03/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-03",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 128,
+        "num_tokens": 512,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-04",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-04/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-04",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 7168,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-05",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-05/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-05",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 8001,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-06",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-06/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-06",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-07",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-07/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-07",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-08",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-08/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-08",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 384,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-09",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-09/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-09",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 4096,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-10",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-10/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-10",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 6144,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-11",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-11/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-11",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2048,
+        "num_tokens": 512,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-12",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-12/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-12",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 2560,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-13",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-13/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-13",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 3072,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-14",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-14/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-14",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 384,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-15",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-15/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-15",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 4096,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-16",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-16/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-16",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 6144,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-17",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-17/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-17",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 7168,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-18",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-18/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-18",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 768,
+        "num_tokens": 512,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-19",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-19/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-19",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 128,
+        "num_tokens": 8001,
+        "with_mask": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_gate_fwd-20",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_gate_fwd-20/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "engram_gate_fwd-20",
+      "family": "engram_gate_fwd",
+      "params": {
+        "hc": 4,
+        "hidden": 128,
+        "num_tokens": 8001,
+        "with_mask": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-01",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-01",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-02",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-02",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 1280
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-03",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-03",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-04",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-04",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 1536
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-05",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-05",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 1792
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-06",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-06/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-06/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-06",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-07",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-07",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 2048
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-08",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-08",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 2560
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-09",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-09",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-10",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-10",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 3072
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-11",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-11/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-11/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-11",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 320
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-12",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-12/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-12/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-12",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 3584
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-13",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-13",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 384
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-14",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-14/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-14",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 4096
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-15",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-15",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 5120
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-16",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-16",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-17",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-17",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 6144
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-18",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-18",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 64
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-19",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-19",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 7168
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_grad_w_reduce-20",
+          "evidence": "replay-evidence/cases/engram_grad_w_reduce-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra/cases/engram_grad_w_reduce-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_grad_w_reduce-20",
+      "family": "engram_grad_w_reduce",
+      "params": {
+        "hidden": 768
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-01",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-01",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "numel": 256256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-02",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-02",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 512000512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-03",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-03",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "numel": 2560256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-04",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-04",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "numel": 51200512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-05",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-05",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "numel": 2560256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-06",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-06/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-06/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-06",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "numel": 512000512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-07",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-07",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "numel": 51200512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-08",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-08",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "fp32",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 256256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-09",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-09",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "numel": 2560256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-10",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-10",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "numel": 2560256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-11",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-11/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-11/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-11",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": false,
+        "numel": 51200512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-12",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-12/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-12/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-12",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "numel": 256256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-13",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-13",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "numel": 512000512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-14",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-14/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-14",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "bf16",
+        "nesterov": true,
+        "numel": 51200512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-15",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-15",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "numel": 256256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-16",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-16",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": false,
+        "numel": 512000512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-17",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-17",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 2560256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-18",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-18",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 256256
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-19",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-19",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 512000512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_momentum_update-20",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_momentum_update-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_momentum_update-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_momentum_update-20",
+      "family": "engram_sinkhorn_momentum_update",
+      "params": {
+        "beta1": 0.95,
+        "grad_dtype": "bf16",
+        "momentum_dtype": "fp32",
+        "nesterov": true,
+        "numel": 51200512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-01",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-01",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 1
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-02",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-02",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 100001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-03",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-03",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 10001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-04",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-04",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 1001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-05",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-05",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-06",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-06/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-06/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-06",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-07",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-07",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 16384
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-08",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-08",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 32768
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-09",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-09",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 4096
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-10",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-10",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-11",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-11/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-11/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-11",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-12",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-12/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-12/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-12",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 256,
+        "num_rows": 100001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-13",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-13",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 10001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-14",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-14/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-14",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 1001
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-15",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-15",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-16",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-16",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-17",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-17",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 16384
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-18",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-18",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 1
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-19",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-19",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 32768
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "engram_sinkhorn_step-20",
+          "evidence": "replay-evidence/cases/engram_sinkhorn_step-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/engram_sinkhorn_step-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "engram_sinkhorn_step-20",
+      "family": "engram_sinkhorn_step",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 4096
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-01",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-01",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 64,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-02",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-02",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 8192,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-03",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-03",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 1024,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-04",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-04",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 128,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-05",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-05",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 1280,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-06",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-06/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-06/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-06",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 1536,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-07",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-07",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 1792,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-08",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-08",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 192,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-09",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-09",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 2048,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-10",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-10",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 256,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-11",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-11/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-11/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-11",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 2560,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-12",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-12/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-12/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-12",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 3072,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-13",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-13",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 320,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-14",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-14/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-14",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 3584,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-15",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-15",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 384,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-16",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-16",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 4096,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-17",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-17",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 4608,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-18",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-18",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 512,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-19",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-19",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 5120,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_fn_normw_merge_bwd-20",
+          "evidence": "replay-evidence/cases/mhc_fn_normw_merge_bwd-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra5/cases/mhc_fn_normw_merge_bwd-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_fn_normw_merge_bwd-20",
+      "family": "mhc_fn_normw_merge_bwd",
+      "params": {
+        "dtype": "fp32",
+        "hidden_size": 6144,
+        "mhc_mult": 4
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-01",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-01",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-03",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-03",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-05",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-05",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 4096
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-07",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-07",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-08",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-08",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 4096,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-13",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-13",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-15",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-15",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 1024
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-16",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-16",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-17",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-17",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 4096
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-19",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-19",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 4096,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 128
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "mhc_pre_apply_mix_bwd-20",
+          "evidence": "replay-evidence/cases/mhc_pre_apply_mix_bwd-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/mhc_pre_apply_mix_bwd-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "mhc_pre_apply_mix_bwd-20",
+      "family": "mhc_pre_apply_mix_bwd",
+      "params": {
+        "hidden": 4096,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 512
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-01",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-01/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-01",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 108,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-02",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-02/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-02",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 96,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-03",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-03/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-03",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 256,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 8
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-04",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-04/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-04",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 72,
+        "num_seqs": 1,
+        "num_shared_experts": 1,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-05",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-05/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-05",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 72,
+        "num_seqs": 2,
+        "num_shared_experts": 1,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-06",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-06/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-06",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 128,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-07",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-07/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-07",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 256,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 8
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-08",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-08/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-08",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": true,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 144,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-09",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-09/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-09",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": true,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 16,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-10",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-10/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-10",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 32,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-11",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-11/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-11",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 36,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-12",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-12/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-12",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 64,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-13",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-13/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-13",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": false,
+        "fix_routing": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 96,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-14",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-14/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-14",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": false,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 128,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-15",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-15/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-15",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": false,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 16,
+        "num_seqs": 1,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-16",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-16/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-16",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": false,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 144,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-17",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-17/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-17",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 108,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-18",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-18/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-18",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 32,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-19",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-19/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-19",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 36,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_backward-20",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/moe_topk_gate_backward-20/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_backward-20",
+      "family": "moe_topk_gate_backward",
+      "params": {
+        "aux_exists": true,
+        "bias_exists": true,
+        "fix_routing": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 64,
+        "num_seqs": 2,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-01",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-01/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-01",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 108,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-02",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-02/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-02",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 96,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-03",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-03/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-03",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 256,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 8,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-04",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-04/result.json",
+          "full_buffer_control": "full-control-evidence/cases/moe_topk_gate_forward-04/full-control-result.json",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-04/default.json",
+          "restore_call_count": 14,
+          "result": "full_buffer_unchanged"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-04",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 72,
+        "num_shared_experts": 1,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-05",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-05/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-05",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": true,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 128,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-06",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-06/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-06",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": false,
+        "force_random_exists": true,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 144,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-07",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-07/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-07",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": true,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 16,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-08",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-08/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-08",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 72,
+        "num_shared_experts": 1,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-09",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-09/result.json",
+          "full_buffer_control": "full-control-evidence/cases/moe_topk_gate_forward-09/full-control-result.json",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-09/default.json",
+          "restore_call_count": 14,
+          "result": "full_buffer_unchanged"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-09",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 256,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 8,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-10",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-10/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-10",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 32,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-11",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-11/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-11",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 36,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-12",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-12/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-12",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 64,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-13",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-13/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-13",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": false,
+        "force_random_exists": false,
+        "image_bias_exists": false,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 96,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-14",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-14/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-14",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": true,
+        "force_random_exists": false,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 144,
+        "num_shared_experts": 2,
+        "num_tokens": 512,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-15",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-15/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-15",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": false,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": false,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 128,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-16",
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-16/default.json",
+          "result": "original_inplace_restore_concern_not_applicable"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-16",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": false,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 0,
+        "num_routed_experts": 16,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "inplace_restore_not_applicable"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-17",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-17/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-17",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 108,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-18",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-18/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-18",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 32,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-19",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-19/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-19",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 36,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "moe_topk_gate_forward-20",
+          "evidence": "replay-evidence/cases/moe_topk_gate_forward-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-20/default.json",
+          "restore_call_count": 14,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "moe_topk_gate_forward-20",
+      "family": "moe_topk_gate_forward",
+      "params": {
+        "bias_exists": true,
+        "fix_routing": true,
+        "force_random_exists": true,
+        "image_bias_exists": true,
+        "num_padded_tokens": 10,
+        "num_routed_experts": 64,
+        "num_shared_experts": 2,
+        "num_tokens": 8001,
+        "num_topk": 6,
+        "scores_exists": true,
+        "use_shared_as_routed": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-02",
+          "evidence": "replay-evidence/cases/quant_norm_backward-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-02",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "fp32",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 768,
+        "num_sms": 28,
+        "num_tokens": 8001,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "fp32"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-04",
+          "evidence": "replay-evidence/cases/quant_norm_backward-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-04",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "fp32",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 7168,
+        "num_sms": 28,
+        "num_tokens": 8001,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "fp32"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-05",
+          "evidence": "replay-evidence/cases/quant_norm_backward-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-05",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "bf16",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 2048,
+        "num_sms": 28,
+        "num_tokens": 512,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-08",
+          "evidence": "replay-evidence/cases/quant_norm_backward-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-08",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "bf16",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 384,
+        "num_sms": 28,
+        "num_tokens": 512,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "fp32"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-09",
+          "evidence": "replay-evidence/cases/quant_norm_backward-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-09",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "bf16",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 4096,
+        "num_sms": 28,
+        "num_tokens": 8001,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-10",
+          "evidence": "replay-evidence/cases/quant_norm_backward-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-10",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "fp32",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 6144,
+        "num_sms": 28,
+        "num_tokens": 512,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-17",
+          "evidence": "replay-evidence/cases/quant_norm_backward-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-17",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "bf16",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 3072,
+        "num_sms": 28,
+        "num_tokens": 512,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-18",
+          "evidence": "replay-evidence/cases/quant_norm_backward-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-18",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "fp32",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 128,
+        "num_sms": 28,
+        "num_tokens": 8001,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_norm_backward-20",
+          "evidence": "replay-evidence/cases/quant_norm_backward-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/quant_norm_backward-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_norm_backward-20",
+      "family": "quant_norm_backward",
+      "params": {
+        "accumulate": true,
+        "eps": 1e-06,
+        "fmt": "bf16",
+        "has_out_grad": true,
+        "has_residual_out_grad": true,
+        "hidden": 2560,
+        "num_sms": 28,
+        "num_tokens": 512,
+        "out_scale": 0.3,
+        "row_padding": 16,
+        "use_weight": true,
+        "weight_grad_fmt": "bf16"
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-01",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-01/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-01/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-01",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-02",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-02/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-02/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-02",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 768,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-03",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-03/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-03/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-03",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 128,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 8001,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-04",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-04/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-04/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-04",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 7168,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-05",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-05/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-05/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-05",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 2048,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "num_tokens": 512,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-06",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-06/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-06/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-06",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 2560,
+        "in_dtype": "fp32",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-07",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-07/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-07/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-07",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 3072,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-08",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-08/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-08/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-08",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 384,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-09",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-09/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-09/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-09",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 4096,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-10",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-10/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-10/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-10",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 6144,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-11",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-11/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-11/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-11",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 2560,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-12",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-12/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-12/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-12",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 384,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-13",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-13/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-13/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-13",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 7168,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-14",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-14/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-14/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-14",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 768,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 512,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-15",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-15/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-15/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-15",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 2048,
+        "in_dtype": "fp32",
+        "num_per_channels": 16,
+        "num_tokens": 8001,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-16",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-16/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-16/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-16",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 4096,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-17",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-17/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-17/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-17",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 6144,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 8001,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-18",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-18/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-18/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-18",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 128,
+        "in_dtype": "fp32",
+        "num_per_channels": 32,
+        "num_tokens": 512,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-19",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-19/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-19/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-19",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e4m3",
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "num_per_channels": 16,
+        "num_tokens": 8001,
+        "round_sf": false,
+        "use_e4m3_sf": true
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "quant_per_token_cast_and_cast_back-20",
+          "evidence": "replay-evidence/cases/quant_per_token_cast_and_cast_back-20/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/quant_per_token_cast_and_cast_back-20/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "quant_per_token_cast_and_cast_back-20",
+      "family": "quant_per_token_cast_and_cast_back",
+      "params": {
+        "fmt": "e2m1",
+        "hidden": 3072,
+        "in_dtype": "bf16",
+        "num_per_channels": 32,
+        "num_tokens": 512,
+        "round_sf": true,
+        "use_e4m3_sf": false
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-01-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-01-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-01-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-01-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-01-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-01-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-01",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 1,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-02-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-02-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-02-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-02-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-02-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-02-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-02",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": true,
+        "dim": 64,
+        "dtype": "fp32",
+        "head_split": true,
+        "interleaved": true,
+        "nheads": 128,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-03-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-03-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-03-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-03-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-03-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-03-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-03",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": true,
+        "interleaved": true,
+        "nheads": 32,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-04-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-04-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-04-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-04-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-04-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-04-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-04",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 64,
+        "dtype": "fp32",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 5,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-05-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-05-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-05-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-05-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-05-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-05-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-05",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": true,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 128,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-06-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-06-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-06-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-06-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-06-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-06-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-06",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": true,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 5,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-07-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-07-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-07-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-07-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-07-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-07-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-07",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": true,
+        "dim": 128,
+        "dtype": "fp32",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 32,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-08-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-08-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-08-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-08-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-08-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-08-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-08",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": true,
+        "dim": 64,
+        "dtype": "bf16",
+        "head_split": true,
+        "interleaved": false,
+        "nheads": 1,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-09-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-09-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-09-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-09-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-09-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-09-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-09",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "fp32",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 1,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-10-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-10-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-10-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-10-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-10-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-10-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-10",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 128,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-11-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-11-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-11-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-11-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-11-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-11-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-11",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": true,
+        "interleaved": false,
+        "nheads": 5,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-12-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-12-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-12-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-12-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-12-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-12-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-12",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 64,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 32,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-13-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-13-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-13-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-13-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-13-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-13-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-13",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 32,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-14-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-14-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-14-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-14-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-14-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-14-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-14",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": false,
+        "nheads": 5,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-15-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-15-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-15-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-15-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-15-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-15-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-15",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 1,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-16-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-16-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-16-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-16-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-16-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-16-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-16",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 128,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-17-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-17-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-17-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-17-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-17-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-17-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-17",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 32,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-18-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-18-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-18-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-18-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-18-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-18-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-18",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": false,
+        "interleaved": true,
+        "nheads": 5,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-19-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-19-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-19-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-19-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-19-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-19-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-19",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": true,
+        "interleaved": false,
+        "nheads": 1,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    },
+    {
+      "captures": [
+        {
+          "capture_id": "rotary_embedding-20-q",
+          "evidence": "replay-evidence/cases/rotary_embedding-20-q/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-20-q/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        },
+        {
+          "capture_id": "rotary_embedding-20-k",
+          "evidence": "replay-evidence/cases/rotary_embedding-20-k/result.json",
+          "full_buffer_control": null,
+          "original_default": "research/ascend-profiling/runs/hidev-20261106-unified-extra4/cases/rotary_embedding-20-k/default.json",
+          "restore_call_count": 13,
+          "result": "sampled_values_restored"
+        }
+      ],
+      "case_id": "rotary_embedding-20",
+      "family": "rotary_embedding",
+      "params": {
+        "conjugate": false,
+        "dim": 128,
+        "dtype": "bf16",
+        "head_split": true,
+        "interleaved": false,
+        "nheads": 128,
+        "seqlen": 2001,
+        "seqlen_total": 8192
+      },
+      "replay_review": "instrumented_retest_supports_restore"
+    }
+  ],
+  "counts": {
+    "cases": 220,
+    "not_applicable": 70,
+    "restoration_supported": 150
+  },
+  "scope": "Independent instrumented rerun; content sampled except two full-buffer controls. Original status and raw performance profiles remain unchanged."
+}

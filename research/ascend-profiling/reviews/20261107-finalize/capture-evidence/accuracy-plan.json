@@ -1,0 +1,799 @@
+{
+  "cases": [
+    {
+      "case": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-03",
+        "pilot": false,
+        "plan_case_number": 3,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 127,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 127,
+        "topk": 32
+      },
+      "expected_inputs": [
+        {
+          "bytes": 16256,
+          "dtype": "float32",
+          "sha256": "2fdc257a393f30987aa2a3d9d4b44afa05af34518b4efe508a17dc4b10532adc",
+          "shape": [
+            127,
+            32
+          ],
+          "stride": [
+            32,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "17178c8bf051568e43297b43e1818cf0befee3f6f49ba891e6c8c357374a0935",
+      "family": "moe_normalize_weight",
+      "id": "normalize-03",
+      "range": "cold_call",
+      "runtime_kernel": "normalize_weight_kernel_kernel"
+    },
+    {
+      "case": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-16",
+        "pilot": false,
+        "plan_case_number": 16,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 128,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 128,
+        "topk": 32
+      },
+      "expected_inputs": [
+        {
+          "bytes": 16384,
+          "dtype": "float32",
+          "sha256": "d9dd722a13e7c1118adfa20a0809e2a0737174434cda25d0c6119c1917725217",
+          "shape": [
+            128,
+            32
+          ],
+          "stride": [
+            32,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "17178c8bf051568e43297b43e1818cf0befee3f6f49ba891e6c8c357374a0935",
+      "family": "moe_normalize_weight",
+      "id": "normalize-16",
+      "range": "cold_call",
+      "runtime_kernel": "normalize_weight_kernel_kernel"
+    },
+    {
+      "case": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-20",
+        "pilot": false,
+        "plan_case_number": 20,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 4001,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 4001,
+        "topk": 32
+      },
+      "expected_inputs": [
+        {
+          "bytes": 512128,
+          "dtype": "float32",
+          "sha256": "830ab14500d05ba74afeaf42d2307e54602d8f1ffeb68c1a170126230111e99b",
+          "shape": [
+            4001,
+            32
+          ],
+          "stride": [
+            32,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "17178c8bf051568e43297b43e1818cf0befee3f6f49ba891e6c8c357374a0935",
+      "family": "moe_normalize_weight",
+      "id": "normalize-20",
+      "range": "cold_call",
+      "runtime_kernel": "normalize_weight_kernel_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "16bd5fb585cf1a98e63ee4d4898951d65bc29e7f3dd20394c16ee98d47216142",
+          "shape": [
+            8001,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "2b1ec41064dd0e00acdfe919dc68f1bc5447ef950689d77bd23f65a603f6d1ad",
+          "shape": [
+            8001,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "a5a636bd868977318e476861f3c272cb1ab3634f4f47be39ef1c67a69942c3a5",
+          "shape": [
+            8001,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "a9ecf48c2fe6e83ff7fb6825cb5bd56019eff45e572a257b868d45756050a8f1",
+          "shape": [
+            8001,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "0d2810e961e3fee569e3f1dad5e2a6727ea885d1e2c3dc5450ba522ee1266183",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-02",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "1bda26f1f44e6db476069cbd50ef24ecedd2b330f28ac659f95dc43f1285ae60",
+          "shape": [
+            8192,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "a6e633fe6f1d49dbfbb399e95bc9161bb494c04818d5515d093ef4995d3dccfe",
+          "shape": [
+            8192,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "bee2618a6ab7bbf77fa5cb36b06aac8315278ca8bc1c3fceb89872897a6de4d9",
+          "shape": [
+            8192,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "8230a85965bbf64b3f310cf5bb266e1b076d81840b62b45ddace32c9e2b287fb",
+          "shape": [
+            8192,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "0d2810e961e3fee569e3f1dad5e2a6727ea885d1e2c3dc5450ba522ee1266183",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-04",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "897ba919a3e5c298f1ca20013861ae622b0df26c03753c4077cf89ba7bd802ef",
+          "shape": [
+            2048,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "59f596c9e115026b4d1f26d9ea3aeb00d3acda5e0fd7018f0de8b11d1512b2c3",
+          "shape": [
+            2048,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "95b0ae3f98a02d57f70780365022c99cc485730b15987755dc346274dcd94593",
+          "shape": [
+            2048,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "da32dd6643cc5c2b3763423eabcf801fab69769e00d39678abc88f3ad6e9e919",
+          "shape": [
+            2048,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "0d2810e961e3fee569e3f1dad5e2a6727ea885d1e2c3dc5450ba522ee1266183",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-06",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 1024
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "a94d2453d06db44906f01bc095074d94e04ecc024431fbf86a66d0cb05765fc3",
+          "shape": [
+            1024,
+            5120
+          ],
+          "stride": [
+            5120,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "5779ec6a922692d182cb64b59496018c8b7931876a541f4bdfc054fc56ea7ca9",
+          "shape": [
+            1024,
+            4,
+            5120
+          ],
+          "stride": [
+            20480,
+            5120,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "ce748a2ed24195c0643deb3a3bcb7a442582f99ca7e7767aabc79ae724adafae",
+          "shape": [
+            1024,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "aa03999704d439bae61590c521a48e7efb1374c0c6a68670a4b02132367e80a1",
+          "shape": [
+            1024,
+            4,
+            5120
+          ],
+          "stride": [
+            20480,
+            5120,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "f4cce3fc676c00d7ae18e5c4ab764eac33821ddc9002797f4b0125f02ac1986e",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-09",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 1024
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "7fbe8a771b809cb0c1b3111dcdbbdeb3c3809995aa8ff189e3014c4bae1b296e",
+          "shape": [
+            2048,
+            2560
+          ],
+          "stride": [
+            2560,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "5779ec6a922692d182cb64b59496018c8b7931876a541f4bdfc054fc56ea7ca9",
+          "shape": [
+            2048,
+            4,
+            2560
+          ],
+          "stride": [
+            10240,
+            2560,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "b492cf96a190939422950fe76cc59768ba12e4ac5670653b35c4b3f6e028a728",
+          "shape": [
+            2048,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "a492e5e9afd9118a8fce7a4277031d573489b7094aadd7bc03a653d552f34c63",
+          "shape": [
+            2048,
+            4,
+            2560
+          ],
+          "stride": [
+            10240,
+            2560,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "ff1b99df39ae1fc6e7ff4a89a4beadac9f548a6064ce13f38f4e78f8a47552be",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-10",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 1024
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "3e4daf28137303529d9d868da62bbf81c9e2deb92fec73be9d496c340b68c835",
+          "shape": [
+            8192,
+            4096
+          ],
+          "stride": [
+            4096,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "cf28d8b16f2c25acb5ad4605b9db20ad9f83a565df8ed214c2613bdad21c1ebf",
+          "shape": [
+            8192,
+            4,
+            4096
+          ],
+          "stride": [
+            16384,
+            4096,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "1a745b96aca680e843cfa086c09aeab9b67667c5f573e9a238eb5bcd8e2d7b0b",
+          "shape": [
+            8192,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "490fb2f6771391fc2de49e4cae208055bf9bf2d0f7f3e2496aac04b37bf90c14",
+          "shape": [
+            8192,
+            4,
+            4096
+          ],
+          "stride": [
+            16384,
+            4096,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "a3a336790bcabe75720b3614a0aa8a3e31433ff1a40954fe3809f2e605e42634",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-11",
+      "params": {
+        "hidden": 4096,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "a6b713ea8d30b4f45af4549f7a76d374732130a9a4a2579787cb7e3906ea7b84",
+          "shape": [
+            8192,
+            5120
+          ],
+          "stride": [
+            5120,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "f839616de114c902b113c44f83f1fa303a20d70289cbd09f1dce5c11f22c6275",
+          "shape": [
+            8192,
+            4,
+            5120
+          ],
+          "stride": [
+            20480,
+            5120,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "250ad18e3dafc4e358a1957752abbe90712ff1768d6c88f344218b525096a139",
+          "shape": [
+            8192,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "40e4889ca375f671664f678527e5bd1be0c0ceb006ff6f2375a604bfdf80c84a",
+          "shape": [
+            8192,
+            4,
+            5120
+          ],
+          "stride": [
+            20480,
+            5120,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "f4cce3fc676c00d7ae18e5c4ab764eac33821ddc9002797f4b0125f02ac1986e",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-12",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "9869dc49aed8aa54df474272578cb79eaadff2f946c7a952224bed924397ed48",
+          "shape": [
+            8001,
+            1280
+          ],
+          "stride": [
+            1280,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "3d2a45d678d5958dd7a07dff39132dfc00ea1733eb1dc875f11923fb44e91cc7",
+          "shape": [
+            8001,
+            4,
+            1280
+          ],
+          "stride": [
+            5120,
+            1280,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "31841db4c66934eb511de2ec86e36504bc92bccf951f038d2596bd6044e7b139",
+          "shape": [
+            8001,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "ae86f5dae35c407adf842478c65b0094cdbbf535f1461f486400dc3948ee1814",
+          "shape": [
+            8001,
+            4,
+            1280
+          ],
+          "stride": [
+            5120,
+            1280,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "e7cc9fe57511fa56f4141d9d451506f911a3a6de655c7cdad6892215d760857e",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-14",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "3faab9abeb62423b71ed91581de72ce6d9833398dfe4ac395e5220300205b6cc",
+          "shape": [
+            8001,
+            2560
+          ],
+          "stride": [
+            2560,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "d701b0aacaf044721abe33716205c03f48fa8316eff3694623326aa95bfcd15d",
+          "shape": [
+            8001,
+            4,
+            2560
+          ],
+          "stride": [
+            10240,
+            2560,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "ab0d77ff803c6a81536767c6b6aa4f88126330dcfa35f1c1b9333176a6eff31b",
+          "shape": [
+            8001,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "1a62480c5bbdda9be4c610da6a8a18cb8972def2df3d862503bc32c89768eac5",
+          "shape": [
+            8001,
+            4,
+            2560
+          ],
+          "stride": [
+            10240,
+            2560,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "ff1b99df39ae1fc6e7ff4a89a4beadac9f548a6064ce13f38f4e78f8a47552be",
+      "family": "mhc_pre_apply_mix_bwd",
+      "id": "mhc_pre_apply_mix_bwd-18",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "range": "mhc_pre_apply_bwd_target",
+      "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel"
+    },
+    {
+      "expected_inputs": [
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "9ec96bde0ecb8294c75691576f4c14dcca1f3845a376e929f76219a1e3505a19",
+          "shape": [
+            8192,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "752f9804023336b325436b011d12f961e9107093d12dd286a3bf759175344ca7",
+          "shape": [
+            8192,
+            4,
+            4
+          ],
+          "stride": [
+            16,
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "b84f43868a13e0fd2a79ccfa6eff17120ca59cad93adc8c6f2853e020b154823",
+          "shape": [
+            8192,
+            4,
+            7168
+          ],
+          "stride": [
+            28672,
+            7168,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.float32",
+          "sha256": "1709c37c95b959df41bc7cd0ea303d2777b74e6eee5bdace15e0ee070457fbea",
+          "shape": [
+            8192,
+            4
+          ],
+          "stride": [
+            4,
+            1
+          ]
+        },
+        {
+          "dtype": "torch.bfloat16",
+          "sha256": "4afd2e77237c888c8053a8a626e079ec10bd88ea70ce29dc9e45091632b537a5",
+          "shape": [
+            8192,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ]
+        }
+      ],
+      "expected_source_sha256": "058415be8efe4a3e92a7f3c7b1afb398ce32b0d4b448d675b9c392c959510f84",
+      "family": "mhc_post_bwd",
+      "id": "mhc_post_bwd-04",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "range": "mhc_post_bwd_target",
+      "runtime_kernel": "mhc_post_bwd_asc_kernel"
+    }
+  ]
+}

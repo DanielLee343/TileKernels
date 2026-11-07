@@ -1,0 +1,91 @@
+{
+  "matched": 1,
+  "stage": "prepare",
+  "group": "mhc_pre_apply_mix_bwd",
+  "params": {
+    "hidden": 4096,
+    "mhc_mult": 4,
+    "n0": 2,
+    "n1": 4096
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "target_range": "mhc_pre_apply_bwd_target",
+  "capture_scope": "one pre-apply backward native kernel",
+  "output_semantics": "x_grad is nonzero input and accumulated in place; mix_grad is returned",
+  "warmup_policy": "separate x_grad clone",
+  "profiler_replay_state": "not_applicable",
+  "device_validation": "pending",
+  "plan_case_number": 11,
+  "source_files_sha256": {
+    "pre_apply_mix_asc.py": "e750f43ed9defd2faf39df92a04486c807fa32de73186ea90bbd02b403966509",
+    "pre_apply_mix_kernel.py": "61b43bd91af8790f5d372b4fbfcf06fea4d7094ceac2184da1c94c4445e8200a",
+    "torch_mhc.py": "9f37ef9a1a7d99f14c2e878056b5f53a56932275e3ec0fc94de125e79953fd52"
+  },
+  "symbol": "mhc_pre_apply_mix_bwd_asc",
+  "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel",
+  "source_sha256": "a3a336790bcabe75720b3614a0aa8a3e31433ff1a40954fe3809f2e605e42634",
+  "inputs": [
+    {
+      "shape": [
+        8192,
+        4096
+      ],
+      "stride": [
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "3e4daf28137303529d9d868da62bbf81c9e2deb92fec73be9d496c340b68c835"
+    },
+    {
+      "shape": [
+        8192,
+        4,
+        4096
+      ],
+      "stride": [
+        16384,
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "cf28d8b16f2c25acb5ad4605b9db20ad9f83a565df8ed214c2613bdad21c1ebf"
+    },
+    {
+      "shape": [
+        8192,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "1a745b96aca680e843cfa086c09aeab9b67667c5f573e9a238eb5bcd8e2d7b0b"
+    },
+    {
+      "shape": [
+        8192,
+        4,
+        4096
+      ],
+      "stride": [
+        16384,
+        4096,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "490fb2f6771391fc2de49e4cae208055bf9bf2d0f7f3e2496aac04b37bf90c14"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 4096,
+    "num_stages": 3,
+    "num_vec_cores": 56
+  },
+  "mutable_input_indices": [
+    3
+  ],
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/tilekernels-expert-unified-extra4-20261106/extra_mhc_pre_apply_bwd.py\", line 159, in run\n    state['precision'] = verify_outputs(x, mix, dy, initial, dx, dmix,\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/tilekernels-finalize-20261107/accuracy_worker.py\", line 39, in check_pre\n    raise AssertionError('full CPU/NPU precision diagnostics found mismatches; see reference-comparison.json')\nAssertionError: full CPU/NPU precision diagnostics found mismatches; see reference-comparison.json\n"
+}

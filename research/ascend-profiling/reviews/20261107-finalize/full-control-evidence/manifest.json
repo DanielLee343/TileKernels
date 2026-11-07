@@ -1,0 +1,70 @@
+{
+  "cases/moe_topk_gate_forward-04/coverage.log": {
+    "bytes": 564,
+    "sha256": "c162d037d4d65d1fcc72e7272682e5bac83e7a435df0581ea796a6ab6fc0eea9"
+  },
+  "cases/moe_topk_gate_forward-04/full-control-result.json": {
+    "bytes": 1885,
+    "sha256": "0c6828bf96d9d6781d45bfcc538be53f949c45803baf5195d20e122f5f3336f0"
+  },
+  "cases/moe_topk_gate_forward-04/record.json": {
+    "bytes": 3213,
+    "sha256": "435b63a4f443d549b7dda8dbf3ae34d2ea39102081844aa360f603343acb92e4"
+  },
+  "cases/moe_topk_gate_forward-04/result.json": {
+    "bytes": 1826,
+    "sha256": "63eefd80ddc2e4df8d061e9e9a45f2700deced5c3c3441ec13ccd0d5425f832b"
+  },
+  "cases/moe_topk_gate_forward-04/run.log": {
+    "bytes": 2387,
+    "sha256": "9981eedcf61d0115c55073e784dbbd28998979a2aecd7b65218f898e5da59722"
+  },
+  "cases/moe_topk_gate_forward-04/watch-metadata.json": {
+    "bytes": 273,
+    "sha256": "1c732b008dd1784c1ca90386cd4aa1a6f26c9dc67724d34ca7ced06514b97f51"
+  },
+  "cases/moe_topk_gate_forward-04/watch.log": {
+    "bytes": 340,
+    "sha256": "316c0ccd1c1d59a49688effaabef15a41bee72c18fe3a4991c2370e46284b01f"
+  },
+  "cases/moe_topk_gate_forward-09/coverage.log": {
+    "bytes": 564,
+    "sha256": "c162d037d4d65d1fcc72e7272682e5bac83e7a435df0581ea796a6ab6fc0eea9"
+  },
+  "cases/moe_topk_gate_forward-09/full-control-result.json": {
+    "bytes": 1886,
+    "sha256": "e8a753e2f4a1f32fe1033e84017015c2f58067f72ccab3e1dda651df8ec3b315"
+  },
+  "cases/moe_topk_gate_forward-09/record.json": {
+    "bytes": 3427,
+    "sha256": "20444ca30007bf0e4057b745b7d4c8e4ee8ccb70d742aeb32931b77d2a16a70e"
+  },
+  "cases/moe_topk_gate_forward-09/result.json": {
+    "bytes": 1827,
+    "sha256": "26faf9735c51963c0bf100de3b7822a7e3e777061ed6362b96083655ccbdaa5a"
+  },
+  "cases/moe_topk_gate_forward-09/run.log": {
+    "bytes": 2387,
+    "sha256": "1221ed1242384558d0566a2a6667629319cdbc7cdbbd06217fcd22db7596d94e"
+  },
+  "cases/moe_topk_gate_forward-09/watch-metadata.json": {
+    "bytes": 273,
+    "sha256": "10300ca87f9ffb75f31feb250ae68b592cb18914fa56bf8f34ed2765e3320f84"
+  },
+  "cases/moe_topk_gate_forward-09/watch.log": {
+    "bytes": 340,
+    "sha256": "b3e95cfc94531116469630c964a7d0285708d69fe26c5356b0d5e65af115b09d"
+  },
+  "full-control-summary.json": {
+    "bytes": 4156,
+    "sha256": "532a6f708fc31efc2e6f885c9ae74c879a06a242a48232db08b95a73d78c41bb"
+  },
+  "plan.json": {
+    "bytes": 8619,
+    "sha256": "75e2bb749bda4eadf873df46704fa705c3aaad6b06af00ab37cfb4684e47739c"
+  },
+  "runner.log": {
+    "bytes": 897,
+    "sha256": "a97633274396ec3fa71e05061a6bd216b685fdb0b63a83bfaa2e85ae099fb8d7"
+  }
+}

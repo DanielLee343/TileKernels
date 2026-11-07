@@ -1,0 +1,17 @@
+[
+  {
+    "index": 0,
+    "tensor_index": 7,
+    "tensor_address": 19792520028160,
+    "shape": [
+      2048
+    ],
+    "stride": [
+      1
+    ],
+    "dtype": "torch.bfloat16",
+    "span_bytes": 4096,
+    "sample_offset": 0,
+    "sample_bytes": 4096
+  }
+]

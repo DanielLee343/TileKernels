@@ -1,0 +1,59 @@
+[
+  {
+    "index": 0,
+    "tensor_index": 3,
+    "tensor_address": 19792504291328,
+    "shape": [
+      128,
+      4,
+      2560
+    ],
+    "stride": [
+      10240,
+      2560,
+      1
+    ],
+    "dtype": "torch.bfloat16",
+    "span_bytes": 2621440,
+    "sample_offset": 0,
+    "sample_bytes": 4096
+  },
+  {
+    "index": 1,
+    "tensor_index": 3,
+    "tensor_address": 19792504291328,
+    "shape": [
+      128,
+      4,
+      2560
+    ],
+    "stride": [
+      10240,
+      2560,
+      1
+    ],
+    "dtype": "torch.bfloat16",
+    "span_bytes": 2621440,
+    "sample_offset": 1308672,
+    "sample_bytes": 4096
+  },
+  {
+    "index": 2,
+    "tensor_index": 3,
+    "tensor_address": 19792504291328,
+    "shape": [
+      128,
+      4,
+      2560
+    ],
+    "stride": [
+      10240,
+      2560,
+      1
+    ],
+    "dtype": "torch.bfloat16",
+    "span_bytes": 2621440,
+    "sample_offset": 2617344,
+    "sample_bytes": 4096
+  }
+]

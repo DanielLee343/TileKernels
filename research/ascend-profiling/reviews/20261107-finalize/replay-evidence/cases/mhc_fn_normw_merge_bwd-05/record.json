@@ -1,0 +1,108 @@
+{
+  "group": "mhc_fn_normw_merge_bwd",
+  "params": {
+    "hidden_size": 1280,
+    "mhc_mult": 4,
+    "dtype": "fp32"
+  },
+  "stage": "default",
+  "matched": 1,
+  "target_range": "mhc_normw_bwd_target",
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "capture_scope": "one fn/normw backward native kernel",
+  "output_semantics": "fn_grad and normw_grad accumulate into nonzero input buffers",
+  "warmup_policy": "separate copies of both gradient buffers",
+  "profiler_replay_state": "unverified",
+  "device_validation": "pending",
+  "plan_case_number": 5,
+  "source_files_sha256": {
+    "norm_fn_asc.py": "3a5431d306ec3dbe6f4de1d9876b61fd0f3a3fe616c386885e03f8fbc00d0b5e",
+    "norm_fn_kernel.py": "ca8cb68cf65f5b04e99e9fc46c7290abcfcd0d09ec89965864eb340d695f159a"
+  },
+  "symbol": "mhc_fn_normw_merge_bwd_asc",
+  "runtime_kernel": "mhc_fn_normw_merge_bwd_asc_kernel",
+  "source_sha256": "72791497dfa51c37fc53ccf0c0be808ede914f6909b25803f94c27d41ebbc800",
+  "inputs": [
+    {
+      "shape": [
+        24,
+        5120
+      ],
+      "stride": [
+        5120,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "2e2d039cba7e3f8677101eccec315e12bd53f9f1ac8e4bb5416c7e32df9d6b72"
+    },
+    {
+      "shape": [
+        5120
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9027a23f24fe54a2d770232fcfa1305a094a052c8395b378b730c93c59859a42"
+    },
+    {
+      "shape": [
+        24,
+        5120
+      ],
+      "stride": [
+        5120,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "6cb8854b0c840c770d5b4ddf16efd088bc0efcfef31469d91020bacf951d4807"
+    },
+    {
+      "shape": [
+        24,
+        5120
+      ],
+      "stride": [
+        5120,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "a52fa456ac18249635e11e47a073c02fb4a912129f4009fd5a5786ad7c2739c0"
+    },
+    {
+      "shape": [
+        5120
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "12e9d4d9d2520442f58df77bac42b4275c1889febd59a510de40a80b266579ad"
+    }
+  ],
+  "native_kwargs": {
+    "mhc_mult3": 24,
+    "hidden_block": 128,
+    "num_stages": 3,
+    "num_vec_cores": 56
+  },
+  "mutable_input_indices": [
+    3,
+    4
+  ],
+  "precision": [
+    {
+      "output": "fn_grad",
+      "passed": true,
+      "calc_diff": 0.0,
+      "threshold": 1e-08
+    },
+    {
+      "output": "normw_grad",
+      "passed": true,
+      "calc_diff": 5.867996501440721e-15,
+      "threshold": 1e-08
+    }
+  ],
+  "status": "passed"
+}

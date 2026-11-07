@@ -1,0 +1,5 @@
+# Evidence manifests hash exact profiler output bytes. Preserve them across OSes.
+replay-evidence/** -text
+capture-evidence/** -text
+accuracy-evidence/** -text
+full-control-evidence/** -text

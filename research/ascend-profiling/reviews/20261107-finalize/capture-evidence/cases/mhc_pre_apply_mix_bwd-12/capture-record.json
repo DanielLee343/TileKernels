@@ -1,0 +1,98 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "group": "mhc_pre_apply_mix_bwd",
+  "params": {
+    "hidden": 5120,
+    "mhc_mult": 4,
+    "n0": 2,
+    "n1": 4096
+  },
+  "plan_sha256": "e0ec36c25b6f60afb8d19cd3a5839f4a226e0976c87c78de1d86fcf40b9048dd",
+  "target_range": "mhc_pre_apply_bwd_target",
+  "capture_scope": "one pre-apply backward native kernel",
+  "output_semantics": "x_grad is nonzero input and accumulated in place; mix_grad is returned",
+  "warmup_policy": "separate x_grad clone",
+  "profiler_replay_state": "unverified",
+  "device_validation": "pending",
+  "plan_case_number": 12,
+  "source_files_sha256": {
+    "pre_apply_mix_asc.py": "e750f43ed9defd2faf39df92a04486c807fa32de73186ea90bbd02b403966509",
+    "pre_apply_mix_kernel.py": "61b43bd91af8790f5d372b4fbfcf06fea4d7094ceac2184da1c94c4445e8200a",
+    "torch_mhc.py": "9f37ef9a1a7d99f14c2e878056b5f53a56932275e3ec0fc94de125e79953fd52"
+  },
+  "symbol": "mhc_pre_apply_mix_bwd_asc",
+  "runtime_kernel": "mhc_pre_apply_mix_bwd_asc_kernel",
+  "source_sha256": "f4cce3fc676c00d7ae18e5c4ab764eac33821ddc9002797f4b0125f02ac1986e",
+  "inputs": [
+    {
+      "shape": [
+        8192,
+        5120
+      ],
+      "stride": [
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "a6b713ea8d30b4f45af4549f7a76d374732130a9a4a2579787cb7e3906ea7b84"
+    },
+    {
+      "shape": [
+        8192,
+        4,
+        5120
+      ],
+      "stride": [
+        20480,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f839616de114c902b113c44f83f1fa303a20d70289cbd09f1dce5c11f22c6275"
+    },
+    {
+      "shape": [
+        8192,
+        4
+      ],
+      "stride": [
+        4,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "250ad18e3dafc4e358a1957752abbe90712ff1768d6c88f344218b525096a139"
+    },
+    {
+      "shape": [
+        8192,
+        4,
+        5120
+      ],
+      "stride": [
+        20480,
+        5120,
+        1
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "40e4889ca375f671664f678527e5bd1be0c0ceb006ff6f2375a604bfdf80c84a"
+    }
+  ],
+  "native_kwargs": {
+    "h_blk": 1280,
+    "num_stages": 4,
+    "num_vec_cores": 56
+  },
+  "mutable_input_indices": [
+    3
+  ],
+  "precision": [
+    {
+      "passed": false,
+      "reference": "original CPU chunk",
+      "error": "Traceback (most recent call last):\n  File \"/workspace/tilekernels-finalize-20261107/accuracy_worker.py\", line 63, in inspect\n    try:return real(*args)\n               ^^^^^^^^^^^\n  File \"/workspace/tilekernels-expert-unified-extra4-20261106/extra_mhc_pre_apply_bwd.py\", line 85, in verify_outputs\n    torch.testing.assert_close(got, want, atol=1e-2, rtol=1e-3)\n  File \"/workspace/tilekernels-env-20261101/venv/lib/python3.12/site-packages/torch/testing/_comparison.py\", line 1631, in assert_close\n    raise error_metas[0].to_error(msg)\nAssertionError: Tensor-likes are not close!\n\nMismatched elements: 1 / 1310720 (0.0%)\nGreatest absolute difference: 0.015625 at index (0, 53, 3, 3945) (up to 0.01 allowed)\nGreatest relative difference: 0.0069580078125 at index (0, 53, 3, 3945) (up to 0.001 allowed)\n"
+    }
+  ],
+  "status": "profiled_precision_failed",
+  "reference_check": "failed"
+}

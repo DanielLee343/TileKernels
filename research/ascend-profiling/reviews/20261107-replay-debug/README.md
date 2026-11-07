@@ -16,7 +16,7 @@
 
 首个 Engram 梯度累加例：两个目标数组，13 次观察到恢复；可变数据在恢复前发生变化，恢复后抽样均和初值一致，并在每次恢复中观察到覆盖整个目标数组地址范围的内存块。独立全数组对照见 `evidence/watch.log`：第 2 至第 13 次恢复前有 15289 / 16384 字节不同，恢复后为 0。
 
-加强版选择 9 个不同算子类别各一个 case，9 个均通过：每次恢复覆盖目标数组的地址范围，抽样恢复后的值一致，且均观察到了恢复前的变化。具体逐次证据见 `pilot-evidence/`。2026-11-07 随后已在 hidev 启动全部 170 个 capture 的串行复测；它尚未完成，实时状态以远端 `/workspace/tilekernels-replay-watch-batch-v2-20261107/progress.json` 及 `cases/*/result.json` 为准。脚本在设备被占用或连续三次实验失败时停止，不会把失败自动标为通过。
+加强版选择 9 个不同算子类别各一个 case，9 个均通过：每次恢复覆盖目标数组的地址范围，抽样恢复后的值一致，且均观察到了恢复前的变化。具体逐次证据见 `pilot-evidence/`。随后全部 170 个 capture 的复测及两个完整缓冲区补充对照已经完成，见[完整验收结果](../20261107-finalize/README.md)。
 
 在仓库根目录运行 `python -B research/ascend-profiling/reviews/20261107-replay-debug/verify_pilots.py`，可独立检查 9 条试点的原始输入、源码、恢复范围、抽样值及反向对照。
 
@@ -26,4 +26,4 @@
 - `mhc_pre_apply_mix_bwd-10`：原源码和所有输入 SHA256 匹配；采用原非零梯度初值，完整输入分块计算 CPU 与 NPU 参考，两者均有 2 个 `x_grad` 元素超出上游测试所用的 `atol=1e-2, rtol=1e-3`；`mix_grad` 通过。该非零初值与上游测试的零初值不同。见 `evidence/preapply-comparison.json` 和 `evidence/preapply-record.json`。
 - `mhc_post_bwd-04`：原源码和所有输入 SHA256 匹配；CPU 分块参考有 1 个 `grad_comb_res_mix` 元素超差，NPU 分块参考四个输出均通过原容差。上游使用整形 NPU 参考，故这里不声称直接运行了完全相同的上游测试。见 `evidence/post-comparison.json` 和 `evidence/post-record.json`。
 
-三组诊断重跑时分别检查了用于比较的 kernel 输出和参考输出均有限。其余 8 个 mHC pre-apply 失败 case 尚未做同输入 NPU 参考复测。精度结果不应被吞掉或改成通过；如果后续补采 13 条，应将 profile 存在与精度状态分别登记。
+三组诊断重跑时分别检查了用于比较的 kernel 输出和参考输出均有限。其余 8 个 mHC pre-apply 的同输入 NPU 参考复测、13 条 profile 补采及精度状态见[完整验收结果](../20261107-finalize/README.md)。

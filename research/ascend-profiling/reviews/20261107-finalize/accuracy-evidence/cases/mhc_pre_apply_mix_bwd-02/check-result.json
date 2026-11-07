@@ -1,0 +1,43 @@
+{
+  "id": "mhc_pre_apply_mix_bwd-02",
+  "family": "mhc_pre_apply_mix_bwd",
+  "phase": "check",
+  "started": 1794036472.6596944,
+  "command": [
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/tilekernels-finalize-20261107/accuracy_worker.py",
+    "check",
+    "mhc_pre_apply_mix_bwd-02"
+  ],
+  "returncode": 0,
+  "same_source": true,
+  "same_inputs": true,
+  "comparison": {
+    "cpu": [
+      {
+        "output": "dx",
+        "mismatch": 8,
+        "max_abs": 0.015625
+      },
+      {
+        "output": "dmix",
+        "mismatch": 0,
+        "max_abs": 3.0517578125e-05
+      }
+    ],
+    "npu": [
+      {
+        "output": "dx",
+        "mismatch": 8,
+        "max_abs": 0.015625
+      },
+      {
+        "output": "dmix",
+        "mismatch": 0,
+        "max_abs": 3.0517578125e-05
+      }
+    ]
+  },
+  "status": "completed"
+}

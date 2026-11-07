@@ -1,0 +1,79 @@
+{
+  "id": "normalize-20",
+  "family": "moe_normalize_weight",
+  "phase": "capture",
+  "started": 1794036277.910926,
+  "command": [
+    "msprof",
+    "op",
+    "--output=/workspace/tilekernels-finalize-20261107/cases/normalize-20/capture",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=cold_call",
+    "--kernel-name=normalize_weight_kernel_kernel",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/tilekernels-finalize-20261107/accuracy_worker.py",
+    "capture",
+    "normalize-20"
+  ],
+  "returncode": 0,
+  "same_source": true,
+  "same_inputs": true,
+  "same_kernel": true,
+  "original_cpu_reference": "failed",
+  "metrics": {
+    "OpBasicInfo": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/OpBasicInfo.csv",
+      "bytes": 171,
+      "sha256": "21a3f31c549a350e642a6a87436539fccb089218cbd409062bea942260971313",
+      "rows": 1
+    },
+    "ArithmeticUtilization": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/ArithmeticUtilization.csv",
+      "bytes": 5119,
+      "sha256": "cccc5d149adb6685956c72975e4ea80db8ec5e64bd6d5716b9dc484896ceab41",
+      "rows": 56
+    },
+    "L2Cache": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/L2Cache.csv",
+      "bytes": 7394,
+      "sha256": "0a4bc6b1b7ced2f26175a768d3d2c7266beab3fcca9bc41e18c5ffb6073fd975",
+      "rows": 56
+    },
+    "Memory": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/Memory.csv",
+      "bytes": 10604,
+      "sha256": "d5f8547fcb1669ce6ec1157485f7f7cef3efdbd414f5184595d380a1761555f7",
+      "rows": 56
+    },
+    "MemoryL0": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/MemoryL0.csv",
+      "bytes": 3046,
+      "sha256": "fc6c8c6cb3a81ddcefbae1ee4c90d3570819f8fde20cfe2acefd630016320fc0",
+      "rows": 56
+    },
+    "MemoryUB": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/MemoryUB.csv",
+      "bytes": 3807,
+      "sha256": "dbd32a1f09ce145e6b5c0030d783643072725ad0aff05a26d0f5fa649fdcacb9",
+      "rows": 56
+    },
+    "PipeUtilization": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/PipeUtilization.csv",
+      "bytes": 10550,
+      "sha256": "299eff07be02d639e5175e964e4ae082cb336e4ceb582dc8959706682c6d30f9",
+      "rows": 56
+    },
+    "ResourceConflictRatio": {
+      "path": "cases/normalize-20/capture/OPPROF_20261107072437_QHLMVAXQFZDQNMCD/ResourceConflictRatio.csv",
+      "bytes": 5797,
+      "sha256": "c553663c9f3d090f9605ac339d9d58fc1083b15595222d105d5b14d0a758b7b9",
+      "rows": 56
+    }
+  },
+  "status": "completed"
+}

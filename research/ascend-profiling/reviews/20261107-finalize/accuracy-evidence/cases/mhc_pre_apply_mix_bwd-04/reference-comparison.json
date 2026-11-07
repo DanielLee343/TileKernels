@@ -1,0 +1,26 @@
+{
+  "cpu": [
+    {
+      "output": "dx",
+      "mismatch": 11,
+      "max_abs": 0.015625
+    },
+    {
+      "output": "dmix",
+      "mismatch": 0,
+      "max_abs": 3.0517578125e-05
+    }
+  ],
+  "npu": [
+    {
+      "output": "dx",
+      "mismatch": 11,
+      "max_abs": 0.015625
+    },
+    {
+      "output": "dmix",
+      "mismatch": 0,
+      "max_abs": 3.0517578125e-05
+    }
+  ]
+}

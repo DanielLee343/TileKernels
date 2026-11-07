@@ -1,0 +1,77 @@
+{
+  "matched": 1,
+  "stage": "default",
+  "symbol": "norm_backward_kernel",
+  "runtime_kernel": "norm_backward_kernel_kernel",
+  "source_sha256": "07b551d578c119ae21834beed7ead83545d8aba2a1f807b74ebabba6c544859e",
+  "inputs": [
+    {
+      "shape": [
+        8001,
+        768
+      ],
+      "stride": [
+        784,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "e4e12d0e9d13b61f8ab1c69ce18f73ee094bfe47537e3cc0c77422c26169d68c"
+    },
+    {
+      "shape": [
+        768
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "6b88ad336bcae49cd35fb6d038a42569fad228e20ce0fcb6d1c0b5920cec41cc"
+    },
+    {
+      "shape": [
+        8001,
+        768
+      ],
+      "stride": [
+        768,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "e587277f2c00ae53fec6f5f4b4ea7c8e3269061e09c45b7d9de4cc8d5879a60b"
+    },
+    {
+      "shape": [
+        8001
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "de40686a9d444ea23cf68a3b9de986f4552d2570b57bc550aac39c6e745cbe1f"
+    },
+    {
+      "shape": [
+        8001,
+        768
+      ],
+      "stride": [
+        768,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "8e023598bf884201091107f95d58025aeb67353864ae793c11422daa1efa386e"
+    },
+    {
+      "shape": [
+        768
+      ],
+      "stride": [
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "9cc70798d6c29d6c4cb9c0e5485dc434be6ed018e1ae3159c033d1f723415684"
+    }
+  ],
+  "profiler_replay_state": "unverified",
+  "status": "passed"
+}

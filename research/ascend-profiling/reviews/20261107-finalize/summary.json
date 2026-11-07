@@ -1,0 +1,411 @@
+{
+  "cases": [
+    {
+      "case_id": "normalize-03",
+      "family": "moe_normalize_weight",
+      "npu_outputs": [
+        {
+          "max_abs": 3.814697265625e-06,
+          "mismatch": 7,
+          "output": "denominator"
+        },
+        {
+          "max_abs": 1.4901161193847656e-08,
+          "mismatch": 0,
+          "output": "weights"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU PyTorch reference; atol 2e-6, rtol 0",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-03",
+        "pilot": false,
+        "plan_case_number": 3,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 127,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 127,
+        "topk": 32
+      },
+      "profile_evidence": "capture-evidence\\cases\\normalize-03\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "normalize-16",
+      "family": "moe_normalize_weight",
+      "npu_outputs": [
+        {
+          "max_abs": 3.814697265625e-06,
+          "mismatch": 11,
+          "output": "denominator"
+        },
+        {
+          "max_abs": 2.2351741790771484e-08,
+          "mismatch": 0,
+          "output": "weights"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU PyTorch reference; atol 2e-6, rtol 0",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-16",
+        "pilot": false,
+        "plan_case_number": 16,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 128,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 128,
+        "topk": 32
+      },
+      "profile_evidence": "capture-evidence\\cases\\normalize-16\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "normalize-20",
+      "family": "moe_normalize_weight",
+      "npu_outputs": [
+        {
+          "max_abs": 5.7220458984375e-06,
+          "mismatch": 249,
+          "output": "denominator"
+        },
+        {
+          "max_abs": 2.2351741790771484e-08,
+          "mismatch": 0,
+          "output": "weights"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU PyTorch reference; atol 2e-6, rtol 0",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "family": "moe_normalize_weight",
+        "id": "normalize-20",
+        "pilot": false,
+        "plan_case_number": 20,
+        "plan_group": "moe_normalize_weight",
+        "plan_parameters": {
+          "dtype": "fp32",
+          "num_tokens": 4001,
+          "num_topk": 32
+        },
+        "role": "discovery",
+        "tokens": 4001,
+        "topk": 32
+      },
+      "profile_evidence": "capture-evidence\\cases\\normalize-20\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-02",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 8,
+          "output": "dx"
+        },
+        {
+          "max_abs": 3.0517578125e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-02\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-04",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 11,
+          "output": "dx"
+        },
+        {
+          "max_abs": 3.0517578125e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-04\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-06",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 2,
+          "output": "dx"
+        },
+        {
+          "max_abs": 2.288818359375e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 1024
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-06\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-09",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 1,
+          "output": "dx"
+        },
+        {
+          "max_abs": 1.52587890625e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 1024
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-09\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-10",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 2,
+          "output": "dx"
+        },
+        {
+          "max_abs": 1.52587890625e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 1024
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-10\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-11",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 10,
+          "output": "dx"
+        },
+        {
+          "max_abs": 2.288818359375e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 4096,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-11\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-12",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 5,
+          "output": "dx"
+        },
+        {
+          "max_abs": 2.288818359375e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-12\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-14",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 4,
+          "output": "dx"
+        },
+        {
+          "max_abs": 7.62939453125e-06,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-14\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_pre_apply_mix_bwd-18",
+      "family": "mhc_pre_apply_mix_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.015625,
+          "mismatch": 5,
+          "output": "dx"
+        },
+        {
+          "max_abs": 1.52587890625e-05,
+          "mismatch": 0,
+          "output": "dmix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU FP32 autograd in token chunks; nonzero initial gradient; atol 1e-2, rtol 1e-3",
+      "npu_reference_status": "mismatch",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 8001
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_pre_apply_mix_bwd-18\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    },
+    {
+      "case_id": "mhc_post_bwd-04",
+      "family": "mhc_post_bwd",
+      "npu_outputs": [
+        {
+          "max_abs": 0.0625,
+          "mismatch": 0,
+          "output": "grad_x"
+        },
+        {
+          "max_abs": 0.03125,
+          "mismatch": 0,
+          "output": "grad_residual"
+        },
+        {
+          "max_abs": 6.103515625e-05,
+          "mismatch": 0,
+          "output": "grad_post_layer_mix"
+        },
+        {
+          "max_abs": 0.000152587890625,
+          "mismatch": 0,
+          "output": "grad_comb_res_mix"
+        }
+      ],
+      "npu_reference_scope": "same-input NPU autograd in token chunks; output-specific upstream tolerances",
+      "npu_reference_status": "passed_chunked_comparison",
+      "original_cpu_reference": "failed",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "profile_evidence": "capture-evidence\\cases\\mhc_post_bwd-04\\capture-result.json",
+      "profile_status": "captured_default",
+      "source_and_input_match": true
+    }
+  ],
+  "counts": {
+    "npu_reference_chunked_pass": 1,
+    "npu_reference_mismatch": 12,
+    "profiles": 13
+  },
+  "limitation": "mHC pre-apply uses nonzero initial gradient; upstream test uses zero. Post uses chunked NPU reference instead of full-shape upstream reference. Do not infer global correctness."
+}
