@@ -1,0 +1,5 @@
+bf16-m128-n576-k7168 passed
+bf16-m1-n32768-k512 passed
+bf16-m128-n7168-k2048 passed
+fp32-m1-n256-k7168 passed
+fp32-m128-n256-k7168 passed

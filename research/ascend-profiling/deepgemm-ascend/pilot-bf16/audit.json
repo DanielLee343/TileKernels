@@ -1,0 +1,110 @@
+{
+  "status": "passed",
+  "cases": {
+    "bf16-m1-n576-k7168": {
+      "op_type": "cube",
+      "block_dim": "28",
+      "mix_block_dim": "NA",
+      "diff": 0.0,
+      "max_abs_error": 0.0,
+      "cube_active_rows": 18,
+      "a_stride": [
+        7168,
+        1
+      ],
+      "b_stride": [
+        7168,
+        1
+      ],
+      "raw_files": 19
+    },
+    "bf16-m128-n576-k7168": {
+      "op_type": "cube",
+      "block_dim": "28",
+      "mix_block_dim": "NA",
+      "diff": 0.0,
+      "max_abs_error": 0.5,
+      "cube_active_rows": 27,
+      "a_stride": [
+        7168,
+        1
+      ],
+      "b_stride": [
+        7168,
+        1
+      ],
+      "raw_files": 19
+    },
+    "bf16-m1-n32768-k512": {
+      "op_type": "mix",
+      "block_dim": "28",
+      "mix_block_dim": "56",
+      "diff": 0.0,
+      "max_abs_error": 0.03125,
+      "cube_active_rows": 28,
+      "a_stride": [
+        512,
+        1
+      ],
+      "b_stride": [
+        512,
+        1
+      ],
+      "raw_files": 19
+    },
+    "bf16-m128-n7168-k2048": {
+      "op_type": "cube",
+      "block_dim": "28",
+      "mix_block_dim": "NA",
+      "diff": 0.0,
+      "max_abs_error": 0.5,
+      "cube_active_rows": 28,
+      "a_stride": [
+        2048,
+        1
+      ],
+      "b_stride": [
+        2048,
+        1
+      ],
+      "raw_files": 19
+    },
+    "fp32-m1-n256-k7168": {
+      "op_type": "cube",
+      "block_dim": "28",
+      "mix_block_dim": "NA",
+      "diff": 0.0,
+      "max_abs_error": 0.00018310546875,
+      "cube_active_rows": 16,
+      "a_stride": [
+        7168,
+        1
+      ],
+      "b_stride": [
+        7168,
+        1
+      ],
+      "raw_files": 19
+    },
+    "fp32-m128-n256-k7168": {
+      "op_type": "cube",
+      "block_dim": "28",
+      "mix_block_dim": "NA",
+      "diff": 0.0,
+      "max_abs_error": 0.000274658203125,
+      "cube_active_rows": 24,
+      "a_stride": [
+        7168,
+        1
+      ],
+      "b_stride": [
+        7168,
+        1
+      ],
+      "raw_files": 19
+    }
+  },
+  "raw_files_verified": 114,
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

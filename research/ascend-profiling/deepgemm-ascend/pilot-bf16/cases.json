@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "source_definition": "tests/generators.py:_enumerate_normal, forward cases",
+  "contract": "BF16 input, NT layout A[M,K] @ B[N,K].T, no bias and no accumulation",
+  "input_distribution": "CPU normal random, rounded to BF16, independent fixed seed per case",
+  "accuracy": "finite output and 1 - 2*sum(out*reference)/sum(out^2+reference^2) < 1e-5; CPU FP32 matmul rounded to output dtype",
+  "cases": [
+    {"id":"bf16-m1-n576-k7168", "m":1, "n":576, "k":7168, "output_dtype":"bfloat16", "seed":101, "layout":"nt", "accumulate":false},
+    {"id":"bf16-m128-n576-k7168", "m":128, "n":576, "k":7168, "output_dtype":"bfloat16", "seed":102, "layout":"nt", "accumulate":false},
+    {"id":"bf16-m1-n32768-k512", "m":1, "n":32768, "k":512, "output_dtype":"bfloat16", "seed":103, "layout":"nt", "accumulate":false},
+    {"id":"bf16-m128-n7168-k2048", "m":128, "n":7168, "k":2048, "output_dtype":"bfloat16", "seed":104, "layout":"nt", "accumulate":false},
+    {"id":"fp32-m1-n256-k7168", "m":1, "n":256, "k":7168, "output_dtype":"float32", "seed":105, "layout":"nt", "accumulate":false},
+    {"id":"fp32-m128-n256-k7168", "m":128, "n":256, "k":7168, "output_dtype":"float32", "seed":106, "layout":"nt", "accumulate":false}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "captured_utc": "2026-11-07T11:15:24.822581+00:00",
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cann_real": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1",
+  "toolkit_compat_path": "/workspace/deepgemm-ascend-20261107/cann-compat",
+  "python_torch": "Python 3.12.3, torch 2.13.0+cpu, torch_npu 2.13.0, tilelang 0.1.15",
+  "tool_versions": "Python 3.12.3\nmsopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n=================================================================\n                   >>>>>   MindStudio   <<<<<\n    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE\n=================================================================\n\n",
+  "device": "+-------------------------------------------------------------------------------------------------+\n| npu-smi 25.7.rc1.10                              Version: 25.7.rc1.10                           |\n+--------+------------------+---------------+-----------------------------------------------------+\n| NPU ID | Name             | Health        | Power(W)    Temp(C)           Hugepages-Usage(page) |\n|        |                  | Bus-Id        | NPU Util(%) Memory-Usage(MB)  HBM-Usage(MB)         |\n+========+==================+===============+=====================================================+\n| 0      | Ascend950PR      | OK            | 213.2       54                0     / 0             |\n|        |                  | 0000:D4:00.0  | 0           0    / 0          5290  / 131072        |\n+========+==================+===============+=====================================================+\n+---------------------------+---------------+-----------------------------------------------------+\n| NPU ID                    | Process id    | Process name             | Process memory(MB)       |\n+===========================+===============+=====================================================+\n| 0                         | 16185         | python                   | 39                      |\n+===========================+===============+=====================================================+\n",
+  "compiler_wrapper": "#!/bin/sh\nexec /workspace/tilekernels-env-20261101/cann/cann-9.2.1/bin/bisheng -U__cpp_concepts \"$@\"\n",
+  "hashes": {
+    "activate.sh": "385562258a3a36b9d39ed5c42737de30a3e5571edcfe8bd9fbdf274f11c8b057",
+    "cann-compat/bin/bisheng": "8b72b2bb339d48fef81e14bb1985ad1db33f745588ac4b3880f07351ee5260fe",
+    "pilot-bf16/collect.py": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+    "pilot-bf16/cases.json": "82de17659d3afff6e7a863ef0ea5439494b2a4f1c1b456155cd027d74a9caf5e"
+  },
+  "l2_state": "not independently asserted; Default kernel replay and profiler logs preserved",
+  "limitations": [
+    "toolkit compatibility alias",
+    "Bisheng wrapper adds -U__cpp_concepts",
+    "profiler kernel.json warning retained in logs"
+  ]
+}
