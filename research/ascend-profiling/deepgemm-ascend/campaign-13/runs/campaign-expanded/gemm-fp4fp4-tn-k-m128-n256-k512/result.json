@@ -1,0 +1,144 @@
+{
+  "case": {
+    "id": "gemm-fp4fp4-tn-k-m128-n256-k512",
+    "family": "gemm",
+    "target": "fp8_gemm_impl",
+    "api": "fp8_fp4_gemm_tn",
+    "a_dtype": "fp4",
+    "b_dtype": "fp4",
+    "trans": "tn",
+    "a_major": "K",
+    "b_major": "K",
+    "m": 128,
+    "n": 256,
+    "k": 512
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "gemm-fp4fp4-tn-k-m128-n256-k512",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-fp4fp4-tn-k-m128-n256-k512/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-fp4fp4-tn-k-m128-n256-k512/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*fp8_gemm_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "gemm-fp4fp4-tn-k-m128-n256-k512",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-fp4fp4-tn-k-m128-n256-k512/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm13fp8_gemm_implILNS_5MajorE0ELS1_0ELj128ELj256ELj0ELj48ELj32ELj512ELj48ELj32ELj256ELj4ELj2ELj1ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_0EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu11__fp4e2m1x2u6__bf16NS_8epilogue9operators8IdentityELj256ELb1ELb0EEEvNS_6gm_ptrIT21_XT_EEENS8_IS9_XT0_EEEPsSC_NS8_IT22_LS1_0EEEjjjPijNS5_4ArgsE",
+    "op_type": "cube",
+    "jit_binary_sha256": "f436480d30a92fdc8e4cc140cd070562f7d42ca5b11337f219742b15ae45e59e",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/gemm-fp4fp4-tn-k-m128-n256-k512/cache/fp4_gemm.29a2142484cf721011664591c01ce312",
+    "metric_rows": {
+      "ArithmeticUtilization": 28,
+      "L2Cache": 28,
+      "Memory": 28,
+      "MemoryL0": 28,
+      "MemoryUB": 28,
+      "PipeUtilization": 28,
+      "ResourceConflictRatio": 28
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/OpBasicInfo.csv": {
+      "sha256": "64b649295859805760e2b6c327e0a661bf09ee75200d0562a6b96efcd2f9ab4e",
+      "bytes": 484
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/PipeUtilization.csv": {
+      "sha256": "9fff3076cad51986c4d20dfef3ddb376d3756ea6f281559f527f9645c17ebb9e",
+      "bytes": 6734
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/ArithmeticUtilization.csv": {
+      "sha256": "9af0adeae672b155974b2be8dfbc782ac5915549e906c989675b2ea8486a1144",
+      "bytes": 2375
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/L2Cache.csv": {
+      "sha256": "973ba9747fb2f00393fb3e4367aad4eb6243be74775a417acd90c4cd1d6e2257",
+      "bytes": 3989
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/Memory.csv": {
+      "sha256": "a2095d5328a779bac1096466daf6bfc00d91b6e78254ac71c27be2f9b8569773",
+      "bytes": 6667
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/ResourceConflictRatio.csv": {
+      "sha256": "3d5308e8b1baa13a5f2cbf38afc1d257819b3cb5f9ecf18d703ae23bf226acb4",
+      "bytes": 2633
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/MemoryL0.csv": {
+      "sha256": "c43b903e3df6cca64de2aa4da84184cac9c7ecacaf4aee007d9177025d6c84ac",
+      "bytes": 2570
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/MemoryUB.csv": {
+      "sha256": "55bd1dc150db77422f80887c7945962f5b018f44287f7ee451f11c20eaac995e",
+      "bytes": 1355
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/visualize_data.bin": {
+      "sha256": "e869838146f750400c5e6aff6c64a52dddf79658a3623020b904947990c6bf63",
+      "bytes": 134464
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/aicore_binary.o": {
+      "sha256": "f436480d30a92fdc8e4cc140cd070562f7d42ca5b11337f219742b15ae45e59e",
+      "bytes": 13856
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/pc_start_addr.txt": {
+      "sha256": "5765100f58d65570df43cb120e3760d6e654813265610ab3ac305dcf0079f11d",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf1.bin": {
+      "sha256": "f99a6335ad94171dc9b2c1a22641d8fa255c733377aa40b7e2f535a67db06651",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf2.bin": {
+      "sha256": "413f6d3964e4fee6f6a1dfa32e6862ccddc181a15ebbbe2433bfd91619e30a10",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf3.bin": {
+      "sha256": "eda043a6c4fdc0746b3240b3cc559c933f003e11efc17d6c9f691da9b0a9435f",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf4.bin": {
+      "sha256": "90e8fa49de56a6cfc636fdfca6ba28cdde5e38df05c833b948cb971c1d692460",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf5.bin": {
+      "sha256": "3b66976d55455f0c8958dc2427a0ace3fa34ece895861a7a50f7fb549aa9079f",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/DeviceProf6.bin": {
+      "sha256": "63241f4be075b15ea7ec6924c9309ed02967b582c34bc3560950f1be1afb9409",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/duration.bin": {
+      "sha256": "a1b3105eab5aef00979a651cec6b9f62a6765ec3a0aeb16d6489ac85fa363610",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107122400_KQGGUCBCXTBKCMKA/dump/op_basic_info.txt": {
+      "sha256": "257b70fff7bd4e8c9c93897e501aba381184791fd6314321e36e3edcbfa1a92c",
+      "bytes": 488
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

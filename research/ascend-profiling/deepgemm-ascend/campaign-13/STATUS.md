@@ -18,7 +18,7 @@
 | sparse_mqa_logits_metadata | 首例通过 | 扩展 FP8/FP4、稀疏块与形状 |
 | transform_sf | 首例通过 | 扩展 dtype、major 与粒度 |
 
-首例为固定源码，在 950PR 上使用上游测试检查输出后采集 Default；`sleep_impl` 无数值输出，不能称为精度通过。附加 97 case 已在 hidev 串行采集。
+首例为固定源码，在 950PR 上使用上游测试检查输出后采集 Default；`sleep_impl` 无数值输出，不能称为精度通过。附加 97 case 已在 hidev 串行采集；首个同步快照记录其中 35 个成功 case（32 个 GEMM、3 个 MQA），详见 `runs/snapshots/expanded-35.json`。这只是中间快照，完整批次的状态以服务器实时记录和后续完整归档为准。
 
 MegaMoE 原始入口的实测失败：`csrc/apis/mega_moe.hpp:159` 要求运行时 Cube 核数等于 `common.hpp` 的固定值 32；本机 950PR 为 28 Cube 核。不能通过设置软件核数绕过，因为该限制还参与 kernel 中的任务分配、同步和 buffer 布局。失败日志在服务器 `campaign-mega-first`。是否存在可证明正确的 28 核适配，另行调查；适配版本须与原版及专家样本严格区分。
 

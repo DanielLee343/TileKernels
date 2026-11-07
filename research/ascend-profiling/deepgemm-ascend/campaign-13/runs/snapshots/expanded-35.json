@@ -1,0 +1,149 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "bf1b77c0c002799268d65e5b1eebb162b42ce42653eb89409ab4caa69fac36d8",
+  "collector_sha256": "a4314c263c93cf4178b30b78b1a7e899028bb243b664333f42fd6d28f9bcc730",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "cases": [
+    {
+      "id": "gemm-bf16bf16-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q16-k512-h8-random",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q32-k1024-h12-causal",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q64-k256-h32-fullrange",
+      "status": "passed"
+    }
+  ]
+}

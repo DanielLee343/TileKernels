@@ -1,0 +1,144 @@
+{
+  "case": {
+    "id": "gemm-bf16bf16-nt-k-m128-n256-k512",
+    "family": "gemm",
+    "target": "bf16_gemm_impl",
+    "api": "bf16_gemm_nt",
+    "a_dtype": "bf16",
+    "b_dtype": "bf16",
+    "trans": "nt",
+    "a_major": "K",
+    "b_major": "K",
+    "m": 128,
+    "n": 256,
+    "k": 512
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "gemm-bf16bf16-nt-k-m128-n256-k512",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-bf16bf16-nt-k-m128-n256-k512/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-bf16bf16-nt-k-m128-n256-k512/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*bf16_gemm_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "gemm-bf16bf16-nt-k-m128-n256-k512",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-bf16bf16-nt-k-m128-n256-k512/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm14bf16_gemm_implILNS_5MajorE0ELS1_0ELj0ELj256ELj512ELj48ELj32ELj256ELj48ELj32ELj128ELj8ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_0EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu6__bf16NS_8epilogue9operators8IdentityELj256ELb1ELb0ELb0EEEvNS_6gm_ptrIu6__bf16XT_EEENS8_Iu6__bf16XT0_EEENS8_IT19_LS1_0EEEjjjPijNS5_4ArgsE",
+    "op_type": "cube",
+    "jit_binary_sha256": "5b74588c0b9006d94aef1833c7a099e90b1fdbfcb91a85fbd2a7b2aab8f75823",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/gemm-bf16bf16-nt-k-m128-n256-k512/cache/bf16_gemm.b82acb8f1c7ec9e6ff888a043122c535",
+    "metric_rows": {
+      "ArithmeticUtilization": 28,
+      "L2Cache": 28,
+      "Memory": 28,
+      "MemoryL0": 28,
+      "MemoryUB": 28,
+      "PipeUtilization": 28,
+      "ResourceConflictRatio": 28
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/OpBasicInfo.csv": {
+      "sha256": "39f7c8a45c32bc7dc8cb6775c0cfca03084bd837b2078fbb4bc97e17ec2d83d5",
+      "bytes": 471
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/PipeUtilization.csv": {
+      "sha256": "9cb4d94bf659e72e5f2a5831d6a4627459f4acdfe2f51c7485fc935f3e885ccb",
+      "bytes": 6732
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/ArithmeticUtilization.csv": {
+      "sha256": "e3fb246e38562f8cdbe18fac0ab3397e30bac94dc2b7341f7b7d5404b9f6b9e8",
+      "bytes": 2372
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/L2Cache.csv": {
+      "sha256": "e2e6d2eaf8d78a274ad7229dfaad883b7f4b0addc9692a899c17a39a52fa9e80",
+      "bytes": 4024
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/Memory.csv": {
+      "sha256": "2c557a267d88c4cdac96a6a48d4e362043b98c40bf146e9817f19b7b54b65de7",
+      "bytes": 6724
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/ResourceConflictRatio.csv": {
+      "sha256": "245d7c8f2eb47f06e0e8d61c8215deb59801d7c14b17e18157ee79c09cfb82f0",
+      "bytes": 2630
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/MemoryL0.csv": {
+      "sha256": "9ba665b38a9f49304c880eecbe18b79bda555b693e8202fb6c637e081cb7ad86",
+      "bytes": 2630
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/MemoryUB.csv": {
+      "sha256": "e4fa5eae466afafa61737ca71a2a624f1e98180d76ad109d79b6876792ab0619",
+      "bytes": 1352
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/visualize_data.bin": {
+      "sha256": "6ce2e592778687e039f9a989572d3ae29850958edcfc2d98630cff6eaa387184",
+      "bytes": 135196
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/aicore_binary.o": {
+      "sha256": "5b74588c0b9006d94aef1833c7a099e90b1fdbfcb91a85fbd2a7b2aab8f75823",
+      "bytes": 12736
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/pc_start_addr.txt": {
+      "sha256": "9036c111d50f2e55e2f1b10be1f72bc071ce23cbe14fe1b6f8fc350ebfc134a6",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf1.bin": {
+      "sha256": "4a7e3b9e28b0ed50bdd47d141f6a8294b44a67ef1eb541949219d688bf50118c",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf2.bin": {
+      "sha256": "8f639b2ca85a287447c735f906fea58e55e0eec6bdb2c384db8b3a83403f5f3e",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf3.bin": {
+      "sha256": "a8d1e6105c5d32e66576cefc57ffb5c751221282257b750490c7e2d300c31a4c",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf4.bin": {
+      "sha256": "b361977a0bcec10fdfbf963709d69b3ae907e20fc2899d65945eb489057b2e13",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf5.bin": {
+      "sha256": "5b3d2acdf54147a25f9eb50f68ebc7c5807118193812d174d41934ad8316c2e8",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/DeviceProf6.bin": {
+      "sha256": "d5fee80f9d69e215739bb082859d807d2c97a1bdc15fb93e08e35d2040149ff7",
+      "bytes": 3712
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/duration.bin": {
+      "sha256": "8824342a565ac760ccbdcb90cda68ac057f59419954edcbe05b45dea761b1cf5",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107121510_PTRVXNLKDCSILAYO/dump/op_basic_info.txt": {
+      "sha256": "371b2b534d2f37e0b9665a72f158e653fc08e24da2570daf86d4d417e74693ef",
+      "bytes": 475
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

@@ -1,0 +1,44 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:16:28.229522992 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 12:16:33] [47960] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/gemm-bf16bf16-nn-mn-m64-n576-k7168/cache/bf16_gemm.f53cc3bbb3940085541b617f94cded64/kernel.json
+[2026-11-07 12:16:33] [47960] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:16:33] [47960] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm14bf16_gemm_implILNS_5MajorE1ELS1_1ELj0ELj576ELj7168ELj64ELj32ELj256ELj64ELj32ELj128ELj8ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu6__bf16NS_8epilogue9operators8IdentityELj256ELb1ELb0ELb0EEEvNS_6gm_ptrIu6__bf16XT_EEENS8_Iu6__bf16XT0_EEENS8_IT19_LS1_0EEEjjjPijNS5_4ArgsE
+[2026-11-07 12:16:33] [47960] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm14bf16_gemm_implILNS_5MajorE1ELS1_1ELj0ELj576ELj7168ELj64EL_11557495867010151411, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE1 bandwidth utilization lower than 80% when active.
+	2) MTE2 bandwidth utilization lower than 80% when active.
+	3) MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm14bf16_gemm_implILNS_5MajorE1ELS1_1ELj0ELj576ELj7168ELj64ELj32ELj256ELj64ELj32ELj128ELj8ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu6__bf16NS_8epilogue9operators8IdentityELj256ELb1ELb0ELb0EEEvNS_6gm_ptrIu6__bf16XT_EEENS8_Iu6__bf16XT0_EEENS8_IT19_LS1_0EEEjjjPijNS5_4ArgsE
+	Op Type: cube
+	Task Duration(us): 21.600000
+	Block Dim: 28
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 47960
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/gemm-bf16bf16-nn-mn-m64-n576-k7168/profile/OPPROF_20261107121627_XYLIVYVEFZYSNTFK
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

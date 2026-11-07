@@ -1,0 +1,55 @@
+{
+  "case_id": "gemm-bf16bf16-tt-mn-m64-n576-k7168",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.5
+  },
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          7168,
+          64
+        ],
+        "stride": [
+          64,
+          1
+        ],
+        "sha256": "17cc2a0d2e9535325d0257d3881ddbefd19709e08615ce7a11c208e8c166db36"
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          576,
+          7168
+        ],
+        "stride": [
+          1,
+          576
+        ],
+        "sha256": "bba03bb38fb3f84eda6c0d1eab38669050290d14ec6b9561b8f37e61bb359d6d"
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          64,
+          576
+        ],
+        "stride": [
+          576,
+          1
+        ],
+        "sha256": "484eaa327eae22dd9073858b0599e43fb5e06cabfbc8de88c83763edcb8d2446"
+      }
+    ],
+    "kwargs": {
+      "alpha": null,
+      "epilogue": null
+    }
+  }
+}
