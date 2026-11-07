@@ -1,0 +1,10 @@
+Op Name=_ZN9deep_gemm28paged_sparse_mqa_logits_implILb1ELb1ELj8ELj8ELm4608ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_
+Block Dim=28
+Run Soc Version=Ascend950PR_9579
+Device Id=0
+Pid=167961
+Current Freq=1650
+Rated Freq=1650
+Is MC2=0
+Is Lccl=0
+Has Simt=1

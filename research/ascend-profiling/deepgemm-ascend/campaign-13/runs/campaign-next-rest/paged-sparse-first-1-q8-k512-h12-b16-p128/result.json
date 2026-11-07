@@ -1,0 +1,145 @@
+{
+  "case": {
+    "id": "paged-sparse-first-1-q8-k512-h12-b16-p128",
+    "family": "sparse",
+    "target": "paged_sparse_mqa_logits_impl",
+    "api": "fp8_fp4_paged_sparse_mqa_logits",
+    "q": 8,
+    "k": 512,
+    "heads": 12,
+    "fp4": true,
+    "paged": true,
+    "sparse_block": 16,
+    "max_blocks": 16,
+    "page": 128,
+    "sparse_phase": "first"
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "paged-sparse-first-1-q8-k512-h12-b16-p128",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-next-rest/paged-sparse-first-1-q8-k512-h12-b16-p128/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-next-rest/paged-sparse-first-1-q8-k512-h12-b16-p128/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*paged_sparse_mqa_logits_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "paged-sparse-first-1-q8-k512-h12-b16-p128",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-next-rest/paged-sparse-first-1-q8-k512-h12-b16-p128/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm28paged_sparse_mqa_logits_implILb1ELb1ELj12ELj16ELm8704ELj128EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_",
+    "op_type": "mix",
+    "jit_binary_sha256": "ae61a17e2915fe8b94d88de7038e5c3ea78b0068f05d5e837a73b0484fd88d28",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q8-k512-h12-b16-p128/cache/paged_sparse_mqa_logits.19c6d97583086360a55226be90fd60d7",
+    "metric_rows": {
+      "ArithmeticUtilization": 84,
+      "L2Cache": 84,
+      "Memory": 84,
+      "MemoryL0": 84,
+      "MemoryUB": 84,
+      "PipeUtilization": 84,
+      "ResourceConflictRatio": 84
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/OpBasicInfo.csv": {
+      "sha256": "c71a4ff60f792c92e3daeb9a35a613424523f09b9aca25ac1b4e927afd956d9a",
+      "bytes": 246
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/PipeUtilization.csv": {
+      "sha256": "06d1125907c52dcfb6da4e7cbcff7a6ab1bb716b518149db6dec1045f033c1e6",
+      "bytes": 16681
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/ArithmeticUtilization.csv": {
+      "sha256": "829b3a07e1e600fdfcedf3e69102f1ebf6826c2eb3c146e787882cec19fa6066",
+      "bytes": 7171
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/L2Cache.csv": {
+      "sha256": "998d5256ff90bb8762d722128e2031b6ca4d30a1cc3a5b1aecba9847bb7b5925",
+      "bytes": 10559
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/Memory.csv": {
+      "sha256": "64b48468a81f4a67af0ff146613dacd203006e499cdf7d77a0e8bdc37aa25678",
+      "bytes": 16303
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/ResourceConflictRatio.csv": {
+      "sha256": "5e5630c4f0b2f0052bab83ce38ad994f4b92788123d59e547d8c43af35f0ffd3",
+      "bytes": 8101
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/MemoryL0.csv": {
+      "sha256": "b25a4f3e6a0163375a00ce98f352e99bb5544809214a9a6e380fc62e41fba06c",
+      "bytes": 5350
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/MemoryUB.csv": {
+      "sha256": "0a351ee8d1957e16c5039be180bc5dd08fd4e805bb6bee121243d31bfc9dc96e",
+      "bytes": 4807
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/visualize_data.bin": {
+      "sha256": "cb7d9b30735debcdad7480b0f4820a87b261f7b0fa8a60f77d2cddee26269b23",
+      "bytes": 290636
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/aicore_binary.o": {
+      "sha256": "ae61a17e2915fe8b94d88de7038e5c3ea78b0068f05d5e837a73b0484fd88d28",
+      "bytes": 32336
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/pc_start_addr.txt": {
+      "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf1.bin": {
+      "sha256": "bd144a13719120d0b0b4093496c58e4fda6a5b419be507382c4cc797409e7c85",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf2.bin": {
+      "sha256": "bf8e5bebc214c63fa9497387182f1d67ce3a248026f91ee4e675bac6b10f150b",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf3.bin": {
+      "sha256": "c93e86cad0844ad34c5592ebade6ce7cf189c8608edabd1c539fca6842ffba02",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf4.bin": {
+      "sha256": "492c4cf52f8e84af0285f887ca018d9818aef51553f6891cd7f8634452752ede",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf5.bin": {
+      "sha256": "9a22bc12b2723bc0cdcf2e02a4661405796c59c6679984bcacc4547d7a67528b",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/DeviceProf6.bin": {
+      "sha256": "26b7089416fb1882cf2b684a497c46c74db12868558f80f00e47d19322359c2c",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/duration.bin": {
+      "sha256": "9e8c65d4bd1261e5086132db6c81b4943728e1457106e89bf40a8fe1217a79cb",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107131419_BSCIUFKFTDMGAHWE/dump/op_basic_info.txt": {
+      "sha256": "29d46666e0e32503190cc63afef3543629df4e447bd60e008fed564fcda4fe26",
+      "bytes": 251
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

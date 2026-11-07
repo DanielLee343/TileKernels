@@ -1,0 +1,92 @@
+{
+  "case_id": "gemm-fp8fp8-nt-k-m128-n256-k512-outfp32",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.00017833709716796875
+  },
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            128,
+            512
+          ],
+          "stride": [
+            512,
+            1
+          ],
+          "sha256": "1a631d37eaa01f891aaee73c0ad24c4ec90daa32a7c7334077e854c4ee621e7a"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            128,
+            16
+          ],
+          "stride": [
+            16,
+            1
+          ],
+          "sha256": "c0a47f6dce2aef2a9ec1f53a2b724acbeaf934b0227331b2b73158dcde4b8462"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            256,
+            512
+          ],
+          "stride": [
+            512,
+            1
+          ],
+          "sha256": "305fdbed09a00d17d158612f1005c2832f0ecbaa4029cbb062ba3790f6dc8274"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            256,
+            16
+          ],
+          "stride": [
+            16,
+            1
+          ],
+          "sha256": "22026bd3d91e7b994b68de7efe1284de0c89e55ef6a5955258460ee0b6e07917"
+        }
+      ],
+      {
+        "dtype": "torch.float32",
+        "shape": [
+          128,
+          256
+        ],
+        "stride": [
+          256,
+          1
+        ],
+        "sha256": "3a164d53972323a0669b037f6e45248199016f23677cf147512ed1ad070473f9"
+      }
+    ],
+    "kwargs": {
+      "alpha": null,
+      "epilogue": null,
+      "recipe_a": [
+        1,
+        32
+      ],
+      "recipe_b": [
+        1,
+        32
+      ]
+    }
+  }
+}

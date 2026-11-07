@@ -37,5 +37,12 @@ class SparsePhaseTest(unittest.TestCase):
                 self.assertEqual(case['ks_cpu'],case['host_ks_cpu'])
                 self.assertTrue(all(k>0 and k%256==0 for k in case['ks_cpu']))
 
+    def test_profiler_error_overrides_successful_tool_exit(self):
+        collector.validate_profiler_log('[INFO] Profiling running finished. All task success.')
+        for log in ('[WARN] Child process exited with return value 1',
+                    '[WARN] Child process exited with return value -11',
+                    '[ERROR] Get profiling data failed.'):
+            with self.assertRaises(RuntimeError):collector.validate_profiler_log(log)
+
 
 if __name__=='__main__':unittest.main()

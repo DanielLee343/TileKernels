@@ -1,0 +1,103 @@
+{
+  "case_id": "mqa-0-q32-k512-h32-d64-fullrange",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "global seed before upstream test",
+  "validation": "upstream test_attention.run_mqa_logits_case",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            32,
+            32,
+            64
+          ],
+          "stride": [
+            2048,
+            64,
+            1
+          ],
+          "sha256": "1dbaa017ed7523f3e29e0d7167af4786487025265b69ebaf33795f9f70392f40"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            32,
+            32,
+            1
+          ],
+          "stride": [
+            32,
+            1,
+            1
+          ],
+          "sha256": "41f6bd8824022709239de5b38f998338994008e63ffb99607cd3abf2d04a83b6"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            512,
+            64
+          ],
+          "stride": [
+            64,
+            1
+          ],
+          "sha256": "ba00ec93279b0601323b875484ec7daa6667b375eac47c111634bc7fcb60eb12"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            512,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "sha256": "6f00dc7bddd62a61211dca10d55d76430b6fc9b99bbd81f0944b1728e5c5904b"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          32,
+          32
+        ],
+        "stride": [
+          32,
+          1
+        ],
+        "sha256": "fd6b2b5c3ffb5f44a1d3537160531b509b88acc02f4afcaf42b1d7ffa97e00bb"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          32
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          32
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "ee7625bd4e76eb4e3feb43bef3ffc6c87dea837b4d976785519cb5a9d07f01b8"
+      },
+      512
+    ],
+    "kwargs": {}
+  }
+}

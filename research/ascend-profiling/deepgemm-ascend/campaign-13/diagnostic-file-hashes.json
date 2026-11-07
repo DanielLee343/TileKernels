@@ -1,0 +1,830 @@
+{
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.json": {
+    "bytes": 3047,
+    "sha256": "03ed60a262b6f359f5ab6c82ae7404b243053d3d365c297ee2305cea98d1350f"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.log": {
+    "bytes": 458,
+    "sha256": "c80a97c8d841812c0c93817db02df7228e624017d30e6eed779cfa54d69b307c"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.log": {
+    "bytes": 6399,
+    "sha256": "58b2eebf4990ad79307bc4dd22080380286db33ff22051351daa7dd4ad18f42b"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/result.json": {
+    "bytes": 2592,
+    "sha256": "67ed1161e6735841eb66e58b036bbd214ced6a348bcc7b20cc05b81efdfa146d"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "715b83260c29b121459c6148cff03b0f8786af8635e46ce4d19456a157e02fb0"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/L2Cache.csv": {
+    "bytes": 10535,
+    "sha256": "c3f2dc85cdf115284a440f5695d8b47385645106e331a16f13e197330993a400"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "e82e2592e10a07394246f8d223d17a1e44a37609ca01397f951b8877b00c4d75"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "07f0d1f3182e7089714a0129e440904fc9ec63e176ef31abf4e95b7328a6afd8"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "c840f8f32af43ce5b389233584214545970258855ce2896230483834be2c2f16"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "b39e95eaf88d16db54406d4e28a5d3a45834a2e553139177ff491cb0de50e3bd"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/PipeUtilization.csv": {
+    "bytes": 16652,
+    "sha256": "9e84df49b994c8b384aff67ff9fcc7e083bb42d7f9361e23fbab68b20fcfc2da"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "d4c83b117ef996de69d2d8ffd4663334365be0fa4313b2be4956968719e47b8b"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/visualize_data.bin": {
+    "bytes": 287464,
+    "sha256": "49095d6d5236158ab73cccb6126cded68cdb51828944b95c7caab4ee2bccc59c"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "f33a8be50cd99786aaace55594c9b320538c5e550a7442b0cc300f9a25e7c67b"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "98d2afd615bea9fbd6723f79978a6a4a8dde6c73b01db94f1d024ad315e9f848"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "b8f632ba1230907162832ce8d304f80eaf64d621b661f8ec6a35bbb38c64902e"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "2722b6920d631de2b65ab0b53a30ff727064011646b80ee8478b2c2fa6ba6044"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "4b3cbc94356102e0d9eaf714540e45c4239b1873fa295a469bcaef69e1ea1a90"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "d3a611ba9a6761816656666853b372eab2c549139406c31928bee31f1a0b1ac7"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "fe5380cc259cba2ed3929aef88561327cf352180247dba9a056ffec52d46f8d3"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "73fc3229a872cac72712e8f35090671e8c1902701e54a2145988d7c9bfcd7354"
+  },
+  "runs/campaign-next-rest/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107131338_CFMIYAFDIZUKVOVX/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.json": {
+    "bytes": 3047,
+    "sha256": "03ed60a262b6f359f5ab6c82ae7404b243053d3d365c297ee2305cea98d1350f"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.log": {
+    "bytes": 458,
+    "sha256": "c80a97c8d841812c0c93817db02df7228e624017d30e6eed779cfa54d69b307c"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.log": {
+    "bytes": 6403,
+    "sha256": "23fe931807f8e6202bddf51ea2e2fa996384ae13b9cd3d807c9f012629c5470c"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/result.json": {
+    "bytes": 2608,
+    "sha256": "58afa535e69ded6ba2da19778604d920f0f5f84239e2a2d990c5103d85422871"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "3b4282c11503fe6fb67669c8fb80e56a398010fdf6ce2ea794cec5e82d87c279"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/L2Cache.csv": {
+    "bytes": 10537,
+    "sha256": "a8c033e66ce8b80b6fbbd78ca5f9222a8708a35273bb0aa7cc4d94268b71390a"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "b9e77085e5cd024a61c755da9bb3ba15e8596d85ad0bc1f46a9e4ed34a577c8e"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "38633f4e989906cb1c7b0b05fd3a9e0b6527cad9da9068cfee8c114f9d505286"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "f677b629a0ff2263883d18f2690d331b7483012c8609ba9f0d9280fbfaf88db3"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "38c694c8031dfa23def94d3dd42482b1ba4ded2e4523e82c5665aa4ea8150b11"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/PipeUtilization.csv": {
+    "bytes": 16653,
+    "sha256": "bb7da9fd61388909fc8f9d193cfb335f11b8532d7a2b8bc23e41bd72ce76e69c"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "7fea815d107e720de54800e431e2f8a5f283f270c29ccf424193de0732bdaa51"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/visualize_data.bin": {
+    "bytes": 287476,
+    "sha256": "77405d927e3cf1039c669942dc1c454753935d4bf44ea0a8e944ab9a3864379a"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "e5ddeec1789a6198d7dd88909e5c5727d9f691913cb0207328c635631c8321e5"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "d9061ba923abd1eb230126fb6d8189d23d538f1338f07bb0b595a57f49c7227d"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "35e3378c4221167fb048087858f85408e528a60aeeb42972d8157d29d35b13c8"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "9d1f3c81dba48cdd45486356cde327dc8470ac8861ab409572064862ca8e135e"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "5128c4d3fbb703c34ecf12a17ecf143ed4301346afd753547843e30f38949e93"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "5566e246bf5bbcd6cb8b69310472902e8d5527f74e403b04a5a00b298505882f"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "ec110aa03ffc5afe0710ab3caa567713d72256b188d4d6176c818f809cfa04f4"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "d5c10e7b284f44ee7edacb7607a1b0918c4378f8dfa43ce6ea617f7182556a6f"
+  },
+  "runs/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132007_QGSDJCWSFLSYQRJX/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.json": {
+    "bytes": 3047,
+    "sha256": "03ed60a262b6f359f5ab6c82ae7404b243053d3d365c297ee2305cea98d1350f"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.log": {
+    "bytes": 458,
+    "sha256": "c80a97c8d841812c0c93817db02df7228e624017d30e6eed779cfa54d69b307c"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.log": {
+    "bytes": 6403,
+    "sha256": "1c639a898f4b13e13591c467e708959a290f80a0ed9207e19f42784a0e7029e9"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/result.json": {
+    "bytes": 2608,
+    "sha256": "a362bf5f42938975ba8fff2d8d824383ec6f944237be2a15839faa7a1569d2ea"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "e6764c2a3457f19ec202e0dc08378f906ee677d68af2f77d02c62272e88c74e7"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/L2Cache.csv": {
+    "bytes": 10539,
+    "sha256": "86f3f2fd4e734de15cbca9f337f5b65a238ad7a671f5ea63b6b65c7b2c39e07d"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "d86e9352eb6ea15f56fc36a805a88fd716389beedf8d7b03224e3af274c9980d"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "2086d9c9062ab4367562e93ce032910c3c7d89dd646ffc0fef66b09a78d65561"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "26d5b69c4dfb982cdb0285760e3c0d1e83178c46b7119d4cdafe86770dfc56c1"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "34d60078d7208bdbc62630943c4e90017bf71d37bce7ad52b68eebb7f23ff4be"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/PipeUtilization.csv": {
+    "bytes": 16649,
+    "sha256": "ebc093590bc3948da291de82bd6e37166a07b8550cf8aa4b70d1907445d9f2f4"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "988406fcfe40d497e013b2e66922e045fed753db71b065a07d6593532394beae"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/visualize_data.bin": {
+    "bytes": 287524,
+    "sha256": "e000d309673e1295df1bb94b5b6659a27f0ca9edbf00fe3c35744bff0e2786e8"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "1ed815d6c1eee6918eb1f9a6e70083d2c336e856d7a8b4cc95f365275812d4ad"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "8149356d0bf189a38920370cc4b08bcd104a839059872b1a0ebd082d0f100847"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "a33c2d27768a2b9dc604f2a70b159f9262bbea1b949b26abb2ea95272d0b92b2"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "58e560b3e2951b3465cd0a1d5b660557da0e05d1e0a9f111a629d6ec3fd37601"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "1d3febde8c7bd61b792cc8dfb49ba9aea6be02656b58b63ad3eba930c5169626"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "69ec0fb1829111ac08ac79222942c517f9906580af069fa978501b1817c82961"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "34cacccff5f6f6d167ff2e017f9f65a19f230fb6be3e20ea7579829767ab1a52"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "06bd992860bc8faecb241d8380bebdc1e29487cf8d108686a4f3a92e3e0ffde2"
+  },
+  "runs/campaign-first-retry-2/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132037_GJQOINCQZHQRYLPN/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.json": {
+    "bytes": 3047,
+    "sha256": "03ed60a262b6f359f5ab6c82ae7404b243053d3d365c297ee2305cea98d1350f"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.log": {
+    "bytes": 458,
+    "sha256": "c80a97c8d841812c0c93817db02df7228e624017d30e6eed779cfa54d69b307c"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.log": {
+    "bytes": 6403,
+    "sha256": "09f4146ae336e1e12fb5a60b9a13f148e30c1dfd2783eb8069e590d72412fe72"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/result.json": {
+    "bytes": 2608,
+    "sha256": "37c86911a55d1dc4f817e5cee5ef370cd94aac4a92bd446d546a4fbfd07e1dc3"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "725009bac41d0aff8129ea1bf4b0b3d7ed3e3b1a96695dd7d4042f44d749d3cb"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/L2Cache.csv": {
+    "bytes": 10538,
+    "sha256": "16308085026835e1b630198bbcc8d25f00efdcbf7ead0d57fcd9219363aa7459"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "5e0f4473661cd6672d7e1c06a5c3c9ee14b9a28a94527fef9f4b1ff1ee732967"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "be2f325374534ace90b651659e4ec227480de59e514a430faccdcff4fad5fec2"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "4d174412c352cd9506517557da6ef647e725c0b9282e7c3baf62d8f13d4b305e"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "15941c5cb059754f352d81225cc90e8f3d4875b08740fb5c0608e2bb6d73b02c"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/PipeUtilization.csv": {
+    "bytes": 16650,
+    "sha256": "69156dcb8379ca5cefa49248b18269a5becb849426ca6d2e8ce8b2e5fc8607d3"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "1709fd63e8851be9afbffe344f89d7c97efc8280279c51d1e55f719e8e7c9531"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/visualize_data.bin": {
+    "bytes": 287536,
+    "sha256": "8c131fe8a908ae70c611939fe62571a5216ae3cdefa3fd1cbacfff116cd67b47"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "ab8bfc5785a10a7bb12b630f15088f0352bfe047e3004c4d70be034596098b22"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "4edc3e31e47e29fbbcfe33ab1c63e2ad1c306934574c88ef52a491b8f9ccd433"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "0b5cbd5c09374936aa6a90d8fe38d2655bec3be70f068d4ba88d4e8f9c823467"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "351dc28e844142a32dc2492ec901a93aeb20d891038e0eda43f48fc84bcc9322"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "f7d140c5f42f6d8106eb44e20f15b1ce05172112ee5ef04f266be10595fcc290"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "9885c2d066c846f4fad83c392963d23b1534cdb28c50da1de6870b943b877220"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "1a09598c7d9137e2954a9cfe364043ff61daa52fa202674d4f6af0580323a338"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "009dc186765209becf6930c7d75dc4d355c6f6916f557726a5bbf05a51fd7a46"
+  },
+  "runs/campaign-first-retry-3/paged-sparse-first-1-q4-k256-h8-b8-p64/profile/OPPROF_20261107132107_MTBPVPDLXTADQTRZ/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-diagnostics/application5/device-after.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/application5/device-before.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/application5/profile.json": {
+    "bytes": 3047,
+    "sha256": "aba75e7e7f1da8efb9ab8fbbca32ce5c0619496b91ef9e882e4ad6180e248b88"
+  },
+  "runs/campaign-first-diagnostics/application5/profile.log": {
+    "bytes": 26582,
+    "sha256": "c04896ea5ae2cf980b62cea09776bfefe907742339a3514e66908bb44e087016"
+  },
+  "runs/campaign-first-diagnostics/application5/result.txt": {
+    "bytes": 29,
+    "sha256": "9686150e300da8fb772aa10b9f9fb4dd676ed681cd3d7c4b26b14271a6b32291"
+  },
+  "runs/campaign-first-diagnostics/kernel0/device-after.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/kernel0/device-before.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile.log": {
+    "bytes": 6737,
+    "sha256": "77d2a83d47d0335c97bb1d5db9406d7398427f09273b78a68b3c13957ca46c30"
+  },
+  "runs/campaign-first-diagnostics/kernel0/result.txt": {
+    "bytes": 29,
+    "sha256": "02459960bd682eb38fe1a4f281f08a6843e06274df1f12253efa26b7107a42f6"
+  },
+  "runs/campaign-first-diagnostics/kernel5/device-after.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/kernel5/device-before.txt": {
+    "bytes": 60,
+    "sha256": "d178840e067289547352231a45bec62590196d1627736ad1a16525d42e950ed9"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile.log": {
+    "bytes": 6827,
+    "sha256": "6873c295699d69b43bdfaa7ce162af700731f4250bb5f67f90aadeeeffb4eec8"
+  },
+  "runs/campaign-first-diagnostics/kernel5/result.txt": {
+    "bytes": 29,
+    "sha256": "02459960bd682eb38fe1a4f281f08a6843e06274df1f12253efa26b7107a42f6"
+  },
+  "runs/campaign-first-diagnostics/range5/profile.json": {
+    "bytes": 3047,
+    "sha256": "aba75e7e7f1da8efb9ab8fbbca32ce5c0619496b91ef9e882e4ad6180e248b88"
+  },
+  "runs/campaign-first-diagnostics/range5/profile.log": {
+    "bytes": 4920,
+    "sha256": "c69b9f0d49f6715a1b97659d1545fd2bf6578ee8d47aa19889427da3e8b0adf4"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "aa9fb55e38da9f660c1fa1f7431a54cdd9f2e42d0bc7e2c7a737e29a66667fb5"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/L2Cache.csv": {
+    "bytes": 10594,
+    "sha256": "4612c6f8952bac418b1bfc3a8889eebc8e2be5d2ff4da9a74818eecac718d2ed"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/Memory.csv": {
+    "bytes": 16297,
+    "sha256": "f55b92b467f4a7668999493d80883adc2eb4419536363a896a7fb280b24f7612"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "44af8cf9dbcfd9e5e5e72320333ca7e83ccc2fbda5516936d398988940df6cb7"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "5b2e719d9aed3fb804374f6791df45fb17f6a451741765f55bed063f579570af"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/OpBasicInfo.csv": {
+    "bytes": 239,
+    "sha256": "2da592bf0e96a0dcc0b8c3c7a690a89e54df0e517b3bccec6b8dc90bff8078b1"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/PipeUtilization.csv": {
+    "bytes": 16668,
+    "sha256": "d0680ca7256062d8f576a41608bf7a69c40024948cd51aabddd2bd5d5220d3ef"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "e0836aaf02d924702383e6262c97dd1b51ec9234588050cd4177c132412ff639"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/visualize_data.bin": {
+    "bytes": 287584,
+    "sha256": "f8254d9208f7e785d567cbdd09cfbd724306d6dfa24b07dee12711e24146ee5d"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "b38f7d76ec58d0dd8a8a183281bbfccbe2ae4526e1ed6143aad9c353a379c5f0"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "297bc71f3a24904ff96ff81d01d0e58f39bc4ec2e74d92fa3afab656cdf08fef"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "ca4e651db073f2a29d86ddc41fdb4293375ef6dbf79ee70bc70f56712aeaf77d"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "ae8d5ebd096453cb41a1f1cfc9825e90ea57360aba0786cf86e268c20b57d1eb"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "cd4d47b7637362b3278bcf1abd21454e67df526261927bc6dfa7e647f3125cbd"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "5ca4612180b7f37f2354f7e993ecef12ed0995cd9907c5bba80986c52b3c9ef3"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "e0d53284d0fb3f61746ce55a75996eaf60bd05b185bbd922f29c44d8243bee25"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/op_basic_info.txt": {
+    "bytes": 237,
+    "sha256": "2644f3cc6336f6c0ea67821a4fdeaad4b06a863347e3c740fa0615fed08cfcc2"
+  },
+  "runs/campaign-first-diagnostics/application5/profile/OPPROF_20261107132314_VTGBBYZUSWTGYTCY/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/ArithmeticUtilization.csv": {
+    "bytes": 7172,
+    "sha256": "09d74cf7e7788fb1a65d3765011957e82e9efc01423f4faa02390acfcc690071"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/L2Cache.csv": {
+    "bytes": 10526,
+    "sha256": "e6279cdadf9be6170ccadf55c74fccc796d078f500480afd246d1366512caa23"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/Memory.csv": {
+    "bytes": 16296,
+    "sha256": "e354ab94b4a48c456f8888dfa4d39db866afe27cd6e58c5aaf3030c204981c88"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/MemoryL0.csv": {
+    "bytes": 5351,
+    "sha256": "2ce8de14d5e8c8327861570f9509225edbe39f84d5ddc48a8b67bc4dbb878502"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/MemoryUB.csv": {
+    "bytes": 4808,
+    "sha256": "a8802adfdbea798fd6abcc58544132a7468a846016516f9dc80b80a66b93c42b"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "6498fdc05cde0ec1662d780f6aa2c5efd3d6a2df6335c19aaeb3d0c610ba24ec"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/PipeUtilization.csv": {
+    "bytes": 16656,
+    "sha256": "18998f157dde3622c84e39d751209b2ffcb1b089563fe588ac73d7258cf66b3d"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/ResourceConflictRatio.csv": {
+    "bytes": 8102,
+    "sha256": "395c890b170df9f381e6c77f6aca23eaaae2cd5dd27ace92f8169d6aa9b05725"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/visualize_data.bin": {
+    "bytes": 287544,
+    "sha256": "b572dbd03dee27f82fad131794ad1300dbbffb8cb3ca11ef09a389308824690b"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "178daa93cd4c98be884170502dcdc78c4a602ff99928166a19453a3f22b6074a"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "f036d62f7aafe25424e8bc6acf8d6cf8ec651c61da35063d8d18943eeda1aeff"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "5c3ec186b7b7b6732b8e1c50e5dfa0928cfb9fe44a4f986d4214b29839402f55"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "9f2325e79a1cc854342989576e9af93542ca67d30cb73097c3c2d5c269bde76b"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "c9cc71588a91a830276c586b7248cccc3f1b2d95ac143078cb9191908b1f0391"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "b8e95c99aaf6f8d3b7b576ee9a0cbaef8fe4d5f5a7a0bed090bd8b14c76bef20"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "71cee95212cdfbce254b9f61fa9321c0f1a275c37e74103511fb34544c70ed48"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "419e2f302e2dd09c72e9e7d9be2e7213672bbee5d7e2242c188f752d93d1802b"
+  },
+  "runs/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "8f920d47096d30eb56a326cbef3e3008c9d4cf83c9792b1f0bd5a40cdcaff989"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/L2Cache.csv": {
+    "bytes": 10536,
+    "sha256": "8e29fa0aaf441cfc9b20dde0d8761f73ca3cf8f4266523c870452fc99b2b61f7"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "9939474838732034b11a743522b2cdbeeac1ecd5d9b77b1f1f97409d067ff4d4"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "d7ba807c9c7d813e55035b9d6ce7a2679d391194c0e9319dbc3aad4f6ab0407a"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "f32b5f40e9d43162719d8b4c90267b69d12774c4911e3bb4d8ff9d8dfeca4397"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "7a707970ac4ecdf36de7d2c2c995f7820a2114bce36d6f10eaced23aa658bec2"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/PipeUtilization.csv": {
+    "bytes": 16646,
+    "sha256": "9cb98a9d37ebdc7feb06a26d6f4643237c32172278bd579eaee861d764f0d8de"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "b87d6807a2fb65103c6c6c24f35ecc17e984c0f30e67490033591cc591fb9c1f"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/visualize_data.bin": {
+    "bytes": 287460,
+    "sha256": "a8e9d6edbf38eacdbd96bac104881b566b978da689f0870c2e3d0254964f3169"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "74aff776fce74885b9ad7802f35b7bac52d9c730a4589f742d47c1f2bc34317d"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "5c1304bcedf6d5b1a14727a5ca8a80c016fbce30531513fc86143fbda9e63dbe"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "ee88c4e81a6b0383d4c52c19989e6a3bc98d5cc657f5cede970c4cc5502a65cc"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "132f6969a09db84d54101d69495d03c8b91a8f469e1bad10757a737b3d11de9d"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "053ae4000df6ddaf1fb379b5b48e39090d9862607c725929d602dc5b9bd10002"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "5b4158505a656caa3ee9517ffd976a2eac0b8e0e85711e86639d43d75d57ea75"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "3c35f7b592286c92cb9c387c6631d6e843f05f8a9ee29c91eff6e16344b820fc"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "97e4670db3d799d121f83e72c8cf2fd56d2e8ffbdce64879202e680d9cd4123f"
+  },
+  "runs/campaign-first-diagnostics/kernel5/profile/OPPROF_20261107132229_IKIIYKGGUKFFPIRB/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/ArithmeticUtilization.csv": {
+    "bytes": 7173,
+    "sha256": "4ffd98143650bdd4720e6d961ecdaaf87957f1c991789dc6b53a895490a52938"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/L2Cache.csv": {
+    "bytes": 10653,
+    "sha256": "1ad8af51a955da30b9872560e9a449180656ef2169775333c76a50109f38dd0c"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/Memory.csv": {
+    "bytes": 16399,
+    "sha256": "73d161adfa87efd20bd990d11fbe4d241f3a05f973f45b7d6bc7d75da1459148"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/MemoryL0.csv": {
+    "bytes": 5352,
+    "sha256": "23b7ae01c46f9e485ff7d9d722059024cba803dbd83d65e47f1d90adb3b0b263"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/MemoryUB.csv": {
+    "bytes": 4809,
+    "sha256": "db4a3f696ab44ad7846be59c4cfa3ca6e839fea83a5e2141daa4eb26ea17dc25"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "06e6688278e2890d9c15482869a96fbe652f811db6e3e0afee8d49c942b2f3a2"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/PipeUtilization.csv": {
+    "bytes": 16710,
+    "sha256": "d05d86e575db5eb0d06792fbe530b9706f2920c3a3b67ea03feaa97faecc81c9"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/ResourceConflictRatio.csv": {
+    "bytes": 8103,
+    "sha256": "ff604914f7a1ba0d1a052641243910b9a0899d3a36838950a3613a3149bd2b95"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/visualize_data.bin": {
+    "bytes": 287976,
+    "sha256": "37831ab12ddfaaee97ae795259344acc8b42c72847634d111ab6bf64df879799"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "01fc82f58f2ce1edaa173515d3dd280af68f418e2d79fe74b49c212b93db1d8d"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "ebc27f2cea195580040e5c0a56b1c0f4b4edded64d6b4b391aa54c3dca6f2f13"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "2e8bd12ffdb3f43b5a40a6e5828eede9e1762a95930efa29da8c04f86af7b7bb"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "1a5afb49086b4c2f5636a9316e8201d0137b908aac155592978257a944e57c97"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "46623a12699b9cbfd85669393c70c075a3fdd4e935ec13f6b6c03bfe5916046c"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "5d21cb360fb8c88b09bd103c01751f7b6eb170e4f11174a307066075cb21c8f9"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "41d924ef2463e29c2804708c5fe2bceedc9065eb8ad1d0c8cc49fdc7dc04cf08"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "520fe716da102e3c1a593b7cffd7e0b935f2f827c55bcd37ab5a138a0dacfbca"
+  },
+  "runs/campaign-first-diagnostics/range5/profile/OPPROF_20261107133237_ZIPPROEXNXIHTXHY/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  },
+  "runs/campaign-metadata-compare/prepare.bin": {
+    "bytes": 2140160,
+    "sha256": "fded16468b493915e94229f7754f862de11eee071ef9afd913eb455eeb2c6237"
+  },
+  "runs/campaign-metadata-compare/prepare.json": {
+    "bytes": 3047,
+    "sha256": "03ed60a262b6f359f5ab6c82ae7404b243053d3d365c297ee2305cea98d1350f"
+  },
+  "runs/campaign-metadata-compare/prepare.log": {
+    "bytes": 626,
+    "sha256": "f7c16104cf1ecf4ba487dcf8a5637536a69182a1cba5625a65322b73725c2b63"
+  },
+  "runs/campaign-metadata-compare/profile.bin": {
+    "bytes": 2140160,
+    "sha256": "86deb1921ca128d7dd3aa5d4eddee47cf6abee21e245450cc083fd8947f96321"
+  },
+  "runs/campaign-metadata-compare/profile.log": {
+    "bytes": 7467,
+    "sha256": "b4e1d51d42acb44b4c283b61234b2ac1fc93f1e2d9852b6b7de59f7b0bd38e12"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/ArithmeticUtilization.csv": {
+    "bytes": 7171,
+    "sha256": "976e91f6e962f42b4832e17e0c03b58e548facc834055461e17a9c33b8fcd907"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/L2Cache.csv": {
+    "bytes": 10536,
+    "sha256": "ec54d187bb9accde7efbeebaea9fa27b927fe92497b705d1669cb994d69b4322"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/Memory.csv": {
+    "bytes": 16295,
+    "sha256": "0a9c832ab4eee5ad311da77b9dba9c836cff9a726dc05175d1fca3b6fc14cabb"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/MemoryL0.csv": {
+    "bytes": 5350,
+    "sha256": "8d5d2ffdab00979eead8de287a91bef4f1b6a009f598ed9e9d8ea85076476ba3"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/MemoryUB.csv": {
+    "bytes": 4807,
+    "sha256": "74b18caa759ee632263141a2e49593c436c1b8cc700136942510bf9374b94044"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/OpBasicInfo.csv": {
+    "bytes": 243,
+    "sha256": "53b2a80759d88e5f89a6cd9882ddba0282489f3e8cadd079d40d21abea828333"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/PipeUtilization.csv": {
+    "bytes": 16652,
+    "sha256": "58520364f181574a73a93ea7575244b22b25e50c6add336d8aa59fd075ac08d3"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/ResourceConflictRatio.csv": {
+    "bytes": 8101,
+    "sha256": "899288841d07779c22487c21f1d59d5740203fc4f8090efc4a6a26e8adf37281"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/visualize_data.bin": {
+    "bytes": 287556,
+    "sha256": "cf17eb123e5a277d5bf9dedd1900b4f84f15bf83946b798b513b74a226ee8c72"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/aicore_binary.o": {
+    "bytes": 32432,
+    "sha256": "44eb4fbc082f63f2c924946ec8e6ec69ed77623f707d9625b08c849fee7fd9a2"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf1.bin": {
+    "bytes": 11008,
+    "sha256": "a19e25f4992a3390afff272c7e117e714fd0ade3928d167e01bbb63c86cbb7de"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf2.bin": {
+    "bytes": 11008,
+    "sha256": "7049b4aa71b01bf463bb85fc210be56794dd0d8f111fc1a93e98691eb06a3a80"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf3.bin": {
+    "bytes": 11008,
+    "sha256": "d99c1b34696015ae7f1de3896a296447afdd219697e49eb91b9b612eeec11443"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf4.bin": {
+    "bytes": 11008,
+    "sha256": "10ef03407bc0e48d66fd11eb8507dcd9f377fa7ce7d38e3d93f024d06f5edd15"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf5.bin": {
+    "bytes": 11008,
+    "sha256": "d2ed8940d72bf99cffa8b6790f7bc82d774d466720e9524a578239dd8cfd163c"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/DeviceProf6.bin": {
+    "bytes": 11008,
+    "sha256": "5531beb45a9870b4ca4a69a939c621a603f793f45c7b45d59e7400076a5d8694"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/duration.bin": {
+    "bytes": 64,
+    "sha256": "1f21812568304188b340bdd8fa9dbd2bf7ef8e1ad8eecdeea7b792336c8a69bd"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/op_basic_info.txt": {
+    "bytes": 248,
+    "sha256": "3a0d393caa15bbfa1ca85144b37d47f46966430ced54695f454c4b73880a61ef"
+  },
+  "runs/campaign-metadata-compare/profile/OPPROF_20261107133120_GUILNOLXEZYRMUDS/dump/pc_start_addr.txt": {
+    "bytes": 14,
+    "sha256": "2eae71dd7aa6f0ec8e7baa2d0f5833d6e43e02c96501e6842302bcbfcb75cb26"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "60f396033bc9882f92c4c9fcd734b66f7fde42afc66d0c140ca18f7d8b8c4b24",
+  "collector_sha256": "3bdd0e2ea2ff8454f0c389b51359f31adcee0a4fa5204eaa5a25c7da6de12144",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "replay_mode": "range",
+  "cases": [
+    {
+      "id": "paged-sparse-first-1-q4-k256-h8-b8-p64",
+      "status": "passed"
+    }
+  ]
+}

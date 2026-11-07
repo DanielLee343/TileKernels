@@ -1,0 +1,6 @@
+mqa-0-q32-k512-h32-d64-fullrange passed
+mqa-1-q32-k512-h32-d64-fullrange passed
+mgroup-bf16bf16-nt-g8-m32-n256-k512 passed
+mgroup-fp8fp8-nt-g8-m32-n256-k512 passed
+mgroup-fp4fp4-nt-g8-m32-n256-k512 passed
+mgroup-fp8fp4-nt-g8-m32-n256-k512 passed

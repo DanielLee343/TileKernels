@@ -1,0 +1,50 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:16:16.965566836 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 13:16:21] [161084] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/kgroup-fp8fp8-tn-g4-m64-n256-k512/cache/transform_sf.737def10edf6f825c9f3bd92aa3ae1f9/kernel.json
+[2026-11-07 13:16:21] [161084] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:16:21] [161084] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/kgroup-fp8fp8-tn-g4-m64-n256-k512/cache/fp8_gemm.36802c54a96110999c30d53d968d7627/kernel.json
+[2026-11-07 13:16:21] [161084] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[INFO]  Kernel _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE1ELj512ELj32ELNS_8GemmTypeE2ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj skipped: not selected via --kernel-name.
+[INFO]  Kernel _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE1ELj512ELj32ELNS_8GemmTypeE2ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj skipped: not selected via --kernel-name.
+[2026-11-07 13:16:21] [161084] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm13fp8_gemm_implILNS_5MajorE1ELS1_1ELj64ELj256ELj0ELj64ELj64ELj512ELj64ELj64ELj256ELj4ELj2ELj3ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE2Eu9__fp8e4m3u6__bf16NS_8epilogue9operators8IdentityELj256ELb0ELb0EEEvNS_6gm_ptrIT21_XT_EEENS8_IS9_XT0_EEEPsSC_NS8_IT22_LS1_0EEEjjjPijNS5_4ArgsE
+[2026-11-07 13:16:21] [161084] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm13fp8_gemm_implILNS_5MajorE1ELS1_1ELj64ELj256ELj0ELj64ELj64_8911100151729856562, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm13fp8_gemm_implILNS_5MajorE1ELS1_1ELj64ELj256ELj0ELj64ELj64ELj512ELj64ELj64ELj256ELj4ELj2ELj3ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE2Eu9__fp8e4m3u6__bf16NS_8epilogue9operators8IdentityELj256ELb0ELb0EEEvNS_6gm_ptrIT21_XT_EEENS8_IS9_XT0_EEEPsSC_NS8_IT22_LS1_0EEEjjjPijNS5_4ArgsE
+	Op Type: mix
+	Task Duration(us): 5.219000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 161084
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-next-rest/kgroup-fp8fp8-tn-g4-m64-n256-k512/profile/OPPROF_20261107131615_LVYNIAOHZHNRIHGA
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

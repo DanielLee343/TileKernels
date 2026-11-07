@@ -1,0 +1,67 @@
+{
+  "case_id": "mgroup-bf16bf16-nt-g8-m32-n256-k512",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.0
+  },
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          2048,
+          512
+        ],
+        "stride": [
+          512,
+          1
+        ],
+        "sha256": "4168ccc29853de3306e6e2788db334c039a753bb0b37824edcfff73f7aba2d04"
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          8,
+          256,
+          512
+        ],
+        "stride": [
+          131072,
+          512,
+          1
+        ],
+        "sha256": "810f7aa83381fcea083a23cc6136b2d8a388ea433e5804616bd692b4e2a79be3"
+      },
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          2048,
+          256
+        ],
+        "stride": [
+          256,
+          1
+        ],
+        "sha256": "fb9af5692cc2de26d3856cea638bbc708aa38677d39d00241cb841f12d2b9bd9"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          8
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "6a1a2e88aeac10f47ab04840b5b7f9ce61afbd821d5f1a1aa501b1d22ce62d18"
+      }
+    ],
+    "kwargs": {
+      "epilogue": null
+    }
+  }
+}

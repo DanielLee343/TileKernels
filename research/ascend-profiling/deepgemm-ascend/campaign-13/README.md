@@ -2,6 +2,8 @@
 
 入口清单和状态在 `STATUS.md`。`cases-initial.json`／`collect-initial.py` 对应首轮，`cases-expanded.json`／`collect-expanded.py` 对应 97-case 扩展轮；`cases-next-first.json`／`collect-next-first.py` 对应首次调用试点，`cases-next.json`／`collect.py` 包含下一批大 M、FP32 输出、首次调用和分组布局。每项 case 记录目标 kernel、调用入口、dtype、形状、布局与参数。不同目标可能使用同一算子输入，不能作为不同专家来源。
 
+`cases-last.json`／`collect-last.py` 对应 head_dim=64 的连续 MQA 和 8 组 M-group GEMM；它们已采集。当前 `collect.py` 增加了可选择的 replay 模式和 profiler 子进程错误检查，`cases-last.json`／`collect.py` 对应 3 次 range replay 复采。
+
 FIRST 试点已在 hidev 通过；下一批分组布局和 28 核适配脚本仍需实机验证，不能据此宣称相关 case 已通过。
 
 各版脚本均读取同目录的 `cases.json`。重跑或运行某批时，应在与 `pilot-bf16` 并列的隔离工作目录中，把该批清单复制为 `cases.json`，并执行同一批的脚本；不要在另一批正在运行时替换其清单或脚本。运行记录中的 SHA-256 可用于检查版本。
@@ -19,5 +21,7 @@ FIRST 试点已在 hidev 通过；下一批分组布局和 28 核适配脚本仍
 ```
 python -B campaign-13/collect.py batch --source source --output NEW_OUTPUT --cache-root NEW_CACHE --device 0 --case CASE_ID
 ```
+
+默认是 kernel replay；需要复现单独的 range replay case 时，追加 `--replay-mode range`。两种结果需按 replay 模式分别使用。
 
 MegaMoE 所要求的 32 Cube 核与本机 28 核不符；不要伪造核数或将修改后的结果误当成原版专家数据。

@@ -1,0 +1,92 @@
+{
+  "case_id": "gemm-fp4fp4-nt-k-m4096-n576-k7168",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.0
+  },
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            4096,
+            3584
+          ],
+          "stride": [
+            3584,
+            1
+          ],
+          "sha256": "8cac2ac3ccabb8348f28485b4f5a3f1c98a944883d298be234712254b5a70ed6"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            4096,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "1d18fd493a19b73395c6bc87fde1cd548bcd9caeef6b0af1997fd886a61587e0"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            576,
+            3584
+          ],
+          "stride": [
+            3584,
+            1
+          ],
+          "sha256": "59cb1f0f14456bbf259b0d8f8570cbb470170222f3b64aef8f4fa359de958dfc"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            576,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "af634612fe1df78346a63ba9158997ac710a51deeb66a1971eb331e87037878c"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4096,
+          576
+        ],
+        "stride": [
+          576,
+          1
+        ],
+        "sha256": "04e5eab7793ce7ca353ef6c9f69fc9cd615af3f8ab5f5fa7525531aaa5d51949"
+      }
+    ],
+    "kwargs": {
+      "alpha": null,
+      "epilogue": null,
+      "recipe_a": [
+        1,
+        32
+      ],
+      "recipe_b": [
+        1,
+        32
+      ]
+    }
+  }
+}

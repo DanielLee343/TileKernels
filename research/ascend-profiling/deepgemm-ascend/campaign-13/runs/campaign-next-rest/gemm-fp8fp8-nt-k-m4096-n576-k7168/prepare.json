@@ -1,0 +1,92 @@
+{
+  "case_id": "gemm-fp8fp8-nt-k-m4096-n576-k7168",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.5
+  },
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            4096,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ],
+          "sha256": "9b8d2b7d2d0e9046f24f337aaa78d71818f6db71480b61d8254bacb76a145b4e"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            4096,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "9b638377bf1797ee441c9ef4799435f10b4a78f2fb4212cd497b93ee7a45715e"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            576,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ],
+          "sha256": "f2b30eacef4383181fd30328f1e59c6606c983b1c6528eeda4d8a1dea6a178c7"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            576,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "5b04fc00568bcfc516c4caa442adcff18c67f3c7ec3756fead213590fe89f708"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4096,
+          576
+        ],
+        "stride": [
+          576,
+          1
+        ],
+        "sha256": "20b1a9e0e2c79f7f6165f54f2d26ece83e6fb539fbd247a879235606a3838221"
+      }
+    ],
+    "kwargs": {
+      "alpha": null,
+      "epilogue": null,
+      "recipe_a": [
+        1,
+        32
+      ],
+      "recipe_b": [
+        1,
+        32
+      ]
+    }
+  }
+}

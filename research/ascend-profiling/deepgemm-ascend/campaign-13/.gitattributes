@@ -1,3 +1,5 @@
 runs/** -text
 collect*.py -text
 cases*.json -text
+diagnose*.py -text
+mega*.py -text

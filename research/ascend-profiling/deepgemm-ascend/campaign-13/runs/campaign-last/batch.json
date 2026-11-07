@@ -1,0 +1,33 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "60f396033bc9882f92c4c9fcd734b66f7fde42afc66d0c140ca18f7d8b8c4b24",
+  "collector_sha256": "f382359d812071d2b214a75cbde32da2bf756835cc01a334f4e654a3ed0b7a7f",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "cases": [
+    {
+      "id": "mqa-0-q32-k512-h32-d64-fullrange",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-1-q32-k512-h32-d64-fullrange",
+      "status": "passed"
+    },
+    {
+      "id": "mgroup-bf16bf16-nt-g8-m32-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "mgroup-fp8fp8-nt-g8-m32-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "mgroup-fp4fp4-nt-g8-m32-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "mgroup-fp8fp4-nt-g8-m32-n256-k512",
+      "status": "passed"
+    }
+  ]
+}

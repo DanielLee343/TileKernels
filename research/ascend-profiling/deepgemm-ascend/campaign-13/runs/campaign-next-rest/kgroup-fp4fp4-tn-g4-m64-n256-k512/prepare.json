@@ -1,0 +1,106 @@
+{
+  "case_id": "kgroup-fp4fp4-tn-g4-m64-n256-k512",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 0.0
+  },
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            1536,
+            32
+          ],
+          "stride": [
+            32,
+            1
+          ],
+          "sha256": "9be5e9f9b3dd2acc007e9db5ef695cc62bd5bd08b8a8b75b5ce290605a020724"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            48,
+            64
+          ],
+          "stride": [
+            64,
+            1
+          ],
+          "sha256": "bbf0196628dc87040cde7bc92aee3eec8390209221d423228822e2fb30e6e71d"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            1536,
+            128
+          ],
+          "stride": [
+            128,
+            1
+          ],
+          "sha256": "468356e731eb8b572f49fd3a186f42458a9584d632825f95cc7698871727ce96"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            48,
+            256
+          ],
+          "stride": [
+            256,
+            1
+          ],
+          "sha256": "07021ffa3ec3cf283ef2a072a68355ea13374069f9327ad4b58a1d14dc18e566"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4,
+          64,
+          256
+        ],
+        "stride": [
+          16384,
+          256,
+          1
+        ],
+        "sha256": "577d32d118455fe1ed4aed5d4d36465357adfc094b40f0276cc802bea4c65f2c"
+      },
+      [
+        512,
+        256,
+        512,
+        256
+      ],
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          4
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "2597d4794502f65b239dc80a5b99e6b5e748cb8a1c1d7fadb290a7d02d27f758"
+      }
+    ],
+    "kwargs": {
+      "epilogue": null,
+      "recipe": [
+        1,
+        1,
+        32
+      ]
+    }
+  }
+}

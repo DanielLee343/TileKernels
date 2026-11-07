@@ -1,0 +1,52 @@
+{
+  "case": {
+    "id": "paged-sparse-first-1-q4-k256-h8-b8-p64",
+    "family": "sparse",
+    "target": "paged_sparse_mqa_logits_impl",
+    "api": "fp8_fp4_paged_sparse_mqa_logits",
+    "q": 4,
+    "k": 256,
+    "heads": 8,
+    "fp4": true,
+    "paged": true,
+    "sparse_block": 8,
+    "max_blocks": 16,
+    "page": 64,
+    "sparse_phase": "first"
+  },
+  "status": "failed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "paged-sparse-first-1-q4-k256-h8-b8-p64",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*paged_sparse_mqa_logits_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "paged-sparse-first-1-q4-k256-h8-b8-p64",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/deepgemm-ascend-20261107/campaign-13/collect.py\", line 217, in run_case\n    a=json.loads((output/'prepare.json').read_text());b=json.loads((output/'profile.json').read_text())\n                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1029, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/workspace/deepgemm-ascend-20261107/campaign-first-retry-1/paged-sparse-first-1-q4-k256-h8-b8-p64/profile.json'\n"
+}

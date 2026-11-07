@@ -1,0 +1,81 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 13:22:52.375807553 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 13:23:01] [172435] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q4-k256-h8-b8-p64/cache/paged_sparse_mqa_prepare.e933bdf30fc051fd2aea74b2f9d9a267/kernel.json
+[2026-11-07 13:23:01] [172435] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:23:01] [172435] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q4-k256-h8-b8-p64/cache/paged_mqa_logits_metadata.b6611c9eef181d35c07a126c76cd5443/kernel.json
+[2026-11-07 13:23:01] [172435] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:23:02] [172435] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q4-k256-h8-b8-p64/cache/paged_sparse_mqa_logits.92a0454e5813005f1e64f2d1eabb5e6e/kernel.json
+[2026-11-07 13:23:02] [172435] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:23:02] [172435] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb1ELb1ELj8ELj8ELm4608ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_
+[2026-11-07 13:23:03] [172435] [BinaryInstrumentation.cpp:155] [WARN] dump probe symbols failed.
+[2026-11-07 13:23:03] [172435] [BinaryInstrumentation.cpp:222] [WARN] generate link ordering file failed
+[2026-11-07 13:23:03] [172435] [HijackedFuncOfAclrtLaunchKernelWithHostArgsImpl.cpp:186] [WARN] New function context get failed, dbi mode is 7
+[2026-11-07 13:23:03] [172435] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q4-k256-h8-b8-p64/cache/paged_mqa_logits.168762b5a3fff6dabadc424c3b198e12/kernel.json
+[2026-11-07 13:23:03] [172435] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 13:23:05] [172435] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-first-1-q4-k256-h8-b8-p64/cache/paged_sparse_mqa_logits.542a9691765cb4a8604e903f02cec7ad/kernel.json
+[2026-11-07 13:23:05] [172435] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+EQUALITY_DIAGNOSTIC {"elements": 512, "different": 511, "nonfinite_a": 0, "nonfinite_b": 0, "max_abs_finite": 93.0, "mean_abs_finite": 16.10948371887207}
+Traceback (most recent call last):
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/diagnose_first.py", line 29, in <module>
+    runpy.run_path(str(script),run_name='__main__')
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py", line 259, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py", line 243, in main
+    worker(selected[0],args.source,args.stage,args.output);return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py", line 110, in worker
+    attention.run_sparse_mqa_logits_case(case['heads'],case['fp4'],case['paged'],case['q'],case['k'],
+  File "/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py", line 866, in run_sparse_mqa_logits_case
+    assert torch.equal(run_sparse()[valid_mask], sparse_valid), 'sparse MQA logits self-consistency mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: sparse MQA logits self-consistency mismatch
+[ERROR] 2026-11-07-13:23:10 (PID:172435, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception
+[WARN]  Child process exited with return value 1
+[ERROR] Get profiling data failed.
+[WARN]  Profiling running finished. May cause generating performance files to fail.
+[WARN]  Running task failed, data parsing start
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb1ELb1ELj8ELj8ELm4608ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm28paged_sparse_mqa_logits_implILb1ELb1ELj8ELj8ELm4608ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_
+	Op Type: mix
+	Task Duration(us): 6.881000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 172435
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-first-diagnostics/kernel0/profile/OPPROF_20261107132251_DHIWXPSXBOVLQYHX
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

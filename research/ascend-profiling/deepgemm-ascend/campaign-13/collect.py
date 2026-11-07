@@ -32,6 +32,11 @@ def validate_sparse_specialization(source, phase):
         raise ValueError('captured FIRST/REUSE specialization mismatch')
 
 
+def validate_profiler_log(log):
+    if re.search(r'Child process exited with return value -?[1-9]\d*|\[ERROR\]',log):
+        raise RuntimeError('profiler reported a child or collection error')
+
+
 def worker(case, source, stage, output):
     import torch
     import torch_npu  # noqa: F401
@@ -198,8 +203,8 @@ def inspect_profile(case, root, cache):
             'jit_binary_sha256':sha,'jit_directory':str(matches[0].parent),'metric_rows':metrics}
 
 
-def run_case(case, source, output, cache_root, device):
-    output=Path(output);output.mkdir(parents=True,exist_ok=False);result={'case':case,'status':'running'}
+def run_case(case, source, output, cache_root, device, replay_mode):
+    output=Path(output);output.mkdir(parents=True,exist_ok=False);result={'case':case,'status':'running','replay_mode':replay_mode}
     try:
         idle,result['device_before']=base.device_idle(device)
         if not idle:raise RuntimeError('device busy')
@@ -209,11 +214,13 @@ def run_case(case, source, output, cache_root, device):
         pre=args+['prepare',str(output/'prepare.json'),str(source)]
         result['prepare_command']=pre;result['prepare_exit']=base.run_logged(pre,env,output/'prepare.log')
         if result['prepare_exit']:raise RuntimeError('upstream validation failed in prepare')
-        command=['msprof','op','--output='+str(output/'profile'),'--aic-metrics=Default','--replay-mode=kernel',
+        command=['msprof','op','--output='+str(output/'profile'),'--aic-metrics=Default','--replay-mode='+replay_mode,
                  '--mstx=true','--mstx-include=dg_campaign_target','--kernel-name=*'+case['target']+'*',
                  '--launch-count=1','--warm-up=5']+args+['profile',str(output/'profile.json'),str(source)]
         result['profile_command']=command;result['profile_exit']=base.run_logged(command,env,output/'profile.log')
         if result['profile_exit']:raise RuntimeError('profile process failed')
+        log=(output/'profile.log').read_text(errors='replace')
+        validate_profiler_log(log)
         a=json.loads((output/'prepare.json').read_text());b=json.loads((output/'profile.json').read_text())
         if a['status']!='passed' or b['status']!='passed' or a['target_input']!=b['target_input']:
             raise ValueError('upstream validation or target inputs changed between stages')
@@ -236,6 +243,7 @@ def main():
     p=sub.add_parser('__worker');p.add_argument('id');p.add_argument('stage');p.add_argument('output');p.add_argument('source')
     p=sub.add_parser('batch');p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--cache-root',type=Path,required=True);p.add_argument('--device',type=int,default=0);p.add_argument('--case',action='append')
+    p.add_argument('--replay-mode',choices=('kernel','range','application'),default='kernel')
     args=parser.parse_args();manifest=json.loads((ROOT/'cases.json').read_text());cases=manifest['cases']
     if args.action=='__worker':
         selected=[x for x in cases if x['id']==args.id]
@@ -246,10 +254,10 @@ def main():
     if head!=manifest['source_commit'] or dirty:raise RuntimeError('source mismatch or dirty')
     out=args.output.resolve();out.mkdir(parents=True,exist_ok=False)
     state={'source_commit':head,'cases_sha256':base.file_hash(ROOT/'cases.json'),
-           'collector_sha256':base.file_hash(__file__),'base_collector_sha256':base.file_hash(BASE),'device':args.device,'cases':[]}
+           'collector_sha256':base.file_hash(__file__),'base_collector_sha256':base.file_hash(BASE),'device':args.device,'replay_mode':args.replay_mode,'cases':[]}
     selected=base.select_cases(cases,args.case)
     for case in selected:
-        result=run_case(case,source,out/case['id'],args.cache_root.resolve(),args.device)
+        result=run_case(case,source,out/case['id'],args.cache_root.resolve(),args.device,args.replay_mode)
         state['cases'].append({'id':case['id'],'status':result['status']})
         (out/'batch.json').write_text(json.dumps(state,indent=2)+'\n')
         print(case['id'],result['status'],flush=True)

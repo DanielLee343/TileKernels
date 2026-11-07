@@ -1,0 +1,92 @@
+{
+  "case_id": "gemm-fp8fp4-nt-k-m4096-n576-k7168",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "seed_note": "initial global seed; GemmTestDesc.generate resets all seeds to 0",
+  "validation": "upstream GemmTestDesc reference; upstream GEMM cosine diff < 1e-5",
+  "diagnostics": {
+    "cosine_diff": 0.0,
+    "max_abs_error": 1.0
+  },
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            4096,
+            7168
+          ],
+          "stride": [
+            7168,
+            1
+          ],
+          "sha256": "9b8d2b7d2d0e9046f24f337aaa78d71818f6db71480b61d8254bacb76a145b4e"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            4096,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "9b638377bf1797ee441c9ef4799435f10b4a78f2fb4212cd497b93ee7a45715e"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            576,
+            3584
+          ],
+          "stride": [
+            3584,
+            1
+          ],
+          "sha256": "ec4c8f869351cf81b9b374022147daa171642d427928c16cc6e7cc0fbed542cc"
+        },
+        {
+          "dtype": "torch.float32",
+          "shape": [
+            576,
+            224
+          ],
+          "stride": [
+            224,
+            1
+          ],
+          "sha256": "2ff7a6348ceef5aa7ce2b069a6790072c3fa5acb982432f09b3749e2d90c874d"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4096,
+          576
+        ],
+        "stride": [
+          576,
+          1
+        ],
+        "sha256": "9d74f08fa5ea20fc52886eaaebf0beb8f9eedb77d78dbb2e902ac875ba0e38b2"
+      }
+    ],
+    "kwargs": {
+      "alpha": null,
+      "epilogue": null,
+      "recipe_a": [
+        1,
+        32
+      ],
+      "recipe_b": [
+        1,
+        32
+      ]
+    }
+  }
+}

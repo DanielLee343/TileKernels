@@ -28,7 +28,16 @@ for p in paths:
         count+=1
     if not result['raw_files']:raise ValueError('missing raw files: '+case_id)
     ok.append((case_id,case['target']))
-print(json.dumps({'passed_cases':len(ok),'target_names':sorted({x[1] for x in ok}),
-                  'failed_cases':len(fail),'failed_ids':[x[0] for x in fail],
-                  'raw_files_checked':count},indent=2))
+diagnostic_count=0
+manifest=root/'diagnostic-file-hashes.json'
+if manifest.is_file():
+    for name,meta in json.loads(manifest.read_text()).items():
+        path=(root/name).resolve()
+        if not path.is_relative_to(root.resolve()) or not path.is_file() or path.stat().st_size!=meta['bytes'] or sha(path)!=meta['sha256']:
+            raise ValueError('diagnostic file mismatch: '+str(path))
+        diagnostic_count+=1
+print(json.dumps({'passed_captures':len(ok),'unique_passed_case_ids':len({x[0] for x in ok}),
+                  'target_names':sorted({x[1] for x in ok}),
+                  'failed_attempts':len(fail),'failed_ids':sorted({x[0] for x in fail}),
+                  'raw_files_checked':count,'diagnostic_files_checked':diagnostic_count},indent=2))
 if '--require-all-passed' in sys.argv and fail:raise SystemExit(1)
