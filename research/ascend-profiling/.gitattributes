@@ -1,2 +1,3 @@
 history/puma/** -text
 runs/** -text
+smoke-evidence/** -text

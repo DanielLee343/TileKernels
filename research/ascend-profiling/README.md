@@ -39,6 +39,8 @@ python research/ascend-profiling/portable_profile.py run starter:fused-01 --devi
 
 Each run requires an idle selected device and a new output directory. It records preparation and collection logs, numerical-check status, raw profiler files and comparison with archived input and generated-source hashes where available. `--allow-precision-failure` collects explicitly recorded numerical mismatches only; the recorded accuracy status remains failed. A successful smoke test covers the tested case and environment; it does not establish that all 1,000 planned cases run on every host.
 
+The A5 activation file explicitly sets `BISHENG_HOME` to the activated CANN 9.2 installation and prepends the local GCC 15 C++ include paths. This prevents the shell's old CANN 9.1 compiler and GCC 10 headers from being selected. The two host smoke captures and their raw data are stored in `smoke-evidence/20261107/`; they use the same case but different CANN versions, so their measured performance must not be treated as directly interchangeable.
+
 ## Current limitations
 
 The 1,000-case plan is a proposal; some choices are extensions of upstream tests and require compilation and correctness checks on the target device. Some historical records use different warmup, device or CANN conditions and must not be mixed without checking. A 20-case target does not imply complete coverage. The first 140 captures are not 140 independent cases. Existing customer-facing thresholds remain under investigation.
