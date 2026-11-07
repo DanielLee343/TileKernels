@@ -1,0 +1,107 @@
+{
+  "case": "starter:fused-01",
+  "case_parameters": {
+    "id": "fused-01",
+    "family": "engram_fused_weight",
+    "role": "discovery",
+    "pilot": true,
+    "plan_group": "engram_fused_weight",
+    "plan_case_number": 1,
+    "plan_parameters": {
+      "hc": 4,
+      "hidden": 256
+    },
+    "hidden": 256
+  },
+  "source_commit": "17dfe06497d52181bfe9d1522722c6d48eee0d06",
+  "source_baseline": "c1cf914a82e6901c679445f872051ce44ac2cc63",
+  "physical_device": 0,
+  "source_root": "/workspace/tilekernels-env-20261101/src/TileKernels-private",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "status": "profile_captured",
+  "msprof_version": "msopprof 26.2.0 (884ac969494a186a9c63ac45c4c39ad7289b3215)\nCopyright (c) 2026 Huawei Technologies Co., Ltd.\nLicense: Mulan PSL v2.\n\nBuild Info:\n  Date: 2026-10-15T13:01:51Z\n  Repo: https://gitcode.com/Ascend/msopprof\nDependencies:\n  msopscommon: 892c3ca76b71c3167804977c12db9000abf0b9df\n=================================================================\n                   >>>>>   MindStudio   <<<<<\n    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE\n=================================================================\n\n",
+  "cann": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1",
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "allow_precision_failure": false,
+  "prepare_rc": 0,
+  "default_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/tilekernels-unify-transfer-20261107/smoke-after-delete/capture",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=cold_call",
+    "--kernel-name=engram_fused_weight_kernel_asc_kernel",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/tilekernels-env-20261101/venv/bin/python",
+    "-B",
+    "/workspace/tilekernels-env-20261101/src/TileKernels-private/research/ascend-profiling/portable_profile.py",
+    "__stage",
+    "starter:fused-01",
+    "default",
+    "--output",
+    "/workspace/tilekernels-unify-transfer-20261107/smoke-after-delete"
+  ],
+  "default_rc": 0,
+  "capture": {
+    "metrics": {
+      "OpBasicInfo": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/OpBasicInfo.csv",
+        "sha256": "bb6572b731889fe219e4f9f40e934fa17b95611aa747c7e6c781b84cf818c7e1",
+        "rows": 1
+      },
+      "ArithmeticUtilization": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/ArithmeticUtilization.csv",
+        "sha256": "f57a39e80b09730b3c0bfb82944fa1a1f8f6672f62cc8352df1943c5cd8d350b",
+        "rows": 56
+      },
+      "L2Cache": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/L2Cache.csv",
+        "sha256": "b7492925a96579d2ae900d97bbc6b05c7f0a9b5111cde1572fa2b1e964efb383",
+        "rows": 56
+      },
+      "Memory": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/Memory.csv",
+        "sha256": "23c1de43d2e14525eb90ba2e96bc7ac2eed0dce200df9b8584a91a6894aef43e",
+        "rows": 56
+      },
+      "MemoryL0": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/MemoryL0.csv",
+        "sha256": "d8f88766ea5b15c9a7202165e0e5f1c331d58d7cd0bdc6d37e9cf60e67491bf7",
+        "rows": 56
+      },
+      "MemoryUB": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/MemoryUB.csv",
+        "sha256": "251a9134a1ea7ac5f09ef1d5f1ca180d337a9bb7969e37198f7d30b1ec47dd49",
+        "rows": 56
+      },
+      "PipeUtilization": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/PipeUtilization.csv",
+        "sha256": "ead21c352b6cc896f35210d1d0957e2c85a5f1d8771cd889e1a954ef3e7afd8f",
+        "rows": 56
+      },
+      "ResourceConflictRatio": {
+        "path": "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/ResourceConflictRatio.csv",
+        "sha256": "f58341c73a1ee53e1e24606ef3519ee7d6dbd2ced3d0088527d65de9c1743276",
+        "rows": 56
+      }
+    },
+    "device_profiler_binaries": [
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf1.bin",
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf2.bin",
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf3.bin",
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf4.bin",
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf5.bin",
+      "capture/OPPROF_20261107094422_WMGNFKRDACRUNNVO/dump/DeviceProf6.bin"
+    ]
+  },
+  "precision_prepare": "passed",
+  "precision_default": "passed",
+  "runtime_kernel": "engram_fused_weight_kernel_asc_kernel",
+  "archived_input_match": true,
+  "archived_generated_source_match": true,
+  "device_idle_after": true,
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}
