@@ -1,0 +1,33 @@
+{
+  "case_id": "transform-f32-normal-mn128-k7168-kmajor",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream test_layout.check_layout exact output and strides",
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.float32",
+        "shape": [
+          128,
+          224
+        ],
+        "stride": [
+          224,
+          1
+        ],
+        "sha256": "3840fcde197f7090cbd6f7ea100a70d83ccc190bbd76c844ad49a48599af3684"
+      },
+      128,
+      7168,
+      [
+        1,
+        1,
+        32
+      ]
+    ],
+    "kwargs": {
+      "is_sfa": true
+    }
+  }
+}

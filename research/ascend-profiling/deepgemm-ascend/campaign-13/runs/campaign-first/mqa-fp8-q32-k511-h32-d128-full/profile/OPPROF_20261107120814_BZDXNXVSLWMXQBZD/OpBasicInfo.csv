@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+_ZN9deep_gemm15mqa_logits_implILb0ELj32ELj128ELj512ELj64ELj2ELj2ELj4ELj2ELj3ELj28EEEvjjNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_PjS6_,mix,7.605000,28,56,0,35788,1650,1650,

@@ -1,0 +1,8 @@
+paged-mqa-fp8-b2-k256-h8-d128-p64 passed
+paged-meta-b2-k256-h8-d128-p64 passed
+sparse-fp8-q4-k256-h8-b8 passed
+sparse-meta-fp8-q4-k256-h8-b8 passed
+paged-sparse-fp8-q4-k256-h8-b8 passed
+paged-sparse-prepare-fp8-q4-k256-h8-b8 passed
+transform-f32-normal-mn128-k7168-kmajor passed
+sleep-cycles100000-marker1 passed

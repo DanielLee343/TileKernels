@@ -1,0 +1,27 @@
+{
+  "case": {
+    "id": "mega-h256-i512-e4-top2-t16",
+    "family": "mega",
+    "target": "mega_moe_impl",
+    "api": "fp8_fp4_mega_moe",
+    "hidden": 256,
+    "intermediate": 512,
+    "experts": 4,
+    "topk": 2,
+    "tokens": 16
+  },
+  "status": "failed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "mega-h256-i512-e4-top2-t16",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-mega-first/mega-h256-i512-e4-top2-t16/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 1,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/deepgemm-ascend-20261107/campaign-13/collect.py\", line 167, in run_case\n    if result['prepare_exit']:raise RuntimeError('upstream validation failed in prepare')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: upstream validation failed in prepare\n"
+}

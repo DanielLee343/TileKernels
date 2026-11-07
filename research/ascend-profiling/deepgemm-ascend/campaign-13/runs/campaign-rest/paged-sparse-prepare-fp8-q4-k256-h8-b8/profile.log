@@ -1,0 +1,54 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:12:03.593231450 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:12:10] [43376] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-prepare-fp8-q4-k256-h8-b8/cache/paged_sparse_mqa_prepare.526a9a19f8dbbd4275e16a14423977ed/kernel.json
+[2026-11-07 12:12:10] [43376] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:12:10] [43376] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm32paged_sparse_mqa_logits_metadata29paged_sparse_mqa_prepare_implILj16ELj8ELj64ELj256ELj56EEEvPiPjS3_S2_S3_PtPNS_6layout23paged_sparse_mqa_logits11QBlockStatsEPmmmS3_
+[2026-11-07 12:12:10] [43376] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:12:10] [43376] [ProfConfig.cpp:83] [WARN] Some sub block may lose dynamic instrumentation data because sub blocks exceeding 108.
+[2026-11-07 12:12:11] [43376] [ProfConfig.cpp:83] [WARN] Some sub block may lose dynamic instrumentation data because sub blocks exceeding 108.
+[2026-11-07 12:12:11] [43376] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-prepare-fp8-q4-k256-h8-b8/cache/paged_mqa_logits_metadata.b6611c9eef181d35c07a126c76cd5443/kernel.json
+[2026-11-07 12:12:11] [43376] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:12:11] [43376] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-prepare-fp8-q4-k256-h8-b8/cache/paged_sparse_mqa_logits.fed47994f89f4acc5064253741e7a392/kernel.json
+[2026-11-07 12:12:11] [43376] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:12:11] [43376] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-prepare-fp8-q4-k256-h8-b8/cache/paged_mqa_logits.889dd07db3cebeb8cc8cdcfe18bf3638/kernel.json
+[2026-11-07 12:12:11] [43376] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:12:13] [43376] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged-sparse-prepare-fp8-q4-k256-h8-b8/cache/paged_sparse_mqa_logits.a206ca4e1b2974d5d2b1673c8124a8b8/kernel.json
+[2026-11-07 12:12:13] [43376] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+ > Fmt=mxfp8, H= 8, Paged BSZ=  2, SQ=   4, KV=    256, SPARSE_BLOCK_KV= 8, MAX_BLOCKS=  16: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm32paged_sparse_mqa_logits_metadata29paged_sparse_mqa_prepare_implILj16ELj8ELj64ELj256ELj56EEEvPiPjS3_S2_S3_PtPNS_6layout23paged_sparse_mqa_logits11QBlockStatsEPmmmS3_, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE2 bandwidth utilization lower than 80% when active.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm32paged_sparse_mqa_logits_metadata29paged_sparse_mqa_prepare_implILj16ELj8ELj64ELj256ELj56EEEvPiPjS3_S2_S3_PtPNS_6layout23paged_sparse_mqa_logits11QBlockStatsEPmmmS3_
+	Op Type: vector
+	Task Duration(us): 13.643000
+	Block Dim: 56
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 43376
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-rest/paged-sparse-prepare-fp8-q4-k256-h8-b8/profile/OPPROF_20261107121201_ORICGXFNKODGOXAI
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

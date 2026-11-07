@@ -1,0 +1,15 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "seed": 7711,
+  "cases": [
+    {"id":"mqa-fp8-q32-k511-h32-d128-full", "family":"mqa", "target":"mqa_logits_impl", "api":"fp8_fp4_mqa_logits", "q":32, "k":511, "heads":32, "head_dim":128, "fp4":false, "mode":"FullRange"},
+    {"id":"paged-mqa-fp8-b2-k256-h8-d128-p64", "family":"paged_mqa", "target":"paged_mqa_logits_impl", "api":"fp8_fp4_paged_mqa_logits", "batch":2, "k":256, "heads":8, "head_dim":128, "fp4":false, "page":64, "ascend_layout":false},
+    {"id":"paged-meta-b2-k256-h8-d128-p64", "family":"paged_mqa", "target":"paged_mqa_logits_metadata_simt_impl", "api":"get_paged_mqa_logits_metadata", "batch":2, "k":256, "heads":8, "head_dim":128, "fp4":false, "page":64, "ascend_layout":false},
+    {"id":"sparse-fp8-q4-k256-h8-b8", "family":"sparse", "target":"sparse_mqa_logits_impl", "api":"fp8_fp4_sparse_mqa_logits", "q":4, "k":256, "heads":8, "fp4":false, "paged":false, "sparse_block":8, "max_blocks":16, "page":64},
+    {"id":"sparse-meta-fp8-q4-k256-h8-b8", "family":"sparse", "target":"sparse_mqa_logits_metadata", "api":"get_sparse_mqa_logits_metadata", "q":4, "k":256, "heads":8, "fp4":false, "paged":false, "sparse_block":8, "max_blocks":16, "page":64},
+    {"id":"paged-sparse-fp8-q4-k256-h8-b8", "family":"sparse", "target":"paged_sparse_mqa_logits_impl", "api":"fp8_fp4_paged_sparse_mqa_logits", "q":4, "k":256, "heads":8, "fp4":false, "paged":true, "sparse_block":8, "max_blocks":16, "page":64},
+    {"id":"paged-sparse-prepare-fp8-q4-k256-h8-b8", "family":"sparse", "target":"paged_sparse_mqa_prepare_impl", "api":"get_paged_sparse_mqa_logits_metadata", "q":4, "k":256, "heads":8, "fp4":false, "paged":true, "sparse_block":8, "max_blocks":16, "page":64},
+    {"id":"transform-f32-normal-mn128-k7168-kmajor", "family":"transform", "target":"transform_sf", "api":"transform_sf_into_required_layout", "mn":128, "k":7168, "dtype":"float32", "major":"K", "gran_mn":1},
+    {"id":"sleep-cycles100000-marker1", "family":"sleep", "target":"sleep_impl", "api":"npu_sleep", "cycles":100000, "marker":1}
+  ]
+}

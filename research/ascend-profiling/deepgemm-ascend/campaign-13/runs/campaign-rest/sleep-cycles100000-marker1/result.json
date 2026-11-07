@@ -1,0 +1,138 @@
+{
+  "case": {
+    "id": "sleep-cycles100000-marker1",
+    "family": "sleep",
+    "target": "sleep_impl",
+    "api": "npu_sleep",
+    "cycles": 100000,
+    "marker": 1
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sleep-cycles100000-marker1",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-rest/sleep-cycles100000-marker1/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-rest/sleep-cycles100000-marker1/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*sleep_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sleep-cycles100000-marker1",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-rest/sleep-cycles100000-marker1/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "sleep_impl",
+    "op_type": "mix",
+    "jit_binary_sha256": "27fb51d4564113604f250637a72c82f7007a857c99e6d7b2500e31a28a397430",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/sleep-cycles100000-marker1/cache/sleep_marker_1.3ef82c5068145434304bbbc17918cf6c",
+    "metric_rows": {
+      "ArithmeticUtilization": 84,
+      "L2Cache": 84,
+      "Memory": 84,
+      "MemoryL0": 84,
+      "MemoryUB": 84,
+      "PipeUtilization": 84,
+      "ResourceConflictRatio": 84
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/OpBasicInfo.csv": {
+      "sha256": "dc91b593c5c95645522b892367c90c6187d74f32f2a55896872e58c808365c44",
+      "bytes": 148
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/PipeUtilization.csv": {
+      "sha256": "4023401a47d5c53010f0dbd7d51e2f3d4081e5b030fdd2a7ffb4de21322e9f1f",
+      "bytes": 16996
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/ArithmeticUtilization.csv": {
+      "sha256": "ec3562572eec454367eb7c7eacbb43299675f60b21202f82c1c73fe1af933af7",
+      "bytes": 7505
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/L2Cache.csv": {
+      "sha256": "90d2d51bfffeed03cdf725734577390b65ba3941b7cc1752eb14a9ba2c68fc48",
+      "bytes": 10801
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/Memory.csv": {
+      "sha256": "c0a8b0668937618108e94b4c5e41c65fa895c0fdfb69106a0d72fb1cb24831a8",
+      "bytes": 16593
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/ResourceConflictRatio.csv": {
+      "sha256": "a75860fe6aa93b4ace7fa87142ee77eaa703c148feaf6e6392f095813f089388",
+      "bytes": 8435
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/MemoryL0.csv": {
+      "sha256": "09cc324f0d1736a0054ef445139dc6dd173af0bcfad6ae474093368f5f56f50c",
+      "bytes": 5684
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/MemoryUB.csv": {
+      "sha256": "516ffbe52c6dff1004f5db962eb615db4619a9e9e35b4ba85d568dd847b17d7f",
+      "bytes": 5141
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/visualize_data.bin": {
+      "sha256": "5ad988d41b15d46e3b66ec2df7b87e72808359bb6cf6b7da79c50da41953182f",
+      "bytes": 285160
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/aicore_binary.o": {
+      "sha256": "27fb51d4564113604f250637a72c82f7007a857c99e6d7b2500e31a28a397430",
+      "bytes": 8056
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/pc_start_addr.txt": {
+      "sha256": "6c20f779e07c6848e0c0d974f7046290a4aa344a7647a72c198ea15e9cd154b6",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf1.bin": {
+      "sha256": "004c6c1e22ccf3dcfc93709103cfa73072fd478742739339cc0c90fe545dd6a0",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf2.bin": {
+      "sha256": "cb66e4df2d9afc480ce33f9b5a7ff2e440fdefe9542b784b494017f8b126617d",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf3.bin": {
+      "sha256": "4c0a5f35a7e0437e3a321c1a1d3c62fb702c96fa4c5fc211216c3b488ca1f799",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf4.bin": {
+      "sha256": "6ad0f5b1f5fca706e91e8e377a51ccf839cfcc12febdfe6cc9e330eba203982f",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf5.bin": {
+      "sha256": "5b24d4599186e897f29d1e2243a1badfff60fc6a0491ce5e08980878c45d5e10",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/DeviceProf6.bin": {
+      "sha256": "d26a02bfc454c35e914c6756cb730d913bdc0c98be290195746ac4fc2f8f0aaf",
+      "bytes": 11008
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/duration.bin": {
+      "sha256": "238441793585827618ed313b9fc2b719ab1277426e3a12abd391a403f9a3829b",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107121256_MLXJXDQPBJWGPHPH/dump/op_basic_info.txt": {
+      "sha256": "4cab728b2c4d89cf3b893e0c18b9eb3203ddfce04e7c56ac8e7ef84df6ae7885",
+      "bytes": 151
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

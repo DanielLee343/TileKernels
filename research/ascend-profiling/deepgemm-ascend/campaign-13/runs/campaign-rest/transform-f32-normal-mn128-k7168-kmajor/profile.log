@@ -1,0 +1,42 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:12:32.330462380 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 12:12:36] [44524] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/transform-f32-normal-mn128-k7168-kmajor/cache/transform_sf.354a6e67c91c3f8950f48ef5ddf5db1c/kernel.json
+[2026-11-07 12:12:36] [44524] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:12:36] [44524] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE0ELj128ELj128ELNS_8GemmTypeE0ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj
+[2026-11-07 12:12:36] [44524] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:12:36] [44524] [ProfConfig.cpp:83] [WARN] Some sub block may lose dynamic instrumentation data because sub blocks exceeding 108.
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE0ELj128ELj128ELNS_8GemmTypeE0ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE2 bandwidth utilization lower than 80% when active.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE0ELj128ELj128ELNS_8GemmTypeE0ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj
+	Op Type: vector
+	Task Duration(us): 3.620000
+	Block Dim: 56
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 44524
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-rest/transform-f32-normal-mn128-k7168-kmajor/profile/OPPROF_20261107121231_ENBDODRVZYGSHPIM
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,13 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "be9ded9178735b41e8100b37256bf7f25de273f6e5a884a4f0bcdac1d8036c08",
+  "collector_sha256": "7c23499c9563c9b30191ef8929334aedb95d0ce3c2f8215cc411a1557b90fef5",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "cases": [
+    {
+      "id": "mqa-fp8-q32-k511-h32-d128-full",
+      "status": "passed"
+    }
+  ]
+}

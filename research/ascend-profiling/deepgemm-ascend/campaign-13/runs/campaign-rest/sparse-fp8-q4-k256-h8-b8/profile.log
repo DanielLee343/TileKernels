@@ -1,0 +1,53 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:10:13.307375548 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:10:19] [39589] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse-fp8-q4-k256-h8-b8/cache/sparse_mqa_logits_metadata.f90a26f82765196f7f3bdaf3a1009622/kernel.json
+[2026-11-07 12:10:19] [39589] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:10:19] [39589] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse-fp8-q4-k256-h8-b8/cache/sparse_mqa_logits.80440d930163ed9476b01a338a4c2cf1/kernel.json
+[2026-11-07 12:10:19] [39589] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:10:20] [39589] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm22sparse_mqa_logits_implILb0ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj
+[2026-11-07 12:10:20] [39589] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:10:21] [39589] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse-fp8-q4-k256-h8-b8/cache/mqa_logits.a47587e25d76e32334a9d9a3ef9ba5a8/kernel.json
+[2026-11-07 12:10:21] [39589] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+ > Fmt=mxfp8, H= 8, SQ=   4, Overlap=80%, UnalignedKS=False, KV=    256, SPARSE_BLOCK_KV= 8, MAX_BLOCKS=  16: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm22sparse_mqa_logits_implILb0ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm22sparse_mqa_logits_implILb0ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj
+	Op Type: mix
+	Task Duration(us): 5.268000
+	Block Dim: 4
+	Mix Block Dim: 8
+	Device Id: 0
+	Pid: 39589
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-rest/sparse-fp8-q4-k256-h8-b8/profile/OPPROF_20261107121012_HBNNTIDTKLXTONTW
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,101 @@
+{
+  "case_id": "mqa-fp8-q32-k511-h32-d128-full",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream test_attention.run_mqa_logits_case",
+  "target_input": {
+    "args": [
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            32,
+            32,
+            128
+          ],
+          "stride": [
+            4096,
+            128,
+            1
+          ],
+          "sha256": "aaaf118db787be0270bbb9c3cc0d9391d8d8e0bb88054bed9706f5a820a242a8"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            32,
+            32,
+            2
+          ],
+          "stride": [
+            64,
+            2,
+            1
+          ],
+          "sha256": "719519749f4f85455555e3af5b46c3bad2c64acff05c4028a8abdf352a688c7f"
+        }
+      ],
+      [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            511,
+            128
+          ],
+          "stride": [
+            128,
+            1
+          ],
+          "sha256": "81a8d1f481331032f681ad22c97897595fba7ed5892b2b75b350892a97b4aeec"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            511,
+            2
+          ],
+          "stride": [
+            2,
+            1
+          ],
+          "sha256": "f5cbb6ebd837e9662ed001ddc6ad717833f3e085ff43ab597dd1a5b3b0949d09"
+        }
+      ],
+      {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          32,
+          32
+        ],
+        "stride": [
+          32,
+          1
+        ],
+        "sha256": "fd6b2b5c3ffb5f44a1d3537160531b509b88acc02f4afcaf42b1d7ffa97e00bb"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          32
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          32
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "ae541d769e8724a536478c3055d8b18513e27e4e9cdb87139a969bec95c85425"
+      },
+      511
+    ],
+    "kwargs": {}
+  }
+}
