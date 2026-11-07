@@ -1,0 +1,46 @@
+{
+  "cpu": [
+    {
+      "output": "grad_x",
+      "mismatch": 0,
+      "max_abs": 0.0625
+    },
+    {
+      "output": "grad_residual",
+      "mismatch": 0,
+      "max_abs": 0.0
+    },
+    {
+      "output": "grad_post_layer_mix",
+      "mismatch": 0,
+      "max_abs": 9.1552734375e-05
+    },
+    {
+      "output": "grad_comb_res_mix",
+      "mismatch": 1,
+      "max_abs": 0.00026702880859375
+    }
+  ],
+  "npu": [
+    {
+      "output": "grad_x",
+      "mismatch": 0,
+      "max_abs": 0.0625
+    },
+    {
+      "output": "grad_residual",
+      "mismatch": 0,
+      "max_abs": 0.03125
+    },
+    {
+      "output": "grad_post_layer_mix",
+      "mismatch": 0,
+      "max_abs": 6.103515625e-05
+    },
+    {
+      "output": "grad_comb_res_mix",
+      "mismatch": 0,
+      "max_abs": 0.000152587890625
+    }
+  ]
+}

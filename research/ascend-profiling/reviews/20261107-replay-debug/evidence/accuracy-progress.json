@@ -1,0 +1,17 @@
+{
+  "status": "finished",
+  "results": [
+    {
+      "script": "normalize_check",
+      "returncode": 0
+    },
+    {
+      "script": "preapply_compare",
+      "returncode": 1
+    },
+    {
+      "script": "post_compare",
+      "returncode": 1
+    }
+  ]
+}
