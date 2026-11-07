@@ -1,7 +1,7 @@
 """Capture the native multilayer kernel while preserving its live pointer tables."""
 import argparse,base64,ctypes,hashlib,importlib,importlib.util,json,os,random,traceback
 from pathlib import Path
-ROOT=Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT=Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP='mhc_multilayer_recompute'
 
 def tensor_hash(t,torch):

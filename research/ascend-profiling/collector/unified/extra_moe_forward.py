@@ -18,7 +18,7 @@ import random
 import traceback
 
 
-ROOT = Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT = Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP = 'moe_topk_gate_forward'
 RANGE_NAME = 'quant_target'
 INTEGER_FIELDS = {'num_tokens', 'num_padded_tokens', 'num_topk', 'num_routed_experts', 'num_shared_experts'}

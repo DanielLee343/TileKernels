@@ -17,7 +17,7 @@ import sys
 import traceback
 
 
-ROOT = Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT = Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP = 'quant_swiglu_forward'
 SEED = 42
 

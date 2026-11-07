@@ -1,7 +1,7 @@
 """Run upstream batched scale-transpose test and capture its native launch."""
 import argparse,base64,ctypes,hashlib,importlib,importlib.util,json,os,random,traceback
 from pathlib import Path
-ROOT=Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT=Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP='quant_batched_transpose_weight_sf'
 
 def digest_tensor(t,torch):

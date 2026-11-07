@@ -28,7 +28,16 @@ For the queued second or third batch, add `--batch second` or `--batch third`; u
 
 ## Working across machines
 
-Clone this private repository and `git pull` the branch containing the work. The A5 host uses an existing GitHub SSH key and port 443. The hidev execution environment is currently separate from this checkout; bind the exact code commit and record where full results were written. Historical paths inside captured logs describe their original machines and are not portable commands.
+Clone this private repository and `git pull` the branch containing the work. Historical paths inside captured logs describe their original machines and are not portable commands. The batch controllers under `collector/` are archived historical tools; their preflight paths and platform assumptions are not portable.
+
+For a new capture, activate the host's TileLang environment and use the portable single-case entry point. On A5 use `/data2/lyuze/tilekernels-env-20261107/activate.sh`; on hidev use `/workspace/tilekernels-env-20261101/activate.sh`. The repository whose copy of the script is invoked supplies the source and manifests.
+
+```bash
+python research/ascend-profiling/portable_profile.py list
+python research/ascend-profiling/portable_profile.py run starter:fused-01 --device 0 --output /absolute/path/to/new-output
+```
+
+Each run requires an idle selected device and a new output directory. It records preparation and collection logs, numerical-check status, raw profiler files and comparison with archived input and generated-source hashes where available. `--allow-precision-failure` collects explicitly recorded numerical mismatches only; the recorded accuracy status remains failed. A successful smoke test covers the tested case and environment; it does not establish that all 1,000 planned cases run on every host.
 
 ## Current limitations
 

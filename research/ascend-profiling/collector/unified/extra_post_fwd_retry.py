@@ -1,7 +1,7 @@
 """Run the upstream mHC post test and capture its forward kernel."""
 import argparse,base64,ctypes,hashlib,importlib,importlib.util,json,os,random,traceback
 from pathlib import Path
-ROOT=Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT=Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP='mhc_post_fwd'
 
 def tensor_hash(t,torch):

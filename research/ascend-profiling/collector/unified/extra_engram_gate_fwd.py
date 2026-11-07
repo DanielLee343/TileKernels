@@ -13,7 +13,7 @@ import random
 import traceback
 
 
-ROOT = Path('/workspace/tilekernels-env-20261101/src/TileKernels')
+ROOT = Path(os.environ.get('TILEKERNELS_ROOT', str(Path(__file__).resolve().parents[4])))
 GROUP = 'engram_gate_fwd'
 RANGE_NAME = 'quant_target'
 INPUT_NAMES = ['hidden_states','kv','weight_fused','image_token_mask']
