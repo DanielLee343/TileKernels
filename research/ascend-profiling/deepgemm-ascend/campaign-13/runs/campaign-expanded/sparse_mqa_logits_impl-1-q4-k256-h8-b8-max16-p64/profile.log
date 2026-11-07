@@ -1,0 +1,53 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:42:23.048532677 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:42:31] [100241] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/cache/sparse_mqa_logits_metadata.f90a26f82765196f7f3bdaf3a1009622/kernel.json
+[2026-11-07 12:42:31] [100241] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:42:31] [100241] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/cache/sparse_mqa_logits.8e91a7da8873825229eb8d8ab0257034/kernel.json
+[2026-11-07 12:42:31] [100241] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:42:31] [100241] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm22sparse_mqa_logits_implILb1ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj
+[2026-11-07 12:42:31] [100241] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:42:32] [100241] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/cache/mqa_logits.f395f7acbac6b608dc5b2330ceaa9ae1/kernel.json
+[2026-11-07 12:42:32] [100241] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+ > Fmt=mxfp4, H= 8, SQ=   4, Overlap=80%, UnalignedKS=False, KV=    256, SPARSE_BLOCK_KV= 8, MAX_BLOCKS=  16: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm22sparse_mqa_logits_implILb1ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm22sparse_mqa_logits_implILb1ELj8ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj
+	Op Type: mix
+	Task Duration(us): 4.418000
+	Block Dim: 4
+	Mix Block Dim: 8
+	Device Id: 0
+	Pid: 100241
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/profile/OPPROF_20261107124222_ILJEVYZXFLJMLUYJ
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

@@ -1,0 +1,93 @@
+{
+  "case_id": "sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [],
+    "kwargs": {
+      "kv": [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            2050,
+            128
+          ],
+          "stride": [
+            128,
+            1
+          ],
+          "sha256": "dbea79dde081caa124cf8bacfdf591bc0821b74ee11c31d5f2891916b214afc3"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            2050,
+            2
+          ],
+          "stride": [
+            2,
+            1
+          ],
+          "sha256": "36b286c30403a44bf15b0c1dd23ebfdb1d0f4f45f840598e9d40fcb77efd4eb9"
+        }
+      ],
+      "metadata": {
+        "dtype": "torch.int32",
+        "shape": [
+          522
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "b2eed36d6fe768ecc0466fadbf5b6755501dbeb3bb6bbfca4132fbf16e1ec6aa"
+      },
+      "num_max_sparse_blocks": 32,
+      "q": [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            4,
+            20,
+            128
+          ],
+          "stride": [
+            2560,
+            128,
+            1
+          ],
+          "sha256": "6ba84536beedfc20b2c7f047a4adf6cb8aa20c5cf4aa4aaccc07ecbdf5edc602"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            4,
+            20,
+            2
+          ],
+          "stride": [
+            40,
+            2,
+            1
+          ],
+          "sha256": "2d05b07f84c88b4ea357f0abb084f1a86916cc5e6679caa38c0985a8e6a2ad3b"
+        }
+      ],
+      "sparse_block_kv": 16,
+      "weights": {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4,
+          20
+        ],
+        "stride": [
+          20,
+          1
+        ],
+        "sha256": "6cd17072a8999c90102d58bcc3395dcf57db8748ae78a476d113c7834896a9fe"
+      }
+    }
+  }
+}

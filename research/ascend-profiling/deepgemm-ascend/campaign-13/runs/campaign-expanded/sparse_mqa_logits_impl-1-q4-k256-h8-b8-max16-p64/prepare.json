@@ -1,0 +1,93 @@
+{
+  "case_id": "sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [],
+    "kwargs": {
+      "kv": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            514,
+            64
+          ],
+          "stride": [
+            64,
+            1
+          ],
+          "sha256": "67a0edce70368c00e1de491083151a2b8f3d58c498659bcffc6d38e9683d86ea"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            514,
+            2
+          ],
+          "stride": [
+            2,
+            1
+          ],
+          "sha256": "53325d97f265a80fcfdb940ed38eae67c01f6fe2869351aedc6f8eb437641d7d"
+        }
+      ],
+      "metadata": {
+        "dtype": "torch.int32",
+        "shape": [
+          522
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "e7a170fa0df429d87686097b9bf07d3366b6f05a45d8182891ca116ad549c2ad"
+      },
+      "num_max_sparse_blocks": 16,
+      "q": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            4,
+            8,
+            64
+          ],
+          "stride": [
+            512,
+            64,
+            1
+          ],
+          "sha256": "c6c69b9c56135173529fe9193c6bec88cb7f4c9a481e82738ddf4092328e1339"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            4,
+            8,
+            2
+          ],
+          "stride": [
+            16,
+            2,
+            1
+          ],
+          "sha256": "711bc7dbb56d4b3d6a661dce22cac8f06e1bc50e13226e0c0f05d78a6b85406c"
+        }
+      ],
+      "sparse_block_kv": 8,
+      "weights": {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4,
+          8
+        ],
+        "stride": [
+          8,
+          1
+        ],
+        "sha256": "c772031237a8a95d8a43feac2dba59caca2cb1de58a5ab5e360b00c5e2a43cdf"
+      }
+    }
+  }
+}

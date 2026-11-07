@@ -1,0 +1,148 @@
+{
+  "case": {
+    "id": "sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64",
+    "family": "sparse",
+    "target": "sparse_mqa_logits_metadata",
+    "api": "get_sparse_mqa_logits_metadata",
+    "q": 8,
+    "k": 512,
+    "heads": 32,
+    "fp4": true,
+    "paged": false,
+    "sparse_block": 8,
+    "max_blocks": 32,
+    "page": 64
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*sparse_mqa_logits_metadata*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm26sparse_mqa_logits_metadata26sparse_mqa_logits_metadataILj8ELj2ELj8ELj1EEEvPiPjS3_jjNS_6layout17sparse_mqa_logits14MetadataHeaderES3_",
+    "op_type": "vector",
+    "jit_binary_sha256": "b0daa1104dc4b46a1f0ed36fd891c9aa5e2edff5fd18c71e75d53140e7e8ab07",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64/cache/sparse_mqa_logits_metadata.4f393a9314faa942af8a7f9ce65667cf",
+    "metric_rows": {
+      "ArithmeticUtilization": 2,
+      "L2Cache": 2,
+      "Memory": 2,
+      "MemoryL0": 2,
+      "MemoryUB": 2,
+      "PipeUtilization": 2,
+      "ResourceConflictRatio": 2
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/OpBasicInfo.csv": {
+      "sha256": "cc9be64e0e74be8a2d830312271049f574b356531cd6224de7c2b3ad694964a4",
+      "bytes": 287
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/PipeUtilization.csv": {
+      "sha256": "15cd39c42179d31e699a9eb09bc8ed907e70782c7b017de81c0b3b6297095609",
+      "bytes": 972
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/ArithmeticUtilization.csv": {
+      "sha256": "b08515ebf51fd7cec840f4e2fabbae864630b0e0a14b1e6768005fcd8c727c5d",
+      "bytes": 457
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/L2Cache.csv": {
+      "sha256": "9ab210cbf08b552f7911f58afb0d1265a830e060a44571331f5da7ae6adf726e",
+      "bytes": 885
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/Memory.csv": {
+      "sha256": "b3255748a5caac7d3e461d9fb43d080945b104df3bf38a6c3b001ba58d578067",
+      "bytes": 1097
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/ResourceConflictRatio.csv": {
+      "sha256": "b7fe82f219c907dc1489d2f2ac3306c83406b19d580735f5989bd9f227fb95ca",
+      "bytes": 487
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/MemoryL0.csv": {
+      "sha256": "9c674df9d7f3f64bccf95d1b11e1c7b57735e9f9458b17f72e1264d461c3599e",
+      "bytes": 328
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/MemoryUB.csv": {
+      "sha256": "61f3d240dcbd05cda3de0a12b2e756821e78d215b45619ded2dbc3725398585a",
+      "bytes": 315
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/visualize_data.bin": {
+      "sha256": "6f96b8a645fe134f07f3590241adc0a520801c6ed93f6c295cac0384a70df6ce",
+      "bytes": 6908
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/aicore_binary.o": {
+      "sha256": "b0daa1104dc4b46a1f0ed36fd891c9aa5e2edff5fd18c71e75d53140e7e8ab07",
+      "bytes": 19232
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/pc_start_addr.txt": {
+      "sha256": "2edf25cac3473c3c5321d79e3bfec4cdcf014dc9bfeee499979b019c380c626b",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf1.bin": {
+      "sha256": "782a84faa76dfeccbab48aea58041f8b35d8e2e23406f2613bf6255d19a1d7c3",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf2.bin": {
+      "sha256": "254cea4f5dbf245a7793fa3bc7fcc27de29a2db46fe023d4ba6a347583ba34bb",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf3.bin": {
+      "sha256": "f7771cc4532d0a1a854e7e1dbfe76451ed2982a4c84bca42380efac94ba4b06a",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf4.bin": {
+      "sha256": "44cd0cffca03ed9c028f94eca64ab92767e546162c88be6d3439cb9fe59dc429",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf5.bin": {
+      "sha256": "9452a6453387dc0b014d7183abbbdda31a819fc8f3051f9619710faf45bcc617",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/DeviceProf6.bin": {
+      "sha256": "332da8e29ceb14a0f40a11ee348b330a7d38232ff4d9f7708f984346d2222b51",
+      "bytes": 384
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/duration.bin": {
+      "sha256": "42f4a0c6eba84fd766533fde954030f2d9a6b0f89c6445a88b7307fb92b5966a",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/op_basic_info.txt": {
+      "sha256": "500a8a5e9e75b480e740dd4eeabed90bc7785cc97f50b545f319d6856908d089",
+      "bytes": 288
+    },
+    "profile/OPPROF_20261107124728_ETGISWPQHQTTRWED/dump/WarpTimeline.bin": {
+      "sha256": "fa15e8deeb35e938e7d6607bc9e36cb147aff8dbf4a724badf6a4b1b06f75f3a",
+      "bytes": 6624
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

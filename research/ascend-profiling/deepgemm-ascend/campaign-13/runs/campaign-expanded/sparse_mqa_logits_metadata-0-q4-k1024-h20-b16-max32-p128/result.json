@@ -1,0 +1,148 @@
+{
+  "case": {
+    "id": "sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128",
+    "family": "sparse",
+    "target": "sparse_mqa_logits_metadata",
+    "api": "get_sparse_mqa_logits_metadata",
+    "q": 4,
+    "k": 1024,
+    "heads": 20,
+    "fp4": false,
+    "paged": false,
+    "sparse_block": 16,
+    "max_blocks": 32,
+    "page": 128
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*sparse_mqa_logits_metadata*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm26sparse_mqa_logits_metadata26sparse_mqa_logits_metadataILj16ELj1ELj4ELj1EEEvPiPjS3_jjNS_6layout17sparse_mqa_logits14MetadataHeaderES3_",
+    "op_type": "vector",
+    "jit_binary_sha256": "21e470b1f3d3c0ca19956d5260aef7b509b78892f1977e2f25e1611f2dcc93a1",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128/cache/sparse_mqa_logits_metadata.91fa516ad850a7adf2d19ac283fea52d",
+    "metric_rows": {
+      "ArithmeticUtilization": 1,
+      "L2Cache": 1,
+      "Memory": 1,
+      "MemoryL0": 1,
+      "MemoryUB": 1,
+      "PipeUtilization": 1,
+      "ResourceConflictRatio": 1
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/OpBasicInfo.csv": {
+      "sha256": "17081cf50c579382853ebcc16f944b468ca3244a22ef86525cf244a37eedc34e",
+      "bytes": 288
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/PipeUtilization.csv": {
+      "sha256": "06497a5043ae6f011050d3f39d341176c651d75d3d5af60e0a56207b675616a9",
+      "bytes": 796
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/ArithmeticUtilization.csv": {
+      "sha256": "d5137fc68a3618bcbd1cd408d3ad6797334b8456f674b96cd2b2c98578a6814d",
+      "bytes": 371
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/L2Cache.csv": {
+      "sha256": "8bc5316eaeaa85b977b4298fc533a9b5d0c805ace1d2524a72d503c6d038d91e",
+      "bytes": 765
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/Memory.csv": {
+      "sha256": "fcd3ea20ef32a894e000d7cc30694cd4eeed2efc06768ffb4f64099f94bb1dbb",
+      "bytes": 923
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/ResourceConflictRatio.csv": {
+      "sha256": "afd3595b2ce5b43daad94f8adaf584d2a8ac97a51a070a6355461cbe34b67f4f",
+      "bytes": 389
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/MemoryL0.csv": {
+      "sha256": "73623a51d21d9b9b07f69f05f760bf0909e2b57c64a0a4e3894432071469e6f1",
+      "bytes": 278
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/MemoryUB.csv": {
+      "sha256": "afd3aa125103b30d11efa33a6b56faeffce149d49431e125c0f8c5c84a52121d",
+      "bytes": 252
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/visualize_data.bin": {
+      "sha256": "d13894d0a8180f11726e48b686600ad9f6fcc1f4d9949f7a00e952b495be9935",
+      "bytes": 3768
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/aicore_binary.o": {
+      "sha256": "21e470b1f3d3c0ca19956d5260aef7b509b78892f1977e2f25e1611f2dcc93a1",
+      "bytes": 19248
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/pc_start_addr.txt": {
+      "sha256": "2edf25cac3473c3c5321d79e3bfec4cdcf014dc9bfeee499979b019c380c626b",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf1.bin": {
+      "sha256": "fc6e2a5d0c2a80f358da9fd063b137cb70f9f5b1ac7bd6d3f582c0fb17322481",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf2.bin": {
+      "sha256": "1281a3b37bf6308de7dd1043bca7cc5542e8cac54c217cfc902f1c3b6b72fb3b",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf3.bin": {
+      "sha256": "63a4bf7e36ebd76aa205060b4b230c488fedddc8ea96e24c97a37f1d8c613707",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf4.bin": {
+      "sha256": "a3fdc5c7707855f62493ba79cea85f0ca684f1bbc5f0ed8c75eea62a46aac8ae",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf5.bin": {
+      "sha256": "59b9fa33a807357a95d11979bf26f4d62a60ea0ebfaaf98cd161a2c147365eb1",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/DeviceProf6.bin": {
+      "sha256": "104dbac9a40a7eb7e144d234bd345a6cc0ccba13aaf3187b268c7b51f8a9125b",
+      "bytes": 256
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/duration.bin": {
+      "sha256": "9b07ddc8635f66a2b8e6955212a333f9b65c1024a67cf45200fc29de490df4ed",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/op_basic_info.txt": {
+      "sha256": "51415ddaae0e0c49f047b36b8d6a4cae1749b016fb2e3942bc3693f48be4bc19",
+      "bytes": 289
+    },
+    "profile/OPPROF_20261107124548_ZWFXEYRQWFYRKDHL/dump/WarpTimeline.bin": {
+      "sha256": "d38935ed0eff0e0647f2865ee1f4c7c51b03249dce7ed0da44a19b36f46a6d46",
+      "bytes": 3312
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

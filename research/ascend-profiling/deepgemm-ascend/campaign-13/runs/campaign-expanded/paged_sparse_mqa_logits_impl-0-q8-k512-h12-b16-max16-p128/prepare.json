@@ -1,0 +1,87 @@
+{
+  "case_id": "paged_sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [],
+    "kwargs": {
+      "kv_cache": {
+        "dtype": "torch.uint8",
+        "shape": [
+          10,
+          128,
+          1,
+          132
+        ],
+        "stride": [
+          16896,
+          132,
+          132,
+          1
+        ],
+        "sha256": "9e25697ed7f2cff5fbd97a6c28b932d67ef159603829d802320def50e8ec8b60"
+      },
+      "metadata": {
+        "dtype": "torch.uint8",
+        "shape": [
+          4681728
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "cd30ea15ff7a51109f7d75f1c2d84dca4b2df48a80842cee3ee226e40b5a9984"
+      },
+      "num_max_sparse_blocks": 16,
+      "q": [
+        {
+          "dtype": "torch.float8_e4m3fn",
+          "shape": [
+            8,
+            1,
+            12,
+            128
+          ],
+          "stride": [
+            1536,
+            1536,
+            128,
+            1
+          ],
+          "sha256": "3e7c644ff4e8413ae9a371d455be54b6859f0c699dbd0a099145fb5ce86872c6"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            8,
+            1,
+            12,
+            2
+          ],
+          "stride": [
+            24,
+            24,
+            2,
+            1
+          ],
+          "sha256": "90c0c4145528f7d4d488bc473c69c201f8df493791d443da80d36d04b6bd8592"
+        }
+      ],
+      "sparse_block_kv": 16,
+      "weights": {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          8,
+          12
+        ],
+        "stride": [
+          12,
+          1
+        ],
+        "sha256": "9ebfbf3077747cfa81b3b594df4772594f724aa6cd38d7be355eb7b81d587af3"
+      }
+    }
+  }
+}

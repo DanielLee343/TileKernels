@@ -1,0 +1,52 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:35:42.439618139 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:35:54] [85019] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_mqa_logits_impl-1-b2-k511-h20-d128-p128-asc1/cache/paged_mqa_logits_metadata.8203532cd8f270f2189d06f7048ca254/kernel.json
+[2026-11-07 12:35:54] [85019] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:35:54] [85019] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_mqa_logits_impl-1-b2-k511-h20-d128-p128-asc1/cache/paged_mqa_logits.e383041edb0856abd6f3b00fe149e526/kernel.json
+[2026-11-07 12:35:54] [85019] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[INFO]  Kernel Transpose_float16_int64_high_performance_10001 skipped: not selected via --kernel-name.
+[2026-11-07 12:35:54] [85019] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm21paged_mqa_logits_implILb1ELj20ELj128ELj128ELj512ELj60ELj2ELj2ELj4ELj3ELj3ELb1EEEvjjmNS_6gm_ptrIhLNS_5MajorE0EEEPsS3_NS1_Iu6__bf16LS2_0EEES5_PjS6_S6_S6_
+[2026-11-07 12:35:54] [85019] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+ > Profile=exact , Fmt=fp4, Page=128, AscendKV=True , Order=random   , BSZ=  2, TPR=1   , H=20, D=128: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm21paged_mqa_logits_implILb1ELj20ELj128ELj128ELj512ELj60ELj2ELj2ELj4ELj3ELj3ELb1EEEvjjmNS_6gm_ptrIhLNS_5MajorE0EEEPsS3_NS1_Iu6__bf16LS2_0EEES5_PjS6_S6_S6_, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) aicore MTE1 bandwidth utilization lower than 80% when active.
+	2) aicore MTE2 bandwidth utilization lower than 80% when active.
+	3) aicore MTE3 bandwidth utilization lower than 80% when active.
+	4) aicore compute usage lower than 20%.
+	5) aivector MTE2 bandwidth utilization lower than 80% when active.
+	6) aivector compute usage lower than 20%.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm21paged_mqa_logits_implILb1ELj20ELj128ELj128ELj512ELj60ELj2ELj2ELj4ELj3ELj3ELb1EEEvjjmNS_6gm_ptrIhLNS_5MajorE0EEEPsS3_NS1_Iu6__bf16LS2_0EEES5_PjS6_S6_S6_
+	Op Type: mix
+	Task Duration(us): 4.585000
+	Block Dim: 28
+	Mix Block Dim: 56
+	Device Id: 0
+	Pid: 85019
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/paged_mqa_logits_impl-1-b2-k511-h20-d128-p128-asc1/profile/OPPROF_20261107123541_VJICDGRSXLLJRKMH
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

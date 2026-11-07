@@ -8,6 +8,7 @@ import math
 import os
 from pathlib import Path
 import random
+import re
 import shutil
 import subprocess
 import sys
@@ -32,7 +33,7 @@ def worker(case, source, stage, output):
     torch.npu.set_device(0); torch.set_num_threads(4)
     owner = deep_gemm._C if case['family']=='sleep' else deep_gemm
     original = getattr(owner, case['api'])
-    calls=[]
+    calls=[]; metadata_factory={}
 
     def describe(value):
         if isinstance(value, torch.Tensor):
@@ -45,11 +46,34 @@ def worker(case, source, stage, output):
         if value is None or isinstance(value,(str,int,float,bool)):return value
         return {'type':str(type(value))}
 
+    is_paged_sparse=(case['family']=='sparse' and case.get('paged') and
+                     case['target']=='paged_sparse_mqa_logits_impl')
+    if is_paged_sparse:
+        metadata_original=deep_gemm.get_paged_sparse_mqa_logits_metadata
+        def tracked_metadata(*args,**kwargs):
+            metadata_factory['args']=args;metadata_factory['kwargs']=kwargs
+            return metadata_original(*args,**kwargs)
+        deep_gemm.get_paged_sparse_mqa_logits_metadata=tracked_metadata
+
     def intercepted(*args, **kwargs):
         if calls:return original(*args, **kwargs)
-        record={'args':describe(args),'kwargs':describe(kwargs)}; calls.append(record)
-        for _ in range(5):original(*args, **kwargs)
+        calls.append(None)
+        phase=case.get('sparse_phase','reuse') if is_paged_sparse else None
+        for _ in range(5):
+            if phase=='first':
+                fresh=metadata_original(*metadata_factory['args'],**metadata_factory['kwargs'])
+                original(*args,**(kwargs|{'metadata':fresh}))
+            else:original(*args, **kwargs)
         torch.npu.synchronize()
+        recorded_kwargs=kwargs
+        if is_paged_sparse:
+            metadata=kwargs['metadata'];state=getattr(metadata,'_paged_sparse_mqa_state',None)
+            if state is None or bool(state[1])!=(phase=='first'):
+                raise ValueError('paged sparse metadata is in wrong FIRST/REUSE state')
+            recorded_kwargs=kwargs|{'metadata':{'shape':list(metadata.shape),'dtype':str(metadata.dtype),
+                'phase':phase,'factory_args':describe(metadata_factory['args']),
+                'factory_kwargs':describe(metadata_factory['kwargs'])}}
+        calls[0]={'args':describe(args),'kwargs':describe(recorded_kwargs)}
         if stage=='profile':
             lib=ctypes.CDLL(str(Path(os.environ['ASCEND_HOME_PATH'])/'tools/mstx/lib64/libms_tools_ext.so'))
             lib.mstxRangeStartA.argtypes=[ctypes.c_char_p,ctypes.c_void_p];lib.mstxRangeStartA.restype=ctypes.c_uint64
@@ -128,7 +152,9 @@ def worker(case, source, stage, output):
     else:raise ValueError('unknown family')
     if len(calls)!=1:raise ValueError('target API was never intercepted')
     Path(output).write_text(json.dumps({'case_id':case['id'],'stage':stage,'status':'passed',
-        'seed':seed,'validation':validation,'diagnostics':diagnostics,'target_input':calls[0]},indent=2)+'\n')
+        'seed':seed,'seed_note':('initial global seed; GemmTestDesc.generate resets all seeds to 0' if family=='gemm'
+                                else 'global seed before upstream test'),
+        'validation':validation,'diagnostics':diagnostics,'target_input':calls[0]},indent=2)+'\n')
 
 
 def inspect_profile(case, root, cache):
@@ -143,6 +169,11 @@ def inspect_profile(case, root, cache):
     sha=base.file_hash(binary)
     matches=[p for p in (Path(cache)/'cache').glob('*/kernel.o') if base.file_hash(p)==sha]
     if len(matches)!=1:raise ValueError('captured binary not uniquely identified in JIT cache')
+    if case['target']=='paged_sparse_mqa_logits_impl':
+        source=(matches[0].parent/'kernel.asc').read_text()
+        phase=re.search(r'paged_sparse_mqa_logits_impl\s*<\s*(true|false)',source)
+        expected='true' if case.get('sparse_phase','reuse')=='first' else 'false'
+        if not phase or phase.group(1)!=expected:raise ValueError('captured FIRST/REUSE specialization mismatch')
     metrics={}
     for metric in base.METRICS:
         p=directory/(metric+'.csv'); rows=base.read_csv(p)

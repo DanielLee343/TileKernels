@@ -1,0 +1,2 @@
+Op Name,Op Type,Task Duration(us),Block Dim,Mix Block Dim,Device Id,Pid,Current Freq,Rated Freq,
+_ZN9deep_gemm35paged_mqa_logits_metadata_simt_implILj512ELj5ELj28EEEvjPjS1_S1_,vector,4.131000,1,NA,0,92716,1650,1650,

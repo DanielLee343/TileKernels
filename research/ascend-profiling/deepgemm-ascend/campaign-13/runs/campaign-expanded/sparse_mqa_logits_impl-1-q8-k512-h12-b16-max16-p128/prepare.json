@@ -1,0 +1,93 @@
+{
+  "case_id": "sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [],
+    "kwargs": {
+      "kv": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            1553,
+            64
+          ],
+          "stride": [
+            64,
+            1
+          ],
+          "sha256": "7a27edc518dac71b3122e82335f3b0f1f324a8bf2a13c8370c3740a6fc783f3c"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            1553,
+            2
+          ],
+          "stride": [
+            2,
+            1
+          ],
+          "sha256": "9ca0d164cbdc78a2d73a4106121133b47f9615f6863c0d112848e69633439a96"
+        }
+      ],
+      "metadata": {
+        "dtype": "torch.int32",
+        "shape": [
+          530
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "5484c3fcb9c26291dc035fcefc5e9ecd1e9803cc43ac8d57b4113ac3be7688a8"
+      },
+      "num_max_sparse_blocks": 16,
+      "q": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            8,
+            12,
+            64
+          ],
+          "stride": [
+            768,
+            64,
+            1
+          ],
+          "sha256": "0b460cb8cc5cb7ba0846c81e985cbc6b645a4d02d21f9730275089b90f69dffc"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            8,
+            12,
+            2
+          ],
+          "stride": [
+            24,
+            2,
+            1
+          ],
+          "sha256": "b615dcc0fca8cfbbada2f2ba61ae83db5df623e6ed72e5b098a55d60de85aba4"
+        }
+      ],
+      "sparse_block_kv": 16,
+      "weights": {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          8,
+          12
+        ],
+        "stride": [
+          12,
+          1
+        ],
+        "sha256": "9ebfbf3077747cfa81b3b594df4772594f724aa6cd38d7be355eb7b81d587af3"
+      }
+    }
+  }
+}

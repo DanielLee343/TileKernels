@@ -1,0 +1,50 @@
+{
+  "case_id": "sparse_mqa_logits_metadata-1-q4-k1024-h20-b16-max32-p128",
+  "stage": "prepare",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          4
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "556b358890101a3ca1db178243446c487f2bbe9c4ebe20774292110c361d3ea3"
+      },
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          4
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "15865a7ad45b76a0d9bb257b6e1ab7e2dd1998da24cacb1f38606024940144cd"
+      },
+      2050,
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          4,
+          32
+        ],
+        "stride": [
+          32,
+          1
+        ],
+        "sha256": "c6c7b3f111a0e0b9e32cc65e1c09b1cf7ee1518fa88229bb7bb4aa43edb5aaf7"
+      },
+      {
+        "type": "<class 'torch.dtype'>"
+      },
+      16
+    ],
+    "kwargs": {}
+  }
+}

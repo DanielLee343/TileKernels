@@ -1,0 +1,46 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 12:38:28.624736179 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+/workspace/deepgemm-ascend-20261107/source/tests/test_attention.py:61: UserWarning: Cannot create tensor with internal format while allow_internal_format=False, tensor will be created with base format. (Triggered internally at ../torch_npu/csrc/aten/common/TensorFactories.cpp:406.)
+  exp = (((bits >> 23) & 0xFF) + (bits & 0x7FFFFF).bool().int()).clamp(1, 254)
+[2026-11-07 12:38:39] [91342] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_mqa_logits_metadata_simt_impl-1-b2-k256-h8-d128-p64-asc0/cache/paged_mqa_logits_metadata.b6611c9eef181d35c07a126c76cd5443/kernel.json
+[2026-11-07 12:38:39] [91342] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 12:38:39] [91342] [ProfDataCollect.cpp:1270] [INFO] Start profiling on device 0, kernel: _ZN9deep_gemm35paged_mqa_logits_metadata_simt_implILj512ELj8ELj28EEEvjPjS1_S1_
+[2026-11-07 12:38:39] [91342] [ProfDataCollect.cpp:1307] [INFO] Warm Up enabled. times:5
+[2026-11-07 12:38:40] [91342] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/campaign-cache/paged_mqa_logits_metadata_simt_impl-1-b2-k256-h8-d128-p64-asc0/cache/paged_mqa_logits.168762b5a3fff6dabadc424c3b198e12/kernel.json
+[2026-11-07 12:38:40] [91342] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+ > Profile=exact , Fmt=fp4, Page= 64, AscendKV=False, Order=random   , BSZ=  2, TPR=1   , H= 8, D=128: OK
+[INFO]  Profiling running finished. All task success.
+[INFO]  Start analyze kernel on device: device0, kernel: _ZN9deep_gemm35paged_mqa_logits_metadata_simt_implILj512ELj8ELj28EEEvjPjS1_S1_, name is: 0
+[INFO]  Save profiling data with metric [PipeUtilization] success.
+[INFO]  Save profiling data with metric [ArithmeticUtilization] success.
+[INFO]  Save profiling data with metric [L2Cache] success.
+[INFO]  Save profiling data with metric [Memory] success.
+[INFO]  Save profiling data with metric [ResourceConflictRatio] success.
+[INFO]  Save profiling data with metric [MemoryL0] success.
+[INFO]  Save profiling data with metric [MemoryUB] success.
+[INFO]  Performance Summary Report:
+
+	1) MTE2 bandwidth utilization lower than 80% when active.
+
+[INFO]  Operator Basic Information:
+
+	Op Name: _ZN9deep_gemm35paged_mqa_logits_metadata_simt_implILj512ELj8ELj28EEEvjPjS1_S1_
+	Op Type: vector
+	Task Duration(us): 3.906000
+	Block Dim: 1
+	Mix Block Dim: 
+	Device Id: 0
+	Pid: 91342
+	Current Freq: 1650
+	Rated Freq: 1650
+
+[INFO]  Profiling results saved in /workspace/deepgemm-ascend-20261107/campaign-expanded/paged_mqa_logits_metadata_simt_impl-1-b2-k256-h8-d128-p64-asc0/profile/OPPROF_20261107123826_LZYOCKWKUKKSJHDL
+[INFO]  Profiling data parse finished.
+[INFO]  Op profiling finish. Welcome to next use.

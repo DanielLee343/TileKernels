@@ -1,0 +1,281 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "cases_sha256": "bf1b77c0c002799268d65e5b1eebb162b42ce42653eb89409ab4caa69fac36d8",
+  "collector_sha256": "a4314c263c93cf4178b30b78b1a7e899028bb243b664333f42fd6d28f9bcc730",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "cases": [
+    {
+      "id": "gemm-bf16bf16-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-bf16bf16-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp8-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp4fp4-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-nn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tn-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tn-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tt-k-m128-n256-k512",
+      "status": "passed"
+    },
+    {
+      "id": "gemm-fp8fp4-tt-mn-m64-n576-k7168",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q16-k512-h8-random",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q32-k1024-h12-causal",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-0-q64-k256-h32-fullrange",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-1-q16-k512-h8-random",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-1-q32-k511-h32-fullrange",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-1-q32-k1024-h12-causal",
+      "status": "passed"
+    },
+    {
+      "id": "mqa-1-q64-k256-h32-fullrange",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-0-b4-k512-h12-d128-p128-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-0-b2-k511-h20-d128-p128-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-0-b4-k129-h64-d64-p64-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-1-b2-k256-h8-d128-p64-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-1-b4-k512-h12-d128-p128-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-1-b2-k511-h20-d128-p128-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_impl-1-b4-k129-h64-d64-p64-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-0-b4-k512-h12-d128-p128-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-0-b2-k511-h20-d128-p128-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-0-b4-k129-h64-d64-p64-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-1-b2-k256-h8-d128-p64-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-1-b4-k512-h12-d128-p128-asc0",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-1-b2-k511-h20-d128-p128-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "paged_mqa_logits_metadata_simt_impl-1-b4-k129-h64-d64-p64-asc1",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-0-q8-k512-h12-b16-max16-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-0-q8-k512-h32-b8-max32-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-0-q4-k1024-h20-b16-max32-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-1-q4-k256-h8-b8-max16-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-1-q8-k512-h12-b16-max16-p128",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-1-q8-k512-h32-b8-max32-p64",
+      "status": "passed"
+    },
+    {
+      "id": "sparse_mqa_logits_metadata-1-q4-k1024-h20-b16-max32-p128",
+      "status": "passed"
+    },
+    {
+      "id": "paged_sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128",
+      "status": "passed"
+    }
+  ]
+}

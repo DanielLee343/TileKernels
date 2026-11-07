@@ -1,0 +1,144 @@
+{
+  "case": {
+    "id": "sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+    "family": "sparse",
+    "target": "sparse_mqa_logits_impl",
+    "api": "fp8_fp4_sparse_mqa_logits",
+    "q": 8,
+    "k": 512,
+    "heads": 32,
+    "fp4": true,
+    "paged": false,
+    "sparse_block": 8,
+    "max_blocks": 32,
+    "page": 64
+  },
+  "status": "passed",
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/prepare.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=dg_campaign_target",
+    "--kernel-name=*sparse_mqa_logits_impl*",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/campaign-13/collect.py",
+    "__worker",
+    "sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/campaign-expanded/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/profile.json",
+    "/workspace/deepgemm-ascend-20261107/source"
+  ],
+  "profile_exit": 0,
+  "capture": {
+    "op_name": "_ZN9deep_gemm22sparse_mqa_logits_implILb1ELj32ELj8EEEvNS_6gm_ptrIhLNS_5MajorE0EEES3_PsS4_NS1_Iu6__bf16LS2_0EEES5_Pjj",
+    "op_type": "mix",
+    "jit_binary_sha256": "5f311f622185365535e7ab3cd2faf4eb5d70beb7e0f24e2f8753b3af2bd0e4b7",
+    "jit_directory": "/workspace/deepgemm-ascend-20261107/campaign-cache/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/cache/sparse_mqa_logits.fc613282a630b4eb194eb697eacd9b05",
+    "metric_rows": {
+      "ArithmeticUtilization": 24,
+      "L2Cache": 24,
+      "Memory": 24,
+      "MemoryL0": 24,
+      "MemoryUB": 24,
+      "PipeUtilization": 24,
+      "ResourceConflictRatio": 24
+    }
+  },
+  "raw_files": {
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/OpBasicInfo.csv": {
+      "sha256": "04bee0d6eaa32499b053ee0546a31b6ef53ad0b25a882503e3b7f4dcf9d61996",
+      "bytes": 252
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/PipeUtilization.csv": {
+      "sha256": "e7f3a9468d690b36caefafcc80e5843bb366578954b0e1b13f1f4f72a62fe003",
+      "bytes": 5184
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/ArithmeticUtilization.csv": {
+      "sha256": "d5986efcb253eb3e9adf69650b7059443d84a63405784191d23a074f245ee99b",
+      "bytes": 2237
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/L2Cache.csv": {
+      "sha256": "dbee9df9b8a583f0f328be04fb16d84c15e3d85da7413d20eb571037e35be902",
+      "bytes": 3462
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/Memory.csv": {
+      "sha256": "a160e3f2a90c1d65dae81bef33c459e006a3578577a2a91772661db645f86148",
+      "bytes": 5185
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/ResourceConflictRatio.csv": {
+      "sha256": "48be966ccf5d9e3376fa5c0f6fa0f270207423c542804b93b920dbb46efd8017",
+      "bytes": 2507
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/MemoryL0.csv": {
+      "sha256": "5fe8081edf9f3f7fcc292e3fe97d01677b145a6f9d9bc14ccf90caa1db10fa1c",
+      "bytes": 1678
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/MemoryUB.csv": {
+      "sha256": "9838a1af473b7586eecaff4e63eae378858e5b98b5381613e979d298730d39c2",
+      "bytes": 1497
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/visualize_data.bin": {
+      "sha256": "d337e6837e1f45a914f4f023b4404f9adc4858c486d3ba712377f790e5b0b0fb",
+      "bytes": 82264
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/aicore_binary.o": {
+      "sha256": "5f311f622185365535e7ab3cd2faf4eb5d70beb7e0f24e2f8753b3af2bd0e4b7",
+      "bytes": 34920
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/pc_start_addr.txt": {
+      "sha256": "09a15d39b546039d8437da30e8a74ca1d12a6aa7812214364e11ecdd02bb7fbb",
+      "bytes": 14
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf1.bin": {
+      "sha256": "fdc43ff05f9768034b15183d74691bf34c5f27287f1316bc4eaf254e766ef432",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf2.bin": {
+      "sha256": "b27b1ba45edfa39f8accffa3ccd22e07e4c9de79c259c80bb370d32139542528",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf3.bin": {
+      "sha256": "f971808634a6d034dc0b7461db8f1f44366f80b20fa967082a13034841164bd0",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf4.bin": {
+      "sha256": "c4332793ba8329e76dcdaa081cc9d9ce69c9b5f2cba0248fe9b74dbfa00cf052",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf5.bin": {
+      "sha256": "7ac58e6525d21e5d4850b2d33770f34c6cb7ebc508ef7eaf5b3a7dc435c8a26b",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/DeviceProf6.bin": {
+      "sha256": "4ec07a83a39ced0d54098bc5f9adb1d0c9084d4e69fa8ee128860c182c6fd3bd",
+      "bytes": 3328
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/duration.bin": {
+      "sha256": "19065ca258808407c7384fd1e70138c4e7ea8f2a52589d0d3d1733d16d3854a7",
+      "bytes": 64
+    },
+    "profile/OPPROF_20261107124335_RMTPYGDDNXGJCBLD/dump/op_basic_info.txt": {
+      "sha256": "4a58d739eed0c877844c5e652c2b535894f89f1cec9c46caaff3c9f5a6e9c32d",
+      "bytes": 257
+    }
+  },
+  "device_after": "\tNPU ID                         : 0\n\tNo process in device.\n\n"
+}

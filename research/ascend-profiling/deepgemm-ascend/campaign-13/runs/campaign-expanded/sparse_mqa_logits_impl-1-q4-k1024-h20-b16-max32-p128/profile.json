@@ -1,0 +1,93 @@
+{
+  "case_id": "sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream sparse MQA vs full MQA and repeat checks",
+  "diagnostics": {},
+  "target_input": {
+    "args": [],
+    "kwargs": {
+      "kv": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            2050,
+            64
+          ],
+          "stride": [
+            64,
+            1
+          ],
+          "sha256": "967c006a97172f59d1652e52433d5610f1725fb4910ee96710c4ce35edbe1b16"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            2050,
+            2
+          ],
+          "stride": [
+            2,
+            1
+          ],
+          "sha256": "58826e8e1ffa05a1a99f9b09e703ae6fcdb80ab795692b3a58033fcde9cdd355"
+        }
+      ],
+      "metadata": {
+        "dtype": "torch.int32",
+        "shape": [
+          522
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "4e20e94c3ef8bc20417c9fba63bc2b56dcf4bf9c54aa8002f2b6f533570eb4af"
+      },
+      "num_max_sparse_blocks": 32,
+      "q": [
+        {
+          "dtype": "torch.int8",
+          "shape": [
+            4,
+            20,
+            64
+          ],
+          "stride": [
+            1280,
+            64,
+            1
+          ],
+          "sha256": "3489d72758f4011caae28aa0140d7f09166bf177579e93333a903b4bd383dc46"
+        },
+        {
+          "dtype": "torch.int16",
+          "shape": [
+            4,
+            20,
+            2
+          ],
+          "stride": [
+            40,
+            2,
+            1
+          ],
+          "sha256": "44d595a7d3d1dea183e0c8f8845eefd370a0e665d77d780c81768bb6f843c5e4"
+        }
+      ],
+      "sparse_block_kv": 16,
+      "weights": {
+        "dtype": "torch.bfloat16",
+        "shape": [
+          4,
+          20
+        ],
+        "stride": [
+          20,
+          1
+        ],
+        "sha256": "6cd17072a8999c90102d58bcc3395dcf57db8748ae78a476d113c7834896a9fe"
+      }
+    }
+  }
+}

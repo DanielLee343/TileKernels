@@ -1,0 +1,36 @@
+{
+  "case_id": "paged_mqa_logits_metadata_simt_impl-0-b2-k511-h20-d128-p128-asc1",
+  "stage": "profile",
+  "status": "passed",
+  "seed": 7711,
+  "validation": "upstream test_attention.run_paged_mqa_logits_case",
+  "diagnostics": {},
+  "target_input": {
+    "args": [
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          2,
+          1
+        ],
+        "stride": [
+          1,
+          1
+        ],
+        "sha256": "1a2d71251a145ab5e0a6d94c3141321284e1b4d9a8ec2be31072bc145b53da63"
+      },
+      20,
+      {
+        "dtype": "torch.int32",
+        "shape": [
+          2
+        ],
+        "stride": [
+          1
+        ],
+        "sha256": "01acecb507abfe1a354aa8064f4af5d3f1acd019e37db3c11c97523b71c76e9d"
+      }
+    ],
+    "kwargs": {}
+  }
+}
