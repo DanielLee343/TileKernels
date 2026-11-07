@@ -1,0 +1,49 @@
+{
+  "case": {
+    "id": "fp8fp8-m1-n576-k7168",
+    "m": 1,
+    "n": 576,
+    "k": 7168,
+    "a_dtype": "fp8",
+    "b_dtype": "fp8",
+    "jit_prefix": "fp8_gemm",
+    "kernel_marker": "fp8_gemm_impl"
+  },
+  "status": "failed",
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "physical_device": 0,
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py",
+    "__worker",
+    "fp8fp8-m1-n576-k7168",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/quant-third-20261107/fp8fp8-m1-n576-k7168/prepare.json",
+    "source"
+  ],
+  "prepare_exit": 0,
+  "profile_command": [
+    "msprof",
+    "op",
+    "--output=/workspace/deepgemm-ascend-20261107/quant-third-20261107/fp8fp8-m1-n576-k7168/profile",
+    "--aic-metrics=Default",
+    "--replay-mode=kernel",
+    "--mstx=true",
+    "--mstx-include=deepgemm_quant_target",
+    "--kernel-name=_ZN9deep_gemm13fp8_gemm_implILNS_5MajorE0ELS1_0ELj0ELj576ELj7168ELj16ELj32ELj2048ELj16ELj32ELj1024ELj4ELj2ELj4ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu9__fp8e4m3u6__bf16NS_8epilogue9operat",
+    "--launch-count=1",
+    "--warm-up=5",
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py",
+    "__worker",
+    "fp8fp8-m1-n576-k7168",
+    "profile",
+    "/workspace/deepgemm-ascend-20261107/quant-third-20261107/fp8fp8-m1-n576-k7168/profile.json",
+    "source"
+  ],
+  "profile_exit": 0,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py\", line 141, in run_case\n    state['capture']=inspect_capture(output/'profile',case,before['target_sha256'])\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py\", line 55, in inspect_capture\n    if len(files)!=1: raise ValueError('expected one captured target, got '+str(len(files)))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: expected one captured target, got 0\n"
+}

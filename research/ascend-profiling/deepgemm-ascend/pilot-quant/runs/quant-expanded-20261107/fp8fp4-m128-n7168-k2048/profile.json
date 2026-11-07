@@ -1,0 +1,71 @@
+{
+  "case_id": "fp8fp4-m128-n7168-k2048",
+  "stage": "profile",
+  "input_a": [
+    {
+      "shape": [
+        128,
+        2048
+      ],
+      "stride": [
+        2048,
+        1
+      ],
+      "dtype": "torch.float8_e4m3fn",
+      "sha256": "b9cfa3c92157f6a63e2f1c36dcbe0da438eaaaeb2e6ed65a227903c672ea7df2"
+    },
+    {
+      "shape": [
+        128,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "4745fba0a82219cc3945e3f896501b9549dd3e6eb023fa9ab26746b965819ec6"
+    }
+  ],
+  "input_b": [
+    {
+      "shape": [
+        7168,
+        1024
+      ],
+      "stride": [
+        1024,
+        1
+      ],
+      "dtype": "torch.int8",
+      "sha256": "bfee8bb1a403b03e8188196bc25df210c1e52071c0ed617e2e7de393e78fa52f"
+    },
+    {
+      "shape": [
+        7168,
+        64
+      ],
+      "stride": [
+        64,
+        1
+      ],
+      "dtype": "torch.float32",
+      "sha256": "62dbd0cb0d01f3c182b06e717e8e153415fdff22f77debe0eacd63ae979b486a"
+    }
+  ],
+  "input_a_sha256": "6c28264915039c074337d646ee29b816b24b4776c24288ac92f3f07bbc50706c",
+  "input_b_sha256": "cca2e491e5ee3be785860db5a704cd4375ef14dd93f8853f81f46826a79e1a9f",
+  "reference_sha256": "9cc1615ffed50d0095f8c12c32856dd7e771ed26f05e0ffa3ceed951135d4cdd",
+  "output_sha256": "5f5bf78fcdef401ff4abea66727707e0eecd49bc5f5c438a8a78c6694faf9087",
+  "output_finite": true,
+  "reference_finite": true,
+  "diff": 0.0,
+  "threshold": 1e-05,
+  "max_abs_error": 0.5,
+  "checked_elements": 917504,
+  "target_sha256": "a3961b3f1f91f1905315d5b7649b6974dd840708c3ff221bdd8c310b09bf7953",
+  "target_symbol": "_ZN9deep_gemm21fp8_dequant_gemm_implILNS_5MajorE0ELS1_0ELj0ELj7168ELj2048ELj128ELj256ELj256ELj128ELj256ELj128ELj4ELj2ELj4ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu6__bf16NS_8epilogue9operat",
+  "target_path": "/workspace/deepgemm-ascend-20261107/quant-cache3/fp8fp4-m128-n7168-k2048/cache/fp8_dequant_gemm.3d3286b6938b0e8613b8b32166fd99aa/kernel.o",
+  "reference": "upstream GemmTestDesc.generate, NPU FP32 decoded matmul rounded to BF16",
+  "status": "passed"
+}

@@ -1,0 +1,135 @@
+Traceback (most recent call last):
+  File "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py", line 177, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py", line 163, in main
+    worker(found[0],args.stage,args.out,args.source);return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py", line 92, in worker
+    for _ in range(5):launch()
+                      ^^^^^^^^
+  File "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py", line 91, in launch
+    def launch():deep_gemm.fp8_fp4_gemm_nt(a,b,output,recipe=(1,1,32))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Assertion error (/workspace/deepgemm-ascend-20261107/source/third-party/deep-jit/include/deep_jit/utils/command.hpp:35): exit_code == 0: command failed with exit code 1:
+cd /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016 && /workspace/deepgemm-ascend-20261107/cann-compat/bin/bisheng -O2 --npu-arch=dav-3510 --cce-aicore-only -mllvm -enable-hiipu-vf-loop-unroll -mllvm -cce-aicore-dcpreload-args=false --cce-disable-vf-stack-reserved-ubuf -std=c++20 -I/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include -I/workspace/deepgemm-ascend-20261107/cann-compat/aarch64-linux/asc/include/adv_api /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc -o /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.rel.o 2>&1
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:10:5: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+    asc_set_l0c2gm_nz2nd(1, src_matrix_elems / FRAC_MN, dst_matrix_elems);
+    ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:11:5: warning: 'asc_set_l0c2gm_channel_para' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_channel_para instead. [-Wdeprecated-declarations]
+    asc_set_l0c2gm_channel_para(static_cast<uint64_t>(1) << 48);
+    ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1519:1: note: 'asc_set_l0c2gm_channel_para' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_channel_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:280:9: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+        asc_set_l0c2gm_nz2nd(1, 0, 0);
+        ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:301:9: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+        asc_set_l0c2gm_nz2nd(1, 0, 0);
+        ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:19:5: error: use of undeclared identifier 'ascendc_assert'
+    ascendc_assert((combined & 0x80000000u) == 0 and (combined & 0x007fffffu) == 0,
+    ^
+4 warnings and 1 error generated.
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:10:5: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+    asc_set_l0c2gm_nz2nd(1, src_matrix_elems / FRAC_MN, dst_matrix_elems);
+    ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:11:5: warning: 'asc_set_l0c2gm_channel_para' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_channel_para instead. [-Wdeprecated-declarations]
+    asc_set_l0c2gm_channel_para(static_cast<uint64_t>(1) << 48);
+    ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1519:1: note: 'asc_set_l0c2gm_channel_para' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_channel_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:280:9: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+        asc_set_l0c2gm_nz2nd(1, 0, 0);
+        ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:6:
+In file included from /workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend.hpp:11:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/ascend/copy.hpp:301:9: warning: 'asc_set_l0c2gm_nz2nd' is deprecated: Deprecated since 9.2.0, Will be removed after 2027/09/07, Use asc_set_l0c_copy_nz_para instead. [-Wdeprecated-declarations]
+        asc_set_l0c2gm_nz2nd(1, 0, 0);
+        ^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/cube_datamove/cube_datamove.h:1522:1: note: 'asc_set_l0c2gm_nz2nd' has been explicitly marked deprecated here
+ASC_DEPRECATED(9.2.0, "2027/09/07", asc_set_l0c_copy_nz_para)
+^
+/workspace/deepgemm-ascend-20261107/cann-compat/asc/include/c_api/defs/macro.h:15:7: note: expanded from macro 'ASC_DEPRECATED'
+    [[deprecated("Deprecated since " #version ", Will be removed after " removal_date ", Use " #replacement \
+      ^
+In file included from /workspace/deepgemm-ascend-20261107/quant-cache/fp8fp8-m1-n576-k7168/tmp/24638-9f13fa72-21358fbb-476ef016/kernel.asc:2:
+/workspace/deepgemm-ascend-20261107/packages/deep_gemm/include/deep_gemm/transform_sf.hpp:19:5: error: use of undeclared identifier 'ascendc_assert'
+    ascendc_assert((combined & 0x80000000u) == 0 and (combined & 0x007fffffu) == 0,
+    ^
+4 warnings and 1 error generated.
+
+C++ trace (most recent call first):
+  #0 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0xbb115 deep_jit::call_external_command(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool) at /workspace/deepgemm-ascend-20261107/source/third-party/deep-jit/include/deep_jit/utils/command.hpp:35
+  #1 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0xbee21 deep_jit::Ascend::compile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::filesystem::__cxx11::path, deep_jit::Env const&, deep_jit::Config const&, deep_jit::ascend::CompilerOptions const&) const at /workspace/deepgemm-ascend-20261107/source/third-party/deep-jit/include/deep_jit/backend/ascend/backend.hpp:120
+  #2 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0xce267 deep_jit::Runtime<deep_jit::Ascend>::compile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, deep_jit::ascend::CompilerOptions const&) const at /workspace/deepgemm-ascend-20261107/source/third-party/deep-jit/include/deep_jit/runtime/runtime.hpp:85
+  #3 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0xce906 deep_jit::Runtime<deep_jit::Ascend>::compile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, deep_jit::ascend::CompilerOptions const&) at /workspace/deepgemm-ascend-20261107/source/third-party/deep-jit/include/deep_jit/runtime/runtime.hpp:60
+  #4 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0x5b735 deep_gemm::launch_transform_sf(at::Tensor, unsigned int, unsigned int, deep_gemm::GemmType, std::optional<at::Tensor> const&) at /workspace/deepgemm-ascend-20261107/source/csrc/apis/../jit_kernels/transform_sf.hpp:96
+  #5 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0x5bf58 deep_gemm::layout::transform_sf_into_required_layout(at::Tensor, int, int, std::tuple<int, int, int> const&, std::optional<int> const&, std::optional<bool> const&, bool, std::optional<at::Tensor> const&) at /workspace/deepgemm-ascend-20261107/source/csrc/apis/layout.hpp:91
+  #6 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0x5c530 deep_gemm::gemm_api::get_gemm_desc(deep_gemm::GemmType, at::Tensor const&, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, std::shared_ptr<deep_gemm::EpilogueClass>, std::optional<at::Tensor> const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> > const&, std::optional<std::tuple<int, int> > const&, std::optional<std::tuple<int, int> > const&, std::optional<at::Tensor> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<unsigned int> const&, std::optional<unsigned int> const&) at /workspace/deepgemm-ascend-20261107/source/csrc/apis/gemm.hpp:132
+  #7 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0x62001 void deep_gemm::gemm_api::fp8_fp4_gemm<false, false>(std::pair<at::Tensor, at::Tensor> const&, std::pair<at::Tensor, at::Tensor> const&, at::Tensor const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> >, std::optional<std::tuple<int, int> >, std::optional<std::tuple<int, int> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<float> const&, std::shared_ptr<deep_gemm::EpilogueClass> const&) at /workspace/deepgemm-ascend-20261107/source/csrc/apis/gemm.hpp:242
+  #8 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0xd7a49 pybind11::cpp_function::initialize<void (*&)(std::pair<at::Tensor, at::Tensor> const&, std::pair<at::Tensor, at::Tensor> const&, at::Tensor const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> >, std::optional<std::tuple<int, int> >, std::optional<std::tuple<int, int> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<float> const&, std::shared_ptr<deep_gemm::EpilogueClass> const&), void, std::pair<at::Tensor, at::Tensor> const&, std::pair<at::Tensor, at::Tensor> const&, at::Tensor const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> >, std::optional<std::tuple<int, int> >, std::optional<std::tuple<int, int> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<float> const&, std::shared_ptr<deep_gemm::EpilogueClass> const&, pybind11::name, pybind11::scope, pybind11::sibling, pybind11::arg, pybind11::arg, pybind11::arg, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v, pybind11::arg_v>(void (*&)(std::pair<at::Tensor, at::Tensor> const&, std::pair<at::Tensor, at::Tensor> const&, at::Tensor const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> >, std::optional<std::tuple<int, int> >, std::optional<std::tuple<int, int> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<float> const&, std::shared_ptr<deep_gemm::EpilogueClass> const&), void (*)(std::pair<at::Tensor, at::Tensor> const&, std::pair<at::Tensor, at::Tensor> const&, at::Tensor const&, std::optional<at::Tensor> const&, std::optional<std::tuple<int, int, int> >, std::optional<std::tuple<int, int> >, std::optional<std::tuple<int, int> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, std::optional<float> const&, std::shared_ptr<deep_gemm::EpilogueClass> const&), pybind11::name const&, pybind11::scope const&, pybind11::sibling const&, pybind11::arg const&, pybind11::arg const&, pybind11::arg const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&, pybind11::arg_v const&)::{lambda(pybind11::detail::function_call&)#3}::_FUN(pybind11::detail::function_call&) at /workspace/tilekernels-env-20261101/venv/lib/python3.12/site-packages/torch/include/pybind11/cast.h:2195
+  #9 /workspace/deepgemm-ascend-20261107/packages/deep_gemm/_C.cpython-312-x86_64-linux-gnu.so+0x9c400 pybind11::cpp_function::dispatcher(_object*, _object* const*, unsigned long, _object*) at /workspace/tilekernels-env-20261101/venv/lib/python3.12/site-packages/torch/include/pybind11/pybind11.h:1209
+
+[ERROR] 2026-11-07-11:38:25 (PID:24638, Device:0, RankID:-1) ERR99999 UNKNOWN applicaiton exception

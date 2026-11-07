@@ -1,0 +1,5118 @@
+{
+  "bf16-m1-n576-k7168": {
+    "op_type": "cube",
+    "metrics": {
+      "PipeUtilization": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_cube_time(us)": {
+          "A": [
+            0.3490907142857143,
+            0.3490907142857143,
+            0.3490907142857143
+          ],
+          "B": [
+            0.3490907142857143,
+            0.3490907142857143,
+            0.3490907142857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_ratio": {
+          "A": [
+            0.050452392857142855,
+            0.050830464285714284,
+            0.05085889285714286
+          ],
+          "B": [
+            0.050152999999999996,
+            0.05071164285714286,
+            0.05019060714285714
+          ],
+          "median_relative_difference": 0.012588064103852242,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0004065000000000041,
+          "within_range_B": 0.0005586428571428617,
+          "median_difference": 0.0006398571428571434
+        },
+        "cube0/aic_scalar_time(us)": {
+          "A": [
+            0.7306060714285715,
+            0.7351731785714286,
+            0.710671
+          ],
+          "B": [
+            0.72913425,
+            0.7313636071428572,
+            0.7337230357142858
+          ],
+          "median_relative_difference": 0.0010357853561310006,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.024502178571428557,
+          "within_range_B": 0.004588785714285781,
+          "median_difference": 0.0007575357142857175
+        },
+        "cube0/aic_scalar_ratio": {
+          "A": [
+            0.2924319642857143,
+            0.24324507142857144,
+            0.28200514285714284
+          ],
+          "B": [
+            0.23760067857142858,
+            0.2979462142857143,
+            0.23579492857142856
+          ],
+          "median_relative_difference": 0.15745976770433764,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.04918689285714284,
+          "within_range_B": 0.062151285714285714,
+          "median_difference": 0.04440446428571426
+        },
+        "cube0/aic_mte1_time(us)": {
+          "A": [
+            1.2876190357142858,
+            1.293138392857143,
+            1.29497825
+          ],
+          "B": [
+            1.2824675,
+            1.28235925,
+            1.2701947142857144
+          ],
+          "median_relative_difference": 0.008335645215301933,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.007359214285714177,
+          "within_range_B": 0.012272785714285694,
+          "median_difference": 0.010779142857142876
+        },
+        "cube0/aic_mte1_ratio": {
+          "A": [
+            0.18707139285714286,
+            0.18950371428571428,
+            0.18972392857142856
+          ],
+          "B": [
+            0.18551514285714285,
+            0.18715271428571428,
+            0.18399667857142857
+          ],
+          "median_relative_difference": 0.021047457795776315,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0026525357142856976,
+          "within_range_B": 0.0031560357142857154,
+          "median_difference": 0.003988571428571425
+        },
+        "cube0/aic_mte1_active_bw(GB/s)": {
+          "A": [
+            206.24697985714286,
+            205.2843672142857,
+            205.01218192857144
+          ],
+          "B": [
+            207.06786228571428,
+            207.05592560714285,
+            209.12735742857143
+          ],
+          "median_relative_difference": 0.008613094527279617,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 1.2347979285714246,
+          "within_range_B": 2.0714318214285754,
+          "median_difference": 1.7834950714285753
+        },
+        "cube0/aic_mte2_time(us)": {
+          "A": [
+            3.5704545,
+            3.4429219285714288,
+            3.5254978214285715
+          ],
+          "B": [
+            3.503874392857143,
+            3.5570562142857143,
+            3.5023375357142856
+          ],
+          "median_relative_difference": 0.006133439776929562,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.1275325714285711,
+          "within_range_B": 0.05471867857142865,
+          "median_difference": 0.021623428571428516
+        },
+        "cube0/aic_mte2_ratio": {
+          "A": [
+            0.5166005,
+            0.5021172857142857,
+            0.5141428214285715
+          ],
+          "B": [
+            0.5044224285714286,
+            0.517436,
+            0.5040668928571429
+          ],
+          "median_relative_difference": 0.018906016873160424,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.014483214285714308,
+          "within_range_B": 0.013369107142857106,
+          "median_difference": 0.009720392857142879
+        },
+        "cube0/aic_mte2_active_bw(GB/s)": {
+          "A": [
+            68.67017692857142,
+            70.5637575,
+            69.34945107142858
+          ],
+          "B": [
+            69.62623021428571,
+            68.83474346428571,
+            69.69212507142856
+          ],
+          "median_relative_difference": 0.003975213680322855,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 1.893580571428572,
+          "within_range_B": 0.8573816071428553,
+          "median_difference": 0.2767791428571371
+        },
+        "cube0/aic_mte3_time(us)": {
+          "A": [
+            0.001212,
+            0.001212,
+            0.001212
+          ],
+          "B": [
+            0.001212,
+            0.001212,
+            0.001212
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte3_ratio": {
+          "A": [
+            0.0006374285714285714,
+            0.0008010000000000001,
+            0.0006835714285714286
+          ],
+          "B": [
+            0.0007994642857142857,
+            0.0006123214285714285,
+            0.0007995714285714286
+          ],
+          "median_relative_difference": 0.14496314496314497,
+          "blocks_with_different_medians": 26,
+          "blocks": 28,
+          "within_range_A": 0.0001635714285714286,
+          "within_range_B": 0.00018725000000000002,
+          "median_difference": 0.00011589285714285716
+        },
+        "cube0/aic_mte3_active_bw(GB/s)": {
+          "A": [
+            49440.77678571428,
+            49440.77678571428,
+            49440.77678571428
+          ],
+          "B": [
+            49440.77678571428,
+            49440.77678571428,
+            49440.77678571428
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_fixpipe_time(us)": {
+          "A": [
+            1.8790691785714286,
+            1.8261037857142857,
+            1.8119263214285715
+          ],
+          "B": [
+            1.8684198214285714,
+            1.8714500714285713,
+            1.8731601071428572
+          ],
+          "median_relative_difference": 0.024230561320650455,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.06714285714285717,
+          "within_range_B": 0.004740285714285752,
+          "median_difference": 0.04534628571428567
+        },
+        "cube0/aic_fixpipe_ratio": {
+          "A": [
+            0.2722981071428571,
+            0.26745857142857143,
+            0.2647769642857143
+          ],
+          "B": [
+            0.2698078214285714,
+            0.2727669285714286,
+            0.2706655357142857
+          ],
+          "median_relative_difference": 0.011848439725623336,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.007521142857142837,
+          "within_range_B": 0.002959107142857187,
+          "median_difference": 0.0032069642857142644
+        },
+        "cube0/aic_fixpipe_active_bw(GB/s)": {
+          "A": [
+            0.026492535714285715,
+            0.027109357142857143,
+            0.02734407142857143
+          ],
+          "B": [
+            0.026531071428571428,
+            0.026438214285714287,
+            0.02647617857142857
+          ],
+          "median_relative_difference": 0.023356458365719843,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0008515357142857144,
+          "within_range_B": 9.285714285714106e-05,
+          "median_difference": 0.0006331785714285727
+        },
+        "cube0/aic_icache_miss_rate": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "ArithmeticUtilization": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_cube_ratio": {
+          "A": [
+            0.050452392857142855,
+            0.050830464285714284,
+            0.05085889285714286
+          ],
+          "B": [
+            0.050152999999999996,
+            0.05071164285714286,
+            0.05019060714285714
+          ],
+          "median_relative_difference": 0.012588064103852242,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0004065000000000041,
+          "within_range_B": 0.0005586428571428617,
+          "median_difference": 0.0006398571428571434
+        },
+        "cube0/aic_cube_fp_ratio": {
+          "A": [
+            0.050452392857142855,
+            0.050830464285714284,
+            0.05085889285714286
+          ],
+          "B": [
+            0.050152999999999996,
+            0.05071164285714286,
+            0.05019060714285714
+          ],
+          "median_relative_difference": 0.012588064103852242,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0004065000000000041,
+          "within_range_B": 0.0005586428571428617,
+          "median_difference": 0.0006398571428571434
+        },
+        "cube0/aic_cube_int_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_total_instr_number": {
+          "A": [
+            9.0,
+            9.0,
+            9.0
+          ],
+          "B": [
+            9.0,
+            9.0,
+            9.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_fp_instr_number": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_int_instr_number": {
+          "A": [
+            9.0,
+            9.0,
+            9.0
+          ],
+          "B": [
+            9.0,
+            9.0,
+            9.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "L2Cache": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_read_close_hit": {
+          "A": [
+            66.75,
+            66.75,
+            66.75
+          ],
+          "B": [
+            66.75,
+            66.71428571428571,
+            66.75
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 9,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.035714285714291805,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_close_miss": {
+          "A": [
+            1154.0,
+            1154.0,
+            1153.9285714285713
+          ],
+          "B": [
+            1154.0,
+            1154.0,
+            1154.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 3,
+          "blocks": 28,
+          "within_range_A": 0.07142857142866887,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_close_victim": {
+          "A": [
+            2.3214285714285716,
+            2.1785714285714284,
+            2.1785714285714284
+          ],
+          "B": [
+            2.0357142857142856,
+            2.142857142857143,
+            2.392857142857143
+          ],
+          "median_relative_difference": 0.01639344262295076,
+          "blocks_with_different_medians": 7,
+          "blocks": 28,
+          "within_range_A": 0.14285714285714324,
+          "within_range_B": 0.3571428571428572,
+          "median_difference": 0.03571428571428559
+        },
+        "cube0/aic_read_far_hit": {
+          "A": [
+            2.8214285714285716,
+            3.0,
+            3.0357142857142856
+          ],
+          "B": [
+            3.107142857142857,
+            3.0357142857142856,
+            2.7857142857142856
+          ],
+          "median_relative_difference": 0.0117647058823529,
+          "blocks_with_different_medians": 4,
+          "blocks": 28,
+          "within_range_A": 0.21428571428571397,
+          "within_range_B": 0.3214285714285716,
+          "median_difference": 0.03571428571428559
+        },
+        "cube0/aic_read_far_miss": {
+          "A": [
+            1153.0357142857142,
+            1153.0,
+            1153.0357142857142
+          ],
+          "B": [
+            1153.0357142857142,
+            1153.0357142857142,
+            1153.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 3,
+          "blocks": 28,
+          "within_range_A": 0.03571428571422075,
+          "within_range_B": 0.03571428571422075,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_hit_rate(%)": {
+          "A": [
+            34.01447867857143,
+            37.58976825,
+            34.02027017857143
+          ],
+          "B": [
+            37.592664,
+            34.01930492857143,
+            37.58397675
+          ],
+          "median_relative_difference": 0.09481983759019244,
+          "blocks_with_different_medians": 8,
+          "blocks": 28,
+          "within_range_A": 3.57528957142857,
+          "within_range_B": 3.5733590714285697,
+          "median_difference": 3.5637065714285683
+        },
+        "cube0/aic_write_close_hit": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_close_miss": {
+          "A": [
+            0.35714285714285715,
+            0.35714285714285715,
+            0.35714285714285715
+          ],
+          "B": [
+            0.2857142857142857,
+            0.35714285714285715,
+            0.2857142857142857
+          ],
+          "median_relative_difference": 0.20000000000000007,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.07142857142857145,
+          "median_difference": 0.07142857142857145
+        },
+        "cube0/aic_write_close_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_far_hit": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_far_miss": {
+          "A": [
+            0.2857142857142857,
+            0.2857142857142857,
+            0.2857142857142857
+          ],
+          "B": [
+            0.35714285714285715,
+            0.2857142857142857,
+            0.35714285714285715
+          ],
+          "median_relative_difference": 0.20000000000000007,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.07142857142857145,
+          "median_difference": 0.07142857142857145
+        },
+        "cube0/aic_write_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_hit_rate(%)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "Memory": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_l1_read_bw(GB/s)": {
+          "A": [
+            59.54236767857143,
+            59.988691107142856,
+            60.02231342857143
+          ],
+          "B": [
+            59.18920153571428,
+            59.84846303571428,
+            59.23350110714286
+          ],
+          "median_relative_difference": 0.012588872770222493,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.47994574999999884,
+          "within_range_B": 0.6592614999999995,
+          "median_difference": 0.7551899999999989
+        },
+        "cube0/aic_l1_write_bw(GB/s)": {
+          "A": [
+            24.809319214285715,
+            24.995287892857142,
+            25.009297
+          ],
+          "B": [
+            24.662167642857142,
+            24.93685925,
+            24.68062510714286
+          ],
+          "median_relative_difference": 0.012588884235424381,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.19997778571428526,
+          "within_range_B": 0.27469160714285934,
+          "median_difference": 0.3146627857142832
+        },
+        "cube0/aic_main_mem_read_bw(GB/s)": {
+          "A": [
+            41.020217821428574,
+            41.34331364285714,
+            41.354897071428574
+          ],
+          "B": [
+            40.79321785714286,
+            41.228305785714284,
+            40.82369835714286
+          ],
+          "median_relative_difference": 0.012568302826497174,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.33467925000000065,
+          "within_range_B": 0.4350879285714271,
+          "median_difference": 0.5196152857142806
+        },
+        "cube0/aic_main_mem_write_bw(GB/s)": {
+          "A": [
+            0.011075642857142857,
+            0.011158642857142857,
+            0.011164892857142858
+          ],
+          "B": [
+            0.01101,
+            0.011132535714285715,
+            0.011018107142857142
+          ],
+          "median_relative_difference": 0.012594337509041703,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 8.925000000000079e-05,
+          "within_range_B": 0.00012253571428571391,
+          "median_difference": 0.00014053571428571457
+        },
+        "cube0/aic_mte1_instructions": {
+          "A": [
+            20.0,
+            20.0,
+            20.0
+          ],
+          "B": [
+            20.0,
+            20.0,
+            20.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte1_ratio": {
+          "A": [
+            0.18707139285714286,
+            0.18950371428571428,
+            0.18972392857142856
+          ],
+          "B": [
+            0.18551514285714285,
+            0.18715271428571428,
+            0.18399667857142857
+          ],
+          "median_relative_difference": 0.021047457795776315,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0026525357142856976,
+          "within_range_B": 0.0031560357142857154,
+          "median_difference": 0.003988571428571425
+        },
+        "cube0/aic_mte2_instructions": {
+          "A": [
+            12.285714285714286,
+            12.285714285714286,
+            12.285714285714286
+          ],
+          "B": [
+            12.285714285714286,
+            12.285714285714286,
+            12.285714285714286
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte2_ratio": {
+          "A": [
+            0.5166005,
+            0.5021172857142857,
+            0.5141428214285715
+          ],
+          "B": [
+            0.5044224285714286,
+            0.517436,
+            0.5040668928571429
+          ],
+          "median_relative_difference": 0.018906016873160424,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.014483214285714308,
+          "within_range_B": 0.013369107142857106,
+          "median_difference": 0.009720392857142879
+        },
+        "cube0/aic_mte3_instructions": {
+          "A": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "B": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte3_ratio": {
+          "A": [
+            0.0006374285714285714,
+            0.0008010000000000001,
+            0.0006835714285714286
+          ],
+          "B": [
+            0.0007994642857142857,
+            0.0006123214285714285,
+            0.0007995714285714286
+          ],
+          "median_relative_difference": 0.14496314496314497,
+          "blocks_with_different_medians": 26,
+          "blocks": 28,
+          "within_range_A": 0.0001635714285714286,
+          "within_range_B": 0.00018725000000000002,
+          "median_difference": 0.00011589285714285716
+        },
+        "cube0/read_main_memory_datas(KB)": {
+          "A": [
+            297.2857142857143,
+            297.2857142857143,
+            297.2857142857143
+          ],
+          "B": [
+            297.2857142857143,
+            297.2857142857143,
+            297.2857142857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/write_main_memory_datas(KB)": {
+          "A": [
+            0.08035714285714286,
+            0.08035714285714286,
+            0.08035714285714286
+          ],
+          "B": [
+            0.08035714285714286,
+            0.08035714285714286,
+            0.08035714285714286
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/GM_to_L1_datas(KB)": {
+          "A": [
+            297.2857142857143,
+            297.2857142857143,
+            297.2857142857143
+          ],
+          "B": [
+            297.2857142857143,
+            297.2857142857143,
+            297.2857142857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/GM_to_L1_bw_usage_rate(%)": {
+          "A": [
+            25.201337285714285,
+            25.399835928571427,
+            25.40695225
+          ],
+          "B": [
+            25.06187735714286,
+            25.329178678571427,
+            25.080603107142856
+          ],
+          "median_relative_difference": 0.012568302501099094,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.20561496428571502,
+          "within_range_B": 0.2673013214285689,
+          "median_difference": 0.3192328214285709
+        },
+        "cube0/L0C_to_L1_datas(KB)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_L1_bw_usage_rate(%)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_GM_datas(KB)": {
+          "A": [
+            0.08035714285714286,
+            0.08035714285714286,
+            0.08035714285714286
+          ],
+          "B": [
+            0.08035714285714286,
+            0.08035714285714286,
+            0.08035714285714286
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_GM_bw_usage_rate(%)": {
+          "A": [
+            0.008505928571428572,
+            0.008569678571428572,
+            0.008574464285714286
+          ],
+          "B": [
+            0.008455464285714285,
+            0.008549714285714285,
+            0.00846175
+          ],
+          "median_relative_difference": 0.012594237990256331,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 6.853571428571369e-05,
+          "within_range_B": 9.425000000000058e-05,
+          "median_difference": 0.00010792857142857132
+        }
+      },
+      "ResourceConflictRatio": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_cube_wait_ratio": {
+          "A": [
+            0.5457510357142857,
+            0.5192885357142857,
+            0.5376125
+          ],
+          "B": [
+            0.51735425,
+            0.5478273214285714,
+            0.5228898571428572
+          ],
+          "median_relative_difference": 0.027385231662475973,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.026462500000000055,
+          "within_range_B": 0.030473071428571363,
+          "median_difference": 0.014722642857142865
+        },
+        "cube0/aic_mte1_wait_ratio": {
+          "A": [
+            0.5243159285714286,
+            0.4987734285714286,
+            0.5160355
+          ],
+          "B": [
+            0.49566039285714286,
+            0.5251613928571428,
+            0.5025733571428571
+          ],
+          "median_relative_difference": 0.026087629353296175,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.025542500000000024,
+          "within_range_B": 0.029500999999999944,
+          "median_difference": 0.013462142857142867
+        },
+        "cube0/aic_mte2_wait_ratio": {
+          "A": [
+            0.2815042857142857,
+            0.26905889285714285,
+            0.2848477857142857
+          ],
+          "B": [
+            0.2695837857142857,
+            0.294405,
+            0.27276042857142857
+          ],
+          "median_relative_difference": 0.031061186584319934,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.015788892857142856,
+          "within_range_B": 0.024821214285714266,
+          "median_difference": 0.008743857142857137
+        },
+        "cube0/aic_mte3_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "MemoryL0": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        },
+        "cube0/aic_l0a_read_bw(GB/s)": {
+          "A": [
+            2.480932,
+            2.4995287142857143,
+            2.500929785714286
+          ],
+          "B": [
+            2.466216785714286,
+            2.4936859642857145,
+            2.4680625714285713
+          ],
+          "median_relative_difference": 0.012588830317212427,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.019997785714285676,
+          "within_range_B": 0.02746917857142872,
+          "median_difference": 0.031466142857143
+        },
+        "cube0/aic_l0a_write_bw(GB/s)": {
+          "A": [
+            19.847455714285715,
+            19.99623007142857,
+            20.007437964285714
+          ],
+          "B": [
+            19.729733928571427,
+            19.94948742857143,
+            19.744500214285715
+          ],
+          "median_relative_difference": 0.012588865813388361,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.15998224999999877,
+          "within_range_B": 0.21975350000000304,
+          "median_difference": 0.25172985714285545
+        },
+        "cube0/aic_l0b_read_bw(GB/s)": {
+          "A": [
+            19.847455714285715,
+            19.99623007142857,
+            20.007437964285714
+          ],
+          "B": [
+            19.729733928571427,
+            19.94948742857143,
+            19.744500214285715
+          ],
+          "median_relative_difference": 0.012588865813388361,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.15998224999999877,
+          "within_range_B": 0.21975350000000304,
+          "median_difference": 0.25172985714285545
+        },
+        "cube0/aic_l0b_write_bw(GB/s)": {
+          "A": [
+            39.694911607142856,
+            39.992460214285714,
+            40.01487578571429
+          ],
+          "B": [
+            39.459467964285714,
+            39.898974607142854,
+            39.4890005
+          ],
+          "median_relative_difference": 0.012588865790904005,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.319964178571432,
+          "within_range_B": 0.4395066428571397,
+          "median_difference": 0.5034597142857109
+        },
+        "cube0/aic_l0c_read_bw_cube(GB/s)": {
+          "A": [
+            2.303722535714286,
+            2.320991107142857,
+            2.3222918214285713
+          ],
+          "B": [
+            2.290058392857143,
+            2.3155655,
+            2.2917723214285712
+          ],
+          "median_relative_difference": 0.012588926180873731,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.0185692857142854,
+          "within_range_B": 0.025507107142856977,
+          "median_difference": 0.029218785714285822
+        },
+        "cube0/aic_l0c_write_bw_cube(GB/s)": {
+          "A": [
+            2.480932,
+            2.4995287142857143,
+            2.500929785714286
+          ],
+          "B": [
+            2.466216785714286,
+            2.4936859642857145,
+            2.4680625714285713
+          ],
+          "median_relative_difference": 0.012588830317212427,
+          "blocks_with_different_medians": 18,
+          "blocks": 28,
+          "within_range_A": 0.019997785714285676,
+          "within_range_B": 0.02746917857142872,
+          "median_difference": 0.031466142857143
+        }
+      },
+      "MemoryUB": {
+        "cube0/aic_time(us)": {
+          "A": [
+            4.752467571428571,
+            4.646580071428572,
+            4.688917857142857
+          ],
+          "B": [
+            4.703571357142857,
+            4.742510857142857,
+            4.704761928571428
+          ],
+          "median_relative_difference": 0.0033676669870056487,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.10588749999999969,
+          "within_range_B": 0.03893950000000057,
+          "median_difference": 0.015844071428571027
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            7841.571428571428,
+            7666.857142857143,
+            7736.714285714285
+          ],
+          "B": [
+            7760.892857142857,
+            7825.142857142857,
+            7762.857142857143
+          ],
+          "median_relative_difference": 0.0033676849466323985,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 174.71428571428532,
+          "within_range_B": 64.25,
+          "median_difference": 26.142857142857792
+        }
+      }
+    },
+    "issues": []
+  },
+  "bf16-m1-n32768-k512": {
+    "op_type": "mix",
+    "metrics": {
+      "PipeUtilization": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_cube_time(us)": {
+          "A": [
+            1.4185277142857142,
+            1.4185277142857142,
+            1.4185277142857142
+          ],
+          "B": [
+            1.4185277142857142,
+            1.4185277142857142,
+            1.4185277142857142
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_ratio": {
+          "A": [
+            0.061585464285714285,
+            0.06296825,
+            0.06206671428571429
+          ],
+          "B": [
+            0.06302742857142857,
+            0.06368389285714286,
+            0.06294778571428572
+          ],
+          "median_relative_difference": 0.015242796786886345,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0013827857142857183,
+          "within_range_B": 0.0007361071428571425,
+          "median_difference": 0.00096071428571428
+        },
+        "cube0/aic_scalar_time(us)": {
+          "A": [
+            2.190714285714286,
+            2.2470130357142857,
+            2.3630736071428573
+          ],
+          "B": [
+            2.174826857142857,
+            2.2196103928571427,
+            2.157922107142857
+          ],
+          "median_relative_difference": 0.032125393766788676,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.17235932142857147,
+          "within_range_B": 0.06168828571428575,
+          "median_difference": 0.07218617857142862
+        },
+        "cube0/aic_scalar_ratio": {
+          "A": [
+            0.09512982142857143,
+            0.09904692857142858,
+            0.10288464285714286
+          ],
+          "B": [
+            0.09599785714285715,
+            0.09918821428571428,
+            0.09504575
+          ],
+          "median_relative_difference": 0.030784108831527913,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.007754821428571423,
+          "within_range_B": 0.004142464285714284,
+          "median_difference": 0.0030490714285714288
+        },
+        "cube0/aic_mte1_time(us)": {
+          "A": [
+            4.311471857142857,
+            4.275930821428571,
+            4.327597535714285
+          ],
+          "B": [
+            4.301774892857143,
+            4.323181821428571,
+            4.3199567142857145
+          ],
+          "median_relative_difference": 0.0019641069816275294,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.05166671428571412,
+          "within_range_B": 0.021406928571428452,
+          "median_difference": 0.008484857142857294
+        },
+        "cube0/aic_mte1_ratio": {
+          "A": [
+            0.18702464285714285,
+            0.18973864285714284,
+            0.18929714285714286
+          ],
+          "B": [
+            0.19117557142857144,
+            0.1939465,
+            0.19154100000000002
+          ],
+          "median_relative_difference": 0.011714761554221595,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.002713999999999994,
+          "within_range_B": 0.002770928571428549,
+          "median_difference": 0.0022438571428571585
+        },
+        "cube0/aic_mte1_active_bw(GB/s)": {
+          "A": [
+            276.83307917857144,
+            278.8976598214286,
+            275.485333
+          ],
+          "B": [
+            277.07648125000003,
+            276.10688342857145,
+            276.3721084642857
+          ],
+          "median_relative_difference": 0.0016651576309216515,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 3.4123268214285645,
+          "within_range_B": 0.9695978214285788,
+          "median_difference": 0.460970714285736
+        },
+        "cube0/aic_mte2_time(us)": {
+          "A": [
+            20.702207714285713,
+            20.163376714285715,
+            20.380779142857143
+          ],
+          "B": [
+            20.211948107142856,
+            19.927987107142858,
+            20.280000107142858
+          ],
+          "median_relative_difference": 0.008283836183635684,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5388309999999983,
+          "within_range_B": 0.35201299999999947,
+          "median_difference": 0.16883103571428748
+        },
+        "cube0/aic_mte2_ratio": {
+          "A": [
+            0.8988329285714286,
+            0.8952421071428571,
+            0.8912691071428571
+          ],
+          "B": [
+            0.89793625,
+            0.894504,
+            0.899061
+          ],
+          "median_relative_difference": 0.003000372083366572,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.007563821428571482,
+          "within_range_B": 0.004557000000000033,
+          "median_difference": 0.002694142857142867
+        },
+        "cube0/aic_mte2_active_bw(GB/s)": {
+          "A": [
+            53.94861875,
+            55.399683214285716,
+            54.82785857142857
+          ],
+          "B": [
+            55.288157,
+            56.061717464285714,
+            55.129579178571426
+          ],
+          "median_relative_difference": 0.008325443522587073,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 1.4510644642857145,
+          "within_range_B": 0.9321382857142879,
+          "median_difference": 0.4602984285714271
+        },
+        "cube0/aic_mte3_time(us)": {
+          "A": [
+            0.001212,
+            0.001212,
+            0.001212
+          ],
+          "B": [
+            0.001212,
+            0.001212,
+            0.001212
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte3_ratio": {
+          "A": [
+            5.275e-05,
+            5.396428571428571e-05,
+            5.3e-05
+          ],
+          "B": [
+            5.4e-05,
+            5.4499999999999997e-05,
+            5.403571428571428e-05
+          ],
+          "median_relative_difference": 0.019167217448777193,
+          "blocks_with_different_medians": 20,
+          "blocks": 28,
+          "within_range_A": 1.2142857142857119e-06,
+          "within_range_B": 4.999999999999986e-07,
+          "median_difference": 1.0357142857142818e-06
+        },
+        "cube0/aic_mte3_active_bw(GB/s)": {
+          "A": [
+            5310.773926,
+            5310.773926,
+            5310.773926
+          ],
+          "B": [
+            5310.773926,
+            5310.773926,
+            5310.773926
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_fixpipe_time(us)": {
+          "A": [
+            20.89309532142857,
+            20.343333142857144,
+            20.566060535714286
+          ],
+          "B": [
+            20.399913464285714,
+            20.120584285714287,
+            20.46281375
+          ],
+          "median_relative_difference": 0.0080787018563933,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5497621785714273,
+          "within_range_B": 0.34222946428571177,
+          "median_difference": 0.166147071428572
+        },
+        "cube0/aic_fixpipe_ratio": {
+          "A": [
+            0.9071243571428571,
+            0.9032501428571429,
+            0.8993823214285714
+          ],
+          "B": [
+            0.9062834285714286,
+            0.9031448571428572,
+            0.9072133928571429
+          ],
+          "median_relative_difference": 0.003346950433670729,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.007742035714285667,
+          "within_range_B": 0.00406853571428567,
+          "median_difference": 0.0030332857142857383
+        },
+        "cube0/aic_fixpipe_active_bw(GB/s)": {
+          "A": [
+            0.11121739285714285,
+            0.11424167857142857,
+            0.11304467857142857
+          ],
+          "B": [
+            0.11397010714285714,
+            0.11552285714285715,
+            0.11366975
+          ],
+          "median_relative_difference": 0.008119923676728565,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0030242857142857155,
+          "within_range_B": 0.0018531071428571494,
+          "median_difference": 0.000925428571428577
+        },
+        "cube0/aic_icache_miss_rate": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_vec_time(us)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_scalar_time(us)": {
+          "A": [
+            1.696298642857143,
+            1.895649392857143,
+            1.9540258928571428
+          ],
+          "B": [
+            1.7806060714285714,
+            1.9287445,
+            1.8258225714285714
+          ],
+          "median_relative_difference": 0.0368353038761708,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.25772724999999985,
+          "within_range_B": 0.14813842857142867,
+          "median_difference": 0.06982682142857155
+        },
+        "vector0/aiv_scalar_ratio": {
+          "A": [
+            0.07645378571428571,
+            0.08695985714285714,
+            0.08930767857142857
+          ],
+          "B": [
+            0.08236735714285714,
+            0.09007775,
+            0.08402789285714286
+          ],
+          "median_relative_difference": 0.03371629602493099,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.012853892857142862,
+          "within_range_B": 0.007710392857142853,
+          "median_difference": 0.002931964285714281
+        },
+        "vector0/aiv_mte2_time(us)": {
+          "A": [
+            0.004848,
+            0.004848,
+            0.004848
+          ],
+          "B": [
+            0.004848,
+            0.004848,
+            0.004848
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte2_ratio": {
+          "A": [
+            0.0002189642857142857,
+            0.00022517857142857143,
+            0.00022003571428571428
+          ],
+          "B": [
+            0.00022475,
+            0.00022560714285714285,
+            0.00022517857142857143
+          ],
+          "median_relative_difference": 0.022839016653449683,
+          "blocks_with_different_medians": 25,
+          "blocks": 28,
+          "within_range_A": 6.214285714285718e-06,
+          "within_range_B": 8.571428571428586e-07,
+          "median_difference": 5.142857142857152e-06
+        },
+        "vector0/aiv_mte2_active_bw(GB/s)": {
+          "A": [
+            49.173832,
+            49.173832,
+            49.173832
+          ],
+          "B": [
+            49.173832,
+            49.173832,
+            49.173832
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte3_time(us)": {
+          "A": [
+            0.6011903571428572,
+            0.6330736071428571,
+            0.5702165357142857
+          ],
+          "B": [
+            0.6081601428571428,
+            0.5342208571428572,
+            0.4691341785714286
+          ],
+          "median_relative_difference": 0.1113948339395711,
+          "blocks_with_different_medians": 27,
+          "blocks": 28,
+          "within_range_A": 0.06285707142857144,
+          "within_range_B": 0.13902596428571423,
+          "median_difference": 0.06696950000000002
+        },
+        "vector0/aiv_mte3_ratio": {
+          "A": [
+            0.026687357142857145,
+            0.028630785714285713,
+            0.025439857142857143
+          ],
+          "B": [
+            0.027431857142857143,
+            0.024778107142857143,
+            0.021492785714285714
+          ],
+          "median_relative_difference": 0.07154136656469226,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0031909285714285703,
+          "within_range_B": 0.005939071428571429,
+          "median_difference": 0.0019092500000000012
+        },
+        "vector0/aiv_icache_miss_rate": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_vec_time(us)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_scalar_time(us)": {
+          "A": [
+            1.77114725,
+            1.8831385357142858,
+            1.8950431785714286
+          ],
+          "B": [
+            1.6541342142857143,
+            1.8499784285714285,
+            1.6396320714285715
+          ],
+          "median_relative_difference": 0.12160779309935836,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.1238959285714285,
+          "within_range_B": 0.210346357142857,
+          "median_difference": 0.22900432142857152
+        },
+        "vector1/aiv_scalar_ratio": {
+          "A": [
+            0.08883589285714286,
+            0.09465567857142858,
+            0.09417282142857143
+          ],
+          "B": [
+            0.08303542857142857,
+            0.0932695,
+            0.08338682142857143
+          ],
+          "median_relative_difference": 0.11453410693637348,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.005819785714285722,
+          "within_range_B": 0.01023407142857144,
+          "median_difference": 0.010786000000000004
+        },
+        "vector1/aiv_mte2_time(us)": {
+          "A": [
+            0.004848,
+            0.004848,
+            0.004848
+          ],
+          "B": [
+            0.004848,
+            0.004848,
+            0.004848
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte2_ratio": {
+          "A": [
+            0.0002445,
+            0.000246,
+            0.0002470714285714286
+          ],
+          "B": [
+            0.00024571428571428574,
+            0.00024835714285714283,
+            0.0002483214285714286
+          ],
+          "median_relative_difference": 0.009348482669351352,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 2.571428571428603e-06,
+          "within_range_B": 2.642857142857091e-06,
+          "median_difference": 2.3214285714285698e-06
+        },
+        "vector1/aiv_mte2_active_bw(GB/s)": {
+          "A": [
+            49.173832,
+            49.173832,
+            49.173832
+          ],
+          "B": [
+            49.173832,
+            49.173832,
+            49.173832
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte3_time(us)": {
+          "A": [
+            0.4286362857142857,
+            0.4032466785714286,
+            0.3798484285714286
+          ],
+          "B": [
+            0.4374242142857143,
+            0.37948060714285714,
+            0.33554117857142857
+          ],
+          "median_relative_difference": 0.05893680640536679,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.048787857142857105,
+          "within_range_B": 0.10188303571428575,
+          "median_difference": 0.023766071428571456
+        },
+        "vector1/aiv_mte3_ratio": {
+          "A": [
+            0.021611285714285715,
+            0.02031632142857143,
+            0.01933625
+          ],
+          "B": [
+            0.022314785714285714,
+            0.019503285714285716,
+            0.017212035714285714
+          ],
+          "median_relative_difference": 0.040018844806339715,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0022750357142857155,
+          "within_range_B": 0.00510275,
+          "median_difference": 0.0008130357142857141
+        },
+        "vector1/aiv_icache_miss_rate": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "ArithmeticUtilization": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_cube_ratio": {
+          "A": [
+            0.061585464285714285,
+            0.06296825,
+            0.06206671428571429
+          ],
+          "B": [
+            0.06302742857142857,
+            0.06368389285714286,
+            0.06294778571428572
+          ],
+          "median_relative_difference": 0.015242796786886345,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0013827857142857183,
+          "within_range_B": 0.0007361071428571425,
+          "median_difference": 0.00096071428571428
+        },
+        "cube0/aic_cube_fp_ratio": {
+          "A": [
+            0.061585464285714285,
+            0.06296825,
+            0.06206671428571429
+          ],
+          "B": [
+            0.06302742857142857,
+            0.06368389285714286,
+            0.06294778571428572
+          ],
+          "median_relative_difference": 0.015242796786886345,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0013827857142857183,
+          "within_range_B": 0.0007361071428571425,
+          "median_difference": 0.00096071428571428
+        },
+        "cube0/aic_cube_int_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_total_instr_number": {
+          "A": [
+            39.142857142857146,
+            39.142857142857146,
+            39.142857142857146
+          ],
+          "B": [
+            39.142857142857146,
+            39.142857142857146,
+            39.142857142857146
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_cube_fp_instr_number": {
+          "A": [
+            10.821428571428571,
+            11.0,
+            10.678571428571429
+          ],
+          "B": [
+            11.107142857142858,
+            10.857142857142858,
+            11.214285714285714
+          ],
+          "median_relative_difference": 0.02572347266881036,
+          "blocks_with_different_medians": 19,
+          "blocks": 28,
+          "within_range_A": 0.3214285714285712,
+          "within_range_B": 0.3571428571428559,
+          "median_difference": 0.2857142857142865
+        },
+        "cube0/aic_cube_int_instr_number": {
+          "A": [
+            28.321428571428573,
+            28.142857142857142,
+            28.464285714285715
+          ],
+          "B": [
+            28.035714285714285,
+            28.285714285714285,
+            27.928571428571427
+          ],
+          "median_relative_difference": 0.010088272383354439,
+          "blocks_with_different_medians": 19,
+          "blocks": 28,
+          "within_range_A": 0.32142857142857295,
+          "within_range_B": 0.35714285714285765,
+          "median_difference": 0.28571428571428825
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_vec_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_vf_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_sfu_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_simt_vf_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_vec_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_vf_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_sfu_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_simt_vf_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "L2Cache": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_read_close_hit": {
+          "A": [
+            10.428571428571429,
+            10.428571428571429,
+            10.428571428571429
+          ],
+          "B": [
+            10.428571428571429,
+            10.428571428571429,
+            10.428571428571429
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_close_miss": {
+          "A": [
+            4681.285714285715,
+            4681.214285714285,
+            4681.285714285715
+          ],
+          "B": [
+            4681.285714285715,
+            4681.285714285715,
+            4681.285714285715
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.071428571429351,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_close_victim": {
+          "A": [
+            0.14285714285714285,
+            0.21428571428571427,
+            0.14285714285714285
+          ],
+          "B": [
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.07142857142857142,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_far_hit": {
+          "A": [
+            0.21428571428571427,
+            0.21428571428571427,
+            0.21428571428571427
+          ],
+          "B": [
+            0.21428571428571427,
+            0.21428571428571427,
+            0.21428571428571427
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_far_miss": {
+          "A": [
+            4681.214285714285,
+            4681.214285714285,
+            4681.214285714285
+          ],
+          "B": [
+            4681.214285714285,
+            4681.214285714285,
+            4681.214285714285
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_read_hit_rate(%)": {
+          "A": [
+            0.11421757142857143,
+            0.11421757142857143,
+            0.11421757142857143
+          ],
+          "B": [
+            0.11421757142857143,
+            0.11347546428571428,
+            0.11421757142857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0007421071428571485,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_close_hit": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_close_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_close_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_far_hit": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_far_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_write_hit_rate(%)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_read_close_hit": {
+          "A": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "B": [
+            2.0,
+            2.0,
+            1.9642857142857142
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.03571428571428581,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_close_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_close_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_far_hit": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.03571428571428571
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.03571428571428571,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_far_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_read_hit_rate(%)": {
+          "A": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "B": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_write_close_hit": {
+          "A": [
+            2.892857142857143,
+            2.857142857142857,
+            2.892857142857143
+          ],
+          "B": [
+            2.857142857142857,
+            2.857142857142857,
+            2.857142857142857
+          ],
+          "median_relative_difference": 0.012345679012345635,
+          "blocks_with_different_medians": 16,
+          "blocks": 28,
+          "within_range_A": 0.03571428571428559,
+          "within_range_B": 0.0,
+          "median_difference": 0.03571428571428559
+        },
+        "vector0/aiv_write_close_miss": {
+          "A": [
+            2.1785714285714284,
+            2.107142857142857,
+            2.1785714285714284
+          ],
+          "B": [
+            2.107142857142857,
+            2.107142857142857,
+            2.107142857142857
+          ],
+          "median_relative_difference": 0.03278688524590152,
+          "blocks_with_different_medians": 15,
+          "blocks": 28,
+          "within_range_A": 0.07142857142857117,
+          "within_range_B": 0.0,
+          "median_difference": 0.07142857142857117
+        },
+        "vector0/aiv_write_close_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_write_far_hit": {
+          "A": [
+            2.857142857142857,
+            2.892857142857143,
+            2.857142857142857
+          ],
+          "B": [
+            2.892857142857143,
+            2.892857142857143,
+            2.892857142857143
+          ],
+          "median_relative_difference": 0.012345679012345635,
+          "blocks_with_different_medians": 16,
+          "blocks": 28,
+          "within_range_A": 0.03571428571428559,
+          "within_range_B": 0.0,
+          "median_difference": 0.03571428571428559
+        },
+        "vector0/aiv_write_far_miss": {
+          "A": [
+            2.107142857142857,
+            2.1785714285714284,
+            2.107142857142857
+          ],
+          "B": [
+            2.1785714285714284,
+            2.1785714285714284,
+            2.1785714285714284
+          ],
+          "median_relative_difference": 0.03278688524590152,
+          "blocks_with_different_medians": 15,
+          "blocks": 28,
+          "within_range_A": 0.07142857142857117,
+          "within_range_B": 0.0,
+          "median_difference": 0.07142857142857117
+        },
+        "vector0/aiv_write_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_write_hit_rate(%)": {
+          "A": [
+            58.50340392857143,
+            58.50340392857143,
+            58.50340392857143
+          ],
+          "B": [
+            58.50340392857143,
+            58.50340392857143,
+            58.50340392857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_read_close_hit": {
+          "A": [
+            1.8571428571428572,
+            1.8571428571428572,
+            1.8571428571428572
+          ],
+          "B": [
+            1.8571428571428572,
+            1.8571428571428572,
+            1.8928571428571428
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 1,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.03571428571428559,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_read_close_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_read_close_victim": {
+          "A": [
+            0.10714285714285714,
+            0.14285714285714285,
+            0.14285714285714285
+          ],
+          "B": [
+            0.10714285714285714,
+            0.14285714285714285,
+            0.10714285714285714
+          ],
+          "median_relative_difference": 0.25,
+          "blocks_with_different_medians": 1,
+          "blocks": 28,
+          "within_range_A": 0.03571428571428571,
+          "within_range_B": 0.03571428571428571,
+          "median_difference": 0.03571428571428571
+        },
+        "vector1/aiv_read_far_hit": {
+          "A": [
+            0.03571428571428571,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.03571428571428571,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.03571428571428571,
+          "within_range_B": 0.03571428571428571,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_read_far_miss": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_read_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_read_hit_rate(%)": {
+          "A": [
+            94.64285714285714,
+            92.85714285714286,
+            92.85714285714286
+          ],
+          "B": [
+            94.64285714285714,
+            92.85714285714286,
+            94.64285714285714
+          ],
+          "median_relative_difference": 0.018867924528301803,
+          "blocks_with_different_medians": 1,
+          "blocks": 28,
+          "within_range_A": 1.7857142857142776,
+          "within_range_B": 1.7857142857142776,
+          "median_difference": 1.7857142857142776
+        },
+        "vector1/aiv_write_close_hit": {
+          "A": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "B": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_write_close_miss": {
+          "A": [
+            1.3571428571428572,
+            1.6428571428571428,
+            1.3571428571428572
+          ],
+          "B": [
+            1.6428571428571428,
+            1.6428571428571428,
+            1.6428571428571428
+          ],
+          "median_relative_difference": 0.1739130434782608,
+          "blocks_with_different_medians": 6,
+          "blocks": 28,
+          "within_range_A": 0.2857142857142856,
+          "within_range_B": 0.0,
+          "median_difference": 0.2857142857142856
+        },
+        "vector1/aiv_write_close_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_write_far_hit": {
+          "A": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "B": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_write_far_miss": {
+          "A": [
+            1.6428571428571428,
+            1.3571428571428572,
+            1.6428571428571428
+          ],
+          "B": [
+            1.3571428571428572,
+            1.3571428571428572,
+            1.3571428571428572
+          ],
+          "median_relative_difference": 0.1739130434782608,
+          "blocks_with_different_medians": 6,
+          "blocks": 28,
+          "within_range_A": 0.2857142857142856,
+          "within_range_B": 0.0,
+          "median_difference": 0.2857142857142856
+        },
+        "vector1/aiv_write_far_victim": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_write_hit_rate(%)": {
+          "A": [
+            58.333336,
+            58.333336,
+            58.333336
+          ],
+          "B": [
+            58.333336,
+            58.333336,
+            58.333336
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        }
+      },
+      "Memory": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_l1_read_bw(GB/s)": {
+          "A": [
+            47.83587139285714,
+            47.824343392857145,
+            47.146438607142855
+          ],
+          "B": [
+            47.99977957142857,
+            47.96883846428571,
+            47.59875578571429
+          ],
+          "median_relative_difference": 0.0030122695494523262,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.6894327857142883,
+          "within_range_B": 0.40102378571427977,
+          "median_difference": 0.14449507142856532
+        },
+        "cube0/aic_l1_write_bw(GB/s)": {
+          "A": [
+            22.571525107142858,
+            22.566085285714287,
+            22.24621385714286
+          ],
+          "B": [
+            22.64886735714286,
+            22.634266785714285,
+            22.459640535714286
+          ],
+          "median_relative_difference": 0.0030123131730085883,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.3253112499999986,
+          "within_range_B": 0.18922682142857283,
+          "median_difference": 0.0681814999999979
+        },
+        "cube0/aic_main_mem_read_bw(GB/s)": {
+          "A": [
+            44.88444442857143,
+            44.87362589285714,
+            44.23754903571428
+          ],
+          "B": [
+            45.03823967857143,
+            45.0092065,
+            44.66195742857143
+          ],
+          "median_relative_difference": 0.0030122861006860015,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.6468953928571466,
+          "within_range_B": 0.3762822500000027,
+          "median_difference": 0.13558060714285602
+        },
+        "cube0/aic_main_mem_write_bw(GB/s)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte1_instructions": {
+          "A": [
+            80.28571428571429,
+            80.28571428571429,
+            80.28571428571429
+          ],
+          "B": [
+            80.28571428571429,
+            80.28571428571429,
+            80.28571428571429
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte1_ratio": {
+          "A": [
+            0.18702464285714285,
+            0.18973864285714284,
+            0.18929714285714286
+          ],
+          "B": [
+            0.19117557142857144,
+            0.1939465,
+            0.19154100000000002
+          ],
+          "median_relative_difference": 0.011714761554221595,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.002713999999999994,
+          "within_range_B": 0.002770928571428549,
+          "median_difference": 0.0022438571428571585
+        },
+        "cube0/aic_mte2_instructions": {
+          "A": [
+            43.142857142857146,
+            43.142857142857146,
+            43.142857142857146
+          ],
+          "B": [
+            43.142857142857146,
+            43.142857142857146,
+            43.142857142857146
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte2_ratio": {
+          "A": [
+            0.8988329285714286,
+            0.8952421071428571,
+            0.8912691071428571
+          ],
+          "B": [
+            0.89793625,
+            0.894504,
+            0.899061
+          ],
+          "median_relative_difference": 0.003000372083366572,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.007563821428571482,
+          "within_range_B": 0.004557000000000033,
+          "median_difference": 0.002694142857142867
+        },
+        "cube0/aic_mte3_instructions": {
+          "A": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "B": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/aic_mte3_ratio": {
+          "A": [
+            5.275e-05,
+            5.396428571428571e-05,
+            5.3e-05
+          ],
+          "B": [
+            5.4e-05,
+            5.4499999999999997e-05,
+            5.403571428571428e-05
+          ],
+          "median_relative_difference": 0.019167217448777193,
+          "blocks_with_different_medians": 20,
+          "blocks": 28,
+          "within_range_A": 1.2142857142857119e-06,
+          "within_range_B": 4.999999999999986e-07,
+          "median_difference": 1.0357142857142818e-06
+        },
+        "cube0/read_main_memory_datas(KB)": {
+          "A": [
+            1171.5357142857142,
+            1171.5357142857142,
+            1171.5357142857142
+          ],
+          "B": [
+            1171.5357142857142,
+            1171.5357142857142,
+            1171.5357142857142
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/write_main_memory_datas(KB)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/GM_to_L1_datas(KB)": {
+          "A": [
+            1171.5357142857142,
+            1171.5357142857142,
+            1171.5357142857142
+          ],
+          "B": [
+            1171.5357142857142,
+            1171.5357142857142,
+            1171.5357142857142
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/GM_to_L1_bw_usage_rate(%)": {
+          "A": [
+            27.575377035714286,
+            27.568730428571428,
+            27.177949821428573
+          ],
+          "B": [
+            27.669862607142857,
+            27.652028785714286,
+            27.4386895
+          ],
+          "median_relative_difference": 0.003012377782055994,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.39742721428571315,
+          "within_range_B": 0.23117310714285821,
+          "median_difference": 0.08329835714285849
+        },
+        "cube0/L0C_to_L1_datas(KB)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_L1_bw_usage_rate(%)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_GM_datas(KB)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "cube0/L0C_to_GM_bw_usage_rate(%)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_gm_to_ub_bw(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        },
+        "vector0/aiv_main_mem_read_bw(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        },
+        "vector0/aiv_main_mem_write_bw(GB/s)": {
+          "A": [
+            0.06191589285714286,
+            0.061901,
+            0.06102328571428572
+          ],
+          "B": [
+            0.06212803571428571,
+            0.06208782142857143,
+            0.06160892857142857
+          ],
+          "median_relative_difference": 0.003008986694538149,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0008926071428571394,
+          "within_range_B": 0.0005191071428571406,
+          "median_difference": 0.00018682142857143202
+        },
+        "vector0/aiv_mte2_instructions": {
+          "A": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "B": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte2_ratio": {
+          "A": [
+            0.0002189642857142857,
+            0.00022517857142857143,
+            0.00022003571428571428
+          ],
+          "B": [
+            0.00022475,
+            0.00022560714285714285,
+            0.00022517857142857143
+          ],
+          "median_relative_difference": 0.022839016653449683,
+          "blocks_with_different_medians": 25,
+          "blocks": 28,
+          "within_range_A": 6.214285714285718e-06,
+          "within_range_B": 8.571428571428586e-07,
+          "median_difference": 5.142857142857152e-06
+        },
+        "vector0/aiv_mte3_instructions": {
+          "A": [
+            4.892857142857143,
+            4.892857142857143,
+            4.892857142857143
+          ],
+          "B": [
+            4.892857142857143,
+            4.892857142857143,
+            4.892857142857143
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte3_ratio": {
+          "A": [
+            0.026687357142857145,
+            0.028630785714285713,
+            0.025439857142857143
+          ],
+          "B": [
+            0.027431857142857143,
+            0.024778107142857143,
+            0.021492785714285714
+          ],
+          "median_relative_difference": 0.07154136656469226,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0031909285714285703,
+          "within_range_B": 0.005939071428571429,
+          "median_difference": 0.0019092500000000012
+        },
+        "vector0/read_main_memory_datas(KB)": {
+          "A": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "B": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/write_main_memory_datas(KB)": {
+          "A": [
+            1.6160714285714286,
+            1.6160714285714286,
+            1.6160714285714286
+          ],
+          "B": [
+            1.6160714285714286,
+            1.6160714285714286,
+            1.6160714285714286
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/GM_to_UB_datas(KB)": {
+          "A": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "B": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/GM_to_UB_bw_usage_rate(%)": {
+          "A": [
+            0.005871,
+            0.00587,
+            0.005787
+          ],
+          "B": [
+            0.005892,
+            0.005888,
+            0.005842
+          ],
+          "median_relative_difference": 0.003057065217391268,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 8.400000000000074e-05,
+          "within_range_B": 4.99999999999997e-05,
+          "median_difference": 1.7999999999999787e-05
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_gm_to_ub_bw(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        },
+        "vector1/aiv_main_mem_read_bw(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        },
+        "vector1/aiv_main_mem_write_bw(GB/s)": {
+          "A": [
+            0.0431015,
+            0.043091,
+            0.042480000000000004
+          ],
+          "B": [
+            0.043249499999999996,
+            0.043221499999999996,
+            0.042887999999999996
+          ],
+          "median_relative_difference": 0.003019330657196041,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0006214999999999971,
+          "within_range_B": 0.0003615000000000007,
+          "median_difference": 0.00013049999999999867
+        },
+        "vector1/aiv_mte2_instructions": {
+          "A": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "B": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte2_ratio": {
+          "A": [
+            0.0002445,
+            0.000246,
+            0.0002470714285714286
+          ],
+          "B": [
+            0.00024571428571428574,
+            0.00024835714285714283,
+            0.0002483214285714286
+          ],
+          "median_relative_difference": 0.009348482669351352,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 2.571428571428603e-06,
+          "within_range_B": 2.642857142857091e-06,
+          "median_difference": 2.3214285714285698e-06
+        },
+        "vector1/aiv_mte3_instructions": {
+          "A": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "B": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte3_ratio": {
+          "A": [
+            0.021611285714285715,
+            0.02031632142857143,
+            0.01933625
+          ],
+          "B": [
+            0.022314785714285714,
+            0.019503285714285716,
+            0.017212035714285714
+          ],
+          "median_relative_difference": 0.040018844806339715,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.0022750357142857155,
+          "within_range_B": 0.00510275,
+          "median_difference": 0.0008130357142857141
+        },
+        "vector1/read_main_memory_datas(KB)": {
+          "A": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "B": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/write_main_memory_datas(KB)": {
+          "A": [
+            1.125,
+            1.125,
+            1.125
+          ],
+          "B": [
+            1.125,
+            1.125,
+            1.125
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/GM_to_UB_datas(KB)": {
+          "A": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "B": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "median_relative_difference": 0.0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/GM_to_UB_bw_usage_rate(%)": {
+          "A": [
+            0.005871,
+            0.00587,
+            0.005787
+          ],
+          "B": [
+            0.005892,
+            0.005888,
+            0.005842
+          ],
+          "median_relative_difference": 0.003057065217391268,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 8.400000000000074e-05,
+          "within_range_B": 4.99999999999997e-05,
+          "median_difference": 1.7999999999999787e-05
+        }
+      },
+      "ResourceConflictRatio": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_cube_wait_ratio": {
+          "A": [
+            0.8929399642857143,
+            0.9186838214285714,
+            0.8989257857142857
+          ],
+          "B": [
+            0.9065358214285715,
+            0.9319583928571429,
+            0.91266825
+          ],
+          "median_relative_difference": 0.01505745848583452,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.025743857142857096,
+          "within_range_B": 0.025422571428571406,
+          "median_difference": 0.01374246428571424
+        },
+        "cube0/aic_mte1_wait_ratio": {
+          "A": [
+            0.8845505714285714,
+            0.9101329642857143,
+            0.8903732857142856
+          ],
+          "B": [
+            0.8978611785714286,
+            0.92321175,
+            0.90405325
+          ],
+          "median_relative_difference": 0.015131812518470992,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.02558239285714292,
+          "within_range_B": 0.025350571428571445,
+          "median_difference": 0.013679964285714385
+        },
+        "cube0/aic_mte2_wait_ratio": {
+          "A": [
+            0.7459668928571429,
+            0.7635082142857142,
+            0.7472126428571428
+          ],
+          "B": [
+            0.766482,
+            0.7668771071428572,
+            0.7629252857142858
+          ],
+          "median_relative_difference": 0.02513999956014252,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.017541321428571344,
+          "within_range_B": 0.003951821428571423,
+          "median_difference": 0.019269357142857158
+        },
+        "cube0/aic_mte3_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_vec_stu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_ldu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_sfu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_vec_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte2_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_mte3_wait_ratio": {
+          "A": [
+            0.9074852857142857,
+            0.9445108571428571,
+            0.9107237142857143
+          ],
+          "B": [
+            0.9267531785714286,
+            0.9417030714285715,
+            0.9346723571428571
+          ],
+          "median_relative_difference": 0.025622500413246378,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.037025571428571435,
+          "within_range_B": 0.014949892857142877,
+          "median_difference": 0.02394864285714282
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_vec_stu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_ldu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_sfu_cflt_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_vec_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte2_wait_ratio": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_mte3_wait_ratio": {
+          "A": [
+            0.9168900714285715,
+            0.9263350357142858,
+            0.9183745714285714
+          ],
+          "B": [
+            0.9225634285714286,
+            0.93034075,
+            0.9265574285714285
+          ],
+          "median_relative_difference": 0.008831462455029403,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.009444964285714286,
+          "within_range_B": 0.00777732142857146,
+          "median_difference": 0.008182857142857158
+        }
+      },
+      "MemoryL0": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "cube0/aic_l0a_read_bw(GB/s)": {
+          "A": [
+            0.74709375,
+            0.7469133571428571,
+            0.7363258928571429
+          ],
+          "B": [
+            0.7496531428571428,
+            0.7491705,
+            0.74338975
+          ],
+          "median_relative_difference": 0.0030128560282910856,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.010767857142857107,
+          "within_range_B": 0.0062633928571428354,
+          "median_difference": 0.0022571428571428465
+        },
+        "cube0/aic_l0a_write_bw(GB/s)": {
+          "A": [
+            2.9993204285714286,
+            2.9985972857142857,
+            2.956092142857143
+          ],
+          "B": [
+            3.0095974285714284,
+            3.0076569642857143,
+            2.9844530357142856
+          ],
+          "median_relative_difference": 0.0030122047424314914,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.04322828571428561,
+          "within_range_B": 0.025144392857142872,
+          "median_difference": 0.009059678571428531
+        },
+        "cube0/aic_l0b_read_bw(GB/s)": {
+          "A": [
+            22.41827592857143,
+            22.412872142857143,
+            22.095172857142856
+          ],
+          "B": [
+            22.495091535714284,
+            22.480591785714285,
+            22.307152428571428
+          ],
+          "median_relative_difference": 0.0030123603285290633,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.323103071428573,
+          "within_range_B": 0.18793910714285644,
+          "median_difference": 0.06771964285714205
+        },
+        "cube0/aic_l0b_write_bw(GB/s)": {
+          "A": [
+            44.83655096428571,
+            44.82574432142857,
+            44.19034560714285
+          ],
+          "B": [
+            44.990182250000004,
+            44.96118346428571,
+            44.614304000000004
+          ],
+          "median_relative_difference": 0.0030123571583635413,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.6462053571428612,
+          "within_range_B": 0.3758782499999995,
+          "median_difference": 0.13543914285713754
+        },
+        "cube0/aic_l0c_read_bw_cube(GB/s)": {
+          "A": [
+            19.61599157142857,
+            19.611262785714285,
+            19.333277785714287
+          ],
+          "B": [
+            19.683205071428574,
+            19.67051725,
+            19.518757464285716
+          ],
+          "median_relative_difference": 0.003012349067013726,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.2827137857142823,
+          "within_range_B": 0.16444760714285778,
+          "median_difference": 0.0592544642857149
+        },
+        "cube0/aic_l0c_write_bw_cube(GB/s)": {
+          "A": [
+            22.41827592857143,
+            22.412872142857143,
+            22.095172857142856
+          ],
+          "B": [
+            22.495091535714284,
+            22.480591785714285,
+            22.307152428571428
+          ],
+          "median_relative_difference": 0.0030123603285290633,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.323103071428573,
+          "within_range_B": 0.18793910714285644,
+          "median_difference": 0.06771964285714205
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        }
+      },
+      "MemoryUB": {
+        "cube0/aic_time(us)": {
+          "A": [
+            23.03103907142857,
+            22.53757582142857,
+            22.876363857142856
+          ],
+          "B": [
+            22.52196975,
+            22.287424214285714,
+            22.567965142857144
+          ],
+          "median_relative_difference": 0.015491714913959129,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.4934632499999978,
+          "within_range_B": 0.28054092857142976,
+          "median_difference": 0.3543941071428556
+        },
+        "cube0/aic_total_cycles": {
+          "A": [
+            38001.21428571428,
+            37187.0,
+            37746.0
+          ],
+          "B": [
+            37161.25,
+            36774.25,
+            37237.142857142855
+          ],
+          "median_relative_difference": 0.015491707730620464,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 814.2142857142826,
+          "within_range_B": 462.89285714285506,
+          "median_difference": 584.75
+        },
+        "vector0/aiv_time(us)": {
+          "A": [
+            22.41430742857143,
+            21.88157992857143,
+            22.312250964285713
+          ],
+          "B": [
+            21.94792225,
+            21.722229392857145,
+            21.992792035714285
+          ],
+          "median_relative_difference": 0.01632864003138355,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.5327275,
+          "within_range_B": 0.27056264285713993,
+          "median_difference": 0.3643287142857119
+        },
+        "vector0/aiv_total_cycles": {
+          "A": [
+            36983.607142857145,
+            36104.607142857145,
+            36815.21428571428
+          ],
+          "B": [
+            36214.07142857143,
+            35841.67857142857,
+            36288.107142857145
+          ],
+          "median_relative_difference": 0.016328652944337788,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 879.0,
+          "within_range_B": 446.42857142857247,
+          "median_difference": 601.1428571428551
+        },
+        "vector0/aiv_ub_read_bw_vector(GB/s)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_ub_write_bw_vector(GB/s)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector0/aiv_ub_write_bw_gm(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        },
+        "vector1/aiv_time(us)": {
+          "A": [
+            19.911038892857142,
+            19.82943717857143,
+            19.799501964285714
+          ],
+          "B": [
+            19.806536714285713,
+            19.653788071428572,
+            19.64264082142857
+          ],
+          "median_relative_difference": 0.008857997610374466,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.11153692857142872,
+          "within_range_B": 0.16389589285714123,
+          "median_difference": 0.1756491071428563
+        },
+        "vector1/aiv_total_cycles": {
+          "A": [
+            32853.21428571428,
+            32718.571428571428,
+            32669.178571428572
+          ],
+          "B": [
+            32680.785714285714,
+            32428.75,
+            32410.35714285714
+          ],
+          "median_relative_difference": 0.008858009867702889,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 184.03571428571013,
+          "within_range_B": 270.42857142857247,
+          "median_difference": 289.82142857142753
+        },
+        "vector1/aiv_ub_read_bw_vector(GB/s)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_ub_write_bw_vector(GB/s)": {
+          "A": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "median_relative_difference": 0,
+          "blocks_with_different_medians": 0,
+          "blocks": 28,
+          "within_range_A": 0.0,
+          "within_range_B": 0.0,
+          "median_difference": 0.0
+        },
+        "vector1/aiv_ub_write_bw_gm(GB/s)": {
+          "A": [
+            0.009578,
+            0.009576,
+            0.00944
+          ],
+          "B": [
+            0.009611,
+            0.009605,
+            0.009531
+          ],
+          "median_relative_difference": 0.0030192608016659287,
+          "blocks_with_different_medians": 28,
+          "blocks": 28,
+          "within_range_A": 0.00013799999999999923,
+          "within_range_B": 8.000000000000021e-05,
+          "median_difference": 2.9000000000001247e-05
+        }
+      }
+    },
+    "issues": []
+  }
+}

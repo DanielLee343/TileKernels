@@ -1,0 +1,33 @@
+{
+  "case_id": "bf16-m1-n32768-k512",
+  "stage": "prepare",
+  "input_a_sha256": "62a847c4ffffab448afb30e585390f3874ec727e5f638b4bead020da1a74fd0a",
+  "input_b_sha256": "807d4ada317ae50301e77c5b4c955651d9f90bae4dc7a079704729783f9d2afd",
+  "reference_sha256": "832b120a54da7d090e11ba6ae0ac31e473978fc2bf6c3e7fc47d8c4b4a564508",
+  "output_sha256": "4de6f9b25eb881441e460f1229fa06a520bc94fc81315d211bfc4d95ef90c1a6",
+  "output_finite": true,
+  "reference_finite": true,
+  "diff": 0.0,
+  "threshold": 1e-05,
+  "max_abs_error": 0.03125,
+  "checked_elements": 32768,
+  "a_shape": [
+    1,
+    512
+  ],
+  "b_shape": [
+    32768,
+    512
+  ],
+  "a_stride": [
+    512,
+    1
+  ],
+  "b_stride": [
+    512,
+    1
+  ],
+  "output_dtype": "torch.bfloat16",
+  "reference": "CPU FP32 matmul of BF16 inputs, rounded to output dtype",
+  "status": "passed"
+}

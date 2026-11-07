@@ -1,0 +1,97 @@
+{
+  "status": "completed",
+  "sequence": [
+    "A",
+    "B",
+    "B",
+    "A",
+    "A",
+    "B"
+  ],
+  "cases": {
+    "bf16-m1-n576-k7168": {
+      "original": "/workspace/deepgemm-ascend-20261107/jit-cache/cache/bf16_gemm.8d22766a28f5d623c139267aaac29372",
+      "binary_sha256": "739905d32ef5a89bb96cae240397ac535320b9d545196e7ed92322428fa00dba",
+      "original_op_type": "cube"
+    },
+    "bf16-m1-n32768-k512": {
+      "original": "/workspace/deepgemm-ascend-20261107/jit-cache/cache/bf16_gemm.30b41ab10275a5cd3f26a23c2fd26fe7",
+      "binary_sha256": "fcf574f5dba42837e03b3f065f9971787f1af52baa81214106c15bb4c2ce5d4e",
+      "original_op_type": "mix"
+    }
+  },
+  "runs": [
+    {
+      "id": "bf16-m1-n576-k7168-1-A",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n576-k7168-2-B",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "B",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n576-k7168-3-B",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "B",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n576-k7168-4-A",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n576-k7168-5-A",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n576-k7168-6-B",
+      "case": "bf16-m1-n576-k7168",
+      "arm": "B",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-1-A",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-2-B",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "B",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-3-B",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "B",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-4-A",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-5-A",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "A",
+      "exit": 0
+    },
+    {
+      "id": "bf16-m1-n32768-k512-6-B",
+      "case": "bf16-m1-n32768-k512",
+      "arm": "B",
+      "exit": 0
+    }
+  ]
+}

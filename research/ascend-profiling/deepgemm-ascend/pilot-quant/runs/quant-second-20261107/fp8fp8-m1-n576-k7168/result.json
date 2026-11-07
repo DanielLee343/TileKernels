@@ -1,0 +1,28 @@
+{
+  "case": {
+    "id": "fp8fp8-m1-n576-k7168",
+    "m": 1,
+    "n": 576,
+    "k": 7168,
+    "a_dtype": "fp8",
+    "b_dtype": "fp8",
+    "jit_prefix": "fp8_gemm",
+    "kernel_marker": "fp8_gemm_impl"
+  },
+  "status": "failed",
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "physical_device": 0,
+  "device_before": "\tNPU ID                         : 0\n\tNo process in device.\n\n",
+  "prepare_command": [
+    "/workspace/deepgemm-ascend-20261107/venv/bin/python",
+    "-B",
+    "/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py",
+    "__worker",
+    "fp8fp8-m1-n576-k7168",
+    "prepare",
+    "/workspace/deepgemm-ascend-20261107/quant-second-20261107/fp8fp8-m1-n576-k7168/prepare.json",
+    "source"
+  ],
+  "prepare_exit": 1,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/deepgemm-ascend-20261107/pilot-quant/collect.py\", line 133, in run_case\n    if rc:raise RuntimeError('prepare failed: see prepare.log')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: prepare failed: see prepare.log\n"
+}

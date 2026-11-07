@@ -1,0 +1,6 @@
+fp8fp8-m1-n32768-k512 passed
+fp8fp8-m128-n7168-k2048 passed
+fp4fp4-m1-n32768-k512 passed
+fp4fp4-m128-n7168-k2048 passed
+fp8fp4-m1-n32768-k512 passed
+fp8fp4-m128-n7168-k2048 passed

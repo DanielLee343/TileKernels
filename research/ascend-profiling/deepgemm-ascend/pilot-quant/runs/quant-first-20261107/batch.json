@@ -1,0 +1,16 @@
+{
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "source_status": "",
+  "source_submodules": " f407eca30e07e647ce2e556f9b08e145b65362c7 third-party/clangd-ascend (heads/main)\n 65f513952b8771408a19202f65e36398522db6db third-party/deep-jit (65f5139)\n b233b96e49d371bad00300f59b5ba581100b8745 third-party/magic_enum (v0.9.8-17-gb233b96)\n",
+  "manifest_sha256": "99ed939783fa35d626615a2363e1dab20f795683fb2ad13051f4e28f596ec98f",
+  "collector_sha256": "0f8f1ce40fa69ba7957e94f876425e03650656533c54229350b6939e9078d7ab",
+  "base_collector_sha256": "a7f4cb82280c72158c5a89d3110c70017de4dcefb5b006cc6db0512ef1c0b1b4",
+  "device": 0,
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "cases": [
+    {
+      "id": "fp8fp8-m1-n576-k7168",
+      "status": "failed"
+    }
+  ]
+}

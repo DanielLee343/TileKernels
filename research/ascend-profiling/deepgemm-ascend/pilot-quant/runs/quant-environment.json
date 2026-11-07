@@ -1,0 +1,10 @@
+{
+  "compiler_wrapper": "#!/bin/sh\nexec /workspace/tilekernels-env-20261101/cann/cann-9.2.1/bin/bisheng -U__cpp_concepts -include /workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/asc/include/utils/debug/asc_assert.h \"$@\"\n",
+  "compiler_wrapper_sha256": "cf907c640a55bac8b3c67bb96728d2abdd4e65aa5d9b0dd68e6adc4d1e9c4869",
+  "assert_header": "/workspace/tilekernels-env-20261101/cann/cann-9.2.1/x86_64-linux/asc/include/utils/debug/asc_assert.h",
+  "assert_header_sha256": "26a80eaf42a3140173c2b1dcea0faf2d6651e5775f67222216a8d4e6232f3072",
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "device": "Ascend 950PR, physical device 0",
+  "environment": "source /workspace/deepgemm-ascend-20261107/activate.sh; override ASCEND_HOME_PATH and BISHENG_HOME with /workspace/deepgemm-ascend-20261107/cann-compat-quant",
+  "note": "CANN official assertion header forced into compilation; source checkout unchanged"
+}

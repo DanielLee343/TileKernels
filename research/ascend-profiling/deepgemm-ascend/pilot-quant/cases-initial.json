@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "source_commit": "3a35326271b069b8b5bf1a754435acd6cc91575b",
+  "source_definition": "tests/generators.py:_enumerate_normal, forward cases",
+  "contract": "NT A[M,K] @ B[N,K].T, BF16 output, no bias and no accumulation, recipe (1,1,32)",
+  "input_distribution": "Upstream GemmTestDesc.generate and reset_seed(0), including packed scales",
+  "accuracy": "finite output and upstream calc_diff < 1e-5 against upstream generated reference",
+  "cases": [
+    {"id":"fp8fp8-m1-n576-k7168", "m":1, "n":576, "k":7168, "a_dtype":"fp8", "b_dtype":"fp8", "jit_prefix":"fp8_gemm", "kernel_marker":"fp8_gemm_impl"},
+    {"id":"fp8fp8-m128-n576-k7168", "m":128, "n":576, "k":7168, "a_dtype":"fp8", "b_dtype":"fp8", "jit_prefix":"fp8_gemm", "kernel_marker":"fp8_gemm_impl"},
+    {"id":"fp4fp4-m1-n576-k7168", "m":1, "n":576, "k":7168, "a_dtype":"fp4", "b_dtype":"fp4", "jit_prefix":"fp4_gemm", "kernel_marker":"fp8_gemm_impl"},
+    {"id":"fp4fp4-m128-n576-k7168", "m":128, "n":576, "k":7168, "a_dtype":"fp4", "b_dtype":"fp4", "jit_prefix":"fp4_gemm", "kernel_marker":"fp8_gemm_impl"},
+    {"id":"fp8fp4-m1-n576-k7168", "m":1, "n":576, "k":7168, "a_dtype":"fp8", "b_dtype":"fp4", "jit_prefix":"fp8_dequant_gemm", "kernel_marker":"fp8_dequant_gemm_impl"},
+    {"id":"fp8fp4-m128-n576-k7168", "m":128, "n":576, "k":7168, "a_dtype":"fp8", "b_dtype":"fp4", "jit_prefix":"fp8_dequant_gemm", "kernel_marker":"fp8_dequant_gemm_impl"}
+  ]
+}

@@ -1,0 +1,21 @@
+=================================================================
+                   >>>>>   MindStudio   <<<<<
+    THE END-TO-END TOOLCHAIN TO UNLEASH HUAWEI ASCEND COMPUTE
+=================================================================
+
+[W1107 11:42:10.695277506 FunctionLoader.cpp:44] Warning: LD_PRELOAD detected, FunctionLoader prefers RTLD_DEFAULT for symbol resolution. (function operator())
+[WARN]  Currently, the root permission is used, which is unrecommended. Please ensure the security of the execution environment and programs.
+[INFO]  Op profiling analysis start.
+[INFO]  Running device task: DeviceProf
+[2026-11-07 11:42:14] [25603] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/quant-cache3/fp8fp8-m1-n576-k7168/cache/transform_sf.354a6e67c91c3f8950f48ef5ddf5db1c/kernel.json
+[2026-11-07 11:42:14] [25603] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[2026-11-07 11:42:15] [25603] [RegisterManager.cpp:45] [WARN] Kernel JSON path not exist. path:/workspace/deepgemm-ascend-20261107/quant-cache3/fp8fp8-m1-n576-k7168/cache/fp8_gemm.3cc792f8a7d19242022388b3d45cbaa7/kernel.json
+[2026-11-07 11:42:15] [25603] [HijackedFuncOfAclrtBinaryLoadFromFileImpl.cpp:56] [WARN] Parse magic from kernel JSON failed.
+[INFO]  Kernel _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE0ELj128ELj128ELNS_8GemmTypeE0ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj skipped: not selected via --kernel-name.
+[INFO]  Kernel _ZN9deep_gemm12transform_sfILb1ELNS_5MajorE0ELj128ELj128ELNS_8GemmTypeE0ELj56ELj256ELj1EL22asc_load_l2_cache_mode4EL23asc_store_l2_cache_mode0EEEvNS_6gm_ptrINSt11conditionalIXT_EjtE4typeEXT0_EEEPtPijjjjjj skipped: not selected via --kernel-name.
+[INFO]  Kernel _ZN9deep_gemm13fp8_gemm_implILNS_5MajorE0ELS1_0ELj0ELj576ELj7168ELj16ELj_4896315150280577548 skipped: not selected via --kernel-name.
+[INFO]  Profiling running finished. All task success.
+[WARN]  No profiling data matched --kernel-name=_ZN9deep_gemm13fp8_gemm_implILNS_5MajorE0ELS1_0ELj0ELj576ELj7168ELj16ELj32ELj2048ELj16ELj32ELj1024ELj4ELj2ELj4ELj2ELj1ELj28EL22asc_load_l2_cache_mode0ELS2_4EL23asc_store_l2_cache_mode4ELb0ELNS_8GemmTypeE0Eu9__fp8e4m3u6__bf16NS_8epilogue9operat. All kernels were filtered out or no matching dump was generated. Please confirm the kernel name or wildcard pattern.
+[WARN]  Profiling results are empty. No kernel profiling data was generated. Please check the dump output.
+[ERROR] Profiling data parse failed. Please check
+[INFO]  Op profiling finish. Welcome to next use.
