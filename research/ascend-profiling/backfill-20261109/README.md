@@ -62,6 +62,13 @@ Later commits will add the remaining evidence and updated inventory.
   The unified-extra5 snapshot includes mask tensors and input hashes for the
   Engram forward and backward captures. Additional cases and attempts collected
   afterward require a later snapshot.
+- `initial-hidev/norm-backward-snapshot-archive-bundle.tar.gz` is a later
+  snapshot of all 20 Norm backward case directories. It contains 1,210 raw
+  files and 160 CSV copies, including the application-replay attempts. Its
+  outer SHA-256 is
+  `1801eae55c65da87e3a52fb4e357d94b5ea258f5908ba4fc92a85b942e5bc17b`.
+  Its individual file hashes have been checked on both hosts. Application
+  replay and earlier kernel-replay Default are distinct collection windows.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
