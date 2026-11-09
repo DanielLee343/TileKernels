@@ -1,0 +1,39 @@
+{
+  "rows": 1301,
+  "counts": {
+    "deepgemm-experimental | dbi_window_coverage_verified_traffic_unverified": 4,
+    "deepgemm-original | aiv_not_applicable": 34,
+    "deepgemm-original | aiv_ub_to_gm_not_applicable": 32,
+    "deepgemm-original | new_dbi_audited_alarm": 35,
+    "deepgemm-original | pending": 53,
+    "deepgemm-original-missing | blocked_32_cube_required": 4,
+    "tilekernels-default | aiv_ub_to_gm_not_applicable": 40,
+    "tilekernels-default | existing_dbi_audited": 23,
+    "tilekernels-default | new_dbi_audited": 13,
+    "tilekernels-default | new_dbi_audited_alarm": 443,
+    "tilekernels-default | pending": 488,
+    "tilekernels-earlier | existing_dbi_audited": 1,
+    "tilekernels-earlier | pending": 118,
+    "tilekernels-precision | pending": 13
+  },
+  "inputs": {
+    "outputs\\expert-profile-inventory-20261109\\captures.csv": "6c4465810c19226807fa244041d18c47bcf2ef868e0591642476b0eea7bf9731",
+    "outputs\\gcm-profile-screen-20261108\\mte3-x1-x3\\tbe-recapture\\case-status.csv": "cf054eee23e0885e18fcdf5af395dddeba9e0abc8cbfa89e8d1ecaec94dc88a8",
+    "outputs\\cube-rule02-deepgemm-20261107\\audit.json": "9d28c8cde8cb5d0870ec5d395e667c0c6b835872a5f39803d4a77816a2e00e42",
+    "outputs\\tilekernels-profile-inventory-reset-20261105\\inventory.json": "6cd7187a63d10ae2e6cd6bb5794a68adc70f4b1e7b355d1e3e5d73066047cf6f",
+    "outputs\\expert-profile-backfill-20261109\\new-captures.json": "a4744366b07b2fc721bf99baed0779dc83f73094814ddea3f16eded25fce79c4",
+    "outputs\\expert-profile-backfill-20261109\\new-captures-hidev.json": "cbe9c85a40c650b316c01d1ec8881d83e134fd22e49bfcd46587ea6e73b759ae",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-new-captures.json": "3e1766fe26a7902bfd97099d3bdc04dbc15dba37166acea2984ecea2ec8b833d",
+    "outputs\\expert-profile-backfill-20261109\\historical-head-no-ub-gm.json": "968c73d9a73aaa57b436a5f3b8125bc063a1a5e049ae2f0484eb33e675fccd18",
+    "outputs\\expert-profile-backfill-20261109\\head-bwd-static-audit.json": "160ec75510c468042540c2b852cb7c3ab64632803a6c86369013b0a8dd04172e",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-sleep-static-audit.json": "94920d36d800f994445035145856dc98dd3b9012f0aaa9f2846dcb5af0bbe7d0",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-paged-prepare-static-audit.json": "233237885f714860fc4fbb4326a8f5479ff5aa36fdc8b22285403a346b5c3ddd",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-dequant-direct-static-audit.json": "6cfcb6d43baf8448a1046499b572ae31c86d6ad462585e3ff5434ebde91e8b75",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-pilot-direct-static-audit.json": "cc48a32595e0fe226433c1a4653943cc3aa1b78af1f73076f7926533d695368d",
+    "outputs\\expert-profile-backfill-20261109\\deepgemm-sparse-meta-static-audit.json": "fcc684b27bd260541cd77474cec6d4b31e068e8921bb44d5829c7e023bf119e7",
+    "outputs\\expert-profile-backfill-20261109\\mega28-dbi-index.json": "5bfb0e439004d4d6d1abc9b99df3467fda58ee5044678ce66476d7e3a236b690"
+  },
+  "unresolved_contract_duplicates": "early records require exact input and target comparison; retained separately",
+  "raw_bytes_scope": "requested UB to GM bytes, not physical DRAM writes",
+  "bandwidth_fields": "not reconstructed without verified tool formula and same-window denominator"
+}

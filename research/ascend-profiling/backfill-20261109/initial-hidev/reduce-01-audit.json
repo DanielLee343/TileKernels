@@ -1,0 +1,23 @@
+{
+  "case": "reduce-01",
+  "device": "0",
+  "status": "passed",
+  "historical_input_and_source_match": true,
+  "correctness": "passed",
+  "block_dim": 4,
+  "output_logical_bytes": 4096,
+  "dbi_requested_bytes": 4096,
+  "per_vector_block_requested_bytes": {
+    "0": 1024,
+    "1": 1024,
+    "2": 1024,
+    "3": 1024
+  },
+  "csv_pair_totals_match": true,
+  "dbi_pc": [
+    "0x174"
+  ],
+  "capture_binary_sha256": "ebcf8ef0aa56f8b864c85f4fd3288df892657411c027c3787f14efd0de780d9b",
+  "scope": "MemoryDetail window, requested UB to GM bytes, not DRAM transactions",
+  "max_seconds_between_successful_device_queries": 0.8095483859069645
+}
