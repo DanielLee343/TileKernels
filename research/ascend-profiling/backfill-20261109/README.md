@@ -27,6 +27,25 @@ Later commits will add the remaining evidence and updated inventory.
   hosts. This is the set present at snapshot time, not every planned mHC case.
 - For either outer archive, `python tools/verify-outer-bundle.py <bundle> <sha256>`
   validates the outer hash and every inner file in a temporary directory.
+- The following additional bundles snapshot the named capture directories,
+  including failures and repeated attempts. Each has been scanned for private
+  key/GitHub token markers and verified by its inner file manifest on both hosts.
+  The bundle's presence does not imply that all planned cases passed:
+
+  | Directory snapshot | SHA-256 |
+  | --- | --- |
+  | `fused-runs` | `5aef2ce49c48f95fdb4696bf88ba0dcadd8634197b8aaa163f5322093e2a7729` |
+  | `topk-runs` | `b01128b296b994ee7cead3e01e601f12c8f534604988d580e0465664d6961445` |
+  | `hash-runs` | `8e6fbab6e22c594054503a3876ffbf2c12733ba18179987d147f2e924f2ccd17` |
+  | `classic-runs` | `e620a801e2369e4fefbc7c0d3232482d092e0fbd0c1a78e341fa7fe6613b10b6` |
+  | `mega28-runs` | `88830966a7f7764a65c6065744dbb25c0eafba349ed794b3c75017f7048f240a` |
+  | `unified-quant-runs` | `3ca536deba74666549cbea6ab6d9074cf35cea8636d9e0fe6a18a35efa72456e` |
+
+  Each file is named `initial-hidev/<directory>-static-archive-bundle.tar.gz`.
+  For example, the `hash-runs` snapshot contains 18 case directories, with
+  incomplete captures kept as evidence. The `mega28-runs` data are the 28-Cube
+  adapted implementation; address coverage is checked, but total traffic is
+  not yet verified and some profiler replays failed.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
