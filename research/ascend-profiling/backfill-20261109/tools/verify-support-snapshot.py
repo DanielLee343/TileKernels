@@ -1,10 +1,14 @@
 """Verify each support bundle file without extracting it."""
 import hashlib,json,sys,tarfile
 from pathlib import PurePosixPath
-archive=sys.argv[1];prefix='expert-profile-backfill-20261109-support-snapshot/'
+archive=sys.argv[1]
 with tarfile.open(archive,'r:gz') as t:
  members=t.getmembers();assert all(x.isfile() or x.isdir() for x in members)
  assert all(not PurePosixPath(x.name).is_absolute() and '..' not in PurePosixPath(x.name).parts for x in members)
+ prefixes=('expert-profile-backfill-20261109-support-snapshot/', 'expert-profile-backfill-20261109-support-snapshot-v2/')
+ matches=[p for p in prefixes if any(x.name==p+'support-manifest.json' and x.isfile() for x in members)]
+ assert len(matches)==1
+ prefix,=matches
  data=json.load(t.extractfile(prefix+'support-manifest.json'));expected={prefix+x['path']:x for x in data['files']}
  assert len(expected)==data['count']
  for m in members:

@@ -75,6 +75,13 @@ Later commits will add the remaining evidence and updated inventory.
   `50b16f559ed6d9cdb1455fd429c9617e6ed5f75f7b32dd15a8c12da870821e3a`.
   This is a snapshot of the collection environment, not a portable CANN or
   Python runtime, and later scripts require a subsequent snapshot.
+- `initial-hidev/support-snapshot-v2.tar.gz` is a later snapshot with 864
+  scripts, harness files and manifests, including the application-replay,
+  random-number and paged-MQA harnesses. Verify individual file hashes with
+  `python tools/verify-support-snapshot.py <bundle>`. Bundle SHA-256:
+  `43ae8f300bc6b070969690dfbf93c70887076e5f797de70a7d46fb72613e2724`.
+  It is not a portable CANN or Python runtime; scripts added after this
+  snapshot require a later archive.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
