@@ -53,6 +53,9 @@ Later commits will add the remaining evidence and updated inventory.
   | --- | --- | --- |
   | `deepgemm-runs` | 1,769 / 312 | `ad56b6489e2fdeb6be7c85f0fb93ab366b99875ec5c7ac1622b3818b4f7a17fb` |
   | `extra-proxy-runs/unified-extra2` | 3,835 / 616 | `89e5c73c2b2a708f9264b4999c13448246f8590d7a9ce03b84ea77ce6d4b7ee6` |
+  | `extra-proxy-runs/unified-extra` | 997 / 160 | `f67cea9861a4b21a20b987c5edcacdc37883620365aa9a3db7edff9208f78e4e` |
+  | `extra-proxy-runs/unified-extra3` | 2,512 / 408 | `f7e09c37cadeec92f566308e4a1ee8abdba94046a8b290f0ef42e2a6e5058eb1` |
+  | `extra-proxy-runs/unified-extra4` | 985 / 160 | `ef754afcce23bfe440b4608348eed3f4cd8275dc19b54e16d79113209ea48f6c` |
 
   They are stored as `initial-hidev/<snapshot>-snapshot-archive-bundle.tar.gz`.
   Additional cases and attempts collected afterward require a later snapshot.
@@ -65,7 +68,9 @@ Later commits will add the remaining evidence and updated inventory.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
-  audited, pending, and not-applicable cases.
+  audited, pending, and not-applicable cases. The accompanying capture indexes
+  record per-file hashes and remote paths at the same inventory refresh; some
+  indexed captures were created after the raw-archive snapshots above.
 - The hidev 950PR reported alarm `8C4BA00C` during this collection. An earlier
   same-contract reduce-01 timing smoke was close to its prior reference; that
   check does not establish the validity of all other hardware measurements.
