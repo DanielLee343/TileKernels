@@ -46,6 +46,16 @@ Later commits will add the remaining evidence and updated inventory.
   incomplete captures kept as evidence. The `mega28-runs` data are the 28-Cube
   adapted implementation; address coverage is checked, but total traffic is
   not yet verified and some profiler replays failed.
+- Two further point-in-time snapshots were taken while other case families
+  continued collecting. They were scanned and verified on both hosts:
+
+  | Directory snapshot | Files / CSV copies | SHA-256 |
+  | --- | --- | --- |
+  | `deepgemm-runs` | 1,769 / 312 | `ad56b6489e2fdeb6be7c85f0fb93ab366b99875ec5c7ac1622b3818b4f7a17fb` |
+  | `extra-proxy-runs/unified-extra2` | 3,835 / 616 | `89e5c73c2b2a708f9264b4999c13448246f8590d7a9ce03b84ea77ce6d4b7ee6` |
+
+  They are stored as `initial-hidev/<snapshot>-snapshot-archive-bundle.tar.gz`.
+  Additional cases and attempts collected afterward require a later snapshot.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
