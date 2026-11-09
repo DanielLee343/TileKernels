@@ -56,9 +56,12 @@ Later commits will add the remaining evidence and updated inventory.
   | `extra-proxy-runs/unified-extra` | 997 / 160 | `f67cea9861a4b21a20b987c5edcacdc37883620365aa9a3db7edff9208f78e4e` |
   | `extra-proxy-runs/unified-extra3` | 2,512 / 408 | `f7e09c37cadeec92f566308e4a1ee8abdba94046a8b290f0ef42e2a6e5058eb1` |
   | `extra-proxy-runs/unified-extra4` | 985 / 160 | `ef754afcce23bfe440b4608348eed3f4cd8275dc19b54e16d79113209ea48f6c` |
+  | `extra-proxy-runs/unified-extra5` | 2,007 / 320 | `ae956fff4cb5dcd61e76adcf1a3e33532985300337603f24b942fc7ffd02bafc` |
 
   They are stored as `initial-hidev/<snapshot>-snapshot-archive-bundle.tar.gz`.
-  Additional cases and attempts collected afterward require a later snapshot.
+  The unified-extra5 snapshot includes mask tensors and input hashes for the
+  Engram forward and backward captures. Additional cases and attempts collected
+  afterward require a later snapshot.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
