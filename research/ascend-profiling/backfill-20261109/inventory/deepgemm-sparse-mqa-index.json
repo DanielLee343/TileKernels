@@ -1,0 +1,535 @@
+{
+  "created_unix": 1794267143.218976,
+  "count": 8,
+  "cases": [
+    {
+      "case": "campaign-13/sparse-fp8-q4-k256-h8-b8",
+      "audit": {
+        "case": "campaign-13/sparse-fp8-q4-k256-h8-b8",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          4,
+          128
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 1024,
+        "expected_written_bytes": 1024,
+        "range_input_sha256": {
+          "metadata": "f09899104b1dc7a67dad98695f06df3e052c33a7e38729e8a229df15b3b0c493"
+        },
+        "dbi_requested_bytes": 1024,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 512,
+          "7": 512
+        },
+        "capture_binary_sha256": "4a8bd08fbb62b71972afcb368a580101a4d70a8b52442bdad50cefac1fcd36de",
+        "dbi_pc": [
+          "0x2304"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/address-audit.json": "93bdddf7a934753cd868150a93aeb9d7d4ea7db2ab990a601e697d7a7e6484e1",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/prepare.json": "132e21de336c7a44b21e6645c603323a7fc38f8efaf8a0c1f26d92448b135c18",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/profile.json": "6bb965bd05ff885af590d6c0e557345b80a318c9c450eb50ef39eae9274f3d3c",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/profile-addresses.json": "4f0980a0e2d4af6df970a87f769f359c722054477a773f9e233b54f9700d30ad",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/capture-inspection.json": "ca5b7aeeb1fb3c6e85770bd37306845efd58816771384bcb7a83fb3478d19c8f",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/device-kernel.isa": "16dab92bc918e316dfe00ce0fd8cd1c709969aefda3e0de957f3f4d5433b11d6",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/jit/kernel.asc": "83b38c01dbf08eb377e78beb5a3e544ccc0b04da8a8e91bb4d03aee5c0dda829",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/jit/kernel.o": "4a8bd08fbb62b71972afcb368a580101a4d70a8b52442bdad50cefac1fcd36de",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "f09899104b1dc7a67dad98695f06df3e052c33a7e38729e8a229df15b3b0c493",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/detail/profile.log": "076e77392e99de4243cfd486386436a68d48f67a60ccbf801ca94a2954887bf3",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/detail/monitor-summary.json": "90184a23f21c6e0229a5c0c2e8b188a8ab43c56a79750dc6d332d361c1d1c4a3",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/detail/command.json": "baab219dc08520b9652cd0d891ca9704077bcc90523fcdcba6b54b4302b4a6c9",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109231649_KRMXAEPLJXLOJHKK/OpBasicInfo.csv": "44a93475725293308d0b12673352450a06e5a904b751b994111e7fd95afbc96c",
+        "deepgemm-runs/sparse-fp8-q4-k256-h8-b8/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109231649_KRMXAEPLJXLOJHKK/Memory.csv": "6d60cb74cb4d545dc44e856e6b2a543db514a05a3ae2686c6c9a19b701837d6f"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          8,
+          256
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "688eab681a88cc8b1f1522e64daa5d66b4e9cebb7e792a5ed904074780fc1aee"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 1024,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 1024,
+          "15": 1024
+        },
+        "capture_binary_sha256": "3ba59c7f153a3ce73d911d8dd8d9b7928e01235b369ae3aeba74150642376220",
+        "dbi_pc": [
+          "0x24cc"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/address-audit.json": "a8916cfa77809fe5ee237b515574b70006f801778faf19ed46663177ece562c7",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/prepare.json": "aa14fbb19d0572548a2540d0bd5c6945407331956e36c7d69285b5ab4118681d",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/profile.json": "7d35a9d9511e5eafc8908e4c87f9918a052fc9373ec3cbd0511fa6192d3f77b7",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/profile-addresses.json": "7e667d5ddf1c8af46455eb807bf76bb16edc81bb7fd441687ab17251f102eacd",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/capture-inspection.json": "77ab3a5d308571af3c7809c0ddffe63037c762b9e722e6a01c47083682e731e3",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/device-kernel.isa": "6921266cc632e9a5c4ed08b1cd5d53c9f97a3d87e1731b271f19f293feceb1ca",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/jit/kernel.asc": "9e4e211f0ef1ca2d0c7d8ee2a0ae3cd457b51ce1442bad9fe5e137ac10badb15",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/jit/kernel.o": "3ba59c7f153a3ce73d911d8dd8d9b7928e01235b369ae3aeba74150642376220",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "688eab681a88cc8b1f1522e64daa5d66b4e9cebb7e792a5ed904074780fc1aee",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/profile.log": "b3c2eb051bcb558d393a9a551a9dd65393ffd7d8c5d75a715d81a7614288b439",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/monitor-summary.json": "c5a841d89f5bd3a65301959222b81f4c3138b4b6fbec7bd0b18d647d97ec27a2",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/command.json": "8ba274b7a3a55b811eb40b80d93c47f318f755d256436060c1f29a97ef4aa247",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232514_ADPAXBMMIIQUZGOI/OpBasicInfo.csv": "4060f8176fbcd19078b6094b4a050ce37ebedc24b6651b6bc38aaaa915a5353e",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232514_ADPAXBMMIIQUZGOI/Memory.csv": "a7e0dde00af67901ce06eb093456db5a0c6bc746067baf96016d0389149e4eb1"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          8,
+          256
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "a3df32c2f09df5e9e0e040e75cae20c225de93b891e1c2423100a23ac827725c"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 1024,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 1024,
+          "15": 1024
+        },
+        "capture_binary_sha256": "1f3e84603a15b02a182441402f452bbf926dc45bb5466d34bc807d8f01ecc116",
+        "dbi_pc": [
+          "0x1750"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/address-audit.json": "769de013d50ddbac208ebdd40f3cfbe3149fe49b109360e84af5ece9289fd0fa",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/prepare.json": "0c8bcf70573632dd29a69310b45b4cd2604ec068b23a33d4cfbecbda97f11ff9",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/profile.json": "8466fafdc01d3b7d666a7a07c4ee05efb70485bf1962af582ae6f3575eb1a128",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/profile-addresses.json": "63d5e2fb663e89e188f888d39f8bfcdaa0fe91ca351de4d0610bcfe713d50259",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/capture-inspection.json": "41822efc3abb583cc829cb5875b7660f2b27489385039290c9d2b26766853b15",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/device-kernel.isa": "694b9a410c5bde05965dec09d7b3ca8b428d2c5f9acde1b26e1dc211ad894a94",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/jit/kernel.asc": "db7e8e0a7e2daab3102d0690a2f66e8f96f4afae3375e125f0de204c9ca48bd0",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/jit/kernel.o": "1f3e84603a15b02a182441402f452bbf926dc45bb5466d34bc807d8f01ecc116",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "a3df32c2f09df5e9e0e040e75cae20c225de93b891e1c2423100a23ac827725c",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/profile.log": "e9b9b9214713727e578ae746ca5bc834df2ca76c6077f56e6af0389cb15e4458",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/monitor-summary.json": "78c366b56537194b374f6c64d28ccb3300b605002cabc1b6e5fdf5f45e66ed1b",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/command.json": "63525886f79a397a28449d316efe7b6c9960802f7b47ddbc355f584bd81de2ac",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232551_RPMUEJEGUCKEFAGY/OpBasicInfo.csv": "11eed651a3adfa8c79d7ea3ca7f283c8a6227ea284dc49f22860b180140922a6",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232551_RPMUEJEGUCKEFAGY/Memory.csv": "0ee17200ea491f1bbcc9871ffb65d0e22c4d25267efad5dcb6d3aa23372a45e5"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          4,
+          512
+        ],
+        "output_stride": [
+          512,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "b2eed36d6fe768ecc0466fadbf5b6755501dbeb3bb6bbfca4132fbf16e1ec6aa"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 1024,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 2048
+        },
+        "capture_binary_sha256": "4705ce6aefbcd1dca842a84bdd540a8a6dcc032f17784a6f60df38a9decfc9a9",
+        "dbi_pc": [
+          "0x1758"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/address-audit.json": "5043441bd1af401dee6d10fa353f4ed110740cce4dc89d2f50f059373143eda8",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/prepare.json": "728c7e7ddd37d9c967faa60ea75350a9aaaa2c06e794efd7b01563e2c7fb156e",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/profile.json": "e8c7f8ef09d482feab253b0fcc5be6ff8dc36ea04ae563bbb5abc4254f47a12b",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/profile-addresses.json": "62dc5e8c04d03bfbc8b22cc8f77b68b7e7b21fe414d3dc248cb07fa9700b60a9",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/capture-inspection.json": "a210b699085c5c28f552ec12666d9e587e5a13c370d1e7e44e751e6a8092d80c",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/device-kernel.isa": "82c316bf4e210cf27f0f66d5a07cee48e81436fe7e8545f2d59894965cf036ad",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/jit/kernel.asc": "e713d50b9696aae9f8f202895f286eec51bf05864b98f9ef337887b43bb6e6c1",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/jit/kernel.o": "4705ce6aefbcd1dca842a84bdd540a8a6dcc032f17784a6f60df38a9decfc9a9",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "b2eed36d6fe768ecc0466fadbf5b6755501dbeb3bb6bbfca4132fbf16e1ec6aa",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/profile.log": "18297fde253a94136df8804182c3929e1830d354035780c304a38aa02606a187",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/monitor-summary.json": "d0d3c1f844f81f895ed7cc6bc668c99fbbbcd32f5c2c42b2dcbd27836bf011bd",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/command.json": "95984433f047901b9c3ec5aa1458ad17948f27b3dedda20e0ba5777c08ebe8f0",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232628_GLRICTMFNVOGYKYV/OpBasicInfo.csv": "e227e65f608e7d2bb4b04aa89b7c9376abd387416699bffb28e7dac0431fe487",
+        "deepgemm-runs/sparse_mqa_logits_impl-0-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232628_GLRICTMFNVOGYKYV/Memory.csv": "837b6256536b337dd908fa112c89f93be723eaa40a8ea962a85328c91f65b00d"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          4,
+          128
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 1024,
+        "expected_written_bytes": 1024,
+        "range_input_sha256": {
+          "metadata": "e7a170fa0df429d87686097b9bf07d3366b6f05a45d8182891ca116ad549c2ad"
+        },
+        "dbi_requested_bytes": 1024,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 512,
+          "7": 512
+        },
+        "capture_binary_sha256": "983c341a057942dd3232dc98dc89d33f16339505c97ade070ac94361daaadd6d",
+        "dbi_pc": [
+          "0x2264"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/address-audit.json": "1d0daa2dad380b3beda14f0143551ddeec0d503771923cff7b936f68b7356576",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/prepare.json": "2e54d06f1edab35f9c69709aa12ded8db2cb19400d387f471a6e6bb78bff76c2",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/profile.json": "1619b4357b7713899a64dfdb30d267b7a2a976b5e5cd7c0f5ab1e1900c894645",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/profile-addresses.json": "3e3717a84f6521f5e3e1355820e8b773bc290e346813adb7f5434762823821f4",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/capture-inspection.json": "39e50f9a2f4bd7af943faff5500f8088d8fb06ac14f426aece57b3ec0dad9176",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/device-kernel.isa": "b14235a49d33e4e3d639ed85135132cceaa82e70b7a796e38231ba3bc2c5fe00",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/jit/kernel.asc": "e62c0591aa92e74d054d09a6a88441352d1e42ee854efee8c24375651bc38fb1",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/jit/kernel.o": "983c341a057942dd3232dc98dc89d33f16339505c97ade070ac94361daaadd6d",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "e7a170fa0df429d87686097b9bf07d3366b6f05a45d8182891ca116ad549c2ad",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/detail/profile.log": "77e24a0145fbad7cbf862db469d8d36ba4d032d64f0fc3833278fb96958a44cb",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/detail/monitor-summary.json": "f5553f40ec2633d10697cf1088f66216812cbfc162d24a02177902f6728187de",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/detail/command.json": "0ca7a4eae04d354fd46c712cea45871fec85298329dbdd386cb8e39e1f480d4e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232704_VGHXRNSKYYFBRZEF/OpBasicInfo.csv": "86b0a1f72fb15369e85f244d97b970082102750961bb89b0807f288a29da3c15",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k256-h8-b8-max16-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232704_VGHXRNSKYYFBRZEF/Memory.csv": "cfc99328e91707c3e0475664024380dc2ff9f4f05709e26e8c5f8ff4fa64c980"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          8,
+          256
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "5484c3fcb9c26291dc035fcefc5e9ecd1e9803cc43ac8d57b4113ac3be7688a8"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 1024,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 1024,
+          "15": 1024
+        },
+        "capture_binary_sha256": "22e80527999f6386f5bf830e265d59e7a3198c4fc7e9f10ae48dd6af561a5b1a",
+        "dbi_pc": [
+          "0x2558"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/address-audit.json": "22b664de3bd84b0671d94fcce754c47708fc75944a55e8ab9d1478a5d47c014f",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/prepare.json": "edcb942ea9b451af6736bd08782ae4a34be7df9e8cee68fa7fb7d47380a4f120",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/profile.json": "93c81f1e9aa24c6c9ead60b4175079203c9d9eb087efce384a19d4913023efd6",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/profile-addresses.json": "920ef283af18b1ac161615aee623f4ee8934838ff81f26d818fa745623f7255c",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/capture-inspection.json": "425bcfe4e2e03dfc919d3c342c8b3cd49781eb45e6a4f315150ebc8f9e6c4a5e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/device-kernel.isa": "085cbda40ce406a11ae25f14ef438046bba4dbef805a3951b1588900ce8a7ae9",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/jit/kernel.asc": "6a05a995b4e59f3556ca5ee56093c3517d50f173cd9fde3eaafa872f1b9fa6f4",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/jit/kernel.o": "22e80527999f6386f5bf830e265d59e7a3198c4fc7e9f10ae48dd6af561a5b1a",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "5484c3fcb9c26291dc035fcefc5e9ecd1e9803cc43ac8d57b4113ac3be7688a8",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/profile.log": "afd62122a07b7bfd97458b87d4f28d5e9ab669477676b3b7da28728766b67def",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/monitor-summary.json": "2585580192ff566e4e2ac9a4b41552b38975895e040507ae6cffe918783a49d9",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/command.json": "3fe4ba5656712ae76832f19f544c7586a634ea8b34db7dcc573dd60219448b0a",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232743_ZFHLCFBJIFRSGUZA/OpBasicInfo.csv": "50d35db68be8b45a390a23cd9b11ec79ea0aee3fba19cb9a46dcb0382fd30d5e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h12-b16-max16-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232743_ZFHLCFBJIFRSGUZA/Memory.csv": "ac733870b099adf4040ef3dcde4bd0c7a7cdf902f86ddce3fed02f3eb8aef169"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          8,
+          256
+        ],
+        "output_stride": [
+          256,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "351ab4febf3e12af0c2efa1949d200b94837378f2520d14164775715c750226e"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 1024,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 1024,
+          "15": 1024
+        },
+        "capture_binary_sha256": "5f311f622185365535e7ab3cd2faf4eb5d70beb7e0f24e2f8753b3af2bd0e4b7",
+        "dbi_pc": [
+          "0x1c7c"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/address-audit.json": "3481337d2e526c7c0cc0ba5c298147560f7be9b5766f74a8ad0c3183aea42ca8",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/prepare.json": "b7628f6217f7b34fff853b1deee6f15fc8b8891a49bc95a76d97c47616075a2a",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/profile.json": "5a994e7f8766eb040339db6dbb59322c7a91fd4e23a7150396d754158531cfd0",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/profile-addresses.json": "a0ac27a4d1063c77df987a67991c88196179c24d6e7685372807913fcffdfec3",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/capture-inspection.json": "69a26e6f16513e5639b6f5f1f92616e931f68e9c4764cb6bf1e2fc7f81c9e393",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/device-kernel.isa": "0949ce5c5fe56c3ca959352bf52dfea10a6e9b85b5210caecbbd21c66c040a85",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/jit/kernel.asc": "f77adc19f2a66462eb16a9171921398ab196cb91b70dd9cb70de6f87e5b153c2",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/jit/kernel.o": "5f311f622185365535e7ab3cd2faf4eb5d70beb7e0f24e2f8753b3af2bd0e4b7",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "351ab4febf3e12af0c2efa1949d200b94837378f2520d14164775715c750226e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/profile.log": "3205f7b2949fd69cf6bd5f87dfc2a9b261e6e1999d443ee3466b15401e692c81",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/monitor-summary.json": "bf5ef9070e02be3dc1443a11a63ca05947a01541af74dc920ec4f51c1dddaf1e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/command.json": "fa20af994fd60488f1c27f5272203ca21ad61a3085cc59cf426f1ade6f0c8006",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232822_ADBUDXRAEJNLNOQP/OpBasicInfo.csv": "12940d19774333d6882ece428c49fb76f047f7d92059c63bc2912b737f72a7b7",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q8-k512-h32-b8-max32-p64/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232822_ADBUDXRAEJNLNOQP/Memory.csv": "e8d633258734fc1884cf25fecbd87b48ff223957968c2b9455bf0866bf3d52a1"
+      },
+      "health": "Alarm 8C4BA00C"
+    },
+    {
+      "case": "campaign-13/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128",
+      "audit": {
+        "case": "campaign-13/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128",
+        "target": "sparse_mqa_logits_impl",
+        "status": "passed",
+        "device": "hidev NPU 0",
+        "device_health": "Alarm 8C4BA00C",
+        "correctness": "passed",
+        "historical_true_inputs_and_jit_source_match": true,
+        "output_shape": [
+          4,
+          512
+        ],
+        "output_stride": [
+          512,
+          1
+        ],
+        "output_logical_bytes": 4096,
+        "expected_written_bytes": 4096,
+        "range_input_sha256": {
+          "metadata": "4e20e94c3ef8bc20417c9fba63bc2b56dcf4bf9c54aa8002f2b6f533570eb4af"
+        },
+        "dbi_requested_bytes": 4096,
+        "per_vector_block_requested_bytes": {
+          "0": 0,
+          "1": 0,
+          "2": 1024,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1024,
+          "7": 2048
+        },
+        "capture_binary_sha256": "ee63e87fb6f0701a6f484ea0db949f6fbf55c3a6f1c678b44e2e1d9e011c89f0",
+        "dbi_pc": [
+          "0x2518"
+        ],
+        "csv_pair_totals_match": true,
+        "scope": "one mixed-kernel MemoryDetail window; AIV UB to GM requests, not Cube traffic or physical DRAM transactions"
+      },
+      "raw_dir": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001",
+      "files_sha256": {
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/address-audit.json": "804a3a9779834857bc877e2c76aa53b1e2f7e9a7e04a308573b421b01444e17c",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/prepare.json": "60a456e1e103ea2b030102490e2a8578447cfd127a2a9f40171b5a8e2cc282eb",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/profile.json": "f350dc5bcfd5ff5ddc95641feae59fe37f2c1c106e2a03e5aab7593146ce6725",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/profile-addresses.json": "287fe5d6505a402aa8e8238e4387a23745d8182281ec46e1e5e2f4939463f21e",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/capture-inspection.json": "79cb9e29312c84510dbc0ef5ab6b75dd742a6574c80f99fdd4e74079f6e97db5",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/device-kernel.isa": "623ec144951788c66031071a1d66e9ce2185c20c002ade339c3d19ad8155e3c0",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/jit/kernel.asc": "2b33456591efad96dc2714f1826f1da38b6a5b854bb2a3b07fb56f3380c599c3",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/jit/kernel.o": "ee63e87fb6f0701a6f484ea0db949f6fbf55c3a6f1c678b44e2e1d9e011c89f0",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/sparse-mqa-metadata.bin": "4e20e94c3ef8bc20417c9fba63bc2b56dcf4bf9c54aa8002f2b6f533570eb4af",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/profile.log": "df2a723a6aab98a6d0c1d4b486eca04f78ff7a9adf43c2c1d75b56f0941ffaf2",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/monitor-summary.json": "ad31bbb0b6976fb5865837ad1bc46259c77c089cefbada9ccaf770f06f2f49ea",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/command.json": "0d6a33087e65efba9ff0a1af2db4c962f714d25d85bc342ad53c39468a028dd9",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232901_KZSLVLVBYZDKUUNR/OpBasicInfo.csv": "051f77da755818983cc7df0b1c6fdd4108091909056d587f8641dab8450240e9",
+        "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232901_KZSLVLVBYZDKUUNR/Memory.csv": "317cc16b0d244cb2eb20caba5294c8144a7bbf686fb86f104251c3ff430993cd"
+      },
+      "health": "Alarm 8C4BA00C"
+    }
+  ],
+  "scope": "one independent MemoryDetail window per case; requests, not physical main-memory writes"
+}

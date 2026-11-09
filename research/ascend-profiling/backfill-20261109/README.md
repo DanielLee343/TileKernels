@@ -79,6 +79,12 @@ Later commits will add the remaining evidence and updated inventory.
   the initial failed and subsequent successful audit for case 02. Its SHA-256
   is `bc869c7262fc9f5cacb0f22896a3bdeec1a042ed572e35fd2b4a45bb6e6d90fd`.
   Its individual file hashes have been checked on both hosts.
+- `initial-hidev/kgroup-sparse-randn-snapshot-archive-bundle.tar.gz` contains
+  four K-group cases, eight non-paged sparse MQA cases and two randn attempts:
+  633 files and 112 CSV copies. The randn attempts have dropped address records
+  and remain unaudited. The SHA-256 is
+  `4018ae8c52d8fe730a01a93f31b01f5a133917fed20a235e85353c388c89d1f0`.
+  Its individual file hashes have been checked on both hosts.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
@@ -108,6 +114,11 @@ Later commits will add the remaining evidence and updated inventory.
   including the K-group and sparse-MQA harnesses and the saved negative-test
   logs. Its SHA-256 is
   `7f36e9a603377fcda6b55b54be43f2f9f435bb58de4a47323e082ada37bf9a4d`.
+  Verify it using `python tools/verify-support-snapshot.py <bundle>`.
+  It is a point-in-time support snapshot, not a portable CANN/Python runtime.
+- `initial-hidev/support-snapshot-v5.tar.gz` contains 1,034 support files,
+  including additional audit tests and the paged-sparse harness. Its SHA-256
+  is `91652d35fb92ef664053f788293afb0ab225345926bfd846b35666292a9c2dee`.
   Verify it using `python tools/verify-support-snapshot.py <bundle>`.
   It is a point-in-time support snapshot, not a portable CANN/Python runtime.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
