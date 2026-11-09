@@ -74,6 +74,11 @@ Later commits will add the remaining evidence and updated inventory.
   copies, including the measured bounds. Its outer SHA-256 is
   `272a65fe70a36fd1ce5ae0c9ca380ae0cf012bea0f1bdd52a2994e93bdacc486`.
   Its individual file hashes have been checked on both hosts.
+- `initial-hidev/moe-backward-snapshot-archive-bundle.tar.gz` contains 20
+  MoE backward case directories, 1,017 files and 160 CSV copies, including
+  the initial failed and subsequent successful audit for case 02. Its SHA-256
+  is `bc869c7262fc9f5cacb0f22896a3bdeec1a042ed572e35fd2b4a45bb6e6d90fd`.
+  Its individual file hashes have been checked on both hosts.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
@@ -98,6 +103,12 @@ Later commits will add the remaining evidence and updated inventory.
   files and manifests, including the paged-MQA context-length harness. Its
   SHA-256 is `8beed55b2ea3b8d57c654bd6b44bd62f8247d2126a565e49b9fcaf790b4b9fc2`.
   Verify its contents using `python tools/verify-support-snapshot.py <bundle>`.
+  It is a point-in-time support snapshot, not a portable CANN/Python runtime.
+- `initial-hidev/support-snapshot-v4.tar.gz` contains 977 support files,
+  including the K-group and sparse-MQA harnesses and the saved negative-test
+  logs. Its SHA-256 is
+  `7f36e9a603377fcda6b55b54be43f2f9f435bb58de4a47323e082ada37bf9a4d`.
+  Verify it using `python tools/verify-support-snapshot.py <bundle>`.
   It is a point-in-time support snapshot, not a portable CANN/Python runtime.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
