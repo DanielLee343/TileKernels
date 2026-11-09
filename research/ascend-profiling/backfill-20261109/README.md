@@ -65,6 +65,13 @@ Later commits will add the remaining evidence and updated inventory.
   and cases to the saved versions; `sha256.txt` verifies each saved wrapper.
   Bundle SHA-256:
   `c050d210a45cbb5913dd2da3728dfcf64239e66d4c7c90b2c654ff72528e8fff`.
+- `initial-hidev/support-snapshot.tar.gz` contains 797 point-in-time replay
+  scripts, harness and input manifests, and historical bindings; its file
+  manifest is verified by `python tools/verify-support-snapshot.py <bundle>`.
+  Bundle SHA-256:
+  `50b16f559ed6d9cdb1455fd429c9617e6ed5f75f7b32dd15a8c12da870821e3a`.
+  This is a snapshot of the collection environment, not a portable CANN or
+  Python runtime, and later scripts require a subsequent snapshot.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
