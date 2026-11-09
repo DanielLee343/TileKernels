@@ -5,7 +5,7 @@ archive=sys.argv[1]
 with tarfile.open(archive,'r:gz') as t:
  members=t.getmembers();assert all(x.isfile() or x.isdir() for x in members)
  assert all(not PurePosixPath(x.name).is_absolute() and '..' not in PurePosixPath(x.name).parts for x in members)
- prefixes=('expert-profile-backfill-20261109-support-snapshot/', 'expert-profile-backfill-20261109-support-snapshot-v2/')
+ prefixes=('expert-profile-backfill-20261109-support-snapshot/', 'expert-profile-backfill-20261109-support-snapshot-v2/', 'expert-profile-backfill-20261109-support-snapshot-v3/')
  matches=[p for p in prefixes if any(x.name==p+'support-manifest.json' and x.isfile() for x in members)]
  assert len(matches)==1
  prefix,=matches

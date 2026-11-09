@@ -69,6 +69,11 @@ Later commits will add the remaining evidence and updated inventory.
   `1801eae55c65da87e3a52fb4e357d94b5ea258f5908ba4fc92a85b942e5bc17b`.
   Its individual file hashes have been checked on both hosts. Application
   replay and earlier kernel-replay Default are distinct collection windows.
+- `initial-hidev/mqa-completed-snapshot-archive-bundle.tar.gz` contains the
+  18 ordinary and paged MQA case directories with 921 files and 160 CSV
+  copies, including the measured bounds. Its outer SHA-256 is
+  `272a65fe70a36fd1ce5ae0c9ca380ae0cf012bea0f1bdd52a2994e93bdacc486`.
+  Its individual file hashes have been checked on both hosts.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
@@ -89,6 +94,11 @@ Later commits will add the remaining evidence and updated inventory.
   `43ae8f300bc6b070969690dfbf93c70887076e5f797de70a7d46fb72613e2724`.
   It is not a portable CANN or Python runtime; scripts added after this
   snapshot require a later archive.
+- `initial-hidev/support-snapshot-v3.tar.gz` contains 907 scripts, harness
+  files and manifests, including the paged-MQA context-length harness. Its
+  SHA-256 is `8beed55b2ea3b8d57c654bd6b44bd62f8247d2126a565e49b9fcaf790b4b9fc2`.
+  Verify its contents using `python tools/verify-support-snapshot.py <bundle>`.
+  It is a point-in-time support snapshot, not a portable CANN/Python runtime.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
