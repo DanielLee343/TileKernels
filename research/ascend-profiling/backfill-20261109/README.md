@@ -19,6 +19,14 @@ Later commits will add the remaining evidence and updated inventory.
 - To verify the 20-case bundle, extract its outer tarball, then run
   `python tools/verify-archive.py expert-profile-backfill-20261109-reduce-static-archive`
   from this directory. The verifier also supports `--restore <new-directory>`.
+- `initial-hidev/mhc-static-archive-bundle.tar.gz` snapshots the existing
+  `mhc-runs/{second,third,fifth}` directories, including separate attempts and
+  failures. Its SHA-256 is
+  `21944c59034e819437cac98b62a5a895e19d12cd36c9a5bc8ea80b67a5e23a2d`.
+  Its inner manifest covers 2,421 files and 400 CSV copies, verified on both
+  hosts. This is the set present at snapshot time, not every planned mHC case.
+- For either outer archive, `python tools/verify-outer-bundle.py <bundle> <sha256>`
+  validates the outer hash and every inner file in a temporary directory.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
