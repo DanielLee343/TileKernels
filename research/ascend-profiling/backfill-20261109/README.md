@@ -85,6 +85,13 @@ Later commits will add the remaining evidence and updated inventory.
   and remain unaudited. The SHA-256 is
   `4018ae8c52d8fe730a01a93f31b01f5a133917fed20a235e85353c388c89d1f0`.
   Its individual file hashes have been checked on both hosts.
+- `initial-hidev/final-deepgemm-smokes-snapshot-archive-bundle.tar.gz` holds
+  one large BF16 GEMM, four M=1 pilots and two paged-sparse attempts: 290 files
+  and 48 CSV copies. The two paged-sparse attempts remain unaudited: the REUSE
+  metadata identity differs from history; FIRST's required range replay is
+  incompatible with MemoryDetail. Bundle SHA-256:
+  `0e099cbefda01fc765364c350de31810794067fac87e10fca18c31d02fa8f136`.
+  Its individual file hashes have been checked on both hosts.
 - `initial-hidev/runner-version-evidence.tar.gz` records actual wrapper versions
   for several earlier captures where the per-attempt provenance copied the
   generic wrapper instead of the specialized wrapper. Its README maps groups
@@ -119,6 +126,12 @@ Later commits will add the remaining evidence and updated inventory.
 - `initial-hidev/support-snapshot-v5.tar.gz` contains 1,034 support files,
   including additional audit tests and the paged-sparse harness. Its SHA-256
   is `91652d35fb92ef664053f788293afb0ab225345926bfd846b35666292a9c2dee`.
+  Verify it using `python tools/verify-support-snapshot.py <bundle>`.
+  It is a point-in-time support snapshot, not a portable CANN/Python runtime.
+- `initial-hidev/support-snapshot-v6.tar.gz` contains 1,089 support files,
+  including the normal and pilot GEMM harnesses and their negative-test logs.
+  Its SHA-256 is
+  `c09320a224661a0054c77db85c0cc7cb77b3f9f0cc437b7b68c284464320fbc6`.
   Verify it using `python tools/verify-support-snapshot.py <bundle>`.
   It is a point-in-time support snapshot, not a portable CANN/Python runtime.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time

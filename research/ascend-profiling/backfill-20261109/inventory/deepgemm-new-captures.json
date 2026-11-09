@@ -1650,5 +1650,120 @@
       "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232901_KZSLVLVBYZDKUUNR/OpBasicInfo.csv": "051f77da755818983cc7df0b1c6fdd4108091909056d587f8641dab8450240e9",
       "deepgemm-runs/sparse_mqa_logits_impl-1-q4-k1024-h20-b16-max32-p128/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109232901_KZSLVLVBYZDKUUNR/Memory.csv": "317cc16b0d244cb2eb20caba5294c8144a7bbf686fb86f104251c3ff430993cd"
     }
+  },
+  "campaign-13/gemm-bf16bf16-nt-k-m4096-n576-k7168": {
+    "audit": "outputs/expert-profile-backfill-20261109/deepgemm-normal-bf16-audits/campaign-13__gemm-bf16bf16-nt-k-m4096-n576-k7168.json",
+    "remote_detail": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail",
+    "device": "hidev NPU 0",
+    "health": "Alarm 8C4BA00C",
+    "files_sha256": {
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/address-audit.json": "94897f1d26b1e291d9a948c2163e98d5bcaada976fa9b55b518ab4c80abc4e86",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/prepare.json": "2fc22cbefb496a34a1e8cf61521552c00e752e663d2dc8763570492546f9265a",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/profile.json": "d2ef1b6f36bf04026c358dc19f7491ff44322cce881167cc5747831000c90b12",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/profile-addresses.json": "2628d79fdf4a33d0c3a2333e9fbb1cac5bcf40b2965c4726ac29b68073ad116d",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/capture-inspection.json": "bd558f91e242fa483fb0c3eb46c988a5c77f519e5308c5152a9fcd95c6e21ca2",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/device-kernel.isa": "be6ffe026d065176bcfccbe2b3e312e9e28d0a63e6f98134add9893c6db7bbb3",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/jit/kernel.asc": "ec1071405bf4679a187e69b4687fb842f2206e98ed382dc43f6a97332bcdf9f9",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/jit/kernel.o": "d745e7ba9790500010091a905624de08dce24f05ec2063311a97bda597ef0f65",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail/profile.log": "34f83add920418703f651a2dcb2e9e0aa6f536e536ecad5d40059c47dc33f88a",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail/monitor-summary.json": "a0b7314b55ed59007a1529881bb4ad51ce801ebb3e84bd51ce0e2cac3fa4d454",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail/command.json": "2d5a219a561f8e6c5120f9b3ad6262af30c6a75ab7b3bb53351191aaab6795a4",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234202_CCFRRBJINMSPTEHM/OpBasicInfo.csv": "0d9d2dbafe00ee16784084822e3df133e14dfc6abc413edf50bdd617dc898b10",
+      "deepgemm-runs/gemm-bf16bf16-nt-k-m4096-n576-k7168/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234202_CCFRRBJINMSPTEHM/Memory.csv": "47f4825892a3ae91bd8a5b352d3772a2f64babc9b14842f49ba9695ef7e68efa"
+    }
+  },
+  "pilot-bf16/bf16-m1-n32768-k512": {
+    "audit": "outputs/expert-profile-backfill-20261109/deepgemm-pilot-m1-audits/pilot-bf16__bf16-m1-n32768-k512.json",
+    "remote_detail": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail",
+    "device": "hidev NPU 0",
+    "health": "Alarm 8C4BA00C",
+    "files_sha256": {
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/address-audit.json": "d8ce146d1242757eaaab1aedba831cbcac0c06b8c2ac031c72fd68b45cfad6fe",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/prepare.json": "a549eca9b99e43792fd9109a849cfa82c3fdcbcf42a50bffa326ff34b4f88d29",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/profile.json": "2514c5a3d4f5159d740043ef67d3d87c54fbff948cd3a0f7b87590d904c072fc",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/profile-addresses.json": "1dec6e589c0191c1290edda67fe30f89281f4cd0d27b0e0532e8e5cf5f4a6c09",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/capture-inspection.json": "31be44662ff2f1db4874ca492bf93029861c6b2c6ca7fd8ea744a7402752e57d",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/device-kernel.isa": "1d28ab62a0fb82d155fb5f4e6cd628b78711c8b8ea4fed33bff8addc5aee1001",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.asc": "cdfd0c7d7228cf3d09817d9fa0028ad5f5c384f740cb5ea104ef438cc9451b45",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.o": "fcf574f5dba42837e03b3f065f9971787f1af52baa81214106c15bb4c2ce5d4e",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail/profile.log": "e8a37b5d695230ed21455ab3fe01a63ce342ca24cd4859eae9d7c9bf5fba5ee1",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail/monitor-summary.json": "628ca72c3dcbf737a25b316dcf2dac4997449cb0617326803736baf6dca27697",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail/command.json": "ac40cb556f4fa4bff0e458e6e7b41b6a2b6b95e7c687a034627e30ac20975b0a",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234739_SYTPTWNYXCPRYGMV/OpBasicInfo.csv": "eb3000f72068e07350c4016f4051b2d2afcb3fce1f0d2048c0a47f90afcc1d42",
+      "deepgemm-pilot-runs/bf16-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234739_SYTPTWNYXCPRYGMV/Memory.csv": "a6ddbe6ac44714ff43f982c43fb86246ccde8907a4b9c3e36c8204b4a37d01dd"
+    }
+  },
+  "pilot-quant/fp8fp8-m1-n32768-k512": {
+    "audit": "outputs/expert-profile-backfill-20261109/deepgemm-pilot-m1-audits/pilot-quant__fp8fp8-m1-n32768-k512.json",
+    "remote_detail": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail",
+    "device": "hidev NPU 0",
+    "health": "Alarm 8C4BA00C",
+    "files_sha256": {
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/address-audit.json": "2e9685669d53d5b4549c227f21169c5040dc0777892ddb3237c39478f1cae32b",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/prepare.json": "070b570a37a0765e4fb76ebbc375e64b0417d65d7df81c1c8e35ccf775f73ec3",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/profile.json": "618cae3d0e9079e49680254d5487600d971f5bce0329e88a2dbba119725750ba",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/profile-addresses.json": "e6e13df787b1a13beb7ad271cd563ddbad5b0e02bb0f94c3f072737283ff68f0",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/capture-inspection.json": "0c5b06b3cc3cf702ac98cb0c5e2fe6cfe30dda43e239268af3a4eef7cc756e1a",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/device-kernel.isa": "f634e0f462767247d1b2243097c453fc1b9fbac0c56d78a314a9a3262c476d7e",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.asc": "c82af7e1ab25ced6beaf923ae811edb2ea53b3fd4a7ff0053fe6c073e4c75fc4",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.o": "4e9b59f33a838c525d1a5210f28e2e81c82d94e33a1ceab68da4393ac7134c94",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail/profile.log": "d3fbdb055f27ec57f270a940e1ae92968a99458ebd98c29f3625762264494730",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail/monitor-summary.json": "a733221d6c340055e886ea5cc5217c6d2e8ff0ea5a0fd95ef062949db6f98c83",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail/command.json": "7fd9bb7e66b1f0cce6e0c1eb922fef44a273e084fd56c8650f2f5b1391337c61",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234806_ZFFVBRHTWFXEGHKF/OpBasicInfo.csv": "dadd9c614be749842bb4175d69279f70f18cb8b38222fb92af09232fc52f2f60",
+      "deepgemm-pilot-runs/fp8fp8-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234806_ZFFVBRHTWFXEGHKF/Memory.csv": "9bb276420d2a1624757c4a27d28845bd12d412fc2b6ccca52b23935aed92618c"
+    }
+  },
+  "pilot-quant/fp4fp4-m1-n32768-k512": {
+    "audit": "outputs/expert-profile-backfill-20261109/deepgemm-pilot-m1-audits/pilot-quant__fp4fp4-m1-n32768-k512.json",
+    "remote_detail": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail",
+    "device": "hidev NPU 0",
+    "health": "Alarm 8C4BA00C",
+    "files_sha256": {
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/address-audit.json": "bbf924e49b7d7b7e654bb062cd607ab822b95373415af23d4174852777f8a2f9",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/prepare.json": "3d4564cf1dc9f61ac7d8b2a1220e7b6c9361916cb3d04ba5337ce339adee60a3",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/profile.json": "7c75f2e2c359c7570ce2765d6aeece3a547d29e6ca4bea6aaa079e1c5472232c",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/profile-addresses.json": "7902d6ce3b458f908664cb4cd2dcd9abd6280333d19e3693d6fc6f1fd74d5248",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/capture-inspection.json": "c8892e0ea41b0c2da313bc110530af2aa55719a3891c325cede166f2d02dc154",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/device-kernel.isa": "c835e1b638780bc0fba6ed25dca1751a57355d7c2e0f4b310a0b3e9137b1d611",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.asc": "c73722cc7c93ecb3fde018bdc52c8da6c51e9f77a823e5a6c3817958b4b0b9d9",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.o": "8dcc6828a2297c9c89fdc1906d10e3ae7e0ebd6b74b33df5a30c801fbdba72cf",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/profile.log": "7787660d045ae5bf4ca2531fab61b3d2c1aea0ba13ff9de2b1c5c3dce5444177",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/monitor-summary.json": "25adadc87fd975fae8a2f96cb07a72835d91212e3c77d7ef49c2f281aca7cf8c",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/command.json": "308f3a6b22861926f1a73a752a8f3d1a112f4febf5942966c9e9aee31e63c1b7",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234834_TTIJTKZCIAQIZDRX/OpBasicInfo.csv": "effd2c93975ed818b8ae6e05862805c400110710fa9e3dc3ac4017ecd3d44085",
+      "deepgemm-pilot-runs/fp4fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234834_TTIJTKZCIAQIZDRX/Memory.csv": "ed3636a02d7f6615ae1f10bced580c7c1e98f34296bfeee777762f397018510f"
+    }
+  },
+  "pilot-quant/fp8fp4-m1-n32768-k512": {
+    "audit": "outputs/expert-profile-backfill-20261109/deepgemm-pilot-m1-audits/pilot-quant__fp8fp4-m1-n32768-k512.json",
+    "remote_detail": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail",
+    "device": "hidev NPU 0",
+    "health": "Alarm 8C4BA00C",
+    "files_sha256": {
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/address-audit.json": "9437029e3076bf805a555f4033374c452a8c35776587011cb817d836a3d45bb7",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/prepare.json": "54912c695bb97c64af00b497121c8d70f5b3c9b31cb791bf8894fee6a9b594cd",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/profile.json": "cb34e68bbcf82a23b86cf4d67405cd35aaf29b803eaaefc02de215f2690f17b8",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/profile-addresses.json": "fe5908bf7c1dd8fb9fd9e09c52400380db9a6ca05f7892bf527825c7ca4a062f",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/capture-inspection.json": "0ea575e1c451893cbb85b4edb4cd8bc160b545c2fba089c3fc9b007cc7ce0789",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/device-kernel.isa": "d459913750074bc490e81c0b9e8240b5342fa2f239f1900915be22a5aa2b6314",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.asc": "31a9dd166405377af2ec4e21c84ce55a080613a3292f39f4c326fd20c5d80034",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/jit/kernel.o": "4c1d4b996febf5b2f50b4b5a26c3d4a4a888af8b3f4705e0a39fd55aca95ddf7",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/profile.log": "5b5baa8e914b293b0798ea957672ae6efb7997c12f25c53497e9bbc79ca660ed",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/monitor-summary.json": "e78268342a5c14fd590cc3533b18fe0c14d08ea8a24982556b5f596531751676",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/command.json": "073d4dacc42bc28e135079158d4c304fa901fa461f2dea38d1cd4ecdde100981",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-before.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/provenance/health-after.txt": "c36a167f9b0f275fd7fe92e9839cf6ac7d166c0f38712f29ef5c163c9789fa86",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234903_BHPRJTBSVOPGTYAA/OpBasicInfo.csv": "911c11ef05eefc61fc70dbaf02056a579af80074da9129ddc442849a4149c948",
+      "deepgemm-pilot-runs/fp8fp4-m1-n32768-k512/hidev-npu0/attempt-001/detail/capture/OPPROF_20261109234903_BHPRJTBSVOPGTYAA/Memory.csv": "23d12c084ae0b58589b27c1c9aeb5c82ae46207a856316c85f095cd07917d588"
+    }
   }
 }
