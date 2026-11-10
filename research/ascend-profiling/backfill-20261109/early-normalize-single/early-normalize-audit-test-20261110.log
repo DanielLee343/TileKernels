@@ -1,0 +1,4 @@
+__EARLY_NORMALIZE_AUDIT_TEST_BEGIN__
+PASS early normalize 36
+PASS rejects missing output, duplicate store, wrong CSV and output alias
+__EARLY_NORMALIZE_AUDIT_TEST_END__
