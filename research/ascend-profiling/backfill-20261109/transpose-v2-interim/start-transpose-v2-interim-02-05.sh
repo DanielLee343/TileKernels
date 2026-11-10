@@ -1,0 +1,17 @@
+set -Eeuo pipefail
+echo __TRANSPOSE_INTERIM_02_05_BEGIN__
+r=/workspace/expert-profile-backfill-20261109-hidev
+printf %s IiIiU25hcHNob3Qgb25seSBmb3VyIGNvbXBsZXRlZCB0cmFuc3Bvc2UgY2FzZSBkaXJlY3RvcmllczsgbmV2ZXIgdG91Y2hlcyBhY3RpdmUgY2FzZS4iIiIKaW1wb3J0IGltcG9ydGxpYi51dGlsLHN1YnByb2Nlc3Msc3lzLGpzb24KZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCnI9UGF0aCgnL3dvcmtzcGFjZS9leHBlcnQtcHJvZmlsZS1iYWNrZmlsbC0yMDI2MTEwOS1oaWRldicpO25hbWVzPVsnMDInLCcwMycsJzA0JywnMDUnXTtwcmVmaXg9J3VuaWZpZWQtZXh0cmE0X19xdWFudF9iYXRjaGVkX3RyYW5zcG9zZV93ZWlnaHRfc2YtJwpzcGVjPWltcG9ydGxpYi51dGlsLnNwZWNfZnJvbV9maWxlX2xvY2F0aW9uKCdhcmNoaXZlX2NhcHR1cmVzJyxyLydhcmNoaXZlLWNhcHR1cmVzLnB5Jyk7bT1pbXBvcnRsaWIudXRpbC5tb2R1bGVfZnJvbV9zcGVjKHNwZWMpO3NwZWMubG9hZGVyLmV4ZWNfbW9kdWxlKG0pO20uR1JPVVBTPSgnZXh0cmEtcHJveHktcnVucycsKTtvcmlnPW0uc2Nhbl91bml0cwp1bml0cz1beCBmb3IgeCBpbiBvcmlnKHIpIGlmIHhbMV0gaW4ge3ByZWZpeCtuIGZvciBuIGluIG5hbWVzfV07YXNzZXJ0IGxlbih1bml0cyk9PWxlbihuYW1lcykKZm9yIF8sbGFiZWwscGF0aCBpbiB1bml0czoKIGZvdW5kPWxpc3QocGF0aC5yZ2xvYignZGV0YWlsL2F1ZGl0LXJlc3VsdC5qc29uJykpO2Fzc2VydCBmb3VuZCBhbmQgYW55KGpzb24ubG9hZHMoZi5yZWFkX3RleHQoKSlbJ3N0YXR1cyddPT0ncGFzc2VkJyBmb3IgZiBpbiBmb3VuZCksbGFiZWwKIHN1YnByb2Nlc3MucnVuKFtzeXMuZXhlY3V0YWJsZSwnLUInLHN0cihyLydzY2FuLXB1YmxpYy1hcmNoaXZlLnB5Jyksc3RyKHBhdGgpXSxjaGVjaz1UcnVlKQptLnNjYW5fdW5pdHM9bGFtYmRhIHJvb3Q6aXRlcih1bml0cykKZGVmIG5vX3N1cHBvcnQoc291cmNlLG91dCk6CiBwPW91dC8nc3VwcG9ydC5qc29ubCc7cC53cml0ZV9ieXRlcyhiJycpO3JldHVybiAwLG0uc2hhKHApCm0uY29weV9zdXBwb3J0PW5vX3N1cHBvcnQKc3lzLmFyZ3Y9WydhcmNoaXZlLWNhcHR1cmVzLnB5JywnLS1yb290JyxzdHIociksJy0tb3V0JywnL3dvcmtzcGFjZS9leHBlcnQtcHJvZmlsZS1iYWNrZmlsbC0yMDI2MTEwOS10cmFuc3Bvc2UtdjItaW50ZXJpbS0wMi0wNSddO20ubWFpbigpCg== | base64 -d > "$r/archive-transpose-v2-interim-02-05.py"
+echo "9701a4e562b6c34d5269c30664cce17a13d94ecb4b2a456ddce86f7cdffe90bd  $r/archive-transpose-v2-interim-02-05.py" | sha256sum -c -
+test ! -e /workspace/expert-profile-backfill-20261109-transpose-v2-interim-02-05;test ! -e "$r/transpose-v2-interim-02-05.pid"
+nohup ionice -c 3 nice -n 15 bash -c '
+ set -Eeuo pipefail
+ r=/workspace/expert-profile-backfill-20261109-hidev;o=/workspace/expert-profile-backfill-20261109-transpose-v2-interim-02-05
+ python3 -B "$r/archive-transpose-v2-interim-02-05.py"
+ python3 -B "$r/verify-archive.py" "$o"
+ tar -C /workspace -czf "$r/transpose-v2-interim-02-05.tar.gz" "$(basename "$o")"
+ sha256sum "$r/transpose-v2-interim-02-05.tar.gz"
+ echo INTERIM_ARCHIVE_READY
+' > "$r/transpose-v2-interim-02-05.log" 2>&1 < /dev/null &
+echo "$!" > "$r/transpose-v2-interim-02-05.pid";echo ARCHIVE_PID=$!
+echo __TRANSPOSE_INTERIM_02_05_END__
