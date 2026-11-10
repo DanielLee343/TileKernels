@@ -163,10 +163,12 @@ Later commits will add the remaining evidence and updated inventory.
 
 - `initial-hidev/support-snapshot-v10.tar.gz` contains 1,210 point-in-time support files, including the current application replay queues, source-aware audits, and negative-test logs. SHA-256: `117612956039cba1df7b14369ea15a4a3facebbc118ecf4d6b4eaec17bd33701`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
 
-The refreshed inventory is a point-in-time ledger and can include newly accepted Sinkhorn step cases after case 01 whose raw captures have not yet been included in a published archive. Their records remain on hidev and must be archived separately. Do not treat the presence of an inventory entry as proof that its raw window is already in this repository.
+The refreshed inventory is a point-in-time ledger. Do not treat an inventory entry alone as proof that a later capture window has already been published; check the listed archive and snapshot time.
 
 - `initial-hidev/support-snapshot-v11.tar.gz` contains 1,224 point-in-time support files, adding mHC fn/normw backward replay preparation and automated batch-archive watchers. The mHC smoke and its draft audit were queued, not validated, at snapshot time. SHA-256: `30a4c389d164cfba8595306f8212435fee4da46f9d900eb1ecc920b6d49c3fd0`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
 
 - `initial-hidev/support-snapshot-v12.tar.gz` contains 1,252 point-in-time support files, adding queued batched-transpose, mHC post backward and mHC pre-split backward replay adapters and their identity checks. Those smokes had not run at snapshot time. SHA-256: `93cac5d2c35e5280b8c7147ba0618ed15c607405017550d9605c7b468bde44b2`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
 
 - `initial-hidev/support-snapshot-v13.tar.gz` contains 1,280 point-in-time support files, adding mHC big-fuse, multilayer and pre-apply backward replay adapters and identity checks. These representative smokes were queued and not validated at snapshot time. SHA-256: `92ee0f2790726314076120bc0f28e780bb02e3176df928e85c41fe7c5f427951`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
+
+- `initial-hidev/step-queue-snapshot-archive-bundle.tar.gz` contains the completed Sinkhorn step application-replay batch: 20 cases, 1,516 files and 160 CSV copies, each verified at source and destination. SHA-256: `a7e18edaacac5f6d12d96c466300e7877b46baa1ba826dd86e13f1828e66aac5`. This application-replay window is distinct from historical Default.
