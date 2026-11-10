@@ -1,0 +1,4 @@
+__EARLY_EXPAND_AUDIT_TEST_BEGIN__
+PASS early expand 16777216
+PASS rejects missing output, duplicate store, wrong CSV and output alias
+__EARLY_EXPAND_AUDIT_TEST_END__
