@@ -1,0 +1,5 @@
+# mHC multilayer representative audit
+
+The one-layer case 01 had nine application replay processes inspected against historical input and source, with pointer tables bound to the semantic tensor addresses. All output intervals, device instructions and per-core requested UB-to-GM bytes reconcile; logical/requested bytes: 104857600. Independent negative checks rejected missing stores from each output, duplicate stores, wrong Memory.csv and altered pointer table. The archive includes the earlier failed attempt and the successful new attempt; 156 files and 8 CSV files verified on hidev and workstation. SHA256 `132dc5ed6e5605efc4da98b69ebb15201694bd9d8f0e9ddec2d5e0d60a60412b`. Application-replay byte observations are not physical DRAM bytes and remain separate from historical replay measurements. This result does not validate multilayer execution.
+
+Post-backward v2 queue failed before collection because 04 lacked historical metadata; v3 checks the exact 19 eligible IDs and remains queued. Three other one-layer recompute cases have been queued behind it with the same fail-closed audit; 3- and 10-layer cases need separate source/coverage checks.
