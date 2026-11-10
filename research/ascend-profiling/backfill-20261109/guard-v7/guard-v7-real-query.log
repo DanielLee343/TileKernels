@@ -1,0 +1,4 @@
+__GUARD_V7_REAL_QUERY_BEGIN__
+VALID_NPU_QUERY: process_count 0 queries 1 failures 0 timeouts 0
+READ_ONLY: no process or NPU state modified
+__GUARD_V7_REAL_QUERY_END__

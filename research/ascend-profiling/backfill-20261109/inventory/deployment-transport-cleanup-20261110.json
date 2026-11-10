@@ -1,0 +1,96 @@
+{
+  "reason": "verified deployment transport copies; deployed scripts and evidence retained",
+  "timestamp_unix": 1794285524.5957415,
+  "files": [
+    {
+      "name": "finalize-extra6-deploy.b64",
+      "bytes": 8068,
+      "sha256": "261f7a802169915f50e25c761c92d7500225cfbd53bec973a4c9320d91b6ac09"
+    },
+    {
+      "name": "finalize-extra6-deploy.tar.gz",
+      "bytes": 6050,
+      "sha256": "727265ec3e642bd917cc149adb861342cbf2b1bf118028740c43a0e9031d3071"
+    },
+    {
+      "name": "finalize-extra6-audit.tar.gz",
+      "bytes": 3572,
+      "sha256": "9016af08c73bdba50453ef08f5ea530d20b08b2be64ffa54013e374b9645545a"
+    },
+    {
+      "name": "post-fwd-extra6-deploy.b64",
+      "bytes": 12648,
+      "sha256": "cdf71bc74ea2dfc5cc221c50946ec3e41ca1f2a3a8bf73c4e31469423d1c86f0"
+    },
+    {
+      "name": "post-fwd-extra6-deploy.tar.gz",
+      "bytes": 9485,
+      "sha256": "5a77e392ecbfe9d583ad501539d275f3fe282de2297e13cfddb3764aa744a37d"
+    },
+    {
+      "name": "hash-app-probe.b64",
+      "bytes": 14332,
+      "sha256": "b7263cde5253796eed419b2ecb663ba3bba007a27c833775fd05768c8e0d8f66"
+    },
+    {
+      "name": "hash-app-probe.tar.gz",
+      "bytes": 10748,
+      "sha256": "833b89ae7f2d087a1a192e42f185829b1fda68557c1a10367d9d40d823fc717e"
+    },
+    {
+      "name": "early-rope-probe.b64",
+      "bytes": 21656,
+      "sha256": "f125bd01a7138b3d1ecb9f900b2c00620000525a58ea98ab4cd3b249caa479f9"
+    },
+    {
+      "name": "early-rope-probe.tar.gz",
+      "bytes": 16240,
+      "sha256": "bc36debf3df7528a47b1d0ada5800226a1421abcb03f78ebe1967ed11d79720e"
+    },
+    {
+      "name": "guard-v7-deploy.b64",
+      "bytes": 8096,
+      "sha256": "41648345544568916ba7d5dc3826f5b32c7eb32dfb41a49a0f013b7e7cb1d1d5"
+    },
+    {
+      "name": "guard-v7-deploy.tar.gz",
+      "bytes": 6070,
+      "sha256": "b0d1761140f9dc1b6d6195d039b2ebbc7316410d4fdce19607e9522b1d666e01"
+    },
+    {
+      "name": "finalize-audit-v2.b64",
+      "bytes": 5864,
+      "sha256": "a2928921107a70f6bcf4e171de591978d94e63d4dfc95329da2ea307f014a829"
+    },
+    {
+      "name": "post-audit-v2.b64",
+      "bytes": 6644,
+      "sha256": "9a37f4fa41119c35ad6557c61d14a5cebedd6ac60b8b9ad42deabb88ca3d7da8"
+    },
+    {
+      "name": "deep-parser-input.b64",
+      "bytes": 22296,
+      "sha256": "d1567255982a1b8d6f576266f8956f8b175772d637b51ab951c524a2bca8245e"
+    },
+    {
+      "name": "rope-audit-v2.tar.gz",
+      "bytes": 3986,
+      "sha256": "f4c073ad26bf7aa8033c484d31dc5af44c840e4aa0aea59f71b21298c9da54ff"
+    },
+    {
+      "name": "fix-early-rope-profile_case.py.b64",
+      "bytes": 14984,
+      "sha256": "4c7d80949a101f7fb51f0d0685bdbf26b8441596cd6a57be4816db76db2c29f8"
+    },
+    {
+      "name": "fix-early-rope-adapter.patch.b64",
+      "bytes": 7388,
+      "sha256": "2be40c16f61be52c5b226e22cd2696510b7c790b226e4b0e8738dd0b2c273bd5"
+    },
+    {
+      "name": "fix-early-rope-probe-metadata.json.b64",
+      "bytes": 1956,
+      "sha256": "daaf1aab7f6a707e16a63032d5584b9a7b119789fa6a7bdf3a49559c51f2a180"
+    }
+  ]
+}
