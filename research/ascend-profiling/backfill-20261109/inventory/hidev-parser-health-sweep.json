@@ -1,7 +1,7 @@
 {
-  "source_index_sha256": "c3f4b0443b258f218bf9bb8180e8bf84d25cfdf51c1687dd9e4af029c86b9321",
-  "source_index_cases": 713,
-  "ok": 705,
+  "source_index_sha256": "340d68b7c3e4005721291d27075165b20572b9486f2723d4ef49735ca35ba6d2",
+  "source_index_cases": 724,
+  "ok": 716,
   "flagged": [
     {
       "target": "starter/hash-03",
@@ -82,5 +82,5 @@
     "per-type failures"
   ],
   "status": "read-only audit; does not prove address coverage",
-  "timestamp_unix": 1794289964.9825163
+  "timestamp_unix": 1794291807.973123
 }
