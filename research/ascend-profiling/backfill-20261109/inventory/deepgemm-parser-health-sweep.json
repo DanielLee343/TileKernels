@@ -1,0 +1,20 @@
+{
+  "source_index_cases": 80,
+  "ok": 80,
+  "flagged": [],
+  "missing": [],
+  "fields_checked": [
+    "droppedRecord",
+    "memoryCopyFailed",
+    "invalidParam",
+    "overflow",
+    "invalidDataCount",
+    "memoryCorruption",
+    "invalidRecordType",
+    "outOfBoundsRead",
+    "packet count equality",
+    "per-type failures"
+  ],
+  "status": "read-only audit; does not prove address coverage",
+  "timestamp_unix": 1794280433.205495
+}
