@@ -164,3 +164,5 @@ Later commits will add the remaining evidence and updated inventory.
 - `initial-hidev/support-snapshot-v10.tar.gz` contains 1,210 point-in-time support files, including the current application replay queues, source-aware audits, and negative-test logs. SHA-256: `117612956039cba1df7b14369ea15a4a3facebbc118ecf4d6b4eaec17bd33701`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
 
 The refreshed inventory is a point-in-time ledger and can include newly accepted Sinkhorn step cases after case 01 whose raw captures have not yet been included in a published archive. Their records remain on hidev and must be archived separately. Do not treat the presence of an inventory entry as proof that its raw window is already in this repository.
+
+- `initial-hidev/support-snapshot-v11.tar.gz` contains 1,224 point-in-time support files, adding mHC fn/normw backward replay preparation and automated batch-archive watchers. The mHC smoke and its draft audit were queued, not validated, at snapshot time. SHA-256: `30a4c389d164cfba8595306f8212435fee4da46f9d900eb1ecc920b6d49c3fd0`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
