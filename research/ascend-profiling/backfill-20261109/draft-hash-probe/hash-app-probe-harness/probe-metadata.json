@@ -1,0 +1,11 @@
+{
+  "purpose": "compare parser integrity in application replay for hash-15",
+  "baseline": "same historical input, source and kernel, original kernel replay",
+  "scope": "read-only additional capture; application window remains distinct",
+  "execution_status": "not yet run",
+  "files_sha256": {
+    "application.py": "42b7528d664f6bd8cd2b7d4ba1d5bcca5d7dfb7c4c83df6913108afa5415a068",
+    "cases_starter.json": "6c8edd97f7062da4047c1275ccd2114a09ec66314303ce3950abb022dca342a0",
+    "collector_starter.py": "e69cad08b88719b4fc7f030d49a75da18aa0c6cff4545032c4f71e21d4113e06"
+  }
+}
