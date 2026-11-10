@@ -7,3 +7,5 @@ The new post-warmup snapshot differs in full SHA256 from the later independent R
 The raw archive was independently verified on server and workstation: 132 files and 16 CSVs; archive SHA256 `5561df6382f3dc93e32576ae54ff18451f651804627e618d06e8580995d9c5d0`.
 
 A separate existing REUSE window had 52 observed UB-to-GM store events, 1,024 requested bytes, matching the expected output ranges and CSV. This is an exploratory offline check; negative tests, complete parser gates and the historical post-warm state remain unresolved, so it is not promoted.
+
+The offline investigation was strengthened to check all parser error fields, packet counts, failure counts, and observed store PCs against the captured binary. Negative tests rejecting missing/duplicate records, altered CSV, parser errors, and output aliasing passed. It remains an independent-window investigation; the original target-time metadata was not captured.
