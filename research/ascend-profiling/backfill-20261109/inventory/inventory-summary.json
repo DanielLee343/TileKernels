@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 5,
-    "tilekernels-earlier | pending": 113,
+    "tilekernels-earlier | new_dbi_audited_alarm": 8,
+    "tilekernels-earlier | pending": 110,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -28,6 +28,9 @@
     "outputs\\expert-profile-backfill-20261109\\hidev-parser-health-sweep.json": "c858c2d8eff628f76970b00d52b1406993af831fc41641d797c72dc21e1b6191",
     "outputs\\expert-profile-backfill-20261109\\early-castback-single-audit-result-20261110.json": "0fda312da5a5b1522a99d3b0a1dc34597268b0264dcbbcf6b22520fc43718640",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-01-audit-result-20261110.json": "b3ab9470c7ca895940b69ef9c76190d105d1d1867d6c7bbd8cab66890f800476",
+    "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-02-audit-result-20261110.json": "5cf6b9e8348c4704b35bc2aa0df8b2c01a8192c91718974417dd24af1d8c425d",
+    "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-09-audit-result-20261110.json": "990db30e7b4fcf051b6d1940336b4a34e1ca90699a48d1bccced25fe81503c0d",
+    "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-16-audit-result-20261110.json": "910f17bda0b403f44d42b4f1749c83cad1cd8d362604c127c085a2faf7441ab2",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-bf16-audit-result-20261110.json": "0e4e8baee773cbb490e8be08dbd2c06b74602df1fa2636e6f8323afb1b8acc6a",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-fp32-audit-result-20261110.json": "c531e6737abb640525191aab82c22e18d83315a754a3815396475d0c6bdc9190",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n8001-h2048-fp32-audit-result-20261110.json": "357a6454dd2c75e556d0f2f954992485343f3132b086436e84d90412298de1c8",
