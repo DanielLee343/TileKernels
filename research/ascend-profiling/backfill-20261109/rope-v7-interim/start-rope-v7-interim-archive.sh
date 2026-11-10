@@ -1,0 +1,17 @@
+set -Eeuo pipefail
+echo __ROPE_V7_INTERIM_START_BEGIN__
+r=/workspace/expert-profile-backfill-20261109-hidev
+printf %s IiIiU25hcHNob3Qgb25seSBmaXZlIGNvbXBsZXRlZCBSb1BFIGNhc2UgZGlyZWN0b3JpZXM7IG5ldmVyIHRvdWNoZXMgYWN0aXZlIGNhc2UuIiIiCmltcG9ydCBpbXBvcnRsaWIudXRpbCxzdWJwcm9jZXNzLHN5cyxqc29uCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApyPVBhdGgoJy93b3Jrc3BhY2UvZXhwZXJ0LXByb2ZpbGUtYmFja2ZpbGwtMjAyNjExMDktaGlkZXYnKTtuYW1lcz1bJzExLWsnLCcxMi1xJywnMTItaycsJzEzLXEnLCcxMy1rJ107cHJlZml4PSd1bmlmaWVkLWV4dHJhNF9fcm90YXJ5X2VtYmVkZGluZy0nCnNwZWM9aW1wb3J0bGliLnV0aWwuc3BlY19mcm9tX2ZpbGVfbG9jYXRpb24oJ2FyY2hpdmVfY2FwdHVyZXMnLHIvJ2FyY2hpdmUtY2FwdHVyZXMucHknKTttPWltcG9ydGxpYi51dGlsLm1vZHVsZV9mcm9tX3NwZWMoc3BlYyk7c3BlYy5sb2FkZXIuZXhlY19tb2R1bGUobSk7bS5HUk9VUFM9KCdleHRyYS1wcm94eS1ydW5zJywpO29yaWc9bS5zY2FuX3VuaXRzCnVuaXRzPVt4IGZvciB4IGluIG9yaWcocikgaWYgeFsxXSBpbiB7cHJlZml4K24gZm9yIG4gaW4gbmFtZXN9XTthc3NlcnQgbGVuKHVuaXRzKT09bGVuKG5hbWVzKQpmb3IgXyxsYWJlbCxwYXRoIGluIHVuaXRzOgogZm91bmQ9bGlzdChwYXRoLnJnbG9iKCdkZXRhaWwvYXVkaXQtcmVzdWx0Lmpzb24nKSk7YXNzZXJ0IGZvdW5kIGFuZCBhbnkoanNvbi5sb2FkcyhmLnJlYWRfdGV4dCgpKVsnc3RhdHVzJ109PSdwYXNzZWQnIGZvciBmIGluIGZvdW5kKSxsYWJlbAogc3VicHJvY2Vzcy5ydW4oW3N5cy5leGVjdXRhYmxlLCctQicsc3RyKHIvJ3NjYW4tcHVibGljLWFyY2hpdmUucHknKSxzdHIocGF0aCldLGNoZWNrPVRydWUpCm0uc2Nhbl91bml0cz1sYW1iZGEgcm9vdDppdGVyKHVuaXRzKQpkZWYgbm9fc3VwcG9ydChzb3VyY2Usb3V0KToKIHA9b3V0LydzdXBwb3J0Lmpzb25sJztwLndyaXRlX2J5dGVzKGInJyk7cmV0dXJuIDAsbS5zaGEocCkKbS5jb3B5X3N1cHBvcnQ9bm9fc3VwcG9ydApzeXMuYXJndj1bJ2FyY2hpdmUtY2FwdHVyZXMucHknLCctLXJvb3QnLHN0cihyKSwnLS1vdXQnLCcvd29ya3NwYWNlL2V4cGVydC1wcm9maWxlLWJhY2tmaWxsLTIwMjYxMTA5LXJvcGUtdjctaW50ZXJpbS0xMWstMTNrJ107bS5tYWluKCkK | base64 -d > "$r/archive-rope-v7-interim.py"
+echo "e10e45ddbb770433273846e95d20e324f20cf02bae4d2bb8679bc82ef9ab4eac  $r/archive-rope-v7-interim.py" | sha256sum -c -
+test ! -e /workspace/expert-profile-backfill-20261109-rope-v7-interim-11k-13k;test ! -e "$r/rope-v7-interim.pid"
+nohup ionice -c 3 nice -n 15 bash -c '
+ set -Eeuo pipefail
+ r=/workspace/expert-profile-backfill-20261109-hidev;o=/workspace/expert-profile-backfill-20261109-rope-v7-interim-11k-13k
+ python3 -B "$r/archive-rope-v7-interim.py"
+ python3 -B "$r/verify-archive.py" "$o"
+ tar -C /workspace -czf "$r/rope-v7-interim-11k-13k.tar.gz" "$(basename "$o")"
+ sha256sum "$r/rope-v7-interim-11k-13k.tar.gz"
+ echo INTERIM_ARCHIVE_READY
+' > "$r/rope-v7-interim.log" 2>&1 < /dev/null &
+echo "$!" > "$r/rope-v7-interim.pid";echo ARCHIVE_PID=$!
+echo __ROPE_V7_INTERIM_START_END__
