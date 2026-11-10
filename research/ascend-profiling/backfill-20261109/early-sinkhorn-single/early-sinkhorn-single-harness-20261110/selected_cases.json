@@ -1,0 +1,41 @@
+{
+  "cases": [
+    {
+      "task": "sinkhorn",
+      "id": "sinkhorn-cann-1",
+      "input_shapes": [
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "input_dtypes": [
+        "float32"
+      ],
+      "attrs": {
+        "iter_step": 20,
+        "eps": 1e-06
+      },
+      "case_source": "cann_public",
+      "source_case_id": "1",
+      "source_value_range": "[-1, 1]",
+      "source_adaptation": "none",
+      "source_csv": "/home/lyuze/cann-bench/tasks/level3/mhc_sinkhorn/cases.csv",
+      "source_csv_sha256": "89a16017e09a78f6f58da15d427417cef3680b6f923c96bd9af93bae4853e322",
+      "output_shapes": [
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "output_dtypes": [
+        "float32"
+      ],
+      "logical_input_bytes": 64,
+      "logical_output_bytes": 64,
+      "legality_scope": "read-only TK API shape/dtype/attribute checks; no TileLang build/device admission"
+    }
+  ]
+}
