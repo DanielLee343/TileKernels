@@ -1,0 +1,4 @@
+__ROPE_AUDIT_V2_BASELINE_BEGIN__
+PASS rotary_embedding-01-q 512256
+PASS original and accelerated audit output exactly identical
+__ROPE_AUDIT_V2_BASELINE_END__

@@ -192,3 +192,5 @@ The refreshed inventory is a point-in-time ledger. Do not treat an inventory ent
 - `initial-hidev/cast-queue-snapshot-archive-bundle.tar.gz` preserves 20 cast-and-back application-replay cases (1,516 files, 160 CSV copies), verified at source and destination. SHA-256: `6ce84373deb89bb615c9e24d3373d8a01fcf9a9038c4e356c18f5c0cec5e5c55`. This window remains separate from historical Default. The refreshed 663-window hidev index and matching parser scan report 655 clean and eight flagged Hash captures.
 
 - `draft-hash-probe/` prepares a single hash-15 application-replay diagnostic to compare parser integrity against the flagged historical kernel-replay window. At publication it is queued and not yet executed; it does not grant byte-audit admission.
+
+- `rope-audit-v2/` replaces the quadratic search over disjoint address intervals with binary search. The original first case produced identical audit output, and a large strided case passed missing/duplicate/CSV/alias negative tests. The old slow audit was intentionally stopped and retained, then the large case was re-audited; the continuation supervisor preserves queue order.

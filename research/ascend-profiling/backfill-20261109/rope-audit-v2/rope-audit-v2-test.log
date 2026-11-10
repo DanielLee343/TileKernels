@@ -1,0 +1,4 @@
+__ROPE_AUDIT_V2_TEST_BEGIN__
+PASS rotary_embedding-02-q 65568768
+PASS rejects missing outputs, duplicate record, wrong CSV and unauthorized input/output alias
+__ROPE_AUDIT_V2_TEST_END__
