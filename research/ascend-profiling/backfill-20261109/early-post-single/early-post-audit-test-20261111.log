@@ -1,0 +1,4 @@
+__EARLY_POST_AUDIT_TEST_BEGIN__
+PASS early post 720
+PASS rejects missing output, duplicate store, wrong CSV and output alias
+__EARLY_POST_AUDIT_TEST_END__
