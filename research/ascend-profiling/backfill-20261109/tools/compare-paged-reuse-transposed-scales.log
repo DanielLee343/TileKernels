@@ -1,0 +1,4 @@
+__COMPARE_PAGED_SCALE_TRANSPOSE_BEGIN__
+active_descriptors 28 bytes_checked 1184 mismatched_2byte_values 0
+CAVEAT: compare uses source documented 16-token transpose; does not prove old postwarm state
+__COMPARE_PAGED_SCALE_TRANSPOSE_END__
