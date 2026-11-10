@@ -1,0 +1,1072 @@
+{
+  "scope": "historical metadata presence only; not proof of matching another case, device, replay or correctness",
+  "count": 118,
+  "summary": {
+    "input_info_and_source": 118,
+    "all_input_hashes_and_source": 115
+  },
+  "records": [
+    {
+      "target": "castback-n1-h128-bf16",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/castback-n1-h128-bf16/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "263f6e364f0050d60cfa245aac78cb1fc726357f088246d467bd0bc9bb0761f5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "castback-n512-h2048-bf16",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/castback-n512-h2048-bf16/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "3b7afdd0191958aaafc4bd7b8c88bcd2b47f15f5f8e8c923f93c9542203e85b9",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "castback-n512-h2048-fp32",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/castback-n512-h2048-fp32/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "88e39046159f282c8be8ba7f0dc61bd155f60fc69676275fb3677f48c4fa1146",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "castback-n8001-h2048-fp32",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/castback-n8001-h2048-fp32/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "a9facf5ffc0418d9a444c1c14c9515fd3f28883709a6a38792a66386473cfe52",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "fused-h2048",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/fused-h2048/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "efac1025f67e9bb9113358b3a4504deaa1931819a25c3f36669216ac9130d5f9",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "fused-h3584",
+      "metadata": "experiments/profile-checklist-dispatch-control-20261104/evidence/cases/B-r1/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "ad03442130fdb582c928112a5d547d37a5f4ec219a94c93cc401d657f0a9769b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "fused-h4096",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/fused-h4096/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "06f5d1a0cc97d80e058391c8822a79565358381ea716db1468a9b736e1a72784",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "fused-h7168",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/fused-h7168/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "0aa900f2688fe6426aa80369f5e700e442dfac94db2a595fef1bac49a2c8364b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "fused-h768",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/fused-h768/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "194d6bef77937844be043fd563fc562d712788dc467388b69e721c61ecf58712",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "hash-n1-g3",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/hash-n1-g3/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": false,
+      "source_identity_present": true,
+      "metadata_sha256": "616cce7956a4961015014f609a25fa6639b1104f4680b563aaf4d4aaf5f5bb86",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "hash-n512-g3",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/hash-n512-g3/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": false,
+      "source_identity_present": true,
+      "metadata_sha256": "3222ce48aaf3e6cf99a7a61facf451e03662dc402ea68a8532f8822c4e3577b2",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "hash-n512-g4-mask",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/hash-n512-g4-mask/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e64f47ef9142a1ef3ccd7234dfc72d3fd2ba3358c664c24d3ad3d157e3576476",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "hash-n8001-g4",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/hash-n8001-g4/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": false,
+      "source_identity_present": true,
+      "metadata_sha256": "5c1721ee3021675041a39837fb77b1416db50a124b7a3f6cc41e92f1ca32654c",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "head-fp32-1001",
+      "metadata": "experiments/profile-checklist-4-v2-20261105/evidence/cases/head-fp32-1001-r1/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "cb2c956758b89bb80a04589fa4093b163d6c1d9613fdc0f3d46f83efa3c9dc91",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "head-fp32-1024",
+      "metadata": "experiments/profile-checklist-4-v2-20261105/evidence/cases/head-fp32-1024-r1/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "13fb32fcea3cdd67cd0250fe468930d2bc3835b18edf32959c0ba51a96831619",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc-expand-fwd-bf16-n512-h4096-m4",
+      "metadata": "experiments/profile-checklist-4b-20261104/formal/evidence/cases/E3-r1/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "b87a19973da25ca4bf43e7f644b96497fa8e4fcdbc1d469362d8249b7c2bd988",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-cann-2",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "b20704249deeec6144aa3d6df8c5e80193b8e56b08546701386b3501e905197e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-cann-4",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-cann-4/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "f0d76d7a578b50ec9a7d9fcf6e0249d8493c89dc97309222ad01684bfb7e4a83",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-cann-6",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-cann-6/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "cbfd0d55341394640130f3b7d29ab5248608ab458aa5781553d1c8461d31fd1a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-supp-01",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "794a73ece7fed02f1bf74f698af83247acd94854950a964d854753c29eb0f9fb",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-supp-04",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "3bf523572b4248e8da9255c08b1a2cf74c81a55ff0e7820601b6f1322ab06a56",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-supp-07",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-supp-07/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "6f2df31c5171b6806e9d5738fc95d32aa9cdc8e3e966c76506012838868c9c98",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "mhc_post_bwd-supp-10",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/mhc_post_bwd-supp-10/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "95b8e34f6f1cc1f86af865ca60c436ba3aedcc9fd09580197117e20cd931d3ee",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "normalize-n1-k8",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/normalize-n1-k8/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "ea3e9627634b2d7bf88e752be9a770ea19e9b7d0b3d829d2b21b11aadc64e0f8",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "normalize-n4001-k6",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/normalize-n4001-k6/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "9b14d5750d682fa3d48402d5278051e7a14d0ca3beb1b3b1a62e95a91cb8a657",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "normalize-n4001-k9",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/normalize-n4001-k9/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "0f89695e9950e20454fe6c143ebf74916cc1a11bad7d320cc07a25d2417507d5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "normalize-n512-k8",
+      "metadata": "experiments/profile-checklist-4a-20261104/evidence/cases/normalize-n512-k8/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "764176d86bb6ce13403b745f922f0b40923309c9dd0bbe3413a07fb33d3a30d6",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-cann-18",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-cann-18/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "268cb385c9ec25991094ad7162f04fd07601a72468b762e346a50e68b3c0626a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-cann-2",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "54ba8c2a3e580c4548b85d4d3e6c8c0b09a2546ca455fbd0b396a32154d37446",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-cann-3",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-cann-3/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "732338444663b0a1f06cf365fa4f0a328209196431bcbbe40b00e7a054cf2387",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-cann-5",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-cann-5/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "0b7e755ec010bec0da9f86737807f8f1973c494e16a04407eeae593a6edee212",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-01",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "bb3be607cde1cd34c3a565bdeb718dd64e13c364c6cf1370d1146949e970b13a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-02",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-02/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "95a1961c25de77a8682b85464ada482d90cebd8ae7058e08a76478735559d88d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-03",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-03/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4b615ce04880313c896823430dd1ee61e534b05edebc0c5472aba74959ad7c52",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-04",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "a62d8989b02cd284a26b3b956c4fa9f7b81238789cc68dc4df5d9915807c7487",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-05",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-05/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "47c5b4484a1414af552a44400e2faf0386ad4fd86537aaa8cab422940b002145",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-06",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-06/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "becea2e5b8cc214483670f18102f9d76936b4ef8d82f00cd56bf08881a18be25",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-07",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-07/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "07e65d858d70717ca3636521d26c89c68c3f3ebb86b60d614e899fc95864e255",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-08",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-08/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e8366402c9a55e9f09060d7ec163b63413459de3969bac0067fbf86e52dcc3f6",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rmsnorm-supp-09",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rmsnorm-supp-09/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "2389c6a4f1de9d4d7a5dcc7f679355cf806c588bfda17bd436eea7136508f23d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-11/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-11/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4f6b26afd53fcd36e4f8f344d2d1aa2d4f0dab4a5bf335f35fa1a86f9846f447",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-11/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-11/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4f6b26afd53fcd36e4f8f344d2d1aa2d4f0dab4a5bf335f35fa1a86f9846f447",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-14/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "3836729776656c2c7f0efbe27f704db56ca4a5fcbd69aba98e430c1d3e257b57",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-14/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "3836729776656c2c7f0efbe27f704db56ca4a5fcbd69aba98e430c1d3e257b57",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-2/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "cb7f2a7d0f330aa45391a8bb94064d259dc57c4929b58920a9a43de75171aedc",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-2/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "cb7f2a7d0f330aa45391a8bb94064d259dc57c4929b58920a9a43de75171aedc",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-20/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-20/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "9d363440e3b59f19645759f74b69837691bc840cc7d2ccf00c0ffd447954db3b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-20/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-20/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "9d363440e3b59f19645759f74b69837691bc840cc7d2ccf00c0ffd447954db3b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-5/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-5/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "930ed8fc48349c55a445455e4583c5f09d032719eebca4498da677ecba16a405",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-5/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-5/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "930ed8fc48349c55a445455e4583c5f09d032719eebca4498da677ecba16a405",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-8/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-8/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "31bd779144033f0e9734519acd45e3a60a607b60ebb8857b7e536bf78b25ff69",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-cann-8/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-cann-8/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "31bd779144033f0e9734519acd45e3a60a607b60ebb8857b7e536bf78b25ff69",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-01/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "29fed266b2b0879158a13afd534156502608332b91aa6886471b2281de953de1",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-01/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "29fed266b2b0879158a13afd534156502608332b91aa6886471b2281de953de1",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-02/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-02/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e867ce9c7690803eeb7807241d54309149cc4067db5c3bd1e7be03b37d06a66f",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-02/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-02/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e867ce9c7690803eeb7807241d54309149cc4067db5c3bd1e7be03b37d06a66f",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-03/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-03/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5c6873bf76246bdf5a58e007b348395c13dbdee1444d20aae1aa352134eea773",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-03/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-03/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5c6873bf76246bdf5a58e007b348395c13dbdee1444d20aae1aa352134eea773",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-04/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "fc0ab5a1ea4d5f4d691f76ada29a6656d230d26e2237e04bd1fea106c98601c5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-04/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "fc0ab5a1ea4d5f4d691f76ada29a6656d230d26e2237e04bd1fea106c98601c5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-05/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-05/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4615d059d03b816616b43d28be1fdb7faa8278b1d1f23895625d0b3bd9106b5d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-05/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-05/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4615d059d03b816616b43d28be1fdb7faa8278b1d1f23895625d0b3bd9106b5d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-06/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-06/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "2d204b31911aabc26f3cf1b27fb209d1989275942625ebdf4ca5e81e319cd194",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-06/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-06/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "2d204b31911aabc26f3cf1b27fb209d1989275942625ebdf4ca5e81e319cd194",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-07/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-07/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "a1c7ddbdec077b4ca1f43ffd622c498cdb694322caa51e23805ae8094c977cc6",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-07/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-07/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "a1c7ddbdec077b4ca1f43ffd622c498cdb694322caa51e23805ae8094c977cc6",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-08/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-08/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "43627c45ae005aa42cf960105812005e64837c2d7d77f449e33caa420b07e80b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-08/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-08/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "43627c45ae005aa42cf960105812005e64837c2d7d77f449e33caa420b07e80b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-09/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-09/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5b9a2e95e3a4e02a05fd013bca866c08286372ebd504f8550728db69b406db9e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-09/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-09/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5b9a2e95e3a4e02a05fd013bca866c08286372ebd504f8550728db69b406db9e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-10/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-10/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "ff741ce55e87cbc2a7ddb582e5f6794e4cd3759c108f0d053783836ca65a9085",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-10/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-10/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "ff741ce55e87cbc2a7ddb582e5f6794e4cd3759c108f0d053783836ca65a9085",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-11/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-11/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4c66abfcb18fbefdb4abe049d19418009ef6d760f4cf48acbee770c8d05b3797",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-11/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-11/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4c66abfcb18fbefdb4abe049d19418009ef6d760f4cf48acbee770c8d05b3797",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-12/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-12/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "51618ed1a0f2986b50ade448ab0fd62a8c8bd8194d23b6690ee19147d339e7ca",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-12/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-12/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "51618ed1a0f2986b50ade448ab0fd62a8c8bd8194d23b6690ee19147d339e7ca",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-13/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-13/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "28f55aa9823d1ee67343868e4dbe7178dfaeb69bfd07303fedfb137853e88a51",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-13/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-13/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "28f55aa9823d1ee67343868e4dbe7178dfaeb69bfd07303fedfb137853e88a51",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-14/call-0",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "7e8431759887de31cd8733a939daf0cfb427e00bd5220978e0590ddb748d9c4e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "rope-supp-14/call-1",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/rope-supp-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "7e8431759887de31cd8733a939daf0cfb427e00bd5220978e0590ddb748d9c4e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-1",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-1/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "6acc6832c880b0e405c819dd0ce6826b17d04385f8c3b34851c781d56d6c0b9d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-13",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-13/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "7fd8030fa4e470c0c78a256e9242ff5cd364d2bf5d998bec5d93cee22099594e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-14",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5373f36fbcb28b15acda324e7a2a015b981a7aab7677d120b4df860e601c80ec",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-15",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-15/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "0a297c3c0e923cbf49494369821bfc65cbd2e02e8b5a14a90b2d1c961e378ae3",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-16",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-16/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e6c28fac62d711d4f31a2f5909724698b87a0924244c1542b70e5d8cbab983a5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-17",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-17/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "c5c4db2d5d2d48cb60fabe20ec21cafed5f8b7e8ae442711bbb594adc632dd69",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-19",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-19/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "08240a0ead94b1e9eeffe7ee31157b43299011259011dfd732332c52c029b7cc",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-2",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "046b0b896366dc02d920415ffe76b95da1a167c6423bfd108d17f33da3128391",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-20",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-20/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "a853e98b1f3c46b83de7fdaf28f33d79b654ec4941ebbb88e88bb4dc0513ac5c",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-3",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-3/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "eb414afd60a796253ed2a9a7b63f97ccf675b12164b94d01088fcd80cdd0eae5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-4",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-4/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "6a6872120715c36633f213aa0e5ef95334b3d57ae49139aa50d96702614f629a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-5",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-5/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "f23baa5b844faa4393f78befb6f93c56abc5dbc8b85a17a13aec96c0fdfa8583",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-cann-6",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-cann-6/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "2d9d8331a77205698194450278e9ba5f1314d68ab18a97000f84cfa02ec1da06",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-01",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "aa64d6a46ca92a0c97376b07ddcb823b65f672f87544dce10aa5b44ca7e2d183",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-02",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-02/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "779f41a2cf48be5e40ad1e20290288953746469951a452bf6ce208362d2b82e6",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-03",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-03/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "5c71bf8b5cf3d50f0bacca2382fbed364e4ee4279aa398be57472a32b561ae6a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-04",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "d6d785603583e8cce4c0957cfdf692469868dd5c8679824795947b66ac93768b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-05",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-05/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "1584a753b9d8f83141a6fd8c2f4102ed70488de2d261f678e85f8d5cc83c9465",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-06",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-06/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "184135c6c8a08f35b887b85629c6b462ef0da3dc491d282038ea77d2f03d3d59",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "sinkhorn-supp-07",
+      "metadata": "outputs/sinkhorn-mhc-profile-40cases-20261101/raw/cases/sinkhorn-supp-07/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "34d0c675ecfb55aca0209ba5e757b063ec8591ce25fa8a86a77d5fcedb4e345b",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-cann-15",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-cann-15/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "beddb9b3c14abe7724a299a18d6c8591cff6cf5acf8280ca6484931ca75a02eb",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-cann-2",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-cann-2/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e59c4cadf3d60e228693da3de6223279ec9f6951c493e2dd0e767cf11b0b1b90",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-cann-3",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-cann-3/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "43237bbaccbbc7a7c07473701816caa6923fa995666d0fba0139114ad3f5766a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-01",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-01/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "ed1b48054f5e7c472c1590ca3e31a9b494f0f3cf76486b247c4b823e0a84e326",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-02",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-02/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "55fc14ebab02254a5882e92b116c7b6e89fab7395e6d960e007e04e2d952e47f",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-03",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-03/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "00892fe53d5a189e87898c8d0ed58bdee2fa7ea8e64b58ffd6a9c6c8fe97b63d",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-04",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-04/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "d9d4057ccb4b60347c34b67a22cdf7f798e84cdac35fbc141d372e8dbe647b0c",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-06",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-06/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "27afe571cfe04fec7da6140ccbbb2ef9f6bab031fc4ed91e9a2f4ab8e0b3db76",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-09",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-09/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "dc9aa7e5dd95a46bf4ef4dacf3cc54effcb84a6fd8ec8db04ac71d8968a2efd8",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-10",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-10/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "0053807671bfdfa231d2c25aa5b99d88937cf3323d1e7229aa5fa5d169484a24",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-11",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-11/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "1f2fae296078b86b01223a404d32d2d612910ca25234a943d413dcf92e32a1c9",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-12",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-12/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "995040f110eceb34e47c6cfb0265d2426af3e2b1eb7237cdb5a2d4f55f292e9a",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-13",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-13/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "095c9f21b2ee4131ae882925faf9c9ea6cd1a807f362ce59ebbdd119f08b2335",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-14",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-14/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "f2514b35a1f1b143d4298b2fd777a808ab6cd873aad6e8034c4d9ac11a1e2182",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-15",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-15/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "4eb5c172e2e756e4c51cdc929223fb5002418967a647232958f5c3ce8435da9e",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-16",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-16/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "e2057e2abdc96e71a6d2c848b633cf6744535a6331c724d17430470044588f38",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-17",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-17/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "9a5222169c00ffdad442d6395c8ebf3c52e30d65bbfd0265b7e511d63f7419e5",
+      "metadata_status": "passed"
+    },
+    {
+      "target": "swiglu-supp-18",
+      "metadata": "outputs/reprofile-60-cold-20261101/raw/cases/swiglu-supp-18/metadata/default.json",
+      "input_info_present": true,
+      "all_input_hashes_present": true,
+      "source_identity_present": true,
+      "metadata_sha256": "73243eba648044b8cfa734b13b7f4227628f6c2227b27d1a7f3f1eb1eaca8eea",
+      "metadata_status": "passed"
+    }
+  ]
+}
