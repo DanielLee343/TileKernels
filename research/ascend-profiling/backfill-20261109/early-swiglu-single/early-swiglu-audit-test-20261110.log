@@ -1,0 +1,4 @@
+__EARLY_SWIGLU_AUDIT_TEST_BEGIN__
+PASS early swiglu 256
+PASS rejects missing output, duplicate store, wrong CSV and output alias
+__EARLY_SWIGLU_AUDIT_TEST_END__
