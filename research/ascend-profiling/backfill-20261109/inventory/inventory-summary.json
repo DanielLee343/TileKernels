@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 60,
-    "tilekernels-earlier | pending": 58,
+    "tilekernels-earlier | new_dbi_audited_alarm": 61,
+    "tilekernels-earlier | pending": 57,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -83,6 +83,7 @@
     "outputs\\expert-profile-backfill-20261109\\early-fused-h4096-audit-result-20261110.json": "aec14ed052002baab70ed0a51b0f70d5d4d0e56ab9b89dc917ca1d41673105e5",
     "outputs\\expert-profile-backfill-20261109\\early-fused-h7168-audit-result-20261110.json": "a6692d69a0ab3efa471857616c212b3fe06e901a0970b4feed309e8d57be1d42",
     "outputs\\expert-profile-backfill-20261109\\early-fused-h768-audit-result-20261110.json": "8b484b4021716d474d96584151e66a1959b725d5dea9f3289c7f42326c66723a",
+    "outputs\\expert-profile-backfill-20261109\\early-hash-n1-g3-audit-result-20261110.json": "62f138dbd2a927aa1a51f74126f37283f926a02992276a2f22a78a4255391dd4",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-bf16-audit-result-20261110.json": "0e4e8baee773cbb490e8be08dbd2c06b74602df1fa2636e6f8323afb1b8acc6a",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-fp32-audit-result-20261110.json": "c531e6737abb640525191aab82c22e18d83315a754a3815396475d0c6bdc9190",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n8001-h2048-fp32-audit-result-20261110.json": "357a6454dd2c75e556d0f2f954992485343f3132b086436e84d90412298de1c8",
