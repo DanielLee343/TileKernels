@@ -40,5 +40,5 @@ for j,row in enumerate(mem):
  if j<28 and value not in ('NA',''):assert abs(Decimal(value)*1024-expected)<=Decimal('0.000512')
  elif j<28:assert expected==0
  else:assert value in ('NA','')
-result={'target':'unified-extra6/'+case,'status':'passed','device':'hidev NPU 0','correctness':'passed','historical_input_and_source_match':True,'runtime_kernel':basic['Op Name'],'dbi_requested_bytes':sum(blocks.values()),'output_logical_bytes':n*width,'per_vector_block_requested_bytes':{i:blocks[i] for i in range(56)},'capture_binary_sha256':sha(binary),'dbi_pc':[hex(x) for x in sorted(pcs)],'csv_pair_totals_match':True,'scope':'application replay; requested UB to GM bytes, not physical DRAM writes'}
+result={'target':'unified-extra6/'+case,'status':'passed','device':'hidev NPU 0','correctness':'passed','historical_input_and_source_match':True,'runtime_kernel':basic['Op Name'],'dbi_requested_bytes':sum(blocks.values()),'output_logical_bytes':n*width,'per_vector_block_requested_bytes':{i:blocks[i] for i in range(56)},'capture_binary_sha256':sha(binary),'dbi_pc':[hex(x) for x in sorted(pcs)],'csv_pair_totals_match':True,'replay_mode':'application','scope':'application replay; requested UB to GM bytes, not physical DRAM writes'}
 (p/'candidate-audit-result.json').write_text(json.dumps(result,indent=2)+'\n');print('PASS',case,sum(blocks.values()))

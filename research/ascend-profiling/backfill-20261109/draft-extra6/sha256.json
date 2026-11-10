@@ -1,7 +1,7 @@
 {
   "archive-after-app-queue-v13.py": "7ab5bd6ab9ad3b54c2d301ad19e8b0a4c2ec187ec5a031e8125b1670ab47d4bc",
-  "audit-finalize-extra6-app-candidate.py": "598218243dda90f3c77ed1a744b9a02551b179251ba78fce9788c37c61d02559",
-  "audit-post-fwd-extra6-app-candidate.py": "814e0b9deee579dc3b88b1c1de1d1a3c7ad316daf9dab2bd45a8683cd9ea43dc",
+  "audit-finalize-extra6-app-candidate.py": "e8c6439656e4a8f61105cd6f1cb49bb7797e9b943b8ba79df1eb049526104c4d",
+  "audit-post-fwd-extra6-app-candidate.py": "2639fd003e79b0f7a0155fc176581263635abf3b640eced6b70912d1543af28e",
   "extra6-finalize-app-harness/adapter.patch": "34fd334f48b92bc8f92effb0f6ab018d4d52b7a90c3cd3b281da0ee3e84d8050",
   "extra6-finalize-app-harness/cases.json": "c79b864807a3878c10c2247135ae16b6d742b73ac44cf91a12a5f2f7bcf5f6ea",
   "extra6-finalize-app-harness/extra_finalize_retry.py": "e9f5613352c75fa666cc625adfff04191119b8d82d456a24b5a71d695c6c01a7",

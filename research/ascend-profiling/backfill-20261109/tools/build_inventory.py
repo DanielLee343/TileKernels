@@ -25,16 +25,17 @@ def main():
     hidev_captures=load(hidev_path) if hidev_path.exists() else {}
     parser_sweep_path=HERE/'hidev-parser-health-sweep.json'
     parser_sweep=load(parser_sweep_path) if parser_sweep_path.exists() else {'flagged':[],'missing':[]}
-    parser_flags={x['target']:x for x in parser_sweep['flagged']}
+    parser_flags={(x['target'],x['path']):x for x in parser_sweep['flagged']}
     assert len(parser_flags)==len(parser_sweep['flagged'])
     if parser_sweep_path.exists():
         parser_index_path=HERE/'hidev-capture-index.json'
         assert parser_sweep.get('source_index_sha256')==sha(parser_index_path), 'parser sweep must correspond to the imported index'
         parser_index=load(parser_index_path);assert parser_sweep['source_index_cases']==len(parser_index['cases'])
-        index_by_target={x['target']:x for x in parser_index['cases']};assert len(index_by_target)==len(parser_index['cases'])
         for target,reason in parser_sweep['missing']:
-            assert target in index_by_target and target not in parser_flags
-            parser_flags[target]={'target':target,'path':index_by_target[target]['raw_dir']+'/profile.log','errors':['parser summary not checked: '+reason]}
+            matching=[x for x in parser_index['cases'] if x['target']==target];assert matching
+            for item in matching:
+                path=item['raw_dir']+'/profile.log'
+                parser_flags.setdefault((target,path),{'target':target,'path':path,'errors':['parser summary not checked: '+reason]})
     deep_new_path=HERE/'deepgemm-new-captures.json'
     deep_new=load(deep_new_path) if deep_new_path.exists() else {}
     head_path=HERE/'historical-head-no-ub-gm.json'
@@ -221,7 +222,7 @@ def main():
                     status='dbi_window_coverage_verified_traffic_unverified'
                     scope='28-core port; DBI stage expected workspace and output addresses covered; duplicate-write traffic completeness unverified'
                 if audit['other_replay_failures']:note+='; other PMU replays failed and must not be combined'
-        flag=parser_flags.get(target)
+        flag=parser_flags.get((target,remote_detail+'/profile.log'))
         if flag and remote_detail and flag['path']==remote_detail+'/profile.log' and status=='new_dbi_audited_alarm':
             status='pending';scope='';note+='; parser health sweep: '+', '.join(flag['errors'])+'; original audit retained, capture not admitted'
         op_paths=[]; memory_paths=[]
