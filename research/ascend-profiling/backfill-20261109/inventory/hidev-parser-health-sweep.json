@@ -1,0 +1,85 @@
+{
+  "source_index_cases": 651,
+  "ok": 643,
+  "flagged": [
+    {
+      "target": "starter/hash-03",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=674"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-03/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-05",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=35"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-05/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-07",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=18"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-07/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-11",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=677"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-11/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-14",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=61"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-14/hidev-npu0/attempt-002/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-15",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=9"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-15/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-16",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=396"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-16/hidev-npu0/attempt-001/detail/profile.log"
+    },
+    {
+      "target": "starter/hash-20",
+      "summaries": 1,
+      "errors": [
+        "droppedRecord=963"
+      ],
+      "path": "/workspace/expert-profile-backfill-20261109-hidev/hash-runs/hash-20/hidev-npu0/attempt-001/detail/profile.log"
+    }
+  ],
+  "missing": [],
+  "fields_checked": [
+    "droppedRecord",
+    "memoryCopyFailed",
+    "invalidParam",
+    "overflow",
+    "invalidDataCount",
+    "memoryCorruption",
+    "invalidRecordType",
+    "outOfBoundsRead",
+    "packet count equality",
+    "per-type failures"
+  ],
+  "status": "read-only audit; does not prove address coverage",
+  "timestamp_unix": 1794280280.1929574
+}
