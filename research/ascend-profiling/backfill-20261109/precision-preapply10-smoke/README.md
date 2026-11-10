@@ -1,3 +1,3 @@
 # Precision-labelled pre-apply backward case 10
 
-The historical CPU reference failed. The planned same-input application-replay smoke records the new reference outcome and may report independently checked requested bytes; it must not promote this case to an accuracy-passing expert. The script bundle was hashed and deployed, the wrapper failure-preservation unit check passed, and the queue waits for the ten-layer / nine-post batch. Capture and identity remain pending.
+Nine same-input and same-source application replay processes each retained a failed CPU reference. Two outputs and 41,975,808 requested UB-to-GM bytes passed address and same-window CSV checks. Negative tests rejected missing writes in both outputs, duplicate writes, wrong CSV and output alias. It remains a precision-failed sample. The 85-file / 8-CSV archive was verified on hidev and workstation, SHA256 `3749dbd311404da00821d02c11695a819fa9b77fb07282483b13d69389f4933e`.

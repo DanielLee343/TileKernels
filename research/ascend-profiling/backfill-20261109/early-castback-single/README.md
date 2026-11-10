@@ -1,3 +1,3 @@
 # Early single-call castback representative
 
-The registered old input generator and historical generated source are preserved in the script bundle. The application replay is queued after the existing NPU tasks; capture and identity are pending. Historical kernel replay and the new application replay and their physical boards must be kept separate. No association or byte completeness is implied by this prepared harness.
+The nine application replay processes match the historical input hashes and generated source; the 256 requested UB-to-GM bytes are fully covered, match the new-window per-core CSV, and pass negative tests for missing and duplicate writes, CSV changes and output aliasing. Historical kernel replay on 0D:00 and new application replay on 8B:00 are separate windows. The verified archive contains 75 files / 8 CSV, SHA256 `0b871db74fc35e2c111932e0aa83bb3569ffab3763cda23b3d90de84f037a67d`. Requested bytes are not physical DRAM bytes.
