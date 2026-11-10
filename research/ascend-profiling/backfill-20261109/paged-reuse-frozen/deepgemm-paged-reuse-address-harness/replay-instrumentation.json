@@ -1,0 +1,6 @@
+{
+  "scope": "frozen historical collector with per-process prewarm, post-five-warmup and post-target metadata snapshots; upstream kernel unchanged; additionally record input/output addresses per process after target synchronization",
+  "historical_collector_sha256": "7c23499c9563c9b30191ef8929334aedb95d0ce3c2f8215cc411a1557b90fef5",
+  "instrumented_collector_sha256": "5259b679ee28eb9ae0b39659cb1f0dede9edff98598a5700872d3c3871ab63ca",
+  "prior_frozen_collector_sha256": "bef996e59648899ba86cd86b94384e07e0ee1d5a51f01d6de7ccd7bd69773bb9"
+}
