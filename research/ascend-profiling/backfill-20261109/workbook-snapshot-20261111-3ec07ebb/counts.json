@@ -1,0 +1,38 @@
+{
+  "vector": {
+    "targets": 1145,
+    "target_status_new_dbi_audited_alarm": 911,
+    "window_rows": 1145,
+    "core_rows": 61837,
+    "core_role_aiv": 61837,
+    "windows_recomputed": 948,
+    "target_status_aiv_ub_to_gm_not_applicable": 58,
+    "target_status_pending": 139,
+    "target_status_new_dbi_audited": 13,
+    "target_status_existing_dbi_audited": 24,
+    "sheet": "Vector",
+    "columns": 85
+  },
+  "cube": {
+    "targets": 34,
+    "target_status_aiv_not_applicable": 34,
+    "window_rows": 34,
+    "core_rows": 952,
+    "core_role_aic": 952,
+    "sheet": "Cube",
+    "columns": 96
+  },
+  "mix": {
+    "targets": 82,
+    "target_status_new_dbi_audited_alarm": 58,
+    "window_rows": 82,
+    "core_rows": 6360,
+    "core_role_aic": 2120,
+    "core_role_aiv": 4240,
+    "windows_recomputed": 58,
+    "target_status_aiv_ub_to_gm_not_applicable": 16,
+    "target_status_pending": 8,
+    "sheet": "CV融合",
+    "columns": 146
+  }
+}
