@@ -195,4 +195,4 @@ The refreshed inventory is a point-in-time ledger. Do not treat an inventory ent
 
 - `rope-audit-v2/` replaces the quadratic search over disjoint address intervals with binary search. The original first case produced identical audit output, and a large strided case passed missing/duplicate/CSV/alias negative tests. The old slow audit was intentionally stopped and retained, then the large case was re-audited; the continuation supervisor preserves queue order. The saved supervisor is point-in-time evidence with specific process IDs and is not a portable restart command.
 
-- `draft-early-rope-probe/` preserves a byte-exact one-case historical harness and queued application-replay Q probe. The probe is not yet executed or byte-audited; old range-replay results remain separate. Harness archive SHA-256: `f8db2479a85783ea95663d61ba1ead74e29b29a02379146ca2fc7fa0d39f2e89`.
+- `draft-early-rope-probe/` preserves a byte-exact one-case historical harness and queued application-replay Q probe. The probe is not yet executed or byte-audited; old range-replay results remain separate. Harness archive SHA-256: `a4b5ebee5d72df22e096b251fc64d47677bda0ceac5dd2c87aea6f58c66beb87`.
