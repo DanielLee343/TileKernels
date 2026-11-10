@@ -1,3 +1,3 @@
-# Intermediate RoPE v7 inventory snapshot
+# RoPE v7 inventory
 
-Seventeen newly validated windows through 19-K are indexed and their raw data are in the `../rope-v7-interim/` archives. The 20-Q/K windows are still being collected. The 11-K retry completed under guard v7 with 225 successful queries and no real invalid-query retry observed.
+All 40 Q/K windows are indexed. Their full raw data are in `../rope-v7-complete/rope-v7-queue-snapshot-archive-bundle.tar.gz`. The 11-K retry used guard v7; 225 successful queries, with no real invalid-query retry observed.
