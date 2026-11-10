@@ -134,6 +134,13 @@ Later commits will add the remaining evidence and updated inventory.
   `c09320a224661a0054c77db85c0cc7cb77b3f9f0cc437b7b68c284464320fbc6`.
   Verify it using `python tools/verify-support-snapshot.py <bundle>`.
   It is a point-in-time support snapshot, not a portable CANN/Python runtime.
+- `initial-hidev/local-reproduction-snapshot.tar.gz` contains 948 local audit,
+  preparation and verification scripts plus point-in-time progress documents.
+  Its SHA-256 is
+  `529903ec79648bdce633233c40520f99e766c54daee9c207f50306b2d675345e`.
+  Verify it using `python tools/verify-local-reproduction.py <bundle>`. Paths
+  refer to the original workspace and collection hosts; the data and runtime
+  are separate, and subsequent scripts and progress require a later snapshot.
 - `inventory/targets.csv` and `inventory/inventory-summary.json` are a point-in-time
   snapshot. Paths in the ledger refer to the collection workspaces; a ledger row
   does not mean its raw capture is included in this commit. Statuses distinguish
