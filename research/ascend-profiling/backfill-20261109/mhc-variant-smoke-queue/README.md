@@ -1,0 +1,3 @@
+# mHC recompute additional variant smoke queue
+
+These point-in-time hidev scripts enqueue representatives for 10 layers/9 post layers (case 03), 3 layers/2 post layers (case 09), and 3 layers/3 post layers (case 10), serially after the 10-layer/10-post queue. They capture and inspect input/source identity; they do not produce a byte audit. Each watcher archives its own attempted case after the job exits, including failures. Additional address/byte audits require generated-source and output inspection for the relevant execution branch. The helper uses a unique path and the launchers fail on path collisions.
