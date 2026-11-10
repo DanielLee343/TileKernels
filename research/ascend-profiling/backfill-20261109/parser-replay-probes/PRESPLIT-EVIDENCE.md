@@ -1,0 +1,5 @@
+# Pre-split forward capture completeness
+
+For `sixth/presplit-fwd-01`, application replay attempt 002 passed the independent correctness test and was matched to the historical input hashes and source after normalizing the diagnostic checkout path. In the captured device binary, stores at offsets `0x3f4`, `0x400` and `0x42c` are in one straight-line segment; only `0x3f4` appears in five DBI records. The raw snapshot is preserved in `../preapply-bigfuse-audits/presplit-fwd-queue-snapshot-archive-bundle.tar.gz`, and its SHA256 is documented there.
+
+The checked source revision `884ac969494a186a9c63ac45c4c39ad7289b3215` matches the captured tool version. In `csrc/op_profiling/profiling/device/data_parse/dbi_parser.cpp`, `ParseMemoryChart` updates `droppedRecord` using the record count declared in a received packet minus processed records. It therefore does not count events absent before packet construction. Zero reported dropped records is insufficient for a completeness claim. The exact missing stage is unknown. An independent repeat is queued; its outcome remains unknown.
