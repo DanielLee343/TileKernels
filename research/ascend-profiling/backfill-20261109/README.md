@@ -194,3 +194,5 @@ The refreshed inventory is a point-in-time ledger. Do not treat an inventory ent
 - `draft-hash-probe/` prepares a single hash-15 application-replay diagnostic to compare parser integrity against the flagged historical kernel-replay window. At publication it is queued and not yet executed; it does not grant byte-audit admission.
 
 - `rope-audit-v2/` replaces the quadratic search over disjoint address intervals with binary search. The original first case produced identical audit output, and a large strided case passed missing/duplicate/CSV/alias negative tests. The old slow audit was intentionally stopped and retained, then the large case was re-audited; the continuation supervisor preserves queue order. The saved supervisor is point-in-time evidence with specific process IDs and is not a portable restart command.
+
+- `draft-early-rope-probe/` preserves a byte-exact one-case historical harness and queued application-replay Q probe. The probe is not yet executed or byte-audited; old range-replay results remain separate. Harness archive SHA-256: `f8db2479a85783ea95663d61ba1ead74e29b29a02379146ca2fc7fa0d39f2e89`.
