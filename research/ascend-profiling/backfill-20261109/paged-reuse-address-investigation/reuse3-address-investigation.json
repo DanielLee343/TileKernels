@@ -1,0 +1,187 @@
+{
+  "case": "campaign-13/paged-sparse-fp8-q4-k256-h8-b8",
+  "status": "prewarm_verified_postwarm_comparison",
+  "historical_prewarm_input_match": true,
+  "historical_jit_source_match": true,
+  "processes": 9,
+  "historical_prewarm_metadata_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+  "distinct_after_warmups_sha256": [
+    "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f"
+  ],
+  "distinct_after_target_sha256": [
+    "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f"
+  ],
+  "previous_reuse_window_metadata_sha256": "511f4806732e103bdd5a5d58254a108e0cf415ac28620c23dd5b16e706888e4e",
+  "previous_reuse_matches_all_postwarm": false,
+  "capture": {
+    "op_name": "_ZN9deep_gemm28paged_sparse_mqa_logits_implILb0ELb0ELj8ELj8ELm8448ELj64EEEvjjPhPsS1_S1_Pu6__bf16S3_PjPtS4_",
+    "op_type": "mix",
+    "jit_binary_sha256": "852d55fc069ec1809ea5028e538960d8aa503941ab3a405ca2505d6154e151f6",
+    "jit_directory": "/workspace/expert-profile-backfill-20261109-hidev/deepgemm-cache/paged-sparse-fp8-q4-k256-h8-b8/cache/paged_sparse_mqa_logits.a206ca4e1b2974d5d2b1673c8124a8b8",
+    "metric_rows": {
+      "ArithmeticUtilization": 84,
+      "L2Cache": 84,
+      "Memory": 84,
+      "MemoryL0": 84,
+      "MemoryUB": 84,
+      "PipeUtilization": 84,
+      "ResourceConflictRatio": 84
+    }
+  },
+  "records": [
+    {
+      "pid": "3281541",
+      "profile": "profile-3281541.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3281541.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3281541.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3281541.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3281541.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3282618",
+      "profile": "profile-3282618.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3282618.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3282618.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3282618.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3282618.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3283637",
+      "profile": "profile-3283637.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3283637.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3283637.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3283637.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3283637.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3284713",
+      "profile": "profile-3284713.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3284713.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3284713.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3284713.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3284713.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3285676",
+      "profile": "profile-3285676.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3285676.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3285676.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3285676.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3285676.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3286651",
+      "profile": "profile-3286651.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3286651.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3286651.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3286651.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3286651.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3287667",
+      "profile": "profile-3287667.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3287667.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3287667.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3287667.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3287667.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3289002",
+      "profile": "profile-3289002.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3289002.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3289002.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3289002.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3289002.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    },
+    {
+      "pid": "3290022",
+      "profile": "profile-3290022.json",
+      "profile_sha256": "489e4aeba22d75106b87ddfdbdb4f2162e179b9ee4c24c26756775238c973bb3",
+      "prewarm": "frozen-prewarm-3290022.bin",
+      "prewarm_sha256": "eb20dc3c61b19029023a371cd1368db4a5733bd1d0148e632732cdea40bae1af",
+      "after_warmups": "frozen-after-warmups-3290022.bin",
+      "after_warmups_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "after_target": "frozen-after-target-3290022.bin",
+      "after_target_sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+      "addresses": "frozen-addresses-3290022.json",
+      "addresses_sha256": "db99e1aa4c206727804d80caf936d828b175d6a0587da53e31bee777c99d1759",
+      "state": {
+        "sha256": "7f04280142db0cef616c93b688fa4adc8f06b6f9a844a20a0dfd57edd209801f",
+        "state_repr": "((4, 16, 8, 64, 28, torch.float8_e4m3fn), False)"
+      }
+    }
+  ],
+  "scope": "reconstruction follows archived prewarm order; equality is observed only across new application processes, not a byte snapshot of historical postwarm state; address audit remains pending"
+}

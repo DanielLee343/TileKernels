@@ -1,0 +1,7 @@
+mapping equal True diff_bytes 0
+ranges equal True diff_bytes 0
+physical equal True diff_bytes 0
+compact_all equal False diff_bytes 64959
+active_descriptors_equal True count 28
+active_data_bytes 37888 different 0 active_scale_bytes 1184 different 0
+CAVEAT: this compares new frozen pre-target state with a separate old REUSE window, not unrecorded original pre-target metadata

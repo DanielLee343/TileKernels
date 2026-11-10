@@ -1,0 +1,13 @@
+{
+  "status": "investigation_only",
+  "case": "paged-sparse-fp8-q4-k256-h8-b8",
+  "events": 52,
+  "pcs": [
+    "0x2730"
+  ],
+  "requested_bytes": 1024,
+  "output_ranges_match": true,
+  "csv_match": true,
+  "binary_sha256": "852d55fc069ec1809ea5028e538960d8aa503941ab3a405ca2505d6154e151f6",
+  "scope": "new independent REUSE window; original historical post-warm metadata unrecorded, not promoted"
+}
