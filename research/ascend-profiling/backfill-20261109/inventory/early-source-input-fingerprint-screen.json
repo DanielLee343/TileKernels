@@ -1,0 +1,6 @@
+{
+  "scope": "conservative fingerprint screen only; exact source hash and multiset of recorded input hashes; omits source path normalization, order and semantic mapping; no profiles reused",
+  "main_indexed": 987,
+  "early_indexed": 44,
+  "matches": []
+}
