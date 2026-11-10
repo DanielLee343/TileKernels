@@ -157,14 +157,17 @@ def main():
                 reused='outputs/gcm-profile-screen-20261108/mte3-x1-x3/byte-smoke/tbe/dbi-address-audit.json';status='existing_dbi_audited'
                 scope='tbe detail window'
             else: note='earlier task contract and main-archive overlap require verification'
-            if case == 'castback-n1-h128-bf16':
-                audit_path=HERE/'early-castback-single-audit-result-20261110.json'
+            early_castback_sizes={'castback-n1-h128-bf16':256,'castback-n512-h2048-bf16':2097152,'castback-n512-h2048-fp32':4194304,'castback-n8001-h2048-fp32':65544192}
+            if case in early_castback_sizes:
+                single=case=='castback-n1-h128-bf16'
+                audit_path=HERE/('early-castback-single-audit-result-20261110.json' if single else 'early-'+case+'-audit-result-20261110.json')
                 if audit_path.exists():
                     audit=load(audit_path)
                     assert target==case and audit['target']=='early/'+case and audit['status']=='passed'
                     assert audit['correctness']=='passed' and audit['historical_input_and_source_match'] is True
-                    assert audit['dbi_requested_bytes']==audit['output_logical_bytes']==256 and audit['replay_mode']=='application'
-                    reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/early-castback-single-runs-20261110/'+case+'/hidev-npu0/attempt-001/detail'
+                    assert audit['dbi_requested_bytes']==audit['output_logical_bytes']==early_castback_sizes[case] and audit['replay_mode']=='application'
+                    group='early-castback-single-runs-20261110' if single else 'early-castback-batch-runs-20261110'
+                    reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/attempt-001/detail'
                     status='new_dbi_audited_alarm';scope='new hidev application-replay detail window; historical kernel replay and physical board separate; device Alarm 8C4BA00C'
                     note='single historical call; matched input hashes and generated source; separate replay windows'
             if case.startswith('rope-'):
@@ -279,7 +282,7 @@ def main():
         w=csv.DictWriter(f,fieldnames=list(ledger[0]));w.writeheader();w.writerows(ledger)
     counts=Counter((x['batch'],x['per_core_requested_bytes_status']) for x in ledger)
     summary={'rows':len(ledger),'counts':{' | '.join(k):v for k,v in sorted(counts.items())},
-             'inputs':{str(p.relative_to(ROOT)):sha(p) for p in (INDEX,RECAP,DEEP,earlier_path,new_path,hidev_path,precision_meta_path,parser_sweep_path,HERE/'early-castback-single-audit-result-20261110.json',deep_new_path,head_path,head_bwd_path,sleep_path,paged_path,direct_path,pilot_direct_path,sparse_path,mega_path) if p.exists()},
+             'inputs':{str(p.relative_to(ROOT)):sha(p) for p in (INDEX,RECAP,DEEP,earlier_path,new_path,hidev_path,precision_meta_path,parser_sweep_path,HERE/'early-castback-single-audit-result-20261110.json',*(HERE/('early-'+c+'-audit-result-20261110.json') for c in ('castback-n512-h2048-bf16','castback-n512-h2048-fp32','castback-n8001-h2048-fp32')),deep_new_path,head_path,head_bwd_path,sleep_path,paged_path,direct_path,pilot_direct_path,sparse_path,mega_path) if p.exists()},
              'unresolved_contract_duplicates':'early records require exact input and target comparison; retained separately',
              'raw_bytes_scope':'requested UB to GM bytes, not physical DRAM writes',
              'bandwidth_fields':'not reconstructed without verified tool formula and same-window denominator'}
