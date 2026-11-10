@@ -192,15 +192,16 @@ def main():
                     reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/attempt-001/detail'
                     status='new_dbi_audited_alarm';scope='new hidev application-replay detail window; historical replay and physical board separate; device Alarm 8C4BA00C'
                     note='single historical call; matched input hashes and generated source; separate replay windows'
-            if case=='sinkhorn-cann-1':
-                audit_path=HERE/'early-sinkhorn-cann-1-audit-result-20261110.json'
+            if case.startswith('sinkhorn-'):
+                audit_path=HERE/('early-'+case+'-audit-result-20261110.json')
                 if audit_path.exists():
                     audit=load(audit_path);definition=earlier[case]['definition'];dtype,=definition['output_dtypes'];shape,=definition['output_shapes'];size={'float32':4}[dtype]*__import__('math').prod(shape)
                     assert target==case and audit['target']=='early/'+case and audit['status']=='passed'
                     assert audit['correctness']=='passed' and audit['historical_input_and_source_match'] is True
                     assert audit['dbi_requested_bytes']==audit['output_logical_bytes']==size and audit['replay_mode']=='application'
-                    group='early-sinkhorn-single-runs-20261110'
-                    reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/attempt-002/detail'
+                    group='early-sinkhorn-single-runs-20261110' if case=='sinkhorn-cann-1' else 'early-sinkhorn-batch-runs-20261110'
+                    attempt='attempt-002' if case=='sinkhorn-cann-1' else 'attempt-001'
+                    reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/'+attempt+'/detail'
                     status='new_dbi_audited_alarm';scope='new hidev application-replay detail window; historical replay and physical board separate; device Alarm 8C4BA00C'
                     note='new warmup5 single-call capture; old warmup0 profile only reference; matched input hashes and generated source; separate replay windows'
             if case.startswith('rope-'):
