@@ -1,0 +1,4 @@
+__POST_BWD_02_V2_TEST_BEGIN__
+PASS mhc_post_bwd-02 1175715840
+PASS rejects missing output, duplicate store, wrong CSV and output alias
+__POST_BWD_02_V2_TEST_END__

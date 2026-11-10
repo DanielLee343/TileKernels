@@ -1,0 +1,5 @@
+# mHC post backward case 02 reassessment
+
+The first audit failed because it assumed four static device store PCs from four source stores. The generated device binary instead contains six `MOV_UB_TO_OUT` PCs and all six were observed. The revised audit retains exact static/dynamic PC equality, source-output binding, complete output interval coverage, non-overlap, parser-health and same-window per-core CSV checks; it removes the unsupported fixed PC count. Requested UB-to-GM bytes are 1,175,715,840 across the four outputs. Negative tests rejected missing or duplicate writes, a wrong CSV and output/input alias. The original queue failure is preserved alongside the independent reassessment. Requested bytes are not physical DRAM bytes.
+
+The 86-file, 8-CSV snapshot was independently verified on hidev and workstation; SHA256 `d21cff808ea12d6d6d2ed0b2cb91c0cd7deb267b26d89ea4d094be0c1b2e350b`. The v4 queue waits behind the ten-layer smoke, skips already audited cases and checks the explicit 19 eligible IDs; case 04 remains separately labelled.
