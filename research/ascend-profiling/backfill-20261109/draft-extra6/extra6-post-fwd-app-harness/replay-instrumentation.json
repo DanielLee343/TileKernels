@@ -1,0 +1,15 @@
+{
+  "scope": "application replay metadata only; no kernel changes; not yet executed",
+  "original_adapter": "TileKernels-private\\research\\ascend-profiling\\collector\\unified\\extra_post_fwd_retry.py",
+  "original_sha256": "855be0b155c370b77e5b765a9b5316385c0b4fbf20379144e687ecf3f668dbe0",
+  "instrumented_sha256": "d26b8cf9af93d4967c5aeec3a12435334c6cbed0768e7205d64f98c31e24d68c",
+  "targets": [
+    "unified-extra6/post-fwd-02-retry",
+    "unified-extra6/post-fwd-04-retry",
+    "unified-extra6/post-fwd-10-retry",
+    "unified-extra6/post-fwd-11-retry",
+    "unified-extra6/post-fwd-12-retry",
+    "unified-extra6/post-fwd-18-retry",
+    "unified-extra6/post-fwd-20-retry"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "adapter": "extra_finalize_retry.py",
+      "group": "engram_sinkhorn_finalize",
+      "id": "finalize-02-retry",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 100001
+      },
+      "pilot": true,
+      "plan_case_number": 2,
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-02",
+      "target_id": "unified-extra6/finalize-02-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/finalize-02-retry/default.json",
+      "historical_op_name": "engram_sinkhorn_finalize_kernel_asc_kernel"
+    },
+    {
+      "adapter": "extra_finalize_retry.py",
+      "group": "engram_sinkhorn_finalize",
+      "id": "finalize-13-retry",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 10001
+      },
+      "pilot": false,
+      "plan_case_number": 13,
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-13",
+      "target_id": "unified-extra6/finalize-13-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/finalize-13-retry/default.json",
+      "historical_op_name": "engram_sinkhorn_finalize_kernel_asc_kernel"
+    },
+    {
+      "adapter": "extra_finalize_retry.py",
+      "group": "engram_sinkhorn_finalize",
+      "id": "finalize-17-retry",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 16384
+      },
+      "pilot": false,
+      "plan_case_number": 17,
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-17",
+      "target_id": "unified-extra6/finalize-17-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/finalize-17-retry/default.json",
+      "historical_op_name": "engram_sinkhorn_finalize_kernel_asc_kernel"
+    },
+    {
+      "adapter": "extra_finalize_retry.py",
+      "group": "engram_sinkhorn_finalize",
+      "id": "finalize-19-retry",
+      "params": {
+        "eps": 1e-20,
+        "head_dim": 5120,
+        "num_rows": 32768
+      },
+      "pilot": false,
+      "plan_case_number": 19,
+      "range": "quant_target",
+      "retry_of": "fourth/finalize-19",
+      "target_id": "unified-extra6/finalize-19-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/finalize-19-retry/default.json",
+      "historical_op_name": "engram_sinkhorn_finalize_kernel_asc_kernel"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+--- original
++++ instrumented
+@@ -32,6 +32,7 @@
+ 
+ 
+ def run(group, params, stage, record_path):
++    record_path = Path(record_path).with_name('application-' + str(os.getpid()) + '.json')
+     import torch
+     import torch_npu
+     from tile_kernels.rand import set_seed
+@@ -63,6 +64,14 @@
+                              source_sha256=hashlib.sha256(kernel.get_kernel_source().encode()).hexdigest(),
+                              inputs=[hash_tensor(t, torch) for t in inputs])
+                 if stage == 'default':
++                    meta = []
++                    for t in tensors:
++                        if isinstance(t, torch.Tensor):
++                            meta.append({'address': hex(t.data_ptr()), 'device': str(t.device), 'shape': list(t.shape), 'stride': list(t.stride()), 'dtype': str(t.dtype), 'element_size': t.element_size(), 'logical_bytes': t.numel() * t.element_size()})
++                        else:
++                            meta.append(None)
++                    Path(record_path).with_name('tensor-addresses-' + str(os.getpid()) + '.json').write_text(json.dumps(meta, indent=2) + '\n')
++                    Path(record_path).with_name('generated-kernel-' + str(os.getpid()) + '.cpp').write_text(kernel.get_kernel_source())
+                     for _ in range(5):
+                         kernel(*tensors)
+                     torch.npu.synchronize()

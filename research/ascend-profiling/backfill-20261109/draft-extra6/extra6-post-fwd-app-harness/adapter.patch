@@ -1,0 +1,23 @@
+--- original
++++ instrumented
+@@ -11,6 +11,7 @@
+     return {'shape':list(t.shape),'stride':list(t.stride()),'dtype':str(t.dtype),'sha256':h.hexdigest()}
+ 
+ def run(group,params,stage,record):
++    record = Path(record).with_name('application-' + str(os.getpid()) + '.json')
+     if group!=GROUP or stage not in ('prepare','default') or set(params)!={'n0','n1','hidden','mhc_mult'} or params['mhc_mult']!=4:
+         raise ValueError('invalid group, stage or original parameters')
+     import torch
+@@ -27,6 +28,12 @@
+                 source_sha256=hashlib.sha256(kernel.get_kernel_source().encode()).hexdigest(),
+                 inputs=[tensor_hash(t,torch) for t in args[:4]],native_kwargs=kwargs)
+             if stage=='default':
++                meta=[]
++                for t in args:
++                    if isinstance(t,torch.Tensor):meta.append({'address':hex(t.data_ptr()),'device':str(t.device),'shape':list(t.shape),'stride':list(t.stride()),'dtype':str(t.dtype),'element_size':t.element_size(),'logical_bytes':t.numel()*t.element_size()})
++                    else:meta.append(None)
++                Path(record).with_name('tensor-addresses-'+str(os.getpid())+'.json').write_text(json.dumps(meta,indent=2)+'\n')
++                Path(record).with_name('generated-kernel-'+str(os.getpid())+'.cpp').write_text(kernel.get_kernel_source())
+                 for _ in range(5):orig(*args,**kwargs)
+                 torch.npu.synchronize()
+                 api=ctypes.CDLL(str(Path(os.environ['ASCEND_HOME_PATH'])/'tools/mstx/lib64/libms_tools_ext.so'))

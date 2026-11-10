@@ -1,0 +1,12 @@
+{
+  "scope": "application replay metadata only; no kernel changes; not yet executed",
+  "original_adapter": "TileKernels-private\\research\\ascend-profiling\\collector\\unified\\extra_finalize_retry.py",
+  "original_sha256": "83bccc824944eda8e01bc40e3ffa55ffc268f371603a7d9898927ebabecbac7a",
+  "instrumented_sha256": "e9f5613352c75fa666cc625adfff04191119b8d82d456a24b5a71d695c6c01a7",
+  "targets": [
+    "unified-extra6/finalize-02-retry",
+    "unified-extra6/finalize-13-retry",
+    "unified-extra6/finalize-17-retry",
+    "unified-extra6/finalize-19-retry"
+  ]
+}

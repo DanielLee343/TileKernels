@@ -1,0 +1,130 @@
+{
+  "cases": [
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-02-retry",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 8192
+      },
+      "pilot": true,
+      "plan_case_number": 2,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-02",
+      "target_id": "unified-extra6/post-fwd-02-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-02-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-04-retry",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "pilot": false,
+      "plan_case_number": 4,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-04",
+      "target_id": "unified-extra6/post-fwd-04-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-04-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-10-retry",
+      "params": {
+        "hidden": 2560,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 8192
+      },
+      "pilot": false,
+      "plan_case_number": 10,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-10",
+      "target_id": "unified-extra6/post-fwd-10-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-10-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-11-retry",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 4096
+      },
+      "pilot": false,
+      "plan_case_number": 11,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-11",
+      "target_id": "unified-extra6/post-fwd-11-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-11-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-12-retry",
+      "params": {
+        "hidden": 1280,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 8192
+      },
+      "pilot": false,
+      "plan_case_number": 12,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-12",
+      "target_id": "unified-extra6/post-fwd-12-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-12-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-18-retry",
+      "params": {
+        "hidden": 5120,
+        "mhc_mult": 4,
+        "n0": 2,
+        "n1": 8192
+      },
+      "pilot": false,
+      "plan_case_number": 18,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-18",
+      "target_id": "unified-extra6/post-fwd-18-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-18-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    },
+    {
+      "adapter": "extra_post_fwd_retry.py",
+      "group": "mhc_post_fwd",
+      "id": "post-fwd-20-retry",
+      "params": {
+        "hidden": 7168,
+        "mhc_mult": 4,
+        "n0": 1,
+        "n1": 2048
+      },
+      "pilot": false,
+      "plan_case_number": 20,
+      "range": "quant_target",
+      "retry_of": "fifth/post-fwd-20",
+      "target_id": "unified-extra6/post-fwd-20-retry",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra6/cases/post-fwd-20-retry/default.json",
+      "historical_op_name": "mhc_post_fwd_asc_kernel"
+    }
+  ]
+}
