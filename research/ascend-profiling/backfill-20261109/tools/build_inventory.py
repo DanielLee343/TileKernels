@@ -27,6 +27,14 @@ def main():
     parser_sweep=load(parser_sweep_path) if parser_sweep_path.exists() else {'flagged':[],'missing':[]}
     parser_flags={x['target']:x for x in parser_sweep['flagged']}
     assert len(parser_flags)==len(parser_sweep['flagged'])
+    if parser_sweep_path.exists():
+        parser_index_path=HERE/'hidev-capture-index.json'
+        assert parser_sweep.get('source_index_sha256')==sha(parser_index_path), 'parser sweep must correspond to the imported index'
+        parser_index=load(parser_index_path);assert parser_sweep['source_index_cases']==len(parser_index['cases'])
+        index_by_target={x['target']:x for x in parser_index['cases']};assert len(index_by_target)==len(parser_index['cases'])
+        for target,reason in parser_sweep['missing']:
+            assert target in index_by_target and target not in parser_flags
+            parser_flags[target]={'target':target,'path':index_by_target[target]['raw_dir']+'/profile.log','errors':['parser summary not checked: '+reason]}
     deep_new_path=HERE/'deepgemm-new-captures.json'
     deep_new=load(deep_new_path) if deep_new_path.exists() else {}
     head_path=HERE/'historical-head-no-ub-gm.json'
