@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 20,
-    "tilekernels-earlier | pending": 98,
+    "tilekernels-earlier | new_dbi_audited_alarm": 22,
+    "tilekernels-earlier | pending": 96,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -38,8 +38,10 @@
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-09-audit-result-20261110.json": "990db30e7b4fcf051b6d1940336b4a34e1ca90699a48d1bccced25fe81503c0d",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-10-audit-result-20261110.json": "29b0fbcf3e25893a5e6d2d1237a2a0ed2b77c2a2c9b0629b40213b9c55fdc1c8",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-11-audit-result-20261110.json": "f5e99091933ab91cd4db63c75270859c13be74c4a27d063444a3ef8c559e709d",
+    "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-12-audit-result-20261110.json": "62812ef4cb3087f5e32498940071f390b4873f1ec66da6c84c27a2aad38dec57",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-13-audit-result-20261110.json": "237a5e5ff9071446e37f874032e2c770b7e25a0420ee27a63606d06ddbed49ec",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-14-audit-result-20261110.json": "3c423a2bf02defa08edfeb1c7d49da8ecf7b124fc59a8a19e5a583f11de51ce5",
+    "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-15-audit-result-20261110.json": "16ad614222b2826599726875f4a8e564afc99b47dda5e7c3baae6053e31283d2",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-16-audit-result-20261110.json": "910f17bda0b403f44d42b4f1749c83cad1cd8d362604c127c085a2faf7441ab2",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-17-audit-result-20261110.json": "f4051e57784706329e0be9f214532dfd0e489021f2d698f094486b6f3217a045",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-18-audit-result-20261110.json": "8afe80e1671ee8112edefcf55e64d289651285291612568d43257805690c747c",
