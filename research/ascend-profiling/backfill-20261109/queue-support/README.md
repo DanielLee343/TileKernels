@@ -1,0 +1,3 @@
+# Queued follow-up support scripts
+
+These scripts are a point-in-time record of the hidev queue, not a portable one-click install. They assume the task root, device lock, pinned toolchain and preceding queue state, and fail if expected state is missing. The post-backward queue v3 checks exact eligible IDs, waits for the existing early RoPE probe and preserves its own status. Deploy steps 01–07 install and hash-check the one-layer queue, its audit and archive support; the finish script starts it after post-backward v3. A separate 10-layer smoke waits after the one-layer queue and produces only an identity result pending address audit. Review absolute paths and dependencies before reproducing.
