@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 43,
-    "tilekernels-earlier | pending": 75,
+    "tilekernels-earlier | new_dbi_audited_alarm": 46,
+    "tilekernels-earlier | pending": 72,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -59,8 +59,11 @@
     "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-supp-08-audit-result-20261110.json": "2357b09c261ae6b614fb352f52cff17ee2b7509153c8be43f331e307b5917e07",
     "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-supp-09-audit-result-20261110.json": "9dd124a884663540ddda7cdd9168b4c6f554e4a3fc2a6223d480f88bcaab74dd",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-1-audit-result-20261110.json": "9078351425b45b657e407ca7f848427655568eeb93a22df1c087c0e2e8fa3fc8",
+    "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-13-audit-result-20261110.json": "94069d364bb03bbcaa951aa7fab1fefe5340a5f241d4c67590f1c1bfa91818b8",
+    "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-14-audit-result-20261110.json": "2455662c605b58c3251cb1df652228a62db59ad85d4e802b5e91cff39baf3748",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-2-audit-result-20261110.json": "4106cc3a78ced874b8066b330f2fb2c08f8f41faa027c5105370fdb1ecb40cfb",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-3-audit-result-20261110.json": "dc06459039c2e8b3f0a613a2365be48497a269eaa28383f5cee26122d0dec5a5",
+    "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-cann-4-audit-result-20261110.json": "05f02442eba0ac58f6b746aa40f1b18b69abf372d466ccb02fb08309e338c587",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-supp-01-audit-result-20261110.json": "d33e9fcf7aec5ffd35bf446a9ba2463f762178cbcfc8a76d32c68498485f57fc",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-supp-02-audit-result-20261110.json": "4d97c065316722f8bd6bac04411da63b766590990723960fc5777d064d052747",
     "outputs\\expert-profile-backfill-20261109\\early-sinkhorn-supp-03-audit-result-20261110.json": "871ee7d638b4a165721321296d3c266450949a04ea0ef881a372d070086f258e",
