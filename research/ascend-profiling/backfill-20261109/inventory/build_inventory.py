@@ -211,10 +211,10 @@ def main():
                     assert target==case and audit['target']=='early/'+case and audit['status']=='passed'
                     assert audit['correctness']=='passed' and audit['historical_input_and_source_match'] is True
                     assert audit['dbi_requested_bytes']==audit['output_logical_bytes']==size and audit['replay_mode']=='application'
-                    group='early-fused-single-runs-20261110' if case=='fused-h768' else 'early-fused-batch-runs-20261110'
+                    group=('early-fused-single-runs-20261110' if case=='fused-h768' else 'early-fused3584-single-runs-20261110' if case=='fused-h3584' else 'early-fused-batch-runs-20261110')
                     reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/attempt-001/detail'
                     status='new_dbi_audited_alarm';scope='new hidev application-replay detail window; historical replay and physical board separate; device Alarm 8C4BA00C'
-                    note='single historical call; matched input hashes and generated source; separate replay windows'
+                    note=('28-core custom control, historically faster than original in three same-input same-method observations; matched input and source; separate replay windows' if case=='fused-h3584' else 'single historical call; matched input hashes and generated source; separate replay windows')
             if case.startswith('rope-'):
                 note+='; original range capture call index only; Q/K mapping not inferred'
         elif batch=='deepgemm-original':
