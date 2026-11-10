@@ -1,0 +1,15 @@
+set -Eeuo pipefail
+echo __WORKBOOK_SIX_ARCHIVE_BEGIN__
+r=/workspace/expert-profile-backfill-20261109-hidev;f="$r/snapshot-workbook-six-windows-20261110.py";o=/workspace/expert-profile-backfill-20261109-workbook-six-windows-20261110
+test ! -e "$f";test ! -e "$o";test ! -e "$r/workbook-six-windows-20261110.pid"
+printf %s 'IiIiU25hcHNob3Qgc2l4IGNvbXBsZXRlZCB3b3JrYm9vayB3aW5kb3dzOyBubyBuZXcgcHJvZmlsaW5nLiIiIgppbXBvcnQgaW1wb3J0bGliLnV0aWwsc3VicHJvY2VzcyxzeXMKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCnI9UGF0aCgnL3dvcmtzcGFjZS9leHBlcnQtcHJvZmlsZS1iYWNrZmlsbC0yMDI2MTEwOS1oaWRldicpO3NwZWM9aW1wb3J0bGliLnV0aWwuc3BlY19mcm9tX2ZpbGVfbG9jYXRpb24oJ2FyY2hpdmVfY2FwdHVyZXMnLHIvJ2FyY2hpdmUtY2FwdHVyZXMucHknKTttPWltcG9ydGxpYi51dGlsLm1vZHVsZV9mcm9tX3NwZWMoc3BlYyk7c3BlYy5sb2FkZXIuZXhlY19tb2R1bGUobSkKZXh0cmE9WygndW5pZmllZC1leHRyYTInLCdtaGNfcG9zdF9id2QtMDEnKSwoJ3VuaWZpZWQtZXh0cmE0JywnbWhjX3ByZV9hcHBseV9taXhfYndkLTAxJyksKCd1bmlmaWVkLWV4dHJhMycsJ21oY19wcmVfYmlnX2Z1c2VfZndkLTAxJyksKCd1bmlmaWVkLWV4dHJhNCcsJ3F1YW50X2JhdGNoZWRfdHJhbnNwb3NlX3dlaWdodF9zZi0wMScpXTtkZWVwPVsnbWdyb3VwLWZwOGZwNC1ubi1nNC1tMTI4LW4yNTYtazUxMicsJ21ncm91cC1mcDhmcDQtbnQtZzgtbTMyLW4yNTYtazUxMiddCnVuaXRzPVsoJ2V4dHJhLXByb3h5LXJ1bnMnLGErJ19fJytiLHIvJ2V4dHJhLXByb3h5LXJ1bnMnL2EvYikgZm9yIGEsYiBpbiBleHRyYV0rWygnZGVlcGdlbW0tcnVucycsYyxyLydkZWVwZ2VtbS1ydW5zJy9jKSBmb3IgYyBpbiBkZWVwXTthc3NlcnQgYWxsKHAuaXNfZGlyKCkgZm9yIF8sXyxwIGluIHVuaXRzKQpmb3IgXyxfLHAgaW4gdW5pdHM6c3VicHJvY2Vzcy5ydW4oW3N5cy5leGVjdXRhYmxlLCctQicsc3RyKHIvJ3NjYW4tcHVibGljLWFyY2hpdmUucHknKSxzdHIocCldLGNoZWNrPVRydWUpCm0uR1JPVVBTPSgnZXh0cmEtcHJveHktcnVucycsJ2RlZXBnZW1tLXJ1bnMnKTttLnNjYW5fdW5pdHM9bGFtYmRhIHJvb3Q6aXRlcih1bml0cykKZGVmIG5vX3N1cHBvcnQoc291cmNlLG91dCk6CiBwPW91dC8nc3VwcG9ydC5qc29ubCc7cC53cml0ZV9ieXRlcyhiJycpO3JldHVybiAwLG0uc2hhKHApCm0uY29weV9zdXBwb3J0PW5vX3N1cHBvcnQKc3lzLmFyZ3Y9WydhcmNoaXZlLWNhcHR1cmVzLnB5JywnLS1yb290JyxzdHIociksJy0tb3V0JywnL3dvcmtzcGFjZS9leHBlcnQtcHJvZmlsZS1iYWNrZmlsbC0yMDI2MTEwOS13b3JrYm9vay1zaXgtd2luZG93cy0yMDI2MTExMCddO20ubWFpbigpCg==' | base64 -d > "$f"
+echo 'cc440559ce0aff6a09acc7520bd58ecc421e33dce40a1a9f34291c53c30c969a  '"$f" | sha256sum -c -
+nohup ionice -c 3 nice -n 15 bash -c '
+ set -Eeuo pipefail
+ r=/workspace/expert-profile-backfill-20261109-hidev;o=/workspace/expert-profile-backfill-20261109-workbook-six-windows-20261110
+ python3 -B "$r/snapshot-workbook-six-windows-20261110.py";python3 -B "$r/verify-archive.py" "$o"
+ tar -C /workspace -czf "$r/workbook-six-windows-20261110.tar.gz" "$(basename "$o")"
+ sha256sum "$r/workbook-six-windows-20261110.tar.gz";echo WORKBOOK_SIX_ARCHIVE_READY
+' > "$r/workbook-six-windows-20261110.log" 2>&1 < /dev/null &
+echo "$!" > "$r/workbook-six-windows-20261110.pid";echo ARCHIVE_PID=$!
+echo __WORKBOOK_SIX_ARCHIVE_END__
