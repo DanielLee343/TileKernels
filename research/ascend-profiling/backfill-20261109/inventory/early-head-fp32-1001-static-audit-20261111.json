@@ -1,0 +1,77 @@
+{
+  "target": "early/head-fp32-1001",
+  "status": "aiv_ub_to_gm_not_applicable",
+  "device": "hidev NPU 0",
+  "correctness": "passed",
+  "historical_input_and_source_match": true,
+  "capture_binary_sha256": "d809c9c7d768700de30164d1197e5a8b6884e33ae08cc9d74312513041e140a9",
+  "application_processes": 9,
+  "application_records": [
+    {
+      "pid": "4049867",
+      "application": "application-4049867.json",
+      "application_sha256": "3a46d0e9c28e6e506aafa793b8abb101ffc1eb60b44f8e13b77bdc4c8ccfedc5",
+      "source": "generated-kernel-4049867.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4050599",
+      "application": "application-4050599.json",
+      "application_sha256": "222268f4a4e69a17d474154666693c5a7d9a059633f839e92c1abd59b57d0fd9",
+      "source": "generated-kernel-4050599.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4051114",
+      "application": "application-4051114.json",
+      "application_sha256": "29865fbb231500b415f624cb2bf332775a8064bc1bde52cc00ae0c77089e430b",
+      "source": "generated-kernel-4051114.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4051646",
+      "application": "application-4051646.json",
+      "application_sha256": "fe312079002587e8958a2660d3e17a5a8be4bdd0a39866f60514496cde121309",
+      "source": "generated-kernel-4051646.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4052176",
+      "application": "application-4052176.json",
+      "application_sha256": "4718f1cc743e12d568c73f2bbac37541804752873141cc71c8d6dd40419cb32c",
+      "source": "generated-kernel-4052176.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4052679",
+      "application": "application-4052679.json",
+      "application_sha256": "c03542064922c79262ae981ec848fad1b2090dfd4de6b82a14128f95a31c535d",
+      "source": "generated-kernel-4052679.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4053236",
+      "application": "application-4053236.json",
+      "application_sha256": "50a8a1a27562e6c391950c78fe3a174076ae317b5af15bca374dd0ed53802a4d",
+      "source": "generated-kernel-4053236.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4054016",
+      "application": "application-4054016.json",
+      "application_sha256": "fe51c462e0f285c8bcfdd4619b16e237c45670a03f9d29b014886adcecf83c57",
+      "source": "generated-kernel-4054016.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    },
+    {
+      "pid": "4054568",
+      "application": "application-4054568.json",
+      "application_sha256": "9789669f20f421807827c965dbfd4b9c60b1695bcaf267f52f94f948f3e8c935",
+      "source": "generated-kernel-4054568.cpp",
+      "source_sha256": "e6506be35b010afa33cc833f2eb18d074ff9dba7f7577d9338c5a84ab20eb338"
+    }
+  ],
+  "evidence": "new captured source and device ISA have no UB-to-GM move; SIMT STG exists",
+  "scope": "new application replay only; SIMT writes GM directly; not zero total GM traffic; historical original binary was not available",
+  "replay_mode": "application"
+}

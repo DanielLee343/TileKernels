@@ -248,6 +248,14 @@ def main():
                     reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/'+group+'/'+case+'/hidev-npu0/attempt-001/detail'
                     status='new_dbi_audited_alarm';scope='new hidev application-replay detail window; historical replay and physical board separate; device Alarm 8C4BA00C'
                     note='single historical call; matched input hashes and generated source; separate replay windows'
+            if case in ('head-fp32-1001','head-fp32-1024'):
+                audit_path=HERE/('early-'+case+'-static-audit-20261111.json')
+                if audit_path.exists():
+                    audit=load(audit_path);assert target==case and audit['target']=='early/'+case and audit['status']=='aiv_ub_to_gm_not_applicable'
+                    assert audit['correctness']=='passed' and audit['historical_input_and_source_match'] is True and audit['replay_mode']=='application'
+                    reused=str(audit_path.relative_to(ROOT));remote_detail='/workspace/expert-profile-backfill-20261109-hidev/early-head-batch-runs-20261111/'+case+'/hidev-npu0/attempt-001/detail'
+                    status='aiv_ub_to_gm_not_applicable';scope='new hidev application-replay binary only: no UB-to-GM; SIMT direct GM stores; historical binary unavailable; device Alarm 8C4BA00C'
+                    note='new source and input match historical; original replay window and original binary remain separate'
             if case.startswith('rope-'):
                 note+='; original range capture call index only; Q/K mapping not inferred'
         elif batch=='deepgemm-original':
@@ -360,7 +368,7 @@ def main():
         w=csv.DictWriter(f,fieldnames=list(ledger[0]));w.writeheader();w.writerows(ledger)
     counts=Counter((x['batch'],x['per_core_requested_bytes_status']) for x in ledger)
     summary={'rows':len(ledger),'counts':{' | '.join(k):v for k,v in sorted(counts.items())},
-             'inputs':{str(p.relative_to(ROOT)):sha(p) for p in (INDEX,RECAP,DEEP,earlier_path,new_path,hidev_path,precision_meta_path,parser_sweep_path,HERE/'early-castback-single-audit-result-20261110.json',*sorted(HERE.glob('early-swiglu-*-audit-result-20261110.json')),*sorted(HERE.glob('early-rmsnorm-*-audit-result-20261110.json')),*sorted(HERE.glob('early-sinkhorn-*-audit-result-20261110.json')),*sorted(HERE.glob('early-fused-*-audit-result-20261110.json')),*sorted(HERE.glob('early-hash-*-audit-result-20261110.json')),*sorted(HERE.glob('early-normalize-*-audit-result-20261110.json')),*sorted(HERE.glob('early-mhc_post_bwd-*-audit-result-20261111.json')),*(HERE/('early-'+c+'-audit-result-20261110.json') for c in ('castback-n512-h2048-bf16','castback-n512-h2048-fp32','castback-n8001-h2048-fp32')),deep_new_path,head_path,head_bwd_path,sleep_path,paged_path,direct_path,pilot_direct_path,sparse_path,mega_path) if p.exists()},
+             'inputs':{str(p.relative_to(ROOT)):sha(p) for p in (INDEX,RECAP,DEEP,earlier_path,new_path,hidev_path,precision_meta_path,parser_sweep_path,HERE/'early-castback-single-audit-result-20261110.json',*sorted(HERE.glob('early-swiglu-*-audit-result-20261110.json')),*sorted(HERE.glob('early-rmsnorm-*-audit-result-20261110.json')),*sorted(HERE.glob('early-sinkhorn-*-audit-result-20261110.json')),*sorted(HERE.glob('early-fused-*-audit-result-20261110.json')),*sorted(HERE.glob('early-hash-*-audit-result-20261110.json')),*sorted(HERE.glob('early-normalize-*-audit-result-20261110.json')),*sorted(HERE.glob('early-mhc_post_bwd-*-audit-result-20261111.json')),*sorted(HERE.glob('early-head-*-static-audit-20261111.json')),*(HERE/('early-'+c+'-audit-result-20261110.json') for c in ('castback-n512-h2048-bf16','castback-n512-h2048-fp32','castback-n8001-h2048-fp32')),deep_new_path,head_path,head_bwd_path,sleep_path,paged_path,direct_path,pilot_direct_path,sparse_path,mega_path) if p.exists()},
              'unresolved_contract_duplicates':'early records require exact input and target comparison; retained separately',
              'raw_bytes_scope':'requested UB to GM bytes, not physical DRAM writes',
              'bandwidth_fields':'not reconstructed without verified tool formula and same-window denominator'}
