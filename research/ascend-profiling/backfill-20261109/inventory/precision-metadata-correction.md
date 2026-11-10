@@ -1,0 +1,5 @@
+# Correction: historical metadata for 13 precision-labelled captures
+
+Earlier notes said these cases lacked historical input/source matching information because the ordinary `default.json` was absent. That statement was incorrect. All 13 later captures have `capture-record.json` with input and generated-source hashes and a `capture-result.json` reporting same input/source/kernel; the recorded OpBasicInfo SHA256 was rechecked. Their original CPU reference checks all failed. The NPU chunked comparison for post backward 04 passed but does not change the failed CPU reference label.
+
+`precision-capture-metadata-index.json` records the actual paths and hashes. Its paths are workspace-relative and begin with `TileKernels-private/`; strip that component when resolving them from this fork's root. A new replay must still be run and compared with those recorded hashes. No precision result was changed and all 13 byte audits remain pending. The inventory-building scripts are snapshots of the D:/puma_v2 workspace workflow and require the corresponding local inputs.

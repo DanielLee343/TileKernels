@@ -23,6 +23,7 @@
     "outputs\\tilekernels-profile-inventory-reset-20261105\\inventory.json": "6cd7187a63d10ae2e6cd6bb5794a68adc70f4b1e7b355d1e3e5d73066047cf6f",
     "outputs\\expert-profile-backfill-20261109\\new-captures.json": "a4744366b07b2fc721bf99baed0779dc83f73094814ddea3f16eded25fce79c4",
     "outputs\\expert-profile-backfill-20261109\\new-captures-hidev.json": "59cbd18e198fc65b9e71dc11d77c1199c5b0b1e0ca522303a4996bf97d66261a",
+    "outputs\\expert-profile-backfill-20261109\\precision-capture-metadata-index.json": "fa93892e33de0b450db64614593b2ae6c826fa075785a6e6a0d08d2831d66f7d",
     "outputs\\expert-profile-backfill-20261109\\hidev-parser-health-sweep.json": "057d91389524cee080ad70534a1bacdf7a7700c17b70edbea63b77e75ff1ce27",
     "outputs\\expert-profile-backfill-20261109\\deepgemm-new-captures.json": "9295aa2cd74adbb420a996798000e81b2e92edb265dfd0560c733ed6d31ae726",
     "outputs\\expert-profile-backfill-20261109\\historical-head-no-ub-gm.json": "968c73d9a73aaa57b436a5f3b8125bc063a1a5e049ae2f0484eb33e675fccd18",
