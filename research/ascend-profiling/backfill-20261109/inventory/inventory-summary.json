@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 29,
-    "tilekernels-earlier | pending": 89,
+    "tilekernels-earlier | new_dbi_audited_alarm": 32,
+    "tilekernels-earlier | pending": 86,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -45,6 +45,9 @@
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-16-audit-result-20261110.json": "910f17bda0b403f44d42b4f1749c83cad1cd8d362604c127c085a2faf7441ab2",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-17-audit-result-20261110.json": "f4051e57784706329e0be9f214532dfd0e489021f2d698f094486b6f3217a045",
     "outputs\\expert-profile-backfill-20261109\\early-swiglu-supp-18-audit-result-20261110.json": "8afe80e1671ee8112edefcf55e64d289651285291612568d43257805690c747c",
+    "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-cann-18-audit-result-20261110.json": "1dbc53915c2893e82a7769d70b58b2fe9a6e0b31d72af4d72c1df861c16ec9bc",
+    "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-cann-2-audit-result-20261110.json": "b4d337ec787815a680030489ad207af5e22f454cdd131aa0817eb3507f30e31c",
+    "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-cann-3-audit-result-20261110.json": "164f7b5852d23e5b4a61e29cb662bcd07ef84f60f07a593083d140d57e8100d1",
     "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-supp-01-audit-result-20261110.json": "558bdff39bc26b06df3306ac3be360f1b19d5493201a8c824686242b48fd6cf7",
     "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-supp-02-audit-result-20261110.json": "8bb295d9588382e5d65f290d6b6e595a34f9f26a681c166a71ef56028a86729e",
     "outputs\\expert-profile-backfill-20261109\\early-rmsnorm-supp-03-audit-result-20261110.json": "81146be972e74dc74f87f68fc09a4040766099c0c9a12f66813283ba8d3ad2e3",
