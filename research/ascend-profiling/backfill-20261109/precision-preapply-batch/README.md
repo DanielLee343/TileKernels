@@ -1,3 +1,5 @@
 # Precision-labelled pre-apply backward remaining cases
 
 Eight cases with historical CPU reference failures are queued after the early castback batch. Each capture compares historical input and generated source, records each replay CPU reference result, and independently checks requested byte records. Successful observations remain labelled historical precision failures and never create an accuracy-passing audit-result. The representative case 10 and negative tests support the audit; no queued outcome is implied.
+
+Cases 09, 06, 11 and 12: nine reference checks per case all failed; same-input/source requested bytes were observed. Initial case 09 audit failed solely because it required two device store PCs, while both binary and log contained the same five PCs. The v2 audit requires a nonempty matching PC set and passes missing-write, duplicate, CSV and alias negative tests. Initial failure and re-audit are preserved. The interim 352-file / 32-CSV archive was verified on both hosts, SHA256 `5f99e9c74abcfd05618ab0a716e183e01606cef87e4e58eca15705b90a98ff68`. All remain precision-labelled.
