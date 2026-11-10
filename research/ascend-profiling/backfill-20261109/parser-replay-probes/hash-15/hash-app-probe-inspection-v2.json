@@ -1,0 +1,79 @@
+{
+  "target": "starter/hash-15",
+  "status": "capture_identified_parser_incomplete",
+  "historical_true_inputs_and_source_match": true,
+  "capture_binary_sha256": "f70f972ba3f7149d8375d782d86bf2af311776713b1a92dd6d5713f69fa9cf97",
+  "parser_errors": [
+    "droppedRecord=20"
+  ],
+  "parser_summaries": [
+    "[DEBUG] [2026-11-10 06:54:59] [Thread-17696431107314918322] [data_parse/dbi_parser.cpp:1097] processedRecord: 522, droppedRecord: 20, memoryCopyFailed 0, invalidParam 0, receivedPacket 56, processedPacket 56, overflow 0, invalidDataCount 0, memoryCorruption 0, invalidRecordType 0, outOfBoundsRead 0, output num 522, each record type process count 0, 0, 170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 352, 0, each record type process fail count 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+  ],
+  "representative_pid": "2625381",
+  "application_records": [
+    {
+      "pid": "2625381",
+      "application": "metadata-2625381/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2625381/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2626024",
+      "application": "metadata-2626024/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2626024/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2626645",
+      "application": "metadata-2626645/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2626645/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2627257",
+      "application": "metadata-2627257/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2627257/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2627877",
+      "application": "metadata-2627877/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2627877/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2628524",
+      "application": "metadata-2628524/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2628524/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2629151",
+      "application": "metadata-2629151/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2629151/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2629983",
+      "application": "metadata-2629983/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2629983/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    },
+    {
+      "pid": "2630712",
+      "application": "metadata-2630712/application.json",
+      "application_sha256": "143a3ee0aacbe4406b33453bcf45dad3e31f5634bd5be57330a712eae285010e",
+      "source": "metadata-2630712/default-kernel.cpp",
+      "source_sha256": "1a34a86b4340c09dec1b72cdfd196a0323e529674925b19ac15f1884f8408f11"
+    }
+  ],
+  "scope": "application replay; no byte audit or admission; old kernel replay stays separate"
+}
