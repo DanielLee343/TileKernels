@@ -154,3 +154,5 @@ Later commits will add the remaining evidence and updated inventory.
   specific replay window. It is not a measurement of physical DRAM write traffic.
 
 - `initial-hidev/support-snapshot-v7.tar.gz` contains 1,157 point-in-time support files, including application-replay harnesses for Engram gradient, Sinkhorn step and momentum, and paged sparse MQA. Capture windows are archived separately; the bundle does not contain the complete runtime. SHA-256: `6b006590da69f1b10d6a8150c89a439866065008c857c28b9a557fd0e666fae5`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
+
+- `initial-hidev/support-snapshot-v9.tar.gz` contains 1,179 support files, including corrected application-replay Sinkhorn queue scripts and inspectors plus RoPE and cast-and-back adapters. The older v7 Sinkhorn queue targets and inspectors used the wrong `unified-extra` prefix; use the v2 scripts in v9 with the correct `unified-extra5` target. The queued captures were not yet completed at the snapshot. SHA-256: `006f51428b41b99c2b7b7feae7508dea828db4fd0fc9a7d252a253c08f261f25`. Verify with `python tools/verify-support-snapshot.py <bundle>`.
