@@ -1,0 +1,291 @@
+
+/workspace/expert-profile-backfill-20261109-hidev/early-rope-app-probe-runs/rope-supp-01-Q/hidev-npu0/attempt-002/detail/capture/OPPROF_20261110103617_HXMIZPXKUZWJIKYT/dump/aicore_binary.o:	file format elf64-hiipu
+
+Disassembly of section .text:
+
+0000000000000000 <_rope_kernel_kernel>:
+       0:				073afe80	MOVI 		X29, #65152
+       4:				077b000f	MOVK 		X29, #15, #1
+       8:				029e3880	MOV		X15, SYS_VA_BASE
+       c:				02224880	MOV		X17, PARA_BASE
+      10:				003bd781	ADD.s64 	X29, X29, X15
+      14:				021f0880	MOV		X15, COREID
+      18:				07207fff	MOVI 		X16, #32767
+      1c:				026202b4	SHRI.u64 	X17, #52
+      20:				00def80a	AND.b64  	X15, X15, X16
+      24:				08231002	ADDI 	X17, X17, #2
+      28:				02e2020e	SHLI.b64 	X17, #14
+      2c:				081ef001	ADDI 	X15, X15, #1
+      30:				003af884	MADD.s64 	X29, X15, X17
+      34:				083dd770	ADDI 	X30, X29, #1904
+      38:				02024880	MOV		X1, PARA_BASE
+      3c:				07c30000	MOVK 		X1, #0, #3
+      40:				0c841738	LDP.b32 	X2, X14, [X1], #28
+      44:				0c921020	LDP.b32 	X9, X0, [X1], #16
+      48:				07080007	MOVI 		X4, #7
+      4c:				070adb6d	MOVI 		X5, #56173
+      50:				074b6db6	MOVK 		X5, #28086, #1
+      54:				020a5080	NEG.s64 	X5, X5
+      58:				070c0000	MOVI 		X6, #0
+      5c:				070e0001	MOVI 		X7, #1
+      60:				03c5e880	ST_IO.b64 		X2, [X30], #-1920, #0
+      64:				1c841018	LD_IO.b32 		X2, [X1], #24, #0
+      68:				0cc21180	LDP.b64 	X1, X3, [X1], #0
+      6c:				03c5e888	ST_IO.b64 		X2, [X30], #-1912, #0
+      70:				03c3e878	ST_IO.b64 		X1, [X30], #-1928, #0
+      74:				02023880	MOV		X1, CTRL
+      78:				07040006	MOVI 		X2, #6
+      7c:				02c22400	SBITSET0.b64  	X1, X2
+      80:				02c24400	SBITSET0.b64  	X1, X4
+      84:				07080008	MOVI 		X4, #8
+      88:				02c24400	SBITSET0.b64  	X1, X4
+      8c:				02061900	MOV		CTRL, X1
+      90:				02023880	MOV		X1, CTRL
+      94:				07080038	MOVI 		X4, #56
+      98:				02c24400	SBITSET0.b64  	X1, X4
+      9c:				02061900	MOV		CTRL, X1
+      a0:				07080000	MOVI 		X4, #0
+      a4:				02023880	MOV		X1, CTRL
+      a8:				07c90001	MOVK 		X4, #1, #3
+      ac:				00c2120a	AND.b64  	X1, X1, X4
+      b0:				07080008	MOVI 		X4, #8
+      b4:				07c91000	MOVK 		X4, #4096, #3
+      b8:				00c2120b	OR.b64  	X1, X1, X4
+      bc:				02061900	MOV		CTRL, X1
+      c0:				07020001	MOVI 		X1, #1
+      c4:				02021080	NEG.s64 	X1, X1
+      c8:				15c10033	MOVEMASK 	MASK[1], X1 <_rope_kernel_kernel+0x1>
+      cc:				15c10013	MOVEMASK 	MASK[0], X1 <_rope_kernel_kernel>
+      d0:				07020001	MOVI 		X1, #1
+      d4:				07430020	MOVK 		X1, #32, #1
+      d8:				02e01900	MOV		LOOP_SIZE_UBTOOUT, X1
+      dc:				02d21900	MOV		LOOP_SIZE_OUTTOUB, X1
+      e0:				07020024	MOVI 		X1, #36
+      e4:				02b41900	MOV		ST_ATOMIC_CFG, X1
+      e8:				0802003f	ADDI 	X1, X0, #63
+      ec:				02901980	SIGNEXT.s32 	X8, X1
+      f0:				02100286	SHRI.s64 	X8, #6
+      f4:				00028483	MUL.s64 	X1, X8, X9
+      f8:				40a21618	SET_FLAG.MTE3.MTE2  	X6 <_rope_kernel_kernel+0x5>
+      fc:				08021037	ADDI 	X1, X1, #55
+     100:				02881980	SIGNEXT.s32 	X4, X1
+     104:				00084283	MUL.s64 	X4, X4, X5
+     108:				07040002	MOVI 		X2, #2
+     10c:				024802a0	SHRI.u64 	X4, #32
+     110:				00024081	ADD.s64 	X1, X4, X1
+     114:				02881a00	ZEROEXT.u32 	X4, X1
+     118:				02821980	SIGNEXT.s32 	X1, X1
+     11c:				0248029f	SHRI.u64 	X4, #31
+     120:				02020285	SHRI.s64 	X1, #5
+     124:				00141201	ADD.s64 	X10, X1, X4
+     128:				0000a3ae	CMP.LT.s64	X10, X7
+     12c:				40a2161c	SET_FLAG.MTE3.MTE2  	X7 <_rope_kernel_kernel+0x5>
+     130:				40a21608	SET_FLAG.MTE3.MTE2  	X2 <_rope_kernel_kernel+0x5>
+     134:				40200087	JUMPCI 		#848 <_rope_kernel_kernel+0x350>
+     138:				1cc3e888	LD_IO.b64 		X1, [X30], #-1912, #0
+     13c:				072eff80	MOVI 		X23, #65408
+     140:				02161880	MOV		X11, BLOCKID
+     144:				029a9980	SIGNEXT.s32 	X13, X9
+     148:				072c0010	MOVI 		X22, #16
+     14c:				076fffff	MOVK 		X23, #65535, #1
+     150:				0298b980	SIGNEXT.s32 	X12, X11
+     154:				029ce980	SIGNEXT.s32 	X14, X14
+     158:				0220d080	NEG.s64 	X16, X13
+     15c:				07280040	MOVI 		X20, #64
+     160:				07ed4000	MOVK 		X22, #16384, #3
+     164:				07af00ff	MOVK 		X23, #255, #2
+     168:				07363000	MOVI 		X27, #12288
+     16c:				07380000	MOVI 		X28, #0
+     170:				029e1980	SIGNEXT.s32 	X15, X1
+     174:				02de0206	SHLI.b64 	X15, #6
+     178:				4000001f	JUMPI 		#500 <_rope_kernel_kernel+0x1f4>
+     17c:				07080000	MOVI 		X4, #0
+     180:				02094c0f	INSERT 		X4, X20, #0, #15
+     184:				00c59d8a	AND.b64  	X2, X25, X27
+     188:				02f2020c	SHLI.b64 	X25, #12
+     18c:				02c80220	SHLI.b64 	X4, #32
+     190:				07220006	MOVI 		X17, #6
+     194:				00042c81	ADD.s64 	X2, X2, X25
+     198:				02091c1f	INSERT 		X4, X17, #0, #31
+     19c:				40a210a4	SET_FLAG.MTE2.V  	X9 <_rope_kernel_kernel+0x4>
+     1a0:				15c92000	WAIT_FLAG_V.MTE2 	X9 <_rope_kernel_kernel+0x4>
+     1a4:				43082108	PUSH_PB 	X4, X2, X2, X2
+     1a8:				02040880	MOV		X2, PC
+     1ac:				07080096	MOVI 		X4, #150
+     1b0:				41400000	NOP
+     1b4:				41400000	NOP
+     1b8:				02c80202	SHLI.b64 	X4, #2
+     1bc:				00084101	ADD.s64 	X4, X4, X2
+     1c0:			15e0036515440000	VF 		X4, #27
+     1c8:				15c9a800	SET_FLAG_V.MTE3 	X9 <_rope_kernel_kernel+0x5>
+     1cc:				40c206a4	WAIT_FLAG.V.MTE3  	X9 <_rope_kernel_kernel+0x1>
+     1d0:				0839c001	ADDI 	X28, X28, #1
+     1d4:				74f58284	MOV_UB_TO_OUT_ALIGN_V2	[X26], [X24], X5, X1
+     1d8:				40a21624	SET_FLAG.MTE3.MTE2  	X9 <_rope_kernel_kernel+0x5>
+     1dc:				0894a001	SUBI 	X10, X10, #1
+     1e0:				0818c038	ADDI 	X12, X12, #56
+     1e4:				0816b038	ADDI 	X11, X11, #56
+     1e8:				0000a31e	CMP.NE.s64	X10, X6
+     1ec:				40200002	JUMPCI 		#500 <_rope_kernel_kernel+0x1f4>
+     1f0:				40000058	JUMPI 		#848 <_rope_kernel_kernel+0x350>
+     1f4:				0282b980	SIGNEXT.s32 	X1, X11
+     1f8:				00021685	DIV.s64 	X1, X1, X13
+     1fc:				02881980	SIGNEXT.s32 	X4, X1
+     200:				0000444e	CMP.GE.s64	X4, X8
+     204:				4020fff6	JUMPCI 		#476 <_rope_kernel_kernel+0x1dc>
+     208:				07045556	MOVI 		X2, #21846
+     20c:				0283c980	SIGNEXT.s32 	X1, X28
+     210:				07455555	MOVK 		X2, #21845, #1
+     214:				00021103	MUL.s64 	X1, X1, X2
+     218:				07040003	MOVI 		X2, #3
+     21c:				020a1800	MOV 		X5, X1
+     220:				024a02bf	SHRI.u64 	X5, #63
+     224:				024202a0	SHRI.u64 	X1, #32
+     228:				00021281	ADD.s64 	X1, X1, X5
+     22c:				08421003	MULI 	X1, X1, #3
+     230:				02c80206	SHLI.b64 	X4, #6
+     234:				0003c082	SUB.s64 	X1, X28, X1
+     238:				02b21980	SIGNEXT.s32 	X25, X1
+     23c:				020b9800	MOV 		X5, X25
+     240:				024a029f	SHRI.u64 	X5, #31
+     244:				00ca510a	AND.b64  	X5, X5, X2
+     248:				00025081	ADD.s64 	X1, X5, X1
+     24c:				02921980	SIGNEXT.s32 	X9, X1
+     250:				40c21624	WAIT_FLAG.MTE3.MTE2  	X9 <_rope_kernel_kernel+0x5>
+     254:				0022c685	DIV.s64 	X17, X12, X13
+     258:				02c2020c	SHLI.b64 	X1, #12
+     25c:				02a41980	SIGNEXT.s32 	X18, X1
+     260:				00030883	MUL.s64 	X1, X16, X17
+     264:				02e2020c	SHLI.b64 	X17, #12
+     268:				0002c081	ADD.s64 	X1, X12, X1
+     26c:				00021703	MUL.s64 	X1, X1, X14
+     270:				070aff80	MOVI 		X5, #65408
+     274:				00021881	ADD.s64 	X1, X1, X17
+     278:				02c20201	SHLI.b64 	X1, #1
+     27c:				00343081	ADD.s64 	X26, X3, X1
+     280:				00020202	SUB.s64 	X1, X0, X4
+     284:				02aa1980	SIGNEXT.s32 	X21, X1
+     288:				00275a08	MIN.s64  	X19, X21, X20
+     28c:				02033800	MOV 		X1, X19
+     290:				02e40201	SHLI.b64 	X18, #1
+     294:				0704c000	MOVI 		X2, #49152
+     298:				02c20207	SHLI.b64 	X1, #7
+     29c:				074b001f	MOVK 		X5, #31, #1
+     2a0:				00312101	ADD.s64 	X24, X18, X2
+     2a4:				02841980	SIGNEXT.s32 	X2, X1
+     2a8:				00c2128a	AND.b64  	X1, X1, X5
+     2ac:				020a1800	MOV 		X5, X1
+     2b0:				02ca0219	SHLI.b64 	X5, #25
+     2b4:				00c42b8a	AND.b64  	X2, X2, X23
+     2b8:				02c20228	SHLI.b64 	X1, #40
+     2bc:				00ca5b0b	OR.b64  	X5, X5, X22
+     2c0:				00c2110b	OR.b64  	X1, X1, X2
+     2c4:				000153ae	CMP.LT.s64	X21, X7
+     2c8:				74b1a284	MOV_OUT_TO_UB_ALIGN_V2.b8	[X24], [X26], X5, X1
+     2cc:				4020ffac	JUMPCI 		#380 <_rope_kernel_kernel+0x17c>
+     2d0:				1cc5e888	LD_IO.b64 		X2, [X30], #-1912, #0
+     2d4:				00044101	ADD.s64 	X2, X4, X2
+     2d8:				1cc9e880	LD_IO.b64 		X4, [X30], #-1920, #0
+     2dc:				00044102	SUB.s64 	X2, X4, X2
+     2e0:				02882980	SIGNEXT.s32 	X4, X2
+     2e4:				000043ae	CMP.LT.s64	X4, X7
+     2e8:				4020ffa5	JUMPCI 		#380 <_rope_kernel_kernel+0x17c>
+     2ec:				02049800	MOV 		X2, X9
+     2f0:				02c4020d	SHLI.b64 	X2, #13
+     2f4:				00052101	ADD.s64 	X2, X18, X2
+     2f8:				1ce5e878	LD_IO.b64 		X18, [X30], #-1928, #0
+     2fc:				00231781	ADD.s64 	X17, X17, X15
+     300:				00093208	MIN.s64  	X4, X19, X4
+     304:				0726ff00	MOVI 		X19, #65280
+     308:				02e20202	SHLI.b64 	X17, #2
+     30c:				02c80208	SHLI.b64 	X4, #8
+     310:				0767001f	MOVK 		X19, #31, #1
+     314:				072a0004	MOVI 		X21, #4
+     318:				00232881	ADD.s64 	X17, X18, X17
+     31c:				02a44980	SIGNEXT.s32 	X18, X4
+     320:				00c8498a	AND.b64  	X4, X4, X19
+     324:				02264800	MOV 		X19, X4
+     328:				02e60219	SHLI.b64 	X19, #25
+     32c:				02e75440	SBITSET1.b64  	X19, X21
+     330:				072aff00	MOVI 		X21, #65280
+     334:				076bffff	MOVK 		X21, #65535, #1
+     338:				07ab00ff	MOVK 		X21, #255, #2
+     33c:				00e52a8a	AND.b64  	X18, X18, X21
+     340:				02c80228	SHLI.b64 	X4, #40
+     344:				00c8490b	OR.b64  	X4, X4, X18
+     348:				74851990	MOV_OUT_TO_UB_ALIGN_V2.b8	[X2], [X17], X19, X4
+     34c:				4000ff8c	JUMPI 		#380 <_rope_kernel_kernel+0x17c>
+     350:				40c21618	WAIT_FLAG.MTE3.MTE2  	X6 <_rope_kernel_kernel+0x5>
+     354:				07000002	MOVI 		X0, #2
+     358:				40c2161c	WAIT_FLAG.MTE3.MTE2  	X7 <_rope_kernel_kernel+0x5>
+     35c:				40c21600	WAIT_FLAG.MTE3.MTE2  	X0 <_rope_kernel_kernel+0x5>
+     360:				071e0000	MOVI 		X15, #0
+     364:				402ef000	DCCI 		X15, #1
+     368:				41600000	END
+     36c:				41400000	NOP
+     370:				41400000	NOP
+     374:				41400000	NOP
+     378:				41400000	NOP
+     37c:				41400000	NOP
+     380:				41400000	NOP
+     384:				41400000	NOP
+     388:				41400000	NOP
+     38c:				41400000	NOP
+     390:				41400000	NOP
+     394:				41400000	NOP
+     398:				41400000	NOP
+     39c:				41400000	NOP
+     3a0:				41400000	NOP
+     3a4:				41400000	NOP
+     3a8:				41400000	NOP
+     3ac:				41400000	NOP
+     3b0:				41400000	NOP
+     3b4:				41400000	NOP
+     3b8:				41400000	NOP
+     3bc:				41400000	NOP
+     3c0:				41400000	NOP
+     3c4:				41400000	NOP
+     3c8:				41400000	NOP
+     3cc:				41400000	NOP
+     3d0:				41400000	NOP
+     3d4:				41400000	NOP
+     3d8:				41400000	NOP
+     3dc:				41400000	NOP
+     3e0:				41400000	NOP
+     3e4:				41400000	NOP
+     3e8:				41400000	NOP
+     3ec:				41400000	NOP
+     3f0:				41400000	NOP
+     3f4:				41400000	NOP
+     3f8:				41400000	NOP
+     3fc:				41400000	NOP
+
+0000000000000400 <_ZL29_rope_kernel_kernel_simd_vf_0PU3AS6hi.vector.thread>:
+     400:				c610104b	SSHLI.b32 	S67, S4, #1
+     404:				82040155	PSET.b32 	P1, #0
+     408:				840400d5	PSET.b16 	P2, #0
+     40c:				c980010d	SMOVI 		S68, #49152
+     410:				c010004d	SMOV.b32 		S64, S4
+     414:				c410204b	SSHLI.b32 	S66, S4, #2
+     418:				c6023061	SSUB.b32 	S67, S0, S67
+     41c:				c1004b1e	VLOOPV2_V310 	S2, #18, #1, #1
+     420:				cb00204b	SSHLI.b32 	S69, S64, #2
+     424:				01104038	VLDI 	V0, [S66], #8, #0, #1
+     428:				80000160	VINTLV.b32	V0, V0, V0
+     42c:				cb2a3060	SADD.b32 	S69, S69, S67
+     430:				841407dc	VNEG.f32 	V2, V1, P1
+     434:				cb2a4060	SADD.b32 	S69, S69, S68
+     438:				07280398	VLDI 	V3, [S69], #0, #14, #0
+     43c:				c71a0041	SSUBI.b32 	S67, S67, #128
+     440:				86390811	VCVTFF.bf162f32 	V3, V3, P2, #0
+     444:				c1010040	SADDI.b32 	S64, S64, #64
+     448:				88306160	VINTLV.b32	V4, V3, V3
+     44c:				865007c0	VMUL.f32 	V3, V5, V0, P1
+     450:				845047c0	VMUL.f32 	V2, V5, V2, P1
+     454:				864027c1	VMULA.f32 	V3, V4, V1, P1
+     458:				844007c1	VMULA.f32 	V2, V4, V0, P1
+     45c:				80206161	VDINTLV.b32	V0, V2, V3
+     460:				80084891	VCVTFF.f322bf16 	V0, V0, P2, #0, #1, #0
+     464:				4128021e	VSTI 	V0, [S69], #0, #7, P2, #0
+     468:				c0000017	SEND
+     46c:				41400000	VST 	V0, [S72], A0, #0, P0
