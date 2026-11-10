@@ -13,8 +13,8 @@
     "tilekernels-default | new_dbi_audited_alarm": 819,
     "tilekernels-default | pending": 112,
     "tilekernels-earlier | existing_dbi_audited": 1,
-    "tilekernels-earlier | new_dbi_audited_alarm": 63,
-    "tilekernels-earlier | pending": 55,
+    "tilekernels-earlier | new_dbi_audited_alarm": 66,
+    "tilekernels-earlier | pending": 52,
     "tilekernels-precision | pending": 13
   },
   "inputs": {
@@ -85,7 +85,10 @@
     "outputs\\expert-profile-backfill-20261109\\early-fused-h768-audit-result-20261110.json": "8b484b4021716d474d96584151e66a1959b725d5dea9f3289c7f42326c66723a",
     "outputs\\expert-profile-backfill-20261109\\early-hash-n1-g3-audit-result-20261110.json": "62f138dbd2a927aa1a51f74126f37283f926a02992276a2f22a78a4255391dd4",
     "outputs\\expert-profile-backfill-20261109\\early-normalize-n1-k8-audit-result-20261110.json": "662568f0732c7be91d1705e1cf00e3a753d7496f33dc456e03ed37643252f5f6",
+    "outputs\\expert-profile-backfill-20261109\\early-mhc_post_bwd-cann-6-audit-result-20261111.json": "ec974513c35328ec452f5e84c650667ce091228269d26c79253b98efdcd2aad4",
     "outputs\\expert-profile-backfill-20261109\\early-mhc_post_bwd-supp-01-audit-result-20261111.json": "0ebaa5105e59ba15ba21892f4d5004c47a216b90b033e7baee2bdfadad7566b5",
+    "outputs\\expert-profile-backfill-20261109\\early-mhc_post_bwd-supp-04-audit-result-20261111.json": "91e43a7d04454057922cb39a9cfa047ff79a152423747d50c15cb148a1f45818",
+    "outputs\\expert-profile-backfill-20261109\\early-mhc_post_bwd-supp-10-audit-result-20261111.json": "3725b081e1fddcaf0efcc8f43c5daba02a6aec122ee77b83f3ef3aa6170b9f84",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-bf16-audit-result-20261110.json": "0e4e8baee773cbb490e8be08dbd2c06b74602df1fa2636e6f8323afb1b8acc6a",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n512-h2048-fp32-audit-result-20261110.json": "c531e6737abb640525191aab82c22e18d83315a754a3815396475d0c6bdc9190",
     "outputs\\expert-profile-backfill-20261109\\early-castback-n8001-h2048-fp32-audit-result-20261110.json": "357a6454dd2c75e556d0f2f954992485343f3132b086436e84d90412298de1c8",
