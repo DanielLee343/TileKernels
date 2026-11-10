@@ -1,0 +1,21 @@
+{
+  "cases": [
+    {
+      "id": "mhc_post_bwd-04",
+      "group": "mhc_post_bwd",
+      "plan_case_number": 4,
+      "params": {
+        "n0": 2,
+        "n1": 4096,
+        "hidden": 7168,
+        "mhc_mult": 4
+      },
+      "pilot": false,
+      "adapter": "extra_mhc_post_bwd.py",
+      "range": "mhc_post_bwd_target",
+      "target_id": "unified-extra2/mhc_post_bwd-04",
+      "historical_op_name": "mhc_post_bwd_asc_kernel",
+      "historical_metadata": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/capture-evidence/cases/mhc_post_bwd-04/capture-record.json"
+    }
+  ]
+}

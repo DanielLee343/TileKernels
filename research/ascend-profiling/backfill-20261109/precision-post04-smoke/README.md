@@ -1,0 +1,5 @@
+# Precision-labelled post backward case 04 replay smoke
+
+This is a queued investigation, not an accuracy-passing sample. The historical `capture-record.json` includes input and source hashes and records a failed CPU reference. The original review separately records a passing NPU chunked reference; the two results are retained as distinct evidence. The scripts replay the exact planned parameters, preserve assertion mismatches as explicit reference failures in each process, require input/source hashes to match the historical record, and observe requested UB-to-GM bytes. Unexpected exceptions still propagate. Historical Default and the new application-replay window remain separate; they were collected on distinct device identities.
+
+The smoke is queued after the three mHC variant smokes. Its byte result, if any, is marked `precision_labelled_bytes_observed` and is not promoted as an accuracy-passing expert audit. The unique deployment files reject pre-existing targets and hash-check payloads. This script set assumes the pinned hidev environment and existing adapter.
