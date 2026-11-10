@@ -1,0 +1,4 @@
+__MHC_THREE_TWO_TEST_BEGIN__
+PASS mhc_multilayer_recompute-09 461373440
+PASS rejects missing output, duplicate store, wrong CSV and changed pointer table
+__MHC_THREE_TWO_TEST_END__
