@@ -7,6 +7,7 @@ This directory holds our profiling work and case plans, separate from the upstre
 - [Research progress snapshot](history/puma/docs/专家规则体系-证据与建模TODO-20261105.md): historical research record; some original links point outside this partial snapshot. It is not a completed customer rule set.
 - [MemoryDetail investigation](history/puma/outputs/hidev-memorydetail-20261106/ROOT-CAUSE.md): current evidence and limitations.
 - [Collection status](STATUS.md): new runs and outstanding work.
+- [Profiling Excel specification](专家算子Profiling-Excel规格.md): requirements for the per-core and per-capture workbooks, including aggregation and validation.
 
 ## Evidence policy
 
