@@ -1,0 +1,212 @@
+{
+  "mhc_pre_apply_mix_bwd-02": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-02/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-02-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-02/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110131149_FAUPBZGKEGADNACB",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-02/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-04": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-04/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-04-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-04/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110131443_RGNIQOAVJETUIBQW",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-04/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-06": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-06/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-06-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-06/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110125845_LLRGZKOELZFMYYMZ",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-06/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-09": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-09/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-09-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-09/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110125329_OYNTFXYLKMXKHKAX",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-09/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-10": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/3749dbd311404da0/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-10/hidev-npu0/attempt-001/detail/precision-preapply10-byte-observation.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-10-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/3749dbd311404da0/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-10/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110123358_SIEHCZZNPSVPOJYD",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-10/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-11": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-11/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-11-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-11/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110130120_SCQGAFPJMBXCODYU",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-11/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-12": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-12/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-12-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/5f99e9c74abcfd05/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-12/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110130359_YLHLXDHWYDESBQBJ",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-12/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-14": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-14/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-14-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-14/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110130642_BLWGCLDHKMHNQYXT",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-14/hidev-npu0/attempt-001/detail"
+  },
+  "mhc_pre_apply_mix_bwd-18": {
+    "kind": "precision_fma_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-18/hidev-npu0/attempt-001/detail/precision-preapply-batch-byte-observation-v2.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-precision-reference-20261111/official-precision-reference-v2-20261111/mhc_pre_apply_mix_bwd-18-fp64-reference.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/e92fa791f2ec8a76/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-18/hidev-npu0/attempt-001/detail/capture/OPPROF_20261110130913_PZHPDBSEOZHQKZZC",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra4/mhc_pre_apply_mix_bwd-18/hidev-npu0/attempt-001/detail"
+  },
+  "unified-extra3/moe_topk_gate_forward-01": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-01/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-01/capture/OPPROF_20261106155826_KDXTRYALQSKGCWNE",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-01/capture/OPPROF_20261106155826_KDXTRYALQSKGCWNE"
+  },
+  "unified-extra3/moe_topk_gate_forward-02": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-02/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-02/capture/OPPROF_20261106163205_YTQLGVDJIMFNAVUO",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-02/capture/OPPROF_20261106163205_YTQLGVDJIMFNAVUO"
+  },
+  "unified-extra3/moe_topk_gate_forward-03": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-03/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-03/capture/OPPROF_20261106163305_YLUWQPFCZISRPLLS",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-03/capture/OPPROF_20261106163305_YLUWQPFCZISRPLLS"
+  },
+  "unified-extra3/moe_topk_gate_forward-04": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-04/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-04/capture/OPPROF_20261106163358_SUIEPCNJANJETUGP",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-04/capture/OPPROF_20261106163358_SUIEPCNJANJETUGP"
+  },
+  "unified-extra3/moe_topk_gate_forward-05": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-05/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-05/capture/OPPROF_20261106163500_LBHGMWTYMGAFNABF",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-05/capture/OPPROF_20261106163500_LBHGMWTYMGAFNABF"
+  },
+  "unified-extra3/moe_topk_gate_forward-06": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-06/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-06/capture/OPPROF_20261106163555_ITBVDBNIZUGUUBTB",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-06/capture/OPPROF_20261106163555_ITBVDBNIZUGUUBTB"
+  },
+  "unified-extra3/moe_topk_gate_forward-07": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-07/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-07/capture/OPPROF_20261106163651_DHJSZVOCQCWHHHKB",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-07/capture/OPPROF_20261106163651_DHJSZVOCQCWHHHKB"
+  },
+  "unified-extra3/moe_topk_gate_forward-08": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-08/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-08/capture/OPPROF_20261106163752_HLLZWQMCZRCVWAKA",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-08/capture/OPPROF_20261106163752_HLLZWQMCZRCVWAKA"
+  },
+  "unified-extra3/moe_topk_gate_forward-09": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-09/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-09/capture/OPPROF_20261106163848_FYBLXOJGDCHNNGNS",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-09/capture/OPPROF_20261106163848_FYBLXOJGDCHNNGNS"
+  },
+  "unified-extra3/moe_topk_gate_forward-10": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-10/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-10/capture/OPPROF_20261106163939_AZFBTJLBQJJLWHOJ",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-10/capture/OPPROF_20261106163939_AZFBTJLBQJJLWHOJ"
+  },
+  "unified-extra3/moe_topk_gate_forward-11": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-11/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-11/capture/OPPROF_20261106164031_QAWLHYUWNTZQMYDZ",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-11/capture/OPPROF_20261106164031_QAWLHYUWNTZQMYDZ"
+  },
+  "unified-extra3/moe_topk_gate_forward-12": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-12/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-12/capture/OPPROF_20261106164124_FFUCLUEGJIUEKIHM",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-12/capture/OPPROF_20261106164124_FFUCLUEGJIUEKIHM"
+  },
+  "unified-extra3/moe_topk_gate_forward-13": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-13/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-13/capture/OPPROF_20261106164216_ZAQKFERKETMANALE",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-13/capture/OPPROF_20261106164216_ZAQKFERKETMANALE"
+  },
+  "unified-extra3/moe_topk_gate_forward-14": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-14/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-14/capture/OPPROF_20261106164318_TREZWEPBBRKNLWBY",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-14/capture/OPPROF_20261106164318_TREZWEPBBRKNLWBY"
+  },
+  "unified-extra3/moe_topk_gate_forward-15": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-15/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-15/capture/OPPROF_20261106164414_NMUPCSPRNJHTURKJ",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-15/capture/OPPROF_20261106164414_NMUPCSPRNJHTURKJ"
+  },
+  "unified-extra3/moe_topk_gate_forward-16": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-16/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-16/capture/OPPROF_20261106164510_KSJSPPEQQHNHEDGL",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-16/capture/OPPROF_20261106164510_KSJSPPEQQHNHEDGL"
+  },
+  "unified-extra3/moe_topk_gate_forward-17": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-17/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-17/capture/OPPROF_20261106164611_NWMWEUPOAZYNWRQD",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-17/capture/OPPROF_20261106164611_NWMWEUPOAZYNWRQD"
+  },
+  "unified-extra3/moe_topk_gate_forward-18": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-18/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-18/capture/OPPROF_20261106164711_LSSWNDFKBDTZVWXV",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-18/capture/OPPROF_20261106164711_LSSWNDFKBDTZVWXV"
+  },
+  "unified-extra3/moe_topk_gate_forward-19": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-19/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-19/capture/OPPROF_20261106164808_LBGOFERAIHJCCLZY",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-19/capture/OPPROF_20261106164808_LBGOFERAIHJCCLZY"
+  },
+  "unified-extra3/moe_topk_gate_forward-20": {
+    "kind": "topk_original_recomputed",
+    "audit": "outputs/expert-profile-backfill-20261109/moe-topk-original-store-20261111/moe_topk_gate_forward-20/original-store-audit.json",
+    "reference": "TileKernels-private/research/ascend-profiling/reviews/20261107-finalize/replay-assessment.json",
+    "window": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-20/capture/OPPROF_20261106164909_SRKYBHRVAJIKIPKQ",
+    "source": "TileKernels-private/research/ascend-profiling/runs/hidev-20261106-unified-extra3/cases/moe_topk_gate_forward-20/capture/OPPROF_20261106164909_SRKYBHRVAJIKIPKQ"
+  },
+  "mhc_post_bwd-04": {
+    "kind": "precision_chunked_verified",
+    "audit": "outputs/expert-profiling-workbook-20261110/raw-cache/40fd97f97573aa53/precision-proxy-runs/unified-extra2/mhc_post_bwd-04/hidev-npu0/attempt-002/detail/precision-post04-byte-observation.json",
+    "reference": "outputs/expert-profile-backfill-20261109/official-post04-reference-20261111/post-comparison.json",
+    "window": "outputs/expert-profiling-workbook-20261110/raw-cache/40fd97f97573aa53/precision-proxy-runs/unified-extra2/mhc_post_bwd-04/hidev-npu0/attempt-002/detail/capture/OPPROF_20261110121247_LLFYFQDXOXBMOJNN",
+    "source": "/workspace/expert-profile-backfill-20261109-hidev/precision-proxy-runs/unified-extra2/mhc_post_bwd-04/hidev-npu0/attempt-002/detail"
+  }
+}

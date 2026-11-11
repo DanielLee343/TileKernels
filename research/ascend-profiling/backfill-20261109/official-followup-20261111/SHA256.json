@@ -1,0 +1,16 @@
+{
+  "as-of.txt": "ce268f10600e1c46e9d095a488be997a557b590d9ee64e85d41e57cd5b7f6c70",
+  "check-official-precision-20261111.py": "7c7b92b5a6609fc9a96c36447766be32b783b07f2e6e2cd794281997f969dff4",
+  "counts.json": "5168ca68204bd117ade012882c9241149dd6aace9f19ac4dca116f99912837e4",
+  "fused-upstream-original-store-20261111.tar.gz": "88a916cf7e513ed74f6f88d01fe9304e1bcd753ee944ca16e2cec477f44c220b",
+  "inventory-summary.json": "7beef78126418655f18d23ac6c4a3b24065d91c1725685f1a7d490ecc7c8df97",
+  "moe-topk-original-store-20261111.tar.gz": "dbcdd191b3ffa8663448e6156d66ec056c51f684d1b8a85c1f26fd3134a82493",
+  "not-in-workbooks.csv": "1d822eb1e2f836f91f815a00b176f15562b85ea2439821e0393ea804b46e8aaa",
+  "official-followup-20261111.json": "dc96adce5a366cffd8106659c6b58c847eaa11a0a8a9caf39d029063477c99bf",
+  "official-post04-reference-20261111.tar.gz": "83547c6697b9b18c9eb45d81a0a1f88c1e714cede9a1ddb7b1b6a605886842ae",
+  "official-precision-reference-20261111.tar.gz": "54617ab18584c5528c40a68eab0e072b7f2245d90266c2b5303dc1e4ff106943",
+  "README.md": "f55c0824f4a5943e4547d34cf6b8ed85d944f117cb12513e2529df5f06c8adee",
+  "recover-official-topk-stores-20261111.py": "e1a7a3991171cac439304c9a0481a9d9377b23b55d10fbd7dc192f369e183f29",
+  "run-moe-topk-source-check-20261111.sh": "3731a8cbd044b965fe24af225f423feb4b1f24abb650619f7c55a25e101949e4",
+  "targets.csv": "9872053068a2efb90dd2485fb40e9eda5235c5c599a0a4efc7b81ec374ab1027"
+}
